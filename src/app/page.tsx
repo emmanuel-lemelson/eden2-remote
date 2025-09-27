@@ -155,7 +155,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-gradient-to-br from-[#f8f3ea] via-[#fdfbf7] to-[#f2e8da]">
+      <section className="bg-gradient-to-br from-[var(--color-linen)] via-[var(--color-eggshell)] to-[var(--color-cream)]">
         <div className="lux-container flex flex-col items-center gap-6 py-10 text-center text-stone-900 md:gap-8 md:py-14">
           <p className="text-sm font-semibold uppercase tracking-[0.35em] text-stone-800 sm:text-base md:text-lg">
             Where to Find Us
@@ -251,20 +251,20 @@ export default function Home() {
 
       <section className="lux-section bg-white animate-fade-up fade-delay-1">
         <div className="lux-container !px-4 sm:!px-6">
-          <div className="relative grid gap-6 overflow-hidden rounded-[2.75rem] border border-[#d2c4a3]/60 bg-gradient-to-br from-[#f8f3ea] via-[#fdfbf7] to-[#f2e8da] px-3 py-7 shadow-[0_32px_68px_-42px_rgba(58,45,20,0.55)] sm:px-10 sm:py-10 md:grid-cols-3 md:p-14">
+          <div className="relative grid gap-6 overflow-hidden rounded-[2.75rem] border border-[color:rgba(217,209,195,0.6)] bg-gradient-to-br from-[var(--color-linen)] via-[var(--color-eggshell)] to-[color:rgba(210,196,163,0.2)] px-3 py-7 shadow-[0_32px_68px_-42px_rgba(58,45,20,0.55)] sm:px-10 sm:py-10 md:grid-cols-3 md:p-14">
             <div
-              className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/20 via-transparent to-[#d7c3a5]/25"
+              className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/20 via-transparent to-[color:rgba(210,196,163,0.25)]"
               aria-hidden
             />
 
             <div className="relative md:col-span-1">
-              <p className="text-xs uppercase tracking-[0.55em] text-[#b89b63] sm:text-sm">
+              <p className="text-xs uppercase tracking-[0.55em] text-[var(--color-gold)] sm:text-sm">
                 Welcome to Eden
               </p>
-              <h2 className="mt-3 text-3xl font-semibold text-[#2c2416] sm:mt-4 sm:text-[2.5rem]">
+              <h2 className="mt-3 text-3xl font-semibold text-[var(--color-charcoal)] sm:mt-4 sm:text-[2.5rem]">
                 Estate at a glance
               </h2>
-              <p className="mt-3 text-sm leading-relaxed text-[#6d5a3b] sm:mt-4 sm:text-base">
+              <p className="mt-3 text-sm leading-relaxed text-stone-700 sm:mt-4 sm:text-base">
                 Escape to one of Stowe’s most exclusive estates. With 11,400 square
                 feet of living space, Eden offers room for up to 20 guests to gather in
                 comfort and style.
@@ -277,11 +277,11 @@ export default function Home() {
                   key={fact.label}
                   className="group relative overflow-hidden rounded-2xl border border-white/80 bg-white/85 p-4 shadow-[0_24px_44px_-32px_rgba(58,45,20,0.55)] backdrop-blur transition duration-300 hover:-translate-y-1 hover:shadow-[0_32px_64px_-36px_rgba(58,45,20,0.6)] sm:p-6"
                 >
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/60 via-transparent to-[#e8dac0]/60 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                  <dt className="relative text-[0.7rem] uppercase tracking-[0.35em] text-[#bfa269] font-semibold drop-shadow-[0_1px_0_rgba(255,255,255,0.75)]">
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/60 via-transparent to-[color:rgba(232,218,192,0.6)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                  <dt className="relative text-[0.7rem] uppercase tracking-[0.35em] text-[var(--color-gold)] font-semibold drop-shadow-[0_1px_0_rgba(255,255,255,0.75)]">
                     {fact.label}
                   </dt>
-                  <dd className="relative mt-2 text-lg font-semibold text-[#2c2416] sm:mt-3 sm:text-2xl">
+                  <dd className="relative mt-2 text-lg font-semibold text-[var(--color-charcoal)] sm:mt-3 sm:text-2xl">
                     {fact.value}
                   </dd>
                 </div>
