@@ -160,7 +160,7 @@ export default function Home() {
           <p className="text-sm font-semibold uppercase tracking-[0.35em] text-stone-800 sm:text-base md:text-lg">
             Where to Find Us
           </p>
-          <div className="grid w-full max-w-3xl grid-cols-2 justify-items-center gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 sm:gap-5">
+          <div className="grid w-full max-w-4xl grid-cols-2 justify-items-center gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 sm:gap-5">
             <Link
               href="https://www.airbnb.com/rooms/42793723?guests=1&adults=1&s=67&unique_share_id=ba8163d3-af1e-4825-ba7d-15abbe902ec4"
               target="_blank"
@@ -229,10 +229,26 @@ export default function Home() {
               />
             </Link>
             <Link
+              href="https://www.zola.com/wedding-vendors/wedding-venues/eden-the-lemelson-estate"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex w-full items-center justify-center rounded-full border border-white bg-white px-5 py-3 shadow-lg shadow-black/10 transition-colors transition-transform duration-200 hover:-translate-y-0.5 hover:border-white/80 hover:shadow-xl sm:px-6"
+              aria-label="View Eden on Zola"
+            >
+              <img
+                src="/id56oBQafI_1758992156050.png"
+                alt="Zola"
+                className="h-6 w-auto"
+                width={88}
+                height={24}
+                loading="lazy"
+              />
+            </Link>
+            <Link
               href="https://www.weddingwire.com/biz/eden-the-lemelson-estate/393d590ddd940149.html"
               target="_blank"
               rel="noopener noreferrer"
-              className="col-span-2 inline-flex w-full items-center justify-center rounded-full border border-white bg-white px-5 py-3 shadow-lg shadow-black/10 transition-colors transition-transform duration-200 hover:-translate-y-0.5 hover:bg-[#F3FBFB] hover:shadow-xl justify-self-center sm:col-span-1 sm:justify-self-auto sm:px-6"
+              className="inline-flex w-full items-center justify-center rounded-full border border-white bg-white px-5 py-3 shadow-lg shadow-black/10 transition-colors transition-transform duration-200 hover:-translate-y-0.5 hover:bg-[#F3FBFB] hover:shadow-xl justify-self-center sm:justify-self-auto sm:px-6"
               aria-label="View Eden on WeddingWire"
             >
               <img
