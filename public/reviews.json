@@ -1,0 +1,361 @@
+{
+  "platforms": {
+    "Airbnb": {
+      "total": 11,
+      "reviews": [
+        {
+          "reviewer": "Scott",
+          "date": "Aug 2025",
+          "rating": { "scale": 5, "value": 5 },
+          "stayed_with": "Kids (family gathering)",
+          "title": "Wonderful Family Gathering",
+          "review": "We had a wonderful experience staying at Eden for a family gathering. Our hosts were very responsive through all aspects of the booking process, preparations for our stay and during our stay. Everything was so well organized and a lot of very helpful information was shared proactively. The estate is beautiful and has everything you could need. We especially enjoyed spending time by the pool, which is a beautiful setting. The kids had plenty to entertain themselves, including the pool, hot tub, tennis and game room. It’s a unique place, and we only wish we could have stayed longer."
+        },
+        {
+          "reviewer": "Joshua",
+          "location": "Rhome, Texas",
+          "date": "Jul 2025",
+          "rating": { "scale": 5, "value": 5 },
+          "trip_type": "Group trip",
+          "title": "Worth Every Penny",
+          "review": "Absolutely loved this place, worth every single penny…. Secluded, beautiful, fun, and spacious. I was addicted walking barefoot through the property, and loved the swim in the pond. We went to Stowe to see the surrounding areas, but felt like we were having to convince ourselves to leave this sanctuary. The service was the best I’ve EVER experienced, nonstop communication, and instant responses, if I had a question about the surrounding areas, or concerns about the house, I was met with the most upbeat and friendly energy I’ve ever experienced with an AirBNB. Honestly, I’ve stayed at many places, and most make you feel like a client to take money from… staying here I truly felt like a guest."
+        },
+        {
+          "reviewer": "Caitlin",
+          "location": "Massachusetts, USA",
+          "date": "Jul 2025",
+          "rating": { "scale": 5, "value": 5 },
+          "stayed_with": "Pet",
+          "title": "Great Amenities & Pet Friendly",
+          "review": "My family and I had a wonderful stay here. The photos do not do this home justice! They had many great amenities and offered a great space to enjoy time with loved ones."
+        },
+        {
+          "reviewer": "David",
+          "location": "Methuen, Massachusetts",
+          "date": "Jun 2025",
+          "rating": { "scale": 5, "value": 5 },
+          "title": "Special Location",
+          "review": "Fantastic home in a truly special location."
+        },
+        {
+          "reviewer": "Maria",
+          "date": "Jul 2024",
+          "rating": { "scale": 5, "value": 5 },
+          "stayed_with": "Kids",
+          "title": "Super Clean & Family Friendly",
+          "review": "Honestly had such a great experience that we will be reaching out for another visit! Very responsive which helped tremendously! Loved the extreme cleanliness of the home. You will have such a great time with family!"
+        },
+        {
+          "reviewer": "Lauren",
+          "location": "Scarsdale, New York",
+          "date": "Aug 2024",
+          "rating": { "scale": 5, "value": 5 },
+          "stayed_with": "Kids",
+          "title": "Responsive Host and a Wonderful Family Stay",
+          "review": "Spectacular property! Our entire family had a wonderful time - the host welcomed us kindly and was especially responsive."
+        },
+        {
+          "reviewer": "Michael",
+          "date": "Aug 2024",
+          "rating": { "scale": 5, "value": 5 },
+          "trip_type": "Group trip",
+          "title": "Great Stay",
+          "review": "Great stay!"
+        },
+        {
+          "reviewer": "Cathy",
+          "date": "Jan 2023",
+          "rating": { "scale": 5, "value": 5 },
+          "trip_type": "Group trip",
+          "title": "Luxury Group Experience",
+          "review": "We reserved this luxury private estate for a large group of 10+ ppl. The landlord contacted us immediately after the reservation and provided a detailed brochure with all the necessary information on it. We asked a lot of questions regarding this trip, and asked for some last minute setup, the landlord responded quickly and tried their best to help us, which we really appreciated that. The overall experience during the trip was excellent, they had a team to get everything set up for us. If you are planning a trip for a large group, we would recommend this property for sure since they have a supportive team and will do their best to meet your expectation!"
+        },
+        {
+          "reviewer": "Seanna",
+          "location": "West Bridgewater, Massachusetts",
+          "date": "Feb 2023",
+          "rating": { "scale": 5, "value": 5 },
+          "trip_type": "Group trip",
+          "title": "Luxury Winter Wedding",
+          "review": "We had an amazing stay at Eden. We had our wedding ceremony in the great room and enjoyed the weekend with our family in the house. It was absolutely beautiful throughout the house and had so many perks and special amenities—we definitely felt like we were staying in a very luxurious place. The sauna, steam room, and hot tub were the perfect way to relax and unwind. The heated floors were an added plus as it’s was snowing the whole weekend outside. The fireplaces were fully stocked with wood. For our dinner, the team set us up with a wonderful private chef who helped us create the perfect customized menu and they also connected us with a bartender for our special “signature” drinks and served wine and champagne during dinner. We cannot be more thankful for choosing the Estate as our wedding venue—almost all of our family got to stay with us on site. We look forward to staying here again."
+        },
+        {
+          "reviewer": "Angela",
+          "location": "Pompano Beach, Florida",
+          "date": "Feb 2023",
+          "rating": { "scale": 5, "value": 5 },
+          "stayed_with": "Kids",
+          "title": "Snow Vacation Fun",
+          "review": "From a family of 4 living in Florida trying to experience snow during their winter vacation, this home in itself IS an experience. The property is spacious, private and yet conveniently close to restaurants, ski resort and town. The house was equipped with every single entertainment you can think of. Our kids enjoyed playing with all the sleds, board games, toys especially the air hockey machine. My husband and I played pool, enjoyed the jacuzzi and steam room, as well. We also connected with their concierge that provided us with excellent service in booking ski lessons, in home massage and transportation. Not to mention, the owners are the most accommodating, helpful, friendliest people we’ve ever communicated with. Thank you Lemelson family for making our trip to Stowe unforgettable. We look forward to next stay!"
+        },
+        {
+          "reviewer": "Chris",
+          "date": "Jan 2022",
+          "rating": { "scale": 5, "value": 5 },
+          "trip_type": "Group trip",
+          "title": "CEO Retreat",
+          "review": "My group of 7 CEO’s visited Stowe and enjoyed our stay at the Estate. We used the home as a way to unwind and relax. The home was promoted as promised and offered all the amenities we needed. The owners were great communicators and offered assistance as needed. We will be back! Can’t wait to see the Estate in the summer!"
+        }
+      ]
+    },
+    "VRBO_Expedia": {
+      "note": "These reviews sync on both platforms.",
+      "total": 19,
+      "reviews": [
+        {
+          "reviewer": "Hazel S.",
+          "date": "Stayed 7 nights in Jul 2025",
+          "rating": { "scale": 10, "value": 10, "label": "Excellent" },
+          "title": "Beautiful, Spacious & Peaceful Stay",
+          "review": "The property is beautiful, extensive, peaceful and well-maintained. The flowerbeds are lovely. The house is huge, with lots of private bedrooms and bathrooms. It was perfect for our large group. Everything was clean, fresh and welcoming."
+        },
+        {
+          "reviewer": "Peter M.",
+          "date": "Stayed 4 nights in Jun 2024",
+          "rating": { "scale": 10, "value": 10, "label": "Excellent" },
+          "title": "Beautiful Getaway",
+          "review": "Wonderful property. It was excellent for our large family to enjoy time away."
+        },
+        {
+          "reviewer": "Deepak G.",
+          "date": "Stayed 3 nights in Feb 2023",
+          "rating": { "scale": 10, "value": 10, "label": "Excellent" },
+          "title": "Great House!",
+          "review": "Wonderful stay at a great property. Fully stocked with everything and owners were very helpful answering questions! Would definitely stay here again."
+        },
+        {
+          "reviewer": "William A.",
+          "date": "Stayed 4 nights in Feb 2024",
+          "rating": { "scale": 10, "value": 10, "label": "Excellent" },
+          "title": "Great Location and Space",
+          "review": "The house was in a convenient location and is extremely spacious. The lower level game and TV room were fantastic for the kids. The owners were very responsive to any questions or issues we had. Would definitely come back!"
+        },
+        {
+          "reviewer": "Fredrik H.",
+          "date": "Stayed 12 nights in Dec 2023",
+          "rating": { "scale": 10, "value": 10, "label": "Excellent" },
+          "title": "Perfect Christmas Holiday",
+          "review": "We spent Christmas and New Years with family and friends at Eden and had the perfect stay. Great property, location and host - who was very helpful and easy to work with in all aspects. Well stocked house in all aspects - and specifically the adults very much appreciated all the spa functions and kids were very excited for all the games, toys and entertainment in the lower level recreational area."
+        },
+        {
+          "reviewer": "Steven T.",
+          "date": "Stayed 5 nights in Feb 2024",
+          "rating": { "scale": 10, "value": 10, "label": "Excellent" },
+          "title": "Skiing Feb 2024",
+          "review": "Easy communication with host. Clean property. All exactly as advertised."
+        },
+        {
+          "reviewer": "Scott S.",
+          "date": "Stayed 2 nights in Nov 2024",
+          "rating": { "scale": 10, "value": 10, "label": "Excellent" },
+          "title": "Amazing Business Retreat",
+          "review": "Amazing. Our group stayed at this property in early November for a business retreat and it was everything that we had hoped for.. and more. The Lemelson team was extremely communicative from start to finish and made our trip easy. The home itself was immaculate and well laid out. Big open areas for the group to convene while also having small private areas and bedrooms if we wanted to get away for a few minutes. The location was also very convenient. Close to town and extremely close to hiking opportunities. We are very happy with our choice to stay at this property and will be back again in the future."
+        },
+        {
+          "reviewer": "Gaston T.",
+          "date": "Stayed 4 nights in Nov 2023",
+          "rating": { "scale": 10, "value": 10, "label": "Excellent" },
+          "title": "Quiet Mountain Escape with Resort Amenities",
+          "review": "Great property!!! Quiet area, great views, huge house, 7 minutes drive to the sky resort. This is not a high altitude place, thus, you can do other activities if you do not sky and those who suffer high altitude can have a great vacation as well. Combination of 1000 feet terrain and 5,000 if you want to do sky sports. Owner and manager very kind, always ready to help, good people."
+        },
+        {
+          "reviewer": "Margot M.",
+          "date": "Stayed 3 nights in Feb 2025",
+          "rating": { "scale": 10, "value": 10, "label": "Excellent" },
+          "title": "Stowe Spectacular",
+          "review": "We were fortunate enough to stay at this magnificent estate for a long weekend. The house is impeccably clean and well cared for. We arrived to a well lit and warm home. The host left wine, snacks and flowers on the kitchen counter. They even put little boxes of chocolate on every bed. The kitchen is well appointed for those who like to cook. The great room is beautiful and a lovely spot to relax after skiing. The sauna, hot tub and game room are outstanding. The beds are exceptionally comfortable as well. The host is a lovely and genuinely kind person. He works very hard to provide an exceptional experience for his guests. We would have liked to stay longer. There are many more amenities to enjoy. Five star hosts and five star house. Highly recommend and would love to return."
+        },
+        {
+          "reviewer": "Susan C. W.",
+          "date": "Stayed 7 nights in Jul 2023",
+          "rating": { "scale": 10, "value": 10, "label": "Excellent" },
+          "title": "Exceptionally Beautiful Home and Property",
+          "review": "Perfect house for a large family or group. Plenty of space for everyone to hang out together or have some privacy. Very clean and in perfect order. If you have to work, there is a large quiet office. My grandkids ages 4 to 14 and adults 😀enjoyed the air hockey table, pool table and a closet full of toys and games. Kitchen is well equipment with everything you need. We cooked and grilled a few nights. The pool and hot tubs were fantastic with beautiful views of the Mountains and Gardens. We had some tennis players in our group too, courts were an extra bonus to have on the property. I enjoyed walking the property and looking at the ponds and all the different plants and flowers in the Gardens. House is in a great location just a very short drive to Stowe, waterfalls, swimming holes etc. Hiking trailhead on the property too. The owner was available anytime to answer any questions we had. I highly recommend this house. Beautifully set on 30 acres with views of Mountains and the most awesome sunsets! Our stay was enjoyed by everyone. Hated to leave. Thank you for sharing your beautiful home."
+        },
+        {
+          "reviewer": "Bob H.",
+          "date": "Stayed 4 nights in Sep 2022",
+          "rating": { "scale": 10, "value": 10, "label": "Excellent" },
+          "title": "Expansive Estate with Wildlife and a Thoughtful Host",
+          "review": "Fabulous Stowe estate! My family had a tremendous stay at Eden - it's a gorgeous house and estate with plenty of room to explore - both inside and out! The wildlife is amazing as well. The host was very friendly - everything was easy to arrange. A very delightful stay!!"
+        },
+        {
+          "reviewer": "Jacob D.",
+          "date": "Stayed 7 nights in Jul 2022",
+          "rating": { "scale": 10, "value": 10, "label": "Excellent" },
+          "title": "Perfect Home Base for an Extended Family Gathering",
+          "review": "Stowe Trip. Perfect location and housing for my extended family of 11 total. A great space to lounge, work, play with ample amenities. Communication was easy and frequent about all needs while on property. Would most definitely return."
+        },
+        {
+          "reviewer": "Nazzic K.",
+          "date": "Stayed 7 nights in Dec 2021",
+          "rating": { "scale": 10, "value": 10, "label": "Excellent" },
+          "title": "A Christmas to Remember",
+          "review": "We stayed at this incredible property over the Christmas holiday….it was truly magical. From the early planning communications with the property manager to the time we had to leave, the experience was flawless and exceeded our expectations. The home itself is an amazing property - it is a unique combination of the luxury, amenities and benefits of a 5-star resort with the intimacy and privacy that comes with renting a vacation home….no detail was overlooked. The property owners went above and beyond to make our Christmas truly special and one we will forever remember. We will absolutely be back!"
+        },
+        {
+          "reviewer": "Alison M.",
+          "date": "Stayed 6 nights in Nov 2021",
+          "rating": { "scale": 10, "value": 10, "label": "Excellent" },
+          "title": "Holiday Haven Tailored for Every Generation",
+          "review": "Thanksgiving paradise! My family and I (7 adults and 7 kids) stayed at Eden for Thanksgiving week. WE had a blast; There was something for everyone from babies to adults. The house was beautiful and had everything we needed for a great week. The bedroom set ups gave everyone privacy and were very comfortable. The owners were very accessible and friendly. A great property."
+        },
+        {
+          "reviewer": "Fay K.",
+          "date": "Stayed 7 nights in Aug 2020",
+          "rating": { "scale": 10, "value": 10, "label": "Excellent" },
+          "title": "Garden-Filled Retreat Packed with Luxury Touches",
+          "review": "A magical Stowe Custom Home and wonderland. From the moment we arrived, we were completely enchanted. The beautiful gardens, and ponds frame this amazing custom home, with a Magical view of Mt. Mansfield. Everything you would need to relax and enjoy your vacation is on hand. A beautiful heated pool and spa, Clay tennis court, ponds to wade in among acres of lush gardens, and a BBQ to grill your gourmet meals. In the home which is fully furnished to detail, you have a pool table, foosball table, air hockey table, and numerous large screen TV's, a lots of Games. The owner manager is a delight to deal with. Accommodating and courteous, easy to reach and eager to please. A Real Five Star Place to visit."
+        },
+        {
+          "reviewer": "Howard K.",
+          "date": "Stayed 14 nights in Jul 2020",
+          "rating": { "scale": 10, "value": 10, "label": "Excellent" },
+          "title": "Private Resort Experience with Around-the-Clock Care",
+          "review": "Little slice of heaven. My family (wife, three kids ages 9, 7 and 6 months, mom and nanny) just spent two weeks at this beautiful property and had an amazing time. The grounds are amazing and have everything a large resort would have, just here its all for yourselves. The house itself was just the same. Had everything anyone in your family could ever need. Finally, when things aren't perfect, the owners are there for you at all times of the day and night to get whatever issues there are resolved. Book this property and enjoy as much as we did."
+        },
+        {
+          "reviewer": "Joe M.",
+          "date": "Stayed 14 nights in Jul 2020",
+          "rating": { "scale": 10, "value": 10, "label": "Excellent" },
+          "title": "Secluded Yet Central Estate Ideal for Long Stays",
+          "review": "Absolutely Amazing. The Lemelson’s have created a truly amazing experience at Eden in Stowe. Our family stayed 3 weeks and we enjoyed everyday. Location is perfect and central to everything yet the property is super private. The house has everything you could ever want or need with more than enough space for large groups. Tennis court, pool, and fireplace on the 3 season porch were enjoyed by us everyday. I would highly recommend this property to the discerning high end renter."
+        },
+        {
+          "reviewer": "Abhay J.",
+          "date": "Stayed 5 nights in Jun 2020",
+          "rating": { "scale": 10, "value": 10, "label": "Excellent" },
+          "title": "Spacious Retreat for Multi-Family Celebrations",
+          "review": "Paradise in Stowe Vermont. We stayed at this house over the July 4th week. We were 3 families in total. The house was spacious enough to accommodate all 14 of us very comfortably and then some. The house and the grounds were meticulously kept. We all enjoyed the pool, hot tub, and tennis court. None of us wanted to leave. It was like being in paradise. The host was gracious and attended to all our needs immediately. I highly recommend this property to everyone. It was perfect. 5 stars isn’t enough. We will definitely be coming back again soon."
+        },
+        {
+          "reviewer": "Lori F.",
+          "date": "Stayed 9 nights in Jun 2020",
+          "rating": { "scale": 10, "value": 10, "label": "Excellent" },
+          "title": "Beautifully Maintained Estate with Endless Activities",
+          "review": "Beautiful home and property! We stayed at the property with our family and had an amazing time. The house is great for a large group--plenty of space to spread out. We not only enjoyed the pool and tennis but the game room downstairs provided entertainment for everyone. The grounds are exceptionally beautiful! The owner was extremely accommodating and responded quickly to all our questions. Excellent overall experience--we would definitely return again!"
+        }
+      ]
+    },
+    "The_Knot": {
+      "total": 10,
+      "reviews": [
+        {
+          "reviewer": "Elaine G.",
+          "date": "Dec 10, 2024",
+          "rating": { "scale": 5, "value": 5 },
+          "title": "Paradise in Stowe VT",
+          "review": "We had the pleasure of staying at The Eden and it was better than we expected. Not only is the home large for lots of guests, perfectly furnished but they have thought of everything that could make it a magical stay. This is the cleanest, well appointed home we have rented. Communication was great and you can tell they care deeply about providing a great experience. 10/10 recommend!"
+        },
+        {
+          "reviewer": "John A.",
+          "date": "Sep 30, 2024",
+          "rating": { "scale": 5, "value": 5 },
+          "title": "Amazing Property",
+          "review": "My daughter and her wedding party recently stayed at Eden - The Lemelson Estate, in Stowe, Vermont. The property boasts a secluded setting with beautiful views and yet is close to all Stowe has to offer. The estate is immaculate and luxurious with every amenity (and more) that one would expect in such a fine setting. The host ensured everything was perfect for the stay, and provided an excellent overall experience with timely communications. Eden is an ideal spot for weddings, family reunions, or just an amazing place to stay and soak up the beauty of Vermont in pampered luxury!"
+        },
+        {
+          "reviewer": "Renata G.",
+          "date": "Sep 21, 2024",
+          "rating": { "scale": 5, "value": 5 },
+          "title": "Heaven on Earth!",
+          "review": "Simply put, this place is magical✨️ From the picturesque views, the immaculate property, and the perfect amount of seclusion, this estate is more than we could have hoped for… This luxury home offers spacious bedrooms and sprawling commons areas perfect for large family gatherings. Plenty of activities both indoors and outdoors to keep everyone entertained. Proximity to the village and the mountains allowed us to explore all this area has to offer with ease. Thank you to our gracious and attentive hosts. Their hospitality is second to none. This is a place we will be visiting again with our family!"
+        },
+        {
+          "reviewer": "Tiffany M.",
+          "date": "Sep 16, 2024",
+          "rating": { "scale": 5, "value": 5 },
+          "title": "Magnificent Estate",
+          "review": "I have worked for the Lemelson group for several years. The owners are incredible people to work for and place an uncompromising focus on delighting guests. As far as the property itself, the Lemelson estate is magnificent."
+        },
+        {
+          "reviewer": "John B.",
+          "date": "Sep 11, 2024",
+          "rating": { "scale": 5, "value": 5 },
+          "title": "Classy, Unique Venue",
+          "review": "What an experience awaits you at Eden! If you are looking for a classy yet unique venue, this is it. The accommodations, grounds, and staff are second to none. I can’t recommend it enough."
+        },
+        {
+          "reviewer": "John R.",
+          "date": "Sep 11, 2024",
+          "rating": { "scale": 5, "value": 5 },
+          "title": "Peaceful Vermont Getaway",
+          "review": "Beautiful property. The hosts were quite attentive and ensured our stay was excellent. Very peaceful in the mountains of Vermont."
+        },
+        {
+          "reviewer": "Jessica S. (Stowe local)",
+          "date": "Sep 10, 2024",
+          "rating": { "scale": 5, "value": 5 },
+          "title": "Top-Notch Stowe Rental",
+          "review": "Eden - The Lemelson Estate is an absolutely gorgeous property nestled in the mountains of the wonderful town of Stowe, Vt. The homeowners and all their property management staff are lovely and delightfully accommodating. I have worked for the Lemelson estate off and on for years when my schedule allows and they are a lovely family. The property is handled with care and precision. Anytime they need my help I’m happy to assist. Easy to work with and always a positive experience :) The house is a great size for multiple families or small groups as it has the apartment and upstairs wing which both have their own privacy. Overall I’d say everything about this rental is five star top notch, and with a Vermont feel … meaning perfection, but simpler. Love all around."
+        },
+        {
+          "reviewer": "Bailey K.",
+          "date": "Sep 10, 2024",
+          "rating": { "scale": 5, "value": 5 },
+          "title": "Perfect Event Venue",
+          "review": "The owners of this estate care so deeply about the property, and make the renting experience smooth, and the staff make it really feel like home to anyone who stays, no matter the occasion! This is the perfect place to hold your next event, and the most beautiful place for the photos!"
+        },
+        {
+          "reviewer": "Seanna C.",
+          "date": "Sep 8, 2024",
+          "rating": { "scale": 5, "value": 5 },
+          "title": "Winter Wedding Bliss",
+          "review": "Wonderful experience having our wedding at Eden. From our first moments of inquiry, we had fast responses, plenty of helpful suggestions, and were accommodated for all our needs. The main bedroom was a wonderful bridal suite, with plenty of mirrors and sitting space. All the bedrooms were utilized for our families to stay in—no need for hiring Uber or transportation. The chef created a family style dinner that suited us and all our dietary needs. The steam shower and sauna were a wonderful way to relax in the chill of a late February snow storm. The playroom was fun for the groomsmen to enjoy while “getting ready”, playing foosball and pool. We had our ceremony in the great room with the fireplace roaring—a fiery love story. We adore Stowe and are so happy to have such fond memories of our wedding in the heart of Stowe at the Eden Estate. We regret not having a Clydesdale horse ride across the street—didn’t have enough time but that would’ve been the perfect extra touch that staff had suggested we do for a fun activity. Throughout our short planning (about 6 weeks from start to wedding day) staff was extremely helpful and responsive, had a welcoming basket ready, extra linens and were able to set up an extra bed for us. We were warm all weekend using all the fireplaces with plenty of wood already stored for us. Would suggest Eden for your wedding, small or big."
+        },
+        {
+          "reviewer": "Vadim S.",
+          "date": "Sep 7, 2024",
+          "rating": { "scale": 5, "value": 5 },
+          "title": "Hard to Describe in One Word!!",
+          "review": "From the moment we ascended the winding road leading to the mansion, we knew we were in for a treat. The grandeur of the estate took our breath away, with its stately architecture and panoramic views of Vermont’s rolling hills. The interior of the mansion was equally impressive, with spacious rooms that elegantly combined modern amenities with rustic charm. Each bedroom was a haven of comfort, offering serene mountain views to wake up to every morning. The grounds were a delight to explore, with well-maintained gardens and pathways that invited leisurely strolls. The highlight was the outdoor hot tub, where we soaked under the stars, enveloped by the tranquil sounds of nature. Our hosts were the epitome of hospitality, ensuring our stay was comfortable and memorable. They provided excellent recommendations for local hikes and dining options that enhanced our experience. This mansion is the perfect escape for anyone looking to immerse themselves in luxury and the beauty of Vermont’s mountains. It’s an ideal spot for family reunions, corporate retreats, or simply a lavish getaway. We left feeling rejuvenated and are already planning our return to this mountain paradise. If you’re looking for a place that offers both elegance and adventure, this is certainly the destination to consider."
+        }
+      ]
+    },
+    "Zola": {
+      "total": 1,
+      "reviews": [
+        {
+          "reviewer": "Jeff A.",
+          "date": "Apr 1, 2025",
+          "rating": { "scale": 5, "value": 5 },
+          "title": "Perfect Wedding Venue for Lodging & Photos",
+          "review": "Eden - The Lemelson Estate was the perfect venue for lodging and photography for our daughter's wedding. From the moment we reached out, the communication was effective, timely, and accurate. The venue itself was spacious and beautiful, with a stunning grand staircase, opulent rooms and gorgeous grounds providing the ideal backdrop for wedding photos. The estate was incredibly convenient for the wedding party, and the close proximity to nearby amenities made the entire stay seamless. We could not have asked for a more perfect experience. Although their wedding ceremony was held elsewhere, we highly recommend the Lemelson Estate with its spacious interior and extensive well-tended grounds for a wedding ceremony as well as lodging and wedding photography."
+        }
+      ]
+    },
+    "Wedding_Wire": {
+      "note": "Deduplicated against The Knot to avoid cross-platform repeats with identical content.",
+      "total": 2,
+      "reviews": [
+        {
+          "reviewer": "Seanna",
+          "date": "Sep 30, 2024",
+          "rating": { "scale": 5, "value": 5 },
+          "title": "Small Winter Wedding at Eden",
+          "review": "We had our immediate family all stay at Eden in February 2023. It was wonderful to have everyone stay under one roof. We had a chef prepare a beautiful custom meal for us and a bartender to serve our custom cocktails. Staff at Eden were prompt and responsive and included a few special things upon arrival to make us feel welcome. We could not recommend Eden more, fantastic experience catered to us!"
+        },
+        {
+          "reviewer": "John",
+          "date": "Sep 11, 2024",
+          "rating": { "scale": 5, "value": 5 },
+          "title": "The Ultimate New England Experience",
+          "review": "I have had the privilege of traveling extensively and have seen first hand some incredible properties but Eden is in a league of its own. Tremendous attention to detail and all aspects of a grand hospitality experience are on display here. This venue will not disappoint."
+        }
+      ]
+    }
+  },
+  "totals": {
+    "Airbnb": 11,
+    "VRBO_Expedia": 19,
+    "The_Knot": 10,
+    "Zola": 1,
+    "Wedding_Wire": 2,
+    "overall": 43
+  },
+  "ai_summary": {
+    "note": "AI-generated summary",
+    "text": "Eden – The Lemelson Estate in Stowe, Vermont, consistently exceeds guest expectations as a luxurious, well-appointed private retreat ideal for family gatherings, weddings, group getaways, and corporate retreats. Guests describe the home as spacious, immaculate, and thoughtfully designed with a balance of elegance and comfort. The estate offers resort-level amenities—including a heated pool, hot tub, sauna, steam room, tennis court, extensive game room, and lush, walkable grounds—set against the backdrop of Vermont’s breathtaking mountain views. Reviewers highlight the seamless hospitality experience, with owners and staff frequently praised for their warmth, attentiveness, and proactive communication. Guests note the home's versatility for both celebration and relaxation, with amenities catering to all ages, from board games and sleds for kids to private chef dinners and spa services for adults. Its close proximity to ski resorts, hiking, and downtown Stowe complements its peaceful seclusion, creating a rare combination of accessibility and escape. Nearly every review ends with a common sentiment: no one wants to leave—and most plan to return.",
+    "total_reviews": 43
+  }
+}
