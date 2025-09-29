@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { PerfectReviewsBadge } from "@/components/TestimonialCarousel";
 import type { NormalizedReview } from "@/types/reviews";
 
 type NormalizedPayload = {
@@ -107,12 +108,28 @@ function ReviewCard({ r }: { r: NormalizedReview }) {
 
 export default function ReviewsClient({ normalized }: { normalized: NormalizedPayload }) {
   const [platform, setPlatform] = useState<string>("All");
+  const [summaryOpen, setSummaryOpen] = useState(false);
 
   const items = useMemo(() => {
     const all = normalized.items;
     if (platform === "All") return all;
     return all.filter((i) => i.platform === platform);
   }, [normalized.items, platform]);
+
+  const perfectRating = useMemo(() => {
+    const rated = normalized.items.filter((review) => review.rating);
+    if (rated.length === 0) return null;
+
+    const allPerfect = rated.every((review) => {
+      if (!review.rating) return false;
+      const normalizedValue = (review.rating.value / review.rating.scale) * 5;
+      return Math.abs(normalizedValue - 5) < 0.01;
+    });
+
+    if (!allPerfect) return null;
+
+    return { count: rated.length };
+  }, [normalized.items]);
 
   const countsByPlatform = useMemo(() => {
     const map = new Map<string, number>();
@@ -123,24 +140,19 @@ export default function ReviewsClient({ normalized }: { normalized: NormalizedPa
 
   return (
     <div className="space-y-6">
-      {/* Summary */}
-      <section className="rounded-3xl border border-[#d2c4a3]/60 bg-gradient-to-b from-[#fdfbf7]/95 via-[#f8f3ea]/90 to-[#f2e8da]/85 p-4 shadow-[0_25px_60px_-20px_rgba(30,30,40,0.35)]">
-        <div className="flex items-start gap-3">
-          <div className="mt-0.5 flex h-9 w-9 flex-none items-center justify-center rounded-xl bg-gradient-to-b from-[#c2a060] to-[#8f7845] text-white">
-            <SparkleIcon className="h-5 w-5" />
-          </div>
-          <div className="min-w-0">
-            <h2 className="text-base font-semibold text-stone-900">Guest reviews at Eden</h2>
-            {normalized.summary.note ? (
-              <p className="text-xs uppercase tracking-[0.22em] text-stone-500">{normalized.summary.note}</p>
-            ) : null}
-            <p className="mt-2 text-sm text-stone-700">{normalized.summary.text}</p>
-            <p className="mt-2 text-[0.75rem] uppercase tracking-[0.2em] text-stone-500">
-              {normalized.summary.total ?? items.length} total reviews
-            </p>
-          </div>
+      {perfectRating ? (
+        <div className="flex justify-center">
+          <PerfectReviewsBadge
+            reviewCount={perfectRating.count}
+            countLabel={perfectRating.count === 1 ? "review" : "reviews"}
+          />
         </div>
-      </section>
+      ) : null}
+
+      {/* Summary hidden for now - retained for potential future use */}
+      {/* <section className="rounded-3xl border border-[#d2c4a3]/60 bg-gradient-to-b from-[#fdfbf7]/95 via-[#f8f3ea]/90 to-[#f2e8da]/85 p-4 shadow-[0_25px_60px_-20px_rgba(30,30,40,0.35)]">
+        ...
+      </section> */}
 
       {/* Filter */}
       <section className="flex items-center justify-between gap-3">

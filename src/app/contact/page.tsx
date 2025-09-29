@@ -19,7 +19,7 @@ export default function ContactPage() {
             Plan Your Stay
           </h1>
           <p className="mt-4 text-base text-stone-700">
-            Planning a family gathering, wedding, or retreat? Tell us your dates, guest count, and wishlist—our team will curate an effortless, five-star stay.
+            Planning a family gathering, wedding, or retreat? Tell us your dates, guest count, and plans—our team will work with you to curate an effortless, five-star stay.
           </p>
         </div>
       </section>
@@ -30,43 +30,27 @@ export default function ContactPage() {
           {/* Contact methods */}
           <div className="rounded-[2.5rem] border border-[rgba(214,202,183,0.85)] bg-gradient-to-br from-white via-[rgba(237,227,208,0.75)] to-[rgba(225,212,186,0.55)] p-5 shadow-[0_28px_60px_-38px_rgba(58,45,20,0.45)] sm:p-8">
             <p className="text-[0.68rem] uppercase tracking-[0.4em] text-stone-500 sm:text-xs">Reach Us</p>
-            <div className="mt-4 grid gap-3 sm:mt-5 sm:grid-cols-2 sm:gap-4">
-              <a
-                href="tel:+15085969338"
-                className="group relative flex flex-col gap-3 overflow-hidden rounded-[28px] border border-white/70 bg-white/80 p-4 shadow-[0_24px_50px_-40px_rgba(58,45,20,0.55)] backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_28px_60px_-38px_rgba(58,45,20,0.6)] sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:rounded-[32px] sm:px-6 sm:py-6"
-                aria-label="Call +1 (508) 596-9338"
-              >
-                <span className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/75 via-transparent to-[rgba(232,218,192,0.6)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" aria-hidden />
-                <div className="relative flex items-start gap-3 sm:items-center sm:gap-4">
-                  <span className="flex h-11 w-11 items-center justify-center rounded-full bg-[rgba(214,202,183,0.32)] text-[var(--color-gold)] shadow-inner shadow-white/40 sm:h-12 sm:w-12">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-4.5 w-4.5 sm:h-5 sm:w-5"><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h1.5a1.5 1.5 0 001.5-1.5v-2.1a1.5 1.5 0 00-1.228-1.478l-3.036-.506a1.5 1.5 0 00-1.266.37l-.93.83a12.04 12.04 0 01-5.4-5.4l.83-.93a1.5 1.5 0 00.37-1.266l-.506-3.036A1.5 1.5 0 007.35 3.75H5.25A1.5 1.5 0 003.75 5.25v1.5z"/></svg>
-                  </span>
-                  <div className="space-y-1.5">
-                    <p className="text-[0.62rem] uppercase tracking-[0.42em] text-[var(--color-gold)] sm:text-[0.68rem]">Phone</p>
-                    <p className="text-lg font-semibold text-[var(--color-charcoal)] sm:text-[1.4rem]">+1 (508) 596-9338</p>
-                  </div>
-                </div>
-                <span className="relative ml-auto flex h-9 w-9 items-center justify-center rounded-full border border-white/70 bg-white/85 text-[var(--color-charcoal)] transition duration-300 group-hover:bg-[var(--color-charcoal)] group-hover:text-white sm:h-10 sm:w-10">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-4 w-4"><path strokeLinecap="round" strokeLinejoin="round" d="M6 12h12M12 6l6 6-6 6"/></svg>
-                </span>
-              </a>
-
+            <div className="mt-4 flex justify-center sm:mt-5">
               <a
                 href="mailto:admin@lemelsoncapital.com"
-                className="group relative flex flex-col gap-3 overflow-hidden rounded-[28px] border border-white/70 bg-white/80 p-4 shadow-[0_24px_50px_-40px_rgba(58,45,20,0.55)] backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_28px_60px_-38px_rgba(58,45,20,0.6)] sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:rounded-[32px] sm:px-6 sm:py-6"
+                className="group relative flex w-full max-w-[28rem] items-center gap-4 overflow-hidden rounded-[28px] border border-white/70 bg-white/80 px-4 py-4 shadow-[0_24px_50px_-40px_rgba(58,45,20,0.55)] backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_28px_60px_-38px_rgba(58,45,20,0.6)] sm:gap-5 sm:rounded-[32px] sm:px-6 sm:py-5"
                 aria-label="Email admin@lemelsoncapital.com"
               >
                 <span className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/75 via-transparent to-[rgba(232,218,192,0.6)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" aria-hidden />
-                <div className="relative flex items-start gap-3 sm:items-center sm:gap-4">
-                  <span className="flex h-11 w-11 items-center justify-center rounded-full bg-[rgba(214,202,183,0.32)] text-[var(--color-gold)] shadow-inner shadow-white/40 sm:h-12 sm:w-12">
+                <div className="relative flex flex-1 items-center gap-3">
+                  <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[rgba(214,202,183,0.32)] text-[var(--color-gold)] shadow-inner shadow-white/40 sm:h-11 sm:w-11">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-4.5 w-4.5 sm:h-5 sm:w-5"><path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5H4.5A2.25 2.25 0 002.25 6.75m19.5 0v.243a2.25 2.25 0 01-1.03 1.9l-6.75 4.218a2.25 2.25 0 01-2.34 0L4.5 8.893a2.25 2.25 0 01-1.03-1.9V6.75"/></svg>
                   </span>
-                  <div className="space-y-1.5">
+                  <div className="space-y-1">
                     <p className="text-[0.62rem] uppercase tracking-[0.42em] text-[var(--color-gold)] sm:text-[0.68rem]">Email</p>
-                    <p className="text-lg font-semibold text-[var(--color-charcoal)] break-all sm:text-[1.4rem]">admin@lemelsoncapital.com</p>
+                    <p className="text-base font-semibold text-[var(--color-charcoal)] break-words sm:text-xl">
+                      <span className="inline-block max-w-full truncate align-middle sm:max-w-none">
+                        admin@lemelsoncapital.com
+                      </span>
+                    </p>
                   </div>
                 </div>
-                <span className="relative ml-auto flex h-9 w-9 items-center justify-center rounded-full border border-white/70 bg-white/85 text-[var(--color-charcoal)] transition duration-300 group-hover:bg-[var(--color-charcoal)] group-hover:text-white sm:h-10 sm:w-10">
+                <span className="relative ml-auto flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full border border-white/70 bg-white/85 text-[var(--color-charcoal)] transition duration-300 group-hover:bg-[var(--color-charcoal)] group-hover:text-white sm:h-10 sm:w-10">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-4 w-4"><path strokeLinecap="round" strokeLinejoin="round" d="M6 12h12M12 6l6 6-6 6"/></svg>
                 </span>
               </a>
@@ -169,30 +153,12 @@ export default function ContactPage() {
                   <img
                     src="/WeddingWire_idGDCwR69F_1.svg"
                     alt="WeddingWire"
-                    className="h-5 w-auto"
+                    className="h-4 w-auto sm:h-5"
                     width={90}
                     height={24}
-                    style={{ transform: "scale(1.35)", transformOrigin: "center" }}
+                    style={{ transform: "scale(1.2)", transformOrigin: "center" }}
                     loading="lazy"
                   />
-                </Link>
-              </div>
-            </div>
-
-            {/* Socials */}
-            <div className="mt-10">
-              <p className="text-xs uppercase tracking-[0.4em] text-stone-500">Follow us</p>
-              <div className="mt-4 flex flex-wrap items-center gap-3">
-                <Link href="https://www.facebook.com/p/Eden-The-Lemelson-Estate-100087154695200/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-[#1877F2] px-5 py-3 text-white shadow-lg shadow-black/10 transition-colors transition-transform duration-200 hover:-translate-y-0.5 hover:bg-[#2a86ff] sm:px-6" aria-label="Facebook">
-                  <img src="/Symbol.png" alt="Facebook" className="h-5 w-5" width={20} height={20} />
-                  <span className="text-sm font-medium text-white">Facebook</span>
-                </Link>
-                <Link href="https://www.instagram.com/the_lemelson_estate" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-3 text-stone-800 shadow-lg shadow-black/10 transition-colors transition-transform duration-200 hover:-translate-y-0.5 hover:bg-stone-100 sm:px-6" aria-label="Instagram">
-                  <img src="/Instagram_Symbol_1.png" alt="Instagram" className="h-5 w-5" width={20} height={20} />
-                  <span className="text-sm font-medium">Instagram</span>
-                </Link>
-                <Link href="https://x.com/LemelsonEstate" target="_blank" rel="noopener noreferrer" className="inline-flex items-center rounded-full bg-black px-4 py-3 text-white shadow-lg shadow-black/10 transition-colors transition-transform duration-200 hover:-translate-y-0.5 hover:bg-black/90 sm:px-5" aria-label="X (formerly Twitter)">
-                  <img src="/X_idVRwaKp9b_1.png" alt="X" className="h-5 w-5" width={20} height={20} />
                 </Link>
               </div>
             </div>

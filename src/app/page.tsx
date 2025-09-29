@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { HighlightsGrid } from "@/components/HighlightsGrid";
 import { SectionHeading } from "@/components/SectionHeading";
 import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 
@@ -9,85 +8,47 @@ const quickFacts = [
   { label: "Bathrooms", value: "8" },
   { label: "Interior", value: "11,400 sq ft" },
   { label: "Property", value: "28 acres" },
-  { label: "Amenities", value: "Pool, spa, tennis" },
+  { label: "Amenities", value: "Pool, spa, tennis, game room" },
   { label: "Style", value: "Luxury mountain estate" },
 ];
 
-const highlights = [
+const galleryPreview = [
   {
-    title: "Skyline Great Room",
-    subtitle: "Gather",
-    summary: "Floor-to-ceiling glass framing Mansfield sunsets.",
-    description:
-      "Vaulted ceilings, sculptural stone fireplace, and bespoke furnishings curated to host intimate conversations or grand celebrations beneath the mountains.",
-    image:
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
+    src: "/gallery/office/outdoor shots/70-020-estate-pool-mountain-backdrop.webp",
+    alt: "Estate pool with mountain backdrop",
   },
   {
-    title: "Thermal Sanctuary Spa",
-    subtitle: "Restore",
-    summary: "Private hydrotherapy suite with cedar sauna and cold plunge.",
-    description:
-      "Step into Eden’s thermal circuit featuring aromatherapy steam, contrast plunge pools, and a fireside relaxation lounge overlooking the forest canopy.",
-    image:
-      "https://images.unsplash.com/photo-1523419409543-0c1df022bdd1?auto=format&fit=crop&w=1200&q=80",
+    src: "/gallery/grounds/79-007-outdoor-tennis-court-view.webp",
+    alt: "Outdoor tennis court view",
   },
   {
-    title: "Chef’s Atelier",
-    subtitle: "Dine",
-    summary: "Dual-island kitchen designed for private culinary teams.",
-    description:
-      "Fully appointed with La Cornue range, marble prep stations, concealed butler’s pantry, and sommelier-level wine storage for curated pairings.",
-    image:
-      "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&w=1200&q=80",
+    src: "/gallery/office/great room/08-grand-living-room-fireplace.webp",
+    alt: "Grand living room with fireplace",
   },
   {
-    title: "Juniper Cinema",
-    subtitle: "Unwind",
-    summary: "14-seat Dolby Atmos theater with mohair lounges.",
-    description:
-      "Acoustically tuned walls, starlit ceiling installation, and curated film library for evenings that feel like a private premiere.",
-    image:
-      "https://images.unsplash.com/photo-1517602302552-471fe67acf66?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    title: "Courts & Trails",
-    subtitle: "Explore",
-    summary: "Tennis, pickleball, and private woodland hiking network.",
-    description:
-      "Morning matches on the sunlit Har-Tru court, followed by meandering forest trails dotted with sculptural installations and meditation alcoves.",
-    image:
-      "https://images.unsplash.com/photo-1498146831523-fbe41acdc5ad?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    title: "Summit Terrace",
-    subtitle: "Celebrate",
-    summary: "Heated limestone terrace for al fresco entertaining year-round.",
-    description:
-      "Panoramic views, retractable canopies, and an artisan-crafted bar create an elevated backdrop for soirées beneath the stars.",
-    image:
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80",
+    src: "/gallery/weddings/113-028-winter-wedding-snowy-backdrop.webp",
+    alt: "Winter wedding with snowy backdrop",
   },
 ];
 
 const testimonials = [
   {
     quote:
-      "Every sunrise felt choreographed. The attention to detail is beyond anything we have experienced in a private retreat.",
-    name: "Alexandra M.",
-    detail: "Luxury Travel Curator",
+      "Absolutely loved this place, worth every single penny…. Secluded, beautiful, fun, and spacious. The service was the best I’ve EVER experienced, nonstop communication, and instant responses.",
+    name: "Joshua",
+    detail: "Stayed Jul 2025, Group Trip",
   },
   {
     quote:
-      "Our executive retreat was effortless. The Eden team orchestrated everything—private chefs, heli-skiing, and après evenings by the fire.",
-    name: "Jonathan R.",
-    detail: "Founder, Lattice Partners",
+      "We were fortunate enough to stay at this magnificent estate for a long weekend. The house is impeccably clean and well cared for… Five star hosts and five star house. Highly recommend and would love to return.",
+    name: "Margot M.",
+    detail: "Stayed Feb 2025, VRBO Guest",
   },
   {
     quote:
-      "The spa wing rivaled five-star resorts. We left restored, inspired, and already planning our next visit.",
-    name: "Priya S.",
-    detail: "Wellness Entrepreneur",
+      "We had our wedding ceremony in the great room and enjoyed the weekend with our family. It was absolutely beautiful throughout the house and had so many perks and special amenities—we definitely felt like we were staying in a very luxurious place.",
+    name: "Seanna",
+    detail: "Winter Wedding, Feb 2023",
   },
 ];
 
@@ -308,14 +269,39 @@ export default function Home() {
       </section>
 
       <section className="lux-section bg-white/80 animate-fade-up fade-delay-2">
-        <div className="lux-container">
+        <div className="lux-container space-y-8">
           <SectionHeading
-            eyebrow="Experience"
-            title="Signature moments tailored to your stay"
-            description="Every space within Eden has been intentionally composed to balance serenity, indulgence, and connection."
+            eyebrow="Gallery"
+            title="A glimpse of Eden"
+            description="Your Private Vermont Resort"
           />
-          <div className="mt-12">
-            <HighlightsGrid items={highlights} />
+
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 sm:gap-5">
+            {galleryPreview.map((item) => (
+              <div
+                key={item.src}
+                className="group relative overflow-hidden rounded-3xl border border-white/70 bg-white/60 shadow-[0_24px_48px_-32px_rgba(58,45,20,0.55)]"
+              >
+                <div className="relative aspect-[4/5] w-full overflow-hidden">
+                  <Image
+                    src={item.src}
+                    alt={item.alt}
+                    fill
+                    sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="flex justify-center">
+            <Link
+              href="/gallery"
+              className="inline-flex items-center rounded-full border border-stone-300 bg-white px-7 py-2.5 text-xs font-semibold uppercase tracking-[0.4em] text-stone-800 transition hover:border-stone-400 hover:bg-white/80"
+            >
+              View More Photos
+            </Link>
           </div>
         </div>
       </section>
@@ -373,6 +359,14 @@ export default function Home() {
       <section className="lux-section bg-white/80 animate-fade-up">
         <div className="lux-container">
           <TestimonialCarousel testimonials={testimonials} />
+          <div className="mt-8 flex justify-center">
+            <Link
+              href="/reviews"
+              className="inline-flex items-center rounded-full border border-stone-300 bg-white px-7 py-2.5 text-xs font-semibold uppercase tracking-[0.4em] text-stone-800 transition hover:border-stone-400 hover:bg-white/80"
+            >
+              Read More Reviews
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -385,8 +379,7 @@ export default function Home() {
             Reserve Eden for your next gathering.
           </h2>
           <p className="mt-4 text-base text-stone-700 md:text-lg">
-            We craft bespoke itineraries for executive retreats, milestone
-            celebrations, and restorative wellness escapes.
+            Share your vision with us, and we'll work with you to craft an unforgettable experience that exceeds your expectations.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Link
@@ -399,7 +392,7 @@ export default function Home() {
               href="/gallery"
               className="inline-flex items-center gap-2 text-sm font-medium text-stone-700 transition hover:text-stone-900"
             >
-              Explore the Residence
+              Explore the Estate
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
