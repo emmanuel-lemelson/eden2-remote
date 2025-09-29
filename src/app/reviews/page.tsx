@@ -163,9 +163,11 @@ function normalizeData(data: ReviewsFile) {
     "AI-generated summary";
 
   const summaryTotal =
-    (typeof data.ai_summary === "object" && data.ai_summary?.total_reviews) ??
-    data.totals?.overall ??
-    items.length;
+    typeof data.ai_summary === "object" && data.ai_summary && typeof data.ai_summary.total_reviews === "number"
+      ? data.ai_summary.total_reviews
+      : typeof data.totals?.overall === "number"
+        ? data.totals.overall
+        : items.length;
 
   return {
     summary: {
