@@ -129,10 +129,10 @@ export default function Home() {
               className="inline-flex w-full items-center justify-center rounded-full bg-[#FF385C] px-5 py-3 shadow-lg shadow-black/10 transition-colors transition-transform duration-200 hover:-translate-y-0.5 hover:bg-[#FF4C6E] hover:shadow-xl sm:px-6"
               aria-label="View Eden on Airbnb"
             >
-              <img
+              <Image
                 src="/Airbnb_Logo_0.svg"
                 alt="Airbnb"
-                className="h-5"
+                className="h-5 w-auto"
                 width={60}
                 height={20}
                 style={{ transform: "scale(1.15)", transformOrigin: "center" }}
@@ -146,10 +146,10 @@ export default function Home() {
               className="inline-flex w-full items-center justify-center rounded-full bg-white px-5 py-3 shadow-lg shadow-black/10 transition-colors transition-transform duration-200 hover:-translate-y-0.5 hover:bg-stone-100 hover:shadow-xl sm:px-6"
               aria-label="View Eden on Vrbo"
             >
-              <img
+              <Image
                 src="/Vrbo_idJM8XKT4-_1.svg"
                 alt="Vrbo"
-                className="h-5"
+                className="h-5 w-auto"
                 width={60}
                 height={20}
                 style={{ transform: "scale(1.15)", transformOrigin: "center" }}
@@ -163,7 +163,7 @@ export default function Home() {
               className="inline-flex w-full items-center justify-center rounded-full bg-[#141D38] px-5 py-3 shadow-lg shadow-black/10 transition-colors transition-transform duration-200 hover:-translate-y-0.5 hover:bg-[#1D2A52] hover:shadow-xl sm:px-6"
               aria-label="View Eden on Expedia"
             >
-              <img
+              <Image
                 src="/Expedia_Logo_1.png"
                 alt="Expedia"
                 className="h-5 w-auto"
@@ -179,7 +179,7 @@ export default function Home() {
               className="inline-flex w-full items-center justify-center rounded-full bg-[#FF44CB] px-5 py-3 shadow-lg shadow-black/10 transition-colors transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-xl sm:px-6"
               aria-label="View Eden on The Knot"
             >
-              <img
+              <Image
                 src="/idzSo3ACCf_logos.jpeg"
                 alt="The Knot"
                 className="h-5 w-5 rounded-md object-cover"
@@ -196,7 +196,7 @@ export default function Home() {
               className="inline-flex w-full items-center justify-center rounded-full border border-white bg-white px-5 py-3 shadow-lg shadow-black/10 transition-colors transition-transform duration-200 hover:-translate-y-0.5 hover:border-white/80 hover:shadow-xl sm:px-6"
               aria-label="View Eden on Zola"
             >
-              <img
+              <Image
                 src="/id56oBQafI_1758992156050.png"
                 alt="Zola"
                 className="h-6 w-auto"
@@ -212,7 +212,7 @@ export default function Home() {
               className="inline-flex w-full items-center justify-center rounded-full border border-white bg-white px-5 py-3 shadow-lg shadow-black/10 transition-colors transition-transform duration-200 hover:-translate-y-0.5 hover:bg-[#F3FBFB] hover:shadow-xl justify-self-center sm:justify-self-auto sm:px-6"
               aria-label="View Eden on WeddingWire"
             >
-              <img
+              <Image
                 src="/WeddingWire_idGDCwR69F_1.svg"
                 alt="WeddingWire"
                 className="h-5 w-auto"
@@ -329,7 +329,7 @@ export default function Home() {
             Reserve Eden for your next gathering.
           </h2>
           <p className="mt-4 text-base text-stone-700 md:text-lg">
-            Share your vision with us, and we'll work with you to craft an unforgettable experience that exceeds your expectations.
+            Share your vision with us, and we&apos;ll work with you to craft an unforgettable experience that exceeds your expectations.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Link

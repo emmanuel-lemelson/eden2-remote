@@ -1,13 +1,17 @@
+import Image from "next/image";
+
 export function Footer() {
   return (
     <footer className="border-t border-white/30 bg-white/70">
       <div className="lux-container flex flex-col gap-4 py-4 md:flex-row md:items-start md:justify-between md:gap-5 md:py-5">
         <div className="flex flex-col items-center gap-2 text-center md:items-start md:text-left">
-          <img
+          <Image
             src="/The Lemelson Estate (1).png"
             alt="Eden Estate wordmark"
             className="h-20 w-auto md:h-28 object-contain transform origin-center scale-[1.7] md:scale-[1.5]"
             loading="lazy"
+            width={280}
+            height={112}
           />
         </div>
 
@@ -32,7 +36,7 @@ export function Footer() {
               className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1877F2] text-white transition hover:bg-[#2a86ff]"
               aria-label="Facebook"
             >
-              <img src="/Symbol.png" alt="Facebook" className="h-4 w-4" width={16} height={16} />
+              <Image src="/Symbol.png" alt="Facebook" className="h-4 w-4" width={16} height={16} />
             </a>
             <a
               href="https://www.instagram.com/the_lemelson_estate"
@@ -41,7 +45,7 @@ export function Footer() {
               className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-stone-800 shadow-sm transition hover:bg-stone-100"
               aria-label="Instagram"
             >
-              <img src="/Instagram_Symbol_1.png" alt="Instagram" className="h-4 w-4" width={16} height={16} />
+              <Image src="/Instagram_Symbol_1.png" alt="Instagram" className="h-4 w-4" width={16} height={16} />
             </a>
             <a
               href="https://x.com/LemelsonEstate"
@@ -50,7 +54,7 @@ export function Footer() {
               className="flex h-10 w-10 items-center justify-center rounded-full bg-black text-white transition hover:bg-black/90"
               aria-label="X (formerly Twitter)"
             >
-              <img src="/X_idVRwaKp9b_1.png" alt="X" className="h-4 w-4" width={16} height={16} />
+              <Image src="/X_idVRwaKp9b_1.png" alt="X" className="h-4 w-4" width={16} height={16} />
             </a>
           </div>
         </div>

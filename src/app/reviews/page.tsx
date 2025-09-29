@@ -101,18 +101,19 @@ function extractDateInfo(raw?: string) {
   };
 }
 
-function normalizeRating(raw: any | undefined): Rating | undefined {
+function normalizeRating(raw: unknown | undefined): Rating | undefined {
   if (!raw) return undefined;
-  if (typeof raw === "object") {
-    const scale = typeof raw.scale === "number" ? raw.scale : (typeof raw.value === "number" && raw.value <= 5 ? 5 : 10);
-    const value = typeof raw.value === "number" ? raw.value : (typeof raw === "number" ? raw : 0);
-    const label = typeof raw.label === "string" ? raw.label : undefined;
-    return { scale, value, label };
-  }
   if (typeof raw === "number") {
     const val = raw;
     const scale = val <= 5 ? 5 : 10;
     return { scale, value: val };
+  }
+  if (typeof raw === "object" && raw !== null) {
+    const obj = raw as { scale?: unknown; value?: unknown; label?: unknown };
+    const value = typeof obj.value === "number" ? obj.value : 0;
+    const scale = typeof obj.scale === "number" ? obj.scale : (value <= 5 ? 5 : 10);
+    const label = typeof obj.label === "string" ? obj.label : undefined;
+    return { scale, value, label };
   }
   return undefined;
 }

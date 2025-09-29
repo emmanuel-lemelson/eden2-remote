@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 type Highlight = {
   title: string;
@@ -110,11 +111,13 @@ export function HighlightsGrid({ items }: HighlightsGridProps) {
                 </p>
               </div>
               <div className="relative h-64 md:h-full">
-                <img
+                <Image
                   src={items[activeIndex].image}
                   alt={items[activeIndex].title}
                   className="h-full w-full object-cover"
                   loading="lazy"
+                  fill
+                  sizes="(min-width: 768px) 50vw, 100vw"
                 />
               </div>
             </div>

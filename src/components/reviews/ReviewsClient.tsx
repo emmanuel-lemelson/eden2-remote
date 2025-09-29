@@ -10,13 +10,7 @@ type NormalizedPayload = {
   items: NormalizedReview[];
 };
 
-function SparkleIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
-      <path d="M12 2.5l1.9 5.2a3 3 0 001.8 1.8L21 11l-5.3 1.5a3 3 0 00-1.8 1.8L12 20.5l-1.9-5.2a3 3 0 00-1.8-1.8L3 11l5.3-1.5a3 3 0 001.8-1.8L12 2.5z" />
-    </svg>
-  );
-}
+// Removed unused SparkleIcon
 
 function StarIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
@@ -108,7 +102,7 @@ function ReviewCard({ r }: { r: NormalizedReview }) {
 
 export default function ReviewsClient({ normalized }: { normalized: NormalizedPayload }) {
   const [platform, setPlatform] = useState<string>("All");
-  const [summaryOpen, setSummaryOpen] = useState(false);
+  // Removed unused summaryOpen state
 
   const items = useMemo(() => {
     const all = normalized.items;

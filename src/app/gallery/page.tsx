@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 
 import { SectionHeading } from "@/components/SectionHeading";
+import Image from "next/image";
 
 type GalleryImage = {
   src: string;
@@ -202,11 +203,13 @@ export default function GalleryPage() {
                     key={image.src}
                     className="mb-4 break-inside-avoid overflow-hidden rounded-3xl border border-white/60 bg-white/70 shadow-sm transition hover:-translate-y-1 hover:shadow-2xl"
                   >
-                    <img
+                    <Image
                       src={image.src}
                       alt={image.alt}
                       className="w-full object-cover"
                       loading="lazy"
+                      width={1200}
+                      height={800}
                     />
                     <figcaption className="px-6 pb-6 pt-4 text-sm text-stone-600">
                       {image.alt}
