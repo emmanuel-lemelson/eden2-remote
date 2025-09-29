@@ -61,49 +61,44 @@ const gallerySectionConfig: Array<Omit<GallerySection, "images">> = [
   {
     title: "Grounds & Gardens",
     description:
-      "Vast lawns, reflective ponds, and curated floral moments across the property grounds.",
+      "Rolling lawns, spring-fed ponds, and lovingly tended gardens surrounding the estate.",
     directory: "grounds",
   },
   {
     title: "Activities & Seasonal Moments",
     description:
-      "Outdoor adventures and fireside gatherings that showcase the estate through every season.",
+      "From snowy sledding to summer evenings by the fire.",
     directory: path.join("grounds", "activities"),
   },
   {
-    title: "Great Room & Entertaining",
-    description:
-      "Grand entertaining spaces, bar moments, and the sweeping staircases that anchor the home.",
+    title: "Great Room",
+    description: "Gathering spaces with soaring ceilings.",
     directory: path.join("office", "great room"),
   },
   {
     title: "Library Study",
-    description:
-      "Leather-bound shelves and a refined workspace for private meetings or reading.",
+    description: "A workspace for private meetings or reading.",
     directory: path.join("office", "library room"),
   },
   {
     title: "Sun Room",
-    description:
-      "Bright, glass-wrapped lounges with wicker textures and lake views.",
+    description: "A great place to relax during all seasons.",
     directory: path.join("sun room"),
   },
   {
     title: "Chef's Kitchen & Dining",
     description:
-      "Gourmet-ready kitchens and intimate dining spaces prepared for curated culinary experiences.",
+      "Gourmet-ready kitchens and elegant dining spaces prepared for curated culinary experiences.",
     directory: path.join("office", "Main Kitchen"),
   },
   {
     title: "Bedrooms & Wardrobes",
-    description:
-      "Suite-level bedrooms, bespoke storage, and thoughtful guest accommodations across the estate.",
+    description: "Luxurious bedrooms with extensive storage.",
     directory: path.join("office", "bedroom"),
   },
   {
     title: "Spa & Baths",
-    description:
-      "Serene spa amenities and luxurious bathrooms created for restorative rituals.",
+    description: "Various spa amenities and bathrooms.",
     directory: path.join("office", "bathrooms"),
   },
   {
@@ -114,8 +109,7 @@ const gallerySectionConfig: Array<Omit<GallerySection, "images">> = [
   },
   {
     title: "Intimate Celebrations",
-    description:
-      "Weddings and special gatherings set within Eden's storied walls and snowy landscape.",
+    description: "Weddings and special gatherings during any season.",
     directory: "weddings",
   },
 ];

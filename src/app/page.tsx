@@ -306,56 +306,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="lux-section bg-white animate-fade-up fade-delay-3">
-        <div className="lux-container grid gap-10 md:grid-cols-[3fr_2fr] md:items-center">
-          <div>
-            <SectionHeading
-              eyebrow="Concierge at Your Service"
-              title="Tailored experiences for every stay"
-              description="From private-chef dinners to in-home yoga and spa treatments, our concierge helps curate your perfect mountain stay."
-            />
-            <div className="mt-8 space-y-4 text-sm text-stone-700">
-              <p>
-                Reserve bespoke amenities before arrival. Our team is available to
-                coordinate daily housekeeping, grocery stocking, curated excursions,
-                and more.
-              </p>
-              <p>
-                Whether you crave a wine-paired dinner, guided hike, or private après
-                lounge, Eden’s concierge ensures every stay feels effortless.
-              </p>
-            </div>
-          </div>
-          <div className="relative overflow-hidden rounded-3xl border border-white/60 bg-white/80">
-            <div className="absolute inset-0 bg-gradient-to-br from-black/10 via-transparent to-black/20" />
-            <img
-              src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
-              alt="Aerial view of Stowe, Vermont"
-              className="h-full w-full object-cover"
-              loading="lazy"
-            />
-            <div className="relative p-6 text-white">
-              <p className="text-xs uppercase tracking-[0.4em] text-white/80">
-                Perfect Location
-              </p>
-              <h3 className="mt-3 text-2xl font-semibold">Minutes from it all</h3>
-              <p className="mt-2 text-sm text-white/80">
-                Set on 28 private acres with trails, spring-fed ponds, and views of the
-                Green Mountains — yet only minutes from Stowe’s slopes, dining, and
-                shops.
-              </p>
-              <Link
-                href="https://maps.app.goo.gl/2PV9c5L5z1L"
-                target="_blank"
-                className="mt-6 inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/20 px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-white transition hover:bg-white/30"
-              >
-                View Map
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="lux-section bg-white/80 animate-fade-up">
         <div className="lux-container">
           <TestimonialCarousel testimonials={testimonials} />
