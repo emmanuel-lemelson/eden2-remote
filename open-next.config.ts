@@ -1,9 +1,6 @@
 import type { OpenNextConfig } from "@opennextjs/cloudflare";
 const config: OpenNextConfig = {
   default: {
-    cache: {
-      mode: "manual",
-    },
     override: {
       wrapper: "cloudflare-node",
       converter: "edge",
