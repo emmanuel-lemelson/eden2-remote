@@ -202,12 +202,19 @@ export default function GalleryPage() {
                   <figure
                     key={image.src}
                     className="mb-4 break-inside-avoid overflow-hidden rounded-3xl border border-white/60 bg-white/70 shadow-sm transition hover:-translate-y-1 hover:shadow-2xl"
+                    style={{ contentVisibility: "auto", containIntrinsicSize: "800px 1200px" }}
                   >
                     <Image
                       src={image.src}
                       alt={image.alt}
                       className="w-full object-cover"
                       loading="lazy"
+                      /**
+                       * Provide responsive sizes so the browser selects a smaller
+                       * file per column layout (1/2/3 columns).
+                       */
+                      sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                      quality={70}
                       width={1200}
                       height={800}
                     />

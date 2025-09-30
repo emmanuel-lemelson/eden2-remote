@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { SectionHeading } from "@/components/SectionHeading";
 import { TestimonialCarousel } from "@/components/TestimonialCarousel";
+import { AutoPlayVideo } from "@/components/AutoPlayVideo";
 
 const quickFacts = [
   { label: "Bedrooms", value: "8" },
@@ -78,18 +79,11 @@ export default function Home() {
             <div className="relative overflow-hidden rounded-3xl border border-stone-200 shadow-xl">
               <div className="aspect-[16/9] w-full">
                 {heroVideoUrl ? (
-                  <video
+                  <AutoPlayVideo
                     className="h-full w-full origin-center transform object-cover scale-110"
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    preload="auto"
+                    src={heroVideoUrl}
                     poster="https://images.unsplash.com/photo-1523419409543-0c1df022bdd1?auto=format&fit=crop&w=1600&q=80"
-                  >
-                    <source src={heroVideoUrl} type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
+                  />
                 ) : (
                   <div
                     className="relative flex h-full w-full flex-col items-center justify-center gap-4 bg-cover bg-center"
