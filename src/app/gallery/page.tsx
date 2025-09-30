@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import type { Metadata } from "next";
 
 import { SectionHeading } from "@/components/SectionHeading";
 import Image from "next/image";
@@ -168,6 +169,30 @@ function buildAltText(filename: string): string {
   const sentence = tokens.join(" ");
   return sentence.charAt(0).toUpperCase() + sentence.slice(1);
 }
+
+export const metadata: Metadata = {
+  title: "Gallery | Eden Estate Stowe",
+  description:
+    "Explore photos of Eden, a luxury 8-bedroom estate in Stowe, Vermont featuring spa amenities, pool, tennis, and mountain views.",
+  alternates: {
+    canonical: "https://lemelsonestate.com/gallery",
+  },
+  openGraph: {
+    title: "Eden Estate Gallery | Stowe, Vermont",
+    description:
+      "Curated images of Eden’s grounds, interiors, and amenities across all seasons.",
+    url: "https://lemelsonestate.com/gallery",
+    type: "website",
+    images: [
+      {
+        url: "https://lemelsonestate.com/gallery/office/outdoor%20shots/70-020-estate-pool-mountain-backdrop.webp",
+        width: 1600,
+        height: 900,
+        alt: "Estate pool with mountain backdrop",
+      },
+    ],
+  },
+};
 
 export default function GalleryPage() {
   return (

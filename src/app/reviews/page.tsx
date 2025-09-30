@@ -1,6 +1,23 @@
 import ReviewsClient from "@/components/reviews/ReviewsClient";
 import reviewsData from "@/../public/reviews.json";
 import type { NormalizedReview, Rating } from "@/types/reviews";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Reviews | Eden Estate Stowe",
+  description:
+    "Read guest reviews from Airbnb, Vrbo/Expedia, The Knot, and Wedding Wire about Eden Estate in Stowe, Vermont.",
+  alternates: {
+    canonical: "https://lemelsonestate.com/reviews",
+  },
+  openGraph: {
+    title: "Eden Estate Reviews | Stowe, Vermont",
+    description:
+      "Verified testimonials across platforms highlighting Eden’s luxury, service, and setting.",
+    url: "https://lemelsonestate.com/reviews",
+    type: "website",
+  },
+};
 
 interface PlatformReview {
   title?: string;

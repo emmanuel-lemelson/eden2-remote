@@ -7,7 +7,10 @@ const nextConfig: NextConfig = {
    * and cuts down total bytes transferred.
    */
   images: {
-    formats: ["image/avif", "image/webp"],
+    // Disable on-demand optimizer to avoid image cache writes on Vercel free tier
+    unoptimized: true,
+    // Keep a single modern format to reduce variants when self-hosting static images
+    formats: ["image/webp"],
     /**
      * Breakpoints aligned with our layout: single column on mobile,
      * two columns on md, three on lg.
