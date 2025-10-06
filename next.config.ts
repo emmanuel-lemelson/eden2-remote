@@ -1,13 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  output: "export",
+  trailingSlash: true,
   /**
    * Tune Next/Image so we only generate the sizes we actually use.
    * This reduces on-demand image optimization work (and ISR reads on Vercel),
    * and cuts down total bytes transferred.
    */
   images: {
-    // Disable on-demand optimizer to avoid image cache writes on Vercel free tier
+    // Disable on-demand optimizer for static export
     unoptimized: true,
     // Keep a single modern format to reduce variants when self-hosting static images
     formats: ["image/webp"],

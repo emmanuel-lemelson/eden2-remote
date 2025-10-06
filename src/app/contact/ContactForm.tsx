@@ -1,42 +1,59 @@
 'use client';
 
-import { useActionState, useEffect, useRef } from "react";
-import { useFormStatus } from "react-dom";
-import { submitInquiry, type FormState } from "./actions";
+import { useState, useRef } from "react";
 
-const defaultState: FormState = {
-  success: undefined,
-  errors: undefined,
-  message: undefined,
-};
-
-function SubmitButton() {
-  const { pending } = useFormStatus();
-  return (
-    <button
-      type="submit"
-      className="inline-flex items-center rounded-full border border-stone-300 bg-white px-8 py-3 text-xs font-semibold uppercase tracking-[0.4em] text-stone-800 transition hover:border-stone-400 hover:bg-white/80 disabled:cursor-not-allowed disabled:opacity-60"
-      disabled={pending}
-    >
-      {pending ? "Sending..." : "Send Inquiry"}
-    </button>
-  );
+interface FormState {
+  success?: boolean;
+  message?: string;
 }
 
 export default function ContactForm() {
-  const [formState, formAction] = useActionState(submitInquiry, defaultState);
+  const [formState, setFormState] = useState<FormState>({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const formRef = useRef<HTMLFormElement | null>(null);
 
-  useEffect(() => {
-    if (formState.success && formRef.current) {
-      formRef.current.reset();
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setFormState({});
+
+    const formData = new FormData(e.currentTarget);
+    
+    try {
+      const response = await fetch('https://formspree.io/f/xpwgkqkp', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        setFormState({
+          success: true,
+          message: "Thank you. Our concierge team will reach out within 24 hours."
+        });
+        formRef.current?.reset();
+      } else {
+        setFormState({
+          success: false,
+          message: "Something went wrong. Please try again or email us directly."
+        });
+      }
+    } catch (error) {
+      setFormState({
+        success: false,
+        message: "Something went wrong. Please try again or email us directly."
+      });
+    } finally {
+      setIsSubmitting(false);
     }
-  }, [formState.success]);
+  };
 
   return (
     <form
       ref={formRef}
-      action={formAction}
+      onSubmit={handleSubmit}
       className="space-y-8 rounded-3xl border border-white/60 bg-white/80 p-10 shadow-sm backdrop-blur"
     >
       <div className="grid gap-6 md:grid-cols-2">
@@ -50,9 +67,6 @@ export default function ContactForm() {
             required
             className="rounded-2xl border border-stone-200 bg-white/70 px-4 py-3 text-sm text-stone-800 outline-none transition focus:border-stone-400 focus:bg-white"
           />
-          {formState.errors?.name && (
-            <p className="text-xs text-red-600">{formState.errors.name}</p>
-          )}
         </div>
         <div className="space-y-2">
           <label className="text-xs uppercase tracking-[0.3em] text-stone-500">
@@ -64,9 +78,6 @@ export default function ContactForm() {
             required
             className="rounded-2xl border border-stone-200 bg-white/70 px-4 py-3 text-sm text-stone-800 outline-none transition focus:border-stone-400 focus:bg-white"
           />
-          {formState.errors?.email && (
-            <p className="text-xs text-red-600">{formState.errors.email}</p>
-          )}
         </div>
         <div className="space-y-2">
           <label className="text-xs uppercase tracking-[0.3em] text-stone-500">
@@ -161,9 +172,6 @@ export default function ContactForm() {
           className="w-full rounded-2xl border border-stone-200 bg-white/70 px-4 py-3 text-sm text-stone-800 outline-none transition focus:border-stone-400 focus:bg-white"
           placeholder="Tell us about your ideal stay, any special events, experiences to arrange, and desired dates."
         />
-        {formState.errors?.message && (
-          <p className="text-xs text-red-600">{formState.errors.message}</p>
-        )}
       </div>
 
       <div className="hidden" aria-hidden="true">
