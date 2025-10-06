@@ -1,23 +1,8 @@
 import type { Metadata } from "next";
 import { SectionHeading } from "@/components/SectionHeading";
-import { GalleryImage } from "@/components/GalleryImage";
+import { GallerySectionGrid } from "@/components/GallerySectionGrid";
+import type { GallerySection } from "@/types/gallery";
 import galleryData from "@/data/gallery.json";
-
-type GalleryImageItem = {
-  src: string;
-  alt: string;
-  srcset?: string;
-  sizes?: string;
-  width: number;
-  height: number;
-};
-
-type GallerySection = {
-  title: string;
-  description?: string;
-  directory: string;
-  images: GalleryImageItem[];
-};
 
 export const metadata: Metadata = {
   title: "Gallery | Eden Estate Stowe",
@@ -46,8 +31,6 @@ export const metadata: Metadata = {
 export default function GalleryPage() {
   const gallerySections: GallerySection[] = galleryData;
 
-  let globalImageIndex = 0;
-
   return (
     <div>
       <section className="lux-section pb-10">
@@ -61,53 +44,7 @@ export default function GalleryPage() {
       </section>
 
       <section className="pb-24">
-        <div className="lux-container space-y-24">
-          {gallerySections.map((section) => {
-            const sectionStartIndex = globalImageIndex;
-            globalImageIndex += section.images.length;
-            return (
-              <article key={section.title} className="space-y-8">
-                <div className="md:w-2/3">
-                  <h3 className="text-2xl font-semibold text-stone-900">
-                    {section.title}
-                  </h3>
-                  {section.description ? (
-                    <p className="mt-2 text-base text-stone-700">
-                      {section.description}
-                    </p>
-                  ) : null}
-                </div>
-
-                <div className="masonry-container">
-                  {section.images.map((image, index) => {
-                    const absoluteIndex = sectionStartIndex + index;
-                    const altText =
-                      image.alt && image.alt !== "Eden Estate gallery image"
-                        ? image.alt
-                        : `${section.title} at Eden Estate`;
-                    return (
-                    <div
-                      key={image.src}
-                      className="masonry-item overflow-hidden rounded-3xl border border-white/60 bg-white/70 shadow-sm transition hover:-translate-y-1 hover:shadow-2xl"
-                      style={{ contentVisibility: "auto" }}
-                    >
-                      <GalleryImage
-                        src={image.src}
-                        srcSet={image.srcset}
-                        alt={altText}
-                        width={image.width}
-                        height={image.height}
-                        sizes={image.sizes}
-                        index={absoluteIndex}
-                        />
-                      </div>
-                    );
-                  })}
-                </div>
-              </article>
-            );
-          })}
-        </div>
+        <GallerySectionGrid sections={gallerySections} />
       </section>
 
       <section className="lux-section pt-0">

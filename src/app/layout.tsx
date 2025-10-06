@@ -62,6 +62,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body
         className={`${playfair.variable} ${manrope.variable} bg-stone-100 text-stone-900 antialiased`}
+        suppressHydrationWarning={true}
       >
         <div className="flex min-h-screen flex-col">
           <Header />

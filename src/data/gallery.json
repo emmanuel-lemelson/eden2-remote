@@ -1,402 +1,1049 @@
 [
   {
-    "title": "Estate Arrival",
-    "description": "First impressions of Eden's architecture and mountainous backdrop, captured from every angle.",
-    "directory": "office/outdoor shots",
+    "title": "The Great Room",
+    "description": "Photos 1-15: Spacious gathering areas with soaring ceilings and elegant furnishings.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 1,
+    "endPhoto": 15,
     "images": [
       {
-        "src": "/gallery/office/outdoor%20shots/01-026-aerial-view-mountain-estate.webp",
-        "alt": "Aerial view front"
+        "src": "/gallery/Eden-Site%20Photos/1.webp",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/1@400w.webp 400w, /gallery/Eden-Site%20Photos/1@800w.webp 800w, /gallery/Eden-Site%20Photos/1@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 900
       },
       {
-        "src": "/gallery/office/outdoor%20shots/02-052-front-of-house-sunset.webp",
-        "alt": "Front of house sunset"
+        "src": "/gallery/Eden-Site%20Photos/2.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/2@400w.webp 400w, /gallery/Eden-Site%20Photos/2@800w.webp 800w, /gallery/Eden-Site%20Photos/2@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 480
       },
       {
-        "src": "/gallery/office/outdoor%20shots/03-house-exterior-pool-night.webp",
-        "alt": "House exterior pool night"
+        "src": "/gallery/Eden-Site%20Photos/3.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/3@400w.webp 400w, /gallery/Eden-Site%20Photos/3@800w.webp 800w, /gallery/Eden-Site%20Photos/3@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 480
       },
       {
-        "src": "/gallery/office/outdoor%20shots/04-misty-morning-house-mountains.webp",
-        "alt": "Misty morning house mountains"
+        "src": "/gallery/Eden-Site%20Photos/4.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/4@400w.webp 400w, /gallery/Eden-Site%20Photos/4@800w.webp 800w, /gallery/Eden-Site%20Photos/4@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 540
       },
       {
-        "src": "/gallery/office/outdoor%20shots/05-home-vibrant-autumn-sunset.webp",
-        "alt": "Home vibrant autumn sunset"
+        "src": "/gallery/Eden-Site%20Photos/5.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/5@400w.webp 400w, /gallery/Eden-Site%20Photos/5@800w.webp 800w, /gallery/Eden-Site%20Photos/5@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 540
       },
       {
-        "src": "/gallery/office/outdoor%20shots/06-snowy-house-distant-view.webp",
-        "alt": "Back of estate in winter"
+        "src": "/gallery/Eden-Site%20Photos/6.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/6@400w.webp 400w, /gallery/Eden-Site%20Photos/6@800w.webp 800w, /gallery/Eden-Site%20Photos/6@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
       },
       {
-        "src": "/gallery/office/outdoor%20shots/07-house-exterior-snowy-evening.webp",
-        "alt": "House exterior snowy evening"
+        "src": "/gallery/Eden-Site%20Photos/7.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/7@400w.webp 400w, /gallery/Eden-Site%20Photos/7@800w.webp 800w, /gallery/Eden-Site%20Photos/7@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 540
       },
       {
-        "src": "/gallery/office/outdoor%20shots/69-006-pool-patio-blue-cushions.webp",
-        "alt": "Pool patio"
+        "src": "/gallery/Eden-Site%20Photos/8.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/8@400w.webp 400w, /gallery/Eden-Site%20Photos/8@800w.webp 800w, /gallery/Eden-Site%20Photos/8@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 540
       },
       {
-        "src": "/gallery/office/outdoor%20shots/70-020-estate-pool-mountain-backdrop.webp",
-        "alt": "Back of estate aerial view during sunset"
+        "src": "/gallery/Eden-Site%20Photos/9.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/9@400w.webp 400w, /gallery/Eden-Site%20Photos/9@800w.webp 800w, /gallery/Eden-Site%20Photos/9@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
       },
       {
-        "src": "/gallery/office/outdoor%20shots/71-024-outdoor-hot-tub-garden.webp",
-        "alt": "Outdoor hot tub garden"
+        "src": "/gallery/Eden-Site%20Photos/10.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/10@400w.webp 400w, /gallery/Eden-Site%20Photos/10@800w.webp 800w, /gallery/Eden-Site%20Photos/10@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 801
       },
       {
-        "src": "/gallery/office/outdoor%20shots/72-044-hot-tub-snowy-landscape.webp",
-        "alt": "Hot tub in winter"
+        "src": "/gallery/Eden-Site%20Photos/11.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/11@400w.webp 400w, /gallery/Eden-Site%20Photos/11@800w.webp 800w, /gallery/Eden-Site%20Photos/11@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 955
       },
       {
-        "src": "/gallery/office/outdoor%20shots/73-017-person-in-outdoor-hot-tub.webp",
-        "alt": "Person in outdoor hot tub"
+        "src": "/gallery/Eden-Site%20Photos/12.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/12@400w.webp 400w, /gallery/Eden-Site%20Photos/12@800w.webp 800w, /gallery/Eden-Site%20Photos/12@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
       },
       {
-        "src": "/gallery/office/outdoor%20shots/103-016-winter-village-snow-mountains.webp",
-        "alt": "Stowe village with mountains in view"
+        "src": "/gallery/Eden-Site%20Photos/13.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/13@400w.webp 400w, /gallery/Eden-Site%20Photos/13@800w.webp 800w, /gallery/Eden-Site%20Photos/13@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
       },
       {
-        "src": "/gallery/office/outdoor%20shots/150-064-tagging-error-64.webp",
-        "alt": "St. Katherine Orthodox Chapel (on property)"
+        "src": "/gallery/Eden-Site%20Photos/14.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/14@400w.webp 400w, /gallery/Eden-Site%20Photos/14@800w.webp 800w, /gallery/Eden-Site%20Photos/14@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 1080
       },
       {
-        "src": "/gallery/office/outdoor%20shots/176-079-tagging-error-79.webp",
-        "alt": "Front of home"
+        "src": "/gallery/Eden-Site%20Photos/15.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/15@400w.webp 400w, /gallery/Eden-Site%20Photos/15@800w.webp 800w, /gallery/Eden-Site%20Photos/15@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
       }
     ]
   },
   {
-    "title": "Grounds & Gardens",
-    "description": "Rolling lawns, spring-fed ponds, and lovingly tended gardens surrounding the estate.",
-    "directory": "grounds",
+    "title": "Study Room / Library",
+    "description": "Photos 16-17: Private workspace for meetings and reading.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 16,
+    "endPhoto": 17,
     "images": [
       {
-        "src": "/gallery/grounds/79-007-outdoor-tennis-court-view.webp",
-        "alt": "Outdoor tennis court view"
+        "src": "/gallery/Eden-Site%20Photos/16.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/16@400w.webp 400w, /gallery/Eden-Site%20Photos/16@800w.webp 800w, /gallery/Eden-Site%20Photos/16@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
       },
       {
-        "src": "/gallery/grounds/80-008-tennis-court-patio-furniture.webp",
-        "alt": "Tennis court patio furniture"
-      },
-      {
-        "src": "/gallery/grounds/82-029-garden-urns-pond-backdrop.webp",
-        "alt": "Garden urns pond backdrop"
-      },
-      {
-        "src": "/gallery/grounds/84-040-garden-view-pond-flowers.webp",
-        "alt": "View of upper spring-fed pond"
-      },
-      {
-        "src": "/gallery/grounds/92-033-pink-roses-in-urns.webp",
-        "alt": "Pink roses in urns"
-      },
-      {
-        "src": "/gallery/grounds/93-025-garden-urn-cherub-statue.webp",
-        "alt": "Garden urn cherub statue"
-      },
-      {
-        "src": "/gallery/grounds/94-037-circular-driveway-garden-bed.webp",
-        "alt": "Circular driveway garden bed"
-      },
-      {
-        "src": "/gallery/grounds/95-055-green-front-doors-planters.webp",
-        "alt": "Front entrance"
-      },
-      {
-        "src": "/gallery/grounds/97-053-stone-address-marker.webp",
-        "alt": "Driveway entrance"
-      },
-      {
-        "src": "/gallery/grounds/99-002-sunlit-forest-path.webp",
-        "alt": "Sunlit forest path"
-      },
-      {
-        "src": "/gallery/grounds/100-026-forest-with-sunbeams-mist.webp",
-        "alt": "Backyard with sunbeams mist"
-      },
-      {
-        "src": "/gallery/grounds/101-021-autumn-foliage-aerial-view.webp",
-        "alt": "Autumn foliage aerial view"
-      },
-      {
-        "src": "/gallery/grounds/102-015-starry-night-snowy-trees.webp",
-        "alt": "Starry night in winter"
-      },
-      {
-        "src": "/gallery/grounds/114-085-tagging-error-85.webp",
-        "alt": "Sunroom"
+        "src": "/gallery/Eden-Site%20Photos/17.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/17@400w.webp 400w, /gallery/Eden-Site%20Photos/17@800w.webp 800w, /gallery/Eden-Site%20Photos/17@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 480
       }
     ]
   },
   {
-    "title": "Activities & Seasonal Moments",
-    "description": "From snowy sledding to summer evenings by the fire.",
-    "directory": "grounds/activities",
+    "title": "Basement / Game Room",
+    "description": "Photo 18: Lower level recreation and entertainment space.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 18,
+    "endPhoto": 18,
     "images": [
       {
-        "src": "/gallery/grounds/activities/81-032-smores-outdoor-fireplace.webp",
-        "alt": "Smores outdoor fireplace"
-      },
-      {
-        "src": "/gallery/grounds/activities/105-018-family-enjoying-cross-country-skiing.webp",
-        "alt": "The grounds of the estate are great for cross-country skiing"
-      },
-      {
-        "src": "/gallery/grounds/activities/106-012-family-sledding-on-snow.webp",
-        "alt": "The estate has a wonderful sledding hill"
-      },
-      {
-        "src": "/gallery/grounds/activities/107-014-woman-snowshoeing-in-winter.webp",
-        "alt": "Snowshoeing is a popular activity around the property"
-      },
-      {
-        "src": "/gallery/grounds/activities/108-025-winter-horse-sleigh-ride.webp",
-        "alt": "Sleigh rides minutes from the estate"
-      },
-      {
-        "src": "/gallery/grounds/activities/111-003-tall-christmas-tree-gifts.webp",
-        "alt": "The estate's Christmas tree"
+        "src": "/gallery/Eden-Site%20Photos/18.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/18@400w.webp 400w, /gallery/Eden-Site%20Photos/18@800w.webp 800w, /gallery/Eden-Site%20Photos/18@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 800
       }
     ]
   },
   {
-    "title": "Great Room",
-    "description": "Gathering spaces with soaring ceilings.",
-    "directory": "office/great room",
+    "title": "Upstairs Master Suite 1",
+    "description": "Photos 19-21: Luxurious master bedroom with premium amenities.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 19,
+    "endPhoto": 21,
     "images": [
       {
-        "src": "/gallery/office/great%20room/08-grand-living-room-fireplace.webp",
-        "alt": "Grand living room and fireplace"
+        "src": "/gallery/Eden-Site%20Photos/19.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/19@400w.webp 400w, /gallery/Eden-Site%20Photos/19@800w.webp 800w, /gallery/Eden-Site%20Photos/19@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
       },
       {
-        "src": "/gallery/office/great%20room/09-elegant-living-room-grand-staircase.webp",
-        "alt": "Elegant living room grand staircase"
+        "src": "/gallery/Eden-Site%20Photos/20.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/20@400w.webp 400w, /gallery/Eden-Site%20Photos/20@800w.webp 800w, /gallery/Eden-Site%20Photos/20@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
       },
       {
-        "src": "/gallery/office/great%20room/10-grand-foyer-curved-staircase.webp",
-        "alt": "Grand foyer curved staircase"
-      },
-      {
-        "src": "/gallery/office/great%20room/11-formal-dining-room-with-chandelier.webp",
-        "alt": "Formal dining room with chandelier"
-      },
-      {
-        "src": "/gallery/office/great%20room/12-elegant-dining-room-setup.webp",
-        "alt": "Elegant dining room setup"
-      },
-      {
-        "src": "/gallery/office/great%20room/13-bar-seating-wine-bottle.webp",
-        "alt": "Bar seating wine bottle"
-      },
-      {
-        "src": "/gallery/office/great%20room/18-ornate-chandelier-and-landing-table.webp",
-        "alt": "Ornate chandelier and landing table"
-      },
-      {
-        "src": "/gallery/office/great%20room/98-042-large-arch-window-mountains.webp",
-        "alt": "Large arch window mountains"
+        "src": "/gallery/Eden-Site%20Photos/21.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/21@400w.webp 400w, /gallery/Eden-Site%20Photos/21@800w.webp 800w, /gallery/Eden-Site%20Photos/21@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
       }
     ]
   },
   {
-    "title": "Library Study",
-    "description": "A workspace for private meetings or reading.",
-    "directory": "office/library room",
+    "title": "Full Kitchen 1",
+    "description": "Photos 22-25: Gourmet kitchen with modern appliances and island seating.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 22,
+    "endPhoto": 25,
     "images": [
       {
-        "src": "/gallery/office/library%20room/17-dining-room-with-scenic-view.webp",
-        "alt": "Library room/study room"
+        "src": "/gallery/Eden-Site%20Photos/22.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/22@400w.webp 400w, /gallery/Eden-Site%20Photos/22@800w.webp 800w, /gallery/Eden-Site%20Photos/22@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 480
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/23.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/23@400w.webp 400w, /gallery/Eden-Site%20Photos/23@800w.webp 800w, /gallery/Eden-Site%20Photos/23@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 1080
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/24.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/24@400w.webp 400w, /gallery/Eden-Site%20Photos/24@800w.webp 800w, /gallery/Eden-Site%20Photos/24@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 480
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/25.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/25@400w.webp 400w, /gallery/Eden-Site%20Photos/25@800w.webp 800w, /gallery/Eden-Site%20Photos/25@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
+      }
+    ]
+  },
+  {
+    "title": "Full Kitchen 2",
+    "description": "Photo 26: Additional kitchen space with professional-grade equipment.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 26,
+    "endPhoto": 26,
+    "images": [
+      {
+        "src": "/gallery/Eden-Site%20Photos/26.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/26@400w.webp 400w, /gallery/Eden-Site%20Photos/26@800w.webp 800w, /gallery/Eden-Site%20Photos/26@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 1600
+      }
+    ]
+  },
+  {
+    "title": "Great Dining Room",
+    "description": "Photos 27-28: Formal dining area for elegant entertaining.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 27,
+    "endPhoto": 28,
+    "images": [
+      {
+        "src": "/gallery/Eden-Site%20Photos/27.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/27@400w.webp 400w, /gallery/Eden-Site%20Photos/27@800w.webp 800w, /gallery/Eden-Site%20Photos/27@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/28.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/28@400w.webp 400w, /gallery/Eden-Site%20Photos/28@800w.webp 800w, /gallery/Eden-Site%20Photos/28@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 480
+      }
+    ]
+  },
+  {
+    "title": "Kitchen Dining Room",
+    "description": "Photo 29: Casual dining space adjacent to the kitchen.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 29,
+    "endPhoto": 29,
+    "images": [
+      {
+        "src": "/gallery/Eden-Site%20Photos/29.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/29@400w.webp 400w, /gallery/Eden-Site%20Photos/29@800w.webp 800w, /gallery/Eden-Site%20Photos/29@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 1801
       }
     ]
   },
   {
     "title": "Sun Room",
-    "description": "A great place to relax during all seasons.",
-    "directory": "sun room",
+    "description": "Photos 30-32: Bright, airy space with natural light and garden views.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 30,
+    "endPhoto": 32,
     "images": [
       {
-        "src": "/gallery/sun%20room/32-005-sunroom-fireplace-wicker-furniture.webp",
-        "alt": "Sunroom fireplace wicker furniture"
+        "src": "/gallery/Eden-Site%20Photos/30.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/30@400w.webp 400w, /gallery/Eden-Site%20Photos/30@800w.webp 800w, /gallery/Eden-Site%20Photos/30@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 480
       },
       {
-        "src": "/gallery/sun%20room/146-006-tagging-error-6.webp",
-        "alt": "Sunroom"
+        "src": "/gallery/Eden-Site%20Photos/31.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/31@400w.webp 400w, /gallery/Eden-Site%20Photos/31@800w.webp 800w, /gallery/Eden-Site%20Photos/31@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 480
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/32.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/32@400w.webp 400w, /gallery/Eden-Site%20Photos/32@800w.webp 800w, /gallery/Eden-Site%20Photos/32@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
       }
     ]
   },
   {
-    "title": "Chef's Kitchen & Dining",
-    "description": "Gourmet-ready kitchens and elegant dining spaces prepared for curated culinary experiences.",
-    "directory": "office/Main Kitchen",
+    "title": "Bedroom 1",
+    "description": "Photos 33-36: Comfortable guest bedroom with modern amenities.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 33,
+    "endPhoto": 36,
     "images": [
       {
-        "src": "/gallery/office/Main%20Kitchen/14-modern-kitchen-white-cabinets.webp",
-        "alt": "Modern primary kitchen"
+        "src": "/gallery/Eden-Site%20Photos/33.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/33@400w.webp 400w, /gallery/Eden-Site%20Photos/33@800w.webp 800w, /gallery/Eden-Site%20Photos/33@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 800
       },
       {
-        "src": "/gallery/office/Main%20Kitchen/15-elegant-kitchen-with-island-dining.webp",
-        "alt": "Elegant kitchen with island dining"
+        "src": "/gallery/Eden-Site%20Photos/34.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/34@400w.webp 400w, /gallery/Eden-Site%20Photos/34@800w.webp 800w, /gallery/Eden-Site%20Photos/34@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
       },
       {
-        "src": "/gallery/office/Main%20Kitchen/16-dining-room-with-wood-paneled-ceiling.webp",
-        "alt": "Dining room with wood paneled ceiling"
+        "src": "/gallery/Eden-Site%20Photos/35.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/35@400w.webp 400w, /gallery/Eden-Site%20Photos/35@800w.webp 800w, /gallery/Eden-Site%20Photos/35@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
       },
       {
-        "src": "/gallery/office/Main%20Kitchen/168-076-tagging-error-76.webp",
-        "alt": "New appliances"
+        "src": "/gallery/Eden-Site%20Photos/36.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/36@400w.webp 400w, /gallery/Eden-Site%20Photos/36@800w.webp 800w, /gallery/Eden-Site%20Photos/36@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 800
       }
     ]
   },
   {
-    "title": "Bedrooms & Wardrobes",
-    "description": "Luxurious bedrooms with extensive storage.",
-    "directory": "office/bedroom",
+    "title": "Bedroom 2",
+    "description": "Photo 37: Additional guest bedroom with elegant furnishings.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 37,
+    "endPhoto": 37,
     "images": [
       {
-        "src": "/gallery/office/bedroom/19-master-bedroom-private-balcony.webp",
-        "alt": "Master bedroom private balcony"
-      },
-      {
-        "src": "/gallery/office/bedroom/20-built-in-window-seat.webp",
-        "alt": "Built in window seat"
-      },
-      {
-        "src": "/gallery/office/bedroom/44-050-console-table-ornate-mirror.webp",
-        "alt": "Console table ornate mirror"
-      },
-      {
-        "src": "/gallery/office/bedroom/48-008-spacious-bedroom-vaulted-ceiling.webp",
-        "alt": "Spacious bedroom vaulted ceiling"
-      },
-      {
-        "src": "/gallery/office/bedroom/49-013-bed-with-chocolates.webp",
-        "alt": "Bed with chocolates"
-      },
-      {
-        "src": "/gallery/office/bedroom/52-015-luxury-closet-marble-island.webp",
-        "alt": "Luxury closet marble island"
-      },
-      {
-        "src": "/gallery/office/bedroom/53-019-bedroom-with-canopy-bed-desk.webp",
-        "alt": "Bedroom with canopy bed desk"
-      },
-      {
-        "src": "/gallery/office/bedroom/54-011-bedroom-vaulted-ceiling.webp",
-        "alt": "Bedroom vaulted ceiling"
-      },
-      {
-        "src": "/gallery/office/bedroom/55-024-bright-twin-bedroom-with-view.webp",
-        "alt": "Bright twin bedroom with view"
-      },
-      {
-        "src": "/gallery/office/bedroom/56-021-twin-bedroom-with-built-in-storage.webp",
-        "alt": "Twin bedroom with built in storage"
-      },
-      {
-        "src": "/gallery/office/bedroom/57-016-bedroom-with-bed-and-crib.webp",
-        "alt": "Bedroom with bed and crib"
-      },
-      {
-        "src": "/gallery/office/bedroom/58-022-kids-room-with-bunk-beds.webp",
-        "alt": "Kids room with bunk beds"
+        "src": "/gallery/Eden-Site%20Photos/37.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/37@400w.webp 400w, /gallery/Eden-Site%20Photos/37@800w.webp 800w, /gallery/Eden-Site%20Photos/37@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 801
       }
     ]
   },
   {
-    "title": "Spa & Baths",
-    "description": "Various spa amenities and bathrooms.",
-    "directory": "office/bathrooms",
+    "title": "Bedroom 3",
+    "description": "Photo 38: Spacious guest room with premium bedding.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 38,
+    "endPhoto": 38,
     "images": [
       {
-        "src": "/gallery/office/bathrooms/50-013-master-bathroom-soaking-tub-windows.webp",
-        "alt": "Master bathroom soaking tub windows"
-      },
-      {
-        "src": "/gallery/office/bathrooms/51-011-jetted-tub-and-tiled-shower.webp",
-        "alt": "Jetted tub and tiled shower"
-      },
-      {
-        "src": "/gallery/office/bathrooms/59-009-elegant-bathroom-double-vanity.webp",
-        "alt": "Elegant bathroom double vanity"
-      },
-      {
-        "src": "/gallery/office/bathrooms/60-014-elegant-bathroom-marble-vanity.webp",
-        "alt": "Elegant bathroom marble vanity"
-      },
-      {
-        "src": "/gallery/office/bathrooms/61-023-bathroom-vanity-and-marble-shower.webp",
-        "alt": "Bathroom vanity and marble shower"
-      },
-      {
-        "src": "/gallery/office/bathrooms/62-019-bathroom-vanity-dark-wood.webp",
-        "alt": "Bathroom vanity dark wood"
-      },
-      {
-        "src": "/gallery/office/bathrooms/63-019-bathroom-vanity-large-mirror.webp",
-        "alt": "Bathroom vanity large mirror"
-      },
-      {
-        "src": "/gallery/office/bathrooms/64-020-bathroom-double-vessel-sinks.webp",
-        "alt": "Bathroom double vessel sinks"
-      },
-      {
-        "src": "/gallery/office/bathrooms/65-022-modern-tiled-shower.webp",
-        "alt": "Modern tiled shower"
-      },
-      {
-        "src": "/gallery/office/bathrooms/66-010-white-built-ins-bathroom-vanity.webp",
-        "alt": "White built ins bathroom vanity"
-      },
-      {
-        "src": "/gallery/office/bathrooms/67-049-bathroom-towel-display-drinks.webp",
-        "alt": "Bathroom towel display drinks"
-      },
-      {
-        "src": "/gallery/office/bathrooms/78-021-sauna-wooden-benches.webp",
-        "alt": "Sauna wooden benches"
-      },
-      {
-        "src": "/gallery/office/bathrooms/110-023-jetted-bathtub-candles.webp",
-        "alt": "Jetted bathtub candles"
+        "src": "/gallery/Eden-Site%20Photos/38.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/38@400w.webp 400w, /gallery/Eden-Site%20Photos/38@800w.webp 800w, /gallery/Eden-Site%20Photos/38@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 800
       }
     ]
   },
   {
-    "title": "Lower Level Recreation",
-    "description": "Game rooms, lounges, and wellness areas located on the estate's lower level.",
-    "directory": "office/basement",
+    "title": "Bedroom 4",
+    "description": "Photo 39: Well-appointed guest bedroom with modern decor.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 39,
+    "endPhoto": 39,
     "images": [
       {
-        "src": "/gallery/office/basement/28-002-basement-living-room-fireplace.webp",
-        "alt": "Basement living room fireplace"
-      },
-      {
-        "src": "/gallery/office/basement/74-009-game-room-pool-table.webp",
-        "alt": "Game room pool table"
-      },
-      {
-        "src": "/gallery/office/basement/76-018-game-room-with-exercise-equipment.webp",
-        "alt": "Game room with exercise equipment"
-      },
-      {
-        "src": "/gallery/office/basement/77-017-basement-game-and-lounge.webp",
-        "alt": "Basement game and lounge"
+        "src": "/gallery/Eden-Site%20Photos/39.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/39@400w.webp 400w, /gallery/Eden-Site%20Photos/39@800w.webp 800w, /gallery/Eden-Site%20Photos/39@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 801
       }
     ]
   },
   {
-    "title": "Intimate Celebrations",
-    "description": "Weddings and special gatherings during any season.",
-    "directory": "weddings",
+    "title": "Bedroom 5",
+    "description": "Photo 40: Comfortable guest room with quality furnishings.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 40,
+    "endPhoto": 40,
     "images": [
       {
-        "src": "/gallery/weddings/109-001-wedding-couple-on-staircase.webp",
-        "alt": "Wedding couple on staircase"
+        "src": "/gallery/Eden-Site%20Photos/40.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/40@400w.webp 400w, /gallery/Eden-Site%20Photos/40@800w.webp 800w, /gallery/Eden-Site%20Photos/40@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "title": "Bedroom 6",
+    "description": "Photo 41: Additional guest accommodation with modern amenities.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 41,
+    "endPhoto": 41,
+    "images": [
+      {
+        "src": "/gallery/Eden-Site%20Photos/41.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/41@400w.webp 400w, /gallery/Eden-Site%20Photos/41@800w.webp 800w, /gallery/Eden-Site%20Photos/41@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "title": "Bedroom 7",
+    "description": "Photo 42: Spacious guest room with elegant design.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 42,
+    "endPhoto": 42,
+    "images": [
+      {
+        "src": "/gallery/Eden-Site%20Photos/42.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/42@400w.webp 400w, /gallery/Eden-Site%20Photos/42@800w.webp 800w, /gallery/Eden-Site%20Photos/42@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "title": "Bedroom 8",
+    "description": "Photos 43-44: Premium guest suite with luxury amenities.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 43,
+    "endPhoto": 44,
+    "images": [
+      {
+        "src": "/gallery/Eden-Site%20Photos/43.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/43@400w.webp 400w, /gallery/Eden-Site%20Photos/43@800w.webp 800w, /gallery/Eden-Site%20Photos/43@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 480
       },
       {
-        "src": "/gallery/weddings/113-028-winter-wedding-snowy-backdrop.webp",
-        "alt": "Winter wedding snowy backdrop"
+        "src": "/gallery/Eden-Site%20Photos/44.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/44@400w.webp 400w, /gallery/Eden-Site%20Photos/44@800w.webp 800w, /gallery/Eden-Site%20Photos/44@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
+      }
+    ]
+  },
+  {
+    "title": "Full Bathroom 1",
+    "description": "Photos 45-46: Master bathroom with spa-like features.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 45,
+    "endPhoto": 46,
+    "images": [
+      {
+        "src": "/gallery/Eden-Site%20Photos/45.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/45@400w.webp 400w, /gallery/Eden-Site%20Photos/45@800w.webp 800w, /gallery/Eden-Site%20Photos/45@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 480
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/46.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/46@400w.webp 400w, /gallery/Eden-Site%20Photos/46@800w.webp 800w, /gallery/Eden-Site%20Photos/46@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 480
+      }
+    ]
+  },
+  {
+    "title": "Full Bathroom 2",
+    "description": "Photos 47-48: Guest bathroom with modern fixtures.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 47,
+    "endPhoto": 48,
+    "images": [
+      {
+        "src": "/gallery/Eden-Site%20Photos/47.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/47@400w.webp 400w, /gallery/Eden-Site%20Photos/47@800w.webp 800w, /gallery/Eden-Site%20Photos/47@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 480
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/48.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/48@400w.webp 400w, /gallery/Eden-Site%20Photos/48@800w.webp 800w, /gallery/Eden-Site%20Photos/48@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 480
+      }
+    ]
+  },
+  {
+    "title": "Full Bathroom 3",
+    "description": "Photo 49: Additional full bathroom with quality amenities.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 49,
+    "endPhoto": 49,
+    "images": [
+      {
+        "src": "/gallery/Eden-Site%20Photos/49.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/49@400w.webp 400w, /gallery/Eden-Site%20Photos/49@800w.webp 800w, /gallery/Eden-Site%20Photos/49@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "title": "Full Bathroom 4",
+    "description": "Photo 50: Well-appointed bathroom with modern design.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 50,
+    "endPhoto": 50,
+    "images": [
+      {
+        "src": "/gallery/Eden-Site%20Photos/50.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/50@400w.webp 400w, /gallery/Eden-Site%20Photos/50@800w.webp 800w, /gallery/Eden-Site%20Photos/50@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "title": "Full Bathroom 5",
+    "description": "Photos 51-53: Spacious bathroom with luxury features.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 51,
+    "endPhoto": 53,
+    "images": [
+      {
+        "src": "/gallery/Eden-Site%20Photos/51.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/51@400w.webp 400w, /gallery/Eden-Site%20Photos/51@800w.webp 800w, /gallery/Eden-Site%20Photos/51@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/52.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/52@400w.webp 400w, /gallery/Eden-Site%20Photos/52@800w.webp 800w, /gallery/Eden-Site%20Photos/52@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/53.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/53@400w.webp 400w, /gallery/Eden-Site%20Photos/53@800w.webp 800w, /gallery/Eden-Site%20Photos/53@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
+      }
+    ]
+  },
+  {
+    "title": "Full Bathroom 6",
+    "description": "Photo 54: Additional full bathroom with modern amenities.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 54,
+    "endPhoto": 54,
+    "images": [
+      {
+        "src": "/gallery/Eden-Site%20Photos/54.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/54@400w.webp 400w, /gallery/Eden-Site%20Photos/54@800w.webp 800w, /gallery/Eden-Site%20Photos/54@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 1600
+      }
+    ]
+  },
+  {
+    "title": "Half Bathroom 1",
+    "description": "Photo 55: Convenient powder room for guests.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 55,
+    "endPhoto": 55,
+    "images": [
+      {
+        "src": "/gallery/Eden-Site%20Photos/55.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/55@400w.webp 400w, /gallery/Eden-Site%20Photos/55@800w.webp 800w, /gallery/Eden-Site%20Photos/55@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 1600
+      }
+    ]
+  },
+  {
+    "title": "Half Bathroom 2",
+    "description": "Photo 56: Additional powder room with modern fixtures.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 56,
+    "endPhoto": 56,
+    "images": [
+      {
+        "src": "/gallery/Eden-Site%20Photos/56.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/56@400w.webp 400w, /gallery/Eden-Site%20Photos/56@800w.webp 800w, /gallery/Eden-Site%20Photos/56@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 1600
+      }
+    ]
+  },
+  {
+    "title": "Office",
+    "description": "Photo 57: Professional workspace with modern amenities.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 57,
+    "endPhoto": 57,
+    "images": [
+      {
+        "src": "/gallery/Eden-Site%20Photos/57.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/57@400w.webp 400w, /gallery/Eden-Site%20Photos/57@800w.webp 800w, /gallery/Eden-Site%20Photos/57@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "title": "Backyard",
+    "description": "Photos 58-69: Outdoor spaces with gardens, patios, and recreational areas.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 58,
+    "endPhoto": 69,
+    "images": [
+      {
+        "src": "/gallery/Eden-Site%20Photos/58.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/58@400w.webp 400w, /gallery/Eden-Site%20Photos/58@800w.webp 800w, /gallery/Eden-Site%20Photos/58@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 480
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/59.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/59@400w.webp 400w, /gallery/Eden-Site%20Photos/59@800w.webp 800w, /gallery/Eden-Site%20Photos/59@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/60.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/60@400w.webp 400w, /gallery/Eden-Site%20Photos/60@800w.webp 800w, /gallery/Eden-Site%20Photos/60@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 540
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/61.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/61@400w.webp 400w, /gallery/Eden-Site%20Photos/61@800w.webp 800w, /gallery/Eden-Site%20Photos/61@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 900
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/62.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/62@400w.webp 400w, /gallery/Eden-Site%20Photos/62@800w.webp 800w, /gallery/Eden-Site%20Photos/62@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 480
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/63.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/63@400w.webp 400w, /gallery/Eden-Site%20Photos/63@800w.webp 800w, /gallery/Eden-Site%20Photos/63@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 479
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/64.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/64@400w.webp 400w, /gallery/Eden-Site%20Photos/64@800w.webp 800w, /gallery/Eden-Site%20Photos/64@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/65.webp",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/65@400w.webp 400w, /gallery/Eden-Site%20Photos/65@800w.webp 800w, /gallery/Eden-Site%20Photos/65@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/66.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/66@400w.webp 400w, /gallery/Eden-Site%20Photos/66@800w.webp 800w, /gallery/Eden-Site%20Photos/66@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 540
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/67.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/67@400w.webp 400w, /gallery/Eden-Site%20Photos/67@800w.webp 800w, /gallery/Eden-Site%20Photos/67@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/68.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/68@400w.webp 400w, /gallery/Eden-Site%20Photos/68@800w.webp 800w, /gallery/Eden-Site%20Photos/68@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 540
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/69.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/69@400w.webp 400w, /gallery/Eden-Site%20Photos/69@800w.webp 800w, /gallery/Eden-Site%20Photos/69@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 900
+      }
+    ]
+  },
+  {
+    "title": "Gym / Game Room",
+    "description": "Photos 70-71: Fitness and entertainment facilities.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 70,
+    "endPhoto": 71,
+    "images": [
+      {
+        "src": "/gallery/Eden-Site%20Photos/70.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/70@400w.webp 400w, /gallery/Eden-Site%20Photos/70@800w.webp 800w, /gallery/Eden-Site%20Photos/70@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/71.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/71@400w.webp 400w, /gallery/Eden-Site%20Photos/71@800w.webp 800w, /gallery/Eden-Site%20Photos/71@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 480
+      }
+    ]
+  },
+  {
+    "title": "Exterior",
+    "description": "Photos 72-87: Estate exterior showcasing architecture and grounds.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 72,
+    "endPhoto": 87,
+    "images": [
+      {
+        "src": "/gallery/Eden-Site%20Photos/72.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/72@400w.webp 400w, /gallery/Eden-Site%20Photos/72@800w.webp 800w, /gallery/Eden-Site%20Photos/72@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 799
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/73.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/73@400w.webp 400w, /gallery/Eden-Site%20Photos/73@800w.webp 800w, /gallery/Eden-Site%20Photos/73@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 480
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/74.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/74@400w.webp 400w, /gallery/Eden-Site%20Photos/74@800w.webp 800w, /gallery/Eden-Site%20Photos/74@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 540
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/75.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/75@400w.webp 400w, /gallery/Eden-Site%20Photos/75@800w.webp 800w, /gallery/Eden-Site%20Photos/75@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 900
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/76.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/76@400w.webp 400w, /gallery/Eden-Site%20Photos/76@800w.webp 800w, /gallery/Eden-Site%20Photos/76@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/77.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/77@400w.webp 400w, /gallery/Eden-Site%20Photos/77@800w.webp 800w, /gallery/Eden-Site%20Photos/77@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/78.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/78@400w.webp 400w, /gallery/Eden-Site%20Photos/78@800w.webp 800w, /gallery/Eden-Site%20Photos/78@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 900
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/79.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/79@400w.webp 400w, /gallery/Eden-Site%20Photos/79@800w.webp 800w, /gallery/Eden-Site%20Photos/79@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/80.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/80@400w.webp 400w, /gallery/Eden-Site%20Photos/80@800w.webp 800w, /gallery/Eden-Site%20Photos/80@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/81.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/81@400w.webp 400w, /gallery/Eden-Site%20Photos/81@800w.webp 800w, /gallery/Eden-Site%20Photos/81@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 813
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/82.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/82@400w.webp 400w, /gallery/Eden-Site%20Photos/82@800w.webp 800w, /gallery/Eden-Site%20Photos/82@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/83.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/83@400w.webp 400w, /gallery/Eden-Site%20Photos/83@800w.webp 800w, /gallery/Eden-Site%20Photos/83@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 1080
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/84.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/84@400w.webp 400w, /gallery/Eden-Site%20Photos/84@800w.webp 800w, /gallery/Eden-Site%20Photos/84@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 540
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/85.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/85@400w.webp 400w, /gallery/Eden-Site%20Photos/85@800w.webp 800w, /gallery/Eden-Site%20Photos/85@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/86.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/86@400w.webp 400w, /gallery/Eden-Site%20Photos/86@800w.webp 800w, /gallery/Eden-Site%20Photos/86@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 406
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/87.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/87@400w.webp 400w, /gallery/Eden-Site%20Photos/87@800w.webp 800w, /gallery/Eden-Site%20Photos/87@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
+      }
+    ]
+  },
+  {
+    "title": "Hot Tub",
+    "description": "Photos 90-92: Relaxing outdoor hot tub area.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 90,
+    "endPhoto": 92,
+    "images": [
+      {
+        "src": "/gallery/Eden-Site%20Photos/90.webp",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/90@400w.webp 400w, /gallery/Eden-Site%20Photos/90@800w.webp 800w, /gallery/Eden-Site%20Photos/90@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/91.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/91@400w.webp 400w, /gallery/Eden-Site%20Photos/91@800w.webp 800w, /gallery/Eden-Site%20Photos/91@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 480
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/92.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/92@400w.webp 400w, /gallery/Eden-Site%20Photos/92@800w.webp 800w, /gallery/Eden-Site%20Photos/92@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 540
+      }
+    ]
+  },
+  {
+    "title": "Children's Play Room",
+    "description": "Photo 93: Dedicated play space for younger guests.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 93,
+    "endPhoto": 93,
+    "images": [
+      {
+        "src": "/gallery/Eden-Site%20Photos/93.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/93@400w.webp 400w, /gallery/Eden-Site%20Photos/93@800w.webp 800w, /gallery/Eden-Site%20Photos/93@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "title": "Additional Photos",
+    "description": "Photos 94-97: Extra views and special features of the estate.",
+    "directory": "Eden-Site Photos",
+    "startPhoto": 94,
+    "endPhoto": 97,
+    "images": [
+      {
+        "src": "/gallery/Eden-Site%20Photos/94.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/94@400w.webp 400w, /gallery/Eden-Site%20Photos/94@800w.webp 800w, /gallery/Eden-Site%20Photos/94@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/95.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/95@400w.webp 400w, /gallery/Eden-Site%20Photos/95@800w.webp 800w, /gallery/Eden-Site%20Photos/95@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 480
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/96.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/96@400w.webp 400w, /gallery/Eden-Site%20Photos/96@800w.webp 800w, /gallery/Eden-Site%20Photos/96@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 540
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/97.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/97@400w.webp 400w, /gallery/Eden-Site%20Photos/97@800w.webp 800w, /gallery/Eden-Site%20Photos/97@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 900
       }
     ]
   }
