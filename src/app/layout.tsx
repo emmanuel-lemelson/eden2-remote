@@ -16,22 +16,24 @@ const manrope = Manrope({
   display: "swap",
 });
 
+const PRODUCTION_URL = "https://www.lemelsonestate.com";
+
 export const metadata: Metadata = {
   title: "Eden | Stowe, Vermont Estate",
   description:
     "Eden is an 11,400 sq ft luxury rental estate in Stowe, Vermont with eight bedrooms, private spa amenities, and expansive mountain views.",
-  metadataBase: new URL("https://lemelsonestate.com"),
+  metadataBase: new URL(PRODUCTION_URL),
   openGraph: {
     title: "Eden Estate | Stowe, Vermont",
     description:
       "Discover Eden, an exclusive 28-acre, 8-bedroom retreat offering the finest in mountain luxury living.",
-    url: "https://lemelsonestate.com",
+    url: PRODUCTION_URL,
     siteName: "Eden",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://lemelsonestate.com/opengraph-image.png",
+        url: `${PRODUCTION_URL}/opengraph-image.png`,
         width: 1200,
         height: 630,
         alt: "Eden — The Lemelson Estate",
@@ -46,7 +48,7 @@ export const metadata: Metadata = {
       "Discover Eden, an exclusive 28-acre, 8-bedroom retreat offering the finest in mountain luxury living.",
   },
   alternates: {
-    canonical: "https://lemelsonestate.com",
+    canonical: PRODUCTION_URL,
   },
   icons: {
     icon: "/favicon.ico",
@@ -59,7 +61,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth" suppressHydrationWarning={true}>
+    <html lang="en" className="scroll-smooth" data-scroll-behavior="smooth" suppressHydrationWarning={true}>
       <body
         className={`${playfair.variable} ${manrope.variable} bg-stone-100 text-stone-900 antialiased`}
         suppressHydrationWarning={true}
@@ -79,8 +81,8 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'Organization',
               name: 'Eden — The Lemelson Estate',
-              url: 'https://eden-stowe.vercel.app',
-              logo: 'https://eden-stowe.vercel.app/The%20Lemelson%20Estate%20(1).png',
+              url: PRODUCTION_URL,
+              logo: `${PRODUCTION_URL}/The%20Lemelson%20Estate%20(1).png`,
               sameAs: [
                 'https://www.airbnb.com/rooms/42793723',
                 'https://www.vrbo.com/1958794',
@@ -104,8 +106,8 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'LodgingBusiness',
               name: 'Eden — The Lemelson Estate',
-              url: 'https://eden-stowe.vercel.app',
-              image: 'https://eden-stowe.vercel.app/gallery/office/outdoor%20shots/70-020-estate-pool-mountain-backdrop.webp',
+              url: PRODUCTION_URL,
+              image: `${PRODUCTION_URL}/gallery/office/outdoor%20shots/70-020-estate-pool-mountain-backdrop.webp`,
               description: 'Luxury 8-bedroom estate in Stowe, Vermont with spa amenities and mountain views.',
               address: {
                 '@type': 'PostalAddress',

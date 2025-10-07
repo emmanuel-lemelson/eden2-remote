@@ -19,10 +19,6 @@ const nextConfig: NextConfig = {
      */
     deviceSizes: [640, 768, 1024, 1280, 1536],
     imageSizes: [320, 480, 640],
-    remotePatterns: [
-      { protocol: "https", hostname: "images.unsplash.com" },
-      { protocol: "https", hostname: "storage.googleapis.com" },
-    ],
   },
   /**
    * Strengthen caching for static assets in /public, especially the gallery.

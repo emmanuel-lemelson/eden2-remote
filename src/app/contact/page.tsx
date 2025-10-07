@@ -6,6 +6,16 @@ export const metadata: Metadata = {
   title: "Contact | Eden Estate Stowe",
   description:
     "Inquire about Eden Estate in Stowe, Vermont. Share your event details, travel dates, and guest information to begin curating your stay.",
+  alternates: {
+    canonical: "https://www.lemelsonestate.com/contact",
+  },
+  openGraph: {
+    title: "Contact Eden Estate Stowe",
+    description:
+      "Connect with the Eden Estate team to plan weddings, retreats, and family gatherings in Stowe, Vermont.",
+    url: "https://www.lemelsonestate.com/contact",
+    type: "website",
+  },
 };
 
 export default function ContactPage() {
@@ -74,7 +84,7 @@ export default function ContactPage() {
                     className="h-5 w-auto"
                     width={60}
                     height={20}
-                    style={{ transform: "scale(1.15)", transformOrigin: "center" }}
+                    style={{ transform: "scale(1.15)", transformOrigin: "center", width: "auto", height: "auto" }}
                     loading="lazy"
                   />
                 </Link>
@@ -91,7 +101,7 @@ export default function ContactPage() {
                     className="h-5 w-auto"
                     width={60}
                     height={20}
-                    style={{ transform: "scale(1.15)", transformOrigin: "center" }}
+                    style={{ transform: "scale(1.15)", transformOrigin: "center", width: "auto", height: "auto" }}
                     loading="lazy"
                   />
                 </Link>
@@ -141,6 +151,7 @@ export default function ContactPage() {
                     className="h-6 w-auto"
                     width={88}
                     height={24}
+                    style={{ width: "auto", height: "auto" }}
                     loading="lazy"
                   />
                 </Link>

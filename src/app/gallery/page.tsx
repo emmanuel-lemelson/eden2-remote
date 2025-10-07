@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { SectionHeading } from "@/components/SectionHeading";
-import { GallerySectionGrid } from "@/components/GallerySectionGrid";
+import { GalleryViewSwitcher } from "@/components/GalleryViewSwitcher";
 import type { GallerySection } from "@/types/gallery";
 import galleryData from "@/data/gallery.json";
 
@@ -9,17 +9,17 @@ export const metadata: Metadata = {
   description:
     "Explore photos of Eden, a luxury 8-bedroom estate in Stowe, Vermont featuring spa amenities, pool, tennis, and mountain views.",
   alternates: {
-    canonical: "https://lemelsonestate.com/gallery",
+    canonical: "https://www.lemelsonestate.com/gallery",
   },
   openGraph: {
     title: "Eden Estate Gallery | Stowe, Vermont",
     description:
       "Curated images of Eden’s grounds, interiors, and amenities across all seasons.",
-    url: "https://lemelsonestate.com/gallery",
+    url: "https://www.lemelsonestate.com/gallery",
     type: "website",
     images: [
       {
-        url: "https://lemelsonestate.com/gallery/office/outdoor%20shots/70-020-estate-pool-mountain-backdrop.webp",
+        url: "https://www.lemelsonestate.com/gallery/office/outdoor%20shots/70-020-estate-pool-mountain-backdrop.webp",
         width: 1600,
         height: 900,
         alt: "Estate pool with mountain backdrop",
@@ -44,7 +44,7 @@ export default function GalleryPage() {
       </section>
 
       <section className="pb-12">
-        <GallerySectionGrid sections={gallerySections} />
+        <GalleryViewSwitcher sections={gallerySections} />
       </section>
 
       <section className="lux-section pt-0">

@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next";
 export const dynamic = "force-static";
 
 export default function robots(): MetadataRoute.Robots {
-  const base = new URL("https://lemelsonestate.com");
+  const base = new URL("https://www.lemelsonestate.com");
   return {
     rules: {
       userAgent: "*",
@@ -13,5 +13,4 @@ export default function robots(): MetadataRoute.Robots {
     host: base.origin,
   };
 }
-
 

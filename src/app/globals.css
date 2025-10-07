@@ -124,6 +124,26 @@ a {
   break-inside: avoid;
 }
 
+.masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+  align-items: stretch;
+  grid-auto-flow: dense;
+  grid-auto-rows: 8px;
+}
+
+@media (min-width: 768px) {
+  .masonry-grid {
+    gap: 1.25rem;
+  }
+}
+
+.masonry-grid .masonry-item {
+  margin-bottom: 0;
+  display: block;
+}
+
 @media (min-width: 768px) {
   .masonry-container {
     column-count: 2;

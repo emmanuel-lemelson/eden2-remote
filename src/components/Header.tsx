@@ -1,5 +1,6 @@
 'use client';
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -35,10 +36,17 @@ export function Header() {
         <div className="flex flex-1 items-center justify-center md:justify-start">
           <Link
             href="/"
-            className="inline-flex h-10 w-24 items-center justify-center rounded-full border border-transparent text-[0.65rem] font-semibold uppercase tracking-[0.45em] text-stone-600 transition hover:border-white/70 hover:bg-white/70 hover:text-stone-900 md:h-11 md:w-32"
+            className="inline-flex items-center"
             aria-label="Eden Estate Home"
           >
-            <span className="sr-only">Eden Estate</span>
+            <Image
+              src="/The Lemelson Estate (1).png"
+              alt="Eden Estate wordmark"
+              className="h-24 w-auto md:h-28 object-contain"
+              loading="lazy"
+              width={340}
+              height={136}
+            />
           </Link>
         </div>
 

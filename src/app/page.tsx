@@ -82,14 +82,14 @@ export default function Home() {
                   <AutoPlayVideo
                     className="h-full w-full origin-center transform object-cover scale-110"
                     src={heroVideoUrl}
-                    poster="https://images.unsplash.com/photo-1523419409543-0c1df022bdd1?auto=format&fit=crop&w=1600&q=80"
+                    poster="/gallery/Eden-Site Photos/1.webp"
                   />
                 ) : (
                   <div
                     className="relative flex h-full w-full flex-col items-center justify-center gap-4 bg-cover bg-center"
                     style={{
                       backgroundImage:
-                        "url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80')",
+                        "url('/gallery/Eden-Site Photos/2.avif')",
                     }}
                   >
                     <div className="absolute inset-0 bg-black/45" />
@@ -129,7 +129,7 @@ export default function Home() {
                 className="h-5 w-auto"
                 width={60}
                 height={20}
-                style={{ transform: "scale(1.15)", transformOrigin: "center" }}
+                style={{ transform: "scale(1.15)", transformOrigin: "center", width: "auto", height: "auto" }}
                 loading="lazy"
               />
             </Link>
@@ -146,7 +146,7 @@ export default function Home() {
                 className="h-5 w-auto"
                 width={60}
                 height={20}
-                style={{ transform: "scale(1.15)", transformOrigin: "center" }}
+                style={{ transform: "scale(1.15)", transformOrigin: "center", width: "auto", height: "auto" }}
                 loading="lazy"
               />
             </Link>
@@ -196,6 +196,7 @@ export default function Home() {
                 className="h-6 w-auto"
                 width={88}
                 height={24}
+                style={{ width: "auto", height: "auto" }}
                 loading="lazy"
               />
             </Link>
@@ -274,7 +275,7 @@ export default function Home() {
             {galleryPreview.map((item) => (
               <div
                 key={item.src}
-                className="group relative overflow-hidden rounded-3xl border border-white/70 bg-white/60 shadow-[0_24px_48px_-32px_rgba(58,45,20,0.55)]"
+                className="relative overflow-hidden rounded-3xl border border-white/70 bg-white/60 shadow-[0_24px_48px_-32px_rgba(58,45,20,0.55)]"
               >
                 <div className="relative aspect-[4/5] w-full overflow-hidden">
                   <Image
@@ -282,9 +283,9 @@ export default function Home() {
                     alt={item.alt}
                     fill
                     sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-                    className="pointer-events-none object-cover transition duration-500 ease-out group-hover:brightness-[1.05] group-hover:saturate-[1.05]"
+                    className="pointer-events-none object-cover"
                   />
-                  <span className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-t from-black/25 via-transparent to-black/15 opacity-0 transition-opacity duration-500 group-hover:opacity-50" />
+                  <span className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-t from-black/25 via-transparent to-black/15 opacity-40" />
                 </div>
               </div>
             ))}

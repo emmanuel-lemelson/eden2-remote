@@ -3,22 +3,21 @@ import Image from "next/image";
 export function Footer() {
   return (
     <footer className="border-t border-white/30 bg-white/70">
-      <div className="lux-container flex flex-col gap-4 py-4 md:flex-row md:items-start md:justify-between md:gap-5 md:py-5">
+      <div className="lux-container flex flex-col gap-4 py-0 md:flex-row md:items-center md:justify-between md:gap-5 md:py-0">
         <div className="flex flex-col items-center gap-2 text-center md:items-start md:text-left">
           <Image
             src="/The Lemelson Estate (1).png"
             alt="Eden Estate wordmark"
-            className="h-20 w-auto md:h-28 object-contain transform origin-center scale-[1.7] md:scale-[1.5]"
+            className="h-36 w-auto md:h-44 object-contain"
             loading="lazy"
-            width={280}
-            height={112}
+            width={680}
+            height={272}
           />
         </div>
 
-        <div className="flex flex-col gap-2.5 text-center text-sm text-stone-700 md:text-right">
+        <div className="flex flex-col gap-2.5 text-center text-sm text-stone-700 md:text-center">
           <div className="mx-auto h-px w-12 rounded-full bg-gradient-to-r from-transparent via-[rgba(58,45,20,0.25)] to-transparent md:hidden" />
           <div className="space-y-1">
-            <p className="text-xs uppercase tracking-[0.32em] text-stone-500">Connect</p>
             <div className="flex flex-col gap-1">
               <a
                 href="mailto:admin@lemelsoncapital.com"
