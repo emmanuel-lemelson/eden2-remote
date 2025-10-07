@@ -3,6 +3,7 @@ import Link from "next/link";
 import { SectionHeading } from "@/components/SectionHeading";
 import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 import { AutoPlayVideo } from "@/components/AutoPlayVideo";
+import { WhereToFindUs } from "@/components/WhereToFindUs";
 
 const quickFacts = [
   { label: "Bedrooms", value: "8" },
@@ -111,113 +112,8 @@ export default function Home() {
       </section>
 
       <section className="bg-gradient-to-br from-[var(--color-linen)] via-[var(--color-eggshell)] to-[var(--color-cream)]">
-        <div className="lux-container flex flex-col items-center gap-6 py-10 text-center text-stone-900 md:gap-8 md:py-14">
-          <p className="text-sm font-semibold uppercase tracking-[0.35em] text-stone-800 sm:text-base md:text-lg">
-            Where to Find Us
-          </p>
-          <div className="grid w-full max-w-4xl grid-cols-2 justify-items-center gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 sm:gap-5">
-            <Link
-              href="https://www.airbnb.com/rooms/42793723?guests=1&adults=1&s=67&unique_share_id=ba8163d3-af1e-4825-ba7d-15abbe902ec4"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex w-full items-center justify-center rounded-full bg-[#FF385C] px-5 py-3 shadow-lg shadow-black/10 transition-colors transition-transform duration-200 hover:-translate-y-0.5 hover:bg-[#FF4C6E] hover:shadow-xl sm:px-6"
-              aria-label="View Eden on Airbnb"
-            >
-              <Image
-                src="/Airbnb_Logo_0.svg"
-                alt="Airbnb"
-                className="h-5 w-auto"
-                width={60}
-                height={20}
-                style={{ transform: "scale(1.15)", transformOrigin: "center", width: "auto", height: "auto" }}
-                loading="lazy"
-              />
-            </Link>
-            <Link
-              href="https://www.vrbo.com/1958794?referrerId=HOT.HIS.Share.Landed.Copy_Link"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex w-full items-center justify-center rounded-full bg-white px-5 py-3 shadow-lg shadow-black/10 transition-colors transition-transform duration-200 hover:-translate-y-0.5 hover:bg-stone-100 hover:shadow-xl sm:px-6"
-              aria-label="View Eden on Vrbo"
-            >
-              <Image
-                src="/Vrbo_idJM8XKT4-_1.svg"
-                alt="Vrbo"
-                className="h-5 w-auto"
-                width={60}
-                height={20}
-                style={{ transform: "scale(1.15)", transformOrigin: "center", width: "auto", height: "auto" }}
-                loading="lazy"
-              />
-            </Link>
-            <Link
-              href="https://www.expedia.com/Stowe-Hotels-Private-Luxury-Estate.h51018966.Hotel-Information?referrerId=HOT.HIS.Share.Landed.Copy_Link"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex w-full items-center justify-center rounded-full bg-[#141D38] px-5 py-3 shadow-lg shadow-black/10 transition-colors transition-transform duration-200 hover:-translate-y-0.5 hover:bg-[#1D2A52] hover:shadow-xl sm:px-6"
-              aria-label="View Eden on Expedia"
-            >
-              <Image
-                src="/Expedia_Logo_1.png"
-                alt="Expedia"
-                className="h-5 w-auto"
-                width={70}
-                height={24}
-                loading="lazy"
-              />
-            </Link>
-            <Link
-              href="https://www.theknot.com/marketplace/edenthe-lemelson-estate-stowe-vt-2087322"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex w-full items-center justify-center rounded-full bg-[#FF44CB] px-5 py-3 shadow-lg shadow-black/10 transition-colors transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-xl sm:px-6"
-              aria-label="View Eden on The Knot"
-            >
-              <Image
-                src="/idzSo3ACCf_logos.jpeg"
-                alt="The Knot"
-                className="h-5 w-5 rounded-md object-cover"
-                width={40}
-                height={40}
-                style={{ transform: "scale(1.5)", transformOrigin: "center" }}
-                loading="lazy"
-              />
-            </Link>
-            <Link
-              href="https://www.zola.com/wedding-vendors/wedding-venues/eden-the-lemelson-estate"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex w-full items-center justify-center rounded-full border border-white bg-white px-5 py-3 shadow-lg shadow-black/10 transition-colors transition-transform duration-200 hover:-translate-y-0.5 hover:border-white/80 hover:shadow-xl sm:px-6"
-              aria-label="View Eden on Zola"
-            >
-              <Image
-                src="/id56oBQafI_1758992156050.png"
-                alt="Zola"
-                className="h-6 w-auto"
-                width={88}
-                height={24}
-                style={{ width: "auto", height: "auto" }}
-                loading="lazy"
-              />
-            </Link>
-            <Link
-              href="https://www.weddingwire.com/biz/eden-the-lemelson-estate/393d590ddd940149.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex w-full items-center justify-center rounded-full border border-white bg-white px-5 py-3 shadow-lg shadow-black/10 transition-colors transition-transform duration-200 hover:-translate-y-0.5 hover:bg-[#F3FBFB] hover:shadow-xl justify-self-center sm:justify-self-auto sm:px-6"
-              aria-label="View Eden on WeddingWire"
-            >
-              <Image
-                src="/WeddingWire_idGDCwR69F_1.svg"
-                alt="WeddingWire"
-                className="h-5 w-auto"
-                width={90}
-                height={24}
-                style={{ transform: "scale(1.35)", transformOrigin: "center" }}
-                loading="lazy"
-              />
-            </Link>
-          </div>
+        <div className="lux-container py-10 md:py-14">
+          <WhereToFindUs />
         </div>
       </section>
 

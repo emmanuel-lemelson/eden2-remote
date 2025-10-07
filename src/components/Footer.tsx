@@ -3,8 +3,8 @@ import Image from "next/image";
 export function Footer() {
   return (
     <footer className="border-t border-white/30 bg-white/70">
-      <div className="lux-container flex flex-col gap-4 py-0 md:flex-row md:items-center md:justify-between md:gap-5 md:py-0">
-        <div className="flex flex-col items-center gap-2 text-center md:items-start md:text-left">
+      <div className="lux-container flex flex-col gap-0 py-0 md:flex-row md:items-center md:justify-between md:gap-5 md:py-0">
+        <div className="flex flex-col items-center text-center md:items-start md:text-left">
           <Image
             src="/The Lemelson Estate (1).png"
             alt="Eden Estate wordmark"
@@ -15,9 +15,9 @@ export function Footer() {
           />
         </div>
 
-        <div className="flex flex-col gap-2.5 text-center text-sm text-stone-700 md:text-center">
+        <div className="flex flex-col gap-1.5 text-center text-sm text-stone-700 md:text-center -mt-4">
           <div className="mx-auto h-px w-12 rounded-full bg-gradient-to-r from-transparent via-[rgba(58,45,20,0.25)] to-transparent md:hidden" />
-          <div className="space-y-1">
+          <div className="space-y-0.5">
             <div className="flex flex-col gap-1">
               <a
                 href="mailto:admin@lemelsoncapital.com"
@@ -56,7 +56,7 @@ export function Footer() {
               <Image src="/X_idVRwaKp9b_1.png" alt="X" className="h-4 w-4" width={16} height={16} />
             </a>
           </div>
-          <p className="text-xs text-stone-500 text-center md:text-right">© 2025 The Lemelson Group, LLC</p>
+          <p className="text-xs text-stone-500 text-center pb-4 md:pb-0 md:text-right">© 2025 The Lemelson Group, LLC</p>
         </div>
       </div>
     </footer>

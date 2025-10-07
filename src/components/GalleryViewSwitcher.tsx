@@ -20,7 +20,7 @@ export function GalleryViewSwitcher({ sections }: Props) {
 
   return (
     <div className="space-y-6">
-      <div className="lux-container flex flex-wrap items-center justify-end gap-4">
+      <div className="lux-container flex flex-wrap items-center justify-start gap-4 -mt-8">
         <div className="flex items-center gap-2 rounded-full border border-stone-300 bg-white p-1">
           {VIEW_OPTIONS.map((option) => {
             const isActive = option.key === variant;
