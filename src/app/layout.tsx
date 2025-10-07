@@ -52,8 +52,8 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: "/favicon.ico",
-    shortcut: "/Gemini_Generated_Image_vxv0oevxv0oevxv0.png",
-    apple: "/Gemini_Generated_Image_vxv0oevxv0oevxv0.png",
+    shortcut: "/eden-favicon.png",
+    apple: "/eden-favicon.png",
   },
 };
 
