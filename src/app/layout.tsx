@@ -19,16 +19,16 @@ const manrope = Manrope({
 const PRODUCTION_URL = "https://www.lemelsonestate.com";
 
 export const metadata: Metadata = {
-  title: "Eden | Stowe, Vermont Estate",
+  title: "Eden: The Lemelson Estate | Stowe, Vermont",
   description:
-    "Eden is an 11,400 sq ft luxury rental estate in Stowe, Vermont with eight bedrooms, private spa amenities, and expansive mountain views.",
+    "Eden: The Lemelson Estate is an 11,400 sq ft luxury rental estate in Stowe, Vermont with eight bedrooms, private spa amenities, and expansive mountain views.",
   metadataBase: new URL(PRODUCTION_URL),
   openGraph: {
-    title: "Eden Estate | Stowe, Vermont",
+    title: "Eden: The Lemelson Estate | Stowe Vermont",
     description:
-      "Discover Eden, an exclusive 28-acre, 8-bedroom retreat offering the finest in mountain luxury living.",
+      "Discover Eden: The Lemelson Estate, an exclusive 28-acre, 8-bedroom retreat offering the finest in mountain luxury living.",
     url: PRODUCTION_URL,
-    siteName: "Eden",
+    siteName: "Eden: The Lemelson Estate",
     locale: "en_US",
     type: "website",
     images: [
@@ -43,9 +43,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@LemelsonEstate",
-    title: "Eden Estate | Stowe, Vermont",
+    title: "Eden: The Lemelson Estate | Stowe Vermont",
     description:
-      "Discover Eden, an exclusive 28-acre, 8-bedroom retreat offering the finest in mountain luxury living.",
+      "Discover Eden: The Lemelson Estate, an exclusive 28-acre, 8-bedroom retreat offering the finest in mountain luxury living.",
   },
   alternates: {
     canonical: PRODUCTION_URL,
