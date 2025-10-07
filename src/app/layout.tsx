@@ -52,8 +52,8 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: "/favicon.ico",
-    shortcut: "/The Lemelson Estate (1).png",
-    apple: "/The Lemelson Estate (1).png",
+    shortcut: "/Gemini_Generated_Image_vxv0oevxv0oevxv0.png",
+    apple: "/Gemini_Generated_Image_vxv0oevxv0oevxv0.png",
   },
 };
 
