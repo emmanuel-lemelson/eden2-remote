@@ -99,22 +99,17 @@ export function GallerySectionGrid({ sections }: Props) {
   let runningImageIndex = 0;
 
   return (
-    <div className="lux-container space-y-24">
+    <div className="lux-container space-y-12">
       {sections.map((section) => {
         const sectionStartIndex = runningImageIndex;
         runningImageIndex += section.images.length;
 
         return (
-          <article key={section.title} className="space-y-8">
+          <article key={section.title} className="space-y-4">
             <div className="md:w-2/3">
-              <h3 className="text-2xl font-semibold text-stone-900">
+              <h3 className="text-xl font-semibold text-stone-900">
                 {section.title}
               </h3>
-              {section.description ? (
-                <p className="mt-2 text-base text-stone-700">
-                  {section.description}
-                </p>
-              ) : null}
             </div>
 
             <div className="masonry-container">
@@ -128,7 +123,7 @@ export function GallerySectionGrid({ sections }: Props) {
                 return (
                   <div
                     key={image.src}
-                    className="masonry-item overflow-hidden rounded-3xl border border-white/60 bg-[rgba(248,243,234,0.85)] shadow-sm transition hover:-translate-y-1 hover:shadow-2xl"
+                    className="masonry-item group relative overflow-hidden rounded-3xl border border-white/60 bg-[rgba(248,243,234,0.85)] shadow-sm transition-shadow duration-300 hover:shadow-2xl"
                   >
                     <GalleryImage
                       src={image.src}
@@ -138,7 +133,9 @@ export function GallerySectionGrid({ sections }: Props) {
                       height={image.height}
                       sizes={image.sizes}
                       index={absoluteIndex}
+                      className="pointer-events-none transition duration-300 ease-out group-hover:brightness-[1.05] group-hover:saturate-[1.05]"
                     />
+                    <span className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-t from-black/20 via-transparent to-black/10 opacity-0 transition-opacity duration-300 group-hover:opacity-40" />
                   </div>
                 );
               })}

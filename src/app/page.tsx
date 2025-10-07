@@ -15,20 +15,20 @@ const quickFacts = [
 
 const galleryPreview = [
   {
-    src: "/gallery/office/outdoor shots/70-020-estate-pool-mountain-backdrop.webp",
-    alt: "Estate pool with mountain backdrop",
+    src: "/gallery/Eden-Site Photos/1.webp",
+    alt: "Eden Estate exterior view",
   },
   {
-    src: "/gallery/grounds/79-007-outdoor-tennis-court-view.webp",
-    alt: "Outdoor tennis court view",
+    src: "/gallery/Eden-Site Photos/2.avif",
+    alt: "Eden Estate exterior view",
   },
   {
-    src: "/gallery/office/great room/08-grand-living-room-fireplace.webp",
-    alt: "Grand living room with fireplace",
+    src: "/gallery/Eden-Site Photos/3.avif",
+    alt: "Eden Estate exterior view",
   },
   {
-    src: "/gallery/weddings/113-028-winter-wedding-snowy-backdrop.webp",
-    alt: "Winter wedding with snowy backdrop",
+    src: "/gallery/Eden-Site Photos/5.avif",
+    alt: "Eden Estate interior view",
   },
 ];
 
@@ -282,8 +282,9 @@ export default function Home() {
                     alt={item.alt}
                     fill
                     sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="pointer-events-none object-cover transition duration-500 ease-out group-hover:brightness-[1.05] group-hover:saturate-[1.05]"
                   />
+                  <span className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-t from-black/25 via-transparent to-black/15 opacity-0 transition-opacity duration-500 group-hover:opacity-50" />
                 </div>
               </div>
             ))}

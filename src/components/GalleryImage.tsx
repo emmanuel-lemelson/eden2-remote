@@ -8,6 +8,7 @@ type Props = {
   index?: number;
   sizes?: string;
   srcSet?: string;
+  className?: string;
 };
 
 const PRIORITY_IMAGE_COUNT = 12;
@@ -21,8 +22,14 @@ export function GalleryImage({
   sizes,
   srcSet,
   index = 0,
+  className,
 }: Props) {
   const isPriority = index < PRIORITY_IMAGE_COUNT;
+  const classes = ["block h-auto w-full object-cover"];
+  if (className && className.trim().length > 0) {
+    classes.push(className);
+  }
+
   return (
     <img
       src={src}
@@ -34,7 +41,7 @@ export function GalleryImage({
       fetchPriority={isPriority ? "high" : "low"}
       width={width}
       height={height}
-      className="h-auto w-full object-cover"
+      className={classes.join(" ")}
       style={{
         aspectRatio: `${width} / ${height}`,
         backgroundColor: "var(--color-eggshell)",

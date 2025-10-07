@@ -59,7 +59,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning={true}>
       <body
         className={`${playfair.variable} ${manrope.variable} bg-stone-100 text-stone-900 antialiased`}
         suppressHydrationWarning={true}

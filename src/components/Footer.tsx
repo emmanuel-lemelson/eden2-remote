@@ -57,6 +57,7 @@ export function Footer() {
               <Image src="/X_idVRwaKp9b_1.png" alt="X" className="h-4 w-4" width={16} height={16} />
             </a>
           </div>
+          <p className="text-xs text-stone-500 text-center md:text-right">© 2025 The Lemelson Group, LLC</p>
         </div>
       </div>
     </footer>

@@ -76,7 +76,7 @@ export function TestimonialCarousel({
           <span className="text-xs uppercase tracking-[0.4em] text-stone-600">
             Testimonials
           </span>
-          <PerfectReviewsBadge reviewCount={43} countLabel="REVIEWS" />
+          <PerfectReviewsBadge reviewCount={58} countLabel="REVIEWS" />
         </div>
         <blockquote className="mt-6 text-2xl font-medium leading-relaxed text-stone-800 md:text-3xl">
           “{active.quote}”

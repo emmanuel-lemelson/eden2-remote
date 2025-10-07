@@ -48,6 +48,7 @@ const PLATFORM_LABELS: Record<string, string> = {
   VRBO_Expedia: "VRBO / Expedia",
   The_Knot: "The Knot",
   Wedding_Wire: "Wedding Wire",
+  Facebook: "Facebook",
 };
 
 function formatPlatformName(key: string) {

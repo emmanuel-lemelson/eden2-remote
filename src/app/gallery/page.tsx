@@ -33,7 +33,7 @@ export default function GalleryPage() {
 
   return (
     <div>
-      <section className="lux-section pb-10">
+      <section className="lux-section pb-6">
         <div className="lux-container">
           <SectionHeading
             eyebrow="Gallery"
@@ -43,12 +43,12 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      <section className="pb-24">
+      <section className="pb-12">
         <GallerySectionGrid sections={gallerySections} />
       </section>
 
       <section className="lux-section pt-0">
-        <div className="lux-container overflow-hidden rounded-3xl border border-white/60 bg-white/80 p-10 text-center md:p-16">
+        <div className="lux-container overflow-hidden rounded-3xl border border-white/60 bg-white/80 p-6 text-center md:p-10">
           <p className="text-xs uppercase tracking-[0.4em] text-stone-500">
             Preview and Planning
           </p>
