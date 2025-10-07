@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef } from "react";
 import type { ReactNode } from "react";
 import { GalleryImage } from "@/components/GalleryImage";
 import type { GallerySection } from "@/types/gallery";
@@ -56,7 +56,7 @@ function MasonryItem({
 }) {
   const elementRef = useRef<HTMLDivElement | null>(null);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const element = elementRef.current;
     if (!element) {
       return;
