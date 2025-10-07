@@ -26,10 +26,17 @@ try {
 
 const gallerySectionConfig = [
   {
-    title: "The Great Room",
-    description: "Photos 1-15: Spacious gathering areas with soaring ceilings and elegant furnishings.",
+    title: "Exterior Views",
+    description: "Photos 1-3: Estate exterior showcasing architecture and grounds.",
     directory: "Eden-Site Photos",
     startPhoto: 1,
+    endPhoto: 3,
+  },
+  {
+    title: "The Great Room",
+    description: "Photos 4-15: Spacious gathering areas with soaring ceilings and elegant furnishings.",
+    directory: "Eden-Site Photos",
+    startPhoto: 4,
     endPhoto: 15,
   },
   {
@@ -223,7 +230,7 @@ const gallerySectionConfig = [
   },
   {
     title: "Exterior",
-    description: "Photos 72-87: Estate exterior showcasing architecture and grounds.",
+    description: "Photos 72-87: Additional exterior views of the estate grounds and architecture.",
     directory: "Eden-Site Photos",
     startPhoto: 72,
     endPhoto: 87,

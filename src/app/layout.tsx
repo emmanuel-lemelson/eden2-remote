@@ -52,6 +52,8 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: "/favicon.ico",
+    shortcut: "/The Lemelson Estate (1).png",
+    apple: "/The Lemelson Estate (1).png",
   },
 };
 
