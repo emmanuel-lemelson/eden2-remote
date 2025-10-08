@@ -16,15 +16,15 @@ const quickFacts = [
 
 const galleryPreview = [
   {
-    src: "/gallery/Eden-Site Photos/1.webp",
-    alt: "Eden Estate exterior view",
-  },
-  {
     src: "/gallery/Eden-Site Photos/2.avif",
     alt: "Eden Estate exterior view",
   },
   {
     src: "/gallery/Eden-Site Photos/3.avif",
+    alt: "Eden Estate exterior view",
+  },
+  {
+    src: "/gallery/Eden-Site Photos/1.webp",
     alt: "Eden Estate exterior view",
   },
   {

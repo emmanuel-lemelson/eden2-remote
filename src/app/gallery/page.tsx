@@ -19,10 +19,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://lemelsonestate.com/gallery/office/outdoor%20shots/70-020-estate-pool-mountain-backdrop.webp",
-        width: 1600,
-        height: 900,
-        alt: "Estate pool with mountain backdrop",
+        url: "https://lemelsonestate.com/gallery/Eden-Site%20Photos/2.avif",
+        width: 720,
+        height: 480,
+        alt: "Eden Estate exterior view",
       },
     ],
   },

@@ -34,10 +34,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${PRODUCTION_URL}/opengraph-image`,
-        width: 1200,
-        height: 630,
-        alt: "Eden — The Lemelson Estate",
+        url: `${PRODUCTION_URL}/gallery/Eden-Site%20Photos/2.avif`,
+        width: 720,
+        height: 480,
+        alt: "Eden Estate exterior view",
       },
     ],
   },
