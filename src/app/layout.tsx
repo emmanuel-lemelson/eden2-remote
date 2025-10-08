@@ -17,6 +17,7 @@ const manrope = Manrope({
 });
 
 const PRODUCTION_URL = "https://www.lemelsonestate.com";
+const CANONICAL_HOME = `${PRODUCTION_URL}/`;
 
 export const metadata: Metadata = {
   title: "Eden: The Lemelson Estate | Stowe, Vermont",
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
     title: "Eden: The Lemelson Estate | Stowe Vermont",
     description:
       "Discover Eden: The Lemelson Estate, an exclusive 28-acre, 8-bedroom retreat offering the finest in mountain luxury living.",
-    url: PRODUCTION_URL,
+    url: CANONICAL_HOME,
     siteName: "Eden: The Lemelson Estate",
     locale: "en_US",
     type: "website",
@@ -48,12 +49,19 @@ export const metadata: Metadata = {
       "Discover Eden: The Lemelson Estate, an exclusive 28-acre, 8-bedroom retreat offering the finest in mountain luxury living.",
   },
   alternates: {
-    canonical: PRODUCTION_URL,
+    canonical: CANONICAL_HOME,
   },
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/eden-favicon.png",
-    apple: "/eden-favicon.png",
+    icon: [
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon.ico" },
+    ],
+    shortcut: "/favicon-32x32.png",
+    apple: "/apple-touch-icon.png",
+    other: [
+      { rel: "icon", url: "/favicon-192x192.png", sizes: "192x192", type: "image/png" },
+    ],
   },
 };
 
@@ -82,8 +90,9 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Organization',
+              '@id': `${PRODUCTION_URL}/#organization`,
               name: 'Eden — The Lemelson Estate',
-              url: PRODUCTION_URL,
+              url: CANONICAL_HOME,
               logo: `${PRODUCTION_URL}/The%20Lemelson%20Estate%20(1).png`,
               sameAs: [
                 'https://www.airbnb.com/rooms/42793723',
@@ -107,8 +116,9 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'LodgingBusiness',
+              '@id': `${PRODUCTION_URL}/#lodging-business`,
               name: 'Eden — The Lemelson Estate',
-              url: PRODUCTION_URL,
+              url: CANONICAL_HOME,
               image: `${PRODUCTION_URL}/gallery/office/outdoor%20shots/70-020-estate-pool-mountain-backdrop.webp`,
               description: 'Luxury 8-bedroom estate in Stowe, Vermont with spa amenities and mountain views.',
               address: {
@@ -127,6 +137,7 @@ export default function RootLayout({
                 'https://www.airbnb.com/rooms/42793723',
                 'https://www.vrbo.com/1958794',
               ],
+              mainEntityOfPage: CANONICAL_HOME,
             }),
           }}
         />

@@ -9,13 +9,13 @@ export const metadata: Metadata = {
   description:
     "Explore photos of Eden, a luxury 8-bedroom estate in Stowe, Vermont featuring spa amenities, pool, tennis, and mountain views.",
   alternates: {
-    canonical: "https://www.lemelsonestate.com/gallery",
+    canonical: "https://www.lemelsonestate.com/gallery/",
   },
   openGraph: {
     title: "Eden Estate Gallery | Stowe, Vermont",
     description:
       "Curated images of Eden’s grounds, interiors, and amenities across all seasons.",
-    url: "https://www.lemelsonestate.com/gallery",
+    url: "https://www.lemelsonestate.com/gallery/",
     type: "website",
     images: [
       {
@@ -37,8 +37,10 @@ export default function GalleryPage() {
         <div className="lux-container">
           <SectionHeading
             eyebrow="Gallery"
+            as="h1"
             title="Scenes from Eden"
             description="Explore the estate through curated imagery"
+            align="left"
           />
         </div>
       </section>

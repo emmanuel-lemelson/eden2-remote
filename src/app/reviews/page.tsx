@@ -1,4 +1,5 @@
 import ReviewsClient from "@/components/reviews/ReviewsClient";
+import { SectionHeading } from "@/components/SectionHeading";
 import reviewsData from "@/../public/reviews.json";
 import type { NormalizedReview, Rating } from "@/types/reviews";
 import type { Metadata } from "next";
@@ -8,13 +9,13 @@ export const metadata: Metadata = {
   description:
     "Read guest reviews from Airbnb, Vrbo/Expedia, The Knot, and Wedding Wire about Eden Estate in Stowe, Vermont.",
   alternates: {
-    canonical: "https://www.lemelsonestate.com/reviews",
+    canonical: "https://www.lemelsonestate.com/reviews/",
   },
   openGraph: {
     title: "Eden Estate Reviews | Stowe, Vermont",
     description:
       "Verified testimonials across platforms highlighting Eden’s luxury, service, and setting.",
-    url: "https://www.lemelsonestate.com/reviews",
+    url: "https://www.lemelsonestate.com/reviews/",
     type: "website",
   },
 };
@@ -202,10 +203,22 @@ function normalizeData(data: ReviewsFile) {
 export default async function ReviewsPage() {
   const normalized = normalizeData(reviewsData as ReviewsFile);
   return (
-    <div className="lux-section">
-      <div className="lux-container">
-        <ReviewsClient normalized={normalized} />
-      </div>
-    </div>
+    <>
+      <section className="lux-section pb-6">
+        <div className="lux-container">
+          <SectionHeading
+            eyebrow="Reviews"
+            as="h1"
+            title="What Guests Say About Eden"
+            description="Explore verified testimonials from wedding parties, multi-generational getaways, and executive retreats who chose Eden — The Lemelson Estate for luxury lodging in Stowe, Vermont."
+          />
+        </div>
+      </section>
+      <section className="lux-section pt-0">
+        <div className="lux-container">
+          <ReviewsClient normalized={normalized} />
+        </div>
+      </section>
+    </>
   );
 }

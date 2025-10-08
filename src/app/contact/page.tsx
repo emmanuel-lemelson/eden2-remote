@@ -1,6 +1,4 @@
 import { Metadata } from "next";
-import Link from "next/link";
-import Image from "next/image";
 import { WhereToFindUs } from "@/components/WhereToFindUs";
 
 export const metadata: Metadata = {
@@ -8,13 +6,13 @@ export const metadata: Metadata = {
   description:
     "Inquire about Eden Estate in Stowe, Vermont. Share your event details, travel dates, and guest information to begin curating your stay.",
   alternates: {
-    canonical: "https://www.lemelsonestate.com/contact",
+    canonical: "https://www.lemelsonestate.com/contact/",
   },
   openGraph: {
     title: "Contact Eden Estate Stowe",
     description:
       "Connect with the Eden Estate team to plan weddings, retreats, and family gatherings in Stowe, Vermont.",
-    url: "https://www.lemelsonestate.com/contact",
+    url: "https://www.lemelsonestate.com/contact/",
     type: "website",
   },
 };
