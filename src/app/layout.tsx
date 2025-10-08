@@ -16,7 +16,7 @@ const manrope = Manrope({
   display: "swap",
 });
 
-const PRODUCTION_URL = "https://www.lemelsonestate.com";
+const PRODUCTION_URL = "https://lemelsonestate.com";
 const CANONICAL_HOME = `${PRODUCTION_URL}/`;
 
 export const metadata: Metadata = {
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${PRODUCTION_URL}/opengraph-image.png`,
+        url: `${PRODUCTION_URL}/opengraph-image`,
         width: 1200,
         height: 630,
         alt: "Eden — The Lemelson Estate",

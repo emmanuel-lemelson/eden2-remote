@@ -9,13 +9,13 @@ export const metadata: Metadata = {
   description:
     "Read guest reviews from Airbnb, Vrbo/Expedia, The Knot, and Wedding Wire about Eden Estate in Stowe, Vermont.",
   alternates: {
-    canonical: "https://www.lemelsonestate.com/reviews/",
+    canonical: "https://lemelsonestate.com/reviews/",
   },
   openGraph: {
     title: "Eden Estate Reviews | Stowe, Vermont",
     description:
       "Verified testimonials across platforms highlighting Eden’s luxury, service, and setting.",
-    url: "https://www.lemelsonestate.com/reviews/",
+    url: "https://lemelsonestate.com/reviews/",
     type: "website",
   },
 };

@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = new URL("https://www.lemelsonestate.com");
+  const base = new URL("https://lemelsonestate.com");
   const now = new Date().toISOString();
   const routes = ["/", "/gallery/", "/reviews/", "/contact/"];
   return routes.map((path) => ({

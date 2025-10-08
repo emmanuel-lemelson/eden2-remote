@@ -9,17 +9,17 @@ export const metadata: Metadata = {
   description:
     "Explore photos of Eden, a luxury 8-bedroom estate in Stowe, Vermont featuring spa amenities, pool, tennis, and mountain views.",
   alternates: {
-    canonical: "https://www.lemelsonestate.com/gallery/",
+    canonical: "https://lemelsonestate.com/gallery/",
   },
   openGraph: {
     title: "Eden Estate Gallery | Stowe, Vermont",
     description:
       "Curated images of Eden’s grounds, interiors, and amenities across all seasons.",
-    url: "https://www.lemelsonestate.com/gallery/",
+    url: "https://lemelsonestate.com/gallery/",
     type: "website",
     images: [
       {
-        url: "https://www.lemelsonestate.com/gallery/office/outdoor%20shots/70-020-estate-pool-mountain-backdrop.webp",
+        url: "https://lemelsonestate.com/gallery/office/outdoor%20shots/70-020-estate-pool-mountain-backdrop.webp",
         width: 1600,
         height: 900,
         alt: "Estate pool with mountain backdrop",
