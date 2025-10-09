@@ -25,9 +25,9 @@ export const metadata: Metadata = {
     "Eden: The Lemelson Estate is an 11,400 sq ft luxury rental estate in Stowe, Vermont with eight bedrooms, private spa amenities, and expansive mountain views.",
   metadataBase: new URL(PRODUCTION_URL),
   openGraph: {
-    title: "Eden: The Lemelson Estate | Stowe Vermont",
+    title: "Eden: The Lemelson Estate | Stowe, Vermont",
     description:
-      "Discover Eden: The Lemelson Estate, an exclusive 28-acre, 8-bedroom retreat offering the finest in mountain luxury living.",
+      "Escape to one of Stowe's most exclusive estates. 11,400 sq ft of luxury living space for up to 20 guests.",
     url: CANONICAL_HOME,
     siteName: "Eden: The Lemelson Estate",
     locale: "en_US",
@@ -44,9 +44,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@LemelsonEstate",
-    title: "Eden: The Lemelson Estate | Stowe Vermont",
+    title: "Eden: The Lemelson Estate | Stowe, Vermont",
     description:
-      "Discover Eden: The Lemelson Estate, an exclusive 28-acre, 8-bedroom retreat offering the finest in mountain luxury living.",
+      "Escape to one of Stowe's most exclusive estates. 11,400 sq ft of luxury living space for up to 20 guests.",
+    images: [`${PRODUCTION_URL}/gallery/Eden-Site%20Photos/2.avif`],
   },
   alternates: {
     canonical: CANONICAL_HOME,

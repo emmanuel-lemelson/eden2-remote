@@ -14,9 +14,17 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Eden Estate Reviews | Stowe, Vermont",
     description:
-      "Verified testimonials across platforms highlighting Eden’s luxury, service, and setting.",
+      "Verified testimonials across platforms highlighting Eden's luxury, service, and setting.",
     url: "https://lemelsonestate.com/reviews/",
     type: "website",
+    images: [
+      {
+        url: "https://lemelsonestate.com/gallery/Eden-Site%20Photos/2.avif",
+        width: 720,
+        height: 480,
+        alt: "Eden Estate exterior view",
+      },
+    ],
   },
 };
 

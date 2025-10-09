@@ -17,46 +17,16 @@ export default async function Image() {
           width: "100%",
           height: "100%",
           display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          background: "linear-gradient(135deg, #f9f5ec 0%, #efe6d5 100%)",
-          color: "#1c1917",
-          padding: 64,
         }}
       >
-        <div
+        <img
+          src="https://lemelsonestate.com/gallery/Eden-Site%20Photos/2.avif"
           style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            textAlign: "center",
-            borderRadius: 24,
-            border: "1px solid rgba(194,160,96,0.35)",
-            background: "rgba(255,255,255,0.75)",
-            padding: 48,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
           }}
-        >
-          <div
-            style={{
-              fontSize: 60,
-              fontWeight: 700,
-              letterSpacing: 2,
-              marginBottom: 12,
-            }}
-          >
-            Eden — The Lemelson Estate
-          </div>
-          <div
-            style={{
-              fontSize: 28,
-              opacity: 0.85,
-              letterSpacing: 1,
-            }}
-          >
-            Bespoke Luxury in Stowe, Vermont
-          </div>
-        </div>
+        />
       </div>
     ),
     {

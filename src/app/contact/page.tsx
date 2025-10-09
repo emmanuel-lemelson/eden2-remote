@@ -14,6 +14,14 @@ export const metadata: Metadata = {
       "Connect with the Eden Estate team to plan weddings, retreats, and family gatherings in Stowe, Vermont.",
     url: "https://lemelsonestate.com/contact/",
     type: "website",
+    images: [
+      {
+        url: "https://lemelsonestate.com/gallery/Eden-Site%20Photos/2.avif",
+        width: 720,
+        height: 480,
+        alt: "Eden Estate exterior view",
+      },
+    ],
   },
 };
 
