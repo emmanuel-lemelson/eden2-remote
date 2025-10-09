@@ -10,19 +10,19 @@ export function PerfectReviewsBadge({
   countLabel?: string;
 }) {
   return (
-    <div className="flex items-center gap-6 rounded-2xl border border-stone-900/10 bg-stone-900/90 px-6 py-4 text-white shadow-[0_18px_36px_-24px_rgba(30,30,40,0.55)] backdrop-blur">
+    <div className="flex items-center gap-6 rounded-2xl border border-white/70 bg-gradient-to-b from-white/95 to-white/85 px-6 py-4 text-stone-800 shadow-[0_20px_45px_-20px_rgba(30,30,40,0.35)]">
       <div className="flex flex-col items-center leading-none">
         <span className="text-3xl font-bold tracking-tight">{reviewCount}</span>
-        <span className="mt-1 text-[0.7rem] font-semibold uppercase tracking-[0.3em] text-white/70">
+        <span className="mt-1 text-[0.7rem] font-semibold uppercase tracking-[0.3em] text-stone-600">
           {countLabel}
         </span>
       </div>
-      <span className="text-3xl font-semibold text-white/40" aria-hidden>
+      <span className="text-3xl font-semibold text-stone-400" aria-hidden>
         |
       </span>
       <div className="flex flex-col items-center leading-none">
         <span className="text-3xl font-bold tracking-tight">100%</span>
-        <span className="mt-1 flex items-center gap-1 text-amber-300" aria-hidden>
+        <span className="mt-1 flex items-center gap-1 text-[#c2a060]" aria-hidden>
           {Array.from({ length: 5 }).map((_, starIndex) => (
             <svg key={`carousel-star-${starIndex}`} viewBox="0 0 24 24" className="h-[0.9rem] w-[0.9rem] fill-current">
               <path d="M12 2.25l2.35 6.36 6.9.22-5.38 4.26 1.89 6.66-5.76-3.67-5.76 3.67 1.89-6.66-5.38-4.26 6.9-.22L12 2.25z" />

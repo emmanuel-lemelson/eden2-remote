@@ -7,6 +7,14 @@
     "endPhoto": 3,
     "images": [
       {
+        "src": "/gallery/Eden-Site%20Photos/1.webp",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/1@400w.webp 400w, /gallery/Eden-Site%20Photos/1@800w.webp 800w, /gallery/Eden-Site%20Photos/1@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 900
+      },
+      {
         "src": "/gallery/Eden-Site%20Photos/2.avif",
         "alt": "Eden Estate gallery image",
         "srcset": "/gallery/Eden-Site%20Photos/2@400w.webp 400w, /gallery/Eden-Site%20Photos/2@800w.webp 800w, /gallery/Eden-Site%20Photos/2@1200w.webp 1200w",
@@ -21,14 +29,6 @@
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 720,
         "height": 480
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/1.webp",
-        "alt": "Eden Estate gallery image",
-        "srcset": "/gallery/Eden-Site%20Photos/1@400w.webp 400w, /gallery/Eden-Site%20Photos/1@800w.webp 800w, /gallery/Eden-Site%20Photos/1@1200w.webp 1200w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1200,
-        "height": 900
       }
     ]
   },

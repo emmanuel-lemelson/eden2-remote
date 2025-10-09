@@ -134,22 +134,8 @@ export default function ReviewsClient({ normalized }: { normalized: NormalizedPa
 
   return (
     <div className="space-y-6">
-      {perfectRating ? (
-        <div className="flex justify-center">
-          <PerfectReviewsBadge
-            reviewCount={perfectRating.count}
-            countLabel={perfectRating.count === 1 ? "review" : "reviews"}
-          />
-        </div>
-      ) : null}
-
-      {/* Summary hidden for now - retained for potential future use */}
-      {/* <section className="rounded-3xl border border-[#d2c4a3]/60 bg-gradient-to-b from-[#fdfbf7]/95 via-[#f8f3ea]/90 to-[#f2e8da]/85 p-4 shadow-[0_25px_60px_-20px_rgba(30,30,40,0.35)]">
-        ...
-      </section> */}
-
-      {/* Filter */}
-      <section className="flex items-center justify-between gap-3">
+      {/* Filter and Badge */}
+      <section className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex items-center gap-2">
           <label htmlFor="platform" className="text-xs font-semibold uppercase tracking-[0.28em] text-stone-600">
             Filter
@@ -168,8 +154,22 @@ export default function ReviewsClient({ normalized }: { normalized: NormalizedPa
             ))}
           </select>
         </div>
-        <div className="text-[0.75rem] text-stone-500">Newest first</div>
+        
+        {perfectRating ? (
+          <div className="flex justify-center sm:justify-end">
+            <PerfectReviewsBadge
+              reviewCount={perfectRating.count}
+              countLabel={perfectRating.count === 1 ? "review" : "reviews"}
+            />
+          </div>
+        ) : null}
       </section>
+
+      {/* Summary hidden for now - retained for potential future use */}
+      {/* <section className="rounded-3xl border border-[#d2c4a3]/60 bg-gradient-to-b from-[#fdfbf7]/95 via-[#f8f3ea]/90 to-[#f2e8da]/85 p-4 shadow-[0_25px_60px_-20px_rgba(30,30,40,0.35)]">
+        ...
+      </section> */}
+
 
       {/* Reviews grid */}
       <section className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">

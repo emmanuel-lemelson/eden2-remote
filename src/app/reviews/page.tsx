@@ -204,17 +204,16 @@ export default async function ReviewsPage() {
   const normalized = normalizeData(reviewsData as ReviewsFile);
   return (
     <>
-      <section className="lux-section pb-6">
+      <section className="pt-12 pb-6">
         <div className="lux-container">
           <SectionHeading
             eyebrow="Reviews"
             as="h1"
             title="What Guests Say About Eden"
-            description="Explore verified testimonials from wedding parties, multi-generational getaways, and executive retreats who chose Eden — The Lemelson Estate for luxury lodging in Stowe, Vermont."
           />
         </div>
       </section>
-      <section className="lux-section pt-0">
+      <section className="pt-0 pb-12">
         <div className="lux-container">
           <ReviewsClient normalized={normalized} />
         </div>
