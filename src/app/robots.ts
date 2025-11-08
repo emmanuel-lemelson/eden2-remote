@@ -3,13 +3,12 @@ import type { MetadataRoute } from "next";
 export const dynamic = "force-static";
 
 export default function robots(): MetadataRoute.Robots {
-  const base = new URL("https://lemelsonestate.com");
   return {
     rules: {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: new URL("/sitemap.xml", base).toString(),
-    host: base.origin,
+    sitemap: "https://lemelsonestate.com/sitemap.xml",
+    host: "https://lemelsonestate.com",
   };
 }

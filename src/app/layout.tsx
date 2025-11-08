@@ -34,7 +34,8 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${PRODUCTION_URL}/gallery/Eden-Site%20Photos/2.avif`,
+        // Use the generated Open Graph image route for broad platform compatibility
+        url: `${PRODUCTION_URL}/opengraph-image.png`,
         width: 720,
         height: 480,
         alt: "Eden Estate exterior view",
@@ -47,7 +48,8 @@ export const metadata: Metadata = {
     title: "Eden: The Lemelson Estate | Stowe, Vermont",
     description:
       "Escape to one of Stowe's most exclusive estates. 11,400 sq ft of luxury living space for up to 20 guests.",
-    images: [`${PRODUCTION_URL}/gallery/Eden-Site%20Photos/2.avif`],
+    // Point to the PNG OG image for maximum compatibility (X/LinkedIn)
+    images: [`${PRODUCTION_URL}/opengraph-image.png`],
   },
   alternates: {
     canonical: CANONICAL_HOME,

@@ -41,12 +41,37 @@ export function AutoPlayVideo({ src, poster, className }: AutoPlayVideoProps) {
     if (!node) return;
 
     if (shouldLoad) {
-      // Attach <source> and play.
+      // Attach source directly to <video> for Safari reliability,
+      // ensure properties that allow autoplay are set BEFORE load.
+      if (node.src !== src) {
+        // Important for iOS Safari: attributes + properties must be set prior to load()
+        node.muted = true;
+        node.setAttribute('muted', '');
+        node.playsInline = true;
+        node.setAttribute('playsinline', '');
+        node.setAttribute('webkit-playsinline', '');
+        node.src = src;
+        node.load();
+      }
+
+      // Try to play immediately; also play on canplay(canplaythrough) as a fallback.
       const play = async () => {
         try {
           await node.play();
         } catch {
-          // Autoplay can be blocked; ignore.
+          // If play is blocked, try again when enough data has loaded.
+          const onCanPlay = async () => {
+            try {
+              await node.play();
+            } catch {
+              // Give up silently; Safari power-saving or settings may still block.
+            } finally {
+              node.removeEventListener('canplay', onCanPlay);
+              node.removeEventListener('canplaythrough', onCanPlay);
+            }
+          };
+          node.addEventListener('canplay', onCanPlay, { once: true });
+          node.addEventListener('canplaythrough', onCanPlay, { once: true });
         }
       };
       play();
@@ -62,12 +87,13 @@ export function AutoPlayVideo({ src, poster, className }: AutoPlayVideoProps) {
       muted
       loop
       playsInline
+      autoPlay
       // Do not fetch any data until visible.
-      preload="none"
+      preload="metadata"
       poster={poster}
       // Attach the source only when allowed to load.
     >
-      {shouldLoad ? <source src={src} type="video/mp4" /> : null}
+      {/* Intentionally avoid nested <source> for Safari; src set programmatically */}
       Your browser does not support the video tag.
     </video>
   );

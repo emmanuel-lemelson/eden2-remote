@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { SectionHeading } from "@/components/SectionHeading";
 import { GalleryViewSwitcher } from "@/components/GalleryViewSwitcher";
 import type { GallerySection } from "@/types/gallery";
 import galleryData from "@/data/gallery.json";
+
+export const dynamic = "force-static";
 
 export const metadata: Metadata = {
   title: "Gallery | Eden Estate Stowe",
@@ -60,12 +63,13 @@ export default function GalleryPage() {
           <p className="mt-4 text-base text-stone-700">
             From kids’ activities to spa treatments and chef-prepared dinners, there’s something for everyone at Eden.
           </p>
-          <a
+          <Link
             href="/contact"
+            prefetch={true}
             className="mt-8 inline-flex items-center rounded-full border border-stone-300 bg-white px-8 py-3 text-xs font-semibold uppercase tracking-[0.4em] text-stone-800 transition hover:border-stone-400 hover:bg-white/80"
           >
             Connect with the Team
-          </a>
+          </Link>
         </div>
       </section>
     </div>

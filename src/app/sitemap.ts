@@ -5,7 +5,14 @@ export const dynamic = "force-static";
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = new URL("https://lemelsonestate.com");
   const now = new Date().toISOString();
-  const routes = ["/", "/gallery/", "/reviews/", "/contact/"];
+  const routes = [
+    "/",
+    "/gallery/",
+    "/reviews/",
+    "/contact/",
+    "/news/",
+    "/news/the-lemelson-estate-opens-doors-to-exclusive-corporate-events/",
+  ];
   return routes.map((path) => ({
     url: new URL(path, base).toString(),
     lastModified: now,

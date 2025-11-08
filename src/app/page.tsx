@@ -81,7 +81,7 @@ export default function Home() {
               <div className="aspect-[16/9] w-full">
                 {heroVideoUrl ? (
                   <AutoPlayVideo
-                    className="h-full w-full origin-center transform object-cover scale-110"
+                    className="h-full w-full object-cover"
                     src={heroVideoUrl}
                     poster="/gallery/Eden-Site Photos/1.webp"
                   />

@@ -81,7 +81,7 @@ const platforms: Platform[] = [
     hoverBgColor: "hover:bg-[#F3FBFB]",
     logoWidth: 112,
     logoHeight: 28,
-    logoClassName: "h-auto w-auto scale-110 sm:scale-150",
+    logoClassName: "h-5 w-auto sm:h-6 max-w-full object-contain",
   },
 ];
 

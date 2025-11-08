@@ -10,6 +10,7 @@ const navItems = [
   { name: "Gallery", href: "/gallery" },
   { name: "Reviews", href: "/reviews" },
   { name: "Contact", href: "/contact" },
+  { name: "News", href: "/news" },
 ];
 
 export function Header() {
