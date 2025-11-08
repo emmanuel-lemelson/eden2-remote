@@ -78,7 +78,7 @@ export function AutoPlayVideo({ src, poster, className }: AutoPlayVideoProps) {
     } else {
       node.pause();
     }
-  }, [shouldLoad]);
+  }, [shouldLoad, src]);
 
   return (
     <video
