@@ -19,6 +19,7 @@ export function AutoPlayVideo({ src, poster, className }: AutoPlayVideoProps) {
   const ref = useRef<HTMLVideoElement | null>(null);
   const [shouldLoad, setShouldLoad] = useState(false);
   const [videoFailed, setVideoFailed] = useState(false);
+  const [showPoster, setShowPoster] = useState(true);
 
   useEffect(() => {
     const node = ref.current;
@@ -46,16 +47,25 @@ export function AutoPlayVideo({ src, poster, className }: AutoPlayVideoProps) {
     // Handle video errors
     const handleError = () => {
       setVideoFailed(true);
+      setShowPoster(true);
     };
 
     // Handle video load failures
     const handleLoadStart = () => {
       // Reset failed state when attempting to load
       setVideoFailed(false);
+      // Ensure poster is visible while (re)loading
+      setShowPoster(true);
+    };
+
+    // When video actually starts playing, fade out the poster
+    const handlePlaying = () => {
+      setShowPoster(false);
     };
 
     node.addEventListener('error', handleError);
     node.addEventListener('loadstart', handleLoadStart);
+    node.addEventListener('playing', handlePlaying);
 
     if (shouldLoad) {
       // Attach source directly to <video> for Safari reliability,
@@ -98,9 +108,11 @@ export function AutoPlayVideo({ src, poster, className }: AutoPlayVideoProps) {
             if (node.readyState === 0 && node.networkState === 3) {
               // Network error - video failed to load
               setVideoFailed(true);
+              setShowPoster(true);
             } else if (node.readyState === 0) {
               // Still no data after 8 seconds - likely a loading issue
               setVideoFailed(true);
+              setShowPoster(true);
             }
           }, 8000);
           
@@ -124,41 +136,42 @@ export function AutoPlayVideo({ src, poster, className }: AutoPlayVideoProps) {
     return () => {
       node.removeEventListener('error', handleError);
       node.removeEventListener('loadstart', handleLoadStart);
+      node.removeEventListener('playing', handlePlaying);
     };
   }, [shouldLoad, src]);
 
-  // If video failed and poster is provided, show fallback image
-  if (videoFailed && poster) {
-    return (
-      <div className={className} style={{ position: 'relative', width: '100%', height: '100%' }}>
+  // Always render both layers and crossfade between them for a smooth transition
+  return (
+    <div className={`relative h-full w-full ${className ?? ''}`}>
+      {/* Fallback poster image (visible immediately) */}
+      {poster ? (
         <Image
           src={poster}
           alt="Eden Estate"
           fill
-          className="object-cover"
+          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${showPoster ? 'opacity-100' : 'opacity-0'}`}
           sizes="100vw"
           priority
         />
-      </div>
-    );
-  }
+      ) : null}
 
-  return (
-    <video
-      ref={ref}
-      className={className}
-      muted
-      loop
-      playsInline
-      autoPlay
-      // Do not fetch any data until visible.
-      preload="metadata"
-      poster={poster}
-      // Attach the source only when allowed to load.
-    >
-      {/* Intentionally avoid nested <source> for Safari; src set programmatically */}
-      Your browser does not support the video tag.
-    </video>
+      {/* Video layer fades in once playing */}
+      <video
+        ref={ref}
+        className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${showPoster ? 'opacity-0' : 'opacity-100'}`}
+        muted
+        loop
+        playsInline
+        autoPlay
+        // Do not fetch any data until visible.
+        preload="metadata"
+        poster={poster}
+        // Attach the source only when allowed to load (handled in effect).
+      >
+        {/* Intentionally avoid nested <source> for Safari; src set programmatically */}
+        Your browser does not support the video tag.
+      </video>
+    </div>
   );
 }
 
