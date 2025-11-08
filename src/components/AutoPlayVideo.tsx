@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 
 type AutoPlayVideoProps = {
   src: string;
@@ -12,10 +13,12 @@ type AutoPlayVideoProps = {
  * Defers attaching the video `src` (and thus network download) until
  * the element enters the viewport. Autoplays while visible; pauses
  * when scrolled away. Keeps data usage minimal for non-viewing users.
+ * Falls back to poster image if video fails to load or play.
  */
 export function AutoPlayVideo({ src, poster, className }: AutoPlayVideoProps) {
   const ref = useRef<HTMLVideoElement | null>(null);
   const [shouldLoad, setShouldLoad] = useState(false);
+  const [videoFailed, setVideoFailed] = useState(false);
 
   useEffect(() => {
     const node = ref.current;
@@ -39,6 +42,20 @@ export function AutoPlayVideo({ src, poster, className }: AutoPlayVideoProps) {
   useEffect(() => {
     const node = ref.current;
     if (!node) return;
+
+    // Handle video errors
+    const handleError = () => {
+      setVideoFailed(true);
+    };
+
+    // Handle video load failures
+    const handleLoadStart = () => {
+      // Reset failed state when attempting to load
+      setVideoFailed(false);
+    };
+
+    node.addEventListener('error', handleError);
+    node.addEventListener('loadstart', handleLoadStart);
 
     if (shouldLoad) {
       // Attach source directly to <video> for Safari reliability,
@@ -64,7 +81,8 @@ export function AutoPlayVideo({ src, poster, className }: AutoPlayVideoProps) {
             try {
               await node.play();
             } catch {
-              // Give up silently; Safari power-saving or settings may still block.
+              // If still can't play after loading, fall back to poster image
+              setVideoFailed(true);
             } finally {
               node.removeEventListener('canplay', onCanPlay);
               node.removeEventListener('canplaythrough', onCanPlay);
@@ -72,13 +90,58 @@ export function AutoPlayVideo({ src, poster, className }: AutoPlayVideoProps) {
           };
           node.addEventListener('canplay', onCanPlay, { once: true });
           node.addEventListener('canplaythrough', onCanPlay, { once: true });
+          
+          // Set a timeout to fall back to image if video doesn't start loading within reasonable time
+          const timeout = setTimeout(() => {
+            // Only fall back if video hasn't started loading (readyState 0 = HAVE_NOTHING)
+            // If it's loading (readyState > 0), give it more time
+            if (node.readyState === 0 && node.networkState === 3) {
+              // Network error - video failed to load
+              setVideoFailed(true);
+            } else if (node.readyState === 0) {
+              // Still no data after 8 seconds - likely a loading issue
+              setVideoFailed(true);
+            }
+          }, 8000);
+          
+          // Clear timeout if video starts loading successfully
+          const onLoadedData = () => {
+            clearTimeout(timeout);
+          };
+          const onProgress = () => {
+            clearTimeout(timeout);
+          };
+          
+          node.addEventListener('loadeddata', onLoadedData, { once: true });
+          node.addEventListener('progress', onProgress, { once: true });
         }
       };
       play();
     } else {
       node.pause();
     }
+
+    return () => {
+      node.removeEventListener('error', handleError);
+      node.removeEventListener('loadstart', handleLoadStart);
+    };
   }, [shouldLoad, src]);
+
+  // If video failed and poster is provided, show fallback image
+  if (videoFailed && poster) {
+    return (
+      <div className={className} style={{ position: 'relative', width: '100%', height: '100%' }}>
+        <Image
+          src={poster}
+          alt="Eden Estate"
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority
+        />
+      </div>
+    );
+  }
 
   return (
     <video
