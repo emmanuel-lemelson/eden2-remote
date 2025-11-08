@@ -36,7 +36,7 @@ export default function GalleryPage() {
 
   return (
     <div>
-      <section className="lux-section pb-6">
+      <section className="pt-12 pb-8">
         <div className="lux-container">
           <SectionHeading
             eyebrow="Gallery"

@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div>
-      <section className="lux-section pb-12">
+      <section className="pt-12 pb-12">
         <div className="lux-container max-w-4xl">
           <p className="text-xs uppercase tracking-[0.4em] text-stone-500">
             Contact

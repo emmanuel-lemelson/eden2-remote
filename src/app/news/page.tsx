@@ -51,7 +51,7 @@ const articles = [
 export default function NewsPage() {
   return (
     <div className="min-h-screen bg-white">
-      <div className="lux-container py-10 md:py-14">
+      <div className="lux-container pt-12 pb-10 md:pb-14">
         <div className="mb-8">
           <div>
             <p className="text-xs uppercase tracking-[0.5em] text-stone-600">Updates</p>

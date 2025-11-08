@@ -169,3 +169,133 @@ a {
   overflow: hidden;
   background: #f0f0f0;
 }
+/* Press release image/text wrapping (desktop only) */
+.press-article,
+.press-section {
+  display: flow-root; /* contain floats */
+  position: relative;
+}
+
+/* Margin borders - invisible */
+@media (min-width: 1024px) {
+  .press-article {
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+  }
+}
+
+.press-article p {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+/* Continuous paragraph flow for press releases - no spacing between paragraphs */
+.press-paragraph {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Single continuous text flow */
+.press-text-flow {
+  line-height: 1.75;
+  font-size: 1.125rem;
+}
+
+.press-text-flow span {
+  display: inline;
+}
+
+/* Press release quote box styling - flows with text */
+.press-text-flow .press-quote {
+  margin: 0.5rem 0;
+  padding: 0.875rem 1rem;
+  border-left: 3px solid var(--color-gold);
+  background-color: #faf9f7;
+  border-radius: 2px;
+  font-style: italic;
+  display: block;
+  width: 100%;
+}
+
+.press-quote-text {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #2d2926;
+}
+
+.press-quote-attribution {
+  margin: 0;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 500;
+  color: #57534e;
+  text-align: left;
+}
+
+@media (min-width: 1024px) {
+  .press-text-flow .press-quote {
+    margin: 0.5rem 0;
+    padding: 1rem 1.25rem;
+    display: block;
+    width: 100%;
+  }
+  
+  .press-quote-text {
+    font-size: 1.125rem;
+  }
+}
+
+.press-figure,
+.press-figure-left,
+.press-figure-right {
+  float: none;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+@media (min-width: 1024px) {
+  .press-article p {
+    margin-bottom: 1.5rem;
+    line-height: 1.75;
+  }
+  
+  /* Continuous paragraph flow - no spacing */
+  .press-paragraph {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    line-height: 1.75;
+  }
+  
+  /* Ensure paragraphs flow naturally after figures */
+  .press-figure + .press-paragraph,
+  .press-figure-left + .press-paragraph,
+  .press-figure-right + .press-paragraph {
+    margin-top: 0;
+  }
+  
+  .press-figure,
+  .press-figure-left,
+  .press-figure-right {
+    width: clamp(142px, 20vw, 220px);
+    shape-outside: margin-box;
+    shape-margin: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .press-clear {
+    clear: both;
+    margin-top: 1.5rem;
+  }
+  .press-figure-left {
+    float: left;
+    margin-right: 1.5rem;
+    margin-left: 0;
+  }
+  .press-figure-right {
+    float: right;
+    margin-left: 2rem;
+    margin-right: 0;
+  }
+}
+
