@@ -98,7 +98,7 @@ export default function CorporateEventsArticle() {
           <p className="text-xs uppercase tracking-[0.5em] text-[var(--color-gold)] font-semibold">
             Press Release
           </p>
-          <h1 className="mt-4 text-4xl font-semibold leading-tight text-stone-900 sm:text-5xl md:text-6xl">
+          <h1 className="mt-4 text-4xl font-semibold leading-tight text-stone-900 md:text-5xl">
             The Lemelson Estate Opens Doors to Exclusive Corporate Events
           </h1>
           <time
