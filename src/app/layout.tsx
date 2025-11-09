@@ -102,6 +102,7 @@ export default function RootLayout({
                 'https://www.vrbo.com/1958794',
                 'https://www.instagram.com/the_lemelson_estate',
                 'https://x.com/LemelsonEstate',
+                'https://www.linkedin.com/company/eden-the-lemelson-estate/',
               ],
               contactPoint: [{
                 '@type': 'ContactPoint',

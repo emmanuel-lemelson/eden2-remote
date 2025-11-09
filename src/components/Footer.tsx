@@ -55,6 +55,15 @@ export function Footer() {
             >
               <Image src="/X_idVRwaKp9b_1.png" alt="X" className="h-4 w-4" width={16} height={16} />
             </a>
+            <a
+              href="https://www.linkedin.com/company/eden-the-lemelson-estate/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-stone-800 shadow-sm transition hover:bg-stone-100"
+              aria-label="LinkedIn"
+            >
+              <Image src="/linked-in.svg" alt="LinkedIn" className="h-4 w-4" width={16} height={16} />
+            </a>
           </div>
           <p className="text-xs text-stone-500 text-center pb-4 md:pb-0 md:text-right">© 2025 The Lemelson Group, LLC</p>
         </div>

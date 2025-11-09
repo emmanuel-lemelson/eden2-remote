@@ -177,7 +177,7 @@ export default function CorporateEventsArticle() {
                 </div>
               </div>
               <figcaption className="mt-3 text-xs italic text-stone-500">
-                Contemporary interior at Eden—ideal for executive retreats
+                Golfing at Stowe Mountain Resort
               </figcaption>
             </figure>
             <blockquote className="press-quote">
