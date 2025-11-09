@@ -84,7 +84,7 @@ export default function NewsPage() {
                 </div>
                 <div className="p-5 sm:p-6">
                   <time dateTime={a.date} className="text-[0.65rem] uppercase tracking-[0.4em] text-stone-500">
-                    {new Date(a.date).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" })}
+                    {new Date(a.date).toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" })}
                   </time>
                   <h2 className="mt-2 text-xl font-semibold text-stone-900 sm:text-2xl">
                     {a.title}

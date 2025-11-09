@@ -74,7 +74,7 @@ export default function CorporateEventsArticle() {
       />
       <div className="lux-container pt-12 pb-20 md:pb-28">
         <div className="max-w-5xl px-4 sm:px-6 lg:px-8">
-        <div className="mb-8 px-12 md:px-20 lg:px-28 text-left">
+        <div className="mb-8 px-4 md:px-20 lg:px-28 text-left">
           <Link
             href="/news"
             className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.35em] text-stone-500 transition-colors hover:text-stone-900"
@@ -94,7 +94,7 @@ export default function CorporateEventsArticle() {
           </Link>
         </div>
 
-        <header className="mb-12 px-12 md:px-20 lg:px-28 text-left">
+        <header className="mb-12 px-4 md:px-20 lg:px-28 text-left">
           <p className="text-xs uppercase tracking-[0.5em] text-[var(--color-gold)] font-semibold">
             Press Release
           </p>
@@ -115,7 +115,7 @@ export default function CorporateEventsArticle() {
         </header>
 
         {/* One continuous article flow with inline floated figures on desktop */}
-        <section className="mt-12 press-article prose prose-stone prose-lg max-w-none leading-relaxed px-12 md:px-20 lg:px-28 text-left">
+        <section className="mt-12 press-article prose prose-stone prose-lg max-w-none leading-relaxed px-4 md:px-20 lg:px-28 text-left">
           <figure className="press-figure-right w-full flex flex-col">
             <div className="overflow-hidden rounded-2xl border border-stone-200/60 shadow-[0_20px_60px_-20px_rgba(58,45,20,0.3)] flex-1">
               <div className="relative aspect-[4/3] w-full h-full">
@@ -205,7 +205,7 @@ export default function CorporateEventsArticle() {
           </div>
         </section>
 
-        <div className="mt-16 px-12 md:px-20 lg:px-28 border-t border-stone-200/60 pt-12 text-left">
+        <div className="mt-16 px-4 md:px-20 lg:px-28 border-t border-stone-200/60 pt-12 text-left">
           <Link
             href="/contact"
             className="group inline-flex items-center gap-2 md:gap-3 rounded-full border-2 border-[var(--color-gold)] bg-white px-6 py-3.5 md:px-8 md:py-4 text-base md:text-sm font-semibold uppercase tracking-[0.2em] md:tracking-[0.35em] text-stone-900 shadow-[0_4px_12px_-4px_rgba(194,160,96,0.4)] transition-all hover:border-[var(--color-gold)] hover:bg-[var(--color-gold)]/5 hover:shadow-[0_8px_20px_-6px_rgba(194,160,96,0.5)]"
@@ -226,7 +226,7 @@ export default function CorporateEventsArticle() {
         </div>
 
         {/* Media & Booking Inquiries and About Section */}
-        <section className="mt-16 px-12 md:px-20 lg:px-28 border-t border-stone-200/60 pt-12 text-left">
+        <section className="mt-16 px-4 md:px-20 lg:px-28 border-t border-stone-200/60 pt-12 text-left">
           <div className="grid gap-12 md:grid-cols-2">
             {/* Media & Booking Inquiries */}
             <div>
