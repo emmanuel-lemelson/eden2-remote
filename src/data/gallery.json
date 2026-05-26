@@ -733,6 +733,24 @@
     ]
   },
   {
+    "title": "Half Bathroom 1",
+    "description": "Photo 55: Convenient powder room for guests.",
+    "directory": "Eden-Site Photos",
+    "photos": [
+      55
+    ],
+    "images": [
+      {
+        "src": "/gallery/Eden-Site%20Photos/55.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/55@400w.webp 400w, /gallery/Eden-Site%20Photos/55@800w.webp 800w, /gallery/Eden-Site%20Photos/55@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 1600
+      }
+    ]
+  },
+  {
     "title": "Half Bathroom 2",
     "description": "Photo 56: Additional powder room with modern fixtures.",
     "directory": "Eden-Site Photos",
@@ -936,7 +954,9 @@
       82,
       83,
       84,
-      86
+      86,
+      87,
+      89
     ],
     "images": [
       {
@@ -1050,6 +1070,22 @@
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 720,
         "height": 406
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/87.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/87@400w.webp 400w, /gallery/Eden-Site%20Photos/87@800w.webp 800w, /gallery/Eden-Site%20Photos/87@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/89.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/89@400w.webp 400w, /gallery/Eden-Site%20Photos/89@800w.webp 800w, /gallery/Eden-Site%20Photos/89@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
       }
     ]
   },

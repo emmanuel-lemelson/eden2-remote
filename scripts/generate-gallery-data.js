@@ -191,7 +191,7 @@ const gallerySectionConfig = [
     title: "Half Bathroom 1",
     description: "Photo 55: Convenient powder room for guests.",
     directory: "Eden-Site Photos",
-    photos: [],
+    photos: [55],
   },
   {
     title: "Half Bathroom 2",
@@ -223,7 +223,7 @@ const gallerySectionConfig = [
     title: "Exterior",
     description: "Photos 72-87: Additional exterior views of the estate grounds and architecture.",
     directory: "Eden-Site Photos",
-    photos: [72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 86],
+    photos: [72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 86, 87, 89],
   },
   {
     title: "Hot Tub",
