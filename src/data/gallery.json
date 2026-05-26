@@ -1149,7 +1149,9 @@
       96,
       97,
       111,
-      112
+      112,
+      113,
+      114
     ],
     "images": [
       {
@@ -1196,6 +1198,22 @@
         "src": "/gallery/Eden-Site%20Photos/112.avif",
         "alt": "Additional outdoor and property grounds view",
         "srcset": "/gallery/Eden-Site%20Photos/112@400w.webp 400w, /gallery/Eden-Site%20Photos/112@800w.webp 800w, /gallery/Eden-Site%20Photos/112@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 2560,
+        "height": 1441
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/113.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/113@400w.webp 400w, /gallery/Eden-Site%20Photos/113@800w.webp 800w, /gallery/Eden-Site%20Photos/113@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 2560,
+        "height": 1920
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/114.avif",
+        "alt": "Eden Estate gallery image",
+        "srcset": "/gallery/Eden-Site%20Photos/114@400w.webp 400w, /gallery/Eden-Site%20Photos/114@800w.webp 800w, /gallery/Eden-Site%20Photos/114@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 2560,
         "height": 1441

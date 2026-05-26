@@ -243,7 +243,7 @@ const gallerySectionConfig = [
     title: "Additional Photos",
     description: "Photos 94-97: Extra views and special features of the estate.",
     directory: "Eden-Site Photos",
-    photos: [94, 95, 96, 97, 111, 112],
+    photos: [94, 95, 96, 97, 111, 112, 113, 114],
   },
 ];
 
