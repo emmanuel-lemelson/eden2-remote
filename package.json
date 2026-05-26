@@ -6,6 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "npm run generate-data && next build",
     "generate-data": "node scripts/generate-gallery-data.js",
+    "sync-airbnb": "node scripts/sync-airbnb.js",
     "start": "next start",
     "lint": "eslint"
   },

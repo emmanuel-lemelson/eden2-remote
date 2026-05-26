@@ -36,8 +36,24 @@
     "title": "The Great Room",
     "description": "Photos 4-15: Spacious gathering areas with soaring ceilings and elegant furnishings.",
     "directory": "Eden-Site Photos",
-    "startPhoto": 4,
-    "endPhoto": 15,
+    "photos": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      98,
+      99,
+      100,
+      101
+    ],
     "images": [
       {
         "src": "/gallery/Eden-Site%20Photos/4.avif",
@@ -134,6 +150,38 @@
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 720,
         "height": 960
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/98.avif",
+        "alt": "View of the richly decorated great room with seating for up to seventeen, a massive stone fireplace, and a grand piano",
+        "srcset": "/gallery/Eden-Site%20Photos/98@400w.webp 400w, /gallery/Eden-Site%20Photos/98@800w.webp 800w, /gallery/Eden-Site%20Photos/98@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 2560,
+        "height": 1704
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/99.avif",
+        "alt": "View of the richly decorated great room with seating for up to seventeen, a massive stone fireplace, and a grand piano",
+        "srcset": "/gallery/Eden-Site%20Photos/99@400w.webp 400w, /gallery/Eden-Site%20Photos/99@800w.webp 800w, /gallery/Eden-Site%20Photos/99@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 2560,
+        "height": 1704
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/100.avif",
+        "alt": "View of the richly decorated great room with plush seating for up to sixteen and a massive stone fireplace",
+        "srcset": "/gallery/Eden-Site%20Photos/100@400w.webp 400w, /gallery/Eden-Site%20Photos/100@800w.webp 800w, /gallery/Eden-Site%20Photos/100@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 2560,
+        "height": 1707
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/101.avif",
+        "alt": "View of the richly decorated great room with plush seating for up to sixteen and a massive stone fireplace",
+        "srcset": "/gallery/Eden-Site%20Photos/101@400w.webp 400w, /gallery/Eden-Site%20Photos/101@800w.webp 800w, /gallery/Eden-Site%20Photos/101@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 2560,
+        "height": 1708
       }
     ]
   },
@@ -349,8 +397,13 @@
     "title": "Bedroom 1",
     "description": "Photos 33-36: Comfortable guest bedroom with modern amenities.",
     "directory": "Eden-Site Photos",
-    "startPhoto": 33,
-    "endPhoto": 36,
+    "photos": [
+      33,
+      34,
+      35,
+      36,
+      102
+    ],
     "images": [
       {
         "src": "/gallery/Eden-Site%20Photos/33.avif",
@@ -383,6 +436,14 @@
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 1200,
         "height": 800
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/102.avif",
+        "alt": "Comfortable guest bedroom with modern amenities",
+        "srcset": "/gallery/Eden-Site%20Photos/102@400w.webp 400w, /gallery/Eden-Site%20Photos/102@800w.webp 800w, /gallery/Eden-Site%20Photos/102@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 2560,
+        "height": 1707
       }
     ]
   },
@@ -517,8 +578,13 @@
     "title": "Full Bathroom 1",
     "description": "Photos 45-46: Master bathroom with spa-like features.",
     "directory": "Eden-Site Photos",
-    "startPhoto": 45,
-    "endPhoto": 46,
+    "photos": [
+      45,
+      46,
+      103,
+      104,
+      105
+    ],
     "images": [
       {
         "src": "/gallery/Eden-Site%20Photos/45.avif",
@@ -535,6 +601,30 @@
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 720,
         "height": 480
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/103.avif",
+        "alt": "Spacious guest bathroom with high-end fixtures",
+        "srcset": "/gallery/Eden-Site%20Photos/103@400w.webp 400w, /gallery/Eden-Site%20Photos/103@800w.webp 800w, /gallery/Eden-Site%20Photos/103@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 2560,
+        "height": 1704
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/104.avif",
+        "alt": "Well-appointed guest bathroom ensuite",
+        "srcset": "/gallery/Eden-Site%20Photos/104@400w.webp 400w, /gallery/Eden-Site%20Photos/104@800w.webp 800w, /gallery/Eden-Site%20Photos/104@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 2560,
+        "height": 1704
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/105.avif",
+        "alt": "Luxury guest bathroom and vanity",
+        "srcset": "/gallery/Eden-Site%20Photos/105@400w.webp 400w, /gallery/Eden-Site%20Photos/105@800w.webp 800w, /gallery/Eden-Site%20Photos/105@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 2560,
+        "height": 1704
       }
     ]
   },
@@ -601,8 +691,12 @@
     "title": "Full Bathroom 5",
     "description": "Photos 51-53: Spacious bathroom with luxury features.",
     "directory": "Eden-Site Photos",
-    "startPhoto": 51,
-    "endPhoto": 53,
+    "photos": [
+      51,
+      52,
+      53,
+      106
+    ],
     "images": [
       {
         "src": "/gallery/Eden-Site%20Photos/51.avif",
@@ -627,6 +721,14 @@
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 720,
         "height": 960
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/106.avif",
+        "alt": "Large multi-head steam shower in the lower level spa",
+        "srcset": "/gallery/Eden-Site%20Photos/106@400w.webp 400w, /gallery/Eden-Site%20Photos/106@800w.webp 800w, /gallery/Eden-Site%20Photos/106@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 2560,
+        "height": 3413
       }
     ]
   },
@@ -685,8 +787,10 @@
     "title": "Office",
     "description": "Photo 57: Professional workspace with modern amenities.",
     "directory": "Eden-Site Photos",
-    "startPhoto": 57,
-    "endPhoto": 57,
+    "photos": [
+      57,
+      107
+    ],
     "images": [
       {
         "src": "/gallery/Eden-Site%20Photos/57.avif",
@@ -695,6 +799,14 @@
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 1200,
         "height": 800
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/107.avif",
+        "alt": "Upper-level office with ensuite bathroom, dual desks, monitors, and printer",
+        "srcset": "/gallery/Eden-Site%20Photos/107@400w.webp 400w, /gallery/Eden-Site%20Photos/107@800w.webp 800w, /gallery/Eden-Site%20Photos/107@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 2560,
+        "height": 1707
       }
     ]
   },
@@ -702,8 +814,23 @@
     "title": "Backyard",
     "description": "Photos 58-69: Outdoor spaces with gardens, patios, and recreational areas.",
     "directory": "Eden-Site Photos",
-    "startPhoto": 58,
-    "endPhoto": 69,
+    "photos": [
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      108,
+      109,
+      110
+    ],
     "images": [
       {
         "src": "/gallery/Eden-Site%20Photos/58.avif",
@@ -800,6 +927,30 @@
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 1200,
         "height": 900
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/108.avif",
+        "alt": "Scenic garden patio and backyard space",
+        "srcset": "/gallery/Eden-Site%20Photos/108@400w.webp 400w, /gallery/Eden-Site%20Photos/108@800w.webp 800w, /gallery/Eden-Site%20Photos/108@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 2560,
+        "height": 1920
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/109.avif",
+        "alt": "Lush outdoor green spaces and gardens",
+        "srcset": "/gallery/Eden-Site%20Photos/109@400w.webp 400w, /gallery/Eden-Site%20Photos/109@800w.webp 800w, /gallery/Eden-Site%20Photos/109@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 2560,
+        "height": 3413
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/110.avif",
+        "alt": "Upper spring-fed pond at dusk facing the mountain range",
+        "srcset": "/gallery/Eden-Site%20Photos/110@400w.webp 400w, /gallery/Eden-Site%20Photos/110@800w.webp 800w, /gallery/Eden-Site%20Photos/110@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 2560,
+        "height": 3413
       }
     ]
   },
@@ -1019,8 +1170,14 @@
     "title": "Additional Photos",
     "description": "Photos 94-97: Extra views and special features of the estate.",
     "directory": "Eden-Site Photos",
-    "startPhoto": 94,
-    "endPhoto": 97,
+    "photos": [
+      94,
+      95,
+      96,
+      97,
+      111,
+      112
+    ],
     "images": [
       {
         "src": "/gallery/Eden-Site%20Photos/94.avif",
@@ -1053,6 +1210,22 @@
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 1200,
         "height": 900
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/111.avif",
+        "alt": "Laundry room with new smart washer and dryer, and laundry chute to master suite",
+        "srcset": "/gallery/Eden-Site%20Photos/111@400w.webp 400w, /gallery/Eden-Site%20Photos/111@800w.webp 800w, /gallery/Eden-Site%20Photos/111@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 2560,
+        "height": 1920
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/112.avif",
+        "alt": "Additional outdoor and property grounds view",
+        "srcset": "/gallery/Eden-Site%20Photos/112@400w.webp 400w, /gallery/Eden-Site%20Photos/112@800w.webp 800w, /gallery/Eden-Site%20Photos/112@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 2560,
+        "height": 1441
       }
     ]
   }

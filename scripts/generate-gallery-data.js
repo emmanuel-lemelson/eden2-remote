@@ -36,8 +36,7 @@ const gallerySectionConfig = [
     title: "The Great Room",
     description: "Photos 4-15: Spacious gathering areas with soaring ceilings and elegant furnishings.",
     directory: "Eden-Site Photos",
-    startPhoto: 4,
-    endPhoto: 15,
+    photos: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 98, 99, 100, 101],
   },
   {
     title: "Study Room / Library",
@@ -99,8 +98,7 @@ const gallerySectionConfig = [
     title: "Bedroom 1",
     description: "Photos 33-36: Comfortable guest bedroom with modern amenities.",
     directory: "Eden-Site Photos",
-    startPhoto: 33,
-    endPhoto: 36,
+    photos: [33, 34, 35, 36, 102],
   },
   {
     title: "Bedroom 2",
@@ -155,8 +153,7 @@ const gallerySectionConfig = [
     title: "Full Bathroom 1",
     description: "Photos 45-46: Master bathroom with spa-like features.",
     directory: "Eden-Site Photos",
-    startPhoto: 45,
-    endPhoto: 46,
+    photos: [45, 46, 103, 104, 105],
   },
   {
     title: "Full Bathroom 2",
@@ -183,8 +180,7 @@ const gallerySectionConfig = [
     title: "Full Bathroom 5",
     description: "Photos 51-53: Spacious bathroom with luxury features.",
     directory: "Eden-Site Photos",
-    startPhoto: 51,
-    endPhoto: 53,
+    photos: [51, 52, 53, 106],
   },
   {
     title: "Full Bathroom 6",
@@ -211,15 +207,13 @@ const gallerySectionConfig = [
     title: "Office",
     description: "Photo 57: Professional workspace with modern amenities.",
     directory: "Eden-Site Photos",
-    startPhoto: 57,
-    endPhoto: 57,
+    photos: [57, 107],
   },
   {
     title: "Backyard",
     description: "Photos 58-69: Outdoor spaces with gardens, patios, and recreational areas.",
     directory: "Eden-Site Photos",
-    startPhoto: 58,
-    endPhoto: 69,
+    photos: [58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 108, 109, 110],
   },
   {
     title: "Gym / Game Room",
@@ -253,8 +247,7 @@ const gallerySectionConfig = [
     title: "Additional Photos",
     description: "Photos 94-97: Extra views and special features of the estate.",
     directory: "Eden-Site Photos",
-    startPhoto: 94,
-    endPhoto: 97,
+    photos: [94, 95, 96, 97, 111, 112],
   },
 ];
 
@@ -297,14 +290,15 @@ async function ensureVariantsForImage(absSrcPath, widths) {
   return { variants: out, width: metadata.width ?? widths[widths.length - 1], height: metadata.height ?? widths[widths.length - 1] };
 }
 
-function loadImagesSync(directory, startPhoto, endPhoto) {
+function loadImagesSync(section) {
+  const { directory, startPhoto, endPhoto, photos } = section;
   const directoryPath = path.join(galleryRoot, directory);
 
   if (!fs.existsSync(directoryPath)) {
     return [];
   }
 
-  // Get all files and filter by photo number range
+  // Get all files
   const allFiles = fs
     .readdirSync(directoryPath, { withFileTypes: true })
     .filter((entry) => entry.isFile())
@@ -312,35 +306,50 @@ function loadImagesSync(directory, startPhoto, endPhoto) {
     .filter((entry) => !entry.name.includes("@")) // Exclude resized variants
     .filter((entry) => !excludedFilenames.has(entry.name));
 
-  // Extract photo numbers from filenames and filter by range
-  const filesInRange = allFiles
-    .map((entry) => {
-      const match = entry.name.match(/^(\d+)/);
-      const photoNum = match ? parseInt(match[1], 10) : 0;
-      return { entry, photoNum };
-    })
-    .filter(({ photoNum }) => photoNum >= startPhoto && photoNum <= endPhoto)
-    .sort((a, b) => a.photoNum - b.photoNum) // Sort by photo number
-    .map(({ entry }) => {
-      const relativePath = path.join(directory, entry.name).split(path.sep).join("/");
-      const src = encodeURI(`/gallery/${relativePath}`);
-      const override = captionOverrides.get(entry.name);
-      return { 
-        src, 
-        alt: override ?? buildAltText(entry.name), 
-        filename: entry.name, 
-        rel: relativePath 
-      };
-    });
+  // Extract photo numbers from filenames
+  const parsedFiles = allFiles.map((entry) => {
+    const match = entry.name.match(/^(\d+)/);
+    const photoNum = match ? parseInt(match[1], 10) : 0;
+    return { entry, photoNum };
+  });
 
-  return filesInRange;
+  // Filter based on explicit list or range
+  let filesInRange;
+  if (Array.isArray(photos)) {
+    // Retain exact order defined in the photos array
+    filesInRange = [];
+    photos.forEach((num) => {
+      const found = parsedFiles.find((p) => p.photoNum === num);
+      if (found) {
+        filesInRange.push(found);
+      }
+    });
+  } else {
+    filesInRange = parsedFiles
+      .filter(({ photoNum }) => photoNum >= startPhoto && photoNum <= endPhoto)
+      .sort((a, b) => a.photoNum - b.photoNum);
+  }
+
+  const result = filesInRange.map(({ entry }) => {
+    const relativePath = path.join(directory, entry.name).split(path.sep).join("/");
+    const src = encodeURI(`/gallery/${relativePath}`);
+    const override = captionOverrides.get(entry.name);
+    return { 
+      src, 
+      alt: override ?? buildAltText(entry.name), 
+      filename: entry.name, 
+      rel: relativePath 
+    };
+  });
+
+  return result;
 }
 
 async function buildGallery() {
   const widths = [400, 800, 1200];
   const sections = [];
   for (const section of gallerySectionConfig) {
-    const images = loadImagesSync(section.directory, section.startPhoto, section.endPhoto);
+    const images = loadImagesSync(section);
     if (images.length === 0) continue;
     const processed = [];
     for (const img of images) {
