@@ -38,10 +38,8 @@
     "directory": "Eden-Site Photos",
     "photos": [
       4,
-      5,
       6,
       7,
-      8,
       9,
       10,
       11,
@@ -64,14 +62,6 @@
         "height": 540
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/5.avif",
-        "alt": "Eden Estate gallery image",
-        "srcset": "/gallery/Eden-Site%20Photos/5@400w.webp 400w, /gallery/Eden-Site%20Photos/5@800w.webp 800w, /gallery/Eden-Site%20Photos/5@1200w.webp 1200w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 540
-      },
-      {
         "src": "/gallery/Eden-Site%20Photos/6.avif",
         "alt": "Eden Estate gallery image",
         "srcset": "/gallery/Eden-Site%20Photos/6@400w.webp 400w, /gallery/Eden-Site%20Photos/6@800w.webp 800w, /gallery/Eden-Site%20Photos/6@1200w.webp 1200w",
@@ -83,14 +73,6 @@
         "src": "/gallery/Eden-Site%20Photos/7.avif",
         "alt": "Eden Estate gallery image",
         "srcset": "/gallery/Eden-Site%20Photos/7@400w.webp 400w, /gallery/Eden-Site%20Photos/7@800w.webp 800w, /gallery/Eden-Site%20Photos/7@1200w.webp 1200w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 540
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/8.avif",
-        "alt": "Eden Estate gallery image",
-        "srcset": "/gallery/Eden-Site%20Photos/8@400w.webp 400w, /gallery/Eden-Site%20Photos/8@800w.webp 800w, /gallery/Eden-Site%20Photos/8@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 720,
         "height": 540
@@ -736,30 +718,14 @@
     "title": "Full Bathroom 6",
     "description": "Photo 54: Additional full bathroom with modern amenities.",
     "directory": "Eden-Site Photos",
-    "startPhoto": 54,
-    "endPhoto": 54,
+    "photos": [
+      54
+    ],
     "images": [
       {
         "src": "/gallery/Eden-Site%20Photos/54.avif",
         "alt": "Eden Estate gallery image",
         "srcset": "/gallery/Eden-Site%20Photos/54@400w.webp 400w, /gallery/Eden-Site%20Photos/54@800w.webp 800w, /gallery/Eden-Site%20Photos/54@1200w.webp 1200w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1200,
-        "height": 1600
-      }
-    ]
-  },
-  {
-    "title": "Half Bathroom 1",
-    "description": "Photo 55: Convenient powder room for guests.",
-    "directory": "Eden-Site Photos",
-    "startPhoto": 55,
-    "endPhoto": 55,
-    "images": [
-      {
-        "src": "/gallery/Eden-Site%20Photos/55.avif",
-        "alt": "Eden Estate gallery image",
-        "srcset": "/gallery/Eden-Site%20Photos/55@400w.webp 400w, /gallery/Eden-Site%20Photos/55@800w.webp 800w, /gallery/Eden-Site%20Photos/55@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 1200,
         "height": 1600
@@ -822,9 +788,6 @@
       62,
       63,
       64,
-      65,
-      66,
-      67,
       68,
       69,
       108,
@@ -884,30 +847,6 @@
         "src": "/gallery/Eden-Site%20Photos/64.avif",
         "alt": "Eden Estate gallery image",
         "srcset": "/gallery/Eden-Site%20Photos/64@400w.webp 400w, /gallery/Eden-Site%20Photos/64@800w.webp 800w, /gallery/Eden-Site%20Photos/64@1200w.webp 1200w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/65.webp",
-        "alt": "Eden Estate gallery image",
-        "srcset": "/gallery/Eden-Site%20Photos/65@400w.webp 400w, /gallery/Eden-Site%20Photos/65@800w.webp 800w, /gallery/Eden-Site%20Photos/65@1200w.webp 1200w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/66.avif",
-        "alt": "Eden Estate gallery image",
-        "srcset": "/gallery/Eden-Site%20Photos/66@400w.webp 400w, /gallery/Eden-Site%20Photos/66@800w.webp 800w, /gallery/Eden-Site%20Photos/66@1200w.webp 1200w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 540
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/67.avif",
-        "alt": "Eden Estate gallery image",
-        "srcset": "/gallery/Eden-Site%20Photos/67@400w.webp 400w, /gallery/Eden-Site%20Photos/67@800w.webp 800w, /gallery/Eden-Site%20Photos/67@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 720,
         "height": 960
@@ -983,8 +922,22 @@
     "title": "Exterior",
     "description": "Photos 72-87: Additional exterior views of the estate grounds and architecture.",
     "directory": "Eden-Site Photos",
-    "startPhoto": 72,
-    "endPhoto": 87,
+    "photos": [
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      86
+    ],
     "images": [
       {
         "src": "/gallery/Eden-Site%20Photos/72.avif",
@@ -1091,28 +1044,12 @@
         "height": 540
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/85.avif",
-        "alt": "Eden Estate gallery image",
-        "srcset": "/gallery/Eden-Site%20Photos/85@400w.webp 400w, /gallery/Eden-Site%20Photos/85@800w.webp 800w, /gallery/Eden-Site%20Photos/85@1200w.webp 1200w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
-      },
-      {
         "src": "/gallery/Eden-Site%20Photos/86.avif",
         "alt": "Eden Estate gallery image",
         "srcset": "/gallery/Eden-Site%20Photos/86@400w.webp 400w, /gallery/Eden-Site%20Photos/86@800w.webp 800w, /gallery/Eden-Site%20Photos/86@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 720,
         "height": 406
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/87.avif",
-        "alt": "Eden Estate gallery image",
-        "srcset": "/gallery/Eden-Site%20Photos/87@400w.webp 400w, /gallery/Eden-Site%20Photos/87@800w.webp 800w, /gallery/Eden-Site%20Photos/87@1200w.webp 1200w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
       }
     ]
   },

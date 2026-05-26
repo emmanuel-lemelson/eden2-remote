@@ -36,7 +36,7 @@ const gallerySectionConfig = [
     title: "The Great Room",
     description: "Photos 4-15: Spacious gathering areas with soaring ceilings and elegant furnishings.",
     directory: "Eden-Site Photos",
-    photos: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 98, 99, 100, 101],
+    photos: [4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 98, 99, 100, 101],
   },
   {
     title: "Study Room / Library",
@@ -91,8 +91,7 @@ const gallerySectionConfig = [
     title: "Sun Room",
     description: "Photos 30-32: Bright, airy space with natural light and garden views.",
     directory: "Eden-Site Photos",
-    startPhoto: 30,
-    endPhoto: 32,
+    startPhoto: 30, endPhoto: 32,
   },
   {
     title: "Bedroom 1",
@@ -186,15 +185,13 @@ const gallerySectionConfig = [
     title: "Full Bathroom 6",
     description: "Photo 54: Additional full bathroom with modern amenities.",
     directory: "Eden-Site Photos",
-    startPhoto: 54,
-    endPhoto: 54,
+    photos: [54],
   },
   {
     title: "Half Bathroom 1",
     description: "Photo 55: Convenient powder room for guests.",
     directory: "Eden-Site Photos",
-    startPhoto: 55,
-    endPhoto: 55,
+    photos: [],
   },
   {
     title: "Half Bathroom 2",
@@ -213,7 +210,7 @@ const gallerySectionConfig = [
     title: "Backyard",
     description: "Photos 58-69: Outdoor spaces with gardens, patios, and recreational areas.",
     directory: "Eden-Site Photos",
-    photos: [58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 108, 109, 110],
+    photos: [58, 59, 60, 61, 62, 63, 64, 68, 69, 108, 109, 110],
   },
   {
     title: "Gym / Game Room",
@@ -226,8 +223,7 @@ const gallerySectionConfig = [
     title: "Exterior",
     description: "Photos 72-87: Additional exterior views of the estate grounds and architecture.",
     directory: "Eden-Site Photos",
-    startPhoto: 72,
-    endPhoto: 87,
+    photos: [72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 86],
   },
   {
     title: "Hot Tub",

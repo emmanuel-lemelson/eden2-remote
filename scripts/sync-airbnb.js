@@ -44,24 +44,23 @@ function downloadFile(url, destPath) {
   });
 }
 
-// Compute 8x8 average perceptual hash using sharp
-async function getAverageHash(imagePath) {
+// Compute 9x8 difference perceptual hash using sharp (dHash)
+async function getDifferenceHash(imagePath) {
   try {
     const buffer = await sharp(imagePath)
-      .resize(8, 8, { fit: "fill" })
+      .resize(9, 8, { fit: "fill" })
       .greyscale()
       .raw()
       .toBuffer();
 
-    let sum = 0;
-    for (let i = 0; i < 64; i++) {
-      sum += buffer[i];
-    }
-    const avg = sum / 64;
-
     let hash = "";
-    for (let i = 0; i < 64; i++) {
-      hash += buffer[i] >= avg ? "1" : "0";
+    for (let r = 0; r < 8; r++) {
+      const rowOffset = r * 9;
+      for (let c = 0; c < 8; c++) {
+        const leftPixel = buffer[rowOffset + c];
+        const rightPixel = buffer[rowOffset + c + 1];
+        hash += leftPixel >= rightPixel ? "1" : "0";
+      }
     }
     return hash;
   } catch (err) {
@@ -117,7 +116,7 @@ async function main() {
 
   for (const filename of existingFiles) {
     const fullPath = path.join(galleryDir, filename);
-    const hash = await getAverageHash(fullPath);
+    const hash = await getDifferenceHash(fullPath);
     
     // Track photo numbers to find the next available ID
     const match = filename.match(/^(\d+)\./);
@@ -143,7 +142,7 @@ async function main() {
     fs.mkdirSync(tempDir, { recursive: true });
   }
 
-  console.log("\nComparing Airbnb photos against existing gallery using visual pHash...");
+  console.log("\nComparing Airbnb photos against existing gallery using visual dHash...");
   const newPhotosToDownload = [];
   let duplicateCount = 0;
 
@@ -156,36 +155,41 @@ async function main() {
     
     try {
       await downloadFile(downloadUrl, tempFile);
-      const hash = await getAverageHash(tempFile);
+      const hash = await getDifferenceHash(tempFile);
       
       if (!hash) {
         fs.unlinkSync(tempFile);
         continue;
       }
 
-      // Compare against existing hashes
-      let isDuplicate = false;
-      let matchedFile = "";
+      // Compare against existing hashes and rank best matching candidates
       let minDistance = 64;
+      let secondMinDistance = 64;
+      let matchedFile = "";
 
       for (const existing of existingHashes) {
         const dist = getHammingDistance(hash, existing.hash);
         if (dist < minDistance) {
+          secondMinDistance = minDistance;
           minDistance = dist;
-        }
-        if (dist <= 8) { // distance of 8 or less is a very strong visual match
-          isDuplicate = true;
           matchedFile = existing.filename;
-          break;
+        } else if (dist < secondMinDistance) {
+          secondMinDistance = dist;
         }
       }
 
+      const ratio = secondMinDistance > 0 ? (minDistance / secondMinDistance) : 1;
+      
+      // Upgrade matching rule:
+      // - Confirmed match (duplicate) if distance <= 10 (strict) OR distance <= 18 with relative uniqueness ratio <= 0.45
+      const isDuplicate = (minDistance <= 10) || (minDistance <= 18 && ratio <= 0.45);
+
       if (isDuplicate) {
         duplicateCount++;
-        // console.log(`[-] Skip: Airbnb photo #${i} is visually identical to existing ${matchedFile} (Hamming Distance: ${minDistance})`);
+        // console.log(`[-] Skip: Airbnb photo #${i} matches existing ${matchedFile} (Dist: ${minDistance}, Ratio: ${ratio.toFixed(2)})`);
         fs.unlinkSync(tempFile);
       } else {
-        console.log(`[+] NEW PHOTO DETECTED! (Min Hamming Distance to existing: ${minDistance})`);
+        console.log(`[+] NEW PHOTO DETECTED! (Min Hamming Distance to existing: ${minDistance}, Ratio: ${ratio.toFixed(2)})`);
         newPhotosToDownload.push({ index: i, baseUrl });
         // Keep the temp file for now
       }
