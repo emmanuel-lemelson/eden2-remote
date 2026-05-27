@@ -96,7 +96,7 @@
 
     .progress-bar-fill {
       height: 100%;
-      width: 41.8%;
+      width: 42.6%;
       background: var(--accent-gold);
       border-radius: 10px;
       transition: width 0.5s ease;
@@ -795,25 +795,25 @@
 
   <header>
     <h1>Eden Estate <span>Gallery Quality Audit</span></h1>
-    <p class="subtitle">Interactive visualization dashboard of all 93 active photos. We have categorized the images by resolution to identify low-quality or highly compressed vertical shots that should be queued for swapping.</p>
+    <p class="subtitle">Interactive visualization dashboard of all 92 active photos. We have categorized the images by resolution to identify low-quality or highly compressed vertical shots that should be queued for swapping.</p>
     
     <div class="progress-section">
       <div class="progress-header">
         <span style="font-weight: 600; color: var(--text-main);">AI-Enhanced Swapping Progress</span>
-        <span style="font-weight: 700; color: var(--accent-gold);">41.8% Complete</span>
+        <span style="font-weight: 700; color: var(--accent-gold);">42.6% Complete</span>
       </div>
       <div class="progress-bar-bg">
         <div class="progress-bar-fill"></div>
       </div>
       <div class="progress-stats">
-        <span>Swapped & Enhanced: <strong>23</strong> / 55 low-res files</span>
-        <span>Remaining Flagged: <strong>32</strong> photos left to replace</span>
+        <span>Swapped & Enhanced: <strong>23</strong> / 54 low-res files</span>
+        <span>Remaining Flagged: <strong>31</strong> photos left to replace</span>
       </div>
     </div>
 
     <div class="summary-badges">
       <div class="summary-card">
-        <div class="summary-num">93</div>
+        <div class="summary-num">92</div>
         <div class="summary-label">Total Gallery Photos</div>
       </div>
       <div class="summary-card" style="border-color: rgba(16, 185, 129, 0.4);">
@@ -821,7 +821,7 @@
         <div class="summary-label">Swapped & Enhanced</div>
       </div>
       <div class="summary-card" style="border-color: rgba(239, 68, 68, 0.4);">
-        <div class="summary-num" style="color: var(--color-low);">32</div>
+        <div class="summary-num" style="color: var(--color-low);">31</div>
         <div class="summary-label">Remaining Swaps</div>
       </div>
       <div class="summary-card" style="border-color: rgba(234, 179, 8, 0.4);">
@@ -837,8 +837,8 @@
 
   
   <div class="audit-summary-box">
-    <h3>🔴 Swaps Left to Update (32 photos)</h3>
-    <p>The following 32 photos are still low-resolution (720px wide) and require swapping to reach Pro Grade luxury standards. You can copy the list below or check them off as you swap them out.</p>
+    <h3>🔴 Swaps Left to Update (31 photos)</h3>
+    <p>The following 31 photos are still low-resolution (720px wide) and require swapping to reach Pro Grade luxury standards. You can copy the list below or check them off as you swap them out.</p>
     <div class="remaining-tag-container">
       
         <span class="remaining-tag" onclick="copyText('3.avif')" style="cursor: pointer;" title="Click to copy filename">
@@ -846,9 +846,6 @@
         </span>
         <span class="remaining-tag" onclick="copyText('4.avif')" style="cursor: pointer;" title="Click to copy filename">
           4.avif <span style="font-size: 0.65rem; opacity: 0.7;">📋</span>
-        </span>
-        <span class="remaining-tag" onclick="copyText('6.avif')" style="cursor: pointer;" title="Click to copy filename">
-          6.avif <span style="font-size: 0.65rem; opacity: 0.7;">📋</span>
         </span>
         <span class="remaining-tag" onclick="copyText('7.avif')" style="cursor: pointer;" title="Click to copy filename">
           7.avif <span style="font-size: 0.65rem; opacity: 0.7;">📋</span>
@@ -942,8 +939,8 @@
 
   <div class="controls">
     <div class="tabs">
-      <button class="tab-btn active" onclick="filterGallery('all', this)">All (93)</button>
-      <button class="tab-btn" onclick="filterGallery('low', this)">Remaining Swaps (32)</button>
+      <button class="tab-btn active" onclick="filterGallery('all', this)">All (92)</button>
+      <button class="tab-btn" onclick="filterGallery('low', this)">Remaining Swaps (31)</button>
       <button class="tab-btn" style="color: var(--color-pro);" onclick="filterGallery('enhanced', this)">Swapped & Enhanced (23)</button>
       <button class="tab-btn" onclick="filterGallery('medium', this)">Portfolio (22)</button>
       <button class="tab-btn" onclick="filterGallery('pro', this)">Pro Grade (39)</button>
@@ -1127,49 +1124,6 @@
           </div>
           <div class="card-footer" style="flex-direction: column; gap: 8px;">
             <a href="/gallery/Eden-Site%20Photos/4.avif" target="_blank" class="view-btn">View Original</a>
-          </div>
-        </div>
-      </div>
-      <div class="card flagged" data-quality="low" data-enhanced-time="0">
-        
-        <div class="img-container">
-          <img id="img-6.avif" src="/gallery/Eden-Site%20Photos/6.avif" alt="6.avif" loading="lazy">
-          <div class="badge-bar">
-            <span class="badge status-low">Low Res (720px)</span>
-            <div class="checkbox-container" title="Add to Swap Queue" onclick="toggleQueue('6.avif', event)">
-              <input type="checkbox" id="check-6.avif" onclick="event.stopPropagation(); syncCheckbox('6.avif')">
-            </div>
-          </div>
-        </div>
-      
-        <div class="card-body">
-          <div class="card-header">
-            <span class="filename">6.avif</span>
-            <button class="copy-btn" onclick="copyText('6.avif')">Copy File</button>
-          </div>
-          <div class="metadata-list">
-            <div class="meta-item">
-              <span class="meta-label">Resolution</span>
-              <span class="meta-value">720 x 960</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Size</span>
-              <span class="meta-value">102.7 KB</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Aspect Ratio</span>
-              <span class="meta-value">720:960</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Audit Recommendation</span>
-              <span class="meta-value status-low-text">🔴 Flagged for Swap</span>
-            </div>
-          </div>
-          <div class="caption-box" title="Cozy, eye-level close-up of the Great Room's massive stone fireplace with a crackling fire in the hearth behind a dark mesh screen. Framed by custom dark wood paneling, decorative plates, and antler-style wall sconces casting a warm glow. In front of the fireplace are two plush brownish-red damask armchairs with matching ottomans and an elegant carved wooden bench with a light-blue cushion. [Season: Winter/Autumn] [Lighting: Warm, ambient fireplace and sconce light] [Content: Fireplace hearth, conversation seating, wood paneling, cozy interior]">
-            Cozy, eye-level close-up of the Great Room's massive stone fireplace with a crackling fire in the hearth behind a dark mesh screen. Framed by custom dark wood paneling, decorative plates, and antler-style wall sconces casting a warm glow. In front of the fireplace are two plush brownish-red damask armchairs with matching ottomans and an elegant carved wooden bench with a light-blue cushion. [Season: Winter/Autumn] [Lighting: Warm, ambient fireplace and sconce light] [Content: Fireplace hearth, conversation seating, wood paneling, cozy interior]
-          </div>
-          <div class="card-footer" style="flex-direction: column; gap: 8px;">
-            <a href="/gallery/Eden-Site%20Photos/6.avif" target="_blank" class="view-btn">View Original</a>
           </div>
         </div>
       </div>
@@ -1406,7 +1360,7 @@
           </div>
         </div>
       </div>
-      <div class="card enhanced" data-quality="pro" data-enhanced-time="1779892476536.7024">
+      <div class="card enhanced" data-quality="pro" data-enhanced-time="1779897997957.4604">
         
         <div class="comparison-slider">
           <!-- Before (Original) -->
@@ -1436,7 +1390,7 @@
             </div>
             <div class="meta-item">
               <span class="meta-label">Size</span>
-              <span class="meta-value">245.3 KB</span>
+              <span class="meta-value">233.7 KB</span>
             </div>
             <div class="meta-item">
               <span class="meta-label">Aspect Ratio</span>

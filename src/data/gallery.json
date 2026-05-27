@@ -189,7 +189,6 @@
       4,
       101,
       100,
-      6,
       12,
       20,
       10,
@@ -244,14 +243,6 @@
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 2560,
         "height": 1707
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/6.avif",
-        "alt": "Cozy, eye-level close-up of the Great Room's massive stone fireplace with a crackling fire in the hearth behind a dark mesh screen. Framed by custom dark wood paneling, decorative plates, and antler-style wall sconces casting a warm glow. In front of the fireplace are two plush brownish-red damask armchairs with matching ottomans and an elegant carved wooden bench with a light-blue cushion. [Season: Winter/Autumn] [Lighting: Warm, ambient fireplace and sconce light] [Content: Fireplace hearth, conversation seating, wood paneling, cozy interior]",
-        "srcset": "/gallery/Eden-Site%20Photos/6@400w.webp 400w, /gallery/Eden-Site%20Photos/6@800w.webp 800w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
       },
       {
         "src": "/gallery/enhanced/12.avif",

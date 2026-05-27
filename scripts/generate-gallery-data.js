@@ -61,7 +61,6 @@ const gallerySectionConfig = [
       4,   // Great Room looking down from loft walkway onto conversation area
       101, // Great Room conversation seating next to grand piano and tall windows
       100, // Great Room massive stone fireplace and dark wood paneling
-      6,   // Great Room cozy fireplace close-up with plush damask armchairs
       12,  // Stack of birch logs inside copper log bucket (cozy winter detail)
       20,  // Entryway polished console table, ornate oval mirror, crystal lamp
       10,  // Upper-level loft landing with dark wrought-iron chandelier
