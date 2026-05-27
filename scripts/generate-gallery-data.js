@@ -29,7 +29,7 @@ const gallerySectionConfig = [
     title: "Exterior Views",
     description: "Estate exterior showcasing architecture and grounds.",
     directory: "Eden-Site Photos",
-    photos: [1, 2, 3, 112],
+    photos: [2, 3, 112, 1],
   },
   {
     title: "The Great Room",
@@ -245,7 +245,20 @@ async function ensureVariantsForImage(absSrcPath, widths) {
   const base = absSrcPath.slice(0, -ext.length);
   const out = [];
   const metadata = await sharp(absSrcPath).metadata();
-  for (const w of widths) {
+  
+  for (let i = 0; i < widths.length; i++) {
+    const w = widths[i];
+    
+    // Only generate this variant if the target width is smaller than or equal to the original width,
+    // OR if this is the first breakpoint that is larger than the original image's width.
+    // This ensures we always have at least one WebP variant capturing full resolution, but no oversized duplicates.
+    if (w > metadata.width && i > 0) {
+      const previousWidth = widths[i - 1];
+      if (previousWidth >= metadata.width) {
+        continue;
+      }
+    }
+
     const outPath = `${base}@${w}w.webp`;
     // Generate variant if missing
     if (!fs.existsSync(outPath)) {
@@ -314,7 +327,7 @@ function loadImagesSync(section) {
 }
 
 async function buildGallery() {
-  const widths = [400, 800, 1200];
+  const widths = [400, 800, 1200, 1600, 2000, 2400];
   const sections = [];
   for (const section of gallerySectionConfig) {
     const images = loadImagesSync(section);

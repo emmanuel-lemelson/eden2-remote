@@ -424,8 +424,15 @@ export function GallerySectionGrid({ sections, variant = "grouped" }: Props) {
         );
       } else {
         // Mixed: Height-matched Editorial Hero Collage (Left = large landscape featured, Right = vertical stack of 2)
-        const landscapeIndex = images.findIndex((img) => img.width >= img.height);
-        const featuredIdx = landscapeIndex !== -1 ? landscapeIndex : 0;
+        // Choose the landscape image with the largest width (best resolution/panoramic potential) for the large hero
+        let featuredIdx = 0;
+        let maxWidth = 0;
+        images.forEach((img, idx) => {
+          if (img.width >= img.height && img.width > maxWidth) {
+            maxWidth = img.width;
+            featuredIdx = idx;
+          }
+        });
         
         const featuredImage = images[featuredIdx];
         const featuredAbs = sectionStartIndex + featuredIdx;
@@ -497,8 +504,15 @@ export function GallerySectionGrid({ sections, variant = "grouped" }: Props) {
 
     if (count === 4) {
       // 4 Photos: Quad Editorial Collage (1 wide banner, 3 balanced grid columns below)
-      const featuredIdx = images.findIndex((img) => img.width >= img.height);
-      const featuredIdxToUse = featuredIdx !== -1 ? featuredIdx : 0;
+      // Choose the image with the largest width (highest resolution/panoramic potential) for the top wide hero banner
+      let featuredIdxToUse = 0;
+      let maxWidth = 0;
+      images.forEach((img, idx) => {
+        if (img.width > maxWidth) {
+          maxWidth = img.width;
+          featuredIdxToUse = idx;
+        }
+      });
       const featuredImage = images[featuredIdxToUse];
       const featuredAbs = sectionStartIndex + featuredIdxToUse;
 
@@ -517,7 +531,7 @@ export function GallerySectionGrid({ sections, variant = "grouped" }: Props) {
             onClick={() => setLightboxIndex(featuredAbs)}
             className="group relative overflow-hidden rounded-3xl border border-white/60 bg-[rgba(248,243,234,0.85)] shadow-sm transition-all duration-300 cursor-pointer"
           >
-            <div className="relative aspect-[16/7] sm:aspect-[21/9] w-full overflow-hidden">
+            <div className="relative aspect-[16/9] md:aspect-[16/8] w-full overflow-hidden">
               <GalleryImage
                 src={featuredImage.src}
                 srcSet={featuredImage.srcset}
