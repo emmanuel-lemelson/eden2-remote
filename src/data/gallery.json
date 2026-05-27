@@ -4,40 +4,31 @@
     "description": "Aerial views, private tennis court, spring-fed ponds, manicured gardens, and the swimming pool.",
     "directory": "Eden-Site Photos",
     "photos": [
-      112,
       2,
-      3,
       1,
       86,
-      87,
       113,
+      87,
+      112,
+      3,
       88,
       69,
       89,
       111,
-      108,
       58,
+      108,
       75,
       79,
       59,
       64,
       110,
       80,
-      76,
-      77,
       109,
-      68,
-      78
+      77,
+      78,
+      68
     ],
     "images": [
-      {
-        "src": "/gallery/Eden-Site%20Photos/112.avif",
-        "alt": "Panoramic high-altitude aerial view of the estate during summer. Shows the main grey-roofed house with circular driveway, the tennis court on the far left, the spring-fed pond on the left, surrounded by vast green lawns and a dense evergreen forest extending to a massive mountain range under a clear blue sky. [Season: Summer] [Lighting: Bright, direct summer daylight] [Content: Panoramic aerial view, estate exterior, tennis court, spring pond, forest landscape]",
-        "srcset": "/gallery/Eden-Site%20Photos/112@400w.webp 400w, /gallery/Eden-Site%20Photos/112@800w.webp 800w, /gallery/Eden-Site%20Photos/112@1200w.webp 1200w, /gallery/Eden-Site%20Photos/112@1600w.webp 1600w, /gallery/Eden-Site%20Photos/112@2000w.webp 2000w, /gallery/Eden-Site%20Photos/112@2400w.webp 2400w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 2560,
-        "height": 1441
-      },
       {
         "src": "/gallery/Eden-Site%20Photos/2.avif",
         "alt": "High-altitude aerial view of the entire luxury estate during a warm sunset. Showcases the main residence with slate roofs, a stone patio with a rectangular turquoise swimming pool, an outdoor spa hot tub, and a circular spring-fed pond. Surrounded by rolling green lawns and a dense evergreen pine forest, with soft pink and purple twilight skies in the background. [Season: Summer] [Lighting: Warm twilight, sunset] [Content: Aerial view, backyard patio, swimming pool, pond, landscape exterior]",
@@ -45,14 +36,6 @@
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 2560,
         "height": 1705
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/3.avif",
-        "alt": "High-angle aerial view of the estate's front approach at dusk. Shows the circular gravel driveway with a central landscaped roundabout containing a mature tree, the front facade of the light-beige house with circular window accents, and a tennis court in the background, set against soft yellow-orange twilight mountains and green forests. [Season: Summer] [Lighting: Warm twilight, golden hour] [Content: Aerial view, front entrance, circular driveway, tennis court, landscape exterior]",
-        "srcset": "/gallery/Eden-Site%20Photos/3@400w.webp 400w, /gallery/Eden-Site%20Photos/3@800w.webp 800w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 480
       },
       {
         "src": "/gallery/Eden-Site%20Photos/1.webp",
@@ -71,6 +54,14 @@
         "height": 1024
       },
       {
+        "src": "/gallery/Eden-Site%20Photos/113.avif",
+        "alt": "Resort-style backyard patio featuring a large rectangular swimming pool and a separate circular hot tub set in a stone-paved deck. Several white lounge chairs are lined up in the background on the lawn, bordering a dense forest under a blue sky with soft white clouds. [Season: Summer] [Lighting: Warm afternoon daylight with the sun shining bright from the left] [Content: Swimming pool patio, hot tub deck, stone paving, lounge chairs, backyard landscape]",
+        "srcset": "/gallery/Eden-Site%20Photos/113@400w.webp 400w, /gallery/Eden-Site%20Photos/113@800w.webp 800w, /gallery/Eden-Site%20Photos/113@1200w.webp 1200w, /gallery/Eden-Site%20Photos/113@1600w.webp 1600w, /gallery/Eden-Site%20Photos/113@2000w.webp 2000w, /gallery/Eden-Site%20Photos/113@2400w.webp 2400w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 2560,
+        "height": 1920
+      },
+      {
         "src": "/gallery/Eden-Site%20Photos/87.avif",
         "alt": "Dusk/twilight view of the rear of the estate house, highlighting the glowing warm windows. In the foreground is a stone-paved patio with blue lounge chairs next to a swimming pool, surrounded by green lawns and trees. [Season: Summer] [Lighting: Warm twilight / dusk] [Content: Backyard elevation, swimming pool, stone patio, twilight exterior]",
         "srcset": "/gallery/Eden-Site%20Photos/87@400w.webp 400w, /gallery/Eden-Site%20Photos/87@800w.webp 800w",
@@ -79,12 +70,20 @@
         "height": 960
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/113.avif",
-        "alt": "Resort-style backyard patio featuring a large rectangular swimming pool and a separate circular hot tub set in a stone-paved deck. Several white lounge chairs are lined up in the background on the lawn, bordering a dense forest under a blue sky with soft white clouds. [Season: Summer] [Lighting: Warm afternoon daylight with the sun shining bright from the left] [Content: Swimming pool patio, hot tub deck, stone paving, lounge chairs, backyard landscape]",
-        "srcset": "/gallery/Eden-Site%20Photos/113@400w.webp 400w, /gallery/Eden-Site%20Photos/113@800w.webp 800w, /gallery/Eden-Site%20Photos/113@1200w.webp 1200w, /gallery/Eden-Site%20Photos/113@1600w.webp 1600w, /gallery/Eden-Site%20Photos/113@2000w.webp 2000w, /gallery/Eden-Site%20Photos/113@2400w.webp 2400w",
+        "src": "/gallery/Eden-Site%20Photos/112.avif",
+        "alt": "Panoramic high-altitude aerial view of the estate during summer. Shows the main grey-roofed house with circular driveway, the tennis court on the far left, the spring-fed pond on the left, surrounded by vast green lawns and a dense evergreen forest extending to a massive mountain range under a clear blue sky. [Season: Summer] [Lighting: Bright, direct summer daylight] [Content: Panoramic aerial view, estate exterior, tennis court, spring pond, forest landscape]",
+        "srcset": "/gallery/Eden-Site%20Photos/112@400w.webp 400w, /gallery/Eden-Site%20Photos/112@800w.webp 800w, /gallery/Eden-Site%20Photos/112@1200w.webp 1200w, /gallery/Eden-Site%20Photos/112@1600w.webp 1600w, /gallery/Eden-Site%20Photos/112@2000w.webp 2000w, /gallery/Eden-Site%20Photos/112@2400w.webp 2400w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 2560,
-        "height": 1920
+        "height": 1441
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/3.avif",
+        "alt": "High-angle aerial view of the estate's front approach at dusk. Shows the circular gravel driveway with a central landscaped roundabout containing a mature tree, the front facade of the light-beige house with circular window accents, and a tennis court in the background, set against soft yellow-orange twilight mountains and green forests. [Season: Summer] [Lighting: Warm twilight, golden hour] [Content: Aerial view, front entrance, circular driveway, tennis court, landscape exterior]",
+        "srcset": "/gallery/Eden-Site%20Photos/3@400w.webp 400w, /gallery/Eden-Site%20Photos/3@800w.webp 800w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 480
       },
       {
         "src": "/gallery/Eden-Site%20Photos/88.avif",
@@ -119,20 +118,20 @@
         "height": 1920
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/108.avif",
-        "alt": "A gorgeous, sun-drenched view of the spring-fed pond bordered by large natural boulders, tall green ornamental grass, and a green lawn. A green tennis court fence is visible in the background under bright sunshine. [Season: Summer] [Lighting: Bright, warm summer afternoon daylight] [Content: Pond landscape, boulders, ornamental grass, tennis court background]",
-        "srcset": "/gallery/Eden-Site%20Photos/108@400w.webp 400w, /gallery/Eden-Site%20Photos/108@800w.webp 800w, /gallery/Eden-Site%20Photos/108@1200w.webp 1200w, /gallery/Eden-Site%20Photos/108@1600w.webp 1600w, /gallery/Eden-Site%20Photos/108@2000w.webp 2000w, /gallery/Eden-Site%20Photos/108@2400w.webp 2400w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 2560,
-        "height": 1920
-      },
-      {
         "src": "/gallery/Eden-Site%20Photos/58.avif",
         "alt": "A stunning spring-fed pond reflecting a clear blue sky and fluffy white clouds. In the foreground, vibrant pink and purple wildflowers bloom along the grassy bank. In the background, a luxury house with grey roofs sits nestled among dense green summer trees and rolling green lawns. [Season: Summer] [Lighting: Bright, direct summer daylight] [Content: Spring-fed pond, reflection, wildflowers, estate exterior, lawn]",
         "srcset": "/gallery/Eden-Site%20Photos/58@400w.webp 400w, /gallery/Eden-Site%20Photos/58@800w.webp 800w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 720,
         "height": 480
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/108.avif",
+        "alt": "A gorgeous, sun-drenched view of the spring-fed pond bordered by large natural boulders, tall green ornamental grass, and a green lawn. A green tennis court fence is visible in the background under bright sunshine. [Season: Summer] [Lighting: Bright, warm summer afternoon daylight] [Content: Pond landscape, boulders, ornamental grass, tennis court background]",
+        "srcset": "/gallery/Eden-Site%20Photos/108@400w.webp 400w, /gallery/Eden-Site%20Photos/108@800w.webp 800w, /gallery/Eden-Site%20Photos/108@1200w.webp 1200w, /gallery/Eden-Site%20Photos/108@1600w.webp 1600w, /gallery/Eden-Site%20Photos/108@2000w.webp 2000w, /gallery/Eden-Site%20Photos/108@2400w.webp 2400w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 2560,
+        "height": 1920
       },
       {
         "src": "/gallery/Eden-Site%20Photos/75.avif",
@@ -183,12 +182,12 @@
         "height": 960
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/76.avif",
-        "alt": "Close-up detail of two large, classical stone urn planters with carved cherub/angel details. One is planted with red roses, the other is empty, sitting in a manicured green garden. [Season: Summer] [Lighting: Soft, diffused daylight] [Content: Cherub planters, stone urns, red roses, garden decor]",
-        "srcset": "/gallery/Eden-Site%20Photos/76@400w.webp 400w, /gallery/Eden-Site%20Photos/76@800w.webp 800w",
+        "src": "/gallery/Eden-Site%20Photos/109.avif",
+        "alt": "Beautiful garden view showing two ornate cherub-themed stone planters—one with yellow-green plants, the other with red roses. A calm pond and green woods are blurred in the background. [Season: Summer] [Lighting: Warm, sunny daylight] [Content: Cherub planters, stone urns, roses, pond background]",
+        "srcset": "/gallery/Eden-Site%20Photos/109@400w.webp 400w, /gallery/Eden-Site%20Photos/109@800w.webp 800w, /gallery/Eden-Site%20Photos/109@1200w.webp 1200w, /gallery/Eden-Site%20Photos/109@1600w.webp 1600w, /gallery/Eden-Site%20Photos/109@2000w.webp 2000w, /gallery/Eden-Site%20Photos/109@2400w.webp 2400w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
+        "width": 2560,
+        "height": 3413
       },
       {
         "src": "/gallery/Eden-Site%20Photos/77.avif",
@@ -199,12 +198,12 @@
         "height": 960
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/109.avif",
-        "alt": "Beautiful garden view showing two ornate cherub-themed stone planters—one with yellow-green plants, the other with red roses. A calm pond and green woods are blurred in the background. [Season: Summer] [Lighting: Warm, sunny daylight] [Content: Cherub planters, stone urns, roses, pond background]",
-        "srcset": "/gallery/Eden-Site%20Photos/109@400w.webp 400w, /gallery/Eden-Site%20Photos/109@800w.webp 800w, /gallery/Eden-Site%20Photos/109@1200w.webp 1200w, /gallery/Eden-Site%20Photos/109@1600w.webp 1600w, /gallery/Eden-Site%20Photos/109@2000w.webp 2000w, /gallery/Eden-Site%20Photos/109@2400w.webp 2400w",
+        "src": "/gallery/Eden-Site%20Photos/78.avif",
+        "alt": "A breathtaking winter night-time view of the estate's rear facade, fully illuminated with warm interior lights that glow through the windows. The courtyard is covered in deep white snow, and a snowy driveway curves towards the house. [Season: Winter] [Lighting: Warm interior lighting contrasting with the cool blue tones of a winter night] [Content: Winter night exterior, illuminated house, snow driveway]",
+        "srcset": "/gallery/Eden-Site%20Photos/78@400w.webp 400w, /gallery/Eden-Site%20Photos/78@800w.webp 800w, /gallery/Eden-Site%20Photos/78@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 2560,
-        "height": 3413
+        "width": 1200,
+        "height": 900
       },
       {
         "src": "/gallery/Eden-Site%20Photos/68.avif",
@@ -213,14 +212,6 @@
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 720,
         "height": 540
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/78.avif",
-        "alt": "A breathtaking winter night-time view of the estate's rear facade, fully illuminated with warm interior lights that glow through the windows. The courtyard is covered in deep white snow, and a snowy driveway curves towards the house. [Season: Winter] [Lighting: Warm interior lighting contrasting with the cool blue tones of a winter night] [Content: Winter night exterior, illuminated house, snow driveway]",
-        "srcset": "/gallery/Eden-Site%20Photos/78@400w.webp 400w, /gallery/Eden-Site%20Photos/78@800w.webp 800w, /gallery/Eden-Site%20Photos/78@1200w.webp 1200w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1200,
-        "height": 900
       }
     ]
   },
@@ -236,18 +227,18 @@
       100,
       6,
       12,
-      9,
-      10,
-      11,
-      7,
-      15,
       20,
+      10,
       19,
-      30,
+      15,
+      9,
       31,
-      16,
+      30,
+      107,
       57,
-      107
+      16,
+      11,
+      7
     ],
     "images": [
       {
@@ -307,12 +298,12 @@
         "height": 1024
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/9.avif",
-        "alt": "Close-up detail shot of an elegant wood-carved stag sculpture with gold-painted antlers, resting on a highly polished round wooden table featuring a geometric starburst inlay. The background shows a soft, warm out-of-focus view of the Great Room's stone fireplace, wood paneling, and glowing wall sconces. [Season: Autumn/Winter] [Lighting: Warm, focused indoor lighting] [Content: Sculpture close-up, wood table detail, fireplace background, decor]",
-        "srcset": "/gallery/Eden-Site%20Photos/9@400w.webp 400w, /gallery/Eden-Site%20Photos/9@800w.webp 800w",
+        "src": "/gallery/enhanced/20.avif",
+        "alt": "Interior entry hallway view showcasing a polished dark wood console table with decorative drawer pulls, standing under a large oval mirror with an ornate frame. A table lamp with a crystal stand and white shade sits on the console table next to white wainscoting panels on cream walls. [Season: Indoor] [Lighting: Warm lamp light and soft side daylight] [Content: Entryway console, antique mirror, table lamp, hallway interior]",
+        "srcset": "/gallery/enhanced/20@400w.webp 400w, /gallery/enhanced/20@800w.webp 800w, /gallery/enhanced/20@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
+        "width": 1024,
+        "height": 1024
       },
       {
         "src": "/gallery/Eden-Site%20Photos/10.avif",
@@ -321,6 +312,70 @@
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 1200,
         "height": 801
+      },
+      {
+        "src": "/gallery/enhanced/19.avif",
+        "alt": "Close-up detail of a silver-threaded damask upholstered sofa with decorative pillows, set against classic light beige walls with white wainscoting and crown molding. A silver candlestick stands on a side console next to the sofa. [Season: Indoor] [Lighting: Diffused, soft indoor light] [Content: Sofa close-up, wall paneling, elegant home decor]",
+        "srcset": "/gallery/enhanced/19@400w.webp 400w, /gallery/enhanced/19@800w.webp 800w, /gallery/enhanced/19@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "src": "/gallery/enhanced/15.avif",
+        "alt": "Macro detail shot of the highly ornate, gold-leaf and silver hand-carved decorative woodwork on a furniture crown or mantelpiece. Highlights a classic hand-carved female bust face medallion in the center surrounded by detailed floral and scroll filigree. [Season: Indoor] [Lighting: Low-key lighting, emphasizing metallic texture and high-relief carving] [Content: Wood carving, ornate detail, craftsmanship, antique furniture]",
+        "srcset": "/gallery/enhanced/15@400w.webp 400w, /gallery/enhanced/15@800w.webp 800w, /gallery/enhanced/15@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/9.avif",
+        "alt": "Close-up detail shot of an elegant wood-carved stag sculpture with gold-painted antlers, resting on a highly polished round wooden table featuring a geometric starburst inlay. The background shows a soft, warm out-of-focus view of the Great Room's stone fireplace, wood paneling, and glowing wall sconces. [Season: Autumn/Winter] [Lighting: Warm, focused indoor lighting] [Content: Sculpture close-up, wood table detail, fireplace background, decor]",
+        "srcset": "/gallery/Eden-Site%20Photos/9@400w.webp 400w, /gallery/Eden-Site%20Photos/9@800w.webp 800w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
+      },
+      {
+        "src": "/gallery/enhanced/31.avif",
+        "alt": "Another view of the bright sunroom showing the wicker seating, a large stone fireplace on the left with a lit fire, and white brick chimney walls. Large windows let in plenty of daylight. [Season: Summer/Spring] [Lighting: Bright daylight with warm fireplace glow] [Content: Sunroom, brick fireplace, wicker sofas, indoor-outdoor living]",
+        "srcset": "/gallery/enhanced/31@400w.webp 400w, /gallery/enhanced/31@800w.webp 800w, /gallery/enhanced/31@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/30.avif",
+        "alt": "Spacious sunroom featuring custom wicker furniture (a sofa, armchairs, and a round coffee table), stone-tiled floor, a ceiling fan, and a line of tall windows looking out at green lawns and trees. [Season: Summer] [Lighting: Bright, direct daylight] [Content: Sunroom, wicker furniture, stone tile floor, garden view exterior]",
+        "srcset": "/gallery/Eden-Site%20Photos/30@400w.webp 400w, /gallery/Eden-Site%20Photos/30@800w.webp 800w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 480
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/107.avif",
+        "alt": "High-end home office or executive study on the upper level. Features a large dark wood desk with a brown leather chair, dual computer monitors, a printer, built-in bookshelves, an ornate stained-glass ceiling dome fixture, a patterned rug over hardwood floors, and a large circular window showing bright daylight. [Season: Summer] [Lighting: Bright, natural daylight] [Content: Executive office, double monitors, wood desk, circular window, library study]",
+        "srcset": "/gallery/Eden-Site%20Photos/107@400w.webp 400w, /gallery/Eden-Site%20Photos/107@800w.webp 800w, /gallery/Eden-Site%20Photos/107@1200w.webp 1200w, /gallery/Eden-Site%20Photos/107@1600w.webp 1600w, /gallery/Eden-Site%20Photos/107@2000w.webp 2000w, /gallery/Eden-Site%20Photos/107@2400w.webp 2400w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 2560,
+        "height": 1707
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/57.avif",
+        "alt": "A spacious home office or library workspace. Features a dark wood desk with a leather executive chair in the center under an ornate stained-glass pendant lamp. The room has built-in wood bookshelves, French glass doors, a large circular window at the far end looking out onto green lawn/trees, and a patterned rug over hardwood floors. [Season: Summer] [Lighting: Soft daytime light] [Content: Home office, wood desk, circular window, bookshelves, executive study]",
+        "srcset": "/gallery/Eden-Site%20Photos/57@400w.webp 400w, /gallery/Eden-Site%20Photos/57@800w.webp 800w, /gallery/Eden-Site%20Photos/57@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "src": "/gallery/enhanced/16.avif",
+        "alt": "Cozy, warm study and media room featuring a large flat-screen TV showing a blue title screen 'TREES OF PEACE' mounted inside a custom white-distressed media unit. A plush leather armchair is in the corner, and a tall built-in wooden bookshelf filled with books frames the space under soft recessed lights. [Season: Autumn/Winter] [Lighting: Soft, warm recessed spotlights] [Content: Study room, media console, television, library bookshelf, cozy interior]",
+        "srcset": "/gallery/enhanced/16@400w.webp 400w, /gallery/enhanced/16@800w.webp 800w, /gallery/enhanced/16@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1024,
+        "height": 1024
       },
       {
         "src": "/gallery/enhanced/11.avif",
@@ -337,70 +392,6 @@
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 720,
         "height": 540
-      },
-      {
-        "src": "/gallery/enhanced/15.avif",
-        "alt": "Macro detail shot of the highly ornate, gold-leaf and silver hand-carved decorative woodwork on a furniture crown or mantelpiece. Highlights a classic hand-carved female bust face medallion in the center surrounded by detailed floral and scroll filigree. [Season: Indoor] [Lighting: Low-key lighting, emphasizing metallic texture and high-relief carving] [Content: Wood carving, ornate detail, craftsmanship, antique furniture]",
-        "srcset": "/gallery/enhanced/15@400w.webp 400w, /gallery/enhanced/15@800w.webp 800w, /gallery/enhanced/15@1200w.webp 1200w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1024,
-        "height": 1024
-      },
-      {
-        "src": "/gallery/enhanced/20.avif",
-        "alt": "Interior entry hallway view showcasing a polished dark wood console table with decorative drawer pulls, standing under a large oval mirror with an ornate frame. A table lamp with a crystal stand and white shade sits on the console table next to white wainscoting panels on cream walls. [Season: Indoor] [Lighting: Warm lamp light and soft side daylight] [Content: Entryway console, antique mirror, table lamp, hallway interior]",
-        "srcset": "/gallery/enhanced/20@400w.webp 400w, /gallery/enhanced/20@800w.webp 800w, /gallery/enhanced/20@1200w.webp 1200w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1024,
-        "height": 1024
-      },
-      {
-        "src": "/gallery/enhanced/19.avif",
-        "alt": "Close-up detail of a silver-threaded damask upholstered sofa with decorative pillows, set against classic light beige walls with white wainscoting and crown molding. A silver candlestick stands on a side console next to the sofa. [Season: Indoor] [Lighting: Diffused, soft indoor light] [Content: Sofa close-up, wall paneling, elegant home decor]",
-        "srcset": "/gallery/enhanced/19@400w.webp 400w, /gallery/enhanced/19@800w.webp 800w, /gallery/enhanced/19@1200w.webp 1200w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1024,
-        "height": 1024
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/30.avif",
-        "alt": "Spacious sunroom featuring custom wicker furniture (a sofa, armchairs, and a round coffee table), stone-tiled floor, a ceiling fan, and a line of tall windows looking out at green lawns and trees. [Season: Summer] [Lighting: Bright, direct daylight] [Content: Sunroom, wicker furniture, stone tile floor, garden view exterior]",
-        "srcset": "/gallery/Eden-Site%20Photos/30@400w.webp 400w, /gallery/Eden-Site%20Photos/30@800w.webp 800w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 480
-      },
-      {
-        "src": "/gallery/enhanced/31.avif",
-        "alt": "Another view of the bright sunroom showing the wicker seating, a large stone fireplace on the left with a lit fire, and white brick chimney walls. Large windows let in plenty of daylight. [Season: Summer/Spring] [Lighting: Bright daylight with warm fireplace glow] [Content: Sunroom, brick fireplace, wicker sofas, indoor-outdoor living]",
-        "srcset": "/gallery/enhanced/31@400w.webp 400w, /gallery/enhanced/31@800w.webp 800w, /gallery/enhanced/31@1200w.webp 1200w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1024,
-        "height": 1024
-      },
-      {
-        "src": "/gallery/enhanced/16.avif",
-        "alt": "Cozy, warm study and media room featuring a large flat-screen TV showing a blue title screen 'TREES OF PEACE' mounted inside a custom white-distressed media unit. A plush leather armchair is in the corner, and a tall built-in wooden bookshelf filled with books frames the space under soft recessed lights. [Season: Autumn/Winter] [Lighting: Soft, warm recessed spotlights] [Content: Study room, media console, television, library bookshelf, cozy interior]",
-        "srcset": "/gallery/enhanced/16@400w.webp 400w, /gallery/enhanced/16@800w.webp 800w, /gallery/enhanced/16@1200w.webp 1200w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1024,
-        "height": 1024
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/57.avif",
-        "alt": "A spacious home office or library workspace. Features a dark wood desk with a leather executive chair in the center under an ornate stained-glass pendant lamp. The room has built-in wood bookshelves, French glass doors, a large circular window at the far end looking out onto green lawn/trees, and a patterned rug over hardwood floors. [Season: Summer] [Lighting: Soft daytime light] [Content: Home office, wood desk, circular window, bookshelves, executive study]",
-        "srcset": "/gallery/Eden-Site%20Photos/57@400w.webp 400w, /gallery/Eden-Site%20Photos/57@800w.webp 800w, /gallery/Eden-Site%20Photos/57@1200w.webp 1200w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1200,
-        "height": 800
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/107.avif",
-        "alt": "High-end home office or executive study on the upper level. Features a large dark wood desk with a brown leather chair, dual computer monitors, a printer, built-in bookshelves, an ornate stained-glass ceiling dome fixture, a patterned rug over hardwood floors, and a large circular window showing bright daylight. [Season: Summer] [Lighting: Bright, natural daylight] [Content: Executive office, double monitors, wood desk, circular window, library study]",
-        "srcset": "/gallery/Eden-Site%20Photos/107@400w.webp 400w, /gallery/Eden-Site%20Photos/107@800w.webp 800w, /gallery/Eden-Site%20Photos/107@1200w.webp 1200w, /gallery/Eden-Site%20Photos/107@1600w.webp 1600w, /gallery/Eden-Site%20Photos/107@2000w.webp 2000w, /gallery/Eden-Site%20Photos/107@2400w.webp 2400w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 2560,
-        "height": 1707
       }
     ]
   },
@@ -414,8 +405,8 @@
       23,
       25,
       26,
-      27,
       28,
+      27,
       13,
       17,
       29
@@ -462,20 +453,20 @@
         "height": 1600
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/27.avif",
-        "alt": "Formal Great Dining Room featuring a long wooden table prepared with crystal wine glasses, white plates, and silver cutlery. High-backed chairs upholstered in patterned cream fabric sit around the table under a large wrought-iron candle chandelier. Large windows look out on green trees. [Season: Summer/Spring] [Lighting: Bright, natural daytime light] [Content: Formal dining room, table setting, candle chandelier, dining interior]",
-        "srcset": "/gallery/Eden-Site%20Photos/27@400w.webp 400w, /gallery/Eden-Site%20Photos/27@800w.webp 800w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
-      },
-      {
         "src": "/gallery/Eden-Site%20Photos/28.avif",
         "alt": "Formal Great Dining Room showing a long wooden table prepared for a dinner party, a large wooden display hutch on the left, a large crystal chandelier hanging from a white tray ceiling, and a large light-patterned rug over hardwood floors. Multiple windows look out on lush green trees. [Season: Summer/Spring] [Lighting: Soft, bright daytime light] [Content: Dining room, hutch cabinet, crystal chandelier, dining table interior]",
         "srcset": "/gallery/Eden-Site%20Photos/28@400w.webp 400w, /gallery/Eden-Site%20Photos/28@800w.webp 800w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 720,
         "height": 480
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/27.avif",
+        "alt": "Formal Great Dining Room featuring a long wooden table prepared with crystal wine glasses, white plates, and silver cutlery. High-backed chairs upholstered in patterned cream fabric sit around the table under a large wrought-iron candle chandelier. Large windows look out on green trees. [Season: Summer/Spring] [Lighting: Bright, natural daytime light] [Content: Formal dining room, table setting, candle chandelier, dining interior]",
+        "srcset": "/gallery/Eden-Site%20Photos/27@400w.webp 400w, /gallery/Eden-Site%20Photos/27@800w.webp 800w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 960
       },
       {
         "src": "/gallery/enhanced/13.avif",
@@ -510,16 +501,15 @@
     "photos": [
       102,
       36,
-      34,
       37,
-      33,
       40,
       42,
-      43,
       38,
+      43,
       39,
       41,
       44,
+      33,
       35
     ],
     "images": [
@@ -540,28 +530,12 @@
         "height": 800
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/34.avif",
-        "alt": "Classic, luxurious guest bedroom with a king-sized bed featuring a tall, ornate dark metal/carved wood headboard and premium grey/white linens. Two bedside tables with lamps are on either side. In the background are sliding glass doors leading to an outdoor deck. [Season: Summer] [Lighting: Warm bedside lamp light mixed with soft daylight] [Content: Guest bedroom, king bed, metal headboard, deck doors]",
-        "srcset": "/gallery/Eden-Site%20Photos/34@400w.webp 400w, /gallery/Eden-Site%20Photos/34@800w.webp 800w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
-      },
-      {
         "src": "/gallery/Eden-Site%20Photos/37.avif",
         "alt": "Spacious guest bedroom with a vaulted ceiling, light green walls, a king-sized bed with wooden posts, a white TV stand console, and bright windows looking out onto a green summer landscape. [Season: Summer] [Lighting: Bright daylight with distinct sun beams casting across the floor] [Content: Guest bedroom, king bed, vaulted ceiling, sunbeams]",
         "srcset": "/gallery/Eden-Site%20Photos/37@400w.webp 400w, /gallery/Eden-Site%20Photos/37@800w.webp 800w, /gallery/Eden-Site%20Photos/37@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 1200,
         "height": 801
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/33.avif",
-        "alt": "A sunlit window seat alcove in a guest bedroom. Features a blue cushion on the built-in bench, white trim paneling, and two wall sconces on either side. The window looks out onto green summer trees. [Season: Summer] [Lighting: Bright, soft daylight] [Content: Window seat, bedroom alcove, wall sconces, reading nook]",
-        "srcset": "/gallery/Eden-Site%20Photos/33@400w.webp 400w, /gallery/Eden-Site%20Photos/33@800w.webp 800w, /gallery/Eden-Site%20Photos/33@1200w.webp 1200w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1200,
-        "height": 800
       },
       {
         "src": "/gallery/Eden-Site%20Photos/40.avif",
@@ -580,20 +554,20 @@
         "height": 800
       },
       {
-        "src": "/gallery/enhanced/43.avif",
-        "alt": "Cozy guest bedroom featuring a queen bed with white linens, a ceiling fan, light beige walls, a grey upholstered armchair, and a window. [Season: Indoor] [Lighting: Soft, pleasant recessed ceiling lights] [Content: Cozy bedroom, queen bed, armchair, neutral tones]",
-        "srcset": "/gallery/enhanced/43@400w.webp 400w, /gallery/enhanced/43@800w.webp 800w, /gallery/enhanced/43@1200w.webp 1200w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1024,
-        "height": 1024
-      },
-      {
         "src": "/gallery/Eden-Site%20Photos/38.avif",
         "alt": "Whimsical bedroom featuring a white metal canopy four-poster queen bed, yellow walls, dark hardwood floors, a white dresser, and a window with green summer lawn views. [Season: Summer] [Lighting: Soft daylight and warm lamp light] [Content: Canopy bed, yellow bedroom, wood floors, garden view]",
         "srcset": "/gallery/Eden-Site%20Photos/38@400w.webp 400w, /gallery/Eden-Site%20Photos/38@800w.webp 800w, /gallery/Eden-Site%20Photos/38@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 1200,
         "height": 800
+      },
+      {
+        "src": "/gallery/enhanced/43.avif",
+        "alt": "Cozy guest bedroom featuring a queen bed with white linens, a ceiling fan, light beige walls, a grey upholstered armchair, and a window. [Season: Indoor] [Lighting: Soft, pleasant recessed ceiling lights] [Content: Cozy bedroom, queen bed, armchair, neutral tones]",
+        "srcset": "/gallery/enhanced/43@400w.webp 400w, /gallery/enhanced/43@800w.webp 800w, /gallery/enhanced/43@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1024,
+        "height": 1024
       },
       {
         "src": "/gallery/Eden-Site%20Photos/39.avif",
@@ -620,6 +594,14 @@
         "height": 960
       },
       {
+        "src": "/gallery/Eden-Site%20Photos/33.avif",
+        "alt": "A sunlit window seat alcove in a guest bedroom. Features a blue cushion on the built-in bench, white trim paneling, and two wall sconces on either side. The window looks out onto green summer trees. [Season: Summer] [Lighting: Bright, soft daylight] [Content: Window seat, bedroom alcove, wall sconces, reading nook]",
+        "srcset": "/gallery/Eden-Site%20Photos/33@400w.webp 400w, /gallery/Eden-Site%20Photos/33@800w.webp 800w, /gallery/Eden-Site%20Photos/33@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 800
+      },
+      {
         "src": "/gallery/Eden-Site%20Photos/35.avif",
         "alt": "Close-up detail of a guest bed showing premium light-patterned pillows and a small box of 'MOUNT MANSFIELD CHOCOLATES' wrapped in a bow sitting on the duvet. [Season: Winter/Autumn] [Lighting: Warm, soft-focus macro lighting] [Content: Bed detail, pillows, welcome gift chocolates]",
         "srcset": "/gallery/Eden-Site%20Photos/35@400w.webp 400w, /gallery/Eden-Site%20Photos/35@800w.webp 800w",
@@ -635,21 +617,18 @@
     "directory": "Eden-Site Photos",
     "photos": [
       103,
-      104,
-      106,
-      46,
-      48,
-      70,
-      53,
       105,
-      45,
-      47,
+      70,
+      106,
+      53,
+      48,
       50,
-      49,
       52,
+      47,
+      49,
       54,
-      55,
-      56
+      56,
+      55
     ],
     "images": [
       {
@@ -661,12 +640,20 @@
         "height": 1704
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/104.avif",
-        "alt": "Another view of the luxury master bathroom ensuite showing the built-in oval soaking tub under the large arched window bank during a warm golden hour sunset. A vanity mirror and light cabinets are on the left. [Season: Summer] [Lighting: Rich, glowing orange sunset light] [Content: Soaking tub, master bathroom, sunset window reflection, bathroom vanity]",
-        "srcset": "/gallery/Eden-Site%20Photos/104@400w.webp 400w, /gallery/Eden-Site%20Photos/104@800w.webp 800w, /gallery/Eden-Site%20Photos/104@1200w.webp 1200w, /gallery/Eden-Site%20Photos/104@1600w.webp 1600w, /gallery/Eden-Site%20Photos/104@2000w.webp 2000w, /gallery/Eden-Site%20Photos/104@2400w.webp 2400w",
+        "src": "/gallery/Eden-Site%20Photos/105.avif",
+        "alt": "Master bathroom vanity showing custom white cabinets, a dark wood floor, a double marble vanity countertop with undermount sinks, gold faucets, and large mirrored alcoves under soft vanity lights. [Season: Indoor] [Lighting: Warm, clean vanity lighting] [Content: Double vanity, white cabinets, marble counter, bathroom mirrors]",
+        "srcset": "/gallery/Eden-Site%20Photos/105@400w.webp 400w, /gallery/Eden-Site%20Photos/105@800w.webp 800w, /gallery/Eden-Site%20Photos/105@1200w.webp 1200w, /gallery/Eden-Site%20Photos/105@1600w.webp 1600w, /gallery/Eden-Site%20Photos/105@2000w.webp 2000w, /gallery/Eden-Site%20Photos/105@2400w.webp 2400w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 2560,
         "height": 1704
+      },
+      {
+        "src": "/gallery/enhanced/70.avif",
+        "alt": "Close-up inside a dry cedar sauna. Shows rich, warm cedar wood paneled walls, a stack of grey spa towels resting on a wooden bench next to a wooden sauna bucket and water ladle. [Season: Indoor] [Lighting: Warm, soft ambient light] [Content: Cedar sauna, towels, wooden bucket, sauna ladle, wellness spa]",
+        "srcset": "/gallery/enhanced/70@400w.webp 400w, /gallery/enhanced/70@800w.webp 800w, /gallery/enhanced/70@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1024,
+        "height": 1024
       },
       {
         "src": "/gallery/Eden-Site%20Photos/106.avif",
@@ -677,57 +664,17 @@
         "height": 3413
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/46.avif",
-        "alt": "Luxury en-suite bathroom showing a built-in white jacuzzi soaking tub set in a dark marble deck, situated under a bank of wide multi-pane windows looking out at the sky. Features blue walls, a crystal pendant chandelier, and elegant white wood trim. [Season: Summer] [Lighting: Soft, beautiful daylight] [Content: Jacuzzi tub, bathroom window, crystal pendant, blue walls]",
-        "srcset": "/gallery/Eden-Site%20Photos/46@400w.webp 400w, /gallery/Eden-Site%20Photos/46@800w.webp 800w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 480
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/48.avif",
-        "alt": "Full bathroom ensuite featuring a white soaking tub set in a grey marble deck under two double-hung windows with white frames looking out onto green summer trees. The walls are painted a soft green, and two framed prints hang on the wall. [Season: Summer] [Lighting: Soft, bright daylight] [Content: Soaking tub, green bathroom, double windows, garden view]",
-        "srcset": "/gallery/Eden-Site%20Photos/48@400w.webp 400w, /gallery/Eden-Site%20Photos/48@800w.webp 800w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 480
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/70.avif",
-        "alt": "Close-up inside a dry cedar sauna. Shows rich, warm cedar wood paneled walls, a stack of grey spa towels resting on a wooden bench next to a wooden sauna bucket and water ladle. [Season: Indoor] [Lighting: Warm, soft ambient light] [Content: Cedar sauna, towels, wooden bucket, sauna ladle, wellness spa]",
-        "srcset": "/gallery/Eden-Site%20Photos/70@400w.webp 400w, /gallery/Eden-Site%20Photos/70@800w.webp 800w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/53.avif",
+        "src": "/gallery/enhanced/53.avif",
         "alt": "Close-up of a wooden spa console table or stand, stacked with many fluffy, rolled white towels and several green Pellegrino water bottles. [Season: Indoor] [Lighting: Soft, warm indoor lighting] [Content: Spa towels, wooden console, beverage bottles, guest amenities]",
-        "srcset": "/gallery/Eden-Site%20Photos/53@400w.webp 400w, /gallery/Eden-Site%20Photos/53@800w.webp 800w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/105.avif",
-        "alt": "Master bathroom vanity showing custom white cabinets, a dark wood floor, a double marble vanity countertop with undermount sinks, gold faucets, and large mirrored alcoves under soft vanity lights. [Season: Indoor] [Lighting: Warm, clean vanity lighting] [Content: Double vanity, white cabinets, marble counter, bathroom mirrors]",
-        "srcset": "/gallery/Eden-Site%20Photos/105@400w.webp 400w, /gallery/Eden-Site%20Photos/105@800w.webp 800w, /gallery/Eden-Site%20Photos/105@1200w.webp 1200w, /gallery/Eden-Site%20Photos/105@1600w.webp 1600w, /gallery/Eden-Site%20Photos/105@2000w.webp 2000w, /gallery/Eden-Site%20Photos/105@2400w.webp 2400w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 2560,
-        "height": 1704
-      },
-      {
-        "src": "/gallery/enhanced/45.avif",
-        "alt": "Detail close-up of a master en-suite bathroom vanity. Features a polished marble countertop with an undermount oval sink and polished brass/gold double faucets. White custom cabinets and columns frame a large mirrored alcove. A window is visible in the reflection showing green summer trees. [Season: Summer] [Lighting: Bright vanity lights and daylight] [Content: Bathroom vanity, marble counter, brass faucets, mirrored alcove]",
-        "srcset": "/gallery/enhanced/45@400w.webp 400w, /gallery/enhanced/45@800w.webp 800w, /gallery/enhanced/45@1200w.webp 1200w",
+        "srcset": "/gallery/enhanced/53@400w.webp 400w, /gallery/enhanced/53@800w.webp 800w, /gallery/enhanced/53@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 1024,
         "height": 1024
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/47.avif",
-        "alt": "Pristine guest bathroom with a long white double-sink vanity, white custom cabinets on both sides, a marble countertop, large mirrors, a vaulted ceiling, and pale green walls. [Season: Indoor] [Lighting: Bright, clean vanity lighting] [Content: Guest bathroom, double vanity, white cabinets, vaulted ceiling]",
-        "srcset": "/gallery/Eden-Site%20Photos/47@400w.webp 400w, /gallery/Eden-Site%20Photos/47@800w.webp 800w",
+        "src": "/gallery/Eden-Site%20Photos/48.avif",
+        "alt": "Full bathroom ensuite featuring a white soaking tub set in a grey marble deck under two double-hung windows with white frames looking out onto green summer trees. The walls are painted a soft green, and two framed prints hang on the wall. [Season: Summer] [Lighting: Soft, bright daylight] [Content: Soaking tub, green bathroom, double windows, garden view]",
+        "srcset": "/gallery/Eden-Site%20Photos/48@400w.webp 400w, /gallery/Eden-Site%20Photos/48@800w.webp 800w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 720,
         "height": 480
@@ -741,6 +688,22 @@
         "height": 800
       },
       {
+        "src": "/gallery/enhanced/52.avif",
+        "alt": "Close-up of a tiled shower wall with tiny black, white, and grey mosaic glass tiles, showing a glass partition door. [Season: Indoor] [Lighting: Bright, sparkling indoor light] [Content: Mosaic tiles, shower wall, glass door, modern bathroom]",
+        "srcset": "/gallery/enhanced/52@400w.webp 400w, /gallery/enhanced/52@800w.webp 800w, /gallery/enhanced/52@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/47.avif",
+        "alt": "Pristine guest bathroom with a long white double-sink vanity, white custom cabinets on both sides, a marble countertop, large mirrors, a vaulted ceiling, and pale green walls. [Season: Indoor] [Lighting: Bright, clean vanity lighting] [Content: Guest bathroom, double vanity, white cabinets, vaulted ceiling]",
+        "srcset": "/gallery/Eden-Site%20Photos/47@400w.webp 400w, /gallery/Eden-Site%20Photos/47@800w.webp 800w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 480
+      },
+      {
         "src": "/gallery/Eden-Site%20Photos/49.avif",
         "alt": "Modern bathroom vanity with a long dark wood cabinet, a large mirror with a dark frame, and two unique light-green translucent glass vessel sinks with modern chrome faucets. The walls are a soft peach/cream color. [Season: Indoor] [Lighting: Bright vanity lighting] [Content: Double vessel sinks, glass sinks, dark wood vanity, modern bathroom]",
         "srcset": "/gallery/Eden-Site%20Photos/49@400w.webp 400w, /gallery/Eden-Site%20Photos/49@800w.webp 800w, /gallery/Eden-Site%20Photos/49@1200w.webp 1200w",
@@ -749,36 +712,28 @@
         "height": 800
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/52.avif",
-        "alt": "Close-up of a tiled shower wall with tiny black, white, and grey mosaic glass tiles, showing a glass partition door. [Season: Indoor] [Lighting: Bright, sparkling indoor light] [Content: Mosaic tiles, shower wall, glass door, modern bathroom]",
-        "srcset": "/gallery/Eden-Site%20Photos/52@400w.webp 400w, /gallery/Eden-Site%20Photos/52@800w.webp 800w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/54.avif",
+        "src": "/gallery/enhanced/54.avif",
         "alt": "Ensuite guest bathroom under a sloped ceiling, showing a white toilet, a walk-in bathtub/shower with a glass door, a skylight letting in daylight, and dark wood vanity cabinets. [Season: Summer/Spring] [Lighting: Soft daylight and warm interior light] [Content: Guest bathroom, skylight, toilet, bathtub, vanity]",
-        "srcset": "/gallery/Eden-Site%20Photos/54@400w.webp 400w, /gallery/Eden-Site%20Photos/54@800w.webp 800w, /gallery/Eden-Site%20Photos/54@1200w.webp 1200w",
+        "srcset": "/gallery/enhanced/54@400w.webp 400w, /gallery/enhanced/54@800w.webp 800w, /gallery/enhanced/54@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1200,
-        "height": 1600
+        "width": 1024,
+        "height": 1024
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/55.avif",
-        "alt": "Half bath or powder room featuring deep reddish-pink walls, a white window with a lace curtain, an ornate dark-framed mirror, a classic wooden vanity with an undermount sink, and a wall sconce. [Season: Indoor] [Lighting: Warm, dim ambient light] [Content: Powder room, red walls, lace curtain, antique vanity, mirror]",
-        "srcset": "/gallery/Eden-Site%20Photos/55@400w.webp 400w, /gallery/Eden-Site%20Photos/55@800w.webp 800w, /gallery/Eden-Site%20Photos/55@1200w.webp 1200w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1200,
-        "height": 1600
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/56.avif",
+        "src": "/gallery/enhanced/56.avif",
         "alt": "Secondary powder room showing a dark wood vanity with a white marble top and a white sink with chrome fixtures. Two large decorative black-and-silver urns/vases sit on the counter next to a folded towel. [Season: Indoor] [Lighting: Warm interior lighting] [Content: Powder room, marble counter, dark wood vanity, decorative urns]",
-        "srcset": "/gallery/Eden-Site%20Photos/56@400w.webp 400w, /gallery/Eden-Site%20Photos/56@800w.webp 800w, /gallery/Eden-Site%20Photos/56@1200w.webp 1200w",
+        "srcset": "/gallery/enhanced/56@400w.webp 400w, /gallery/enhanced/56@800w.webp 800w, /gallery/enhanced/56@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1200,
-        "height": 1600
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "src": "/gallery/enhanced/55.avif",
+        "alt": "Half bath or powder room featuring deep reddish-pink walls, a white window with a lace curtain, an ornate dark-framed mirror, a classic wooden vanity with an undermount sink, and a wall sconce. [Season: Indoor] [Lighting: Warm, dim ambient light] [Content: Powder room, red walls, lace curtain, antique vanity, mirror]",
+        "srcset": "/gallery/enhanced/55@400w.webp 400w, /gallery/enhanced/55@800w.webp 800w, /gallery/enhanced/55@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1024,
+        "height": 1024
       }
     ]
   },
@@ -787,40 +742,40 @@
     "description": "Billiards game room, home gym, cross-country skiing, horse-drawn sleigh rides, and weddings.",
     "directory": "Eden-Site Photos",
     "photos": [
-      18,
       93,
+      18,
       71,
       96,
-      97,
       90,
       91,
       92,
       32,
-      61,
-      94,
       95,
+      94,
+      61,
       62,
-      81,
-      63,
-      84,
-      82,
       83,
+      82,
       14,
-      21
+      21,
+      84,
+      63,
+      81,
+      97
     ],
     "images": [
       {
-        "src": "/gallery/Eden-Site%20Photos/18.avif",
-        "alt": "Wide view of a spacious downstairs family and game room. Features a conversation area with two large brown leather sofas and a matching armchair on a light carpet around wood and stone tables. In the background is a flat-screen TV on the wall, a fireplace with a lit fire, and warm wood-paneled walls. [Season: Autumn/Winter] [Lighting: Soft, warm recessed ceiling lights and fire glow] [Content: Family room, leather furniture, fireplace, media room interior]",
-        "srcset": "/gallery/Eden-Site%20Photos/18@400w.webp 400w, /gallery/Eden-Site%20Photos/18@800w.webp 800w, /gallery/Eden-Site%20Photos/18@1200w.webp 1200w",
+        "src": "/gallery/Eden-Site%20Photos/93.avif",
+        "alt": "A wide view of a spacious downstairs family/recreation room showing two large brown leather sofas, wood and stone side tables, a carpeted floor, and a billiards pool table visible in the background on the left. Sliding glass doors lead outside. [Season: Indoor] [Lighting: Soft, warm recessed ceiling lights] [Content: Recreation room, leather sofas, pool table, downstairs living]",
+        "srcset": "/gallery/Eden-Site%20Photos/93@400w.webp 400w, /gallery/Eden-Site%20Photos/93@800w.webp 800w, /gallery/Eden-Site%20Photos/93@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 1200,
         "height": 800
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/93.avif",
-        "alt": "A wide view of a spacious downstairs family/recreation room showing two large brown leather sofas, wood and stone side tables, a carpeted floor, and a billiards pool table visible in the background on the left. Sliding glass doors lead outside. [Season: Indoor] [Lighting: Soft, warm recessed ceiling lights] [Content: Recreation room, leather sofas, pool table, downstairs living]",
-        "srcset": "/gallery/Eden-Site%20Photos/93@400w.webp 400w, /gallery/Eden-Site%20Photos/93@800w.webp 800w, /gallery/Eden-Site%20Photos/93@1200w.webp 1200w",
+        "src": "/gallery/Eden-Site%20Photos/18.avif",
+        "alt": "Wide view of a spacious downstairs family and game room. Features a conversation area with two large brown leather sofas and a matching armchair on a light carpet around wood and stone tables. In the background is a flat-screen TV on the wall, a fireplace with a lit fire, and warm wood-paneled walls. [Season: Autumn/Winter] [Lighting: Soft, warm recessed ceiling lights and fire glow] [Content: Family room, leather furniture, fireplace, media room interior]",
+        "srcset": "/gallery/Eden-Site%20Photos/18@400w.webp 400w, /gallery/Eden-Site%20Photos/18@800w.webp 800w, /gallery/Eden-Site%20Photos/18@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 1200,
         "height": 800
@@ -840,14 +795,6 @@
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 1024,
         "height": 1024
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/97.avif",
-        "alt": "Spacious, high-end laundry room showing premium custom wood cabinetry on both sides, a tiled floor, and two modern dark grey front-load smart washers/dryers built into the cabinets under a window. [Season: Summer] [Lighting: Bright daylight from the window] [Content: Laundry room, washer and dryer, custom wood cabinets, folding counter]",
-        "srcset": "/gallery/Eden-Site%20Photos/97@400w.webp 400w, /gallery/Eden-Site%20Photos/97@800w.webp 800w, /gallery/Eden-Site%20Photos/97@1200w.webp 1200w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1200,
-        "height": 900
       },
       {
         "src": "/gallery/Eden-Site%20Photos/90.webp",
@@ -882,12 +829,12 @@
         "height": 960
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/61.avif",
-        "alt": "A guest cross-country skiing across a wide, flat snow-covered field under a warm, glowing winter golden hour sunset. A dense pine forest borders the snowy field. [Season: Winter] [Lighting: Low-angled, warm golden sunset light] [Content: Cross-country skiing, snow field, winter sunset, forest path]",
-        "srcset": "/gallery/Eden-Site%20Photos/61@400w.webp 400w, /gallery/Eden-Site%20Photos/61@800w.webp 800w, /gallery/Eden-Site%20Photos/61@1200w.webp 1200w",
+        "src": "/gallery/Eden-Site%20Photos/95.avif",
+        "alt": "A beautiful winter horse-drawn sleigh ride scene. A single horse pulls a traditional red sleigh with two guests and a driver dressed in winter clothes, moving across a wide snow-covered field under a clear blue sky. In the background are snow-covered hills. [Season: Winter] [Lighting: Bright, direct winter daylight] [Content: Horse-drawn sleigh, red sleigh, snow field, winter activity]",
+        "srcset": "/gallery/Eden-Site%20Photos/95@400w.webp 400w, /gallery/Eden-Site%20Photos/95@800w.webp 800w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1200,
-        "height": 900
+        "width": 720,
+        "height": 480
       },
       {
         "src": "/gallery/Eden-Site%20Photos/94.avif",
@@ -898,12 +845,12 @@
         "height": 800
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/95.avif",
-        "alt": "A beautiful winter horse-drawn sleigh ride scene. A single horse pulls a traditional red sleigh with two guests and a driver dressed in winter clothes, moving across a wide snow-covered field under a clear blue sky. In the background are snow-covered hills. [Season: Winter] [Lighting: Bright, direct winter daylight] [Content: Horse-drawn sleigh, red sleigh, snow field, winter activity]",
-        "srcset": "/gallery/Eden-Site%20Photos/95@400w.webp 400w, /gallery/Eden-Site%20Photos/95@800w.webp 800w",
+        "src": "/gallery/Eden-Site%20Photos/61.avif",
+        "alt": "A guest cross-country skiing across a wide, flat snow-covered field under a warm, glowing winter golden hour sunset. A dense pine forest borders the snowy field. [Season: Winter] [Lighting: Low-angled, warm golden sunset light] [Content: Cross-country skiing, snow field, winter sunset, forest path]",
+        "srcset": "/gallery/Eden-Site%20Photos/61@400w.webp 400w, /gallery/Eden-Site%20Photos/61@800w.webp 800w, /gallery/Eden-Site%20Photos/61@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 480
+        "width": 1200,
+        "height": 900
       },
       {
         "src": "/gallery/enhanced/62.avif",
@@ -914,28 +861,12 @@
         "height": 1024
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/81.avif",
-        "alt": "Panoramic winter landscape showing a winding, frozen river or stream in a snow-covered valley. A classic white church steeple and village buildings are nestled in the snow-covered forest. In the background are majestic mountains dusted in snow. [Season: Winter] [Lighting: Cool winter daylight] [Content: Winter village, snowy river, church steeple, mountain range]",
-        "srcset": "/gallery/Eden-Site%20Photos/81@400w.webp 400w, /gallery/Eden-Site%20Photos/81@800w.webp 800w, /gallery/Eden-Site%20Photos/81@1200w.webp 1200w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1200,
-        "height": 813
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/63.avif",
-        "alt": "Serene night-time winter landscape showing snow-laden pine trees under a magnificent starry night sky filled with millions of glittering stars. [Season: Winter] [Lighting: Starry night, dark blue tones] [Content: Starry night sky, snow forest, winter night, pine trees]",
-        "srcset": "/gallery/Eden-Site%20Photos/63@400w.webp 400w, /gallery/Eden-Site%20Photos/63@800w.webp 800w",
+        "src": "/gallery/Eden-Site%20Photos/83.avif",
+        "alt": "A bride and groom embracing and looking at each other in a snowy outdoor courtyard, with the estate house's stone facade visible in the background. The ground is blanketed in thick snow. [Season: Winter] [Lighting: Soft, diffused winter daylight] [Content: Wedding couple, snow courtyard, winter wedding, outdoor portrait]",
+        "srcset": "/gallery/Eden-Site%20Photos/83@400w.webp 400w, /gallery/Eden-Site%20Photos/83@800w.webp 800w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 720,
-        "height": 479
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/84.avif",
-        "alt": "A picturesque, rustic wooden chapel or small guest cottage with a stone foundation and a small cupola roof, standing in a snowy pine forest. Sun rays filter through the trees in the background. [Season: Winter] [Lighting: Bright, back-lit winter sunlight] [Content: Wooden chapel, snow forest, rustic cabin, winter sunbeams]",
-        "srcset": "/gallery/Eden-Site%20Photos/84@400w.webp 400w, /gallery/Eden-Site%20Photos/84@800w.webp 800w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 540
+        "height": 1080
       },
       {
         "src": "/gallery/Eden-Site%20Photos/82.avif",
@@ -944,14 +875,6 @@
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 720,
         "height": 960
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/83.avif",
-        "alt": "A bride and groom embracing and looking at each other in a snowy outdoor courtyard, with the estate house's stone facade visible in the background. The ground is blanketed in thick snow. [Season: Winter] [Lighting: Soft, diffused winter daylight] [Content: Wedding couple, snow courtyard, winter wedding, outdoor portrait]",
-        "srcset": "/gallery/Eden-Site%20Photos/83@400w.webp 400w, /gallery/Eden-Site%20Photos/83@800w.webp 800w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 1080
       },
       {
         "src": "/gallery/Eden-Site%20Photos/14.avif",
@@ -968,6 +891,38 @@
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 720,
         "height": 960
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/84.avif",
+        "alt": "A picturesque, rustic wooden chapel or small guest cottage with a stone foundation and a small cupola roof, standing in a snowy pine forest. Sun rays filter through the trees in the background. [Season: Winter] [Lighting: Bright, back-lit winter sunlight] [Content: Wooden chapel, snow forest, rustic cabin, winter sunbeams]",
+        "srcset": "/gallery/Eden-Site%20Photos/84@400w.webp 400w, /gallery/Eden-Site%20Photos/84@800w.webp 800w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 540
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/63.avif",
+        "alt": "Serene night-time winter landscape showing snow-laden pine trees under a magnificent starry night sky filled with millions of glittering stars. [Season: Winter] [Lighting: Starry night, dark blue tones] [Content: Starry night sky, snow forest, winter night, pine trees]",
+        "srcset": "/gallery/Eden-Site%20Photos/63@400w.webp 400w, /gallery/Eden-Site%20Photos/63@800w.webp 800w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 479
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/81.avif",
+        "alt": "Panoramic winter landscape showing a winding, frozen river or stream in a snow-covered valley. A classic white church steeple and village buildings are nestled in the snow-covered forest. In the background are majestic mountains dusted in snow. [Season: Winter] [Lighting: Cool winter daylight] [Content: Winter village, snowy river, church steeple, mountain range]",
+        "srcset": "/gallery/Eden-Site%20Photos/81@400w.webp 400w, /gallery/Eden-Site%20Photos/81@800w.webp 800w, /gallery/Eden-Site%20Photos/81@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 813
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/97.avif",
+        "alt": "Spacious, high-end laundry room showing premium custom wood cabinetry on both sides, a tiled floor, and two modern dark grey front-load smart washers/dryers built into the cabinets under a window. [Season: Summer] [Lighting: Bright daylight from the window] [Content: Laundry room, washer and dryer, custom wood cabinets, folding counter]",
+        "srcset": "/gallery/Eden-Site%20Photos/97@400w.webp 400w, /gallery/Eden-Site%20Photos/97@800w.webp 800w, /gallery/Eden-Site%20Photos/97@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1200,
+        "height": 900
       }
     ]
   }

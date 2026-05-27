@@ -68,7 +68,8 @@ async function main() {
       height: meta.height,
       size: stats.size,
       src: `/gallery/enhanced/${filename}`,
-      originalSrc: fs.existsSync(path.join(archiveDir, filename)) ? `/gallery/lowres_archive/${filename}` : `/gallery/enhanced/${filename}`
+      originalSrc: fs.existsSync(path.join(archiveDir, filename)) ? `/gallery/lowres_archive/${filename}` : `/gallery/enhanced/${filename}`,
+      enhancedTime: stats.mtimeMs
     });
   }
 
@@ -197,7 +198,7 @@ async function main() {
     }
 
     cardsHtml.push(`
-      <div class="${cardClass}" data-quality="${qualityClass}">
+      <div class="${cardClass}" data-quality="${qualityClass}" data-enhanced-time="${img.enhancedTime || 0}">
         ${imageContainerHtml}
         <div class="card-body">
           <div class="card-header">
@@ -1195,8 +1196,31 @@ async function main() {
       document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
       button.classList.add('active');
 
-      const cards = document.querySelectorAll('.card');
+      const grid = document.querySelector('.grid');
+      const cards = Array.from(grid.querySelectorAll('.card'));
+
+      // Dynamically sort grid items
+      if (quality === 'enhanced') {
+        // Sort by enhancedTime descending (most recently enhanced first)
+        cards.sort((a, b) => {
+          const timeA = parseInt(a.dataset.enhancedTime || '0', 10);
+          const timeB = parseInt(b.dataset.enhancedTime || '0', 10);
+          return timeB - timeA;
+        });
+      } else {
+        // Default alphabetical/numerical sorting by filename
+        cards.sort((a, b) => {
+          const nameA = a.querySelector('.filename').innerText;
+          const nameB = b.querySelector('.filename').innerText;
+          return nameA.localeCompare(nameB, undefined, { numeric: true, sensitivity: 'base' });
+        });
+      }
+
+      // Re-append sorted cards to the grid container
       cards.forEach(card => {
+        grid.appendChild(card);
+
+        // Visibility toggle
         if (quality === 'all') {
           card.style.display = 'flex';
         } else if (quality === 'enhanced') {

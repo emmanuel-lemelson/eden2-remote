@@ -1,7 +1,7 @@
 # Reusable AI Swapping Prompt (V2 Batch-Optimized)
 
 ```markdown
-Please enhance the following photo(s) to professional DSLR quality matching the Eden Estate "Pro Grade" aesthetic: LIST OF PHOTO FILENAMES: 12-17, 19-20
+Please enhance the following photo(s) to professional DSLR quality matching the Eden Estate "Pro Grade" aesthetic: LIST OF PHOTO FILENAMES will be provided in the chat.
 
 ### Context & Staging Guidelines:
 1. **Preserve Real Architecture:** Perform image-to-image upscaling. Do NOT change the physical room structure, furniture placement, or layout of the real photos. Only enhance quality, fix imperfections, improve clarity, and enrich color.
@@ -12,7 +12,7 @@ Please enhance the following photo(s) to professional DSLR quality matching the 
 To process large batches of photos efficiently, execute steps in parallel inside a single assistant turn.
 
 > [!TIP]
-> **Subagent Delegation (If Enabled):** For big batches or when explicitly told to use subagents, in sessions where task delegation and subagent tools are enabled, the primary agent (you) can spawn parallel subagents, delegating a smaller subset of photo IDs (e.g., 3 to 5 per subagent) to each. Subagents can run the `--prepare` and `generate_image` steps concurrently or do any other work you need them to do.
+> **Subagent Delegation (If Enabled):** If you feel it is needed, prior to beginning work, let me know if you think it's a good idea to use subagents for the work that needs to be done. If so, the primary agent (you) can spawn parallel subagents, delegating a smaller subset of photo IDs (e.g., 3 to 5 per subagent) to each. Subagents can run the `--prepare` and `generate_image` steps concurrently or do any other work you need them to do.
 
 1. **Prepare Batch:** Run the orchestrator script to auto-generate reference PNGs and print customized prompts for each target image:
    ```bash
