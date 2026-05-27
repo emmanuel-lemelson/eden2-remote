@@ -17,12 +17,8 @@
       111,
       58,
       108,
-      75,
-      79,
       59,
-      64,
       110,
-      80,
       109,
       77,
       78,
@@ -134,33 +130,9 @@
         "height": 1920
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/75.avif",
-        "alt": "Beautiful landscape shot of a calm pond at sunset/dusk. The sky has orange and yellow hues, reflecting in the water, which is bordered by lush green grass, shrubs, and pine trees. [Season: Summer/early autumn] [Lighting: Soft twilight sunset] [Content: Pond landscape, sunset sky, water reflection, forest edge]",
-        "srcset": "/gallery/Eden-Site%20Photos/75@400w.webp 400w, /gallery/Eden-Site%20Photos/75@800w.webp 800w, /gallery/Eden-Site%20Photos/75@1200w.webp 1200w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1200,
-        "height": 900
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/79.avif",
-        "alt": "Peaceful garden landscape showing a small pond or spring-fed pool surrounded by rock borders, vibrant yellow wildflowers, lush green grass, and mature shade trees. [Season: Summer] [Lighting: Soft, pleasant daylight] [Content: Garden pond, yellow wildflowers, green grass, backyard landscape]",
-        "srcset": "/gallery/Eden-Site%20Photos/79@400w.webp 400w, /gallery/Eden-Site%20Photos/79@800w.webp 800w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
-      },
-      {
         "src": "/gallery/Eden-Site%20Photos/59.avif",
         "alt": "Intimate garden perspective of a low dry stone retaining wall with purple and blue wildflowers and evergreen shrubs in front of the estate's sunroom bay window alcove. A large green lawn is in the foreground. [Season: Summer] [Lighting: Bright daylight] [Content: Stone garden wall, wildflowers, sunroom exterior, green lawn]",
         "srcset": "/gallery/Eden-Site%20Photos/59@400w.webp 400w, /gallery/Eden-Site%20Photos/59@800w.webp 800w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/64.avif",
-        "alt": "A magical woodland scene showing a winding path or boardwalk through a dense forest. Warm sunlight beams filter through the canopy of trees, casting long shadows on the mossy forest floor. [Season: Summer/Spring] [Lighting: Ethereal, dappled golden forest sunlight] [Content: Forest pathway, wood boardwalk, sunbeams, mossy ground]",
-        "srcset": "/gallery/Eden-Site%20Photos/64@400w.webp 400w, /gallery/Eden-Site%20Photos/64@800w.webp 800w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 720,
         "height": 960
@@ -172,14 +144,6 @@
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 2560,
         "height": 3413
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/80.avif",
-        "alt": "Whimsical copper/bronze metal sculptures of three giraffes (one adult and two smaller ones) standing in a lush green garden bed filled with ground cover plants and wild vegetation. [Season: Summer] [Lighting: Bright, sunny daylight] [Content: Giraffe sculptures, metal art, garden beds, landscaping]",
-        "srcset": "/gallery/Eden-Site%20Photos/80@400w.webp 400w, /gallery/Eden-Site%20Photos/80@800w.webp 800w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
       },
       {
         "src": "/gallery/Eden-Site%20Photos/109.avif",
@@ -530,12 +494,12 @@
         "height": 800
       },
       {
-        "src": "/gallery/enhanced/36.avif",
+        "src": "/gallery/Eden-Site%20Photos/36.avif",
         "alt": "Spacious custom walk-in dressing room or closet. Features a large central marble-topped island with drawers, a mirrored ceiling light fixture, custom wood drawers, shelves, and built-in hanging wardrobes. [Season: Indoor] [Lighting: Bright, pristine white light] [Content: Walk-in closet, dressing island, custom wardrobes, storage room]",
-        "srcset": "/gallery/enhanced/36@400w.webp 400w, /gallery/enhanced/36@800w.webp 800w, /gallery/enhanced/36@1200w.webp 1200w",
+        "srcset": "/gallery/Eden-Site%20Photos/36@400w.webp 400w, /gallery/Eden-Site%20Photos/36@800w.webp 800w, /gallery/Eden-Site%20Photos/36@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1024,
-        "height": 1024
+        "width": 1200,
+        "height": 800
       },
       {
         "src": "/gallery/Eden-Site%20Photos/37.avif",

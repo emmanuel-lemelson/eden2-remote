@@ -96,7 +96,7 @@
 
     .progress-bar-fill {
       height: 100%;
-      width: 40.7%;
+      width: 41.8%;
       background: var(--accent-gold);
       border-radius: 10px;
       transition: width 0.5s ease;
@@ -795,33 +795,33 @@
 
   <header>
     <h1>Eden Estate <span>Gallery Quality Audit</span></h1>
-    <p class="subtitle">Interactive visualization dashboard of all 97 active photos. We have categorized the images by resolution to identify low-quality or highly compressed vertical shots that should be queued for swapping.</p>
+    <p class="subtitle">Interactive visualization dashboard of all 93 active photos. We have categorized the images by resolution to identify low-quality or highly compressed vertical shots that should be queued for swapping.</p>
     
     <div class="progress-section">
       <div class="progress-header">
         <span style="font-weight: 600; color: var(--text-main);">AI-Enhanced Swapping Progress</span>
-        <span style="font-weight: 700; color: var(--accent-gold);">40.7% Complete</span>
+        <span style="font-weight: 700; color: var(--accent-gold);">41.8% Complete</span>
       </div>
       <div class="progress-bar-bg">
         <div class="progress-bar-fill"></div>
       </div>
       <div class="progress-stats">
-        <span>Swapped & Enhanced: <strong>24</strong> / 59 low-res files</span>
-        <span>Remaining Flagged: <strong>35</strong> photos left to replace</span>
+        <span>Swapped & Enhanced: <strong>23</strong> / 55 low-res files</span>
+        <span>Remaining Flagged: <strong>32</strong> photos left to replace</span>
       </div>
     </div>
 
     <div class="summary-badges">
       <div class="summary-card">
-        <div class="summary-num">97</div>
+        <div class="summary-num">93</div>
         <div class="summary-label">Total Gallery Photos</div>
       </div>
       <div class="summary-card" style="border-color: rgba(16, 185, 129, 0.4);">
-        <div class="summary-num" style="color: var(--color-pro);">24</div>
+        <div class="summary-num" style="color: var(--color-pro);">23</div>
         <div class="summary-label">Swapped & Enhanced</div>
       </div>
       <div class="summary-card" style="border-color: rgba(239, 68, 68, 0.4);">
-        <div class="summary-num" style="color: var(--color-low);">35</div>
+        <div class="summary-num" style="color: var(--color-low);">32</div>
         <div class="summary-label">Remaining Swaps</div>
       </div>
       <div class="summary-card" style="border-color: rgba(234, 179, 8, 0.4);">
@@ -837,8 +837,8 @@
 
   
   <div class="audit-summary-box">
-    <h3>🔴 Swaps Left to Update (35 photos)</h3>
-    <p>The following 35 photos are still low-resolution (720px wide) and require swapping to reach Pro Grade luxury standards. You can copy the list below or check them off as you swap them out.</p>
+    <h3>🔴 Swaps Left to Update (32 photos)</h3>
+    <p>The following 32 photos are still low-resolution (720px wide) and require swapping to reach Pro Grade luxury standards. You can copy the list below or check them off as you swap them out.</p>
     <div class="remaining-tag-container">
       
         <span class="remaining-tag" onclick="copyText('3.avif')" style="cursor: pointer;" title="Click to copy filename">
@@ -904,9 +904,6 @@
         <span class="remaining-tag" onclick="copyText('63.avif')" style="cursor: pointer;" title="Click to copy filename">
           63.avif <span style="font-size: 0.65rem; opacity: 0.7;">📋</span>
         </span>
-        <span class="remaining-tag" onclick="copyText('64.avif')" style="cursor: pointer;" title="Click to copy filename">
-          64.avif <span style="font-size: 0.65rem; opacity: 0.7;">📋</span>
-        </span>
         <span class="remaining-tag" onclick="copyText('68.avif')" style="cursor: pointer;" title="Click to copy filename">
           68.avif <span style="font-size: 0.65rem; opacity: 0.7;">📋</span>
         </span>
@@ -915,12 +912,6 @@
         </span>
         <span class="remaining-tag" onclick="copyText('77.avif')" style="cursor: pointer;" title="Click to copy filename">
           77.avif <span style="font-size: 0.65rem; opacity: 0.7;">📋</span>
-        </span>
-        <span class="remaining-tag" onclick="copyText('79.avif')" style="cursor: pointer;" title="Click to copy filename">
-          79.avif <span style="font-size: 0.65rem; opacity: 0.7;">📋</span>
-        </span>
-        <span class="remaining-tag" onclick="copyText('80.avif')" style="cursor: pointer;" title="Click to copy filename">
-          80.avif <span style="font-size: 0.65rem; opacity: 0.7;">📋</span>
         </span>
         <span class="remaining-tag" onclick="copyText('82.avif')" style="cursor: pointer;" title="Click to copy filename">
           82.avif <span style="font-size: 0.65rem; opacity: 0.7;">📋</span>
@@ -951,11 +942,11 @@
 
   <div class="controls">
     <div class="tabs">
-      <button class="tab-btn active" onclick="filterGallery('all', this)">All (97)</button>
-      <button class="tab-btn" onclick="filterGallery('low', this)">Remaining Swaps (35)</button>
-      <button class="tab-btn" style="color: var(--color-pro);" onclick="filterGallery('enhanced', this)">Swapped & Enhanced (24)</button>
+      <button class="tab-btn active" onclick="filterGallery('all', this)">All (93)</button>
+      <button class="tab-btn" onclick="filterGallery('low', this)">Remaining Swaps (32)</button>
+      <button class="tab-btn" style="color: var(--color-pro);" onclick="filterGallery('enhanced', this)">Swapped & Enhanced (23)</button>
       <button class="tab-btn" onclick="filterGallery('medium', this)">Portfolio (22)</button>
-      <button class="tab-btn" onclick="filterGallery('pro', this)">Pro Grade (40)</button>
+      <button class="tab-btn" onclick="filterGallery('pro', this)">Pro Grade (39)</button>
     </div>
 
     <div class="queue-panel">
@@ -2433,21 +2424,15 @@
           </div>
         </div>
       </div>
-      <div class="card enhanced" data-quality="pro" data-enhanced-time="1779897142200.5205">
+      <div class="card" data-quality="medium" data-enhanced-time="0">
         
-        <div class="comparison-slider">
-          <!-- Before (Original) -->
-          <img class="img-before" src="/gallery/lowres_archive/36.avif" alt="Before 36.avif" loading="lazy">
-          <!-- After (Enhanced) -->
-          <div class="resize-container" id="resize-36.avif">
-            <img class="img-after" src="/gallery/enhanced/36.avif" alt="After 36.avif" loading="lazy">
-          </div>
-          <!-- Slider Handle -->
-          <div class="slider-handle" id="handle-36.avif"></div>
-          <input type="range" min="0" max="100" value="50" class="comparison-range" oninput="updateComparisonSlider('36.avif', this.value)">
-          <div class="badge-bar" style="pointer-events: none;">
-            <span class="badge status-pro">✨ Enhanced (Pro)</span>
-            <span class="badge" style="background: rgba(0,0,0,0.7); color: #fff; border: 1px solid rgba(255,255,255,0.2);">↔ Slide to Compare</span>
+        <div class="img-container">
+          <img id="img-36.avif" src="/gallery/Eden-Site%20Photos/36.avif" alt="36.avif" loading="lazy">
+          <div class="badge-bar">
+            <span class="badge status-medium">Portfolio (1200px)</span>
+            <div class="checkbox-container" title="Add to Swap Queue" onclick="toggleQueue('36.avif', event)">
+              <input type="checkbox" id="check-36.avif" onclick="event.stopPropagation(); syncCheckbox('36.avif')">
+            </div>
           </div>
         </div>
       
@@ -2459,29 +2444,26 @@
           <div class="metadata-list">
             <div class="meta-item">
               <span class="meta-label">Resolution</span>
-              <span class="meta-value">1024 x 1024</span>
+              <span class="meta-value">1200 x 800</span>
             </div>
             <div class="meta-item">
               <span class="meta-label">Size</span>
-              <span class="meta-value">136.4 KB</span>
+              <span class="meta-value">49.1 KB</span>
             </div>
             <div class="meta-item">
               <span class="meta-label">Aspect Ratio</span>
-              <span class="meta-value">1024:1024</span>
+              <span class="meta-value">1200:800</span>
             </div>
             <div class="meta-item">
               <span class="meta-label">Audit Recommendation</span>
-              <span class="meta-value status-pro-text">✨ Enhanced (Pro Grade)</span>
+              <span class="meta-value status-medium-text">Good</span>
             </div>
           </div>
           <div class="caption-box" title="Spacious custom walk-in dressing room or closet. Features a large central marble-topped island with drawers, a mirrored ceiling light fixture, custom wood drawers, shelves, and built-in hanging wardrobes. [Season: Indoor] [Lighting: Bright, pristine white light] [Content: Walk-in closet, dressing island, custom wardrobes, storage room]">
             Spacious custom walk-in dressing room or closet. Features a large central marble-topped island with drawers, a mirrored ceiling light fixture, custom wood drawers, shelves, and built-in hanging wardrobes. [Season: Indoor] [Lighting: Bright, pristine white light] [Content: Walk-in closet, dressing island, custom wardrobes, storage room]
           </div>
           <div class="card-footer" style="flex-direction: column; gap: 8px;">
-            
-        <button class="view-btn" style="background: var(--accent-gold); color: #000; font-weight: 600; border: none; cursor: pointer;" onclick="openCompareModal('36.avif', '/gallery/lowres_archive/36.avif', '/gallery/enhanced/36.avif')">🔍 Full-Screen Compare</button>
-        <a href="/gallery/enhanced/36.avif" target="_blank" class="view-btn">Open Original High-Res File</a>
-      
+            <a href="/gallery/Eden-Site%20Photos/36.avif" target="_blank" class="view-btn">View Original</a>
           </div>
         </div>
       </div>
@@ -3540,49 +3522,6 @@
       <div class="card flagged" data-quality="low" data-enhanced-time="0">
         
         <div class="img-container">
-          <img id="img-64.avif" src="/gallery/Eden-Site%20Photos/64.avif" alt="64.avif" loading="lazy">
-          <div class="badge-bar">
-            <span class="badge status-low">Low Res (720px)</span>
-            <div class="checkbox-container" title="Add to Swap Queue" onclick="toggleQueue('64.avif', event)">
-              <input type="checkbox" id="check-64.avif" onclick="event.stopPropagation(); syncCheckbox('64.avif')">
-            </div>
-          </div>
-        </div>
-      
-        <div class="card-body">
-          <div class="card-header">
-            <span class="filename">64.avif</span>
-            <button class="copy-btn" onclick="copyText('64.avif')">Copy File</button>
-          </div>
-          <div class="metadata-list">
-            <div class="meta-item">
-              <span class="meta-label">Resolution</span>
-              <span class="meta-value">720 x 960</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Size</span>
-              <span class="meta-value">151.4 KB</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Aspect Ratio</span>
-              <span class="meta-value">720:960</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Audit Recommendation</span>
-              <span class="meta-value status-low-text">🔴 Flagged for Swap</span>
-            </div>
-          </div>
-          <div class="caption-box" title="A magical woodland scene showing a winding path or boardwalk through a dense forest. Warm sunlight beams filter through the canopy of trees, casting long shadows on the mossy forest floor. [Season: Summer/Spring] [Lighting: Ethereal, dappled golden forest sunlight] [Content: Forest pathway, wood boardwalk, sunbeams, mossy ground]">
-            A magical woodland scene showing a winding path or boardwalk through a dense forest. Warm sunlight beams filter through the canopy of trees, casting long shadows on the mossy forest floor. [Season: Summer/Spring] [Lighting: Ethereal, dappled golden forest sunlight] [Content: Forest pathway, wood boardwalk, sunbeams, mossy ground]
-          </div>
-          <div class="card-footer" style="flex-direction: column; gap: 8px;">
-            <a href="/gallery/Eden-Site%20Photos/64.avif" target="_blank" class="view-btn">View Original</a>
-          </div>
-        </div>
-      </div>
-      <div class="card flagged" data-quality="low" data-enhanced-time="0">
-        
-        <div class="img-container">
           <img id="img-68.avif" src="/gallery/Eden-Site%20Photos/68.avif" alt="68.avif" loading="lazy">
           <div class="badge-bar">
             <span class="badge status-low">Low Res (720px)</span>
@@ -3761,49 +3700,6 @@
           </div>
         </div>
       </div>
-      <div class="card" data-quality="medium" data-enhanced-time="0">
-        
-        <div class="img-container">
-          <img id="img-75.avif" src="/gallery/Eden-Site%20Photos/75.avif" alt="75.avif" loading="lazy">
-          <div class="badge-bar">
-            <span class="badge status-medium">Portfolio (1200px)</span>
-            <div class="checkbox-container" title="Add to Swap Queue" onclick="toggleQueue('75.avif', event)">
-              <input type="checkbox" id="check-75.avif" onclick="event.stopPropagation(); syncCheckbox('75.avif')">
-            </div>
-          </div>
-        </div>
-      
-        <div class="card-body">
-          <div class="card-header">
-            <span class="filename">75.avif</span>
-            <button class="copy-btn" onclick="copyText('75.avif')">Copy File</button>
-          </div>
-          <div class="metadata-list">
-            <div class="meta-item">
-              <span class="meta-label">Resolution</span>
-              <span class="meta-value">1200 x 900</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Size</span>
-              <span class="meta-value">162.2 KB</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Aspect Ratio</span>
-              <span class="meta-value">1200:900</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Audit Recommendation</span>
-              <span class="meta-value status-medium-text">Good</span>
-            </div>
-          </div>
-          <div class="caption-box" title="Beautiful landscape shot of a calm pond at sunset/dusk. The sky has orange and yellow hues, reflecting in the water, which is bordered by lush green grass, shrubs, and pine trees. [Season: Summer/early autumn] [Lighting: Soft twilight sunset] [Content: Pond landscape, sunset sky, water reflection, forest edge]">
-            Beautiful landscape shot of a calm pond at sunset/dusk. The sky has orange and yellow hues, reflecting in the water, which is bordered by lush green grass, shrubs, and pine trees. [Season: Summer/early autumn] [Lighting: Soft twilight sunset] [Content: Pond landscape, sunset sky, water reflection, forest edge]
-          </div>
-          <div class="card-footer" style="flex-direction: column; gap: 8px;">
-            <a href="/gallery/Eden-Site%20Photos/75.avif" target="_blank" class="view-btn">View Original</a>
-          </div>
-        </div>
-      </div>
       <div class="card flagged" data-quality="low" data-enhanced-time="0">
         
         <div class="img-container">
@@ -3887,92 +3783,6 @@
           </div>
           <div class="card-footer" style="flex-direction: column; gap: 8px;">
             <a href="/gallery/Eden-Site%20Photos/78.avif" target="_blank" class="view-btn">View Original</a>
-          </div>
-        </div>
-      </div>
-      <div class="card flagged" data-quality="low" data-enhanced-time="0">
-        
-        <div class="img-container">
-          <img id="img-79.avif" src="/gallery/Eden-Site%20Photos/79.avif" alt="79.avif" loading="lazy">
-          <div class="badge-bar">
-            <span class="badge status-low">Low Res (720px)</span>
-            <div class="checkbox-container" title="Add to Swap Queue" onclick="toggleQueue('79.avif', event)">
-              <input type="checkbox" id="check-79.avif" onclick="event.stopPropagation(); syncCheckbox('79.avif')">
-            </div>
-          </div>
-        </div>
-      
-        <div class="card-body">
-          <div class="card-header">
-            <span class="filename">79.avif</span>
-            <button class="copy-btn" onclick="copyText('79.avif')">Copy File</button>
-          </div>
-          <div class="metadata-list">
-            <div class="meta-item">
-              <span class="meta-label">Resolution</span>
-              <span class="meta-value">720 x 960</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Size</span>
-              <span class="meta-value">151.9 KB</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Aspect Ratio</span>
-              <span class="meta-value">720:960</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Audit Recommendation</span>
-              <span class="meta-value status-low-text">🔴 Flagged for Swap</span>
-            </div>
-          </div>
-          <div class="caption-box" title="Peaceful garden landscape showing a small pond or spring-fed pool surrounded by rock borders, vibrant yellow wildflowers, lush green grass, and mature shade trees. [Season: Summer] [Lighting: Soft, pleasant daylight] [Content: Garden pond, yellow wildflowers, green grass, backyard landscape]">
-            Peaceful garden landscape showing a small pond or spring-fed pool surrounded by rock borders, vibrant yellow wildflowers, lush green grass, and mature shade trees. [Season: Summer] [Lighting: Soft, pleasant daylight] [Content: Garden pond, yellow wildflowers, green grass, backyard landscape]
-          </div>
-          <div class="card-footer" style="flex-direction: column; gap: 8px;">
-            <a href="/gallery/Eden-Site%20Photos/79.avif" target="_blank" class="view-btn">View Original</a>
-          </div>
-        </div>
-      </div>
-      <div class="card flagged" data-quality="low" data-enhanced-time="0">
-        
-        <div class="img-container">
-          <img id="img-80.avif" src="/gallery/Eden-Site%20Photos/80.avif" alt="80.avif" loading="lazy">
-          <div class="badge-bar">
-            <span class="badge status-low">Low Res (720px)</span>
-            <div class="checkbox-container" title="Add to Swap Queue" onclick="toggleQueue('80.avif', event)">
-              <input type="checkbox" id="check-80.avif" onclick="event.stopPropagation(); syncCheckbox('80.avif')">
-            </div>
-          </div>
-        </div>
-      
-        <div class="card-body">
-          <div class="card-header">
-            <span class="filename">80.avif</span>
-            <button class="copy-btn" onclick="copyText('80.avif')">Copy File</button>
-          </div>
-          <div class="metadata-list">
-            <div class="meta-item">
-              <span class="meta-label">Resolution</span>
-              <span class="meta-value">720 x 960</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Size</span>
-              <span class="meta-value">142.7 KB</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Aspect Ratio</span>
-              <span class="meta-value">720:960</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Audit Recommendation</span>
-              <span class="meta-value status-low-text">🔴 Flagged for Swap</span>
-            </div>
-          </div>
-          <div class="caption-box" title="Whimsical copper/bronze metal sculptures of three giraffes (one adult and two smaller ones) standing in a lush green garden bed filled with ground cover plants and wild vegetation. [Season: Summer] [Lighting: Bright, sunny daylight] [Content: Giraffe sculptures, metal art, garden beds, landscaping]">
-            Whimsical copper/bronze metal sculptures of three giraffes (one adult and two smaller ones) standing in a lush green garden bed filled with ground cover plants and wild vegetation. [Season: Summer] [Lighting: Bright, sunny daylight] [Content: Giraffe sculptures, metal art, garden beds, landscaping]
-          </div>
-          <div class="card-footer" style="flex-direction: column; gap: 8px;">
-            <a href="/gallery/Eden-Site%20Photos/80.avif" target="_blank" class="view-btn">View Original</a>
           </div>
         </div>
       </div>

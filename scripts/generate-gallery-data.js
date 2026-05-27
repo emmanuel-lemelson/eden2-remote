@@ -43,12 +43,8 @@ const gallerySectionConfig = [
       111, // Outdoor dining table next to private tennis court
       58,  // Spring-fed pond with pink/purple wildflowers, estate in background
       108, // Sun-drenched spring-fed pond, boulders, tall grasses
-      75,  // Beautiful landscape shot of a calm pond at sunset/dusk
-      79,  // Garden pond, yellow wildflowers, mature shade trees
       59,  // Dry stone garden wall and wildflowers in front of sunroom
-      64,  // Magical woodland path boardwalk through dense forest with sunbeams
       110, // Landscaped stone steps leading up terraced lawn
-      80,  // Whimsical copper giraffe sculptures in garden
       109, // Cherub stone planters with yellow/red roses, pond background
       77,  // Rustic white urn planter with pink roses
       78,  // Winter night-time view of rear facade illuminated
