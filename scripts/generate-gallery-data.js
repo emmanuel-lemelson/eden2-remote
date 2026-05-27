@@ -26,196 +26,78 @@ try {
 
 const gallerySectionConfig = [
   {
-    title: "Exterior Views",
-    description: "Estate exterior showcasing architecture and grounds.",
+    title: "The Estate & Grounds",
+    description: "Scenic aerials, professional tennis court, spring-fed ponds, landscaped gardens, swimming pool, and outdoor hot tub.",
     directory: "Eden-Site Photos",
-    photos: [2, 3, 112, 1],
+    photos: [
+      2, 3, 112, 1, // Exterior Views
+      75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 86, 87, 89, // Exterior
+      58, 59, 61, 62, 63, 64, 68, 69, 88, 108, 109, 110, 113, // Backyard
+      90, 91, 92 // Hot Tub
+    ],
   },
   {
-    title: "The Great Room",
-    description: "Spacious gathering areas with soaring ceilings and elegant furnishings.",
+    title: "Grand Living Spaces",
+    description: "Elegant gathering areas featuring soaring ceilings, a massive stone fireplace, sun-drenched sunroom, private study, and dual workspaces.",
     directory: "Eden-Site Photos",
-    photos: [4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 98, 99, 100, 101],
+    photos: [
+      4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 98, 99, 100, 101, // The Great Room
+      16, // Study Room / Library
+      30, 31, 32, // Sun Room
+      57, 107 // Office
+    ],
   },
   {
-    title: "Study Room / Library",
-    description: "Private workspace for meetings and reading.",
+    title: "Gourmet Kitchen & Dining",
+    description: "Fully equipped chef's kitchen, professional second kitchen, formal dining room, and an intimate light-filled breakfast nook.",
     directory: "Eden-Site Photos",
-    photos: [16],
+    photos: [
+      22, 23, 24, 25, // Full Kitchen 1
+      26, // Full Kitchen 2
+      27, 28, // Great Dining Room
+      29, 17 // Kitchen Dining Room
+    ],
   },
   {
-    title: "Basement / Game Room",
-    description: "Lower level recreation and entertainment space.",
+    title: "Bedrooms & Suites",
+    description: "Eight luxury bedrooms, including a palatial master suite, with premium linens, warm fireplaces, and beautiful mountain views.",
     directory: "Eden-Site Photos",
-    photos: [18, 93],
+    photos: [
+      19, 20, 21, // Upstairs Master Suite 1
+      33, 34, 35, 36, 102, // Bedroom 1
+      37, // Bedroom 2
+      38, // Bedroom 3
+      39, // Bedroom 4
+      40, // Bedroom 5
+      41, // Bedroom 6
+      42, // Bedroom 7
+      43, 44 // Bedroom 8
+    ],
   },
   {
-    title: "Upstairs Master Suite 1",
-    description: "Luxurious master bedroom with premium amenities.",
+    title: "Spa & Bathrooms",
+    description: "Private wellness retreat featuring a dry sauna, multi-head steam shower, indoor jacuzzi, and beautifully designed full and half bathrooms.",
     directory: "Eden-Site Photos",
-    photos: [19, 20, 21],
+    photos: [
+      52, 53, 106, 70, // Lower Level Spa & Bathroom
+      45, 46, 103, 104, 105, // Full Bathroom 1
+      47, 48, // Full Bathroom 2
+      49, // Full Bathroom 3
+      50, // Full Bathroom 4
+      54, // Full Bathroom 6
+      55, // Half Bathroom 1
+      56 // Half Bathroom 2
+    ],
   },
   {
-    title: "Full Kitchen 1",
-    description: "Gourmet kitchen with modern appliances and island seating.",
+    title: "Leisure & Recreation",
+    description: "Downstairs game room with billiards, professional home gym, and on-property resort amenities including sledding and smart laundry facilities.",
     directory: "Eden-Site Photos",
-    photos: [22, 23, 24, 25],
-  },
-  {
-    title: "Full Kitchen 2",
-    description: "Additional kitchen space with professional-grade equipment.",
-    directory: "Eden-Site Photos",
-    photos: [26],
-  },
-  {
-    title: "Great Dining Room",
-    description: "Formal dining area for elegant entertaining.",
-    directory: "Eden-Site Photos",
-    photos: [27, 28],
-  },
-  {
-    title: "Kitchen Dining Room",
-    description: "Casual dining space adjacent to the kitchen.",
-    directory: "Eden-Site Photos",
-    photos: [29, 17],
-  },
-  {
-    title: "Sun Room",
-    description: "Bright, airy space with natural light and garden views.",
-    directory: "Eden-Site Photos",
-    photos: [30, 31, 32],
-  },
-  {
-    title: "Bedroom 1",
-    description: "Comfortable guest bedroom with modern amenities.",
-    directory: "Eden-Site Photos",
-    photos: [33, 34, 35, 36, 102],
-  },
-  {
-    title: "Bedroom 2",
-    description: "Additional guest bedroom with elegant furnishings.",
-    directory: "Eden-Site Photos",
-    photos: [37],
-  },
-  {
-    title: "Bedroom 3",
-    description: "Spacious guest room with premium bedding.",
-    directory: "Eden-Site Photos",
-    photos: [38],
-  },
-  {
-    title: "Bedroom 4",
-    description: "Well-appointed guest bedroom with modern decor.",
-    directory: "Eden-Site Photos",
-    photos: [39],
-  },
-  {
-    title: "Bedroom 5",
-    description: "Comfortable guest room with quality furnishings.",
-    directory: "Eden-Site Photos",
-    photos: [40],
-  },
-  {
-    title: "Bedroom 6",
-    description: "Additional guest accommodation with modern amenities.",
-    directory: "Eden-Site Photos",
-    photos: [41],
-  },
-  {
-    title: "Bedroom 7",
-    description: "Spacious guest room with elegant design.",
-    directory: "Eden-Site Photos",
-    photos: [42],
-  },
-  {
-    title: "Bedroom 8",
-    description: "Premium guest suite with luxury amenities.",
-    directory: "Eden-Site Photos",
-    photos: [43, 44],
-  },
-  {
-    title: "Full Bathroom 1",
-    description: "Master bathroom with spa-like features.",
-    directory: "Eden-Site Photos",
-    photos: [45, 46, 103, 104, 105],
-  },
-  {
-    title: "Full Bathroom 2",
-    description: "Guest bathroom with modern fixtures.",
-    directory: "Eden-Site Photos",
-    photos: [47, 48],
-  },
-  {
-    title: "Full Bathroom 3",
-    description: "Additional full bathroom with quality amenities.",
-    directory: "Eden-Site Photos",
-    photos: [49],
-  },
-  {
-    title: "Full Bathroom 4",
-    description: "Well-appointed bathroom with modern design.",
-    directory: "Eden-Site Photos",
-    photos: [50],
-  },
-  {
-    title: "Lower Level Spa & Bathroom",
-    description: "Spacious bathroom with spa amenities including steam shower, jacuzzi, and private sauna.",
-    directory: "Eden-Site Photos",
-    photos: [51, 52, 53, 106, 70],
-  },
-  {
-    title: "Full Bathroom 6",
-    description: "Additional full bathroom with modern amenities.",
-    directory: "Eden-Site Photos",
-    photos: [54],
-  },
-  {
-    title: "Half Bathroom 1",
-    description: "Convenient powder room for guests.",
-    directory: "Eden-Site Photos",
-    photos: [55],
-  },
-  {
-    title: "Half Bathroom 2",
-    description: "Additional powder room with modern fixtures.",
-    directory: "Eden-Site Photos",
-    photos: [56],
-  },
-  {
-    title: "Office",
-    description: "Professional workspace with modern amenities.",
-    directory: "Eden-Site Photos",
-    photos: [57, 107],
-  },
-  {
-    title: "Backyard",
-    description: "Outdoor spaces with gardens, patios, swimming pool, and recreational areas.",
-    directory: "Eden-Site Photos",
-    photos: [58, 59, 60, 61, 62, 63, 64, 68, 69, 88, 108, 109, 110, 113],
-  },
-  {
-    title: "Home Gym & Recreation",
-    description: "Fully equipped home fitness room and lower level recreation space.",
-    directory: "Eden-Site Photos",
-    photos: [96, 71],
-  },
-  {
-    title: "Exterior",
-    description: "Additional exterior views of the estate grounds and architecture.",
-    directory: "Eden-Site Photos",
-    photos: [72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 86, 87, 89],
-  },
-  {
-    title: "Hot Tub",
-    description: "Relaxing outdoor hot tub area.",
-    directory: "Eden-Site Photos",
-    photos: [90, 91, 92],
-  },
-  {
-    title: "Additional Photos",
-    description: "Extra views and special features of the estate including winter activities and laundry facilities.",
-    directory: "Eden-Site Photos",
-    photos: [94, 95, 97, 111],
+    photos: [
+      18, 93, // Basement / Game Room
+      96, 71, // Home Gym & Recreation
+      94, 95, 97, 111 // Additional Photos
+    ],
   },
 ];
 

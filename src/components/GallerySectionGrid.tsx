@@ -7,7 +7,6 @@ import type { GallerySection } from "@/types/gallery";
 
 type Props = {
   sections: GallerySection[];
-  variant?: "grouped" | "masonry";
 };
 
 const PREFETCH_START_INDEX = 12;
@@ -133,7 +132,7 @@ function MasonryItem({
   );
 }
 
-export function GallerySectionGrid({ sections, variant = "grouped" }: Props) {
+export function GallerySectionGrid({ sections }: Props) {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   const normalizedImages = useMemo(
@@ -616,43 +615,7 @@ export function GallerySectionGrid({ sections, variant = "grouped" }: Props) {
     );
   }
 
-  if (variant === "masonry") {
-    return (
-      <div className="lux-container animate-fade-up">
-        <div className="masonry-grid">
-          {normalizedImages.map(({ sectionTitle, image }, index) => {
-            const altText =
-              image.alt && image.alt !== "Eden Estate gallery image"
-                ? image.alt
-                : `${sectionTitle} at Eden Estate`;
 
-            return (
-              <MasonryItem
-                key={`${sectionTitle}-${image.src}`}
-                aspectRatio={image.height / image.width}
-                className="group relative overflow-hidden rounded-3xl border border-white/60 bg-[rgba(248,243,234,0.85)] shadow-sm cursor-pointer"
-              >
-                <div onClick={() => setLightboxIndex(index)} className="overflow-hidden">
-                  <GalleryImage
-                    src={image.src}
-                    srcSet={image.srcset}
-                    alt={altText}
-                    width={image.width}
-                    height={image.height}
-                    sizes={image.sizes}
-                    index={index}
-                    className="pointer-events-none h-full"
-                  />
-                </div>
-                <div className="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/15 z-10 pointer-events-none" />
-                <span className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-t from-black/20 via-transparent to-black/10 opacity-30" />
-              </MasonryItem>
-            );
-          })}
-        </div>
-      </div>
-    );
-  }
 
   let runningImageIndex = 0;
 
@@ -669,11 +632,6 @@ export function GallerySectionGrid({ sections, variant = "grouped" }: Props) {
               <h3 className="text-2xl font-serif tracking-tight text-stone-900 font-medium">
                 {section.title}
               </h3>
-              {section.description && (
-                <p className="text-sm font-normal text-stone-800 max-w-xl leading-relaxed mt-1">
-                  {section.description}
-                </p>
-              )}
             </div>
 
             {/* Render conditional photos layout */}

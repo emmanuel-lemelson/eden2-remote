@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SectionHeading } from "@/components/SectionHeading";
-import { GalleryViewSwitcher } from "@/components/GalleryViewSwitcher";
+import { GallerySectionGrid } from "@/components/GallerySectionGrid";
 import type { GallerySection } from "@/types/gallery";
 import galleryData from "@/data/gallery.json";
 
@@ -49,7 +49,7 @@ export default function GalleryPage() {
       </section>
 
       <section className="pb-12">
-        <GalleryViewSwitcher sections={gallerySections} />
+        <GallerySectionGrid sections={gallerySections} variant="grouped" />
       </section>
 
       <section className="lux-section pt-0">
