@@ -323,12 +323,12 @@
         "height": 801
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/11.avif",
+        "src": "/gallery/enhanced/11.avif",
         "alt": "Festive indoor view of a tall, elegantly decorated Christmas tree glowing with warm golden lights and adorned with red and gold ornaments and a star topper. Located in a high-ceilinged room next to large windows overlooking a snowy winter forest outside. Features classic drapes and dark wood built-in bookshelves. [Season: Winter, Christmas] [Lighting: Warm, glittering tree lights contrasting with cool winter daylight] [Content: Christmas tree, holiday decor, window view, living room interior]",
-        "srcset": "/gallery/Eden-Site%20Photos/11@400w.webp 400w, /gallery/Eden-Site%20Photos/11@800w.webp 800w",
+        "srcset": "/gallery/enhanced/11@400w.webp 400w, /gallery/enhanced/11@800w.webp 800w, /gallery/enhanced/11@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 955
+        "width": 1024,
+        "height": 1024
       },
       {
         "src": "/gallery/Eden-Site%20Photos/7.avif",
@@ -371,12 +371,12 @@
         "height": 480
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/31.avif",
+        "src": "/gallery/enhanced/31.avif",
         "alt": "Another view of the bright sunroom showing the wicker seating, a large stone fireplace on the left with a lit fire, and white brick chimney walls. Large windows let in plenty of daylight. [Season: Summer/Spring] [Lighting: Bright daylight with warm fireplace glow] [Content: Sunroom, brick fireplace, wicker sofas, indoor-outdoor living]",
-        "srcset": "/gallery/Eden-Site%20Photos/31@400w.webp 400w, /gallery/Eden-Site%20Photos/31@800w.webp 800w",
+        "srcset": "/gallery/enhanced/31@400w.webp 400w, /gallery/enhanced/31@800w.webp 800w, /gallery/enhanced/31@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 480
+        "width": 1024,
+        "height": 1024
       },
       {
         "src": "/gallery/Eden-Site%20Photos/16.avif",
@@ -580,12 +580,12 @@
         "height": 800
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/43.avif",
+        "src": "/gallery/enhanced/43.avif",
         "alt": "Cozy guest bedroom featuring a queen bed with white linens, a ceiling fan, light beige walls, a grey upholstered armchair, and a window. [Season: Indoor] [Lighting: Soft, pleasant recessed ceiling lights] [Content: Cozy bedroom, queen bed, armchair, neutral tones]",
-        "srcset": "/gallery/Eden-Site%20Photos/43@400w.webp 400w, /gallery/Eden-Site%20Photos/43@800w.webp 800w",
+        "srcset": "/gallery/enhanced/43@400w.webp 400w, /gallery/enhanced/43@800w.webp 800w, /gallery/enhanced/43@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 480
+        "width": 1024,
+        "height": 1024
       },
       {
         "src": "/gallery/Eden-Site%20Photos/38.avif",
@@ -717,12 +717,12 @@
         "height": 1704
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/45.avif",
+        "src": "/gallery/enhanced/45.avif",
         "alt": "Detail close-up of a master en-suite bathroom vanity. Features a polished marble countertop with an undermount oval sink and polished brass/gold double faucets. White custom cabinets and columns frame a large mirrored alcove. A window is visible in the reflection showing green summer trees. [Season: Summer] [Lighting: Bright vanity lights and daylight] [Content: Bathroom vanity, marble counter, brass faucets, mirrored alcove]",
-        "srcset": "/gallery/Eden-Site%20Photos/45@400w.webp 400w, /gallery/Eden-Site%20Photos/45@800w.webp 800w",
+        "srcset": "/gallery/enhanced/45@400w.webp 400w, /gallery/enhanced/45@800w.webp 800w, /gallery/enhanced/45@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 480
+        "width": 1024,
+        "height": 1024
       },
       {
         "src": "/gallery/Eden-Site%20Photos/47.avif",
@@ -906,12 +906,12 @@
         "height": 480
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/62.avif",
+        "src": "/gallery/enhanced/62.avif",
         "alt": "Joyful winter scene of a parent pulling two young children on a sled down a snowy slope under a soft, golden winter sky. [Season: Winter] [Lighting: Soft winter twilight/sunset] [Content: Sledding, snow hill, family activity, winter fun]",
-        "srcset": "/gallery/Eden-Site%20Photos/62@400w.webp 400w, /gallery/Eden-Site%20Photos/62@800w.webp 800w",
+        "srcset": "/gallery/enhanced/62@400w.webp 400w, /gallery/enhanced/62@800w.webp 800w, /gallery/enhanced/62@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 480
+        "width": 1024,
+        "height": 1024
       },
       {
         "src": "/gallery/Eden-Site%20Photos/81.avif",

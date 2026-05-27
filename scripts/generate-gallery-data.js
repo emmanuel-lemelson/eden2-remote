@@ -222,49 +222,66 @@ async function ensureVariantsForImage(absSrcPath, widths) {
   }
   return { variants: out, width: metadata.width ?? widths[widths.length - 1], height: metadata.height ?? widths[widths.length - 1] };
 }
-
 function loadImagesSync(section) {
   const { directory, startPhoto, endPhoto, photos } = section;
   const directoryPath = path.join(galleryRoot, directory);
+  const enhancedPath = path.join(galleryRoot, "enhanced");
 
-  if (!fs.existsSync(directoryPath)) {
-    return [];
+  let enhancedFiles = [];
+  if (fs.existsSync(enhancedPath)) {
+    enhancedFiles = fs
+      .readdirSync(enhancedPath, { withFileTypes: true })
+      .filter((entry) => entry.isFile())
+      .filter((entry) => !entry.name.startsWith("."))
+      .filter((entry) => !entry.name.includes("@"))
+      .filter((entry) => !excludedFilenames.has(entry.name))
+      .map((entry) => {
+        const match = entry.name.match(/^(\d+)/);
+        const photoNum = match ? parseInt(match[1], 10) : 0;
+        return { entry, photoNum, dir: "enhanced" };
+      });
   }
 
-  // Get all files
-  const allFiles = fs
-    .readdirSync(directoryPath, { withFileTypes: true })
-    .filter((entry) => entry.isFile())
-    .filter((entry) => !entry.name.startsWith("."))
-    .filter((entry) => !entry.name.includes("@")) // Exclude resized variants
-    .filter((entry) => !excludedFilenames.has(entry.name));
+  let standardFiles = [];
+  if (fs.existsSync(directoryPath)) {
+    standardFiles = fs
+      .readdirSync(directoryPath, { withFileTypes: true })
+      .filter((entry) => entry.isFile())
+      .filter((entry) => !entry.name.startsWith("."))
+      .filter((entry) => !entry.name.includes("@"))
+      .filter((entry) => !excludedFilenames.has(entry.name))
+      .map((entry) => {
+        const match = entry.name.match(/^(\d+)/);
+        const photoNum = match ? parseInt(match[1], 10) : 0;
+        return { entry, photoNum, dir: directory };
+      });
+  }
 
-  // Extract photo numbers from filenames
-  const parsedFiles = allFiles.map((entry) => {
-    const match = entry.name.match(/^(\d+)/);
-    const photoNum = match ? parseInt(match[1], 10) : 0;
-    return { entry, photoNum };
-  });
+  const allParsed = [...enhancedFiles, ...standardFiles];
 
-  // Filter based on explicit list or range
   let filesInRange;
   if (Array.isArray(photos)) {
-    // Retain exact order defined in the photos array
     filesInRange = [];
     photos.forEach((num) => {
-      const found = parsedFiles.find((p) => p.photoNum === num);
+      let found = allParsed.find((p) => p.photoNum === num && p.dir === "enhanced");
+      if (!found) {
+        found = allParsed.find((p) => p.photoNum === num && p.dir === directory);
+      }
       if (found) {
         filesInRange.push(found);
       }
     });
   } else {
-    filesInRange = parsedFiles
+    const mergedMap = new Map();
+    standardFiles.forEach(f => mergedMap.set(f.photoNum, f));
+    enhancedFiles.forEach(f => mergedMap.set(f.photoNum, f));
+    filesInRange = Array.from(mergedMap.values())
       .filter(({ photoNum }) => photoNum >= startPhoto && photoNum <= endPhoto)
       .sort((a, b) => a.photoNum - b.photoNum);
   }
 
-  const result = filesInRange.map(({ entry }) => {
-    const relativePath = path.join(directory, entry.name).split(path.sep).join("/");
+  const result = filesInRange.map(({ entry, dir }) => {
+    const relativePath = path.join(dir, entry.name).split(path.sep).join("/");
     const src = encodeURI(`/gallery/${relativePath}`);
     const override = captionOverrides.get(entry.name);
     return { 
@@ -277,7 +294,6 @@ function loadImagesSync(section) {
 
   return result;
 }
-
 async function buildGallery() {
   const widths = [400, 800, 1200, 1600, 2000, 2400];
   const sections = [];
