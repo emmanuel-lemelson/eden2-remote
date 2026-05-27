@@ -479,7 +479,7 @@
       },
       {
         "src": "/gallery/enhanced/13.avif",
-        "alt": "Close-up detail of a formal dining or conference table. Shows a long polished dark wood table set with a bottle of red wine and two crystal wine glasses, surrounded by high-backed classic chairs upholstered in premium brown leather with brass nailhead trim. [Season: Autumn/Winter] [Lighting: Soft, warm ambient dining light] [Content: Dining table close-up, leather chairs, wine glasses, formal dining interior]",
+        "alt": "Close-up detail of a formal dining or conference table. Shows a long polished dark wood table set with a bottle of red wine and two crystal wine glasses, surrounded by high-backed classic chairs upholstered in premium antique sage green textured leather with brass nailhead trim. [Season: Autumn/Winter] [Lighting: Soft, warm ambient dining light] [Content: Dining table close-up, leather chairs, wine glasses, formal dining interior]",
         "srcset": "/gallery/enhanced/13@400w.webp 400w, /gallery/enhanced/13@800w.webp 800w, /gallery/enhanced/13@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 1024,
@@ -952,14 +952,6 @@
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 720,
         "height": 1080
-      },
-      {
-        "src": "/gallery/enhanced/14.avif",
-        "alt": "Indoor portrait-style shot of a bride in a white lace wedding gown holding a floral bouquet, standing on a staircase next to a groom in a dark tuxedo. A large window and white wooden railings are visible in the background, creating a romantic and elegant setting. [Season: Summer/Spring] [Lighting: Soft, diffused natural daylight] [Content: Wedding couple, staircase, formal attire, indoor portrait]",
-        "srcset": "/gallery/enhanced/14@400w.webp 400w, /gallery/enhanced/14@800w.webp 800w, /gallery/enhanced/14@1200w.webp 1200w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1024,
-        "height": 1024
       },
       {
         "src": "/gallery/Eden-Site%20Photos/21.avif",
