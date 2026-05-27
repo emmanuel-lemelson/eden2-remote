@@ -406,12 +406,12 @@
         "height": 960
       },
       {
-        "src": "/gallery/enhanced/13.avif",
+        "src": "/gallery/Eden-Site%20Photos/13.avif",
         "alt": "Close-up detail of a formal dining or conference table. Shows a long polished dark wood table set with a bottle of red wine and two crystal wine glasses, surrounded by high-backed classic chairs upholstered in premium antique sage green textured leather with brass nailhead trim. [Season: Autumn/Winter] [Lighting: Soft, warm ambient dining light] [Content: Dining table close-up, leather chairs, wine glasses, formal dining interior]",
-        "srcset": "/gallery/enhanced/13@400w.webp 400w, /gallery/enhanced/13@800w.webp 800w, /gallery/enhanced/13@1200w.webp 1200w",
+        "srcset": "/gallery/Eden-Site%20Photos/13@400w.webp 400w, /gallery/Eden-Site%20Photos/13@800w.webp 800w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1024,
-        "height": 1024
+        "width": 720,
+        "height": 960
       },
       {
         "src": "/gallery/enhanced/17.avif",

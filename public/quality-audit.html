@@ -96,7 +96,7 @@
 
     .progress-bar-fill {
       height: 100%;
-      width: 44.2%;
+      width: 42.3%;
       background: var(--accent-gold);
       border-radius: 10px;
       transition: width 0.5s ease;
@@ -800,14 +800,14 @@
     <div class="progress-section">
       <div class="progress-header">
         <span style="font-weight: 600; color: var(--text-main);">AI-Enhanced Swapping Progress</span>
-        <span style="font-weight: 700; color: var(--accent-gold);">44.2% Complete</span>
+        <span style="font-weight: 700; color: var(--accent-gold);">42.3% Complete</span>
       </div>
       <div class="progress-bar-bg">
         <div class="progress-bar-fill"></div>
       </div>
       <div class="progress-stats">
-        <span>Swapped & Enhanced: <strong>23</strong> / 52 low-res files</span>
-        <span>Remaining Flagged: <strong>29</strong> photos left to replace</span>
+        <span>Swapped & Enhanced: <strong>22</strong> / 52 low-res files</span>
+        <span>Remaining Flagged: <strong>30</strong> photos left to replace</span>
       </div>
     </div>
 
@@ -817,11 +817,11 @@
         <div class="summary-label">Total Gallery Photos</div>
       </div>
       <div class="summary-card" style="border-color: rgba(16, 185, 129, 0.4);">
-        <div class="summary-num" style="color: var(--color-pro);">23</div>
+        <div class="summary-num" style="color: var(--color-pro);">22</div>
         <div class="summary-label">Swapped & Enhanced</div>
       </div>
       <div class="summary-card" style="border-color: rgba(239, 68, 68, 0.4);">
-        <div class="summary-num" style="color: var(--color-low);">29</div>
+        <div class="summary-num" style="color: var(--color-low);">30</div>
         <div class="summary-label">Remaining Swaps</div>
       </div>
       <div class="summary-card" style="border-color: rgba(234, 179, 8, 0.4);">
@@ -837,8 +837,8 @@
 
   
   <div class="audit-summary-box">
-    <h3>🔴 Swaps Left to Update (29 photos)</h3>
-    <p>The following 29 photos are still low-resolution (720px wide) and require swapping to reach Pro Grade luxury standards. You can copy the list below or check them off as you swap them out.</p>
+    <h3>🔴 Swaps Left to Update (30 photos)</h3>
+    <p>The following 30 photos are still low-resolution (720px wide) and require swapping to reach Pro Grade luxury standards. You can copy the list below or check them off as you swap them out.</p>
     <div class="remaining-tag-container">
       
         <span class="remaining-tag" onclick="copyText('3.avif')" style="cursor: pointer;" title="Click to copy filename">
@@ -852,6 +852,9 @@
         </span>
         <span class="remaining-tag" onclick="copyText('9.avif')" style="cursor: pointer;" title="Click to copy filename">
           9.avif <span style="font-size: 0.65rem; opacity: 0.7;">📋</span>
+        </span>
+        <span class="remaining-tag" onclick="copyText('13.avif')" style="cursor: pointer;" title="Click to copy filename">
+          13.avif <span style="font-size: 0.65rem; opacity: 0.7;">📋</span>
         </span>
         <span class="remaining-tag" onclick="copyText('14.avif')" style="cursor: pointer;" title="Click to copy filename">
           14.avif <span style="font-size: 0.65rem; opacity: 0.7;">📋</span>
@@ -934,10 +937,10 @@
   <div class="controls">
     <div class="tabs">
       <button class="tab-btn active" onclick="filterGallery('all', this)">All (89)</button>
-      <button class="tab-btn" onclick="filterGallery('low', this)">Remaining Swaps (29)</button>
-      <button class="tab-btn" style="color: var(--color-pro);" onclick="filterGallery('enhanced', this)">Swapped & Enhanced (23)</button>
+      <button class="tab-btn" onclick="filterGallery('low', this)">Remaining Swaps (30)</button>
+      <button class="tab-btn" style="color: var(--color-pro);" onclick="filterGallery('enhanced', this)">Swapped & Enhanced (22)</button>
       <button class="tab-btn" onclick="filterGallery('medium', this)">Portfolio (22)</button>
-      <button class="tab-btn" onclick="filterGallery('pro', this)">Pro Grade (38)</button>
+      <button class="tab-btn" onclick="filterGallery('pro', this)">Pro Grade (37)</button>
     </div>
 
     <div class="queue-panel">
@@ -1354,21 +1357,15 @@
           </div>
         </div>
       </div>
-      <div class="card enhanced" data-quality="pro" data-enhanced-time="1779897997957.4604">
+      <div class="card flagged" data-quality="low" data-enhanced-time="0">
         
-        <div class="comparison-slider">
-          <!-- Before (Original) -->
-          <img class="img-before" src="/gallery/lowres_archive/13.avif" alt="Before 13.avif" loading="lazy">
-          <!-- After (Enhanced) -->
-          <div class="resize-container" id="resize-13.avif">
-            <img class="img-after" src="/gallery/enhanced/13.avif" alt="After 13.avif" loading="lazy">
-          </div>
-          <!-- Slider Handle -->
-          <div class="slider-handle" id="handle-13.avif"></div>
-          <input type="range" min="0" max="100" value="50" class="comparison-range" oninput="updateComparisonSlider('13.avif', this.value)">
-          <div class="badge-bar" style="pointer-events: none;">
-            <span class="badge status-pro">✨ Enhanced (Pro)</span>
-            <span class="badge" style="background: rgba(0,0,0,0.7); color: #fff; border: 1px solid rgba(255,255,255,0.2);">↔ Slide to Compare</span>
+        <div class="img-container">
+          <img id="img-13.avif" src="/gallery/Eden-Site%20Photos/13.avif" alt="13.avif" loading="lazy">
+          <div class="badge-bar">
+            <span class="badge status-low">Low Res (720px)</span>
+            <div class="checkbox-container" title="Add to Swap Queue" onclick="toggleQueue('13.avif', event)">
+              <input type="checkbox" id="check-13.avif" onclick="event.stopPropagation(); syncCheckbox('13.avif')">
+            </div>
           </div>
         </div>
       
@@ -1380,29 +1377,26 @@
           <div class="metadata-list">
             <div class="meta-item">
               <span class="meta-label">Resolution</span>
-              <span class="meta-value">1024 x 1024</span>
+              <span class="meta-value">720 x 960</span>
             </div>
             <div class="meta-item">
               <span class="meta-label">Size</span>
-              <span class="meta-value">233.7 KB</span>
+              <span class="meta-value">62.9 KB</span>
             </div>
             <div class="meta-item">
               <span class="meta-label">Aspect Ratio</span>
-              <span class="meta-value">1024:1024</span>
+              <span class="meta-value">720:960</span>
             </div>
             <div class="meta-item">
               <span class="meta-label">Audit Recommendation</span>
-              <span class="meta-value status-pro-text">✨ Enhanced (Pro Grade)</span>
+              <span class="meta-value status-low-text">🔴 Flagged for Swap</span>
             </div>
           </div>
           <div class="caption-box" title="Close-up detail of a formal dining or conference table. Shows a long polished dark wood table set with a bottle of red wine and two crystal wine glasses, surrounded by high-backed classic chairs upholstered in premium antique sage green textured leather with brass nailhead trim. [Season: Autumn/Winter] [Lighting: Soft, warm ambient dining light] [Content: Dining table close-up, leather chairs, wine glasses, formal dining interior]">
             Close-up detail of a formal dining or conference table. Shows a long polished dark wood table set with a bottle of red wine and two crystal wine glasses, surrounded by high-backed classic chairs upholstered in premium antique sage green textured leather with brass nailhead trim. [Season: Autumn/Winter] [Lighting: Soft, warm ambient dining light] [Content: Dining table close-up, leather chairs, wine glasses, formal dining interior]
           </div>
           <div class="card-footer" style="flex-direction: column; gap: 8px;">
-            
-        <button class="view-btn" style="background: var(--accent-gold); color: #000; font-weight: 600; border: none; cursor: pointer;" onclick="openCompareModal('13.avif', '/gallery/lowres_archive/13.avif', '/gallery/enhanced/13.avif')">🔍 Full-Screen Compare</button>
-        <a href="/gallery/enhanced/13.avif" target="_blank" class="view-btn">Open Original High-Res File</a>
-      
+            <a href="/gallery/Eden-Site%20Photos/13.avif" target="_blank" class="view-btn">View Original</a>
           </div>
         </div>
       </div>
