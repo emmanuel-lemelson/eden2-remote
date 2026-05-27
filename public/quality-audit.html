@@ -96,7 +96,7 @@
 
     .progress-bar-fill {
       height: 100%;
-      width: 24.6%;
+      width: 24.1%;
       background: var(--accent-gold);
       border-radius: 10px;
       transition: width 0.5s ease;
@@ -795,25 +795,25 @@
 
   <header>
     <h1>Eden Estate <span>Gallery Quality Audit</span></h1>
-    <p class="subtitle">Interactive visualization dashboard of all 101 active photos. We have categorized the images by resolution to identify low-quality or highly compressed vertical shots that should be queued for swapping.</p>
+    <p class="subtitle">Interactive visualization dashboard of all 102 active photos. We have categorized the images by resolution to identify low-quality or highly compressed vertical shots that should be queued for swapping.</p>
     
     <div class="progress-section">
       <div class="progress-header">
         <span style="font-weight: 600; color: var(--text-main);">AI-Enhanced Swapping Progress</span>
-        <span style="font-weight: 700; color: var(--accent-gold);">24.6% Complete</span>
+        <span style="font-weight: 700; color: var(--accent-gold);">24.1% Complete</span>
       </div>
       <div class="progress-bar-bg">
         <div class="progress-bar-fill"></div>
       </div>
       <div class="progress-stats">
-        <span>Swapped & Enhanced: <strong>14</strong> / 57 low-res files</span>
-        <span>Remaining Flagged: <strong>43</strong> photos left to replace</span>
+        <span>Swapped & Enhanced: <strong>14</strong> / 58 low-res files</span>
+        <span>Remaining Flagged: <strong>44</strong> photos left to replace</span>
       </div>
     </div>
 
     <div class="summary-badges">
       <div class="summary-card">
-        <div class="summary-num">101</div>
+        <div class="summary-num">102</div>
         <div class="summary-label">Total Gallery Photos</div>
       </div>
       <div class="summary-card" style="border-color: rgba(16, 185, 129, 0.4);">
@@ -821,7 +821,7 @@
         <div class="summary-label">Swapped & Enhanced</div>
       </div>
       <div class="summary-card" style="border-color: rgba(239, 68, 68, 0.4);">
-        <div class="summary-num" style="color: var(--color-low);">43</div>
+        <div class="summary-num" style="color: var(--color-low);">44</div>
         <div class="summary-label">Remaining Swaps</div>
       </div>
       <div class="summary-card" style="border-color: rgba(234, 179, 8, 0.4);">
@@ -837,8 +837,8 @@
 
   
   <div class="audit-summary-box">
-    <h3>🔴 Swaps Left to Update (43 photos)</h3>
-    <p>The following 43 photos are still low-resolution (720px wide) and require swapping to reach Pro Grade luxury standards. You can copy the list below or check them off as you swap them out.</p>
+    <h3>🔴 Swaps Left to Update (44 photos)</h3>
+    <p>The following 44 photos are still low-resolution (720px wide) and require swapping to reach Pro Grade luxury standards. You can copy the list below or check them off as you swap them out.</p>
     <div class="remaining-tag-container">
       
         <span class="remaining-tag" onclick="copyText('3.avif')" style="cursor: pointer;" title="Click to copy filename">
@@ -855,6 +855,9 @@
         </span>
         <span class="remaining-tag" onclick="copyText('9.avif')" style="cursor: pointer;" title="Click to copy filename">
           9.avif <span style="font-size: 0.65rem; opacity: 0.7;">📋</span>
+        </span>
+        <span class="remaining-tag" onclick="copyText('14.avif')" style="cursor: pointer;" title="Click to copy filename">
+          14.avif <span style="font-size: 0.65rem; opacity: 0.7;">📋</span>
         </span>
         <span class="remaining-tag" onclick="copyText('21.avif')" style="cursor: pointer;" title="Click to copy filename">
           21.avif <span style="font-size: 0.65rem; opacity: 0.7;">📋</span>
@@ -975,8 +978,8 @@
 
   <div class="controls">
     <div class="tabs">
-      <button class="tab-btn active" onclick="filterGallery('all', this)">All (101)</button>
-      <button class="tab-btn" onclick="filterGallery('low', this)">Remaining Swaps (43)</button>
+      <button class="tab-btn active" onclick="filterGallery('all', this)">All (102)</button>
+      <button class="tab-btn" onclick="filterGallery('low', this)">Remaining Swaps (44)</button>
       <button class="tab-btn" style="color: var(--color-pro);" onclick="filterGallery('enhanced', this)">Swapped & Enhanced (14)</button>
       <button class="tab-btn" onclick="filterGallery('medium', this)">Portfolio (27)</button>
       <button class="tab-btn" onclick="filterGallery('pro', this)">Pro Grade (31)</button>
@@ -1488,6 +1491,49 @@
         <button class="view-btn" style="background: var(--accent-gold); color: #000; font-weight: 600; border: none; cursor: pointer;" onclick="openCompareModal('13.avif', '/gallery/lowres_archive/13.avif', '/gallery/enhanced/13.avif')">🔍 Full-Screen Compare</button>
         <a href="/gallery/enhanced/13.avif" target="_blank" class="view-btn">Open Original High-Res File</a>
       
+          </div>
+        </div>
+      </div>
+      <div class="card flagged" data-quality="low">
+        
+        <div class="img-container">
+          <img id="img-14.avif" src="/gallery/Eden-Site%20Photos/14.avif" alt="14.avif" loading="lazy">
+          <div class="badge-bar">
+            <span class="badge status-low">Low Res (720px)</span>
+            <div class="checkbox-container" title="Add to Swap Queue" onclick="toggleQueue('14.avif', event)">
+              <input type="checkbox" id="check-14.avif" onclick="event.stopPropagation(); syncCheckbox('14.avif')">
+            </div>
+          </div>
+        </div>
+      
+        <div class="card-body">
+          <div class="card-header">
+            <span class="filename">14.avif</span>
+            <button class="copy-btn" onclick="copyText('14.avif')">Copy File</button>
+          </div>
+          <div class="metadata-list">
+            <div class="meta-item">
+              <span class="meta-label">Resolution</span>
+              <span class="meta-value">720 x 1080</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Size</span>
+              <span class="meta-value">36.2 KB</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Aspect Ratio</span>
+              <span class="meta-value">720:1080</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Audit Recommendation</span>
+              <span class="meta-value status-low-text">🔴 Flagged for Swap</span>
+            </div>
+          </div>
+          <div class="caption-box" title="Indoor portrait-style shot of a bride in a white lace wedding gown holding a floral bouquet, standing on a staircase next to a groom in a dark tuxedo. A large window and white wooden railings are visible in the background, creating a romantic and elegant setting. [Season: Summer/Spring] [Lighting: Soft, diffused natural daylight] [Content: Wedding couple, staircase, formal attire, indoor portrait]">
+            Indoor portrait-style shot of a bride in a white lace wedding gown holding a floral bouquet, standing on a staircase next to a groom in a dark tuxedo. A large window and white wooden railings are visible in the background, creating a romantic and elegant setting. [Season: Summer/Spring] [Lighting: Soft, diffused natural daylight] [Content: Wedding couple, staircase, formal attire, indoor portrait]
+          </div>
+          <div class="card-footer" style="flex-direction: column; gap: 8px;">
+            <a href="/gallery/Eden-Site%20Photos/14.avif" target="_blank" class="view-btn">View Original</a>
           </div>
         </div>
       </div>

@@ -954,6 +954,14 @@
         "height": 1080
       },
       {
+        "src": "/gallery/Eden-Site%20Photos/14.avif",
+        "alt": "Indoor portrait-style shot of a bride in a white lace wedding gown holding a floral bouquet, standing on a staircase next to a groom in a dark tuxedo. A large window and white wooden railings are visible in the background, creating a romantic and elegant setting. [Season: Summer/Spring] [Lighting: Soft, diffused natural daylight] [Content: Wedding couple, staircase, formal attire, indoor portrait]",
+        "srcset": "/gallery/Eden-Site%20Photos/14@400w.webp 400w, /gallery/Eden-Site%20Photos/14@800w.webp 800w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 720,
+        "height": 1080
+      },
+      {
         "src": "/gallery/Eden-Site%20Photos/21.avif",
         "alt": "Indoor shot of a bride in a white wedding dress and a white fur shoulder wrap, standing next to a wooden console table. The background features light beige walls with elegant trim. [Season: Indoor] [Lighting: Soft, warm indoor lighting] [Content: Bride portrait, formal dress, hallway interior]",
         "srcset": "/gallery/Eden-Site%20Photos/21@400w.webp 400w, /gallery/Eden-Site%20Photos/21@800w.webp 800w",
