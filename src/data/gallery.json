@@ -813,20 +813,20 @@
         "height": 480
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/92.avif",
+        "src": "/gallery/enhanced/92.avif",
         "alt": "An outdoor spa hot tub steaming heavily in the middle of a winter landscape covered in thick white snow. Tall pine trees stand in the background under a soft winter sky. [Season: Winter] [Lighting: Soft, cool winter daylight] [Content: Steaming hot tub, snow covered ground, winter landscape, pine trees]",
-        "srcset": "/gallery/Eden-Site%20Photos/92@400w.webp 400w, /gallery/Eden-Site%20Photos/92@800w.webp 800w",
+        "srcset": "/gallery/enhanced/92@400w.webp 400w, /gallery/enhanced/92@800w.webp 800w, /gallery/enhanced/92@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 540
+        "width": 1024,
+        "height": 1024
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/32.avif",
+        "src": "/gallery/enhanced/32.avif",
         "alt": "Close-up of an outdoor fire pit or fireplace with roaring orange flames. In the foreground, white marshmallows are seen on wooden sticks ready for roasting. [Season: Winter/Autumn] [Lighting: Warm, intense firelight at night or twilight] [Content: Fire pit, roasting marshmallows, campfire flames]",
-        "srcset": "/gallery/Eden-Site%20Photos/32@400w.webp 400w, /gallery/Eden-Site%20Photos/32@800w.webp 800w",
+        "srcset": "/gallery/enhanced/32@400w.webp 400w, /gallery/enhanced/32@800w.webp 800w, /gallery/enhanced/32@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
+        "width": 1024,
+        "height": 1024
       },
       {
         "src": "/gallery/Eden-Site%20Photos/95.avif",
@@ -917,12 +917,12 @@
         "height": 813
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/97.avif",
+        "src": "/gallery/enhanced/97.avif",
         "alt": "Spacious, high-end laundry room showing premium custom wood cabinetry on both sides, a tiled floor, and two modern dark grey front-load smart washers/dryers built into the cabinets under a window. [Season: Summer] [Lighting: Bright daylight from the window] [Content: Laundry room, washer and dryer, custom wood cabinets, folding counter]",
-        "srcset": "/gallery/Eden-Site%20Photos/97@400w.webp 400w, /gallery/Eden-Site%20Photos/97@800w.webp 800w, /gallery/Eden-Site%20Photos/97@1200w.webp 1200w",
+        "srcset": "/gallery/enhanced/97@400w.webp 400w, /gallery/enhanced/97@800w.webp 800w, /gallery/enhanced/97@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1200,
-        "height": 900
+        "width": 1024,
+        "height": 1024
       }
     ]
   }
