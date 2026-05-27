@@ -35,11 +35,9 @@ const gallerySectionConfig = [
       86,  // High-angle view of estate nestled in red/orange autumn foliage
       113, // Resort-style pool patio with circular hot tub at dusk
       87,  // Rear twilight view highlighting pool and warm windows
-      112, // Panoramic High-Altitude Aerial view of entire estate
       3,   // High-angle aerial of front entrance approach at dusk
       88,  // Pool patio wicker furniture with royal blue cushions
       69,  // Stone pool patio wicker lounge with dark red cushions
-      89,  // Swimming pool deck in early morning mist and sunbeams
       111, // Outdoor dining table next to private tennis court
       58,  // Spring-fed pond with pink/purple wildflowers, estate in background
       108, // Sun-drenched spring-fed pond, boulders, tall grasses
@@ -108,7 +106,6 @@ const gallerySectionConfig = [
       43,  // Cozy guest bedroom with queen bed and grey upholstered armchair
       39,  // Charming guest bedroom with twin beds and patterned quilts
       41,  // Children's bedroom with white twin bunk bed plus twin bed
-      44,  // Cozy nursery corner with grey armchair and baby crib
       35   // Bed detail showing pillows and Mount Mansfield chocolates welcome gift
     ],
   },

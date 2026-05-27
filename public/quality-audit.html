@@ -96,7 +96,7 @@
 
     .progress-bar-fill {
       height: 100%;
-      width: 42.6%;
+      width: 44.2%;
       background: var(--accent-gold);
       border-radius: 10px;
       transition: width 0.5s ease;
@@ -795,25 +795,25 @@
 
   <header>
     <h1>Eden Estate <span>Gallery Quality Audit</span></h1>
-    <p class="subtitle">Interactive visualization dashboard of all 92 active photos. We have categorized the images by resolution to identify low-quality or highly compressed vertical shots that should be queued for swapping.</p>
+    <p class="subtitle">Interactive visualization dashboard of all 89 active photos. We have categorized the images by resolution to identify low-quality or highly compressed vertical shots that should be queued for swapping.</p>
     
     <div class="progress-section">
       <div class="progress-header">
         <span style="font-weight: 600; color: var(--text-main);">AI-Enhanced Swapping Progress</span>
-        <span style="font-weight: 700; color: var(--accent-gold);">42.6% Complete</span>
+        <span style="font-weight: 700; color: var(--accent-gold);">44.2% Complete</span>
       </div>
       <div class="progress-bar-bg">
         <div class="progress-bar-fill"></div>
       </div>
       <div class="progress-stats">
-        <span>Swapped & Enhanced: <strong>23</strong> / 54 low-res files</span>
-        <span>Remaining Flagged: <strong>31</strong> photos left to replace</span>
+        <span>Swapped & Enhanced: <strong>23</strong> / 52 low-res files</span>
+        <span>Remaining Flagged: <strong>29</strong> photos left to replace</span>
       </div>
     </div>
 
     <div class="summary-badges">
       <div class="summary-card">
-        <div class="summary-num">92</div>
+        <div class="summary-num">89</div>
         <div class="summary-label">Total Gallery Photos</div>
       </div>
       <div class="summary-card" style="border-color: rgba(16, 185, 129, 0.4);">
@@ -821,7 +821,7 @@
         <div class="summary-label">Swapped & Enhanced</div>
       </div>
       <div class="summary-card" style="border-color: rgba(239, 68, 68, 0.4);">
-        <div class="summary-num" style="color: var(--color-low);">31</div>
+        <div class="summary-num" style="color: var(--color-low);">29</div>
         <div class="summary-label">Remaining Swaps</div>
       </div>
       <div class="summary-card" style="border-color: rgba(234, 179, 8, 0.4);">
@@ -829,7 +829,7 @@
         <div class="summary-label">Portfolio (1200px)</div>
       </div>
       <div class="summary-card" style="border-color: rgba(16, 185, 129, 0.4);">
-        <div class="summary-num" style="color: var(--color-pro);">16</div>
+        <div class="summary-num" style="color: var(--color-pro);">15</div>
         <div class="summary-label">Pro Grade (2560px)</div>
       </div>
     </div>
@@ -837,8 +837,8 @@
 
   
   <div class="audit-summary-box">
-    <h3>🔴 Swaps Left to Update (31 photos)</h3>
-    <p>The following 31 photos are still low-resolution (720px wide) and require swapping to reach Pro Grade luxury standards. You can copy the list below or check them off as you swap them out.</p>
+    <h3>🔴 Swaps Left to Update (29 photos)</h3>
+    <p>The following 29 photos are still low-resolution (720px wide) and require swapping to reach Pro Grade luxury standards. You can copy the list below or check them off as you swap them out.</p>
     <div class="remaining-tag-container">
       
         <span class="remaining-tag" onclick="copyText('3.avif')" style="cursor: pointer;" title="Click to copy filename">
@@ -883,9 +883,6 @@
         <span class="remaining-tag" onclick="copyText('35.avif')" style="cursor: pointer;" title="Click to copy filename">
           35.avif <span style="font-size: 0.65rem; opacity: 0.7;">📋</span>
         </span>
-        <span class="remaining-tag" onclick="copyText('44.avif')" style="cursor: pointer;" title="Click to copy filename">
-          44.avif <span style="font-size: 0.65rem; opacity: 0.7;">📋</span>
-        </span>
         <span class="remaining-tag" onclick="copyText('47.avif')" style="cursor: pointer;" title="Click to copy filename">
           47.avif <span style="font-size: 0.65rem; opacity: 0.7;">📋</span>
         </span>
@@ -922,9 +919,6 @@
         <span class="remaining-tag" onclick="copyText('88.avif')" style="cursor: pointer;" title="Click to copy filename">
           88.avif <span style="font-size: 0.65rem; opacity: 0.7;">📋</span>
         </span>
-        <span class="remaining-tag" onclick="copyText('89.avif')" style="cursor: pointer;" title="Click to copy filename">
-          89.avif <span style="font-size: 0.65rem; opacity: 0.7;">📋</span>
-        </span>
         <span class="remaining-tag" onclick="copyText('90.webp')" style="cursor: pointer;" title="Click to copy filename">
           90.webp <span style="font-size: 0.65rem; opacity: 0.7;">📋</span>
         </span>
@@ -939,11 +933,11 @@
 
   <div class="controls">
     <div class="tabs">
-      <button class="tab-btn active" onclick="filterGallery('all', this)">All (92)</button>
-      <button class="tab-btn" onclick="filterGallery('low', this)">Remaining Swaps (31)</button>
+      <button class="tab-btn active" onclick="filterGallery('all', this)">All (89)</button>
+      <button class="tab-btn" onclick="filterGallery('low', this)">Remaining Swaps (29)</button>
       <button class="tab-btn" style="color: var(--color-pro);" onclick="filterGallery('enhanced', this)">Swapped & Enhanced (23)</button>
       <button class="tab-btn" onclick="filterGallery('medium', this)">Portfolio (22)</button>
-      <button class="tab-btn" onclick="filterGallery('pro', this)">Pro Grade (39)</button>
+      <button class="tab-btn" onclick="filterGallery('pro', this)">Pro Grade (38)</button>
     </div>
 
     <div class="queue-panel">
@@ -2734,49 +2728,6 @@
       <div class="card flagged" data-quality="low" data-enhanced-time="0">
         
         <div class="img-container">
-          <img id="img-44.avif" src="/gallery/Eden-Site%20Photos/44.avif" alt="44.avif" loading="lazy">
-          <div class="badge-bar">
-            <span class="badge status-low">Low Res (720px)</span>
-            <div class="checkbox-container" title="Add to Swap Queue" onclick="toggleQueue('44.avif', event)">
-              <input type="checkbox" id="check-44.avif" onclick="event.stopPropagation(); syncCheckbox('44.avif')">
-            </div>
-          </div>
-        </div>
-      
-        <div class="card-body">
-          <div class="card-header">
-            <span class="filename">44.avif</span>
-            <button class="copy-btn" onclick="copyText('44.avif')">Copy File</button>
-          </div>
-          <div class="metadata-list">
-            <div class="meta-item">
-              <span class="meta-label">Resolution</span>
-              <span class="meta-value">720 x 960</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Size</span>
-              <span class="meta-value">98.7 KB</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Aspect Ratio</span>
-              <span class="meta-value">720:960</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Audit Recommendation</span>
-              <span class="meta-value status-low-text">🔴 Flagged for Swap</span>
-            </div>
-          </div>
-          <div class="caption-box" title="Close-up of a cozy nursery or bedroom corner. Shows a plush grey patterned armchair with matching ottoman, a wooden baby crib with a blanket draped over it, a large teddy bear on the floor, and warm beige walls. [Season: Indoor] [Lighting: Soft, gentle daylight] [Content: Nursery corner, armchair and ottoman, baby crib, teddy bear]">
-            Close-up of a cozy nursery or bedroom corner. Shows a plush grey patterned armchair with matching ottoman, a wooden baby crib with a blanket draped over it, a large teddy bear on the floor, and warm beige walls. [Season: Indoor] [Lighting: Soft, gentle daylight] [Content: Nursery corner, armchair and ottoman, baby crib, teddy bear]
-          </div>
-          <div class="card-footer" style="flex-direction: column; gap: 8px;">
-            <a href="/gallery/Eden-Site%20Photos/44.avif" target="_blank" class="view-btn">View Original</a>
-          </div>
-        </div>
-      </div>
-      <div class="card flagged" data-quality="low" data-enhanced-time="0">
-        
-        <div class="img-container">
           <img id="img-47.avif" src="/gallery/Eden-Site%20Photos/47.avif" alt="47.avif" loading="lazy">
           <div class="badge-bar">
             <span class="badge status-low">Low Res (720px)</span>
@@ -4062,49 +4013,6 @@
       <div class="card flagged" data-quality="low" data-enhanced-time="0">
         
         <div class="img-container">
-          <img id="img-89.avif" src="/gallery/Eden-Site%20Photos/89.avif" alt="89.avif" loading="lazy">
-          <div class="badge-bar">
-            <span class="badge status-low">Low Res (720px)</span>
-            <div class="checkbox-container" title="Add to Swap Queue" onclick="toggleQueue('89.avif', event)">
-              <input type="checkbox" id="check-89.avif" onclick="event.stopPropagation(); syncCheckbox('89.avif')">
-            </div>
-          </div>
-        </div>
-      
-        <div class="card-body">
-          <div class="card-header">
-            <span class="filename">89.avif</span>
-            <button class="copy-btn" onclick="copyText('89.avif')">Copy File</button>
-          </div>
-          <div class="metadata-list">
-            <div class="meta-item">
-              <span class="meta-label">Resolution</span>
-              <span class="meta-value">720 x 960</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Size</span>
-              <span class="meta-value">110.8 KB</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Aspect Ratio</span>
-              <span class="meta-value">720:960</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Audit Recommendation</span>
-              <span class="meta-value status-low-text">🔴 Flagged for Swap</span>
-            </div>
-          </div>
-          <div class="caption-box" title="Morning scene of several metal mesh lounge chairs lined up along a swimming pool deck. Heavy mist or morning fog rises from the surrounding gardens and mature green trees under soft, early morning sun rays. [Season: Summer] [Lighting: Soft, misty early morning light] [Content: Swimming pool deck, lounge chairs, rising mist, morning sunbeams]">
-            Morning scene of several metal mesh lounge chairs lined up along a swimming pool deck. Heavy mist or morning fog rises from the surrounding gardens and mature green trees under soft, early morning sun rays. [Season: Summer] [Lighting: Soft, misty early morning light] [Content: Swimming pool deck, lounge chairs, rising mist, morning sunbeams]
-          </div>
-          <div class="card-footer" style="flex-direction: column; gap: 8px;">
-            <a href="/gallery/Eden-Site%20Photos/89.avif" target="_blank" class="view-btn">View Original</a>
-          </div>
-        </div>
-      </div>
-      <div class="card flagged" data-quality="low" data-enhanced-time="0">
-        
-        <div class="img-container">
           <img id="img-90.webp" src="/gallery/Eden-Site%20Photos/90.webp" alt="90.webp" loading="lazy">
           <div class="badge-bar">
             <span class="badge status-low">Low Res (720px)</span>
@@ -5029,49 +4937,6 @@
           </div>
           <div class="card-footer" style="flex-direction: column; gap: 8px;">
             <a href="/gallery/Eden-Site%20Photos/111.avif" target="_blank" class="view-btn">View Original</a>
-          </div>
-        </div>
-      </div>
-      <div class="card" data-quality="pro" data-enhanced-time="0">
-        
-        <div class="img-container">
-          <img id="img-112.avif" src="/gallery/Eden-Site%20Photos/112.avif" alt="112.avif" loading="lazy">
-          <div class="badge-bar">
-            <span class="badge status-pro">Pro Grade (2560px)</span>
-            <div class="checkbox-container" title="Add to Swap Queue" onclick="toggleQueue('112.avif', event)">
-              <input type="checkbox" id="check-112.avif" onclick="event.stopPropagation(); syncCheckbox('112.avif')">
-            </div>
-          </div>
-        </div>
-      
-        <div class="card-body">
-          <div class="card-header">
-            <span class="filename">112.avif</span>
-            <button class="copy-btn" onclick="copyText('112.avif')">Copy File</button>
-          </div>
-          <div class="metadata-list">
-            <div class="meta-item">
-              <span class="meta-label">Resolution</span>
-              <span class="meta-value">2560 x 1441</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Size</span>
-              <span class="meta-value">405.2 KB</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Aspect Ratio</span>
-              <span class="meta-value">2560:1441</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Audit Recommendation</span>
-              <span class="meta-value status-pro-text">Excellent</span>
-            </div>
-          </div>
-          <div class="caption-box" title="Panoramic high-altitude aerial view of the estate during summer. Shows the main grey-roofed house with circular driveway, the tennis court on the far left, the spring-fed pond on the left, surrounded by vast green lawns and a dense evergreen forest extending to a massive mountain range under a clear blue sky. [Season: Summer] [Lighting: Bright, direct summer daylight] [Content: Panoramic aerial view, estate exterior, tennis court, spring pond, forest landscape]">
-            Panoramic high-altitude aerial view of the estate during summer. Shows the main grey-roofed house with circular driveway, the tennis court on the far left, the spring-fed pond on the left, surrounded by vast green lawns and a dense evergreen forest extending to a massive mountain range under a clear blue sky. [Season: Summer] [Lighting: Bright, direct summer daylight] [Content: Panoramic aerial view, estate exterior, tennis court, spring pond, forest landscape]
-          </div>
-          <div class="card-footer" style="flex-direction: column; gap: 8px;">
-            <a href="/gallery/Eden-Site%20Photos/112.avif" target="_blank" class="view-btn">View Original</a>
           </div>
         </div>
       </div>

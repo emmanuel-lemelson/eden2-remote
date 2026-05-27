@@ -9,11 +9,9 @@
       86,
       113,
       87,
-      112,
       3,
       88,
       69,
-      89,
       111,
       58,
       108,
@@ -66,14 +64,6 @@
         "height": 960
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/112.avif",
-        "alt": "Panoramic high-altitude aerial view of the estate during summer. Shows the main grey-roofed house with circular driveway, the tennis court on the far left, the spring-fed pond on the left, surrounded by vast green lawns and a dense evergreen forest extending to a massive mountain range under a clear blue sky. [Season: Summer] [Lighting: Bright, direct summer daylight] [Content: Panoramic aerial view, estate exterior, tennis court, spring pond, forest landscape]",
-        "srcset": "/gallery/Eden-Site%20Photos/112@400w.webp 400w, /gallery/Eden-Site%20Photos/112@800w.webp 800w, /gallery/Eden-Site%20Photos/112@1200w.webp 1200w, /gallery/Eden-Site%20Photos/112@1600w.webp 1600w, /gallery/Eden-Site%20Photos/112@2000w.webp 2000w, /gallery/Eden-Site%20Photos/112@2400w.webp 2400w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 2560,
-        "height": 1441
-      },
-      {
         "src": "/gallery/Eden-Site%20Photos/3.avif",
         "alt": "High-angle aerial view of the estate's front approach at dusk. Shows the circular gravel driveway with a central landscaped roundabout containing a mature tree, the front facade of the light-beige house with circular window accents, and a tennis court in the background, set against soft yellow-orange twilight mountains and green forests. [Season: Summer] [Lighting: Warm twilight, golden hour] [Content: Aerial view, front entrance, circular driveway, tennis court, landscape exterior]",
         "srcset": "/gallery/Eden-Site%20Photos/3@400w.webp 400w, /gallery/Eden-Site%20Photos/3@800w.webp 800w",
@@ -96,14 +86,6 @@
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 1200,
         "height": 900
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/89.avif",
-        "alt": "Morning scene of several metal mesh lounge chairs lined up along a swimming pool deck. Heavy mist or morning fog rises from the surrounding gardens and mature green trees under soft, early morning sun rays. [Season: Summer] [Lighting: Soft, misty early morning light] [Content: Swimming pool deck, lounge chairs, rising mist, morning sunbeams]",
-        "srcset": "/gallery/Eden-Site%20Photos/89@400w.webp 400w, /gallery/Eden-Site%20Photos/89@800w.webp 800w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
       },
       {
         "src": "/gallery/Eden-Site%20Photos/111.avif",
@@ -464,7 +446,6 @@
       43,
       39,
       41,
-      44,
       35
     ],
     "images": [
@@ -547,14 +528,6 @@
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 1200,
         "height": 800
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/44.avif",
-        "alt": "Close-up of a cozy nursery or bedroom corner. Shows a plush grey patterned armchair with matching ottoman, a wooden baby crib with a blanket draped over it, a large teddy bear on the floor, and warm beige walls. [Season: Indoor] [Lighting: Soft, gentle daylight] [Content: Nursery corner, armchair and ottoman, baby crib, teddy bear]",
-        "srcset": "/gallery/Eden-Site%20Photos/44@400w.webp 400w, /gallery/Eden-Site%20Photos/44@800w.webp 800w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
       },
       {
         "src": "/gallery/Eden-Site%20Photos/35.avif",
