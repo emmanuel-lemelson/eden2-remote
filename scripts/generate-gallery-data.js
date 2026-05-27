@@ -104,6 +104,7 @@ const gallerySectionConfig = [
     directory: "Eden-Site Photos",
     photos: [
       102, // Palatial Master Suite with king bed and private deck exit (Cover)
+      33,  // Sunlit window seat alcove in a guest bedroom (reading nook)
       36,  // Spacious custom walk-in dressing room/closet with marble island
       37,  // Spacious guest bedroom with king bed and streaming sunbeams
       40,  // Guest bedroom under vaulted ceiling with arched window
@@ -113,7 +114,6 @@ const gallerySectionConfig = [
       39,  // Charming guest bedroom with twin beds and patterned quilts
       41,  // Children's bedroom with white twin bunk bed plus twin bed
       44,  // Cozy nursery corner with grey armchair and baby crib
-      33,  // Sunlit window seat alcove in a guest bedroom (reading nook)
       35   // Bed detail showing pillows and Mount Mansfield chocolates welcome gift
     ],
   },

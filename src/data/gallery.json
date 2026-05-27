@@ -500,6 +500,7 @@
     "directory": "Eden-Site Photos",
     "photos": [
       102,
+      33,
       36,
       37,
       40,
@@ -509,7 +510,6 @@
       39,
       41,
       44,
-      33,
       35
     ],
     "images": [
@@ -522,12 +522,20 @@
         "height": 1707
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/36.avif",
-        "alt": "Spacious custom walk-in dressing room or closet. Features a large central marble-topped island with drawers, a mirrored ceiling light fixture, custom wood drawers, shelves, and built-in hanging wardrobes. [Season: Indoor] [Lighting: Bright, pristine white light] [Content: Walk-in closet, dressing island, custom wardrobes, storage room]",
-        "srcset": "/gallery/Eden-Site%20Photos/36@400w.webp 400w, /gallery/Eden-Site%20Photos/36@800w.webp 800w, /gallery/Eden-Site%20Photos/36@1200w.webp 1200w",
+        "src": "/gallery/Eden-Site%20Photos/33.avif",
+        "alt": "A sunlit window seat alcove in a guest bedroom. Features a blue cushion on the built-in bench, white trim paneling, and two wall sconces on either side. The window looks out onto green summer trees. [Season: Summer] [Lighting: Bright, soft daylight] [Content: Window seat, bedroom alcove, wall sconces, reading nook]",
+        "srcset": "/gallery/Eden-Site%20Photos/33@400w.webp 400w, /gallery/Eden-Site%20Photos/33@800w.webp 800w, /gallery/Eden-Site%20Photos/33@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 1200,
         "height": 800
+      },
+      {
+        "src": "/gallery/enhanced/36.avif",
+        "alt": "Spacious custom walk-in dressing room or closet. Features a large central marble-topped island with drawers, a mirrored ceiling light fixture, custom wood drawers, shelves, and built-in hanging wardrobes. [Season: Indoor] [Lighting: Bright, pristine white light] [Content: Walk-in closet, dressing island, custom wardrobes, storage room]",
+        "srcset": "/gallery/enhanced/36@400w.webp 400w, /gallery/enhanced/36@800w.webp 800w, /gallery/enhanced/36@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1024,
+        "height": 1024
       },
       {
         "src": "/gallery/Eden-Site%20Photos/37.avif",
@@ -592,14 +600,6 @@
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 720,
         "height": 960
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/33.avif",
-        "alt": "A sunlit window seat alcove in a guest bedroom. Features a blue cushion on the built-in bench, white trim paneling, and two wall sconces on either side. The window looks out onto green summer trees. [Season: Summer] [Lighting: Bright, soft daylight] [Content: Window seat, bedroom alcove, wall sconces, reading nook]",
-        "srcset": "/gallery/Eden-Site%20Photos/33@400w.webp 400w, /gallery/Eden-Site%20Photos/33@800w.webp 800w, /gallery/Eden-Site%20Photos/33@1200w.webp 1200w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1200,
-        "height": 800
       },
       {
         "src": "/gallery/Eden-Site%20Photos/35.avif",
@@ -893,12 +893,12 @@
         "height": 960
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/84.avif",
+        "src": "/gallery/enhanced/84.avif",
         "alt": "A picturesque, rustic wooden chapel or small guest cottage with a stone foundation and a small cupola roof, standing in a snowy pine forest. Sun rays filter through the trees in the background. [Season: Winter] [Lighting: Bright, back-lit winter sunlight] [Content: Wooden chapel, snow forest, rustic cabin, winter sunbeams]",
-        "srcset": "/gallery/Eden-Site%20Photos/84@400w.webp 400w, /gallery/Eden-Site%20Photos/84@800w.webp 800w",
+        "srcset": "/gallery/enhanced/84@400w.webp 400w, /gallery/enhanced/84@800w.webp 800w, /gallery/enhanced/84@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 540
+        "width": 1024,
+        "height": 1024
       },
       {
         "src": "/gallery/Eden-Site%20Photos/63.avif",
