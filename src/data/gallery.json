@@ -63,12 +63,12 @@
         "height": 900
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/86.avif",
+        "src": "/gallery/enhanced/86.avif",
         "alt": "A gorgeous high-angle view of the estate house nestled in vibrant red and orange autumn foliage. In the background are rolling hills/mountains under a colorful pink and purple sunset sky. [Season: Autumn] [Lighting: Warm, golden sunset light] [Content: Autumn aerial, colorful trees, estate house, mountain sunset]",
-        "srcset": "/gallery/Eden-Site%20Photos/86@400w.webp 400w, /gallery/Eden-Site%20Photos/86@800w.webp 800w",
+        "srcset": "/gallery/enhanced/86@400w.webp 400w, /gallery/enhanced/86@800w.webp 800w, /gallery/enhanced/86@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 406
+        "width": 1024,
+        "height": 1024
       },
       {
         "src": "/gallery/Eden-Site%20Photos/87.avif",
@@ -299,12 +299,12 @@
         "height": 960
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/12.avif",
+        "src": "/gallery/enhanced/12.avif",
         "alt": "Close-up shot of several birch firewood logs stacked neatly inside a heavy, polished brass or copper log bucket. Set against a dark wood paneled door frame and stone wall. [Season: Winter/Autumn] [Lighting: Warm, localized side lighting] [Content: Firewood, copper bucket, fireplace accessories, cozy details]",
-        "srcset": "/gallery/Eden-Site%20Photos/12@400w.webp 400w, /gallery/Eden-Site%20Photos/12@800w.webp 800w",
+        "srcset": "/gallery/enhanced/12@400w.webp 400w, /gallery/enhanced/12@800w.webp 800w, /gallery/enhanced/12@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
+        "width": 1024,
+        "height": 1024
       },
       {
         "src": "/gallery/Eden-Site%20Photos/9.avif",
@@ -339,28 +339,28 @@
         "height": 540
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/15.avif",
+        "src": "/gallery/enhanced/15.avif",
         "alt": "Macro detail shot of the highly ornate, gold-leaf and silver hand-carved decorative woodwork on a furniture crown or mantelpiece. Highlights a classic hand-carved female bust face medallion in the center surrounded by detailed floral and scroll filigree. [Season: Indoor] [Lighting: Low-key lighting, emphasizing metallic texture and high-relief carving] [Content: Wood carving, ornate detail, craftsmanship, antique furniture]",
-        "srcset": "/gallery/Eden-Site%20Photos/15@400w.webp 400w, /gallery/Eden-Site%20Photos/15@800w.webp 800w",
+        "srcset": "/gallery/enhanced/15@400w.webp 400w, /gallery/enhanced/15@800w.webp 800w, /gallery/enhanced/15@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
+        "width": 1024,
+        "height": 1024
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/20.avif",
+        "src": "/gallery/enhanced/20.avif",
         "alt": "Interior entry hallway view showcasing a polished dark wood console table with decorative drawer pulls, standing under a large oval mirror with an ornate frame. A table lamp with a crystal stand and white shade sits on the console table next to white wainscoting panels on cream walls. [Season: Indoor] [Lighting: Warm lamp light and soft side daylight] [Content: Entryway console, antique mirror, table lamp, hallway interior]",
-        "srcset": "/gallery/Eden-Site%20Photos/20@400w.webp 400w, /gallery/Eden-Site%20Photos/20@800w.webp 800w",
+        "srcset": "/gallery/enhanced/20@400w.webp 400w, /gallery/enhanced/20@800w.webp 800w, /gallery/enhanced/20@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
+        "width": 1024,
+        "height": 1024
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/19.avif",
+        "src": "/gallery/enhanced/19.avif",
         "alt": "Close-up detail of a silver-threaded damask upholstered sofa with decorative pillows, set against classic light beige walls with white wainscoting and crown molding. A silver candlestick stands on a side console next to the sofa. [Season: Indoor] [Lighting: Diffused, soft indoor light] [Content: Sofa close-up, wall paneling, elegant home decor]",
-        "srcset": "/gallery/Eden-Site%20Photos/19@400w.webp 400w, /gallery/Eden-Site%20Photos/19@800w.webp 800w",
+        "srcset": "/gallery/enhanced/19@400w.webp 400w, /gallery/enhanced/19@800w.webp 800w, /gallery/enhanced/19@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
+        "width": 1024,
+        "height": 1024
       },
       {
         "src": "/gallery/Eden-Site%20Photos/30.avif",
@@ -379,12 +379,12 @@
         "height": 1024
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/16.avif",
+        "src": "/gallery/enhanced/16.avif",
         "alt": "Cozy, warm study and media room featuring a large flat-screen TV showing a blue title screen 'TREES OF PEACE' mounted inside a custom white-distressed media unit. A plush leather armchair is in the corner, and a tall built-in wooden bookshelf filled with books frames the space under soft recessed lights. [Season: Autumn/Winter] [Lighting: Soft, warm recessed spotlights] [Content: Study room, media console, television, library bookshelf, cozy interior]",
-        "srcset": "/gallery/Eden-Site%20Photos/16@400w.webp 400w, /gallery/Eden-Site%20Photos/16@800w.webp 800w",
+        "srcset": "/gallery/enhanced/16@400w.webp 400w, /gallery/enhanced/16@800w.webp 800w, /gallery/enhanced/16@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
+        "width": 1024,
+        "height": 1024
       },
       {
         "src": "/gallery/Eden-Site%20Photos/57.avif",
@@ -478,20 +478,20 @@
         "height": 480
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/13.avif",
+        "src": "/gallery/enhanced/13.avif",
         "alt": "Close-up detail of a formal dining or conference table. Shows a long polished dark wood table set with a bottle of red wine and two crystal wine glasses, surrounded by high-backed classic chairs upholstered in premium brown leather with brass nailhead trim. [Season: Autumn/Winter] [Lighting: Soft, warm ambient dining light] [Content: Dining table close-up, leather chairs, wine glasses, formal dining interior]",
-        "srcset": "/gallery/Eden-Site%20Photos/13@400w.webp 400w, /gallery/Eden-Site%20Photos/13@800w.webp 800w",
+        "srcset": "/gallery/enhanced/13@400w.webp 400w, /gallery/enhanced/13@800w.webp 800w, /gallery/enhanced/13@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
+        "width": 1024,
+        "height": 1024
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/17.avif",
+        "src": "/gallery/enhanced/17.avif",
         "alt": "Brightly lit casual dining nook inside a multi-windowed bay alcove. Features a round dark wood table, four upholstered chairs with high backs, and an ornate dark metal chandelier. Large windows look out on a green lawn and pink blossoming trees. [Season: Spring] [Lighting: Bright, fresh morning daylight] [Content: Breakfast nook, dining table, bay window, spring garden exterior]",
-        "srcset": "/gallery/Eden-Site%20Photos/17@400w.webp 400w, /gallery/Eden-Site%20Photos/17@800w.webp 800w",
+        "srcset": "/gallery/enhanced/17@400w.webp 400w, /gallery/enhanced/17@800w.webp 800w, /gallery/enhanced/17@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 480
+        "width": 1024,
+        "height": 1024
       },
       {
         "src": "/gallery/Eden-Site%20Photos/29.avif",
@@ -834,12 +834,12 @@
         "height": 480
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/96.avif",
+        "src": "/gallery/enhanced/96.avif",
         "alt": "Professional home fitness center fully equipped with modern cardio gear including a treadmill, stationary bikes, and an elliptical machine, set on a wood floor with rubber mats. Large windows look out on green lawns. [Season: Summer] [Lighting: Bright, natural daylight] [Content: Home gym, fitness center, treadmill, cardio machines, gym interior]",
-        "srcset": "/gallery/Eden-Site%20Photos/96@400w.webp 400w, /gallery/Eden-Site%20Photos/96@800w.webp 800w",
+        "srcset": "/gallery/enhanced/96@400w.webp 400w, /gallery/enhanced/96@800w.webp 800w, /gallery/enhanced/96@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 540
+        "width": 1024,
+        "height": 1024
       },
       {
         "src": "/gallery/Eden-Site%20Photos/97.avif",
@@ -954,12 +954,12 @@
         "height": 1080
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/14.avif",
+        "src": "/gallery/enhanced/14.avif",
         "alt": "Indoor portrait-style shot of a bride in a white lace wedding gown holding a floral bouquet, standing on a staircase next to a groom in a dark tuxedo. A large window and white wooden railings are visible in the background, creating a romantic and elegant setting. [Season: Summer/Spring] [Lighting: Soft, diffused natural daylight] [Content: Wedding couple, staircase, formal attire, indoor portrait]",
-        "srcset": "/gallery/Eden-Site%20Photos/14@400w.webp 400w, /gallery/Eden-Site%20Photos/14@800w.webp 800w",
+        "srcset": "/gallery/enhanced/14@400w.webp 400w, /gallery/enhanced/14@800w.webp 800w, /gallery/enhanced/14@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 1080
+        "width": 1024,
+        "height": 1024
       },
       {
         "src": "/gallery/Eden-Site%20Photos/21.avif",

@@ -49,7 +49,7 @@ export default function GalleryPage() {
       </section>
 
       <section className="pb-12">
-        <GallerySectionGrid sections={gallerySections} variant="grouped" />
+        <GallerySectionGrid sections={gallerySections} />
       </section>
 
       <section className="lux-section pt-0">
