@@ -6,6 +6,7 @@ Please enhance the following photo(s) to professional DSLR quality matching the 
 ### Context & Staging Guidelines:
 1. **Preserve Real Architecture:** Perform image-to-image upscaling. Do NOT change the physical room structure, furniture placement, or layout of the real photos. Only enhance quality, fix imperfections, improve clarity, and enrich color.
 2. **Align Visual Vibe:** Match the warm golden hour sunset, soft pink/purple twilight glows, crisp textures, and professional staging of existing Pro Grade photos (if appropriate for the photo and its description).
+3. **Dynamic Category Cohesion (Style Matching):** Before enhancing a target photo, inspect other existing "Pro Grade" images within the same gallery category (e.g., Bedrooms, Spa & Bathrooms). Analyze their color palette, contrast levels, light direction, and ambient temperature (e.g., warm twilight glow vs. bright natural daytime light). Dynamically adjust your upscale prompt so that the newly enhanced image feels like it was taken by the same photographer in the same session, ensuring complete visual harmony across that section of the gallery.
 
 ### Automated Pipeline Steps (Fast Batch Mode):
 
