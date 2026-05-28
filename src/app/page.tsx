@@ -125,6 +125,15 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          <div className="mt-4 flex justify-center">
+            <Link
+              href="/contact"
+              className="inline-flex items-center rounded-full bg-[#111111] px-8 py-3.5 text-[0.95rem] font-semibold !text-white transition duration-200 hover:bg-stone-800 active:scale-[0.98]"
+            >
+              Reserve Now
+            </Link>
+          </div>
         </div>
       </section>
 
