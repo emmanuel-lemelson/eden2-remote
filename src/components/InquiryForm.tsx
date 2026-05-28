@@ -274,7 +274,7 @@ export function InquiryForm({ endpoint = "https://formspree.io/f/mlgvzjrj" }: In
           <label className="flex h-5 items-center text-[0.68rem] font-extrabold uppercase tracking-wider text-stone-900">
             Requested Stay
           </label>
-          <div className="rounded-xl border border-stone-200/60 bg-white/60 p-4">
+          <div className="rounded-xl border border-stone-200/60 bg-white/60 p-3 sm:p-4">
             {!formData.flexibleDates ? (
               /* Specific Dates Mode */
               <div className="space-y-4">
@@ -290,7 +290,7 @@ export function InquiryForm({ endpoint = "https://formspree.io/f/mlgvzjrj" }: In
                       name="checkIn"
                       value={formData.checkIn}
                       onChange={handleChange}
-                      className="w-full h-[46px] rounded-lg border border-stone-200 bg-white px-4 text-base md:text-sm text-stone-900 transition focus:border-stone-400 focus:outline-none focus:ring-0"
+                      className="w-full h-[46px] appearance-none rounded-lg border border-stone-200 bg-white px-3 md:px-4 text-base md:text-sm text-stone-900 transition focus:border-stone-400 focus:outline-none focus:ring-0"
                     />
                   </div>
  
@@ -305,7 +305,7 @@ export function InquiryForm({ endpoint = "https://formspree.io/f/mlgvzjrj" }: In
                       name="checkOut"
                       value={formData.checkOut}
                       onChange={handleChange}
-                      className="w-full h-[46px] rounded-lg border border-stone-200 bg-white px-4 text-base md:text-sm text-stone-900 transition focus:border-stone-400 focus:outline-none focus:ring-0"
+                      className="w-full h-[46px] appearance-none rounded-lg border border-stone-200 bg-white px-3 md:px-4 text-base md:text-sm text-stone-900 transition focus:border-stone-400 focus:outline-none focus:ring-0"
                     />
                   </div>
                 </div>
