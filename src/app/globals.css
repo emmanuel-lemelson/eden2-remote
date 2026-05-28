@@ -299,3 +299,16 @@ a {
   }
 }
 
+/* Custom Autofill Styles to override default browser blue backgrounds */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus,
+select:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px #ffffff inset !important;
+  -webkit-text-fill-color: #1c1917 !important; /* stone-900 */
+  transition: background-color 5000s ease-in-out 0s;
+}

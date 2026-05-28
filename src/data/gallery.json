@@ -673,6 +673,7 @@
       94,
       61,
       62,
+      114,
       83,
       82,
       14,
@@ -775,6 +776,14 @@
         "src": "/gallery/enhanced/62.avif",
         "alt": "Joyful winter scene of a parent pulling two young children on a sled down a snowy slope under a soft, golden winter sky. [Season: Winter] [Lighting: Soft winter twilight/sunset] [Content: Sledding, snow hill, family activity, winter fun]",
         "srcset": "/gallery/enhanced/62@400w.webp 400w, /gallery/enhanced/62@800w.webp 800w, /gallery/enhanced/62@1200w.webp 1200w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "src": "/gallery/Eden-Site%20Photos/114.jpg",
+        "alt": "Stowe Mountain Resort Gondola transporting skiers up the snow-covered slopes during winter. Captures a beautiful active winter recreation day with bright sunshine and magnificent views of the snow-dusted peak in the background. [Season: Winter] [Lighting: Bright, direct winter daylight] [Content: Stowe Mountain Resort, gondola lift, skiers, ski slopes, winter sports]",
+        "srcset": "/gallery/Eden-Site%20Photos/114@400w.webp 400w, /gallery/Eden-Site%20Photos/114@800w.webp 800w, /gallery/Eden-Site%20Photos/114@1200w.webp 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 1024,
         "height": 1024

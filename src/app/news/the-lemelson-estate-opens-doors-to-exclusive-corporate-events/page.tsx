@@ -238,7 +238,7 @@ export default function CorporateEventsArticle() {
                 <p>
                   <a
                     href="mailto:admin@lemelsoncapital.com"
-                    className="text-blue-600 hover:text-blue-800 hover:underline transition-colors"
+                    className="font-bold text-blue-600 hover:text-blue-800 hover:underline transition-colors"
                   >
                     admin@lemelsoncapital.com
                   </a>

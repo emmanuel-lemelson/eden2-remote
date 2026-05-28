@@ -203,7 +203,7 @@ export default function Home() {
           <div className="flex justify-center">
             <Link
               href="/gallery"
-              className="inline-flex items-center rounded-full border border-stone-300 bg-white px-7 py-2.5 text-xs font-semibold uppercase tracking-[0.4em] text-stone-800 transition hover:border-stone-400 hover:bg-white/80"
+              className="inline-flex items-center rounded-full bg-[#111111] px-8 py-3.5 text-[0.95rem] font-semibold !text-white transition duration-200 hover:bg-stone-800 active:scale-[0.98]"
             >
               View More Photos
             </Link>
@@ -214,7 +214,6 @@ export default function Home() {
       <section className="lux-section !pt-4 md:!pt-6 bg-white/80 animate-fade-up">
         <div className="lux-container flex flex-col items-center gap-8">
           <div className="flex flex-col items-center gap-4 text-center max-w-3xl">
-            <span className="text-xs font-bold uppercase tracking-[0.32em] text-stone-500">Reviews</span>
             <h2 className="text-4xl font-semibold text-stone-900 md:text-5xl">What Our Guests Say</h2>
             <div className="mt-2 flex justify-center">
               <PerfectReviewsBadge reviewCount={58} countLabel="REVIEWS" />
@@ -228,7 +227,7 @@ export default function Home() {
           <div className="mt-2 flex justify-center">
             <Link
               href="/reviews"
-              className="inline-flex items-center rounded-full border border-stone-300 bg-white px-7 py-2.5 text-xs font-semibold uppercase tracking-[0.4em] text-stone-800 transition hover:border-stone-400 hover:bg-white/80"
+              className="inline-flex items-center rounded-full bg-[#111111] px-8 py-3.5 text-[0.95rem] font-semibold !text-white transition duration-200 hover:bg-stone-800 active:scale-[0.98]"
             >
               Read More Reviews
             </Link>
@@ -247,25 +246,15 @@ export default function Home() {
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center rounded-full border border-stone-300 bg-white px-8 py-3 text-xs font-semibold uppercase tracking-[0.4em] text-stone-800 transition hover:border-stone-400 hover:bg-white/80"
+              className="inline-flex items-center rounded-full bg-[#111111] px-8 py-3.5 text-[0.95rem] font-semibold !text-white transition duration-200 hover:bg-stone-800 active:scale-[0.98]"
             >
-              Start a Conversation
+              Reserve Now
             </Link>
             <Link
               href="/gallery"
-              className="inline-flex items-center gap-2 text-sm font-medium text-stone-700 transition hover:text-stone-900"
+              className="inline-flex items-center rounded-full border border-black bg-transparent px-8 py-3.5 text-[0.95rem] font-semibold text-black transition duration-200 hover:bg-black/5 active:scale-[0.98]"
             >
               Explore the Estate
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                className="h-4 w-4"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M13 6l6 6-6 6" />
-              </svg>
             </Link>
           </div>
         </div>

@@ -145,6 +145,7 @@ const gallerySectionConfig = [
       94,  // Four guests cross-country skiing along snow-covered forest path
       61,  // Guest cross-country skiing under warm winter golden hour sunset
       62,  // Parent pulling two kids on a sled down a snowy slope
+      114, // Stowe Mountain Resort Winter Gondola with Skiers
       83,  // Bride and groom embracing in snow courtyard of estate
       82,  // Winter bride in white wedding gown and white fur wrap
       14,  // Indoor portrait of bride and groom on grand wooden staircase

@@ -21,7 +21,7 @@ export function Footer() {
             <div className="flex flex-col gap-1">
               <a
                 href="mailto:admin@lemelsoncapital.com"
-                className="break-all text-stone-700 transition hover:text-stone-900"
+                className="break-all font-bold text-stone-700 transition hover:text-stone-900"
               >
                 admin@lemelsoncapital.com
               </a>

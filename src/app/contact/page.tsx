@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { WhereToFindUs } from "@/components/WhereToFindUs";
+import { InquiryForm } from "@/components/InquiryForm";
 
 export const metadata: Metadata = {
   title: "Contact | Eden Estate Stowe",
@@ -27,54 +28,36 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div>
-      <section className="pt-12 pb-12">
+    <div className="bg-white">
+      <section className="pt-12 pb-6">
         <div className="lux-container max-w-4xl">
-          <h1 className="text-4xl font-semibold text-stone-900 md:text-5xl">
+          <h1 className="text-3xl font-medium text-stone-900 md:text-4xl tracking-tight">
             Plan Your Stay
           </h1>
-          <p className="mt-4 text-base text-stone-700">
-            Planning a family gathering, wedding, or retreat? Tell us your dates, guest count, and plans—our team will work with you to curate an effortless, five-star stay.
+          <p className="mt-3 text-sm text-stone-600 max-w-xl leading-relaxed">
+            Please submit your desired dates and guest details below to check availability at Eden. You can also reach us directly via email at{" "}
+            <a 
+              href="mailto:admin@lemelsoncapital.com" 
+              className="font-bold text-stone-900 hover:text-stone-700 transition underline underline-offset-4"
+            >
+              admin@lemelsoncapital.com
+            </a>.
           </p>
         </div>
       </section>
 
-      {/* Contact Details and Platforms */}
-      <section className="pb-12">
+      {/* Main Inquiry Form */}
+      <section className="pb-10">
         <div className="lux-container max-w-4xl">
-          {/* Contact methods */}
-          <div className="rounded-[2.5rem] border border-[rgba(214,202,183,0.85)] bg-gradient-to-br from-white via-[rgba(237,227,208,0.75)] to-[rgba(225,212,186,0.55)] p-5 shadow-[0_28px_60px_-38px_rgba(58,45,20,0.45)] sm:p-8">
-            <p className="text-[0.68rem] uppercase tracking-[0.4em] text-stone-500 sm:text-xs">Reach Us</p>
-            <div className="mt-4 flex justify-center sm:mt-5">
-              <a
-                href="mailto:admin@lemelsoncapital.com"
-                className="group relative flex w-full max-w-[28rem] items-center gap-4 overflow-hidden rounded-[28px] border border-white/70 bg-white/80 px-4 py-4 shadow-[0_24px_50px_-40px_rgba(58,45,20,0.55)] backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_28px_60px_-38px_rgba(58,45,20,0.6)] sm:gap-5 sm:rounded-[32px] sm:px-6 sm:py-5"
-                aria-label="Email admin@lemelsoncapital.com"
-              >
-                <span className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/75 via-transparent to-[rgba(232,218,192,0.6)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" aria-hidden />
-                <div className="relative flex flex-1 items-center gap-3">
-                  <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-[rgba(214,202,183,0.32)] text-[var(--color-gold)] shadow-inner shadow-white/40 sm:h-11 sm:w-11">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-4.5 w-4.5 sm:h-5 sm:w-5"><path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5H4.5A2.25 2.25 0 002.25 6.75m19.5 0v.243a2.25 2.25 0 01-1.03 1.9l-6.75 4.218a2.25 2.25 0 01-2.34 0L4.5 8.893a2.25 2.25 0 01-1.03-1.9V6.75"/></svg>
-                  </span>
-                  <div className="space-y-1">
-                    <p className="text-[0.62rem] uppercase tracking-[0.42em] text-[var(--color-gold)] sm:text-[0.68rem]">Email</p>
-                    <p className="text-base font-semibold text-[var(--color-charcoal)] break-words sm:text-xl">
-                      <span className="inline-block max-w-full truncate align-middle sm:max-w-none">
-                        admin@lemelsoncapital.com
-                      </span>
-                    </p>
-                  </div>
-                </div>
-                <span className="relative ml-auto flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full border border-white/70 bg-white/85 text-[var(--color-charcoal)] transition duration-300 group-hover:bg-[var(--color-charcoal)] group-hover:text-white sm:h-10 sm:w-10">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-4 w-4"><path strokeLinecap="round" strokeLinejoin="round" d="M6 12h12M12 6l6 6-6 6"/></svg>
-                </span>
-              </a>
-            </div>
+          <InquiryForm endpoint="https://formspree.io/f/mlgvzjrj" />
+        </div>
+      </section>
 
-            {/* Platforms */}
-            <div className="mt-8">
-              <WhereToFindUs title="Find us on" />
-            </div>
+      {/* Alternative Platforms */}
+      <section className="pb-16 pt-2">
+        <div className="lux-container max-w-4xl">
+          <div className="rounded-2xl border border-stone-200 bg-stone-50/50 p-6 sm:p-8">
+            <WhereToFindUs title="Alternative Booking Platforms" />
           </div>
         </div>
       </section>

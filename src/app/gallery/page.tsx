@@ -35,7 +35,7 @@ export default function GalleryPage() {
   const gallerySections: GallerySection[] = galleryData;
 
   return (
-    <div className="bg-white min-h-screen">
+    <div>
       <section className="pt-12 pb-8">
         <div className="lux-container">
           <SectionHeading
@@ -63,7 +63,7 @@ export default function GalleryPage() {
           <Link
             href="/contact"
             prefetch={true}
-            className="mt-8 inline-flex items-center rounded-full border border-stone-300 bg-white px-8 py-3 text-xs font-semibold uppercase tracking-[0.4em] text-stone-800 transition hover:border-stone-400 hover:bg-white/80"
+            className="mt-8 inline-flex items-center rounded-full bg-[#111111] px-8 py-3.5 text-[0.95rem] font-semibold !text-white transition duration-200 hover:bg-stone-800 active:scale-[0.98]"
           >
             Connect with the Team
           </Link>
