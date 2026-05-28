@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import { Playfair_Display } from "next/font/google";
+import { Playfair_Display, Manrope } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import "./globals.css";
 
 const playfair = Playfair_Display({
   variable: "--font-heading",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const manrope = Manrope({
+  variable: "--font-body",
   subsets: ["latin"],
   display: "swap",
 });
@@ -70,7 +76,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth" data-scroll-behavior="smooth" suppressHydrationWarning={true}>
       <body
-        className={`${playfair.variable} bg-stone-100 text-stone-900 antialiased`}
+        className={`${playfair.variable} ${manrope.variable} bg-stone-100 text-stone-900 antialiased`}
         suppressHydrationWarning={true}
       >
         <div className="flex min-h-screen flex-col">
