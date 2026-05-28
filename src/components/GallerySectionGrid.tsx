@@ -38,7 +38,7 @@ function FadeInWrapper({
           }
         }
       },
-      { rootMargin: "100px 0px", threshold: 0.01 },
+      { rootMargin: "400px 0px", threshold: 0.01 },
     );
 
     observer.observe(el);

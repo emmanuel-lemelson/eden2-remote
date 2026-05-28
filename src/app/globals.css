@@ -163,23 +163,14 @@ a {
   width: 100%;
 }
 
-/* Off-screen rendering skip for masonry items */
-.masonry-item {
-  content-visibility: auto;
-  contain-intrinsic-size: auto 300px;
-}
-
-/* IntersectionObserver-driven reveal (replaces unconditional animate-fade-up) */
+/* IntersectionObserver-driven reveal — opacity-only for seamless transitions */
 .gallery-fade-in {
   opacity: 0;
-  transform: translate3d(0, 12px, 0);
-  transition: opacity 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-              transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: opacity 0.4s ease;
 }
 
 .gallery-fade-in.is-visible {
   opacity: 1;
-  transform: translate3d(0, 0, 0);
 }
 
 /* Smooth image loading */
