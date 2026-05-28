@@ -68,21 +68,21 @@ function ReviewCard({ r }: { r: NormalizedReview }) {
       <p className="mt-3 whitespace-pre-line leading-6 text-[0.95rem] text-stone-700">
         <span className="text-[1.05rem] font-medium text-stone-600">“</span>
         {displayText}
+        {long && (
+          <button
+            type="button"
+            onClick={() => setExpanded((s) => !s)}
+            className="ml-1.5 inline-flex items-center font-bold text-[#c2a060] hover:text-[#a08145] transition-colors focus:outline-none focus:underline cursor-pointer"
+            aria-expanded={expanded}
+          >
+            {expanded ? "Read Less" : "Read More"}
+          </button>
+        )}
         <span className="text-[1.05rem] font-medium text-stone-600">”</span>
       </p>
 
       <div className="mt-auto flex items-center justify-start gap-4 pt-4">
         <PlatformBadge platform={r.platform} />
-        {long && (
-          <button
-            type="button"
-            onClick={() => setExpanded((s) => !s)}
-            className="rounded-full border border-white/70 bg-white/80 px-3 py-1 text-[0.75rem] font-semibold text-stone-700 transition hover:-translate-y-[1px] hover:border-[#c2a060]/60 hover:bg-white hover:text-stone-900"
-            aria-expanded={expanded}
-          >
-            {expanded ? "Read less" : "Read more"}
-          </button>
-        )}
       </div>
     </article>
   );

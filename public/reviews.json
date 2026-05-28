@@ -1,8 +1,24 @@
 {
   "platforms": {
     "Airbnb": {
-      "total": 11,
+      "total": 13,
       "reviews": [
+        {
+          "reviewer": "Kayli",
+          "date": "Feb 2026",
+          "rating": { "scale": 5, "value": 5 },
+          "stayed_with": "Family & Dogs",
+          "title": "Perfect Elopement Weekend",
+          "review": "We had our elopement at Eden this weekend with 14 of our closest family members and our two dogs. From the moment we drove up the driveway to check in we were in awe of how beautiful the property was. Everything was absolutely perfect! The house is just amazing inside and out! We are so grateful that we were able to have our small intimate wedding here. It was truly the best weekend ever. We cannot thank you all enough!"
+        },
+        {
+          "reviewer": "Fred",
+          "date": "Feb 2026",
+          "rating": { "scale": 5, "value": 5 },
+          "trip_type": "Group trip",
+          "title": "Great Estate for a Large Group",
+          "review": "Great estate for a large group. wonderful property :)"
+        },
         {
           "reviewer": "Scott",
           "date": "Aug 2025",
@@ -345,8 +361,29 @@
       ]
     },
     "Facebook": {
-      "total": 15,
+      "total": 18,
       "reviews": [
+        {
+          "reviewer": "Jessica-John Serlis",
+          "date": "March 19, 2026",
+          "rating": { "scale": 5, "value": 5 },
+          "title": "A Truly Beautiful New New England Estate",
+          "review": "This is a truly beautiful estate located in one of New England’s most picturesque mountain towns. Every room is thoughtfully detailed and enhanced with timeless elegance. Walking trails on the property are a nice way to get out and enjoy the scenery and take in nature. My family and I had a nice visit and would recommend this property to anyone seeking a luxurious place to stay. -J&J Serlis"
+        },
+        {
+          "reviewer": "Kayli Stook",
+          "date": "February 2026",
+          "rating": { "scale": 5, "value": 5 },
+          "title": "Absolutely Beautiful Elopement Venue",
+          "review": "We had our elopement at Eden and it was absolutely beautiful. We invited 14 of our closest family member and brought our two dogs. We were married in the living room in front of the fireplace and had the entire weekend catered. I am so grateful that we found this gorgeous estate for our special day!"
+        },
+        {
+          "reviewer": "St. Katherine Orthodox Chapel",
+          "date": "Late 2025",
+          "rating": { "scale": 5, "value": 5 },
+          "title": "Unmatched Beauty",
+          "review": "Unmatched beauty. Extraordinary location."
+        },
         {
           "reviewer": "Julie Kitchen Abeling",
           "date": "September 30, 2024",
@@ -456,17 +493,17 @@
     }
   },
   "totals": {
-    "Airbnb": 11,
+    "Airbnb": 13,
     "VRBO_Expedia": 19,
     "The_Knot": 10,
     "Zola": 1,
     "Wedding_Wire": 2,
-    "Facebook": 15,
-    "overall": 58
+    "Facebook": 18,
+    "overall": 63
   },
   "ai_summary": {
     "note": "AI-generated summary",
     "text": "Eden – The Lemelson Estate in Stowe, Vermont, consistently exceeds guest expectations as a luxurious, well-appointed private retreat ideal for family gatherings, weddings, group getaways, and corporate retreats. Guests describe the home as spacious, immaculate, and thoughtfully designed with a balance of elegance and comfort. The estate offers resort-level amenities—including a heated pool, hot tub, sauna, steam room, tennis court, extensive game room, and lush, walkable grounds—set against the backdrop of Vermont’s breathtaking mountain views. Reviewers highlight the seamless hospitality experience, with owners and staff frequently praised for their warmth, attentiveness, and proactive communication. Guests note the home's versatility for both celebration and relaxation, with amenities catering to all ages, from board games and sleds for kids to private chef dinners and spa services for adults. Its close proximity to ski resorts, hiking, and downtown Stowe complements its peaceful seclusion, creating a rare combination of accessibility and escape. Nearly every review ends with a common sentiment: no one wants to leave—and most plan to return.",
-    "total_reviews": 58
+    "total_reviews": 63
   }
 }

@@ -155,21 +155,21 @@ export function PerfectReviewsBadge({
   countLabel?: string;
 }) {
   return (
-    <div className="flex items-center gap-4 rounded-xl border border-stone-200/40 bg-white/75 px-5 py-3 text-stone-850 shadow-[0_12px_32px_-12px_rgba(58,45,20,0.08)] backdrop-blur-sm">
+    <div className="flex items-center gap-4 rounded-xl border border-stone-200 bg-white/90 px-5 py-3 text-stone-950 shadow-[0_12px_32px_-12px_rgba(58,45,20,0.12)] backdrop-blur-sm">
       <div className="flex flex-col items-center leading-none">
-        <span className="text-2xl font-bold tracking-tight text-stone-900">{reviewCount}</span>
-        <span className="mt-1 text-[0.58rem] font-bold uppercase tracking-[0.2em] text-stone-500">
+        <span className="text-2xl font-black tracking-tight text-black">{reviewCount}</span>
+        <span className="mt-1.5 text-[0.62rem] font-extrabold uppercase tracking-[0.2em] text-black">
           {countLabel}
         </span>
       </div>
-      <span className="text-xl font-light text-stone-300" aria-hidden>
+      <span className="text-xl font-normal text-stone-400" aria-hidden>
         |
       </span>
       <div className="flex flex-col items-center leading-none">
-        <span className="text-2xl font-bold tracking-tight text-stone-900">100%</span>
-        <span className="mt-1 flex items-center gap-0.5 text-[var(--color-gold)]" aria-hidden>
+        <span className="text-2xl font-black tracking-tight text-black">5-Star</span>
+        <span className="mt-1.5 flex items-center gap-0.5 text-[var(--color-gold)]" aria-hidden>
           {Array.from({ length: 5 }).map((_, starIndex) => (
-            <svg key={`carousel-star-${starIndex}`} viewBox="0 0 24 24" className="h-[0.7rem] w-[0.7rem] fill-current">
+            <svg key={`carousel-star-${starIndex}`} viewBox="0 0 24 24" className="h-[0.75rem] w-[0.75rem] fill-current">
               <path d="M12 2.25l2.35 6.36 6.9.22-5.38 4.26 1.89 6.66-5.76-3.67-5.76 3.67 1.89-6.66-5.38-4.26 6.9-.22L12 2.25z" />
             </svg>
           ))}
