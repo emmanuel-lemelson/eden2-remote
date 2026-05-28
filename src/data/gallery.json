@@ -277,10 +277,10 @@
       {
         "src": "/gallery/enhanced/31.avif",
         "alt": "Another view of the bright sunroom showing the wicker seating, a large stone fireplace on the left with a lit fire, and white brick chimney walls. Large windows let in plenty of daylight. [Season: Summer/Spring] [Lighting: Bright daylight with warm fireplace glow] [Content: Sunroom, brick fireplace, wicker sofas, indoor-outdoor living]",
-        "srcset": "/gallery/enhanced/31@400w.webp 400w, /gallery/enhanced/31@800w.webp 800w, /gallery/enhanced/31@1200w.webp 1200w",
+        "srcset": "/gallery/enhanced/31@400w.webp 400w, /gallery/enhanced/31@800w.webp 800w, /gallery/enhanced/31@1200w.webp 1200w, /gallery/enhanced/31@1600w.webp 1600w, /gallery/enhanced/31@2000w.webp 2000w, /gallery/enhanced/31@2400w.webp 2400w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1024,
-        "height": 1024
+        "width": 2400,
+        "height": 1600
       },
       {
         "src": "/gallery/Eden-Site%20Photos/30.avif",
@@ -416,10 +416,10 @@
       {
         "src": "/gallery/enhanced/17.avif",
         "alt": "Brightly lit casual dining nook inside a multi-windowed bay alcove. Features a round dark wood table, four upholstered chairs with high backs, and an ornate dark metal chandelier. Large windows look out on a green lawn and pink blossoming trees. [Season: Spring] [Lighting: Bright, fresh morning daylight] [Content: Breakfast nook, dining table, bay window, spring garden exterior]",
-        "srcset": "/gallery/enhanced/17@400w.webp 400w, /gallery/enhanced/17@800w.webp 800w, /gallery/enhanced/17@1200w.webp 1200w",
+        "srcset": "/gallery/enhanced/17@400w.webp 400w, /gallery/enhanced/17@800w.webp 800w, /gallery/enhanced/17@1200w.webp 1200w, /gallery/enhanced/17@1600w.webp 1600w, /gallery/enhanced/17@2000w.webp 2000w, /gallery/enhanced/17@2400w.webp 2400w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1024,
-        "height": 1024
+        "width": 2400,
+        "height": 1600
       },
       {
         "src": "/gallery/Eden-Site%20Photos/29.avif",
@@ -508,10 +508,10 @@
       {
         "src": "/gallery/enhanced/43.avif",
         "alt": "Cozy guest bedroom featuring a queen bed with white linens, a ceiling fan, light beige walls, a grey upholstered armchair, and a window. [Season: Indoor] [Lighting: Soft, pleasant recessed ceiling lights] [Content: Cozy bedroom, queen bed, armchair, neutral tones]",
-        "srcset": "/gallery/enhanced/43@400w.webp 400w, /gallery/enhanced/43@800w.webp 800w, /gallery/enhanced/43@1200w.webp 1200w",
+        "srcset": "/gallery/enhanced/43@400w.webp 400w, /gallery/enhanced/43@800w.webp 800w, /gallery/enhanced/43@1200w.webp 1200w, /gallery/enhanced/43@1600w.webp 1600w, /gallery/enhanced/43@2000w.webp 2000w, /gallery/enhanced/43@2400w.webp 2400w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1024,
-        "height": 1024
+        "width": 2400,
+        "height": 1600
       },
       {
         "src": "/gallery/Eden-Site%20Photos/39.avif",
@@ -642,10 +642,10 @@
       {
         "src": "/gallery/enhanced/54.avif",
         "alt": "Ensuite guest bathroom under a sloped ceiling, showing a white toilet, a walk-in bathtub/shower with a glass door, a skylight letting in daylight, and dark wood vanity cabinets. [Season: Summer/Spring] [Lighting: Soft daylight and warm interior light] [Content: Guest bathroom, skylight, toilet, bathtub, vanity]",
-        "srcset": "/gallery/enhanced/54@400w.webp 400w, /gallery/enhanced/54@800w.webp 800w, /gallery/enhanced/54@1200w.webp 1200w",
+        "srcset": "/gallery/enhanced/54@400w.webp 400w, /gallery/enhanced/54@800w.webp 800w, /gallery/enhanced/54@1200w.webp 1200w, /gallery/enhanced/54@1600w.webp 1600w, /gallery/enhanced/54@2000w.webp 2000w, /gallery/enhanced/54@2400w.webp 2400w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1024,
-        "height": 1024
+        "width": 2400,
+        "height": 1600
       },
       {
         "src": "/gallery/enhanced/56.avif",
@@ -847,10 +847,10 @@
       {
         "src": "/gallery/enhanced/97.avif",
         "alt": "Spacious, high-end laundry room showing premium custom wood cabinetry on both sides, a tiled floor, and two modern dark grey front-load smart washers/dryers built into the cabinets under a window. [Season: Summer] [Lighting: Bright daylight from the window] [Content: Laundry room, washer and dryer, custom wood cabinets, folding counter]",
-        "srcset": "/gallery/enhanced/97@400w.webp 400w, /gallery/enhanced/97@800w.webp 800w, /gallery/enhanced/97@1200w.webp 1200w",
+        "srcset": "/gallery/enhanced/97@400w.webp 400w, /gallery/enhanced/97@800w.webp 800w, /gallery/enhanced/97@1200w.webp 1200w, /gallery/enhanced/97@1600w.webp 1600w, /gallery/enhanced/97@2000w.webp 2000w, /gallery/enhanced/97@2400w.webp 2400w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1024,
-        "height": 1024
+        "width": 2400,
+        "height": 1600
       }
     ]
   }

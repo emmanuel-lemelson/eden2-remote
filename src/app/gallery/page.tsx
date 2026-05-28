@@ -35,7 +35,7 @@ export default function GalleryPage() {
   const gallerySections: GallerySection[] = galleryData;
 
   return (
-    <div>
+    <div className="bg-white min-h-screen">
       <section className="pt-12 pb-8">
         <div className="lux-container">
           <SectionHeading

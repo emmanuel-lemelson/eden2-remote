@@ -89,14 +89,7 @@ function ReviewCard({ r }: { r: NormalizedReview }) {
 }
 
 export default function ReviewsClient({ normalized }: { normalized: NormalizedPayload }) {
-  const [platform, setPlatform] = useState<string>("All");
-  // Removed unused summaryOpen state
-
-  const items = useMemo(() => {
-    const all = normalized.items;
-    if (platform === "All") return all;
-    return all.filter((i) => i.platform === platform);
-  }, [normalized.items, platform]);
+  const items = normalized.items;
 
   const perfectRating = useMemo(() => {
     const rated = normalized.items.filter((review) => review.rating);
@@ -113,45 +106,17 @@ export default function ReviewsClient({ normalized }: { normalized: NormalizedPa
     return { count: rated.length };
   }, [normalized.items]);
 
-  const countsByPlatform = useMemo(() => {
-    const map = new Map<string, number>();
-    for (const p of normalized.platforms) map.set(p, 0);
-    for (const it of normalized.items) map.set(it.platform, (map.get(it.platform) ?? 0) + 1);
-    return map;
-  }, [normalized.items, normalized.platforms]);
-
   return (
     <div className="space-y-6">
-      {/* Filter and Badge */}
-      <section className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <div className="flex items-center gap-2">
-          <label htmlFor="platform" className="text-xs font-semibold uppercase tracking-[0.28em] text-stone-600">
-            Filter
-          </label>
-          <select
-            id="platform"
-            className="rounded-full border border-white/70 bg-white/90 px-3 py-2 text-sm text-stone-800 shadow-sm focus:border-[#c2a060]/60 focus:outline-none"
-            value={platform}
-            onChange={(e) => setPlatform(e.target.value)}
-          >
-            <option value="All">All Platforms</option>
-            {normalized.platforms.map((p) => (
-              <option key={p} value={p}>
-                {p} ({countsByPlatform.get(p) ?? 0})
-              </option>
-            ))}
-          </select>
-        </div>
-        
-        {perfectRating ? (
-          <div className="flex justify-center sm:justify-end">
-            <PerfectReviewsBadge
-              reviewCount={perfectRating.count}
-              countLabel={perfectRating.count === 1 ? "review" : "reviews"}
-            />
-          </div>
-        ) : null}
-      </section>
+      {/* Badge */}
+      {perfectRating ? (
+        <section className="flex justify-start">
+          <PerfectReviewsBadge
+            reviewCount={perfectRating.count}
+            countLabel={perfectRating.count === 1 ? "review" : "reviews"}
+          />
+        </section>
+      ) : null}
 
       {/* Summary hidden for now - retained for potential future use */}
       {/* <section className="rounded-3xl border border-[#d2c4a3]/60 bg-gradient-to-b from-[#fdfbf7]/95 via-[#f8f3ea]/90 to-[#f2e8da]/85 p-4 shadow-[0_25px_60px_-20px_rgba(30,30,40,0.35)]">

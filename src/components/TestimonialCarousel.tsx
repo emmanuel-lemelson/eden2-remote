@@ -243,53 +243,27 @@ export function TestimonialCarousel({
       {/* Subtle background light glow */}
       <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-1/3 bg-gradient-to-l from-white/40 via-transparent to-transparent md:block" />
       
-      <div className="relative flex flex-col md:flex-row md:items-start md:justify-between gap-6 md:gap-12">
-        <div className="flex-1 max-w-2xl">
-          <div className="flex flex-col gap-2 mb-6">
-            <h2 className="text-3xl font-semibold text-stone-900 md:text-4xl lg:text-5xl tracking-tight mb-0">
-              Reviews
-            </h2>
-            {/* Mobile-only compact rating tag */}
-            <div className="flex items-center gap-2 md:hidden">
-              <span className="flex items-center gap-0.5 text-[var(--color-gold)]" aria-hidden>
-                {Array.from({ length: 5 }).map((_, starIndex) => (
-                  <svg key={`carousel-star-mobile-${starIndex}`} viewBox="0 0 24 24" className="h-3.5 w-3.5 fill-current">
-                    <path d="M12 2.25l2.35 6.36 6.9.22-5.38 4.26 1.89 6.66-5.76-3.67-5.76 3.67 1.89-6.66-5.38-4.26 6.9-.22L12 2.25z" />
-                  </svg>
-                ))}
-              </span>
-              <span className="text-xs font-semibold tracking-wider text-stone-500">
-                5.0 (58 Reviews)
-              </span>
-            </div>
-          </div>
-          
-          {/* Keyed container triggers entry animation on index shift */}
-          <div key={index} className="testimonial-fade">
-            <blockquote className="text-lg font-serif font-light leading-relaxed text-stone-850 sm:text-xl md:text-2xl lg:text-3xl min-h-[9.5rem] sm:min-h-[8.5rem] md:min-h-[9rem] lg:min-h-[10rem] xl:min-h-[8rem]">
-              “{active.quote}”
-            </blockquote>
-            <footer className="mt-6">
-              <div className="flex flex-col gap-2">
-                <div className="flex items-center gap-3">
-                  <span className="text-sm font-semibold uppercase tracking-[0.15em] text-stone-850">
-                    {active.name}
-                  </span>
-                  {active.platform ? (
-                    <PlatformBadge platform={active.platform} />
-                  ) : null}
-                </div>
-                <div className="text-xs tracking-wider text-stone-500">
-                  {active.detail}
-                </div>
+      <div className="relative w-full">
+        {/* Keyed container triggers entry animation on index shift */}
+        <div key={index} className="testimonial-fade">
+          <blockquote className="text-lg font-serif font-light leading-relaxed text-stone-850 sm:text-xl md:text-2xl lg:text-3xl min-h-[9.5rem] sm:min-h-[8.5rem] md:min-h-[9rem] lg:min-h-[10rem] xl:min-h-[8rem]">
+            “{active.quote}”
+          </blockquote>
+          <footer className="mt-6">
+            <div className="flex flex-col gap-2">
+              <div className="flex items-center gap-3">
+                <span className="text-sm font-semibold uppercase tracking-[0.15em] text-stone-850">
+                  {active.name}
+                </span>
+                {active.platform ? (
+                  <PlatformBadge platform={active.platform} />
+                ) : null}
               </div>
-            </footer>
-          </div>
-        </div>
-
-        {/* Trust seal badge, nicely isolated on desktop, hidden on mobile in favor of inline stars */}
-        <div className="hidden md:flex md:justify-end md:flex-shrink-0 md:mt-2">
-          <PerfectReviewsBadge reviewCount={58} countLabel="REVIEWS" />
+              <div className="text-xs tracking-wider text-stone-500">
+                {active.detail}
+              </div>
+            </div>
+          </footer>
         </div>
       </div>
 

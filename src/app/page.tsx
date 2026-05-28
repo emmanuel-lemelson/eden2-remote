@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { SectionHeading } from "@/components/SectionHeading";
-import { TestimonialCarousel } from "@/components/TestimonialCarousel";
+import { TestimonialCarousel, PerfectReviewsBadge } from "@/components/TestimonialCarousel";
 import { AutoPlayVideo } from "@/components/AutoPlayVideo";
 import { WhereToFindUs } from "@/components/WhereToFindUs";
 
@@ -212,9 +212,20 @@ export default function Home() {
       </section>
 
       <section className="lux-section !pt-4 md:!pt-6 bg-white/80 animate-fade-up">
-        <div className="lux-container">
-          <TestimonialCarousel testimonials={testimonials} />
-          <div className="mt-8 flex justify-center">
+        <div className="lux-container flex flex-col items-center gap-8">
+          <div className="flex flex-col items-center gap-4 text-center max-w-3xl">
+            <span className="text-xs font-bold uppercase tracking-[0.32em] text-stone-500">Reviews</span>
+            <h2 className="text-4xl font-semibold text-stone-900 md:text-5xl">What Our Guests Say</h2>
+            <div className="mt-2 flex justify-center">
+              <PerfectReviewsBadge reviewCount={58} countLabel="REVIEWS" />
+            </div>
+          </div>
+          
+          <div className="w-full">
+            <TestimonialCarousel testimonials={testimonials} />
+          </div>
+
+          <div className="mt-2 flex justify-center">
             <Link
               href="/reviews"
               className="inline-flex items-center rounded-full border border-stone-300 bg-white px-7 py-2.5 text-xs font-semibold uppercase tracking-[0.4em] text-stone-800 transition hover:border-stone-400 hover:bg-white/80"
