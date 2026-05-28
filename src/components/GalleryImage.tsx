@@ -38,7 +38,7 @@ export function GalleryImage({
       alt={alt}
       loading={isPriority ? "eager" : "lazy"}
       decoding="async"
-      fetchPriority={isPriority ? "high" : "low"}
+      fetchPriority={isPriority ? "high" : "auto"}
       width={width}
       height={height}
       className={classes.join(" ")}

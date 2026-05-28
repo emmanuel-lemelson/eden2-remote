@@ -222,15 +222,7 @@ export function TestimonialCarousel({
     };
   }, []);
 
-  useEffect(() => {
-    if (items.length <= 1 || !inView) return;
 
-    const id = window.setInterval(() => {
-      setIndex((prev) => (prev + 1) % items.length);
-    }, interval);
-
-    return () => window.clearInterval(id);
-  }, [items.length, interval, inView]);
 
   if (items.length === 0) {
     return null;
@@ -311,7 +303,15 @@ export function TestimonialCarousel({
                 <div className="relative h-2 rounded-full bg-stone-200/60 overflow-hidden w-full transition group-hover:bg-stone-300/80">
                   {/* Inner loading/filled bar */}
                   {isActive ? (
-                    <div className={`absolute inset-y-0 left-0 h-full w-full rounded-full bg-gradient-to-r from-[#c2a060] to-[#8f7845] ${inView ? "testimonial-active-bar" : ""}`} />
+                    <div
+                      onAnimationEnd={() => {
+                        setIndex((prev) => (prev + 1) % items.length);
+                      }}
+                      style={{
+                        animationPlayState: inView ? "running" : "paused"
+                      }}
+                      className="absolute inset-y-0 left-0 h-full w-full rounded-full bg-gradient-to-r from-[#c2a060] to-[#8f7845] testimonial-active-bar"
+                    />
                   ) : isPast ? (
                     <div className="absolute inset-y-0 left-0 h-full w-full rounded-full bg-gradient-to-r from-[#c2a060] to-[#8f7845]" />
                   ) : null}

@@ -1,9 +1,59 @@
 "use client";
 
-import { useLayoutEffect, useRef } from "react";
+import { useEffect, useRef, useCallback } from "react";
 import type { ReactNode } from "react";
 import { GalleryImage } from "@/components/GalleryImage";
 import type { GallerySection } from "@/types/gallery";
+
+/**
+ * IntersectionObserver-driven fade-in wrapper.
+ * Replaces the old unconditional animate-fade-up that fired for all 89 images
+ * at mount — causing blank/invisible images and massive initial paint cost.
+ */
+function FadeInWrapper({
+  children,
+  className,
+}: {
+  children: ReactNode;
+  className?: string;
+}) {
+  const ref = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    // If IntersectionObserver isn't supported, just show immediately
+    if (typeof IntersectionObserver === "undefined") {
+      el.classList.add("is-visible");
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        }
+      },
+      { rootMargin: "100px 0px", threshold: 0.01 },
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  const classes = ["gallery-fade-in"];
+  if (className) classes.push(className);
+
+  return (
+    <div ref={ref} className={classes.join(" ")}>
+      {children}
+    </div>
+  );
+}
 
 type Props = {
   sections: GallerySection[];
@@ -21,71 +71,75 @@ function MasonryItem({
   aspectRatio: number;
 }) {
   const elementRef = useRef<HTMLDivElement | null>(null);
+  const rafRef = useRef<number>(0);
 
-  useLayoutEffect(() => {
+  const updateSpan = useCallback(() => {
     const element = elementRef.current;
-    if (!element) {
+    if (!element) return;
+
+    const grid = element.parentElement;
+    if (!grid) return;
+
+    const computed = window.getComputedStyle(grid);
+    const gap =
+      Number.parseFloat(computed.getPropertyValue("row-gap")) ||
+      Number.parseFloat(computed.getPropertyValue("gap")) ||
+      0;
+    const autoRowHeight =
+      Number.parseFloat(computed.getPropertyValue("grid-auto-rows")) ||
+      DEFAULT_AUTO_ROW_HEIGHT;
+    if (autoRowHeight <= 0) return;
+
+    if (!Number.isFinite(aspectRatio) || aspectRatio <= 0) {
+      element.style.removeProperty("grid-row-end");
+      element.style.removeProperty("height");
       return;
     }
 
-    const hasResizeObserver = typeof ResizeObserver === "function";
+    const width = element.getBoundingClientRect().width;
+    if (width === 0) return;
 
-    const updateSpan = () => {
-      const grid = element.parentElement;
-      if (!grid) {
-        return;
-      }
+    const targetHeight = width * aspectRatio;
+    const rowSpan = Math.max(
+      1,
+      Math.ceil((targetHeight + gap) / (autoRowHeight + gap)),
+    );
 
-      const computed = window.getComputedStyle(grid);
-      const gap =
-        Number.parseFloat(computed.getPropertyValue("row-gap")) ||
-        Number.parseFloat(computed.getPropertyValue("gap")) ||
-        0;
-      const autoRowHeight =
-        Number.parseFloat(computed.getPropertyValue("grid-auto-rows")) ||
-        DEFAULT_AUTO_ROW_HEIGHT;
-      if (autoRowHeight <= 0) {
-        return;
-      }
+    element.style.gridRowEnd = `span ${rowSpan}`;
+    element.style.height = `${targetHeight}px`;
+  }, [aspectRatio]);
 
-      if (!Number.isFinite(aspectRatio) || aspectRatio <= 0) {
-        element.style.removeProperty("grid-row-end");
-        element.style.removeProperty("height");
-        return;
-      }
+  // RAF-batched callback to prevent layout thrashing across 89 observers
+  const scheduledUpdate = useCallback(() => {
+    if (rafRef.current) cancelAnimationFrame(rafRef.current);
+    rafRef.current = requestAnimationFrame(updateSpan);
+  }, [updateSpan]);
 
-      const width = element.getBoundingClientRect().width;
-      if (width === 0) {
-        return;
-      }
+  // useEffect (not useLayoutEffect) — lets the browser paint the placeholder
+  // before we measure and adjust grid spans
+  useEffect(() => {
+    const element = elementRef.current;
+    if (!element) return;
 
-      const targetHeight = width * aspectRatio;
-      const rowSpan = Math.max(
-        1,
-        Math.ceil((targetHeight + gap) / (autoRowHeight + gap)),
-      );
-
-      element.style.gridRowEnd = `span ${rowSpan}`;
-      element.style.height = `${targetHeight}px`;
-    };
-
+    // Initial calculation
     updateSpan();
 
-    if (hasResizeObserver) {
-      const observer = new ResizeObserver(updateSpan);
+    if (typeof ResizeObserver === "function") {
+      const observer = new ResizeObserver(scheduledUpdate);
       observer.observe(element);
 
       return () => {
+        if (rafRef.current) cancelAnimationFrame(rafRef.current);
         observer.disconnect();
       };
     }
 
-    window.addEventListener("resize", updateSpan);
-
+    window.addEventListener("resize", scheduledUpdate);
     return () => {
-      window.removeEventListener("resize", updateSpan);
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+      window.removeEventListener("resize", scheduledUpdate);
     };
-  }, [aspectRatio]);
+  }, [updateSpan, scheduledUpdate]);
 
   const classes = ["masonry-item"];
   if (className && className.trim().length > 0) {
@@ -479,7 +533,7 @@ export function GallerySectionGrid({ sections }: Props) {
             <MasonryItem
               key={`${section.title}-${image.src}`}
               aspectRatio={image.height / image.width}
-              className="group relative overflow-hidden rounded-3xl border border-white/60 bg-[rgba(248,243,234,0.85)] shadow-sm animate-fade-up"
+              className="group relative overflow-hidden rounded-3xl border border-white/60 bg-[rgba(248,243,234,0.85)] shadow-sm"
             >
               <div className="overflow-hidden">
                 <GalleryImage
@@ -512,7 +566,7 @@ export function GallerySectionGrid({ sections }: Props) {
         runningImageIndex += section.images.length;
 
         return (
-          <article key={section.title} className="space-y-8 animate-fade-up">
+          <FadeInWrapper key={section.title} className="space-y-8">
             {/* Editorial Header info for Section */}
             <div className="border-b border-stone-200/80 pb-4 mb-6">
               <h3 className="text-2xl font-serif tracking-tight text-stone-900 font-medium">
@@ -522,7 +576,7 @@ export function GallerySectionGrid({ sections }: Props) {
 
             {/* Render conditional photos layout */}
             {renderSectionPhotos(section, sectionStartIndex)}
-          </article>
+          </FadeInWrapper>
         );
       })}
     </div>
