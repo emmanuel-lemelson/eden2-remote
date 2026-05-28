@@ -100,7 +100,7 @@ export function InquiryForm({ endpoint = "https://formspree.io/f/mlgvzjrj" }: In
 
   if (status.succeeded) {
     return (
-      <div className="rounded-2xl border border-stone-200 bg-white p-8 text-center shadow-sm sm:p-12">
+      <div className="rounded-2xl border border-stone-200 bg-white p-5 text-center shadow-sm sm:p-12">
         <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-stone-100 text-stone-800">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="h-6 w-6">
             <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
@@ -113,7 +113,7 @@ export function InquiryForm({ endpoint = "https://formspree.io/f/mlgvzjrj" }: In
         </p>
 
         {/* Summary Details */}
-        <div className="mt-8 rounded-xl border border-stone-200 bg-stone-50 p-5 text-left max-w-md mx-auto">
+        <div className="mt-8 rounded-xl border border-stone-200 bg-stone-50 p-4 text-left max-w-md mx-auto sm:p-5">
           <p className="text-[0.7rem] uppercase tracking-wider text-stone-400 font-bold border-b border-stone-200 pb-2 mb-3">
             Inquiry Summary
           </p>
@@ -164,7 +164,7 @@ export function InquiryForm({ endpoint = "https://formspree.io/f/mlgvzjrj" }: In
   }
 
   return (
-    <div className="rounded-2xl border border-stone-200/80 bg-[#f4f1ea] p-6 shadow-sm sm:p-8">
+    <div className="rounded-2xl border border-stone-200/80 bg-[#f4f1ea] p-4 shadow-sm sm:p-8">
       <form onSubmit={handleSubmit} className="space-y-5">
         
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
@@ -181,7 +181,8 @@ export function InquiryForm({ endpoint = "https://formspree.io/f/mlgvzjrj" }: In
               placeholder="Your name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full h-[46px] rounded-lg border border-stone-200 bg-white px-4 text-sm text-stone-900 placeholder-stone-400 transition focus:border-stone-400 focus:outline-none focus:ring-0"
+              autoComplete="name"
+              className="w-full h-[46px] rounded-lg border border-stone-200 bg-white px-4 text-base md:text-sm text-stone-900 placeholder-stone-400 transition focus:border-stone-400 focus:outline-none focus:ring-0"
             />
           </div>
  
@@ -198,7 +199,8 @@ export function InquiryForm({ endpoint = "https://formspree.io/f/mlgvzjrj" }: In
               placeholder="Your email address"
               value={formData.email}
               onChange={handleChange}
-              className="w-full h-[46px] rounded-lg border border-stone-200 bg-white px-4 text-sm text-stone-900 placeholder-stone-400 transition focus:border-stone-400 focus:outline-none focus:ring-0"
+              autoComplete="email"
+              className="w-full h-[46px] rounded-lg border border-stone-200 bg-white px-4 text-base md:text-sm text-stone-900 placeholder-stone-400 transition focus:border-stone-400 focus:outline-none focus:ring-0"
             />
           </div>
         </div>
@@ -217,7 +219,8 @@ export function InquiryForm({ endpoint = "https://formspree.io/f/mlgvzjrj" }: In
               placeholder="Your phone number"
               value={formData.phone}
               onChange={handleChange}
-              className="w-full h-[46px] rounded-lg border border-stone-200 bg-white px-4 text-sm text-stone-900 placeholder-stone-400 transition focus:border-stone-400 focus:outline-none focus:ring-0"
+              autoComplete="tel"
+              className="w-full h-[46px] rounded-lg border border-stone-200 bg-white px-4 text-base md:text-sm text-stone-900 placeholder-stone-400 transition focus:border-stone-400 focus:outline-none focus:ring-0"
             />
           </div>
  
@@ -233,7 +236,7 @@ export function InquiryForm({ endpoint = "https://formspree.io/f/mlgvzjrj" }: In
                 required
                 value={formData.eventType}
                 onChange={handleChange}
-                className="w-full h-[46px] appearance-none rounded-lg border border-stone-200 bg-white px-4 pr-10 text-sm text-stone-900 transition focus:border-stone-400 focus:outline-none focus:ring-0"
+                className="w-full h-[46px] appearance-none rounded-lg border border-stone-200 bg-white px-4 pr-10 text-base md:text-sm text-stone-900 transition focus:border-stone-400 focus:outline-none focus:ring-0"
               >
                 <option value="Vacation">Vacation / Stay</option>
                 <option value="Wedding">Wedding</option>
@@ -261,7 +264,7 @@ export function InquiryForm({ endpoint = "https://formspree.io/f/mlgvzjrj" }: In
               placeholder="e.g. 12"
               value={formData.guests}
               onChange={handleChange}
-              className="w-full h-[46px] rounded-lg border border-stone-200 bg-white px-4 text-sm text-stone-900 placeholder-stone-400 transition focus:border-stone-400 focus:outline-none focus:ring-0"
+              className="w-full h-[46px] rounded-lg border border-stone-200 bg-white px-4 text-base md:text-sm text-stone-900 placeholder-stone-400 transition focus:border-stone-400 focus:outline-none focus:ring-0"
             />
           </div>
         </div>
@@ -287,7 +290,7 @@ export function InquiryForm({ endpoint = "https://formspree.io/f/mlgvzjrj" }: In
                       name="checkIn"
                       value={formData.checkIn}
                       onChange={handleChange}
-                      className="w-full h-[46px] rounded-lg border border-stone-200 bg-white px-4 text-sm text-stone-900 transition focus:border-stone-400 focus:outline-none focus:ring-0"
+                      className="w-full h-[46px] rounded-lg border border-stone-200 bg-white px-4 text-base md:text-sm text-stone-900 transition focus:border-stone-400 focus:outline-none focus:ring-0"
                     />
                   </div>
  
@@ -302,7 +305,7 @@ export function InquiryForm({ endpoint = "https://formspree.io/f/mlgvzjrj" }: In
                       name="checkOut"
                       value={formData.checkOut}
                       onChange={handleChange}
-                      className="w-full h-[46px] rounded-lg border border-stone-200 bg-white px-4 text-sm text-stone-900 transition focus:border-stone-400 focus:outline-none focus:ring-0"
+                      className="w-full h-[46px] rounded-lg border border-stone-200 bg-white px-4 text-base md:text-sm text-stone-900 transition focus:border-stone-400 focus:outline-none focus:ring-0"
                     />
                   </div>
                 </div>
@@ -338,7 +341,7 @@ export function InquiryForm({ endpoint = "https://formspree.io/f/mlgvzjrj" }: In
                       placeholder="e.g. 1 week, 10 days"
                       value={formData.customDuration}
                       onChange={handleChange}
-                      className="w-full h-[46px] rounded-lg border border-stone-200 bg-white px-4 text-sm text-stone-900 placeholder-stone-400 transition focus:border-stone-400 focus:outline-none focus:ring-0"
+                      className="w-full h-[46px] rounded-lg border border-stone-200 bg-white px-4 text-base md:text-sm text-stone-900 placeholder-stone-400 transition focus:border-stone-400 focus:outline-none focus:ring-0"
                     />
                   </div>
  
@@ -353,7 +356,7 @@ export function InquiryForm({ endpoint = "https://formspree.io/f/mlgvzjrj" }: In
                         name="flexibleMonth"
                         value={formData.flexibleMonth}
                         onChange={handleChange}
-                        className="w-full h-[46px] appearance-none rounded-lg border border-stone-200 bg-white px-4 pr-10 text-sm text-stone-900 transition focus:border-stone-400 focus:outline-none focus:ring-0"
+                        className="w-full h-[46px] appearance-none rounded-lg border border-stone-200 bg-white px-4 pr-10 text-base md:text-sm text-stone-900 transition focus:border-stone-400 focus:outline-none focus:ring-0"
                       >
                         <option value="Anytime">Anytime / Flexible</option>
                         <option value="Summer 2026">Summer 2026 (June – Aug)</option>
@@ -403,7 +406,7 @@ export function InquiryForm({ endpoint = "https://formspree.io/f/mlgvzjrj" }: In
             placeholder="Your message..."
             value={formData.requirements}
             onChange={handleChange}
-            className="w-full rounded-lg border border-stone-200 bg-white p-4 text-sm text-stone-900 placeholder-stone-400 transition focus:border-stone-400 focus:outline-none focus:ring-0 resize-none"
+            className="w-full rounded-lg border border-stone-200 bg-white p-4 text-base md:text-sm text-stone-900 placeholder-stone-400 transition focus:border-stone-400 focus:outline-none focus:ring-0 resize-none"
           />
         </div>
 
