@@ -41,7 +41,7 @@ export default function ContactPage() {
               className="font-bold text-stone-900 hover:text-stone-700 transition underline underline-offset-4"
             >
               admin@lemelsoncapital.com
-            </a>.
+            </a>
           </p>
         </div>
       </section>
