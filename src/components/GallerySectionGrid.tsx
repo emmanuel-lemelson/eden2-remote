@@ -154,15 +154,8 @@ function MasonryItem({
 }
 
 export function GallerySectionGrid({ sections }: Props) {
-  function renderPhotoNumberOverlay(src: string) {
-    const match = src.match(/\/(\d+)\.(avif|webp)/);
-    const photoNum = match ? match[1] : "";
-    if (!photoNum) return null;
-    return (
-      <div className="absolute top-4 left-4 z-20 bg-stone-900/80 backdrop-blur-md text-white text-[10px] uppercase font-bold tracking-widest px-2.5 py-1.5 rounded-full border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none shadow-md">
-        Photo #{photoNum}
-      </div>
-    );
+  function renderPhotoNumberOverlay(_src: string) {
+    return null;
   }
 
   // Dynamic layout renderer based on image counts to ensure visual balance

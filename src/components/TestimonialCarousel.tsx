@@ -1,7 +1,7 @@
 "use client";
 
+import type { CSSProperties } from "react";
 import { useEffect, useMemo, useRef, useState } from "react";
-import Image from "next/image";
 
 function getPlatformUrl(platform: string): string {
   const norm = platform.toLowerCase().trim();
@@ -261,30 +261,6 @@ export function TestimonialCarousel({
 
       {items.length > 1 ? (
         <div className="mt-10 flex gap-4 border-t border-stone-200/40 pt-6">
-          <style dangerouslySetInnerHTML={{ __html: `
-            @keyframes testimonial-loading {
-              from { transform: scaleX(0); }
-              to { transform: scaleX(1); }
-            }
-            @keyframes testimonial-fade-in {
-              from {
-                opacity: 0;
-                transform: translateY(4px);
-              }
-              to {
-                opacity: 1;
-                transform: translateY(0);
-              }
-            }
-            .testimonial-active-bar {
-              transform-origin: left;
-              animation: testimonial-loading ${interval}ms linear forwards;
-            }
-            .testimonial-fade {
-              animation: testimonial-fade-in 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-            }
-          ` }} />
-          
           {items.map((_, itemIndex) => {
             const isActive = index === itemIndex;
             const isPast = itemIndex < index;
@@ -308,8 +284,9 @@ export function TestimonialCarousel({
                         setIndex((prev) => (prev + 1) % items.length);
                       }}
                       style={{
+                        "--testimonial-interval": `${interval}ms`,
                         animationPlayState: inView ? "running" : "paused"
-                      }}
+                      } as CSSProperties}
                       className="absolute inset-y-0 left-0 h-full w-full rounded-full bg-gradient-to-r from-[#c2a060] to-[#8f7845] testimonial-active-bar"
                     />
                   ) : isPast ? (

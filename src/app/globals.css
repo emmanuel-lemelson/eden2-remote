@@ -117,6 +117,39 @@ a {
   animation-delay: 0.45s;
 }
 
+@keyframes testimonial-loading {
+  from {
+    transform: translateZ(0) scaleX(0);
+  }
+  to {
+    transform: translateZ(0) scaleX(1);
+  }
+}
+
+@keyframes testimonial-fade-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 4px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.testimonial-active-bar {
+  transform-origin: left center;
+  animation: testimonial-loading var(--testimonial-interval, 8000ms) linear forwards;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+.testimonial-fade {
+  animation: testimonial-fade-in 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  backface-visibility: hidden;
+  will-change: opacity, transform;
+}
+
 /* Masonry layout */
 .masonry-container {
   column-count: 1;
