@@ -203,12 +203,12 @@
         "height": 1704
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/4.avif",
+        "src": "/gallery/enhanced/4.avif",
         "alt": "High-angle interior view looking down from the loft walkway onto the Great Room's spacious conversation seating area. Features two button-tufted grey Chesterfield sofas and two matching button-tufted armchairs arranged on a large red-patterned Persian rug around a square coffee table. A mahogany grand piano sits near large windows looking out at green gardens. Highlights polished hardwood floors and the edge of a massive stone fireplace. [Season: Summer] [Lighting: Bright, natural daytime light] [Content: Great room interior, furniture, piano, Persian rug, hardwood floors]",
-        "srcset": "/gallery/Eden-Site%20Photos/4@400w.webp 400w, /gallery/Eden-Site%20Photos/4@800w.webp 800w",
+        "srcset": "/gallery/enhanced/4@400w.webp 400w, /gallery/enhanced/4@800w.webp 800w, /gallery/enhanced/4@1200w.webp 1200w, /gallery/enhanced/4@1600w.webp 1600w, /gallery/enhanced/4@2000w.webp 2000w, /gallery/enhanced/4@2400w.webp 2400w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 540
+        "width": 2400,
+        "height": 1600
       },
       {
         "src": "/gallery/Eden-Site%20Photos/101.avif",
@@ -343,7 +343,6 @@
       25,
       26,
       28,
-      27,
       13,
       17,
       29
@@ -374,44 +373,36 @@
         "height": 1080
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/25.avif",
+        "src": "/gallery/enhanced/25.avif",
         "alt": "Close-up of double built-in stainless steel professional wall ovens integrated into white cabinetry. To the left is a granite countertop, tile backsplash, and a shelf with white mugs. [Season: Indoor] [Lighting: Bright, clean kitchen lighting] [Content: Built-in ovens, stainless steel appliances, kitchen details]",
-        "srcset": "/gallery/Eden-Site%20Photos/25@400w.webp 400w, /gallery/Eden-Site%20Photos/25@800w.webp 800w",
+        "srcset": "/gallery/enhanced/25@400w.webp 400w, /gallery/enhanced/25@800w.webp 800w, /gallery/enhanced/25@1200w.webp 1200w, /gallery/enhanced/25@1600w.webp 1600w, /gallery/enhanced/25@2000w.webp 2000w, /gallery/enhanced/25@2400w.webp 2400w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/26.avif",
-        "alt": "Secondary or prep kitchen showing warm wood cabinets, light-colored granite countertops, a peninsula bar with a leather chair, a stainless steel microwave and toaster oven, and a black refrigerator. [Season: Indoor] [Lighting: Bright, clear indoor light] [Content: Prep kitchen, wood cabinets, bar counter, appliances]",
-        "srcset": "/gallery/Eden-Site%20Photos/26@400w.webp 400w, /gallery/Eden-Site%20Photos/26@800w.webp 800w, /gallery/Eden-Site%20Photos/26@1200w.webp 1200w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1200,
+        "width": 2400,
         "height": 1600
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/28.avif",
+        "src": "/gallery/enhanced/26.avif",
+        "alt": "Secondary or prep kitchen showing warm wood cabinets, light-colored granite countertops, a peninsula bar with two matching leather barstool chairs, a stainless steel microwave and toaster oven, and a black refrigerator. [Season: Indoor] [Lighting: Bright, clear indoor light] [Content: Prep kitchen, wood cabinets, bar counter, appliances]",
+        "srcset": "/gallery/enhanced/26@400w.webp 400w, /gallery/enhanced/26@800w.webp 800w, /gallery/enhanced/26@1200w.webp 1200w, /gallery/enhanced/26@1600w.webp 1600w, /gallery/enhanced/26@2000w.webp 2000w, /gallery/enhanced/26@2400w.webp 2400w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 2400,
+        "height": 1600
+      },
+      {
+        "src": "/gallery/enhanced/28.avif",
         "alt": "Formal Great Dining Room showing a long wooden table prepared for a dinner party, a large wooden display hutch on the left, a large crystal chandelier hanging from a white tray ceiling, and a large light-patterned rug over hardwood floors. Multiple windows look out on lush green trees. [Season: Summer/Spring] [Lighting: Soft, bright daytime light] [Content: Dining room, hutch cabinet, crystal chandelier, dining table interior]",
-        "srcset": "/gallery/Eden-Site%20Photos/28@400w.webp 400w, /gallery/Eden-Site%20Photos/28@800w.webp 800w",
+        "srcset": "/gallery/enhanced/28@400w.webp 400w, /gallery/enhanced/28@800w.webp 800w, /gallery/enhanced/28@1200w.webp 1200w, /gallery/enhanced/28@1600w.webp 1600w, /gallery/enhanced/28@2000w.webp 2000w, /gallery/enhanced/28@2400w.webp 2400w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 480
+        "width": 2400,
+        "height": 1600
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/27.avif",
-        "alt": "Formal Great Dining Room featuring a long wooden table prepared with crystal wine glasses, white plates, and silver cutlery. High-backed chairs upholstered in patterned cream fabric sit around the table under a large wrought-iron candle chandelier. Large windows look out on green trees. [Season: Summer/Spring] [Lighting: Bright, natural daytime light] [Content: Formal dining room, table setting, candle chandelier, dining interior]",
-        "srcset": "/gallery/Eden-Site%20Photos/27@400w.webp 400w, /gallery/Eden-Site%20Photos/27@800w.webp 800w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/13.avif",
+        "src": "/gallery/enhanced/13.avif",
         "alt": "Close-up detail of a formal dining or conference table. Shows a long polished dark wood table set with a bottle of red wine and two crystal wine glasses, surrounded by high-backed classic chairs upholstered in premium antique sage green textured leather with brass nailhead trim. [Season: Autumn/Winter] [Lighting: Soft, warm ambient dining light] [Content: Dining table close-up, leather chairs, wine glasses, formal dining interior]",
-        "srcset": "/gallery/Eden-Site%20Photos/13@400w.webp 400w, /gallery/Eden-Site%20Photos/13@800w.webp 800w",
+        "srcset": "/gallery/enhanced/13@400w.webp 400w, /gallery/enhanced/13@800w.webp 800w, /gallery/enhanced/13@1200w.webp 1200w, /gallery/enhanced/13@1600w.webp 1600w, /gallery/enhanced/13@2000w.webp 2000w, /gallery/enhanced/13@2400w.webp 2400w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
+        "width": 2400,
+        "height": 1600
       },
       {
         "src": "/gallery/enhanced/17.avif",

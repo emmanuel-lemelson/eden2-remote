@@ -85,7 +85,6 @@ const gallerySectionConfig = [
       25,  // Close-up of professional built-in stainless steel wall ovens
       26,  // Prep kitchen with warm wood cabinets, bar counter
       28,  // Formal Great Dining Room set for a dinner party, crystal chandelier
-      27,  // Formal Great Dining Room table set with crystal (daytime)
       13,  // Dining table close-up with red wine and leather nailhead chairs
       17,  // Casual dining nook in bay alcove looking at spring blossoms
       29   // Breakfast nook bay windows under high octagonal wood-paneled ceiling
