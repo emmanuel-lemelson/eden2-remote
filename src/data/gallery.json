@@ -182,8 +182,7 @@
       107,
       57,
       16,
-      11,
-      7
+      11
     ],
     "images": [
       {
@@ -321,14 +320,6 @@
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 1024,
         "height": 1024
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/7.avif",
-        "alt": "Interior view looking directly through three symmetrical multi-pane windows—a large central arched window flanked by two smaller rectangular ones. Frames a serene winter scene of snow-covered ground, bare and evergreen trees, and snow-dusted mountains under a brilliant blue sky. The indoor walls are soft beige and in shadow, dramatically highlighting the bright snowy landscape. [Season: Winter] [Lighting: Bright, direct winter daylight] [Content: Window view, mountain landscape, winter forest, interior frame]",
-        "srcset": "/gallery/Eden-Site%20Photos/7@400w.webp 400w, /gallery/Eden-Site%20Photos/7@800w.webp 800w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 540
       }
     ]
   },

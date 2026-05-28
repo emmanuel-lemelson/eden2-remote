@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
+import path from "path";
 
 const nextConfig: NextConfig = {
+  outputFileTracingRoot: path.join(__dirname),
   distDir: process.env.NODE_ENV === "production" ? ".next-prod" : ".next",
   output: "export",
   trailingSlash: true,

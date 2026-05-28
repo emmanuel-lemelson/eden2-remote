@@ -70,8 +70,7 @@ const gallerySectionConfig = [
       107, // Executive study/office on upper level with circular window
       57,  // Spacious home office/library with wooden desk, stained-glass lamp
       16,  // Warm, cozy study/media room and library bookshelves
-      11,  // Christmas tree glowing with warm lights next to snowy forest window
-      7    // Symmetrical windows looking out at serene winter mountain landscape
+      11   // Christmas tree glowing with warm lights next to snowy forest window
     ],
   },
   {
