@@ -154,7 +154,7 @@ function MasonryItem({
 }
 
 export function GallerySectionGrid({ sections }: Props) {
-  function renderPhotoNumberOverlay(src: string) {
+  function renderPhotoNumberOverlay(_src: string) {
     return null;
   }
 
