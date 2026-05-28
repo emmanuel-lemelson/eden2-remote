@@ -566,7 +566,7 @@ export function GallerySectionGrid({ sections }: Props) {
         runningImageIndex += section.images.length;
 
         return (
-          <FadeInWrapper key={section.title} className="space-y-8">
+          <article key={section.title} className="space-y-8">
             {/* Editorial Header info for Section */}
             <div className="border-b border-stone-200/80 pb-4 mb-6">
               <h3 className="text-2xl font-serif tracking-tight text-stone-900 font-medium">
@@ -575,8 +575,10 @@ export function GallerySectionGrid({ sections }: Props) {
             </div>
 
             {/* Render conditional photos layout */}
-            {renderSectionPhotos(section, sectionStartIndex)}
-          </FadeInWrapper>
+            <FadeInWrapper>
+              {renderSectionPhotos(section, sectionStartIndex)}
+            </FadeInWrapper>
+          </article>
         );
       })}
     </div>
