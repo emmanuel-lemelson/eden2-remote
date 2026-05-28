@@ -54,8 +54,7 @@ export default function NewsPage() {
       <div className="lux-container pt-12 pb-10 md:pb-14">
         <div className="mb-8">
           <div>
-            <p className="text-xs uppercase tracking-[0.5em] text-stone-600">Updates</p>
-            <h1 className="mt-2 text-3xl font-semibold text-stone-900 md:text-4xl">News</h1>
+            <h1 className="text-3xl font-semibold text-stone-900 md:text-4xl">News</h1>
           </div>
         </div>
 

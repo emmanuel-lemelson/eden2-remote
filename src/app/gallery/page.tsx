@@ -54,10 +54,7 @@ export default function GalleryPage() {
 
       <section className="lux-section pt-0">
         <div className="lux-container overflow-hidden rounded-3xl border border-white/60 bg-white/80 p-6 text-center md:p-10">
-          <p className="text-xs uppercase tracking-[0.4em] text-stone-500">
-            Preview and Planning
-          </p>
-          <h2 className="mt-4 text-4xl font-semibold text-stone-900">
+          <h2 className="text-4xl font-semibold text-stone-900">
             Tailored for Every Guest
           </h2>
           <p className="mt-4 text-base text-stone-700">

@@ -72,12 +72,12 @@
         "height": 480
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/88.avif",
+        "src": "/gallery/enhanced/88.avif",
         "alt": "Resort-style outdoor pool patio featuring a set of premium grey wicker sofas and chairs with royal blue cushions, arranged under a large matching blue umbrella. A sparkling turquoise swimming pool is in the background, bordered by green lawns. [Season: Summer] [Lighting: Bright, clear summer daylight] [Content: Pool patio, wicker sofas, blue cushions, swimming pool, backyard luxury]",
-        "srcset": "/gallery/Eden-Site%20Photos/88@400w.webp 400w, /gallery/Eden-Site%20Photos/88@800w.webp 800w",
+        "srcset": "/gallery/enhanced/88@400w.webp 400w, /gallery/enhanced/88@800w.webp 800w, /gallery/enhanced/88@1200w.webp 1200w, /gallery/enhanced/88@1600w.webp 1600w, /gallery/enhanced/88@2000w.webp 2000w, /gallery/enhanced/88@2400w.webp 2400w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 540
+        "width": 2400,
+        "height": 1600
       },
       {
         "src": "/gallery/Eden-Site%20Photos/69.avif",
@@ -144,20 +144,20 @@
         "height": 960
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/78.avif",
+        "src": "/gallery/enhanced/78.avif",
         "alt": "A breathtaking winter night-time view of the estate's rear facade, fully illuminated with warm interior lights that glow through the windows. The courtyard is covered in deep white snow, and a snowy driveway curves towards the house. [Season: Winter] [Lighting: Warm interior lighting contrasting with the cool blue tones of a winter night] [Content: Winter night exterior, illuminated house, snow driveway]",
-        "srcset": "/gallery/Eden-Site%20Photos/78@400w.webp 400w, /gallery/Eden-Site%20Photos/78@800w.webp 800w, /gallery/Eden-Site%20Photos/78@1200w.webp 1200w",
+        "srcset": "/gallery/enhanced/78@400w.webp 400w, /gallery/enhanced/78@800w.webp 800w, /gallery/enhanced/78@1200w.webp 1200w, /gallery/enhanced/78@1600w.webp 1600w, /gallery/enhanced/78@2000w.webp 2000w, /gallery/enhanced/78@2400w.webp 2400w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1200,
-        "height": 900
+        "width": 2400,
+        "height": 1600
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/68.avif",
+        "src": "/gallery/enhanced/68.avif",
         "alt": "Wide winter exterior elevation view of the luxury estate, blanketed in deep white snow under a clear blue sky. Bare trees stand in the snow-covered lawn. [Season: Winter] [Lighting: Bright, crisp winter daylight] [Content: Winter estate exterior, snow covered lawn, blue sky]",
-        "srcset": "/gallery/Eden-Site%20Photos/68@400w.webp 400w, /gallery/Eden-Site%20Photos/68@800w.webp 800w",
+        "srcset": "/gallery/enhanced/68@400w.webp 400w, /gallery/enhanced/68@800w.webp 800w, /gallery/enhanced/68@1200w.webp 1200w, /gallery/enhanced/68@1600w.webp 1600w, /gallery/enhanced/68@2000w.webp 2000w, /gallery/enhanced/68@2400w.webp 2400w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 540
+        "width": 2400,
+        "height": 1600
       }
     ]
   },
@@ -299,12 +299,12 @@
         "height": 1707
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/57.avif",
+        "src": "/gallery/enhanced/57.avif",
         "alt": "A spacious home office or library workspace. Features a dark wood desk with a leather executive chair in the center under an ornate stained-glass pendant lamp. The room has built-in wood bookshelves, French glass doors, a large circular window at the far end looking out onto green lawn/trees, and a patterned rug over hardwood floors. [Season: Summer] [Lighting: Soft daytime light] [Content: Home office, wood desk, circular window, bookshelves, executive study]",
-        "srcset": "/gallery/Eden-Site%20Photos/57@400w.webp 400w, /gallery/Eden-Site%20Photos/57@800w.webp 800w, /gallery/Eden-Site%20Photos/57@1200w.webp 1200w",
+        "srcset": "/gallery/enhanced/57@400w.webp 400w, /gallery/enhanced/57@800w.webp 800w, /gallery/enhanced/57@1200w.webp 1200w, /gallery/enhanced/57@1600w.webp 1600w, /gallery/enhanced/57@2000w.webp 2000w, /gallery/enhanced/57@2400w.webp 2400w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1200,
-        "height": 800
+        "width": 2400,
+        "height": 1600
       },
       {
         "src": "/gallery/enhanced/16.avif",
@@ -719,10 +719,10 @@
       {
         "src": "/gallery/enhanced/96.avif",
         "alt": "Professional home fitness center fully equipped with modern cardio gear including a treadmill, stationary bikes, and an elliptical machine, set on a wood floor with rubber mats. Large windows look out on green lawns. [Season: Summer] [Lighting: Bright, natural daylight] [Content: Home gym, fitness center, treadmill, cardio machines, gym interior]",
-        "srcset": "/gallery/enhanced/96@400w.webp 400w, /gallery/enhanced/96@800w.webp 800w, /gallery/enhanced/96@1200w.webp 1200w",
+        "srcset": "/gallery/enhanced/96@400w.webp 400w, /gallery/enhanced/96@800w.webp 800w, /gallery/enhanced/96@1200w.webp 1200w, /gallery/enhanced/96@1600w.webp 1600w, /gallery/enhanced/96@2000w.webp 2000w, /gallery/enhanced/96@2400w.webp 2400w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1024,
-        "height": 1024
+        "width": 2400,
+        "height": 1600
       },
       {
         "src": "/gallery/Eden-Site%20Photos/90.webp",
@@ -743,10 +743,10 @@
       {
         "src": "/gallery/enhanced/92.avif",
         "alt": "An outdoor spa hot tub steaming heavily in the middle of a winter landscape covered in thick white snow. Tall pine trees stand in the background under a soft winter sky. [Season: Winter] [Lighting: Soft, cool winter daylight] [Content: Steaming hot tub, snow covered ground, winter landscape, pine trees]",
-        "srcset": "/gallery/enhanced/92@400w.webp 400w, /gallery/enhanced/92@800w.webp 800w, /gallery/enhanced/92@1200w.webp 1200w",
+        "srcset": "/gallery/enhanced/92@400w.webp 400w, /gallery/enhanced/92@800w.webp 800w, /gallery/enhanced/92@1200w.webp 1200w, /gallery/enhanced/92@1600w.webp 1600w, /gallery/enhanced/92@2000w.webp 2000w, /gallery/enhanced/92@2400w.webp 2400w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1024,
-        "height": 1024
+        "width": 2400,
+        "height": 1600
       },
       {
         "src": "/gallery/enhanced/32.avif",

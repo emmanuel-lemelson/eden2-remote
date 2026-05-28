@@ -81,7 +81,7 @@ const platforms: Platform[] = [
     hoverBgColor: "hover:bg-[#F3FBFB]",
     logoWidth: 112,
     logoHeight: 28,
-    logoClassName: "h-7 w-auto sm:h-8 max-w-full object-contain",
+    logoClassName: "h-[32px] w-auto sm:h-[40px] max-w-full object-contain",
   },
 ];
 
@@ -95,7 +95,7 @@ export function WhereToFindUs({
   title = "Where to Find Us",
   className = "",
   containerClassName = ""
-}: WhereToFindUsProps) {
+   }: WhereToFindUsProps) {
   return (
     <div className={`flex flex-col items-center gap-6 text-center text-stone-900 md:gap-8 ${className}`}>
       <p className="text-sm font-semibold uppercase tracking-[0.35em] text-stone-800 sm:text-base md:text-lg">
@@ -108,15 +108,13 @@ export function WhereToFindUs({
             href={platform.href}
             target="_blank"
             rel="noopener noreferrer"
-            className={`inline-flex w-full max-w-[120px] items-center justify-center rounded-full px-3 py-2.5 shadow-lg shadow-black/10 transition-colors transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-xl sm:max-w-none sm:px-6 sm:py-3 ${platform.bgColor} ${platform.hoverBgColor || ""} ${platform.borderColor ? `border ${platform.borderColor}` : ""} ${platform.hoverBorderColor || ""}`}
+            className={`inline-flex w-full max-w-[120px] h-10 sm:h-12 items-center justify-center rounded-full shadow-lg shadow-black/10 transition-colors transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-xl sm:max-w-none ${platform.name === "WeddingWire" ? "px-1.5 sm:px-3" : "px-3 sm:px-6"} ${platform.bgColor} ${platform.hoverBgColor || ""} ${platform.borderColor ? `border ${platform.borderColor}` : ""} ${platform.hoverBorderColor || ""}`}
             aria-label={`View Eden on ${platform.name}`}
           >
-            <Image
-              src={platform.logo}
+            <img
+              src={platform.logo.endsWith(".svg") ? `${platform.logo}?v=2` : platform.logo}
               alt={platform.alt}
               className={platform.logoClassName}
-              width={platform.logoWidth}
-              height={platform.logoHeight}
               loading="lazy"
             />
           </Link>

@@ -17,11 +17,6 @@ export function SectionHeading({
 
   return (
     <div className={`max-w-3xl ${align === "center" ? "mx-auto text-center" : ""}`}>
-      {eyebrow ? (
-        <p className="text-xs uppercase tracking-[0.4em] text-stone-500">
-          {eyebrow}
-        </p>
-      ) : null}
       <HeadingTag className="mt-2 text-4xl font-semibold text-stone-900 md:text-5xl">
         {title}
       </HeadingTag>

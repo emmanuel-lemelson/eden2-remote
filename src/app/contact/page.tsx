@@ -30,10 +30,7 @@ export default function ContactPage() {
     <div>
       <section className="pt-12 pb-12">
         <div className="lux-container max-w-4xl">
-          <p className="text-xs uppercase tracking-[0.4em] text-stone-500">
-            Contact
-          </p>
-          <h1 className="mt-4 text-4xl font-semibold text-stone-900 md:text-5xl">
+          <h1 className="text-4xl font-semibold text-stone-900 md:text-5xl">
             Plan Your Stay
           </h1>
           <p className="mt-4 text-base text-stone-700">

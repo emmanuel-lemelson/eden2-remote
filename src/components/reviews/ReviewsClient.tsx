@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { PerfectReviewsBadge } from "@/components/TestimonialCarousel";
+import { PerfectReviewsBadge, PlatformBadge } from "@/components/TestimonialCarousel";
 import type { NormalizedReview } from "@/types/reviews";
 
 type NormalizedPayload = {
@@ -59,7 +59,7 @@ function ReviewCard({ r }: { r: NormalizedReview }) {
         <div>
           <h3 className="text-base font-semibold text-stone-900">{r.title}</h3>
           <p className="mt-0.5 text-[0.75rem] uppercase tracking-[0.18em] text-stone-500">
-            {r.reviewer}{r.location ? ` · ${r.location}` : ""}
+            {r.reviewer}{r.dateText ? ` · ${r.dateText}` : ""}
           </p>
         </div>
         {r.rating ? <StarRating rating={r.rating} /> : null}
@@ -71,14 +71,8 @@ function ReviewCard({ r }: { r: NormalizedReview }) {
         <span className="text-[1.05rem] font-medium text-stone-600">”</span>
       </p>
 
-      <div className="mt-auto flex items-center justify-between gap-3 pt-4">
-        <div className="text-[0.72rem] text-stone-500">
-          <span>{r.dateText}</span>
-          {r.nights ? <span> · {r.nights} night{r.nights === 1 ? "" : "s"}</span> : null}
-          {r.stayedWith ? <span> · {r.stayedWith}</span> : null}
-          {r.tripType ? <span> · {r.tripType}</span> : null}
-          {r.tripNotes ? <span> · {r.tripNotes}</span> : null}
-        </div>
+      <div className="mt-auto flex items-center justify-start gap-4 pt-4">
+        <PlatformBadge platform={r.platform} />
         {long && (
           <button
             type="button"
@@ -89,12 +83,6 @@ function ReviewCard({ r }: { r: NormalizedReview }) {
             {expanded ? "Read less" : "Read more"}
           </button>
         )}
-      </div>
-
-      <div className="mt-4 flex items-center gap-2 text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-stone-500">
-        <span className="inline-flex items-center rounded-full bg-[#f2e8da] px-2 py-0.5 text-[0.68rem] font-semibold text-stone-700">
-          {r.platform}
-        </span>
       </div>
     </article>
   );

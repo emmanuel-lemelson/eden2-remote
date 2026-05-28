@@ -95,10 +95,7 @@ export default function CorporateEventsArticle() {
         </div>
 
         <header className="mb-12 px-4 md:px-20 lg:px-28 text-left">
-          <p className="text-xs uppercase tracking-[0.5em] text-[var(--color-gold)] font-semibold">
-            Press Release
-          </p>
-          <h1 className="mt-4 text-4xl font-semibold leading-tight text-stone-900 md:text-5xl">
+          <h1 className="text-4xl font-semibold leading-tight text-stone-900 md:text-5xl">
             The Lemelson Estate Opens Doors to Exclusive Corporate Events
           </h1>
           <time

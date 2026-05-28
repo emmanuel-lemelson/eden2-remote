@@ -17,40 +17,57 @@ const quickFacts = [
 const galleryPreview = [
   {
     src: "/gallery/Eden-Site Photos/2.avif",
-    alt: "Eden Estate exterior view",
+    alt: "High-altitude aerial sunset view of The Lemelson Estate in Stowe, Vermont, showing the main residence, swimming pool, spring-fed pond, and surrounding mountains.",
   },
   {
-    src: "/gallery/Eden-Site Photos/3.avif",
-    alt: "Eden Estate exterior view",
+    src: "/gallery/Eden-Site Photos/98.avif",
+    alt: "Wide-angle interior view of the magnificent Great Room featuring soaring timber trusses, a massive stone fireplace, two Chesterfield leather sofas, and a grand piano.",
   },
   {
-    src: "/gallery/Eden-Site Photos/1.webp",
-    alt: "Eden Estate exterior view",
+    src: "/gallery/Eden-Site Photos/103.avif",
+    alt: "Luxury master bathroom en-suite showing a soaking tub set in a dark marble deck under a dramatic arched window framing a mountain sunset.",
   },
   {
-    src: "/gallery/Eden-Site Photos/5.avif",
-    alt: "Eden Estate interior view",
+    src: "/gallery/Eden-Site Photos/87.avif",
+    alt: "Rear exterior twilight view of The Lemelson Estate, showcasing the glowing warm windows overlooking the stone-paved patio and private swimming pool.",
   },
 ];
 
 const testimonials = [
   {
     quote:
-      "Absolutely loved this place, worth every single penny…. Secluded, beautiful, fun, and spacious. The service was the best I’ve EVER experienced, nonstop communication, and instant responses.",
+      "Absolutely loved this place, worth every single penny. Secluded, beautiful, fun, and spacious. The service was the best I’ve EVER experienced, with nonstop communication and instant responses. I truly felt like a guest, not a client.",
     name: "Joshua",
     detail: "Stayed Jul 2025, Group Trip",
+    platform: "Airbnb",
   },
   {
     quote:
-      "We were fortunate enough to stay at this magnificent estate for a long weekend. The house is impeccably clean and well cared for… Five star hosts and five star house. Highly recommend and would love to return.",
+      "This magnificent estate is impeccably clean and well cared for. The host left wine, snacks, and flowers on the kitchen counter, and even put little boxes of chocolate on every bed! The sauna, hot tub, and game room are outstanding.",
     name: "Margot M.",
     detail: "Stayed Feb 2025, VRBO Guest",
+    platform: "Vrbo",
+  },
+  {
+    quote:
+      "Perfect house for a large family or group. Extremely clean and in perfect order. The pool, hot tub, and clay tennis court were fantastic with beautiful views of the mountains, gardens, and the most awesome sunsets! I highly recommend this house.",
+    name: "Susan C. W.",
+    detail: "Stayed Jul 2023, VRBO Guest",
+    platform: "Vrbo",
+  },
+  {
+    quote:
+      "This incredible property is a unique combination of the luxury, amenities and benefits of a 5-star resort with the intimacy and privacy that comes with renting a vacation home. The experience was flawless and exceeded our expectations—no detail was overlooked.",
+    name: "Nazzic K.",
+    detail: "Christmas Getaway, Dec 2021",
+    platform: "Vrbo",
   },
   {
     quote:
       "We had our wedding ceremony in the great room and enjoyed the weekend with our family. It was absolutely beautiful throughout the house and had so many perks and special amenities—we definitely felt like we were staying in a very luxurious place.",
     name: "Seanna",
     detail: "Winter Wedding, Feb 2023",
+    platform: "Airbnb",
   },
 ];
 
@@ -119,17 +136,14 @@ export default function Home() {
 
       <section className="lux-section bg-white animate-fade-up fade-delay-1">
         <div className="lux-container !px-4 sm:!px-6">
-          <div className="relative grid gap-6 overflow-hidden rounded-[2.75rem] border border-[color:rgba(217,209,195,0.6)] bg-gradient-to-br from-[var(--color-linen)] via-[var(--color-eggshell)] to-[color:rgba(210,196,163,0.2)] px-3 py-7 shadow-[0_32px_68px_-42px_rgba(58,45,20,0.55)] sm:px-10 sm:py-10 md:grid-cols-3 md:p-14">
+          <div className="relative grid gap-6 overflow-hidden rounded-[2.75rem] border border-[color:rgba(217,209,195,0.4)] bg-gradient-to-br from-[var(--color-linen)] via-[var(--color-eggshell)] to-[color:rgba(210,196,163,0.15)] px-3 py-7 shadow-[0_32px_64px_-40px_rgba(58,45,20,0.18)] sm:px-10 sm:py-10 md:grid-cols-3 md:p-14">
             <div
-              className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/20 via-transparent to-[color:rgba(210,196,163,0.25)]"
+              className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/20 via-transparent to-[color:rgba(210,196,163,0.15)]"
               aria-hidden
             />
 
             <div className="relative md:col-span-1">
-              <p className="text-xs uppercase tracking-[0.55em] text-[var(--color-gold)] sm:text-sm">
-                Welcome to Eden
-              </p>
-              <h2 className="mt-3 text-3xl font-semibold text-[var(--color-charcoal)] sm:mt-4 sm:text-[2.5rem]">
+              <h2 className="text-3xl font-semibold text-[var(--color-charcoal)] sm:text-[2.5rem]">
                 Estate at a glance
               </h2>
               <p className="mt-3 text-sm leading-relaxed text-stone-700 sm:mt-4 sm:text-base">
@@ -143,13 +157,12 @@ export default function Home() {
               {quickFacts.map((fact) => (
                 <div
                   key={fact.label}
-                  className="group relative overflow-hidden rounded-2xl border border-white/80 bg-white/85 p-4 shadow-[0_24px_44px_-32px_rgba(58,45,20,0.55)] backdrop-blur transition duration-300 hover:-translate-y-1 hover:shadow-[0_32px_64px_-36px_rgba(58,45,20,0.6)] sm:p-6"
+                  className="relative overflow-hidden rounded-2xl border border-[var(--color-gold)]/25 bg-white/45 p-5 shadow-[0_12px_30px_-15px_rgba(58,45,20,0.02)] backdrop-blur-md sm:p-6"
                 >
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/60 via-transparent to-[color:rgba(232,218,192,0.6)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                  <dt className="relative text-[0.7rem] uppercase tracking-[0.35em] text-[var(--color-gold)] font-semibold drop-shadow-[0_1px_0_rgba(255,255,255,0.75)]">
+                  <dt className="relative text-[0.62rem] font-bold uppercase tracking-[0.2em] text-stone-500 sm:text-xs">
                     {fact.label}
                   </dt>
-                  <dd className="relative mt-2 text-lg font-semibold text-[var(--color-charcoal)] sm:mt-3 sm:text-2xl">
+                  <dd className="relative mt-1 text-base font-semibold text-stone-900 sm:mt-2 sm:text-lg md:text-xl">
                     {fact.value}
                   </dd>
                 </div>
@@ -159,7 +172,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="lux-section bg-white/80 animate-fade-up fade-delay-2">
+      <section className="lux-section !pb-8 md:!pb-12 bg-white/80 animate-fade-up fade-delay-2">
         <div className="lux-container space-y-8">
           <SectionHeading
             eyebrow="Gallery"
@@ -198,7 +211,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="lux-section bg-white/80 animate-fade-up">
+      <section className="lux-section !pt-4 md:!pt-6 bg-white/80 animate-fade-up">
         <div className="lux-container">
           <TestimonialCarousel testimonials={testimonials} />
           <div className="mt-8 flex justify-center">
@@ -214,10 +227,7 @@ export default function Home() {
 
       <section className="lux-section bg-white animate-fade-up fade-delay-2">
         <div className="lux-container overflow-hidden rounded-3xl border border-white/60 bg-white/80 p-10 text-center md:p-16">
-          <p className="text-xs uppercase tracking-[0.4em] text-stone-500">
-            Plan Your Stay
-          </p>
-          <h2 className="mt-4 text-4xl font-semibold text-stone-900 md:text-5xl">
+          <h2 className="text-4xl font-semibold text-stone-900 md:text-5xl">
             Reserve Eden for your next gathering.
           </h2>
           <p className="mt-4 text-base text-stone-700 md:text-lg">
