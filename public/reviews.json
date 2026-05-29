@@ -361,7 +361,7 @@
       ]
     },
     "Facebook": {
-      "total": 18,
+      "total": 17,
       "reviews": [
         {
           "reviewer": "Jessica-John Serlis",
@@ -434,13 +434,6 @@
           "review": "From the moment we ascended the winding road leading to the mansion, we knew we were in for a treat. The grandeur of the estate took our breath away, with its stately architecture and panoramic views of Vermont's rolling hills. The interior was equally impressive, blending modern amenities with rustic charm. Each bedroom was a haven of comfort with serene mountain views. The well-maintained gardens and pathways invited leisurely strolls, and the outdoor hot tub under the stars was unforgettable. Our hosts were the epitome of hospitality, providing excellent recommendations for local hikes and dining. This mansion is the perfect escape for anyone seeking luxury and natural beauty—an ideal spot for family reunions, corporate retreats, or a lavish getaway. We left rejuvenated and can't wait to return to this mountain paradise."
         },
         {
-          "reviewer": "Rev. Fr. Emmanuel Lemelson",
-          "date": "May 21, 2024",
-          "rating": { "scale": 5, "value": 5 },
-          "title": "Peaceful and Majestic Year-Round",
-          "review": "One of the most serene and breathtaking places to spend time during any season. The Lemelson Estate, nestled between the majestic Mt. Mansfield and the picturesque village of Stowe, is one of the great mountain estates on the East Coast."
-        },
-        {
           "reviewer": "Carlos Piedrahita",
           "date": "May 20, 2024",
           "rating": { "scale": 5, "value": 5 },
@@ -498,12 +491,12 @@
     "The_Knot": 10,
     "Zola": 1,
     "Wedding_Wire": 2,
-    "Facebook": 18,
-    "overall": 63
+    "Facebook": 17,
+    "overall": 62
   },
   "ai_summary": {
     "note": "AI-generated summary",
     "text": "Eden – The Lemelson Estate in Stowe, Vermont, consistently exceeds guest expectations as a luxurious, well-appointed private retreat ideal for family gatherings, weddings, group getaways, and corporate retreats. Guests describe the home as spacious, immaculate, and thoughtfully designed with a balance of elegance and comfort. The estate offers resort-level amenities—including a heated pool, hot tub, sauna, steam room, tennis court, extensive game room, and lush, walkable grounds—set against the backdrop of Vermont’s breathtaking mountain views. Reviewers highlight the seamless hospitality experience, with owners and staff frequently praised for their warmth, attentiveness, and proactive communication. Guests note the home's versatility for both celebration and relaxation, with amenities catering to all ages, from board games and sleds for kids to private chef dinners and spa services for adults. Its close proximity to ski resorts, hiking, and downtown Stowe complements its peaceful seclusion, creating a rare combination of accessibility and escape. Nearly every review ends with a common sentiment: no one wants to leave—and most plan to return.",
-    "total_reviews": 63
+    "total_reviews": 62
   }
 }
