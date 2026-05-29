@@ -225,7 +225,7 @@ export default function Home() {
           <div className="flex flex-col items-center gap-4 text-center max-w-3xl">
             <h2 className="text-4xl font-semibold text-stone-900 md:text-5xl">What Our Guests Say</h2>
             <div className="mt-2 flex justify-center">
-              <PerfectReviewsBadge reviewCount={63} countLabel="REVIEWS" />
+              <PerfectReviewsBadge reviewCount={62} countLabel="REVIEWS" />
             </div>
           </div>
           
