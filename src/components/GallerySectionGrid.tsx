@@ -154,16 +154,6 @@ function MasonryItem({
 }
 
 export function GallerySectionGrid({ sections }: Props) {
-  function renderPhotoNumberOverlay(src: string) {
-    const decoded = decodeURI(src);
-    const filename = decoded.substring(decoded.lastIndexOf("/") + 1);
-    return (
-      <div className="absolute top-3 right-3 bg-black/75 text-white text-[0.7rem] px-2.5 py-1.5 rounded-full opacity-0 transition-opacity duration-300 group-hover:opacity-100 z-20 font-mono tracking-tight pointer-events-none select-none">
-        {filename}
-      </div>
-    );
-  }
-
   // Dynamic layout renderer based on image counts to ensure visual balance
   function renderSectionPhotos(section: GallerySection, sectionStartIndex: number) {
     const images = section.images;
@@ -200,7 +190,6 @@ export function GallerySectionGrid({ sections }: Props) {
             </div>
             <div className="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/5 z-10 pointer-events-none" />
             <span className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-t from-black/20 via-transparent to-black/5 opacity-30" />
-            {renderPhotoNumberOverlay(img.src)}
           </div>
         </div>
       );
@@ -244,7 +233,6 @@ export function GallerySectionGrid({ sections }: Props) {
                 </div>
                 <div className="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/5 z-10 pointer-events-none" />
                 <span className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-t from-black/20 via-transparent to-black/5 opacity-30" />
-                {renderPhotoNumberOverlay(img.src)}
               </div>
             ))}
           </div>
@@ -275,7 +263,6 @@ export function GallerySectionGrid({ sections }: Props) {
                 </div>
                 <div className="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/5 z-10 pointer-events-none" />
                 <span className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-t from-black/20 via-transparent to-black/5 opacity-30" />
-                {renderPhotoNumberOverlay(img.src)}
               </div>
             ))}
           </div>
@@ -302,7 +289,6 @@ export function GallerySectionGrid({ sections }: Props) {
               </div>
               <div className="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/5 z-10 pointer-events-none" />
               <span className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-t from-black/20 via-transparent to-black/5 opacity-30" />
-              {renderPhotoNumberOverlay(isPort1 ? img2.src : img1.src)}
             </div>
             {/* Portrait photo (takes 2/5 width) */}
             <div
@@ -322,7 +308,6 @@ export function GallerySectionGrid({ sections }: Props) {
               </div>
               <div className="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/5 z-10 pointer-events-none" />
               <span className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-t from-black/20 via-transparent to-black/5 opacity-30" />
-              {renderPhotoNumberOverlay(isPort1 ? img1.src : img2.src)}
             </div>
           </div>
         );
@@ -358,7 +343,6 @@ export function GallerySectionGrid({ sections }: Props) {
                   </div>
                   <div className="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/5 z-10 pointer-events-none" />
                   <span className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-t from-black/20 via-transparent to-black/5 opacity-30" />
-                  {renderPhotoNumberOverlay(img.src)}
                 </div>
               );
             })}
@@ -406,7 +390,6 @@ export function GallerySectionGrid({ sections }: Props) {
               </div>
               <div className="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/5 z-10 pointer-events-none" />
               <span className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-t from-black/25 via-transparent to-black/5 opacity-35" />
-              {renderPhotoNumberOverlay(featuredImage.src)}
             </div>
 
             {/* Right stacked dual column */}
@@ -432,7 +415,6 @@ export function GallerySectionGrid({ sections }: Props) {
                     </div>
                     <div className="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/5 z-10 pointer-events-none" />
                     <span className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-t from-black/20 via-transparent to-black/5 opacity-30" />
-                    {renderPhotoNumberOverlay(img.src)}
                   </div>
                 );
               })}
@@ -483,7 +465,6 @@ export function GallerySectionGrid({ sections }: Props) {
             </div>
             <div className="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/5 z-10 pointer-events-none" />
             <span className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-t from-black/25 via-transparent to-black/5 opacity-35" />
-            {renderPhotoNumberOverlay(featuredImage.src)}
           </div>
 
           {/* Bottom aligned triple grid row */}
@@ -509,7 +490,6 @@ export function GallerySectionGrid({ sections }: Props) {
                   </div>
                   <div className="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/5 z-10 pointer-events-none" />
                   <span className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-t from-black/20 via-transparent to-black/5 opacity-30" />
-                  {renderPhotoNumberOverlay(img.src)}
                 </div>
               );
             })}
@@ -548,7 +528,6 @@ export function GallerySectionGrid({ sections }: Props) {
               </div>
               <div className="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/5 z-10 pointer-events-none" />
               <span className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-t from-black/20 via-transparent to-black/10 opacity-30" />
-              {renderPhotoNumberOverlay(image.src)}
             </MasonryItem>
           );
         })}
