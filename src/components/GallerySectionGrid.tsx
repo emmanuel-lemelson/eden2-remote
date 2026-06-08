@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useCallback } from "react";
+import { useEffect, useLayoutEffect, useRef, useCallback } from "react";
 import type { ReactNode } from "react";
 import { GalleryImage } from "@/components/GalleryImage";
 import type { GallerySection } from "@/types/gallery";
@@ -61,23 +61,24 @@ type Props = {
 
 const DEFAULT_AUTO_ROW_HEIGHT = 8;
 
-function MasonryItem({
-  className,
-  children,
-  aspectRatio,
-}: {
-  className?: string;
-  children: ReactNode;
-  aspectRatio: number;
-}) {
-  const elementRef = useRef<HTMLDivElement | null>(null);
+/**
+ * Container-level masonry controller.
+ *
+ * Replaces the previous per-item approach (one ResizeObserver + one rAF per
+ * tile, mutating layout after paint) which caused visible reflow/"glitch" as
+ * tiles snapped to size. Here a single ResizeObserver watches the grid, and on
+ * each change we do ONE batched read phase (collect every tile width) followed
+ * by ONE batched write phase (apply every span) to avoid layout thrashing.
+ * The first pass runs in useLayoutEffect so spans are set before the browser
+ * paints — no flash of mis-sized tiles. Each tile also reserves its space via
+ * aspect-ratio on the <img>, so there is zero layout shift before JS runs.
+ */
+function MasonryGrid({ children }: { children: ReactNode }) {
+  const gridRef = useRef<HTMLDivElement | null>(null);
   const rafRef = useRef<number>(0);
 
-  const updateSpan = useCallback(() => {
-    const element = elementRef.current;
-    if (!element) return;
-
-    const grid = element.parentElement;
+  const applyLayout = useCallback(() => {
+    const grid = gridRef.current;
     if (!grid) return;
 
     const computed = window.getComputedStyle(grid);
@@ -90,64 +91,85 @@ function MasonryItem({
       DEFAULT_AUTO_ROW_HEIGHT;
     if (autoRowHeight <= 0) return;
 
-    if (!Number.isFinite(aspectRatio) || aspectRatio <= 0) {
-      element.style.removeProperty("grid-row-end");
-      element.style.removeProperty("height");
-      return;
+    const items = Array.from(grid.children) as HTMLElement[];
+
+    // READ phase: gather every measurement first (no writes interleaved).
+    const measurements = items.map((item) => {
+      const aspectRatio = Number.parseFloat(item.dataset.aspectRatio ?? "");
+      const width = item.getBoundingClientRect().width;
+      return { item, aspectRatio, width };
+    });
+
+    // WRITE phase: apply all spans/heights together.
+    for (const { item, aspectRatio, width } of measurements) {
+      if (!Number.isFinite(aspectRatio) || aspectRatio <= 0 || width === 0) {
+        item.style.removeProperty("grid-row-end");
+        item.style.removeProperty("height");
+        continue;
+      }
+      const targetHeight = width * aspectRatio;
+      const rowSpan = Math.max(
+        1,
+        Math.ceil((targetHeight + gap) / (autoRowHeight + gap)),
+      );
+      item.style.gridRowEnd = `span ${rowSpan}`;
+      item.style.height = `${targetHeight}px`;
     }
+  }, []);
 
-    const width = element.getBoundingClientRect().width;
-    if (width === 0) return;
-
-    const targetHeight = width * aspectRatio;
-    const rowSpan = Math.max(
-      1,
-      Math.ceil((targetHeight + gap) / (autoRowHeight + gap)),
-    );
-
-    element.style.gridRowEnd = `span ${rowSpan}`;
-    element.style.height = `${targetHeight}px`;
-  }, [aspectRatio]);
-
-  // RAF-batched callback to prevent layout thrashing across 89 observers
-  const scheduledUpdate = useCallback(() => {
+  const scheduledLayout = useCallback(() => {
     if (rafRef.current) cancelAnimationFrame(rafRef.current);
-    rafRef.current = requestAnimationFrame(updateSpan);
-  }, [updateSpan]);
+    rafRef.current = requestAnimationFrame(applyLayout);
+  }, [applyLayout]);
 
-  // useEffect (not useLayoutEffect) — lets the browser paint the placeholder
-  // before we measure and adjust grid spans
+  // Run before paint so tiles are never shown at the wrong size.
+  useLayoutEffect(() => {
+    applyLayout();
+  }, [applyLayout]);
+
   useEffect(() => {
-    const element = elementRef.current;
-    if (!element) return;
-
-    // Initial calculation
-    updateSpan();
+    const grid = gridRef.current;
+    if (!grid) return;
 
     if (typeof ResizeObserver === "function") {
-      const observer = new ResizeObserver(scheduledUpdate);
-      observer.observe(element);
-
+      const observer = new ResizeObserver(scheduledLayout);
+      observer.observe(grid);
       return () => {
         if (rafRef.current) cancelAnimationFrame(rafRef.current);
         observer.disconnect();
       };
     }
 
-    window.addEventListener("resize", scheduledUpdate);
+    window.addEventListener("resize", scheduledLayout);
     return () => {
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
-      window.removeEventListener("resize", scheduledUpdate);
+      window.removeEventListener("resize", scheduledLayout);
     };
-  }, [updateSpan, scheduledUpdate]);
+  }, [scheduledLayout]);
 
+  return (
+    <div ref={gridRef} className="masonry-grid">
+      {children}
+    </div>
+  );
+}
+
+function MasonryItem({
+  className,
+  children,
+  aspectRatio,
+}: {
+  className?: string;
+  children: ReactNode;
+  aspectRatio: number;
+}) {
   const classes = ["masonry-item"];
   if (className && className.trim().length > 0) {
     classes.push(className);
   }
 
   return (
-    <div ref={elementRef} className={classes.join(" ")}>
+    <div className={classes.join(" ")} data-aspect-ratio={aspectRatio}>
       {children}
     </div>
   );
@@ -180,6 +202,7 @@ export function GallerySectionGrid({ sections }: Props) {
               <GalleryImage
                 src={img.src}
                 srcSet={img.srcset}
+                avifSrcSet={img.avifSrcset}
                 alt={altText}
                 width={img.width}
                 height={img.height}
@@ -223,6 +246,7 @@ export function GallerySectionGrid({ sections }: Props) {
                   <GalleryImage
                     src={img.src}
                     srcSet={img.srcset}
+                    avifSrcSet={img.avifSrcset}
                     alt={alt}
                     width={img.width}
                     height={img.height}
@@ -253,6 +277,7 @@ export function GallerySectionGrid({ sections }: Props) {
                   <GalleryImage
                     src={img.src}
                     srcSet={img.srcset}
+                    avifSrcSet={img.avifSrcset}
                     alt={alt}
                     width={img.width}
                     height={img.height}
@@ -279,6 +304,7 @@ export function GallerySectionGrid({ sections }: Props) {
                 <GalleryImage
                   src={isPort1 ? img2.src : img1.src}
                   srcSet={isPort1 ? img2.srcset : img1.srcset}
+                  avifSrcSet={isPort1 ? img2.avifSrcset : img1.avifSrcset}
                   alt={isPort1 ? alt2 : alt1}
                   width={isPort1 ? img2.width : img1.width}
                   height={isPort1 ? img2.height : img1.height}
@@ -298,6 +324,7 @@ export function GallerySectionGrid({ sections }: Props) {
                 <GalleryImage
                   src={isPort1 ? img1.src : img2.src}
                   srcSet={isPort1 ? img1.srcset : img2.srcset}
+                  avifSrcSet={isPort1 ? img1.avifSrcset : img2.avifSrcset}
                   alt={isPort1 ? alt1 : alt2}
                   width={isPort1 ? img1.width : img2.width}
                   height={isPort1 ? img1.height : img2.height}
@@ -333,6 +360,7 @@ export function GallerySectionGrid({ sections }: Props) {
                     <GalleryImage
                       src={img.src}
                       srcSet={img.srcset}
+                      avifSrcSet={img.avifSrcset}
                       alt={img.alt && img.alt !== "Eden Estate gallery image" ? img.alt : `${section.title} at Eden Estate`}
                       width={img.width}
                       height={img.height}
@@ -380,6 +408,7 @@ export function GallerySectionGrid({ sections }: Props) {
                 <GalleryImage
                   src={featuredImage.src}
                   srcSet={featuredImage.srcset}
+                  avifSrcSet={featuredImage.avifSrcset}
                   alt={featuredImage.alt && featuredImage.alt !== "Eden Estate gallery image" ? featuredImage.alt : `${section.title} at Eden Estate`}
                   width={featuredImage.width}
                   height={featuredImage.height}
@@ -405,6 +434,7 @@ export function GallerySectionGrid({ sections }: Props) {
                       <GalleryImage
                         src={img.src}
                         srcSet={img.srcset}
+                        avifSrcSet={img.avifSrcset}
                         alt={img.alt && img.alt !== "Eden Estate gallery image" ? img.alt : `${section.title} at Eden Estate`}
                         width={img.width}
                         height={img.height}
@@ -455,6 +485,7 @@ export function GallerySectionGrid({ sections }: Props) {
               <GalleryImage
                 src={featuredImage.src}
                 srcSet={featuredImage.srcset}
+                avifSrcSet={featuredImage.avifSrcset}
                 alt={featuredImage.alt && featuredImage.alt !== "Eden Estate gallery image" ? featuredImage.alt : `${section.title} at Eden Estate`}
                 width={featuredImage.width}
                 height={featuredImage.height}
@@ -480,6 +511,7 @@ export function GallerySectionGrid({ sections }: Props) {
                     <GalleryImage
                       src={img.src}
                       srcSet={img.srcset}
+                      avifSrcSet={img.avifSrcset}
                       alt={img.alt && img.alt !== "Eden Estate gallery image" ? img.alt : `${section.title} at Eden Estate`}
                       width={img.width}
                       height={img.height}
@@ -500,7 +532,7 @@ export function GallerySectionGrid({ sections }: Props) {
 
     // 5+ Photos: Dynamic JS-Based Masonry Grid per section
     return (
-      <div className="masonry-grid">
+      <MasonryGrid>
         {images.map((image, idx) => {
           const absoluteIndex = sectionStartIndex + idx;
           const altText =
@@ -518,6 +550,7 @@ export function GallerySectionGrid({ sections }: Props) {
                 <GalleryImage
                   src={image.src}
                   srcSet={image.srcset}
+                  avifSrcSet={image.avifSrcset}
                   alt={altText}
                   width={image.width}
                   height={image.height}
@@ -531,7 +564,7 @@ export function GallerySectionGrid({ sections }: Props) {
             </MasonryItem>
           );
         })}
-      </div>
+      </MasonryGrid>
     );
   }
 

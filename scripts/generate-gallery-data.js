@@ -175,18 +175,22 @@ function buildAltText(filename) {
   return sentence.charAt(0).toUpperCase() + sentence.slice(1);
 }
 
+const WEBP_QUALITY = 70;
+const AVIF_QUALITY = 52;
+
 async function ensureVariantsForImage(absSrcPath, widths) {
   const ext = path.extname(absSrcPath).toLowerCase();
   const base = absSrcPath.slice(0, -ext.length);
-  const out = [];
+  const webp = [];
+  const avif = [];
   const metadata = await sharp(absSrcPath).metadata();
-  
+
   for (let i = 0; i < widths.length; i++) {
     const w = widths[i];
-    
+
     // Only generate this variant if the target width is smaller than or equal to the original width,
     // OR if this is the first breakpoint that is larger than the original image's width.
-    // This ensures we always have at least one WebP variant capturing full resolution, but no oversized duplicates.
+    // This ensures we always have at least one variant capturing full resolution, but no oversized duplicates.
     if (w > metadata.width && i > 0) {
       const previousWidth = widths[i - 1];
       if (previousWidth >= metadata.width) {
@@ -194,16 +198,33 @@ async function ensureVariantsForImage(absSrcPath, widths) {
       }
     }
 
-    const outPath = `${base}@${w}w.webp`;
-    // Generate variant if missing
-    if (!fs.existsSync(outPath)) {
-      await sharp(absSrcPath).resize({ width: w, withoutEnlargement: true }).webp({ quality: 70 }).toFile(outPath);
+    const webpPath = `${base}@${w}w.webp`;
+    if (!fs.existsSync(webpPath)) {
+      await sharp(absSrcPath)
+        .resize({ width: w, withoutEnlargement: true })
+        .webp({ quality: WEBP_QUALITY })
+        .toFile(webpPath);
     }
-    // Record public path
-    const relFromPublic = outPath.split(path.join(process.cwd(), "public"))[1];
-    out.push(relFromPublic.replace(/\\/g, "/"));
+
+    const avifPath = `${base}@${w}w.avif`;
+    if (!fs.existsSync(avifPath)) {
+      await sharp(absSrcPath)
+        .resize({ width: w, withoutEnlargement: true })
+        .avif({ quality: AVIF_QUALITY })
+        .toFile(avifPath);
+    }
+
+    const toPublic = (p) =>
+      p.split(path.join(process.cwd(), "public"))[1].replace(/\\/g, "/");
+    webp.push(toPublic(webpPath));
+    avif.push(toPublic(avifPath));
   }
-  return { variants: out, width: metadata.width ?? widths[widths.length - 1], height: metadata.height ?? widths[widths.length - 1] };
+  return {
+    webp,
+    avif,
+    width: metadata.width ?? widths[widths.length - 1],
+    height: metadata.height ?? widths[widths.length - 1],
+  };
 }
 function loadImagesSync(section) {
   const { directory, startPhoto, endPhoto, photos } = section;
@@ -281,8 +302,28 @@ function loadImagesSync(section) {
 
   return result;
 }
+// No layout in the gallery exceeds ~1150px CSS width (max container is max-w-6xl),
+// so 2000w covers 2x-retina without shipping ~1MB hero files.
+const RESPONSIVE_WIDTHS = [400, 800, 1200, 1600, 2000];
+
+function buildSrcset(relPaths) {
+  return relPaths
+    .map((rel) => `${encodeURI(rel)} ${rel.match(/@(\d+)w\./)?.[1]}w`)
+    .join(", ");
+}
+
+// Pick a sensible mid-size WebP as the universal <img> fallback src
+// (used only when a browser supports neither AVIF nor WebP srcset selection).
+function pickFallbackSrc(webpPaths) {
+  const preferred =
+    webpPaths.find((p) => /@1200w\./.test(p)) ??
+    webpPaths.find((p) => /@800w\./.test(p)) ??
+    webpPaths[webpPaths.length - 1] ??
+    webpPaths[0];
+  return preferred ? encodeURI(preferred) : "";
+}
+
 async function buildGallery() {
-  const widths = [400, 800, 1200, 1600, 2000, 2400];
   const sections = [];
   for (const section of gallerySectionConfig) {
     const images = loadImagesSync(section);
@@ -290,14 +331,15 @@ async function buildGallery() {
     const processed = [];
     for (const img of images) {
       const absPath = path.join(galleryRoot, img.rel);
-      const { variants: variantPaths, width, height } = await ensureVariantsForImage(absPath, widths);
-      const srcset = variantPaths
-        .map((rel) => `${encodeURI(rel)} ${rel.match(/@(\d+)w\./)?.[1]}w`)
-        .join(", ");
+      const { webp, avif, width, height } = await ensureVariantsForImage(
+        absPath,
+        RESPONSIVE_WIDTHS,
+      );
       processed.push({
-        src: encodeURI(`/gallery/${img.rel}`),
+        src: pickFallbackSrc(webp),
         alt: img.alt,
-        srcset,
+        srcset: buildSrcset(webp),
+        avifSrcset: buildSrcset(avif),
         sizes: "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         width,
         height,

@@ -23,19 +23,9 @@ const nextConfig: NextConfig = {
     deviceSizes: [640, 768, 1024, 1280, 1536],
     imageSizes: [320, 480, 640],
   },
-  /**
-   * Strengthen caching for static assets in /public, especially the gallery.
-   */
-  async headers() {
-    return [
-      {
-        source: "/(.*)\\.(webp|avif|jpg|jpeg|png|svg|gif|ico|mp4)",
-        headers: [
-          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
-        ],
-      },
-    ];
-  },
+  // NOTE: HTTP caching headers are NOT configured here. Next.js ignores
+  // `headers()` under `output: "export"`. Real cache headers for the static
+  // site live in `public/_headers` (consumed by Cloudflare Pages).
 };
 
 export default nextConfig;

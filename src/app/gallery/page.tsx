@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://lemelsonestate.com/gallery/Eden-Site%20Photos/2.avif",
+        url: "https://lemelsonestate.com/gallery/enhanced/2.avif",
         width: 720,
         height: 480,
         alt: "Eden Estate exterior view",

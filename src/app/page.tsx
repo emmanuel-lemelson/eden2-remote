@@ -107,7 +107,7 @@ export default function Home() {
                     className="relative flex h-full w-full flex-col items-center justify-center gap-4 bg-cover bg-center"
                     style={{
                       backgroundImage:
-                        "url('/gallery/Eden-Site Photos/2.avif')",
+                        "url('/gallery/enhanced/2.avif')",
                     }}
                   >
                     <div className="absolute inset-0 bg-black/45" />

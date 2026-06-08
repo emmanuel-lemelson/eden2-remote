@@ -37,3 +37,18 @@ The image generator may not output the exact requested pixel dimensions. Treat t
 10. **Clean Temporary Files:** Remove temporary reference PNGs/contact sheets/staging PNGs after final assets are verified. Keep `public/gallery/lowres_archive/` for rollback/audit.
 
 I will give you the changes I want in the chat or what i'm looking for regarding the specific image(s).
+
+---
+
+## IMPORTANT: Cache purge after re-enhancing a reused filename
+
+Gallery images are served with long-lived, immutable caching (`public/_headers` → `/gallery/*`). This makes the site fast, but it means browsers and Cloudflare keep their copy of a file for up to a year and will NOT re-check for changes.
+
+Consequence: if you re-enhance a photo and keep the **same filename**, visitors (and Cloudflare's edge) may keep showing the OLD version.
+
+After deploying re-enhanced photos that reuse filenames, do ONE of the following:
+
+1. **Purge in Cloudflare (recommended):** Cloudflare Dashboard → your site → Caching → Configuration → "Purge Cache" → purge the specific image URLs (or "Purge Everything"). This refreshes the edge; individual visitors' browsers refresh as they revisit.
+2. **Or bump the filename** (e.g. `103.avif` → `103-v2.avif`) so it's treated as a brand-new file and no purge is needed.
+
+If a photo gets a NEW filename, no purge is necessary.
