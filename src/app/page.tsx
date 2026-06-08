@@ -191,8 +191,6 @@ export default function Home() {
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 sm:gap-5">
             {galleryPreview.map((item) => {
-              const decoded = decodeURI(item.src);
-              const filename = decoded.substring(decoded.lastIndexOf("/") + 1);
               return (
                 <div
                   key={item.src}
@@ -207,9 +205,6 @@ export default function Home() {
                       className="pointer-events-none object-cover"
                     />
                     <span className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-t from-black/25 via-transparent to-black/15 opacity-40" />
-                    <div className="absolute top-3 right-3 bg-black/75 text-white text-[0.7rem] px-2.5 py-1.5 rounded-full opacity-0 transition-opacity duration-300 group-hover:opacity-100 z-10 font-mono tracking-tight pointer-events-none select-none">
-                      {filename}
-                    </div>
                   </div>
                 </div>
               );
