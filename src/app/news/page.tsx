@@ -43,7 +43,7 @@ const articles = [
     dek:
       "Eden introduces bespoke corporate retreats with private spa amenities, executive meeting spaces, and concierge experiences in Stowe, Vermont.",
     // Use a pre-optimized asset generated for the gallery to ensure instant load
-    image: "/gallery/Eden-Site%20Photos/2@1200w.webp",
+    image: "/gallery/enhanced/2@1200w.webp",
     imageAlt: "Aerial view of Eden Estate in Stowe, Vermont",
   },
 ];

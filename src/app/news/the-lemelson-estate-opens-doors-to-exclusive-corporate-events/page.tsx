@@ -117,7 +117,7 @@ export default function CorporateEventsArticle() {
             <div className="overflow-hidden rounded-2xl border border-stone-200/60 shadow-[0_20px_60px_-20px_rgba(58,45,20,0.3)] flex-1">
               <div className="relative aspect-[4/3] w-full h-full">
                 <Image
-                  src="/gallery/Eden-Site%20Photos/2@1200w.webp"
+                  src="/gallery/enhanced/2@1200w.webp"
                   alt="Aerial view of Eden Estate in Stowe, Vermont"
                   fill
                   className="object-cover"
