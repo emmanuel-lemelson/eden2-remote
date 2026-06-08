@@ -154,8 +154,14 @@ function MasonryItem({
 }
 
 export function GallerySectionGrid({ sections }: Props) {
-  function renderPhotoNumberOverlay(_src: string) {
-    return null;
+  function renderPhotoNumberOverlay(src: string) {
+    const decoded = decodeURI(src);
+    const filename = decoded.substring(decoded.lastIndexOf("/") + 1);
+    return (
+      <div className="absolute top-3 right-3 bg-black/75 text-white text-[0.7rem] px-2.5 py-1.5 rounded-full opacity-0 transition-opacity duration-300 group-hover:opacity-100 z-20 font-mono tracking-tight pointer-events-none select-none">
+        {filename}
+      </div>
+    );
   }
 
   // Dynamic layout renderer based on image counts to ensure visual balance

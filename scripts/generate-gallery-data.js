@@ -31,11 +31,11 @@ const gallerySectionConfig = [
     directory: "Eden-Site Photos",
     photos: [
       2,   // High-altitude aerial view of pool and residence at sunset (Cover Shot)
+      3,   // High-angle aerial of front entrance approach at dusk
+      87,  // Rear twilight view highlighting pool and warm windows
       1,   // Exterior daytime view of grand front entrance (autumn foliage)
       86,  // High-angle view of estate nestled in red/orange autumn foliage
       113, // Resort-style pool patio with circular hot tub at dusk
-      87,  // Rear twilight view highlighting pool and warm windows
-      3,   // High-angle aerial of front entrance approach at dusk
       88,  // Pool patio wicker furniture with royal blue cushions
       69,  // Stone pool patio wicker lounge with dark red cushions
       111, // Outdoor dining table next to private tennis court
@@ -59,7 +59,6 @@ const gallerySectionConfig = [
       4,   // Great Room looking down from loft walkway onto conversation area
       101, // Great Room conversation seating next to grand piano and tall windows
       100, // Great Room massive stone fireplace and dark wood paneling
-      12,  // Stack of birch logs inside copper log bucket (cozy winter detail)
       20,  // Entryway polished console table, ornate oval mirror, crystal lamp
       10,  // Upper-level loft landing with dark wrought-iron chandelier
       19,  // Silver-threaded damask sofa detail against classic white wainscoting
@@ -82,7 +81,6 @@ const gallerySectionConfig = [
       24,  // Gourmet kitchen highlighting custom white cabinets, built-in ovens
       23,  // Kitchen sink window view overlooking green backyard lawn and pond
       25,  // Close-up of professional built-in stainless steel wall ovens
-      26,  // Prep kitchen with warm wood cabinets, bar counter
       28,  // Formal Great Dining Room set for a dinner party, crystal chandelier
       13,  // Dining table close-up with red wine and leather nailhead chairs
       17,  // Casual dining nook in bay alcove looking at spring blossoms
@@ -151,8 +149,7 @@ const gallerySectionConfig = [
       21,  // Indoor portrait of bride standing next to console table
       84,  // Rustic wooden chapel in snowy pine forest with sun rays
       63,  // Magical winter night snow-laden pine forest under starry night sky
-      81,  // Serene winter landscape, snow stream, classic white church steeple
-      97   // Spacious high-end laundry room with smart washers/dryers
+      81  // Serene winter landscape, snow stream, classic white church steeple
     ],
   },
 ];
@@ -269,7 +266,11 @@ function loadImagesSync(section) {
   const result = filesInRange.map(({ entry, dir }) => {
     const relativePath = path.join(dir, entry.name).split(path.sep).join("/");
     const src = encodeURI(`/gallery/${relativePath}`);
-    const override = captionOverrides.get(entry.name);
+    const baseNameWithoutExt = path.basename(entry.name, path.extname(entry.name));
+    const override = captionOverrides.get(entry.name) || 
+                     captionOverrides.get(`${baseNameWithoutExt}.avif`) || 
+                     captionOverrides.get(`${baseNameWithoutExt}.webp`) || 
+                     captionOverrides.get(`${baseNameWithoutExt}.jpg`);
     return { 
       src, 
       alt: override ?? buildAltText(entry.name), 

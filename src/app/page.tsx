@@ -16,8 +16,8 @@ const quickFacts = [
 
 const galleryPreview = [
   {
-    src: "/gallery/Eden-Site Photos/2.avif",
-    alt: "High-altitude aerial sunset view of The Lemelson Estate in Stowe, Vermont, showing the main residence, swimming pool, spring-fed pond, and surrounding mountains.",
+    src: "/gallery/enhanced/2.avif",
+    alt: "Breathtaking high-altitude sunset aerial view of the entire luxury estate, showing the main residence, swimming pool, and spring-fed pond.",
   },
   {
     src: "/gallery/Eden-Site Photos/98.avif",
@@ -28,8 +28,8 @@ const galleryPreview = [
     alt: "Luxury master bathroom en-suite showing a soaking tub set in a dark marble deck under a dramatic arched window framing a mountain sunset.",
   },
   {
-    src: "/gallery/Eden-Site Photos/87.avif",
-    alt: "Rear exterior twilight view of The Lemelson Estate, showcasing the glowing warm windows overlooking the stone-paved patio and private swimming pool.",
+    src: "/gallery/enhanced/87.avif",
+    alt: "Rear exterior twilight view of the estate, showcasing the glowing warm windows overlooking the stone-paved patio and private swimming pool.",
   },
 ];
 
@@ -190,23 +190,30 @@ export default function Home() {
           />
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 sm:gap-5">
-            {galleryPreview.map((item) => (
-              <div
-                key={item.src}
-                className="relative overflow-hidden rounded-3xl border border-white/70 bg-white/60 shadow-[0_24px_48px_-32px_rgba(58,45,20,0.55)]"
-              >
-                <div className="relative aspect-[4/5] w-full overflow-hidden">
-                  <Image
-                    src={item.src}
-                    alt={item.alt}
-                    fill
-                    sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-                    className="pointer-events-none object-cover"
-                  />
-                  <span className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-t from-black/25 via-transparent to-black/15 opacity-40" />
+            {galleryPreview.map((item) => {
+              const decoded = decodeURI(item.src);
+              const filename = decoded.substring(decoded.lastIndexOf("/") + 1);
+              return (
+                <div
+                  key={item.src}
+                  className="group relative overflow-hidden rounded-3xl border border-white/70 bg-white/60 shadow-[0_24px_48px_-32px_rgba(58,45,20,0.55)]"
+                >
+                  <div className="relative aspect-[4/5] w-full overflow-hidden">
+                    <Image
+                      src={item.src}
+                      alt={item.alt}
+                      fill
+                      sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                      className="pointer-events-none object-cover"
+                    />
+                    <span className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-t from-black/25 via-transparent to-black/15 opacity-40" />
+                    <div className="absolute top-3 right-3 bg-black/75 text-white text-[0.7rem] px-2.5 py-1.5 rounded-full opacity-0 transition-opacity duration-300 group-hover:opacity-100 z-10 font-mono tracking-tight pointer-events-none select-none">
+                      {filename}
+                    </div>
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
           <div className="flex justify-center">

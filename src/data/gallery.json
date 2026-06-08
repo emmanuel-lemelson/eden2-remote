@@ -5,11 +5,11 @@
     "directory": "Eden-Site Photos",
     "photos": [
       2,
+      3,
+      87,
       1,
       86,
       113,
-      87,
-      3,
       88,
       69,
       111,
@@ -24,12 +24,28 @@
     ],
     "images": [
       {
-        "src": "/gallery/Eden-Site%20Photos/2.avif",
-        "alt": "High-altitude aerial view of the entire luxury estate during a warm sunset. Showcases the main residence with slate roofs, a stone patio with a rectangular turquoise swimming pool, an outdoor spa hot tub, and a circular spring-fed pond. Surrounded by rolling green lawns and a dense evergreen pine forest, with soft pink and purple twilight skies in the background. [Season: Summer] [Lighting: Warm twilight, sunset] [Content: Aerial view, backyard patio, swimming pool, pond, landscape exterior]",
-        "srcset": "/gallery/Eden-Site%20Photos/2@400w.webp 400w, /gallery/Eden-Site%20Photos/2@800w.webp 800w, /gallery/Eden-Site%20Photos/2@1200w.webp 1200w, /gallery/Eden-Site%20Photos/2@1600w.webp 1600w, /gallery/Eden-Site%20Photos/2@2000w.webp 2000w, /gallery/Eden-Site%20Photos/2@2400w.webp 2400w",
+        "src": "/gallery/enhanced/2.avif",
+        "alt": "Breathtaking high-altitude sunset aerial view of the entire luxury estate. Showcases the main residence with slate roofs, the stone patio with a sparkling rectangular pool, circular hot tub, and lawn seating. A circular spring-fed pond and private tennis court are visible, surrounded by lush lawns and evergreen forests, set against distant mountains under a dramatic pink-orange sunset sky. [Season: Summer] [Lighting: Warm sunset, golden hour] [Content: Aerial view, swimming pool patio, hot tub, pond, tennis court, mountain landscape exterior]",
+        "srcset": "/gallery/enhanced/2@400w.webp 400w, /gallery/enhanced/2@800w.webp 800w, /gallery/enhanced/2@1200w.webp 1200w, /gallery/enhanced/2@1600w.webp 1600w, /gallery/enhanced/2@2000w.webp 2000w, /gallery/enhanced/2@2400w.webp 2400w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 2560,
-        "height": 1705
+        "width": 2400,
+        "height": 1600
+      },
+      {
+        "src": "/gallery/enhanced/3.avif",
+        "alt": "High-angle aerial view of the estate's front approach at dusk. Shows the circular gravel driveway with a central landscaped roundabout containing a mature tree, the front facade of the light-beige house with circular window accents, and a tennis court in the background, set against soft yellow-orange twilight mountains and green forests. [Season: Summer] [Lighting: Warm twilight, golden hour] [Content: Aerial view, front entrance, circular driveway, tennis court, landscape exterior]",
+        "srcset": "/gallery/enhanced/3@400w.webp 400w, /gallery/enhanced/3@800w.webp 800w, /gallery/enhanced/3@1200w.webp 1200w, /gallery/enhanced/3@1600w.webp 1600w, /gallery/enhanced/3@2000w.webp 2000w, /gallery/enhanced/3@2400w.webp 2400w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 2400,
+        "height": 1600
+      },
+      {
+        "src": "/gallery/enhanced/87.avif",
+        "alt": "Dusk/twilight view of the rear of the estate house, highlighting the glowing warm windows. In the foreground is a stone-paved patio with blue lounge chairs next to a swimming pool, surrounded by green lawns and trees. [Season: Summer] [Lighting: Warm twilight / dusk] [Content: Backyard elevation, swimming pool, stone patio, twilight exterior]",
+        "srcset": "/gallery/enhanced/87@400w.webp 400w, /gallery/enhanced/87@800w.webp 800w, /gallery/enhanced/87@1200w.webp 1200w, /gallery/enhanced/87@1600w.webp 1600w, /gallery/enhanced/87@2000w.webp 2000w, /gallery/enhanced/87@2400w.webp 2400w",
+        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
+        "width": 2400,
+        "height": 1600
       },
       {
         "src": "/gallery/Eden-Site%20Photos/1.webp",
@@ -54,22 +70,6 @@
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 2560,
         "height": 1920
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/87.avif",
-        "alt": "Dusk/twilight view of the rear of the estate house, highlighting the glowing warm windows. In the foreground is a stone-paved patio with blue lounge chairs next to a swimming pool, surrounded by green lawns and trees. [Season: Summer] [Lighting: Warm twilight / dusk] [Content: Backyard elevation, swimming pool, stone patio, twilight exterior]",
-        "srcset": "/gallery/Eden-Site%20Photos/87@400w.webp 400w, /gallery/Eden-Site%20Photos/87@800w.webp 800w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
-      },
-      {
-        "src": "/gallery/Eden-Site%20Photos/3.avif",
-        "alt": "High-angle aerial view of the estate's front approach at dusk. Shows the circular gravel driveway with a central landscaped roundabout containing a mature tree, the front facade of the light-beige house with circular window accents, and a tennis court in the background, set against soft yellow-orange twilight mountains and green forests. [Season: Summer] [Lighting: Warm twilight, golden hour] [Content: Aerial view, front entrance, circular driveway, tennis court, landscape exterior]",
-        "srcset": "/gallery/Eden-Site%20Photos/3@400w.webp 400w, /gallery/Eden-Site%20Photos/3@800w.webp 800w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 480
       },
       {
         "src": "/gallery/enhanced/88.avif",
@@ -171,7 +171,6 @@
       4,
       101,
       100,
-      12,
       20,
       10,
       19,
@@ -224,14 +223,6 @@
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 2560,
         "height": 1707
-      },
-      {
-        "src": "/gallery/enhanced/12.avif",
-        "alt": "Close-up shot of several birch firewood logs stacked neatly inside a heavy, polished brass or copper log bucket. Set against a dark wood paneled door frame and stone wall. [Season: Winter/Autumn] [Lighting: Warm, localized side lighting] [Content: Firewood, copper bucket, fireplace accessories, cozy details]",
-        "srcset": "/gallery/enhanced/12@400w.webp 400w, /gallery/enhanced/12@800w.webp 800w, /gallery/enhanced/12@1200w.webp 1200w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 1024,
-        "height": 1024
       },
       {
         "src": "/gallery/enhanced/20.avif",
@@ -332,7 +323,6 @@
       24,
       23,
       25,
-      26,
       28,
       13,
       17,
@@ -367,14 +357,6 @@
         "src": "/gallery/enhanced/25.avif",
         "alt": "Close-up of double built-in stainless steel professional wall ovens integrated into white cabinetry. To the left is a granite countertop, tile backsplash, and a shelf with white mugs. [Season: Indoor] [Lighting: Bright, clean kitchen lighting] [Content: Built-in ovens, stainless steel appliances, kitchen details]",
         "srcset": "/gallery/enhanced/25@400w.webp 400w, /gallery/enhanced/25@800w.webp 800w, /gallery/enhanced/25@1200w.webp 1200w, /gallery/enhanced/25@1600w.webp 1600w, /gallery/enhanced/25@2000w.webp 2000w, /gallery/enhanced/25@2400w.webp 2400w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 2400,
-        "height": 1600
-      },
-      {
-        "src": "/gallery/enhanced/26.avif",
-        "alt": "Secondary or prep kitchen showing warm wood cabinets, light-colored granite countertops, a peninsula bar with two matching leather barstool chairs, a stainless steel microwave and toaster oven, and a black refrigerator. [Season: Indoor] [Lighting: Bright, clear indoor light] [Content: Prep kitchen, wood cabinets, bar counter, appliances]",
-        "srcset": "/gallery/enhanced/26@400w.webp 400w, /gallery/enhanced/26@800w.webp 800w, /gallery/enhanced/26@1200w.webp 1200w, /gallery/enhanced/26@1600w.webp 1600w, /gallery/enhanced/26@2000w.webp 2000w, /gallery/enhanced/26@2400w.webp 2400w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 2400,
         "height": 1600
@@ -671,8 +653,7 @@
       21,
       84,
       63,
-      81,
-      97
+      81
     ],
     "images": [
       {
@@ -708,12 +689,12 @@
         "height": 1600
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/90.webp",
+        "src": "/gallery/enhanced/90.avif",
         "alt": "An outdoor hot tub/spa bubbling with turquoise water, situated next to a serene pond. Potted purple flowers sit in the foreground, with green hills and lawns in the background. [Season: Summer] [Lighting: Soft daylight] [Content: Outdoor hot tub, backyard pond, green lawn, hot tub bubbling]",
-        "srcset": "/gallery/Eden-Site%20Photos/90@400w.webp 400w, /gallery/Eden-Site%20Photos/90@800w.webp 800w",
+        "srcset": "/gallery/enhanced/90@400w.webp 400w, /gallery/enhanced/90@800w.webp 800w, /gallery/enhanced/90@1200w.webp 1200w, /gallery/enhanced/90@1600w.webp 1600w, /gallery/enhanced/90@2000w.webp 2000w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
+        "width": 1800,
+        "height": 2400
       },
       {
         "src": "/gallery/Eden-Site%20Photos/91.avif",
@@ -834,14 +815,6 @@
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
         "width": 1200,
         "height": 813
-      },
-      {
-        "src": "/gallery/enhanced/97.avif",
-        "alt": "Spacious, high-end laundry room showing premium custom wood cabinetry on both sides, a tiled floor, and two modern dark grey front-load smart washers/dryers built into the cabinets under a window. [Season: Summer] [Lighting: Bright daylight from the window] [Content: Laundry room, washer and dryer, custom wood cabinets, folding counter]",
-        "srcset": "/gallery/enhanced/97@400w.webp 400w, /gallery/enhanced/97@800w.webp 800w, /gallery/enhanced/97@1200w.webp 1200w, /gallery/enhanced/97@1600w.webp 1600w, /gallery/enhanced/97@2000w.webp 2000w, /gallery/enhanced/97@2400w.webp 2400w",
-        "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 2400,
-        "height": 1600
       }
     ]
   }

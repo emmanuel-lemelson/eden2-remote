@@ -96,7 +96,7 @@
 
     .progress-bar-fill {
       height: 100%;
-      width: 56.4%;
+      width: 60.4%;
       background: var(--accent-gold);
       border-radius: 10px;
       transition: width 0.5s ease;
@@ -795,41 +795,41 @@
 
   <header>
     <h1>Eden Estate <span>Gallery Quality Audit</span></h1>
-    <p class="subtitle">Interactive visualization dashboard of all 89 active photos. We have categorized the images by resolution to identify low-quality or highly compressed vertical shots that should be queued for swapping.</p>
+    <p class="subtitle">Interactive visualization dashboard of all 87 active photos. We have categorized the images by resolution to identify low-quality or highly compressed vertical shots that should be queued for swapping.</p>
     
     <div class="progress-section">
       <div class="progress-header">
         <span style="font-weight: 600; color: var(--text-main);">AI-Enhanced Swapping Progress</span>
-        <span style="font-weight: 700; color: var(--accent-gold);">56.4% Complete</span>
+        <span style="font-weight: 700; color: var(--accent-gold);">60.4% Complete</span>
       </div>
       <div class="progress-bar-bg">
         <div class="progress-bar-fill"></div>
       </div>
       <div class="progress-stats">
-        <span>Swapped & Enhanced: <strong>31</strong> / 55 low-res files</span>
-        <span>Remaining Flagged: <strong>24</strong> photos left to replace</span>
+        <span>Swapped & Enhanced: <strong>32</strong> / 53 low-res files</span>
+        <span>Remaining Flagged: <strong>21</strong> photos left to replace</span>
       </div>
     </div>
 
     <div class="summary-badges">
       <div class="summary-card">
-        <div class="summary-num">89</div>
+        <div class="summary-num">87</div>
         <div class="summary-label">Total Gallery Photos</div>
       </div>
       <div class="summary-card" style="border-color: rgba(16, 185, 129, 0.4);">
-        <div class="summary-num" style="color: var(--color-pro);">31</div>
+        <div class="summary-num" style="color: var(--color-pro);">32</div>
         <div class="summary-label">Swapped & Enhanced</div>
       </div>
       <div class="summary-card" style="border-color: rgba(239, 68, 68, 0.4);">
-        <div class="summary-num" style="color: var(--color-low);">24</div>
+        <div class="summary-num" style="color: var(--color-low);">21</div>
         <div class="summary-label">Remaining Swaps</div>
       </div>
       <div class="summary-card" style="border-color: rgba(234, 179, 8, 0.4);">
-        <div class="summary-num" style="color: var(--color-medium);">19</div>
+        <div class="summary-num" style="color: var(--color-medium);">20</div>
         <div class="summary-label">Portfolio (1200px)</div>
       </div>
       <div class="summary-card" style="border-color: rgba(16, 185, 129, 0.4);">
-        <div class="summary-num" style="color: var(--color-pro);">15</div>
+        <div class="summary-num" style="color: var(--color-pro);">14</div>
         <div class="summary-label">Pro Grade (2560px)</div>
       </div>
     </div>
@@ -837,13 +837,10 @@
 
   
   <div class="audit-summary-box">
-    <h3>🔴 Swaps Left to Update (24 photos)</h3>
-    <p>The following 24 photos are still low-resolution (720px wide) and require swapping to reach Pro Grade luxury standards. You can copy the list below or check them off as you swap them out.</p>
+    <h3>🔴 Swaps Left to Update (21 photos)</h3>
+    <p>The following 21 photos are still low-resolution (720px wide) and require swapping to reach Pro Grade luxury standards. You can copy the list below or check them off as you swap them out.</p>
     <div class="remaining-tag-container">
       
-        <span class="remaining-tag" onclick="copyText('3.avif')" style="cursor: pointer;" title="Click to copy filename">
-          3.avif <span style="font-size: 0.65rem; opacity: 0.7;">📋</span>
-        </span>
         <span class="remaining-tag" onclick="copyText('7.avif')" style="cursor: pointer;" title="Click to copy filename">
           7.avif <span style="font-size: 0.65rem; opacity: 0.7;">📋</span>
         </span>
@@ -898,12 +895,6 @@
         <span class="remaining-tag" onclick="copyText('83.avif')" style="cursor: pointer;" title="Click to copy filename">
           83.avif <span style="font-size: 0.65rem; opacity: 0.7;">📋</span>
         </span>
-        <span class="remaining-tag" onclick="copyText('87.avif')" style="cursor: pointer;" title="Click to copy filename">
-          87.avif <span style="font-size: 0.65rem; opacity: 0.7;">📋</span>
-        </span>
-        <span class="remaining-tag" onclick="copyText('90.webp')" style="cursor: pointer;" title="Click to copy filename">
-          90.webp <span style="font-size: 0.65rem; opacity: 0.7;">📋</span>
-        </span>
         <span class="remaining-tag" onclick="copyText('91.avif')" style="cursor: pointer;" title="Click to copy filename">
           91.avif <span style="font-size: 0.65rem; opacity: 0.7;">📋</span>
         </span>
@@ -918,10 +909,10 @@
 
   <div class="controls">
     <div class="tabs">
-      <button class="tab-btn active" onclick="filterGallery('all', this)">All (89)</button>
-      <button class="tab-btn" onclick="filterGallery('low', this)">Remaining Swaps (24)</button>
-      <button class="tab-btn" style="color: var(--color-pro);" onclick="filterGallery('enhanced', this)">Swapped & Enhanced (31)</button>
-      <button class="tab-btn" onclick="filterGallery('medium', this)">Portfolio (19)</button>
+      <button class="tab-btn active" onclick="filterGallery('all', this)">All (87)</button>
+      <button class="tab-btn" onclick="filterGallery('low', this)">Remaining Swaps (21)</button>
+      <button class="tab-btn" style="color: var(--color-pro);" onclick="filterGallery('enhanced', this)">Swapped & Enhanced (32)</button>
+      <button class="tab-btn" onclick="filterGallery('medium', this)">Portfolio (20)</button>
       <button class="tab-btn" onclick="filterGallery('pro', this)">Pro Grade (46)</button>
     </div>
 
@@ -977,15 +968,21 @@
           </div>
         </div>
       </div>
-      <div class="card" data-quality="pro" data-enhanced-time="0">
+      <div class="card enhanced" data-quality="pro" data-enhanced-time="1780905260286.1155">
         
-        <div class="img-container">
-          <img id="img-2.avif" src="/gallery/Eden-Site%20Photos/2.avif" alt="2.avif" loading="lazy">
-          <div class="badge-bar">
-            <span class="badge status-pro">Pro Grade (2560px)</span>
-            <div class="checkbox-container" title="Add to Swap Queue" onclick="toggleQueue('2.avif', event)">
-              <input type="checkbox" id="check-2.avif" onclick="event.stopPropagation(); syncCheckbox('2.avif')">
-            </div>
+        <div class="comparison-slider">
+          <!-- Before (Original) -->
+          <img class="img-before" src="/gallery/lowres_archive/2.avif" alt="Before 2.avif" loading="lazy">
+          <!-- After (Enhanced) -->
+          <div class="resize-container" id="resize-2.avif">
+            <img class="img-after" src="/gallery/enhanced/2.avif" alt="After 2.avif" loading="lazy">
+          </div>
+          <!-- Slider Handle -->
+          <div class="slider-handle" id="handle-2.avif"></div>
+          <input type="range" min="0" max="100" value="50" class="comparison-range" oninput="updateComparisonSlider('2.avif', this.value)">
+          <div class="badge-bar" style="pointer-events: none;">
+            <span class="badge status-pro">✨ Enhanced (Pro)</span>
+            <span class="badge" style="background: rgba(0,0,0,0.7); color: #fff; border: 1px solid rgba(255,255,255,0.2);">↔ Slide to Compare</span>
           </div>
         </div>
       
@@ -997,38 +994,47 @@
           <div class="metadata-list">
             <div class="meta-item">
               <span class="meta-label">Resolution</span>
-              <span class="meta-value">2560 x 1705</span>
+              <span class="meta-value">2400 x 1600</span>
             </div>
             <div class="meta-item">
               <span class="meta-label">Size</span>
-              <span class="meta-value">860.5 KB</span>
+              <span class="meta-value">556.9 KB</span>
             </div>
             <div class="meta-item">
               <span class="meta-label">Aspect Ratio</span>
-              <span class="meta-value">2560:1705</span>
+              <span class="meta-value">2400:1600</span>
             </div>
             <div class="meta-item">
               <span class="meta-label">Audit Recommendation</span>
-              <span class="meta-value status-pro-text">Excellent</span>
+              <span class="meta-value status-pro-text">✨ Enhanced (Pro Grade)</span>
             </div>
           </div>
-          <div class="caption-box" title="High-altitude aerial view of the entire luxury estate during a warm sunset. Showcases the main residence with slate roofs, a stone patio with a rectangular turquoise swimming pool, an outdoor spa hot tub, and a circular spring-fed pond. Surrounded by rolling green lawns and a dense evergreen pine forest, with soft pink and purple twilight skies in the background. [Season: Summer] [Lighting: Warm twilight, sunset] [Content: Aerial view, backyard patio, swimming pool, pond, landscape exterior]">
-            High-altitude aerial view of the entire luxury estate during a warm sunset. Showcases the main residence with slate roofs, a stone patio with a rectangular turquoise swimming pool, an outdoor spa hot tub, and a circular spring-fed pond. Surrounded by rolling green lawns and a dense evergreen pine forest, with soft pink and purple twilight skies in the background. [Season: Summer] [Lighting: Warm twilight, sunset] [Content: Aerial view, backyard patio, swimming pool, pond, landscape exterior]
+          <div class="caption-box" title="Breathtaking high-altitude sunset aerial view of the entire luxury estate. Showcases the main residence with slate roofs, the stone patio with a sparkling rectangular pool, circular hot tub, and lawn seating. A circular spring-fed pond and private tennis court are visible, surrounded by lush lawns and evergreen forests, set against distant mountains under a dramatic pink-orange sunset sky. [Season: Summer] [Lighting: Warm sunset, golden hour] [Content: Aerial view, swimming pool patio, hot tub, pond, tennis court, mountain landscape exterior]">
+            Breathtaking high-altitude sunset aerial view of the entire luxury estate. Showcases the main residence with slate roofs, the stone patio with a sparkling rectangular pool, circular hot tub, and lawn seating. A circular spring-fed pond and private tennis court are visible, surrounded by lush lawns and evergreen forests, set against distant mountains under a dramatic pink-orange sunset sky. [Season: Summer] [Lighting: Warm sunset, golden hour] [Content: Aerial view, swimming pool patio, hot tub, pond, tennis court, mountain landscape exterior]
           </div>
           <div class="card-footer" style="flex-direction: column; gap: 8px;">
-            <a href="/gallery/Eden-Site%20Photos/2.avif" target="_blank" class="view-btn">View Original</a>
+            
+        <button class="view-btn" style="background: var(--accent-gold); color: #000; font-weight: 600; border: none; cursor: pointer;" onclick="openCompareModal('2.avif', '/gallery/lowres_archive/2.avif', '/gallery/enhanced/2.avif')">🔍 Full-Screen Compare</button>
+        <a href="/gallery/enhanced/2.avif" target="_blank" class="view-btn">Open Original High-Res File</a>
+      
           </div>
         </div>
       </div>
-      <div class="card flagged" data-quality="low" data-enhanced-time="0">
+      <div class="card enhanced" data-quality="pro" data-enhanced-time="1780904320492.143">
         
-        <div class="img-container">
-          <img id="img-3.avif" src="/gallery/Eden-Site%20Photos/3.avif" alt="3.avif" loading="lazy">
-          <div class="badge-bar">
-            <span class="badge status-low">Low Res (720px)</span>
-            <div class="checkbox-container" title="Add to Swap Queue" onclick="toggleQueue('3.avif', event)">
-              <input type="checkbox" id="check-3.avif" onclick="event.stopPropagation(); syncCheckbox('3.avif')">
-            </div>
+        <div class="comparison-slider">
+          <!-- Before (Original) -->
+          <img class="img-before" src="/gallery/lowres_archive/3.avif" alt="Before 3.avif" loading="lazy">
+          <!-- After (Enhanced) -->
+          <div class="resize-container" id="resize-3.avif">
+            <img class="img-after" src="/gallery/enhanced/3.avif" alt="After 3.avif" loading="lazy">
+          </div>
+          <!-- Slider Handle -->
+          <div class="slider-handle" id="handle-3.avif"></div>
+          <input type="range" min="0" max="100" value="50" class="comparison-range" oninput="updateComparisonSlider('3.avif', this.value)">
+          <div class="badge-bar" style="pointer-events: none;">
+            <span class="badge status-pro">✨ Enhanced (Pro)</span>
+            <span class="badge" style="background: rgba(0,0,0,0.7); color: #fff; border: 1px solid rgba(255,255,255,0.2);">↔ Slide to Compare</span>
           </div>
         </div>
       
@@ -1040,26 +1046,29 @@
           <div class="metadata-list">
             <div class="meta-item">
               <span class="meta-label">Resolution</span>
-              <span class="meta-value">720 x 480</span>
+              <span class="meta-value">2400 x 1600</span>
             </div>
             <div class="meta-item">
               <span class="meta-label">Size</span>
-              <span class="meta-value">54 KB</span>
+              <span class="meta-value">768.3 KB</span>
             </div>
             <div class="meta-item">
               <span class="meta-label">Aspect Ratio</span>
-              <span class="meta-value">720:480</span>
+              <span class="meta-value">2400:1600</span>
             </div>
             <div class="meta-item">
               <span class="meta-label">Audit Recommendation</span>
-              <span class="meta-value status-low-text">🔴 Flagged for Swap</span>
+              <span class="meta-value status-pro-text">✨ Enhanced (Pro Grade)</span>
             </div>
           </div>
           <div class="caption-box" title="High-angle aerial view of the estate's front approach at dusk. Shows the circular gravel driveway with a central landscaped roundabout containing a mature tree, the front facade of the light-beige house with circular window accents, and a tennis court in the background, set against soft yellow-orange twilight mountains and green forests. [Season: Summer] [Lighting: Warm twilight, golden hour] [Content: Aerial view, front entrance, circular driveway, tennis court, landscape exterior]">
             High-angle aerial view of the estate's front approach at dusk. Shows the circular gravel driveway with a central landscaped roundabout containing a mature tree, the front facade of the light-beige house with circular window accents, and a tennis court in the background, set against soft yellow-orange twilight mountains and green forests. [Season: Summer] [Lighting: Warm twilight, golden hour] [Content: Aerial view, front entrance, circular driveway, tennis court, landscape exterior]
           </div>
           <div class="card-footer" style="flex-direction: column; gap: 8px;">
-            <a href="/gallery/Eden-Site%20Photos/3.avif" target="_blank" class="view-btn">View Original</a>
+            
+        <button class="view-btn" style="background: var(--accent-gold); color: #000; font-weight: 600; border: none; cursor: pointer;" onclick="openCompareModal('3.avif', '/gallery/lowres_archive/3.avif', '/gallery/enhanced/3.avif')">🔍 Full-Screen Compare</button>
+        <a href="/gallery/enhanced/3.avif" target="_blank" class="view-btn">Open Original High-Res File</a>
+      
           </div>
         </div>
       </div>
@@ -1292,58 +1301,6 @@
             
         <button class="view-btn" style="background: var(--accent-gold); color: #000; font-weight: 600; border: none; cursor: pointer;" onclick="openCompareModal('11.avif', '/gallery/lowres_archive/11.avif', '/gallery/enhanced/11.avif')">🔍 Full-Screen Compare</button>
         <a href="/gallery/enhanced/11.avif" target="_blank" class="view-btn">Open Original High-Res File</a>
-      
-          </div>
-        </div>
-      </div>
-      <div class="card enhanced" data-quality="pro" data-enhanced-time="1779890809312.1672">
-        
-        <div class="comparison-slider">
-          <!-- Before (Original) -->
-          <img class="img-before" src="/gallery/lowres_archive/12.avif" alt="Before 12.avif" loading="lazy">
-          <!-- After (Enhanced) -->
-          <div class="resize-container" id="resize-12.avif">
-            <img class="img-after" src="/gallery/enhanced/12.avif" alt="After 12.avif" loading="lazy">
-          </div>
-          <!-- Slider Handle -->
-          <div class="slider-handle" id="handle-12.avif"></div>
-          <input type="range" min="0" max="100" value="50" class="comparison-range" oninput="updateComparisonSlider('12.avif', this.value)">
-          <div class="badge-bar" style="pointer-events: none;">
-            <span class="badge status-pro">✨ Enhanced (Pro)</span>
-            <span class="badge" style="background: rgba(0,0,0,0.7); color: #fff; border: 1px solid rgba(255,255,255,0.2);">↔ Slide to Compare</span>
-          </div>
-        </div>
-      
-        <div class="card-body">
-          <div class="card-header">
-            <span class="filename">12.avif</span>
-            <button class="copy-btn" onclick="copyText('12.avif')">Copy File</button>
-          </div>
-          <div class="metadata-list">
-            <div class="meta-item">
-              <span class="meta-label">Resolution</span>
-              <span class="meta-value">1024 x 1024</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Size</span>
-              <span class="meta-value">181.5 KB</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Aspect Ratio</span>
-              <span class="meta-value">1024:1024</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Audit Recommendation</span>
-              <span class="meta-value status-pro-text">✨ Enhanced (Pro Grade)</span>
-            </div>
-          </div>
-          <div class="caption-box" title="Close-up shot of several birch firewood logs stacked neatly inside a heavy, polished brass or copper log bucket. Set against a dark wood paneled door frame and stone wall. [Season: Winter/Autumn] [Lighting: Warm, localized side lighting] [Content: Firewood, copper bucket, fireplace accessories, cozy details]">
-            Close-up shot of several birch firewood logs stacked neatly inside a heavy, polished brass or copper log bucket. Set against a dark wood paneled door frame and stone wall. [Season: Winter/Autumn] [Lighting: Warm, localized side lighting] [Content: Firewood, copper bucket, fireplace accessories, cozy details]
-          </div>
-          <div class="card-footer" style="flex-direction: column; gap: 8px;">
-            
-        <button class="view-btn" style="background: var(--accent-gold); color: #000; font-weight: 600; border: none; cursor: pointer;" onclick="openCompareModal('12.avif', '/gallery/lowres_archive/12.avif', '/gallery/enhanced/12.avif')">🔍 Full-Screen Compare</button>
-        <a href="/gallery/enhanced/12.avif" target="_blank" class="view-btn">Open Original High-Res File</a>
       
           </div>
         </div>
@@ -1966,58 +1923,6 @@
             
         <button class="view-btn" style="background: var(--accent-gold); color: #000; font-weight: 600; border: none; cursor: pointer;" onclick="openCompareModal('25.avif', '/gallery/lowres_archive/25.avif', '/gallery/enhanced/25.avif')">🔍 Full-Screen Compare</button>
         <a href="/gallery/enhanced/25.avif" target="_blank" class="view-btn">Open Original High-Res File</a>
-      
-          </div>
-        </div>
-      </div>
-      <div class="card enhanced" data-quality="pro" data-enhanced-time="1779981063079.3003">
-        
-        <div class="comparison-slider">
-          <!-- Before (Original) -->
-          <img class="img-before" src="/gallery/lowres_archive/26.avif" alt="Before 26.avif" loading="lazy">
-          <!-- After (Enhanced) -->
-          <div class="resize-container" id="resize-26.avif">
-            <img class="img-after" src="/gallery/enhanced/26.avif" alt="After 26.avif" loading="lazy">
-          </div>
-          <!-- Slider Handle -->
-          <div class="slider-handle" id="handle-26.avif"></div>
-          <input type="range" min="0" max="100" value="50" class="comparison-range" oninput="updateComparisonSlider('26.avif', this.value)">
-          <div class="badge-bar" style="pointer-events: none;">
-            <span class="badge status-pro">✨ Enhanced (Pro)</span>
-            <span class="badge" style="background: rgba(0,0,0,0.7); color: #fff; border: 1px solid rgba(255,255,255,0.2);">↔ Slide to Compare</span>
-          </div>
-        </div>
-      
-        <div class="card-body">
-          <div class="card-header">
-            <span class="filename">26.avif</span>
-            <button class="copy-btn" onclick="copyText('26.avif')">Copy File</button>
-          </div>
-          <div class="metadata-list">
-            <div class="meta-item">
-              <span class="meta-label">Resolution</span>
-              <span class="meta-value">2400 x 1600</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Size</span>
-              <span class="meta-value">233.5 KB</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Aspect Ratio</span>
-              <span class="meta-value">2400:1600</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Audit Recommendation</span>
-              <span class="meta-value status-pro-text">✨ Enhanced (Pro Grade)</span>
-            </div>
-          </div>
-          <div class="caption-box" title="Secondary or prep kitchen showing warm wood cabinets, light-colored granite countertops, a peninsula bar with two matching leather barstool chairs, a stainless steel microwave and toaster oven, and a black refrigerator. [Season: Indoor] [Lighting: Bright, clear indoor light] [Content: Prep kitchen, wood cabinets, bar counter, appliances]">
-            Secondary or prep kitchen showing warm wood cabinets, light-colored granite countertops, a peninsula bar with two matching leather barstool chairs, a stainless steel microwave and toaster oven, and a black refrigerator. [Season: Indoor] [Lighting: Bright, clear indoor light] [Content: Prep kitchen, wood cabinets, bar counter, appliances]
-          </div>
-          <div class="card-footer" style="flex-direction: column; gap: 8px;">
-            
-        <button class="view-btn" style="background: var(--accent-gold); color: #000; font-weight: 600; border: none; cursor: pointer;" onclick="openCompareModal('26.avif', '/gallery/lowres_archive/26.avif', '/gallery/enhanced/26.avif')">🔍 Full-Screen Compare</button>
-        <a href="/gallery/enhanced/26.avif" target="_blank" class="view-btn">Open Original High-Res File</a>
       
           </div>
         </div>
@@ -3644,6 +3549,49 @@
           </div>
         </div>
       </div>
+      <div class="card" data-quality="medium" data-enhanced-time="0">
+        
+        <div class="img-container">
+          <img id="img-78_ref.png" src="/gallery/Eden-Site%20Photos/78_ref.png" alt="78_ref.png" loading="lazy">
+          <div class="badge-bar">
+            <span class="badge status-medium">Portfolio (1200px)</span>
+            <div class="checkbox-container" title="Add to Swap Queue" onclick="toggleQueue('78_ref.png', event)">
+              <input type="checkbox" id="check-78_ref.png" onclick="event.stopPropagation(); syncCheckbox('78_ref.png')">
+            </div>
+          </div>
+        </div>
+      
+        <div class="card-body">
+          <div class="card-header">
+            <span class="filename">78_ref.png</span>
+            <button class="copy-btn" onclick="copyText('78_ref.png')">Copy File</button>
+          </div>
+          <div class="metadata-list">
+            <div class="meta-item">
+              <span class="meta-label">Resolution</span>
+              <span class="meta-value">1200 x 900</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Size</span>
+              <span class="meta-value">1.6 MB</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Aspect Ratio</span>
+              <span class="meta-value">1200:900</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Audit Recommendation</span>
+              <span class="meta-value status-medium-text">Good</span>
+            </div>
+          </div>
+          <div class="caption-box" title="Eden Estate luxury view.">
+            Eden Estate luxury view.
+          </div>
+          <div class="card-footer" style="flex-direction: column; gap: 8px;">
+            <a href="/gallery/Eden-Site%20Photos/78_ref.png" target="_blank" class="view-btn">View Original</a>
+          </div>
+        </div>
+      </div>
       <div class="card enhanced" data-quality="pro" data-enhanced-time="1779974579678.2039">
         
         <div class="comparison-slider">
@@ -3929,15 +3877,21 @@
           </div>
         </div>
       </div>
-      <div class="card flagged" data-quality="low" data-enhanced-time="0">
+      <div class="card enhanced" data-quality="pro" data-enhanced-time="1780908057261.5452">
         
-        <div class="img-container">
-          <img id="img-87.avif" src="/gallery/Eden-Site%20Photos/87.avif" alt="87.avif" loading="lazy">
-          <div class="badge-bar">
-            <span class="badge status-low">Low Res (720px)</span>
-            <div class="checkbox-container" title="Add to Swap Queue" onclick="toggleQueue('87.avif', event)">
-              <input type="checkbox" id="check-87.avif" onclick="event.stopPropagation(); syncCheckbox('87.avif')">
-            </div>
+        <div class="comparison-slider">
+          <!-- Before (Original) -->
+          <img class="img-before" src="/gallery/lowres_archive/87.avif" alt="Before 87.avif" loading="lazy">
+          <!-- After (Enhanced) -->
+          <div class="resize-container" id="resize-87.avif">
+            <img class="img-after" src="/gallery/enhanced/87.avif" alt="After 87.avif" loading="lazy">
+          </div>
+          <!-- Slider Handle -->
+          <div class="slider-handle" id="handle-87.avif"></div>
+          <input type="range" min="0" max="100" value="50" class="comparison-range" oninput="updateComparisonSlider('87.avif', this.value)">
+          <div class="badge-bar" style="pointer-events: none;">
+            <span class="badge status-pro">✨ Enhanced (Pro)</span>
+            <span class="badge" style="background: rgba(0,0,0,0.7); color: #fff; border: 1px solid rgba(255,255,255,0.2);">↔ Slide to Compare</span>
           </div>
         </div>
       
@@ -3949,26 +3903,29 @@
           <div class="metadata-list">
             <div class="meta-item">
               <span class="meta-label">Resolution</span>
-              <span class="meta-value">720 x 960</span>
+              <span class="meta-value">2400 x 1600</span>
             </div>
             <div class="meta-item">
               <span class="meta-label">Size</span>
-              <span class="meta-value">97.9 KB</span>
+              <span class="meta-value">657.3 KB</span>
             </div>
             <div class="meta-item">
               <span class="meta-label">Aspect Ratio</span>
-              <span class="meta-value">720:960</span>
+              <span class="meta-value">2400:1600</span>
             </div>
             <div class="meta-item">
               <span class="meta-label">Audit Recommendation</span>
-              <span class="meta-value status-low-text">🔴 Flagged for Swap</span>
+              <span class="meta-value status-pro-text">✨ Enhanced (Pro Grade)</span>
             </div>
           </div>
           <div class="caption-box" title="Dusk/twilight view of the rear of the estate house, highlighting the glowing warm windows. In the foreground is a stone-paved patio with blue lounge chairs next to a swimming pool, surrounded by green lawns and trees. [Season: Summer] [Lighting: Warm twilight / dusk] [Content: Backyard elevation, swimming pool, stone patio, twilight exterior]">
             Dusk/twilight view of the rear of the estate house, highlighting the glowing warm windows. In the foreground is a stone-paved patio with blue lounge chairs next to a swimming pool, surrounded by green lawns and trees. [Season: Summer] [Lighting: Warm twilight / dusk] [Content: Backyard elevation, swimming pool, stone patio, twilight exterior]
           </div>
           <div class="card-footer" style="flex-direction: column; gap: 8px;">
-            <a href="/gallery/Eden-Site%20Photos/87.avif" target="_blank" class="view-btn">View Original</a>
+            
+        <button class="view-btn" style="background: var(--accent-gold); color: #000; font-weight: 600; border: none; cursor: pointer;" onclick="openCompareModal('87.avif', '/gallery/lowres_archive/87.avif', '/gallery/enhanced/87.avif')">🔍 Full-Screen Compare</button>
+        <a href="/gallery/enhanced/87.avif" target="_blank" class="view-btn">Open Original High-Res File</a>
+      
           </div>
         </div>
       </div>
@@ -4024,46 +3981,55 @@
           </div>
         </div>
       </div>
-      <div class="card flagged" data-quality="low" data-enhanced-time="0">
+      <div class="card enhanced" data-quality="pro" data-enhanced-time="1780910887932.5251">
         
-        <div class="img-container">
-          <img id="img-90.webp" src="/gallery/Eden-Site%20Photos/90.webp" alt="90.webp" loading="lazy">
-          <div class="badge-bar">
-            <span class="badge status-low">Low Res (720px)</span>
-            <div class="checkbox-container" title="Add to Swap Queue" onclick="toggleQueue('90.webp', event)">
-              <input type="checkbox" id="check-90.webp" onclick="event.stopPropagation(); syncCheckbox('90.webp')">
-            </div>
+        <div class="comparison-slider">
+          <!-- Before (Original) -->
+          <img class="img-before" src="/gallery/enhanced/90.avif" alt="Before 90.avif" loading="lazy">
+          <!-- After (Enhanced) -->
+          <div class="resize-container" id="resize-90.avif">
+            <img class="img-after" src="/gallery/enhanced/90.avif" alt="After 90.avif" loading="lazy">
+          </div>
+          <!-- Slider Handle -->
+          <div class="slider-handle" id="handle-90.avif"></div>
+          <input type="range" min="0" max="100" value="50" class="comparison-range" oninput="updateComparisonSlider('90.avif', this.value)">
+          <div class="badge-bar" style="pointer-events: none;">
+            <span class="badge status-pro">✨ Enhanced (Pro)</span>
+            <span class="badge" style="background: rgba(0,0,0,0.7); color: #fff; border: 1px solid rgba(255,255,255,0.2);">↔ Slide to Compare</span>
           </div>
         </div>
       
         <div class="card-body">
           <div class="card-header">
-            <span class="filename">90.webp</span>
-            <button class="copy-btn" onclick="copyText('90.webp')">Copy File</button>
+            <span class="filename">90.avif</span>
+            <button class="copy-btn" onclick="copyText('90.avif')">Copy File</button>
           </div>
           <div class="metadata-list">
             <div class="meta-item">
               <span class="meta-label">Resolution</span>
-              <span class="meta-value">720 x 960</span>
+              <span class="meta-value">1800 x 2400</span>
             </div>
             <div class="meta-item">
               <span class="meta-label">Size</span>
-              <span class="meta-value">78.2 KB</span>
+              <span class="meta-value">354.8 KB</span>
             </div>
             <div class="meta-item">
               <span class="meta-label">Aspect Ratio</span>
-              <span class="meta-value">720:960</span>
+              <span class="meta-value">1800:2400</span>
             </div>
             <div class="meta-item">
               <span class="meta-label">Audit Recommendation</span>
-              <span class="meta-value status-low-text">🔴 Flagged for Swap</span>
+              <span class="meta-value status-pro-text">✨ Enhanced (Pro Grade)</span>
             </div>
           </div>
           <div class="caption-box" title="An outdoor hot tub/spa bubbling with turquoise water, situated next to a serene pond. Potted purple flowers sit in the foreground, with green hills and lawns in the background. [Season: Summer] [Lighting: Soft daylight] [Content: Outdoor hot tub, backyard pond, green lawn, hot tub bubbling]">
             An outdoor hot tub/spa bubbling with turquoise water, situated next to a serene pond. Potted purple flowers sit in the foreground, with green hills and lawns in the background. [Season: Summer] [Lighting: Soft daylight] [Content: Outdoor hot tub, backyard pond, green lawn, hot tub bubbling]
           </div>
           <div class="card-footer" style="flex-direction: column; gap: 8px;">
-            <a href="/gallery/Eden-Site%20Photos/90.webp" target="_blank" class="view-btn">View Original</a>
+            
+        <button class="view-btn" style="background: var(--accent-gold); color: #000; font-weight: 600; border: none; cursor: pointer;" onclick="openCompareModal('90.avif', '/gallery/enhanced/90.avif', '/gallery/enhanced/90.avif')">🔍 Full-Screen Compare</button>
+        <a href="/gallery/enhanced/90.avif" target="_blank" class="view-btn">Open Original High-Res File</a>
+      
           </div>
         </div>
       </div>
@@ -4339,58 +4305,6 @@
             
         <button class="view-btn" style="background: var(--accent-gold); color: #000; font-weight: 600; border: none; cursor: pointer;" onclick="openCompareModal('96.avif', '/gallery/lowres_archive/96.avif', '/gallery/enhanced/96.avif')">🔍 Full-Screen Compare</button>
         <a href="/gallery/enhanced/96.avif" target="_blank" class="view-btn">Open Original High-Res File</a>
-      
-          </div>
-        </div>
-      </div>
-      <div class="card enhanced" data-quality="pro" data-enhanced-time="1779977078862.9275">
-        
-        <div class="comparison-slider">
-          <!-- Before (Original) -->
-          <img class="img-before" src="/gallery/lowres_archive/97.avif" alt="Before 97.avif" loading="lazy">
-          <!-- After (Enhanced) -->
-          <div class="resize-container" id="resize-97.avif">
-            <img class="img-after" src="/gallery/enhanced/97.avif" alt="After 97.avif" loading="lazy">
-          </div>
-          <!-- Slider Handle -->
-          <div class="slider-handle" id="handle-97.avif"></div>
-          <input type="range" min="0" max="100" value="50" class="comparison-range" oninput="updateComparisonSlider('97.avif', this.value)">
-          <div class="badge-bar" style="pointer-events: none;">
-            <span class="badge status-pro">✨ Enhanced (Pro)</span>
-            <span class="badge" style="background: rgba(0,0,0,0.7); color: #fff; border: 1px solid rgba(255,255,255,0.2);">↔ Slide to Compare</span>
-          </div>
-        </div>
-      
-        <div class="card-body">
-          <div class="card-header">
-            <span class="filename">97.avif</span>
-            <button class="copy-btn" onclick="copyText('97.avif')">Copy File</button>
-          </div>
-          <div class="metadata-list">
-            <div class="meta-item">
-              <span class="meta-label">Resolution</span>
-              <span class="meta-value">2400 x 1600</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Size</span>
-              <span class="meta-value">210.5 KB</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Aspect Ratio</span>
-              <span class="meta-value">2400:1600</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Audit Recommendation</span>
-              <span class="meta-value status-pro-text">✨ Enhanced (Pro Grade)</span>
-            </div>
-          </div>
-          <div class="caption-box" title="Spacious, high-end laundry room showing premium custom wood cabinetry on both sides, a tiled floor, and two modern dark grey front-load smart washers/dryers built into the cabinets under a window. [Season: Summer] [Lighting: Bright daylight from the window] [Content: Laundry room, washer and dryer, custom wood cabinets, folding counter]">
-            Spacious, high-end laundry room showing premium custom wood cabinetry on both sides, a tiled floor, and two modern dark grey front-load smart washers/dryers built into the cabinets under a window. [Season: Summer] [Lighting: Bright daylight from the window] [Content: Laundry room, washer and dryer, custom wood cabinets, folding counter]
-          </div>
-          <div class="card-footer" style="flex-direction: column; gap: 8px;">
-            
-        <button class="view-btn" style="background: var(--accent-gold); color: #000; font-weight: 600; border: none; cursor: pointer;" onclick="openCompareModal('97.avif', '/gallery/lowres_archive/97.avif', '/gallery/enhanced/97.avif')">🔍 Full-Screen Compare</button>
-        <a href="/gallery/enhanced/97.avif" target="_blank" class="view-btn">Open Original High-Res File</a>
       
           </div>
         </div>
