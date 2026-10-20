@@ -123,7 +123,7 @@ export default function RootLayout({
               '@id': `${PRODUCTION_URL}/#lodging-business`,
               name: 'Eden — The Lemelson Estate',
               url: CANONICAL_HOME,
-              image: `${PRODUCTION_URL}/gallery/office/outdoor%20shots/70-020-estate-pool-mountain-backdrop.webp`,
+              image: `${PRODUCTION_URL}/gallery/enhanced/2@1200w.webp`,
               description: 'Luxury 8-bedroom estate in Stowe, Vermont with spa amenities and mountain views.',
               address: {
                 '@type': 'PostalAddress',

@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 type Props = {
   src: string;
@@ -14,7 +14,10 @@ type Props = {
   className?: string;
 };
 
-const PRIORITY_IMAGE_COUNT = 12;
+// Top 4 photos (immediately visible above the fold) get VIP bandwidth priority.
+const VIP_IMAGE_COUNT = 4;
+// First full section (Estate & Grounds, 17 photos) loads eagerly right behind the top 4.
+const INITIAL_EAGER_COUNT = 17;
 const DEFAULT_SIZES = "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw";
 
 export function GalleryImage({
@@ -28,7 +31,9 @@ export function GalleryImage({
   index = 0,
   className,
 }: Props) {
-  const isPriority = index < PRIORITY_IMAGE_COUNT;
+  const isVip = index < VIP_IMAGE_COUNT;
+  const isInitialEager = index < INITIAL_EAGER_COUNT;
+  const [eagerOverride, setEagerOverride] = useState(isInitialEager);
   const [isLoaded, setIsLoaded] = useState(false);
 
   // Cached images can finish loading before React attaches onLoad. The ref
@@ -36,6 +41,35 @@ export function GalleryImage({
   const imgRef = useCallback((node: HTMLImageElement | null) => {
     if (node?.complete) setIsLoaded(true);
   }, []);
+
+  // Top-to-bottom background waterfall: once the initial above-the-fold batch
+  // has a head start, promote remaining gallery images to eager in top-down waves
+  // so they are already downloaded before the guest scrolls down.
+  useEffect(() => {
+    if (isInitialEager) return;
+
+    const batchIndex = Math.floor((index - INITIAL_EAGER_COUNT) / 8);
+    const delayMs = 300 + batchIndex * 180;
+    let timerId: ReturnType<typeof setTimeout> | null = null;
+
+    const scheduleWave = () => {
+      timerId = setTimeout(() => {
+        setEagerOverride(true);
+      }, delayMs);
+    };
+
+    if (document.readyState === "complete") {
+      scheduleWave();
+    } else {
+      window.addEventListener("load", scheduleWave, { once: true });
+    }
+
+    return () => {
+      window.removeEventListener("load", scheduleWave);
+      if (timerId !== null) clearTimeout(timerId);
+    };
+  }, [index, isInitialEager]);
+
   const classes = ["block h-auto w-full object-cover gallery-img"];
   if (isLoaded) classes.push("is-loaded");
   if (className && className.trim().length > 0) {
@@ -43,6 +77,7 @@ export function GalleryImage({
   }
 
   const resolvedSizes = sizes ?? DEFAULT_SIZES;
+  const shouldLoadEager = isInitialEager || eagerOverride;
 
   return (
     <picture>
@@ -57,9 +92,9 @@ export function GalleryImage({
         src={src}
         sizes={resolvedSizes}
         alt={alt}
-        loading={isPriority ? "eager" : "lazy"}
+        loading={shouldLoadEager ? "eager" : "lazy"}
         decoding="async"
-        fetchPriority={isPriority ? "high" : "auto"}
+        fetchPriority={isVip ? "high" : isInitialEager ? "auto" : "low"}
         width={width}
         height={height}
         onLoad={() => setIsLoaded(true)}

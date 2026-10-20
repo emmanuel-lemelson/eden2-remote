@@ -14,3 +14,27 @@
 # requires a Cloudflare cache purge (or a filename change) to be picked up.
 /gallery/*
   Cache-Control: public, max-age=31536000, immutable
+
+# Next.js content-hashed static bundles, fonts, and styles
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Newsletter press release images
+/newsletter\ 1/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Hero video and root brand logos (bust cache via ?v= query param when updated)
+/*.mp4
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.svg
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.png
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.jpeg
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.ico
+  Cache-Control: public, max-age=31536000, immutable

@@ -16,19 +16,35 @@ const quickFacts = [
 
 const galleryPreview = [
   {
-    src: "/gallery/enhanced/2.avif",
+    src: "/gallery/enhanced/2@1200w.webp",
+    srcSet:
+      "/gallery/enhanced/2@400w.webp 400w, /gallery/enhanced/2@800w.webp 800w, /gallery/enhanced/2@1200w.webp 1200w",
+    avifSrcSet:
+      "/gallery/enhanced/2@400w.avif 400w, /gallery/enhanced/2@800w.avif 800w, /gallery/enhanced/2@1200w.avif 1200w",
     alt: "Breathtaking high-altitude sunset aerial view of the entire luxury estate, showing the main residence, swimming pool, and spring-fed pond.",
   },
   {
-    src: "/gallery/Eden-Site Photos/98.avif",
+    src: "/gallery/Eden-Site%20Photos/98@1200w.webp",
+    srcSet:
+      "/gallery/Eden-Site%20Photos/98@400w.webp 400w, /gallery/Eden-Site%20Photos/98@800w.webp 800w, /gallery/Eden-Site%20Photos/98@1200w.webp 1200w",
+    avifSrcSet:
+      "/gallery/Eden-Site%20Photos/98@400w.avif 400w, /gallery/Eden-Site%20Photos/98@800w.avif 800w, /gallery/Eden-Site%20Photos/98@1200w.avif 1200w",
     alt: "Wide-angle interior view of the magnificent Great Room featuring soaring timber trusses, a massive stone fireplace, two Chesterfield leather sofas, and a grand piano.",
   },
   {
-    src: "/gallery/Eden-Site Photos/103.avif",
+    src: "/gallery/Eden-Site%20Photos/103@1200w.webp",
+    srcSet:
+      "/gallery/Eden-Site%20Photos/103@400w.webp 400w, /gallery/Eden-Site%20Photos/103@800w.webp 800w, /gallery/Eden-Site%20Photos/103@1200w.webp 1200w",
+    avifSrcSet:
+      "/gallery/Eden-Site%20Photos/103@400w.avif 400w, /gallery/Eden-Site%20Photos/103@800w.avif 800w, /gallery/Eden-Site%20Photos/103@1200w.avif 1200w",
     alt: "Luxury master bathroom en-suite showing a soaking tub set in a dark marble deck under a dramatic arched window framing a mountain sunset.",
   },
   {
-    src: "/gallery/enhanced/87.avif",
+    src: "/gallery/enhanced/87@1200w.webp",
+    srcSet:
+      "/gallery/enhanced/87@400w.webp 400w, /gallery/enhanced/87@800w.webp 800w, /gallery/enhanced/87@1200w.webp 1200w",
+    avifSrcSet:
+      "/gallery/enhanced/87@400w.avif 400w, /gallery/enhanced/87@800w.avif 800w, /gallery/enhanced/87@1200w.avif 1200w",
     alt: "Rear exterior twilight view of the estate, showcasing the glowing warm windows overlooking the stone-paved patio and private swimming pool.",
   },
 ];
@@ -74,7 +90,7 @@ const testimonials = [
 export default function Home() {
   const heroVideoUrl =
     process.env.NEXT_PUBLIC_HOME_VIDEO_URL ||
-    "/Eden_%20A%20Journey%20Over%20The%20Lemelson%20Estate.mp4";
+    "/Eden_%20A%20Journey%20Over%20The%20Lemelson%20Estate.mp4?v=2";
 
   return (
     <>
@@ -197,13 +213,26 @@ export default function Home() {
                   className="group relative overflow-hidden rounded-3xl border border-white/70 bg-white/60 shadow-[0_24px_48px_-32px_rgba(58,45,20,0.55)]"
                 >
                   <div className="relative aspect-[4/5] w-full overflow-hidden">
-                    <Image
-                      src={item.src}
-                      alt={item.alt}
-                      fill
-                      sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-                      className="pointer-events-none object-cover"
-                    />
+                    <picture>
+                      <source
+                        type="image/avif"
+                        srcSet={item.avifSrcSet}
+                        sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                      />
+                      <source
+                        type="image/webp"
+                        srcSet={item.srcSet}
+                        sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                      />
+                      <img
+                        src={item.src}
+                        alt={item.alt}
+                        loading="eager"
+                        fetchPriority="low"
+                        decoding="async"
+                        className="pointer-events-none absolute inset-0 h-full w-full object-cover"
+                      />
+                    </picture>
                     <span className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-t from-black/25 via-transparent to-black/15 opacity-40" />
                   </div>
                 </div>

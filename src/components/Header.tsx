@@ -68,7 +68,7 @@ export function Header() {
               src="/The Lemelson Estate (1).png"
               alt="Eden Estate wordmark"
               className="h-20 w-auto md:h-28 object-contain"
-              loading="lazy"
+              priority
               width={340}
               height={136}
             />
