@@ -6,7 +6,7 @@ This guide is curated for future AI assistants (Antigravity) and developers to e
 
 ## 🌎 Production Deployment Workflow
 
-The application is a **Next.js Static Export (SSG)** deployed to **Cloudflare Pages** under the project name **`eden-preview`** (which serves the production domains `lemelsonestate.com` and `www.lemelsonestate.com`). 
+The application is a **Next.js Static Export (SSG)** deployed to **Cloudflare Pages** under the project name **`eden-preview`** (which serves the production domains `lemelsonestate.com` and `www.lemelsonestate.com`) in Cloudflare account **`lemelsone@gmail.com`** (`912d9bd64db7dac3aa0d53e4de0f67c3`). 
 
 > [!IMPORTANT]
 > This project is configured with **`Git Provider: No`** in Cloudflare. 
