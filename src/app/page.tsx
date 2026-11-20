@@ -155,7 +155,7 @@ export default function Home() {
 
       <section className="bg-gradient-to-br from-[var(--color-linen)] via-[var(--color-eggshell)] to-[var(--color-cream)]">
         <div className="lux-container py-10 md:py-14">
-          <WhereToFindUs />
+          <WhereToFindUs title="As Seen On" />
         </div>
       </section>
 
