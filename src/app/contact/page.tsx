@@ -34,8 +34,8 @@ export default function ContactPage() {
           <h1 className="text-3xl font-medium text-stone-900 md:text-4xl tracking-tight">
             Plan Your Stay
           </h1>
-          <p className="mt-3 text-sm text-stone-600 max-w-xl leading-relaxed">
-            Please submit your desired dates and guest details below to check availability at Eden. You can also reach us directly via email at{" "}
+          <p className="mt-3 text-sm text-stone-600 max-w-xl leading-relaxed text-pretty">
+            Book directly with our estate team to skip third-party platform fees. Submit your desired dates and guest details below to check availability at Eden, or reach us directly via email at{" "}
             <a 
               href="mailto:admin@lemelsoncapital.com" 
               className="font-bold text-stone-900 hover:text-stone-700 transition underline underline-offset-4"

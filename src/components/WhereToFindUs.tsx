@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 interface Platform {
@@ -98,28 +97,32 @@ export function WhereToFindUs({
    }: WhereToFindUsProps) {
   return (
     <div className={`flex flex-col items-center gap-6 text-center text-stone-900 md:gap-8 ${className}`}>
-      <p className="text-sm font-semibold uppercase tracking-[0.35em] text-stone-800 sm:text-base md:text-lg">
+      <h2 className="![font-family:var(--font-body)] text-sm font-semibold uppercase !tracking-[0.35em] text-stone-800 text-balance sm:text-base md:text-lg">
         {title}
-      </p>
-      <div className={`grid w-full max-w-4xl grid-cols-3 justify-items-center gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 sm:gap-5 ${containerClassName}`}>
+      </h2>
+      <ul
+        role="list"
+        className={`grid w-full max-w-4xl list-none grid-cols-3 justify-items-center gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 sm:gap-5 ${containerClassName}`}
+      >
         {platforms.map((platform) => (
-          <Link
-            key={platform.name}
-            href={platform.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`inline-flex w-full max-w-[120px] h-10 sm:h-12 items-center justify-center rounded-full shadow-lg shadow-black/10 transition-colors transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-xl sm:max-w-none ${platform.name === "WeddingWire" ? "px-1.5 sm:px-3" : "px-3 sm:px-6"} ${platform.bgColor} ${platform.hoverBgColor || ""} ${platform.borderColor ? `border ${platform.borderColor}` : ""} ${platform.hoverBorderColor || ""}`}
-            aria-label={`View Eden on ${platform.name}`}
-          >
-            <img
-              src={platform.logo.endsWith(".svg") ? `${platform.logo}?v=2` : platform.logo}
-              alt={platform.alt}
-              className={platform.logoClassName}
-              loading="lazy"
-            />
-          </Link>
+          <li key={platform.name} className="flex w-full justify-center">
+            <Link
+              href={platform.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`inline-flex w-full max-w-[120px] h-10 sm:h-12 items-center justify-center rounded-full shadow-lg shadow-black/10 transition-colors transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-xl focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-[#8f7845] sm:max-w-none ${platform.name === "WeddingWire" ? "px-1.5 sm:px-3" : "px-3 sm:px-6"} ${platform.bgColor} ${platform.hoverBgColor || ""} ${platform.borderColor ? `border ${platform.borderColor}` : ""} ${platform.hoverBorderColor || ""}`}
+              aria-label={`View Eden on ${platform.name}`}
+            >
+              <img
+                src={platform.logo.endsWith(".svg") ? `${platform.logo}?v=2` : platform.logo}
+                alt={platform.alt}
+                className={platform.logoClassName}
+                loading="lazy"
+              />
+            </Link>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 }

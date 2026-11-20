@@ -105,7 +105,7 @@ export default function Home() {
               className="h-48 w-auto -mt-10 -mb-6 md:h-72 md:-mt-12 md:-mb-8"
               priority
             />
-            <h1 className="text-3xl font-semibold leading-tight sm:text-[2.35rem] md:text-5xl">The Lemelson Estate Welcomes You</h1>
+            <h1 className="text-3xl font-semibold leading-tight text-balance sm:text-[2.35rem] md:text-5xl">The Lemelson Estate Welcomes You</h1>
             <p className="text-xs uppercase tracking-[0.5em] text-stone-600 sm:text-sm md:text-base">Bespoke Luxury in Stowe, Vermont</p>
           </div>
 
@@ -142,13 +142,36 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-4 flex justify-center">
+          <div className="mt-4 flex flex-col items-center gap-3">
             <Link
               href="/contact"
-              className="inline-flex items-center rounded-full bg-[#111111] px-8 py-3.5 text-[0.95rem] font-semibold !text-white transition duration-200 hover:bg-stone-800 active:scale-[0.98]"
+              aria-describedby="hero-direct-booking-note"
+              className="inline-flex items-center rounded-full bg-[#111111] px-8 py-3.5 text-[0.95rem] font-semibold !text-white transition duration-200 hover:bg-stone-800 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-[#8f7845]"
             >
               Reserve Now
             </Link>
+            <p
+              id="hero-direct-booking-note"
+              className="flex flex-wrap items-center justify-center gap-x-2.5 gap-y-1 text-xs font-medium tracking-[0.03em] text-stone-600 sm:text-[0.8125rem]"
+            >
+              <span className="inline-flex items-center gap-1.5 text-stone-800">
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.75"
+                  className="h-3.5 w-3.5 text-[#8f7845]"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 10.5l3.5 3.5 7.5-8" />
+                </svg>
+                Book directly with the estate
+              </span>
+              <span aria-hidden="true" className="text-[#c2a060]">•</span>
+              <span>Zero third-party platform fees</span>
+              <span aria-hidden="true" className="text-[#c2a060]">•</span>
+              <span>Best rate guaranteed</span>
+            </p>
           </div>
         </div>
       </section>
