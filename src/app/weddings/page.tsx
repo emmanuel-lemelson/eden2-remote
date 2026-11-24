@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FaqSection, type FaqItem } from "@/components/FaqSection";
+import { ResponsivePhoto } from "@/components/ResponsivePhoto";
 
 export const dynamic = "force-static";
 
@@ -131,11 +133,46 @@ const weddingFaqs: FaqItem[] = [
 ];
 
 export default function WeddingsPage() {
+  const videoSchemas = [
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      name: "Eden: A Journey Over The Lemelson Estate — Aerial & Bingham Falls Tour",
+      description:
+        "Aerial video tour of Eden: The Lemelson Estate in Stowe, Vermont, including surrounding mountain views and nearby Bingham Falls.",
+      thumbnailUrl: ["https://lemelsonestate.com/gallery/enhanced/2@1200w.webp"],
+      contentUrl: "https://youtu.be/P8oBq86qhW0",
+      embedUrl: "https://www.youtube.com/embed/P8oBq86qhW0",
+      uploadDate: "2025-01-01",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      name: "Eden: The Lemelson Estate — Interior & Grounds Wedding Tour",
+      description:
+        "Interior and grounds walkthrough of Eden: The Lemelson Estate's Great Room, bridal suite, dining spaces, and mountain grounds in Stowe, Vermont.",
+      thumbnailUrl: ["https://lemelsonestate.com/gallery/Eden-Site%20Photos/98@1200w.webp"],
+      contentUrl: "https://youtu.be/xm_uA64KCkE",
+      embedUrl: "https://www.youtube.com/embed/xm_uA64KCkE",
+      uploadDate: "2025-01-01",
+    },
+  ];
+
   return (
     <div className="bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchemas) }}
+      />
       {/* Hero */}
-      <section className="bg-white pt-10 pb-12 md:pt-14 md:pb-16">
+      <section className="bg-white pt-8 pb-12 md:pt-12 md:pb-16">
         <div className="lux-container space-y-8">
+          <Breadcrumbs
+            items={[
+              { name: "Home", href: "/" },
+              { name: "Weddings", href: "/weddings/" },
+            ]}
+          />
           <div className="mx-auto max-w-4xl text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.38em] text-[#8f7845]">
               Edson Hill Road Area · Stowe, Vermont · Est. 2016
@@ -180,9 +217,13 @@ export default function WeddingsPage() {
 
           <div className="overflow-hidden rounded-3xl border border-stone-200 shadow-xl">
             <div className="aspect-[16/9] w-full">
-              <img
-                src="/gallery/enhanced/2@1200w.webp"
+              <ResponsivePhoto
+                basePath="/gallery/enhanced/2"
                 alt="Aerial view of Eden: The Lemelson Estate grounds, spring-fed pond, and meadow wedding site in Stowe, Vermont"
+                sizes="(min-width: 1280px) 1072px, 100vw"
+                width={2400}
+                height={1600}
+                priority={true}
                 className="h-full w-full object-cover"
               />
             </div>
@@ -218,19 +259,23 @@ export default function WeddingsPage() {
 
           <div className="grid gap-4 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-1">
             <div className="overflow-hidden rounded-2xl border border-white/80 shadow-md">
-              <img
-                src="/gallery/Eden-Site%20Photos/100@1200w.webp"
+              <ResponsivePhoto
+                basePath="/gallery/Eden-Site%20Photos/100"
                 alt="Great Room stone fireplace at Eden Estate for intimate winter and indoor wedding ceremonies"
+                sizes="(min-width: 1024px) 40vw, (min-width: 640px) 50vw, 100vw"
+                width={2560}
+                height={1707}
                 className="aspect-[16/10] w-full object-cover"
-                loading="lazy"
               />
             </div>
             <div className="overflow-hidden rounded-2xl border border-white/80 shadow-md">
-              <img
-                src="/gallery/enhanced/87@1200w.webp"
+              <ResponsivePhoto
+                basePath="/gallery/enhanced/87"
                 alt="Twilight view of the rear stone patio and illuminated windows at Eden: The Lemelson Estate"
+                sizes="(min-width: 1024px) 40vw, (min-width: 640px) 50vw, 100vw"
+                width={2400}
+                height={1600}
                 className="aspect-[16/10] w-full object-cover"
-                loading="lazy"
               />
             </div>
           </div>
@@ -358,19 +403,23 @@ export default function WeddingsPage() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="overflow-hidden rounded-2xl border border-stone-200 shadow-md">
-                <img
-                  src="/gallery/Eden-Site%20Photos/102@1200w.webp"
+                <ResponsivePhoto
+                  basePath="/gallery/Eden-Site%20Photos/102"
                   alt="Bridal primary bedroom suite at Eden: The Lemelson Estate"
+                  sizes="(min-width: 1024px) 25vw, 50vw"
+                  width={2560}
+                  height={1707}
                   className="aspect-[4/3] w-full object-cover"
-                  loading="lazy"
                 />
               </div>
               <div className="overflow-hidden rounded-2xl border border-stone-200 shadow-md">
-                <img
-                  src="/gallery/enhanced/70@1200w.webp"
+                <ResponsivePhoto
+                  basePath="/gallery/enhanced/70"
                   alt="Private cedar sauna in the bridal spa retreat at Eden"
+                  sizes="(min-width: 1024px) 25vw, 50vw"
+                  width={2400}
+                  height={1600}
                   className="aspect-[4/3] w-full object-cover"
-                  loading="lazy"
                 />
               </div>
             </div>
@@ -424,6 +473,12 @@ export default function WeddingsPage() {
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-4 text-sm">
+            <Link
+              href="/weddings/real-weddings/"
+              className="inline-flex items-center rounded-full bg-[#111111] px-6 py-2.5 font-semibold !text-white transition hover:bg-stone-800"
+            >
+              Read Real Wedding Stories at Eden →
+            </Link>
             <a
               href="https://youtu.be/P8oBq86qhW0"
               target="_blank"

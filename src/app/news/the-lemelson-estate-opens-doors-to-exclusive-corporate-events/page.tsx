@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 export const dynamic = "force-static";
 
@@ -72,9 +73,20 @@ export default function CorporateEventsArticle() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="lux-container pt-12 pb-20 md:pb-28">
+      <div className="lux-container pt-8 pb-20 md:pb-28">
         <div className="max-w-5xl px-4 sm:px-6 lg:px-8">
-        <div className="mb-8 px-4 md:px-20 lg:px-28 text-left">
+        <div className="mb-6 px-4 md:px-20 lg:px-28 text-left">
+          <Breadcrumbs
+            items={[
+              { name: "Home", href: "/" },
+              { name: "News", href: "/news/" },
+              {
+                name: "Corporate Events",
+                href: "/news/the-lemelson-estate-opens-doors-to-exclusive-corporate-events/",
+              },
+            ]}
+            className="mb-4"
+          />
           <Link
             href="/news"
             className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.35em] text-stone-500 transition-colors hover:text-stone-900"

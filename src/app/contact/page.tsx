@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { WhereToFindUs } from "@/components/WhereToFindUs";
 import { InquiryForm } from "@/components/InquiryForm";
 
@@ -29,8 +30,15 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div className="bg-white">
-      <section className="pt-12 pb-6">
+      <section className="pt-8 pb-6">
         <div className="lux-container max-w-4xl">
+          <Breadcrumbs
+            items={[
+              { name: "Home", href: "/" },
+              { name: "Reserve Direct", href: "/contact/" },
+            ]}
+            className="mb-4"
+          />
           <h1 className="text-3xl font-medium text-stone-900 md:text-4xl tracking-tight">
             Plan Your Stay
           </h1>

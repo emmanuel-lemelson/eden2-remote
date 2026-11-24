@@ -1,3 +1,4 @@
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import ReviewsClient from "@/components/reviews/ReviewsClient";
 import { SectionHeading } from "@/components/SectionHeading";
 import reviewsData from "@/../public/reviews.json";
@@ -230,8 +231,14 @@ export default async function ReviewsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(aggregateSchema) }}
       />
-      <section className="pt-12 pb-6">
-        <div className="lux-container">
+      <section className="pt-8 pb-6">
+        <div className="lux-container space-y-4">
+          <Breadcrumbs
+            items={[
+              { name: "Home", href: "/" },
+              { name: "Reviews", href: "/reviews/" },
+            ]}
+          />
           <SectionHeading
             eyebrow="Reviews"
             as="h1"

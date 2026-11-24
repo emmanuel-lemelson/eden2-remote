@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FaqSection, type FaqItem } from "@/components/FaqSection";
+import { ResponsivePhoto } from "@/components/ResponsivePhoto";
 
 export const dynamic = "force-static";
 
@@ -108,8 +110,14 @@ export default function RetreatsPage() {
   return (
     <div className="bg-white">
       {/* Hero */}
-      <section className="bg-white pt-10 pb-12 md:pt-14 md:pb-16">
+      <section className="bg-white pt-8 pb-12 md:pt-12 md:pb-16">
         <div className="lux-container space-y-8">
+          <Breadcrumbs
+            items={[
+              { name: "Home", href: "/" },
+              { name: "Corporate Retreats", href: "/retreats/" },
+            ]}
+          />
           <div className="mx-auto max-w-4xl text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.38em] text-[#8f7845]">
               Edson Hill Road Area · Stowe, Vermont
@@ -142,9 +150,13 @@ export default function RetreatsPage() {
 
           <div className="overflow-hidden rounded-3xl border border-stone-200 shadow-xl">
             <div className="aspect-[16/9] w-full">
-              <img
-                src="/gallery/enhanced/87@1200w.webp"
+              <ResponsivePhoto
+                basePath="/gallery/enhanced/87"
                 alt="Twilight exterior view of Eden: The Lemelson Estate corporate retreat venue in Stowe, Vermont"
+                sizes="(min-width: 1280px) 1072px, 100vw"
+                width={2400}
+                height={1600}
+                priority={true}
                 className="h-full w-full object-cover"
               />
             </div>
@@ -198,35 +210,43 @@ export default function RetreatsPage() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="overflow-hidden rounded-2xl border border-stone-200 shadow-md">
-                <img
-                  src="/gallery/enhanced/28@1200w.webp"
+                <ResponsivePhoto
+                  basePath="/gallery/enhanced/28"
                   alt="Formal dining and executive meeting table at Eden Estate in Stowe, VT"
+                  sizes="(min-width: 1024px) 25vw, 50vw"
+                  width={2400}
+                  height={1600}
                   className="aspect-[4/3] w-full object-cover"
-                  loading="lazy"
                 />
               </div>
               <div className="overflow-hidden rounded-2xl border border-stone-200 shadow-md">
-                <img
-                  src="/gallery/enhanced/13@1200w.webp"
+                <ResponsivePhoto
+                  basePath="/gallery/enhanced/13"
                   alt="Polished dark wood boardroom and formal dining table at Eden"
+                  sizes="(min-width: 1024px) 25vw, 50vw"
+                  width={2400}
+                  height={1600}
                   className="aspect-[4/3] w-full object-cover"
-                  loading="lazy"
                 />
               </div>
               <div className="overflow-hidden rounded-2xl border border-stone-200 shadow-md">
-                <img
-                  src="/gallery/Eden-Site%20Photos/98@1200w.webp"
+                <ResponsivePhoto
+                  basePath="/gallery/Eden-Site%20Photos/98"
                   alt="Great Room fireside gathering space for leadership teams at Eden"
+                  sizes="(min-width: 1024px) 25vw, 50vw"
+                  width={2560}
+                  height={1704}
                   className="aspect-[4/3] w-full object-cover"
-                  loading="lazy"
                 />
               </div>
               <div className="overflow-hidden rounded-2xl border border-stone-200 shadow-md">
-                <img
-                  src="/gallery/enhanced/96@1200w.webp"
+                <ResponsivePhoto
+                  basePath="/gallery/enhanced/96"
                   alt="Private on-site fitness center at Eden: The Lemelson Estate"
+                  sizes="(min-width: 1024px) 25vw, 50vw"
+                  width={2400}
+                  height={1600}
                   className="aspect-[4/3] w-full object-cover"
-                  loading="lazy"
                 />
               </div>
             </div>

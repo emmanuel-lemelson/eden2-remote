@@ -9,7 +9,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/",
     "/stays/",
     "/weddings/",
+    "/weddings/real-weddings/",
     "/retreats/",
+    "/guides/stowe-ski-house/",
+    "/guides/stowe-fall-foliage/",
+    "/guides/stowe-family-reunions/",
     "/gallery/",
     "/reviews/",
     "/contact/",
@@ -17,10 +21,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/news/the-lemelson-estate-opens-doors-to-exclusive-corporate-events/",
   ];
   const highPriorityRoutes = new Set(["/stays/", "/weddings/", "/retreats/"]);
+  const guideRoutes = new Set([
+    "/guides/stowe-ski-house/",
+    "/guides/stowe-fall-foliage/",
+    "/guides/stowe-family-reunions/",
+    "/weddings/real-weddings/",
+  ]);
   return routes.map((path) => ({
     url: new URL(path, base).toString(),
     lastModified: now,
     changeFrequency: "weekly",
-    priority: path === "/" ? 1 : highPriorityRoutes.has(path) ? 0.9 : 0.8,
+    priority: path === "/" ? 1 : highPriorityRoutes.has(path) ? 0.9 : guideRoutes.has(path) ? 0.85 : 0.8,
   }));
 }

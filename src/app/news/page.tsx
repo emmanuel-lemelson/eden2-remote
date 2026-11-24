@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 export const dynamic = "force-static";
 
@@ -51,7 +52,14 @@ const articles = [
 export default function NewsPage() {
   return (
     <div className="min-h-screen bg-white">
-      <div className="lux-container pt-12 pb-10 md:pb-14">
+      <div className="lux-container pt-8 pb-10 md:pb-14">
+        <Breadcrumbs
+          items={[
+            { name: "Home", href: "/" },
+            { name: "News", href: "/news/" },
+          ]}
+          className="mb-4"
+        />
         <div className="mb-8">
           <div>
             <h1 className="text-3xl font-semibold text-stone-900 md:text-4xl">News</h1>

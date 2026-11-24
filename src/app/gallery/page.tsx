@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { SectionHeading } from "@/components/SectionHeading";
 import { GallerySectionGrid } from "@/components/GallerySectionGrid";
 import type { GallerySection } from "@/types/gallery";
@@ -36,8 +37,14 @@ export default function GalleryPage() {
 
   return (
     <div>
-      <section className="pt-12 pb-8">
-        <div className="lux-container">
+      <section className="pt-8 pb-8">
+        <div className="lux-container space-y-4">
+          <Breadcrumbs
+            items={[
+              { name: "Home", href: "/" },
+              { name: "Gallery", href: "/gallery/" },
+            ]}
+          />
           <SectionHeading
             eyebrow="Gallery"
             as="h1"

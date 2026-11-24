@@ -148,8 +148,24 @@ export default function Home() {
     process.env.NEXT_PUBLIC_HOME_VIDEO_URL ||
     "/Eden_%20A%20Journey%20Over%20The%20Lemelson%20Estate.mp4?v=2";
 
+  const videoSchema = {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    name: "Eden: A Journey Over The Lemelson Estate — Stowe, Vermont",
+    description:
+      "Aerial tour over Eden: The Lemelson Estate's 28 private acres, residence, heated swimming pool, spring-fed trout ponds, and Worcester Mountain views in Stowe, Vermont.",
+    thumbnailUrl: ["https://lemelsonestate.com/gallery/enhanced/2@1200w.webp"],
+    contentUrl:
+      "https://lemelsonestate.com/Eden_%20A%20Journey%20Over%20The%20Lemelson%20Estate.mp4",
+    uploadDate: "2025-11-01",
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }}
+      />
       <section className="bg-white">
         <div className="lux-container flex flex-col items-center gap-5 pb-8 pt-0 text-center text-stone-900 md:gap-7 md:pb-10 md:pt-2">
           <div className="flex flex-col items-center gap-3 md:gap-5">
@@ -313,6 +329,36 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+
+          <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
+            <span className="text-xs font-semibold uppercase tracking-[0.22em] text-stone-500">
+              Seasonal &amp; Group Guides:
+            </span>
+            <Link
+              href="/guides/stowe-ski-house/"
+              className="rounded-full border border-[#d2c4a3]/70 bg-[#fdfbf7] px-4 py-1.5 text-xs font-semibold text-stone-800 transition hover:border-[#8f7845] hover:text-[#8f7845]"
+            >
+              Stowe Ski House &amp; Winter
+            </Link>
+            <Link
+              href="/guides/stowe-fall-foliage/"
+              className="rounded-full border border-[#d2c4a3]/70 bg-[#fdfbf7] px-4 py-1.5 text-xs font-semibold text-stone-800 transition hover:border-[#8f7845] hover:text-[#8f7845]"
+            >
+              October Fall Foliage
+            </Link>
+            <Link
+              href="/guides/stowe-family-reunions/"
+              className="rounded-full border border-[#d2c4a3]/70 bg-[#fdfbf7] px-4 py-1.5 text-xs font-semibold text-stone-800 transition hover:border-[#8f7845] hover:text-[#8f7845]"
+            >
+              Family Reunions (Sleeps 20)
+            </Link>
+            <Link
+              href="/weddings/real-weddings/"
+              className="rounded-full border border-[#d2c4a3]/70 bg-[#fdfbf7] px-4 py-1.5 text-xs font-semibold text-stone-800 transition hover:border-[#8f7845] hover:text-[#8f7845]"
+            >
+              Real Weddings at Eden
+            </Link>
           </div>
         </div>
       </section>

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FaqSection, type FaqItem } from "@/components/FaqSection";
+import { ResponsivePhoto } from "@/components/ResponsivePhoto";
 
 export const dynamic = "force-static";
 
@@ -163,8 +165,14 @@ export default function StaysPage() {
   return (
     <div className="bg-white">
       {/* Hero */}
-      <section className="bg-white pt-10 pb-12 md:pt-14 md:pb-16">
+      <section className="bg-white pt-8 pb-12 md:pt-12 md:pb-16">
         <div className="lux-container space-y-8">
+          <Breadcrumbs
+            items={[
+              { name: "Home", href: "/" },
+              { name: "Stays", href: "/stays/" },
+            ]}
+          />
           <div className="mx-auto max-w-4xl text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.38em] text-[#8f7845]">
               Edson Hill Road Area · Stowe, Vermont
@@ -199,9 +207,13 @@ export default function StaysPage() {
 
           <div className="overflow-hidden rounded-3xl border border-stone-200 shadow-xl">
             <div className="aspect-[16/9] w-full">
-              <img
-                src="/gallery/enhanced/2@1200w.webp"
+              <ResponsivePhoto
+                basePath="/gallery/enhanced/2"
                 alt="Aerial sunset view of Eden: The Lemelson Estate 28-acre luxury vacation rental in Stowe, Vermont with pool and spring-fed pond"
+                sizes="(min-width: 1280px) 1072px, 100vw"
+                width={2400}
+                height={1600}
+                priority={true}
                 className="h-full w-full object-cover"
               />
             </div>
@@ -254,35 +266,43 @@ export default function StaysPage() {
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <div className="overflow-hidden rounded-2xl border border-white/80 shadow-md">
-              <img
-                src="/gallery/Eden-Site%20Photos/113@1200w.webp"
+              <ResponsivePhoto
+                basePath="/gallery/Eden-Site%20Photos/113"
                 alt="Heated seasonal outdoor swimming pool and stone patio at Eden Estate in Stowe, VT"
+                sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                width={2560}
+                height={1920}
                 className="aspect-[4/3] w-full object-cover"
-                loading="lazy"
               />
             </div>
             <div className="overflow-hidden rounded-2xl border border-white/80 shadow-md">
-              <img
-                src="/gallery/enhanced/90@1200w.webp"
+              <ResponsivePhoto
+                basePath="/gallery/enhanced/90"
                 alt="Year-round outdoor hot tub overlooking the spring-fed pond and Worcester Mountains"
+                sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                width={2400}
+                height={1600}
                 className="aspect-[4/3] w-full object-cover"
-                loading="lazy"
               />
             </div>
             <div className="overflow-hidden rounded-2xl border border-white/80 shadow-md">
-              <img
-                src="/gallery/enhanced/70@1200w.webp"
+              <ResponsivePhoto
+                basePath="/gallery/enhanced/70"
                 alt="Private indoor dry cedar sauna inside the lower-level spa wing at Eden"
+                sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                width={2400}
+                height={1600}
                 className="aspect-[4/3] w-full object-cover"
-                loading="lazy"
               />
             </div>
             <div className="overflow-hidden rounded-2xl border border-white/80 shadow-md">
-              <img
-                src="/gallery/Eden-Site%20Photos/98@1200w.webp"
+              <ResponsivePhoto
+                basePath="/gallery/Eden-Site%20Photos/98"
                 alt="Great Room with soaring timber trusses, stone fireplace, Chesterfield sofas, and grand piano"
+                sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                width={2560}
+                height={1704}
                 className="aspect-[4/3] w-full object-cover"
-                loading="lazy"
               />
             </div>
           </div>
@@ -306,19 +326,23 @@ export default function StaysPage() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="overflow-hidden rounded-2xl border border-stone-200 shadow-md">
-                <img
-                  src="/gallery/Eden-Site%20Photos/102@1200w.webp"
+                <ResponsivePhoto
+                  basePath="/gallery/Eden-Site%20Photos/102"
                   alt="Primary king bedroom suite with vaulted ceilings at Eden Estate in Stowe"
+                  sizes="(min-width: 1024px) 25vw, 50vw"
+                  width={2560}
+                  height={1707}
                   className="aspect-[4/3] w-full object-cover"
-                  loading="lazy"
                 />
               </div>
               <div className="overflow-hidden rounded-2xl border border-stone-200 shadow-md">
-                <img
-                  src="/gallery/Eden-Site%20Photos/103@1200w.webp"
+                <ResponsivePhoto
+                  basePath="/gallery/Eden-Site%20Photos/103"
                   alt="Primary marble bathroom en-suite with soaking tub under mountain-view arched window"
+                  sizes="(min-width: 1024px) 25vw, 50vw"
+                  width={2560}
+                  height={1707}
                   className="aspect-[4/3] w-full object-cover"
-                  loading="lazy"
                 />
               </div>
             </div>
@@ -362,12 +386,34 @@ export default function StaysPage() {
               Tucked in the sought-after Edson Hill Road area of Stowe, Eden pairs complete mountain privacy with effortless access to winter skiing on Mount Mansfield, peak October fall foliage, and summer swimming holes.
             </p>
             <div className="overflow-hidden rounded-2xl border border-white/80 shadow-md">
-              <img
-                src="/gallery/enhanced/86@1200w.webp"
+              <ResponsivePhoto
+                basePath="/gallery/enhanced/86"
                 alt="Eden Estate surrounded by vibrant orange and red Vermont autumn foliage in Stowe"
+                sizes="(min-width: 1024px) 40vw, 100vw"
+                width={1024}
+                height={1024}
                 className="aspect-[16/10] w-full object-cover"
-                loading="lazy"
               />
+            </div>
+            <div className="flex flex-wrap gap-2 pt-1">
+              <Link
+                href="/guides/stowe-ski-house/"
+                className="rounded-full border border-[#c2a060]/60 bg-white px-4 py-1.5 text-xs font-semibold text-stone-800 transition hover:border-[#8f7845] hover:text-[#8f7845]"
+              >
+                Winter &amp; Ski Guide →
+              </Link>
+              <Link
+                href="/guides/stowe-fall-foliage/"
+                className="rounded-full border border-[#c2a060]/60 bg-white px-4 py-1.5 text-xs font-semibold text-stone-800 transition hover:border-[#8f7845] hover:text-[#8f7845]"
+              >
+                Fall Foliage Guide →
+              </Link>
+              <Link
+                href="/guides/stowe-family-reunions/"
+                className="rounded-full border border-[#c2a060]/60 bg-white px-4 py-1.5 text-xs font-semibold text-stone-800 transition hover:border-[#8f7845] hover:text-[#8f7845]"
+              >
+                Family Reunion Guide →
+              </Link>
             </div>
           </div>
 

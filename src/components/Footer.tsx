@@ -11,6 +11,13 @@ const footerLinks = [
   { name: "Reserve Direct", href: "/contact/" },
 ];
 
+const guideLinks = [
+  { name: "Ski Stays", href: "/guides/stowe-ski-house/" },
+  { name: "Fall Foliage", href: "/guides/stowe-fall-foliage/" },
+  { name: "Family Reunions", href: "/guides/stowe-family-reunions/" },
+  { name: "Real Weddings", href: "/weddings/real-weddings/" },
+];
+
 export function Footer() {
   return (
     <footer className="border-t border-white/30 bg-white/70">
@@ -26,17 +33,30 @@ export function Footer() {
           />
         </div>
 
-        <nav aria-label="Footer navigation" className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-stone-600">
-          {footerLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="transition hover:text-stone-950"
-            >
-              {link.name}
-            </Link>
-          ))}
-        </nav>
+        <div className="flex flex-col items-center gap-2">
+          <nav aria-label="Footer navigation" className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-stone-600">
+            {footerLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="transition hover:text-stone-950"
+              >
+                {link.name}
+              </Link>
+            ))}
+          </nav>
+          <nav aria-label="Seasonal and wedding guides" className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-[0.65rem] font-medium uppercase tracking-[0.18em] text-stone-500">
+            {guideLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="transition hover:text-[#8f7845]"
+              >
+                {link.name}
+              </Link>
+            ))}
+          </nav>
+        </div>
 
         <div className="flex flex-col gap-1.5 text-center text-sm text-stone-700 md:text-right">
           <div className="mx-auto h-px w-12 rounded-full bg-gradient-to-r from-transparent via-[rgba(58,45,20,0.25)] to-transparent md:hidden" />
