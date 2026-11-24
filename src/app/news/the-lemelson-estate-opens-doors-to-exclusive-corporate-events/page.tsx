@@ -179,7 +179,7 @@ export default function CorporateEventsArticle() {
             </figure>
             <blockquote className="press-quote">
               <p className="press-quote-text">&ldquo;Corporate guests come to Eden for inspiration, connection, and absolute discretion. We set the stage for teams to reset and collaborate, ensuring every detail—from chef‑prepared dining to custom activity itineraries—is handled through personalized, white‑glove service.&rdquo;</p>
-              <footer className="press-quote-attribution">— Heather Marie, Luxury Guest Experience Manager</footer>
+              <footer className="press-quote-attribution">— Eden – The Lemelson Estate Concierge Team</footer>
             </blockquote>
 
             <figure className="press-figure-left w-full flex flex-col">
@@ -203,23 +203,32 @@ export default function CorporateEventsArticle() {
         </section>
 
         <div className="mt-16 px-4 md:px-20 lg:px-28 border-t border-stone-200/60 pt-12 text-left">
-          <Link
-            href="/contact"
-            className="group inline-flex items-center gap-2 md:gap-3 rounded-full border-2 border-[var(--color-gold)] bg-white px-6 py-3.5 md:px-8 md:py-4 text-base md:text-sm font-semibold uppercase tracking-[0.2em] md:tracking-[0.35em] text-stone-900 shadow-[0_4px_12px_-4px_rgba(194,160,96,0.4)] transition-all hover:border-[var(--color-gold)] hover:bg-[var(--color-gold)]/5 hover:shadow-[0_8px_20px_-6px_rgba(194,160,96,0.5)]"
-            prefetch={true}
-          >
-            <span>Inquire About Corporate Events</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              className="h-5 w-5 md:h-4 md:w-4 transition-transform group-hover:translate-x-1 flex-shrink-0"
+          <div className="flex flex-wrap items-center gap-4">
+            <Link
+              href="/contact"
+              className="group inline-flex items-center gap-2 md:gap-3 rounded-full border-2 border-[var(--color-gold)] bg-white px-6 py-3.5 md:px-8 md:py-4 text-base md:text-sm font-semibold uppercase tracking-[0.2em] md:tracking-[0.35em] text-stone-900 shadow-[0_4px_12px_-4px_rgba(194,160,96,0.4)] transition-all hover:border-[var(--color-gold)] hover:bg-[var(--color-gold)]/5 hover:shadow-[0_8px_20px_-6px_rgba(194,160,96,0.5)]"
+              prefetch={true}
             >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </Link>
+              <span>Inquire About Corporate Events</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                className="h-5 w-5 md:h-4 md:w-4 transition-transform group-hover:translate-x-1 flex-shrink-0"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </Link>
+            <Link
+              href="/retreats/"
+              className="inline-flex items-center gap-2 rounded-full border border-stone-300 bg-transparent px-6 py-3.5 md:px-7 md:py-4 text-sm font-semibold uppercase tracking-[0.18em] text-stone-800 transition hover:border-stone-900 hover:bg-stone-50"
+              prefetch={true}
+            >
+              Explore Corporate Retreats at Eden
+            </Link>
+          </div>
         </div>
 
         {/* Media & Booking Inquiries and About Section */}
@@ -232,7 +241,7 @@ export default function CorporateEventsArticle() {
               </h2>
               <div className="space-y-2 text-stone-700">
                 <p className="leading-relaxed">
-                  Heather Marie | Luxury Guest Experience Manager<br />
+                  Estate Concierge &amp; Events Team<br />
                   Eden – The Lemelson Estate
                 </p>
                 <p>

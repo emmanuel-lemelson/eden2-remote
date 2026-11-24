@@ -4,14 +4,70 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { TestimonialCarousel, PerfectReviewsBadge } from "@/components/TestimonialCarousel";
 import { AutoPlayVideo } from "@/components/AutoPlayVideo";
 import { WhereToFindUs } from "@/components/WhereToFindUs";
+import { FaqSection, type FaqItem } from "@/components/FaqSection";
 
 const quickFacts = [
-  { label: "Bedrooms", value: "8" },
-  { label: "Bathrooms", value: "8" },
-  { label: "Interior", value: "11,400 sq ft" },
-  { label: "Property", value: "28 acres" },
-  { label: "Amenities", value: "Pool, spa, tennis, game room" },
-  { label: "Style", value: "Luxury mountain estate" },
+  { label: "Bedrooms & Baths", value: "8 Bed · 8 Bath" },
+  { label: "Overnight / Events", value: "Sleeps 20 · Up to 300 Tented" },
+  { label: "Interior & Grounds", value: "11,400 sq ft · 28 Private Acres" },
+  { label: "Wellness & Recreation", value: "Heated Pool, 3 Spas, Sauna, Tennis, Gym" },
+  { label: "Location", value: "Edson Hill Road Area · 5 Min to Skiing" },
+  { label: "Stays", value: "Pet-Friendly · Direct Booking" },
+];
+
+const experienceCards = [
+  {
+    eyebrow: "Vacation & Ski Stays",
+    title: "Luxury Stowe Vacation & Ski Stays",
+    description:
+      "8 bedrooms, sleeps 20, pet-friendly stays just 5 minutes from Stowe Mountain Resort—with 3 hot tubs, sauna, heated pool, playroom, and zero third-party platform fees.",
+    href: "/stays/",
+    cta: "Explore Luxury Stays",
+  },
+  {
+    eyebrow: "Private Estate Weddings",
+    title: "Private Estate Weddings",
+    description:
+      "28 private acres with Worcester Mountain views, lodging for 20 overnight guests, Upper Meadow tented receptions up to 300, no food & beverage minimums, and transparent 2026 pricing.",
+    href: "/weddings/",
+    cta: "View 2026 Wedding Pricing",
+  },
+  {
+    eyebrow: "Executive Offsites",
+    title: "Corporate & Executive Retreats",
+    description:
+      "Total privacy for leadership summits and board retreats—featuring high-speed fiber-optic Wi-Fi, breakout spaces, private chef farm-to-table dining, and curated Stowe itineraries.",
+    href: "/retreats/",
+    cta: "Explore Corporate Retreats",
+  },
+];
+
+const homeFaqs: FaqItem[] = [
+  {
+    question: "Where is Eden: The Lemelson Estate located in Stowe, Vermont?",
+    answer:
+      "Eden sits on 28 private acres in the Edson Hill Road area of Stowe, Vermont—a 5-minute walk from Wiessner Woods trails and roughly a 5-minute drive from Stowe Mountain Resort skiing, Mount Mansfield, and downtown Stowe Village.",
+  },
+  {
+    question: "What are the advantages of booking directly on lemelsonestate.com?",
+    answer:
+      "Booking directly with our estate team eliminates third-party service fees charged by Airbnb, Vrbo, and Expedia, guarantees the best rate, and connects you directly with our concierge team for custom stays, weddings, and retreats.",
+  },
+  {
+    question: "How many guests can stay overnight or attend an event at the estate?",
+    answer:
+      "The 11,400 sq ft residence features 8 bedrooms and 8 bathrooms accommodating up to 20 overnight guests. For weddings and corporate galas, outdoor tented meadow receptions accommodate up to 300 guests.",
+  },
+  {
+    question: "Is Eden a pet-friendly vacation rental?",
+    answer:
+      "Yes. Eden welcomes pets on vacation stays so the entire family can enjoy Stowe together. Let our estate team know about your pets when submitting your inquiry.",
+  },
+  {
+    question: "What wellness and family amenities are included?",
+    answer:
+      "Guests have exclusive access to a year-round 10-person outdoor hot tub, indoor 2-person spa, mountain-view garden spa, private cedar sauna, steam shower, seasonal heated pool (May–Sept), private gym, clay tennis court, game room, children's playroom, and twin spring-fed trout ponds.",
+  },
 ];
 
 const galleryPreview = [
@@ -106,7 +162,7 @@ export default function Home() {
               priority
             />
             <h1 className="text-3xl font-semibold leading-tight text-balance sm:text-[2.35rem] md:text-5xl">The Lemelson Estate Welcomes You</h1>
-            <p className="text-xs uppercase tracking-[0.5em] text-stone-600 sm:text-sm md:text-base">Bespoke Luxury in Stowe, Vermont</p>
+            <p className="text-xs uppercase tracking-[0.35em] text-stone-600 sm:text-sm md:text-base">Luxury Vacation Rental, Private Wedding &amp; Retreat Estate in Stowe, Vermont</p>
           </div>
 
           <div className="w-full">
@@ -220,6 +276,47 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="lux-section !pt-4 !pb-10 bg-white animate-fade-up fade-delay-1">
+        <div className="lux-container space-y-8">
+          <SectionHeading
+            eyebrow="Experience Eden"
+            title="Tailored for Stays, Weddings & Retreats"
+            description="Discover how guests reserve Eden directly for mountain getaways, full-weekend estate weddings, and executive offsites in Stowe, Vermont."
+            align="center"
+          />
+
+          <div className="grid gap-6 md:grid-cols-3">
+            {experienceCards.map((card) => (
+              <div
+                key={card.href}
+                className="flex flex-col justify-between rounded-3xl border border-[#d2c4a3]/50 bg-[#fdfbf7] p-7 shadow-[0_20px_48px_-34px_rgba(58,45,20,0.22)] transition hover:border-[#c2a060]"
+              >
+                <div>
+                  <p className="text-[0.65rem] font-bold uppercase tracking-[0.25em] text-[#8f7845]">
+                    {card.eyebrow}
+                  </p>
+                  <h3 className="mt-2 text-2xl font-semibold text-stone-900">
+                    {card.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-stone-700">
+                    {card.description}
+                  </p>
+                </div>
+                <div className="mt-6">
+                  <Link
+                    href={card.href}
+                    className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.22em] text-stone-900 transition hover:text-[#8f7845]"
+                  >
+                    <span>{card.cta}</span>
+                    <span aria-hidden="true">→</span>
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="lux-section !pb-8 md:!pb-12 bg-white/80 animate-fade-up fade-delay-2">
         <div className="lux-container space-y-8">
           <SectionHeading
@@ -297,6 +394,12 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <FaqSection
+        title="Questions About Eden in Stowe"
+        description="Key facts for guests planning a Stowe vacation rental stay, private estate wedding, or executive retreat."
+        items={homeFaqs}
+      />
 
       <section className="lux-section bg-white animate-fade-up fade-delay-2">
         <div className="lux-container overflow-hidden rounded-3xl border border-white/60 bg-white/80 p-10 text-center md:p-16">

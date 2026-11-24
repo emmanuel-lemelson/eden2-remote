@@ -5,24 +5,24 @@ import type { NormalizedReview, Rating } from "@/types/reviews";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Reviews | Eden Estate Stowe",
+  title: "62 Five-Star Reviews | Eden Luxury Estate in Stowe, VT",
   description:
-    "Read guest reviews from Airbnb, Vrbo/Expedia, The Knot, and Wedding Wire about Eden Estate in Stowe, Vermont.",
+    "Read 62 verified 5-star reviews from Airbnb, Vrbo, Expedia, The Knot, Zola, WeddingWire, and Facebook for Eden: The Lemelson Estate in Stowe, Vermont.",
   alternates: {
     canonical: "https://lemelsonestate.com/reviews/",
   },
   openGraph: {
-    title: "Eden Estate Reviews | Stowe, Vermont",
+    title: "62 Five-Star Reviews | Eden Luxury Estate in Stowe, VT",
     description:
-      "Verified testimonials across platforms highlighting Eden's luxury, service, and setting.",
+      "Read 62 verified 5-star reviews from Airbnb, Vrbo, Expedia, The Knot, Zola, WeddingWire, and Facebook for Eden: The Lemelson Estate in Stowe, Vermont.",
     url: "https://lemelsonestate.com/reviews/",
     type: "website",
     images: [
       {
-        url: "https://lemelsonestate.com/gallery/enhanced/2.avif",
-        width: 720,
-        height: 480,
-        alt: "Eden Estate exterior view",
+        url: "https://lemelsonestate.com/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Eden: The Lemelson Estate aerial view in Stowe, Vermont",
       },
     ],
   },
@@ -210,8 +210,26 @@ function normalizeData(data: ReviewsFile) {
 
 export default async function ReviewsPage() {
   const normalized = normalizeData(reviewsData as ReviewsFile);
+  const aggregateSchema = {
+    "@context": "https://schema.org",
+    "@type": "VacationRental",
+    "@id": "https://lemelsonestate.com/#vacation-rental",
+    name: "Eden: The Lemelson Estate",
+    url: "https://lemelsonestate.com/",
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5.0",
+      bestRating: "5",
+      worstRating: "1",
+      reviewCount: normalized.summary.total,
+    },
+  };
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aggregateSchema) }}
+      />
       <section className="pt-12 pb-6">
         <div className="lux-container">
           <SectionHeading

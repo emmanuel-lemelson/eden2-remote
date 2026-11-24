@@ -3,24 +3,24 @@ import { WhereToFindUs } from "@/components/WhereToFindUs";
 import { InquiryForm } from "@/components/InquiryForm";
 
 export const metadata: Metadata = {
-  title: "Contact | Eden Estate Stowe",
+  title: "Book Direct & Inquire | Eden Luxury Estate in Stowe, VT",
   description:
-    "Inquire about Eden Estate in Stowe, Vermont. Share your event details, travel dates, and guest information to begin curating your stay.",
+    "Book directly with Eden: The Lemelson Estate in Stowe, Vermont to skip Airbnb and Vrbo fees. Inquire about luxury stays, private estate weddings, or corporate retreats.",
   alternates: {
     canonical: "https://lemelsonestate.com/contact/",
   },
   openGraph: {
-    title: "Contact Eden Estate Stowe",
+    title: "Book Direct & Inquire | Eden Luxury Estate in Stowe, VT",
     description:
-      "Connect with the Eden Estate team to plan weddings, retreats, and family gatherings in Stowe, Vermont.",
+      "Connect directly with the Eden Estate team to plan Stowe luxury stays, private weddings, and executive retreats with zero third-party fees.",
     url: "https://lemelsonestate.com/contact/",
     type: "website",
     images: [
       {
-        url: "https://lemelsonestate.com/gallery/enhanced/2.avif",
-        width: 720,
-        height: 480,
-        alt: "Eden Estate exterior view",
+        url: "https://lemelsonestate.com/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Eden: The Lemelson Estate aerial view in Stowe, Vermont",
       },
     ],
   },

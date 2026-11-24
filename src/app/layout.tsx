@@ -20,14 +20,14 @@ const PRODUCTION_URL = "https://lemelsonestate.com";
 const CANONICAL_HOME = `${PRODUCTION_URL}/`;
 
 export const metadata: Metadata = {
-  title: "Eden: The Lemelson Estate | Stowe, Vermont",
+  title: "Eden: The Lemelson Estate | Luxury Vacation Rental & Wedding Venue in Stowe, VT",
   description:
-    "Eden: The Lemelson Estate is an 11,400 sq ft luxury rental estate in Stowe, Vermont with eight bedrooms, private spa amenities, and expansive mountain views.",
+    "Book direct at Eden: The Lemelson Estate—an 11,400 sq ft, 8-bedroom pet-friendly luxury vacation rental, private estate wedding venue, and corporate retreat on 28 acres in Stowe, Vermont. Sleeps 20 overnight; hosts tented weddings up to 300.",
   metadataBase: new URL(PRODUCTION_URL),
   openGraph: {
-    title: "Eden: The Lemelson Estate | Stowe, Vermont",
+    title: "Eden: The Lemelson Estate | Luxury Vacation Rental & Wedding Venue in Stowe, VT",
     description:
-      "Escape to one of Stowe's most exclusive estates. 11,400 sq ft of luxury living space for up to 20 guests.",
+      "Book direct at Eden: The Lemelson Estate—an 11,400 sq ft, 8-bedroom pet-friendly luxury vacation rental, private estate wedding venue, and corporate retreat on 28 acres in Stowe, Vermont. Sleeps 20 overnight; hosts tented weddings up to 300.",
     url: CANONICAL_HOME,
     siteName: "Eden: The Lemelson Estate",
     locale: "en_US",
@@ -36,18 +36,18 @@ export const metadata: Metadata = {
       {
         // Use the generated Open Graph image route for broad platform compatibility
         url: `${PRODUCTION_URL}/opengraph-image.png`,
-        width: 720,
-        height: 480,
-        alt: "Eden Estate exterior view",
+        width: 1200,
+        height: 630,
+        alt: "Eden: The Lemelson Estate aerial view in Stowe, Vermont",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     site: "@LemelsonEstate",
-    title: "Eden: The Lemelson Estate | Stowe, Vermont",
+    title: "Eden: The Lemelson Estate | Luxury Vacation Rental & Wedding Venue in Stowe, VT",
     description:
-      "Escape to one of Stowe's most exclusive estates. 11,400 sq ft of luxury living space for up to 20 guests.",
+      "Book direct at Eden: The Lemelson Estate—an 11,400 sq ft, 8-bedroom pet-friendly luxury vacation rental, private estate wedding venue, and corporate retreat on 28 acres in Stowe, Vermont. Sleeps 20 overnight; hosts tented weddings up to 300.",
     // Point to the PNG OG image for maximum compatibility (X/LinkedIn)
     images: [`${PRODUCTION_URL}/opengraph-image.png`],
   },
@@ -94,15 +94,20 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'Organization',
               '@id': `${PRODUCTION_URL}/#organization`,
-              name: 'Eden — The Lemelson Estate',
+              name: 'Eden: The Lemelson Estate',
               url: CANONICAL_HOME,
               logo: `${PRODUCTION_URL}/The%20Lemelson%20Estate%20(1).png`,
               sameAs: [
                 'https://www.airbnb.com/rooms/42793723',
                 'https://www.vrbo.com/1958794',
+                'https://www.expedia.com/Stowe-Hotels-Private-Luxury-Estate.h51018966.Hotel-Information',
+                'https://www.theknot.com/marketplace/edenthe-lemelson-estate-stowe-vt-2087322',
+                'https://www.zola.com/wedding-vendors/wedding-venues/eden-the-lemelson-estate',
+                'https://www.weddingwire.com/biz/eden-the-lemelson-estate/393d590ddd940149.html',
                 'https://www.instagram.com/the_lemelson_estate',
                 'https://x.com/LemelsonEstate',
                 'https://www.linkedin.com/company/eden-the-lemelson-estate/',
+                'https://www.facebook.com/p/Eden-The-Lemelson-Estate-100087154695200/',
               ],
               contactPoint: [{
                 '@type': 'ContactPoint',
@@ -119,29 +124,101 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
-              '@type': 'LodgingBusiness',
-              '@id': `${PRODUCTION_URL}/#lodging-business`,
-              name: 'Eden — The Lemelson Estate',
+              '@type': ['VacationRental', 'LodgingBusiness'],
+              '@id': `${PRODUCTION_URL}/#vacation-rental`,
+              name: 'Eden: The Lemelson Estate',
+              identifier: 'eden-the-lemelson-estate-stowe-vt',
               url: CANONICAL_HOME,
-              image: `${PRODUCTION_URL}/gallery/enhanced/2@1200w.webp`,
-              description: 'Luxury 8-bedroom estate in Stowe, Vermont with spa amenities and mountain views.',
+              image: [
+                `${PRODUCTION_URL}/gallery/enhanced/2@1200w.webp`,
+                `${PRODUCTION_URL}/gallery/Eden-Site%20Photos/98@1200w.webp`,
+                `${PRODUCTION_URL}/gallery/Eden-Site%20Photos/113@1200w.webp`,
+                `${PRODUCTION_URL}/gallery/enhanced/90@1200w.webp`,
+              ],
+              description:
+                '11,400 sq ft, 8-bedroom, 8-bathroom pet-friendly luxury vacation rental estate on 28 private acres in the Edson Hill Road area of Stowe, Vermont, 5 minutes from Stowe Mountain Resort, sleeping up to 20 guests.',
               address: {
                 '@type': 'PostalAddress',
                 addressLocality: 'Stowe',
                 addressRegion: 'VT',
+                postalCode: '05672',
                 addressCountry: 'US',
               },
+              petsAllowed: true,
+              numberOfRooms: 8,
+              occupancy: {
+                '@type': 'QuantitativeValue',
+                maxValue: 20,
+              },
+              floorSize: {
+                '@type': 'QuantitativeValue',
+                value: 11400,
+                unitCode: 'FTK',
+              },
+              aggregateRating: {
+                '@type': 'AggregateRating',
+                ratingValue: '5.0',
+                bestRating: '5',
+                worstRating: '1',
+                reviewCount: 62,
+              },
               amenityFeature: [
-                { '@type': 'LocationFeatureSpecification', name: 'Pool', value: true },
-                { '@type': 'LocationFeatureSpecification', name: 'Hot tub', value: true },
-                { '@type': 'LocationFeatureSpecification', name: 'Tennis court', value: true },
-                { '@type': 'LocationFeatureSpecification', name: 'Game room', value: true },
+                { '@type': 'LocationFeatureSpecification', name: 'Heated outdoor swimming pool (May-Sept)', value: true },
+                { '@type': 'LocationFeatureSpecification', name: 'Year-round 10-person outdoor hot tub', value: true },
+                { '@type': 'LocationFeatureSpecification', name: 'Indoor 2-person spa', value: true },
+                { '@type': 'LocationFeatureSpecification', name: 'Mountain-view garden spa', value: true },
+                { '@type': 'LocationFeatureSpecification', name: 'Private cedar sauna', value: true },
+                { '@type': 'LocationFeatureSpecification', name: 'Steam shower', value: true },
+                { '@type': 'LocationFeatureSpecification', name: 'Clay tennis court', value: true },
+                { '@type': 'LocationFeatureSpecification', name: 'Private fitness center and gym', value: true },
+                { '@type': 'LocationFeatureSpecification', name: 'Game room and pool table', value: true },
+                { '@type': 'LocationFeatureSpecification', name: "Dedicated children's playroom and baby gear", value: true },
+                { '@type': 'LocationFeatureSpecification', name: "Chef's kitchen with Sub-Zero and Thermador appliances", value: true },
+                { '@type': 'LocationFeatureSpecification', name: 'Grand piano and Sonos audio', value: true },
+                { '@type': 'LocationFeatureSpecification', name: 'High-speed fiber-optic Wi-Fi and executive office', value: true },
+                { '@type': 'LocationFeatureSpecification', name: 'Wood-burning fireplaces', value: true },
+                { '@type': 'LocationFeatureSpecification', name: 'Twin spring-fed trout ponds', value: true },
+                { '@type': 'LocationFeatureSpecification', name: 'Pet-friendly accommodations', value: true },
+                { '@type': 'LocationFeatureSpecification', name: 'Free on-site parking', value: true },
+                { '@type': 'LocationFeatureSpecification', name: 'Concierge and private chef services', value: true },
               ],
               sameAs: [
                 'https://www.airbnb.com/rooms/42793723',
                 'https://www.vrbo.com/1958794',
+                'https://www.expedia.com/Stowe-Hotels-Private-Luxury-Estate.h51018966.Hotel-Information',
               ],
               mainEntityOfPage: CANONICAL_HOME,
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'EventVenue',
+              '@id': `${PRODUCTION_URL}/#event-venue`,
+              name: 'Eden: The Lemelson Estate — Stowe Wedding & Retreat Venue',
+              url: `${PRODUCTION_URL}/weddings/`,
+              image: [
+                `${PRODUCTION_URL}/gallery/enhanced/2@1200w.webp`,
+                `${PRODUCTION_URL}/gallery/Eden-Site%20Photos/98@1200w.webp`,
+              ],
+              description:
+                'Exclusive 28-acre luxury private estate wedding and executive retreat venue in Stowe, Vermont with on-site accommodations for 20 overnight guests and outdoor tented reception capacity up to 300 guests.',
+              maximumAttendeeCapacity: 300,
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'Stowe',
+                addressRegion: 'VT',
+                postalCode: '05672',
+                addressCountry: 'US',
+              },
+              sameAs: [
+                'https://www.theknot.com/marketplace/edenthe-lemelson-estate-stowe-vt-2087322',
+                'https://www.zola.com/wedding-vendors/wedding-venues/eden-the-lemelson-estate',
+                'https://www.weddingwire.com/biz/eden-the-lemelson-estate/393d590ddd940149.html',
+              ],
             }),
           }}
         />

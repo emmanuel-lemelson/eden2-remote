@@ -8,24 +8,24 @@ import galleryData from "@/data/gallery.json";
 export const dynamic = "force-static";
 
 export const metadata: Metadata = {
-  title: "Gallery | Eden Estate Stowe",
+  title: "Photo Gallery | Eden Luxury 8-Bedroom Estate in Stowe, VT",
   description:
-    "Explore photos of Eden, a luxury 8-bedroom estate in Stowe, Vermont featuring spa amenities, pool, tennis, and mountain views.",
+    "Explore photos of Eden, a luxury 8-bedroom estate in Stowe, Vermont featuring spa amenities, heated pool, cedar sauna, clay tennis court, and Worcester Mountain views.",
   alternates: {
     canonical: "https://lemelsonestate.com/gallery/",
   },
   openGraph: {
-    title: "Eden Estate Gallery | Stowe, Vermont",
+    title: "Photo Gallery | Eden Luxury 8-Bedroom Estate in Stowe, VT",
     description:
-      "Curated images of Eden’s grounds, interiors, and amenities across all seasons.",
+      "Curated images of Eden’s grounds, interiors, bedrooms, and spa amenities across all seasons in Stowe, Vermont.",
     url: "https://lemelsonestate.com/gallery/",
     type: "website",
     images: [
       {
-        url: "https://lemelsonestate.com/gallery/enhanced/2.avif",
-        width: 720,
-        height: 480,
-        alt: "Eden Estate exterior view",
+        url: "https://lemelsonestate.com/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Eden: The Lemelson Estate aerial view in Stowe, Vermont",
       },
     ],
   },

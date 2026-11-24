@@ -6,15 +6,23 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const navItems = [
-  { name: "Home", href: "/" },
+  { name: "Stays", href: "/stays" },
+  { name: "Weddings", href: "/weddings" },
+  { name: "Retreats", href: "/retreats" },
   { name: "Gallery", href: "/gallery" },
   { name: "Reviews", href: "/reviews" },
-  { name: "Reserve Now", href: "/contact" },
   { name: "News", href: "/news" },
+  { name: "Reserve Now", href: "/contact" },
+];
+
+const mobileNavItems = [
+  { name: "Home", href: "/" },
+  ...navItems,
 ];
 
 export function Header() {
   const pathname = usePathname();
+  const normalizedPath = pathname?.replace(/\/$/, "") || "/";
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -76,9 +84,9 @@ export function Header() {
         </div>
 
         {/* Right / Main Desktop Navigation */}
-        <nav className="hidden flex-none items-center gap-12 text-[0.8rem] font-semibold uppercase tracking-[0.32em] text-stone-600 md:flex">
+        <nav className="hidden flex-none items-center gap-4 md:gap-5 lg:gap-7 xl:gap-9 text-[0.7rem] lg:text-[0.76rem] font-semibold uppercase tracking-[0.16em] lg:tracking-[0.24em] text-stone-600 md:flex">
           {navItems.map((item) => {
-            const isActive = pathname === item.href;
+            const isActive = normalizedPath === item.href;
             return (
               <Link
                 key={item.name}
@@ -146,8 +154,8 @@ export function Header() {
           </div>
           
           <div className="mt-8 space-y-4">
-            {navItems.map((item) => {
-              const isActive = pathname === item.href;
+            {mobileNavItems.map((item) => {
+              const isActive = normalizedPath === item.href;
               return (
                 <Link
                   key={`mobile-${item.name}`}
