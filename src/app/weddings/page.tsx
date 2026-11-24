@@ -159,63 +159,55 @@ export default function WeddingsPage() {
   ];
 
   return (
-    <div className="bg-white">
+    <div className="bg-white text-stone-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchemas) }}
       />
-      {/* Hero */}
-      <section className="bg-white pt-8 pb-12 md:pt-12 md:pb-16">
-        <div className="lux-container space-y-8">
+
+      {/* Editorial Hero */}
+      <section className="pt-8 pb-16 md:pt-12 md:pb-24">
+        <div className="lux-container space-y-10">
           <Breadcrumbs
             items={[
               { name: "Home", href: "/" },
               { name: "Weddings", href: "/weddings/" },
             ]}
           />
-          <div className="mx-auto max-w-4xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.38em] text-[#8f7845]">
-              Edson Hill Road Area · Stowe, Vermont · Est. 2016
-            </p>
-            <h1 className="mt-3 text-3xl font-semibold leading-tight text-stone-900 text-balance sm:text-4xl md:text-5xl">
-              Private Mountain Estate Wedding Venue in Stowe, Vermont
-            </h1>
-            <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-stone-700 md:text-lg">
-              Reserve an entire 28-acre private Vermont estate for your wedding weekend. Celebrate with sweeping views of the Worcester Mountain Range, overnight lodging for 20, tented meadow receptions up to 300, and zero food and beverage minimums.
-            </p>
 
-            <div className="mt-7 flex flex-wrap items-center justify-center gap-4">
-              <Link
-                href="/contact/"
-                className="inline-flex items-center rounded-full bg-[#111111] px-8 py-3.5 text-[0.95rem] font-semibold !text-white transition duration-200 hover:bg-stone-800 active:scale-[0.98]"
-              >
-                Schedule a Private Estate Tour
-              </Link>
-              <a
-                href="/Eden-Wedding-Brochure-2026.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-[#8f7845] bg-[#fdfbf7] px-7 py-3.5 text-[0.95rem] font-semibold text-stone-900 transition duration-200 hover:bg-[#f8f3ea]"
-              >
-                <span>Download 2026 Wedding Brochure (PDF)</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.75"
-                  className="h-4 w-4 text-[#8f7845]"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M10 3v10m0 0l-3.5-3.5M10 13l3.5-3.5M4 16h12" />
-                </svg>
-              </a>
+          <div className="grid gap-8 lg:grid-cols-12 lg:items-end">
+            <div className="lg:col-span-7">
+              <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
+                Edson Hill Road Area · Stowe, Vermont · Est. 2016
+              </p>
+              <h1 className="mt-4 text-4xl font-normal leading-[1.12] tracking-tight text-stone-900 sm:text-5xl">
+                Private Mountain Estate Wedding Venue in Stowe, Vermont
+              </h1>
             </div>
-            <p className="mt-3 text-xs text-stone-600">
-              Limited weddings hosted annually for absolute exclusivity • $150 private tour fee credited toward booking
-            </p>
+            <div className="space-y-5 lg:col-span-5">
+              <p className="text-base leading-7 text-stone-600">
+                Reserve an entire 28-acre private Vermont estate for your wedding weekend. Celebrate with Worcester Mountain views, overnight lodging for 20, tented meadow receptions up to 300, and zero food and beverage minimums.
+              </p>
+              <div className="flex flex-wrap items-center gap-6">
+                <Link
+                  href="/contact/"
+                  className="inline-flex items-center bg-stone-950 px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] !text-white transition hover:bg-stone-800"
+                >
+                  Schedule a Private Tour
+                </Link>
+                <a
+                  href="/Eden-Wedding-Brochure-2026.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-b border-stone-900 pb-1 text-xs font-semibold uppercase tracking-[0.2em] text-stone-900 transition hover:border-[#8f7845] hover:text-[#8f7845]"
+                >
+                  2026 Brochure (PDF)
+                </a>
+              </div>
+            </div>
           </div>
 
-          <div className="overflow-hidden rounded-3xl border border-stone-200 shadow-xl">
+          <div className="overflow-hidden bg-stone-100">
             <div className="aspect-[16/9] w-full">
               <ResponsivePhoto
                 basePath="/gallery/enhanced/2"
@@ -231,98 +223,89 @@ export default function WeddingsPage() {
         </div>
       </section>
 
-      {/* What's Included */}
-      <section className="lux-section bg-gradient-to-br from-[var(--color-linen)] via-[var(--color-eggshell)] to-[var(--color-cream)]">
-        <div className="lux-container grid gap-10 lg:grid-cols-5 lg:items-center">
-          <div className="space-y-4 lg:col-span-3">
-            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-[#8f7845]">
+      {/* What's Included — Asymmetric Magazine Spread */}
+      <section className="bg-[#f8f5f0] py-20 md:py-28">
+        <div className="lux-container grid gap-12 lg:grid-cols-12 lg:items-center">
+          <div className="space-y-6 lg:col-span-6">
+            <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
               Exclusive Estate Buyout
             </p>
-            <h2 className="text-3xl font-semibold text-stone-900 sm:text-4xl">
+            <h2 className="text-3xl font-normal tracking-tight text-stone-900 sm:text-4xl">
               What is included in an Eden wedding weekend
             </h2>
-            <p className="text-base leading-relaxed text-stone-700">
+            <p className="text-sm leading-7 text-stone-600 sm:text-base">
               We host only a limited number of weddings each year so the entire 28-acre estate belongs exclusively to you—from welcome drinks and rehearsal dinner to ceremony, Upper Meadow tented reception, and farewell brunch.
             </p>
-            <ul className="space-y-3 pt-2 text-sm leading-relaxed text-stone-800 sm:text-base">
+            <ul className="divide-y divide-stone-300/70 border-y border-stone-300/70 text-sm leading-7 text-stone-800">
               {includedFeatures.map((item) => (
-                <li key={item} className="flex gap-3">
-                  <span className="mt-2 h-2 w-2 flex-shrink-0 rounded-full bg-[#c2a060]" />
-                  <span>{item}</span>
+                <li key={item} className="py-3.5">
+                  {item}
                 </li>
               ))}
             </ul>
-            <p className="pt-2 text-xs italic text-stone-600">
+            <p className="text-xs italic leading-6 text-stone-500">
               *When more than 20 wedding guests are present, interior access to the residence is reserved exclusively for the wedding party and overnight guests staying at the estate.
             </p>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-1">
-            <div className="overflow-hidden rounded-2xl border border-white/80 shadow-md">
-              <ResponsivePhoto
-                basePath="/gallery/Eden-Site%20Photos/100"
-                alt="Great Room stone fireplace at Eden Estate for intimate winter and indoor wedding ceremonies"
-                sizes="(min-width: 1024px) 40vw, (min-width: 640px) 50vw, 100vw"
-                width={2560}
-                height={1707}
-                className="aspect-[16/10] w-full object-cover"
-              />
-            </div>
-            <div className="overflow-hidden rounded-2xl border border-white/80 shadow-md">
-              <ResponsivePhoto
-                basePath="/gallery/enhanced/87"
-                alt="Twilight view of the rear stone patio and illuminated windows at Eden: The Lemelson Estate"
-                sizes="(min-width: 1024px) 40vw, (min-width: 640px) 50vw, 100vw"
-                width={2400}
-                height={1600}
-                className="aspect-[16/10] w-full object-cover"
-              />
-            </div>
+          <div className="grid gap-4 lg:col-span-6">
+            <ResponsivePhoto
+              basePath="/gallery/Eden-Site%20Photos/100"
+              alt="Great Room stone fireplace at Eden Estate for intimate winter and indoor wedding ceremonies"
+              sizes="(min-width: 1024px) 48vw, 100vw"
+              width={2560}
+              height={1707}
+              className="aspect-[16/10] w-full object-cover"
+            />
+            <ResponsivePhoto
+              basePath="/gallery/enhanced/87"
+              alt="Twilight view of the rear stone patio and illuminated windows at Eden: The Lemelson Estate"
+              sizes="(min-width: 1024px) 48vw, 100vw"
+              width={2400}
+              height={1600}
+              className="aspect-[16/10] w-full object-cover"
+            />
           </div>
         </div>
       </section>
 
-      {/* 2026 Wedding Pricing Table */}
-      <section className="lux-section bg-white" id="pricing">
-        <div className="lux-container max-w-5xl space-y-8">
-          <div className="text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-[#8f7845]">
-              Transparent 2026 Rates
-            </p>
-            <h2 className="mt-2 text-3xl font-semibold text-stone-900 sm:text-4xl">
-              2026 Wedding Packages &amp; Pricing
-            </h2>
-            <p className="mx-auto mt-3 max-w-2xl text-sm text-stone-700 sm:text-base">
-              Off-Peak dates run Mid-April to Mid-May and Mid-October to Mid-November. Peak Season covers late spring, summer, prime fall foliage, and winter.
+      {/* 2026 Wedding Pricing Table — Clean Architectural Ledger */}
+      <section className="bg-white py-20 md:py-28" id="pricing">
+        <div className="lux-container max-w-5xl space-y-12">
+          <div className="grid gap-6 md:grid-cols-12 md:items-end">
+            <div className="md:col-span-7">
+              <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
+                Transparent 2026 Rates
+              </p>
+              <h2 className="mt-3 text-3xl font-normal tracking-tight text-stone-900 sm:text-4xl">
+                2026 Wedding Packages &amp; Pricing
+              </h2>
+            </div>
+            <p className="text-sm leading-7 text-stone-600 md:col-span-5">
+              Off-Peak runs Mid-April to Mid-May and Mid-October to Mid-November. Peak Season covers late spring, summer, prime fall foliage, and winter.
             </p>
           </div>
 
-          <div className="overflow-x-auto rounded-3xl border border-[#d2c4a3]/60 bg-[#fdfbf7] shadow-[0_24px_60px_-36px_rgba(58,45,20,0.22)]">
+          <div className="overflow-x-auto border-y border-stone-900/15">
             <table className="w-full min-w-[600px] text-left">
               <thead>
-                <tr className="border-b border-[#d2c4a3]/50 bg-[#f8f3ea]">
-                  <th className="px-6 py-4 text-xs font-bold uppercase tracking-[0.18em] text-stone-700">
-                    Package
-                  </th>
-                  <th className="px-6 py-4 text-xs font-bold uppercase tracking-[0.18em] text-stone-700">
-                    Off-Peak
-                  </th>
-                  <th className="px-6 py-4 text-xs font-bold uppercase tracking-[0.18em] text-stone-700">
-                    Peak Season
-                  </th>
+                <tr className="border-b border-stone-200 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-stone-500">
+                  <th className="py-4 pr-6">Package</th>
+                  <th className="px-6 py-4">Off-Peak</th>
+                  <th className="py-4 pl-6 text-right">Peak Season</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-stone-200/80 text-sm sm:text-base">
+              <tbody className="divide-y divide-stone-200 text-sm sm:text-base">
                 {pricingRows.map((row) => (
-                  <tr key={row.packageName} className="bg-white/60 transition hover:bg-white">
-                    <td className="px-6 py-4">
-                      <p className="font-semibold text-stone-900">{row.packageName}</p>
-                      <p className="mt-0.5 text-xs text-stone-600 sm:text-sm">{row.detail}</p>
+                  <tr key={row.packageName}>
+                    <td className="py-5 pr-6">
+                      <p className="font-serif text-lg text-stone-900">{row.packageName}</p>
+                      <p className="mt-1 text-xs text-stone-500 sm:text-sm">{row.detail}</p>
                     </td>
-                    <td className="px-6 py-4 font-semibold text-stone-900 whitespace-nowrap">
+                    <td className="px-6 py-5 font-medium tabular-nums text-stone-800 whitespace-nowrap">
                       {row.offPeak}
                     </td>
-                    <td className="px-6 py-4 font-semibold text-[#8f7845] whitespace-nowrap">
+                    <td className="py-5 pl-6 text-right font-medium tabular-nums text-[#8f7845] whitespace-nowrap">
                       {row.peak}
                     </td>
                   </tr>
@@ -331,170 +314,159 @@ export default function WeddingsPage() {
             </table>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2">
-            <div className="rounded-3xl border border-stone-200 bg-[#fdfbf7] p-6 text-sm leading-relaxed text-stone-700">
-              <h3 className="text-lg font-semibold text-stone-900">Package Notes &amp; Details</h3>
-              <ul className="mt-3 space-y-2">
-                <li>
-                  <strong>Rehearsal Dinner-Only:</strong> Includes up to 25 guests (additional fees may apply for larger groups), select interior touring, and full outdoor grounds access.
-                </li>
-                <li>
-                  <strong>Ceremony-Only (Mon–Thurs):</strong> Off-peak ceremonies are typically held indoors due to cooler temperatures. Includes a one-time day-of ceremony management fee of $500–$1,500.
-                </li>
-                <li>
-                  <strong>**Multi-Day Event Reservations:</strong> Includes up to 20 overnight guests and up to 100 guests for a one-day outdoor event. Totals exclude a $4,950 administration and event fee (waived for rehearsal-dinner-only), cleaning and linen expenses (varies), dining, alcohol, and third-party tent/rental services. Please inquire for custom pricing on weddings of 100 to 300 guests.
-                </li>
-              </ul>
+          <div className="grid gap-10 pt-2 md:grid-cols-2">
+            <div className="space-y-3 text-sm leading-7 text-stone-600">
+              <h3 className="text-lg font-normal text-stone-900">Package Notes &amp; Details</h3>
+              <p>
+                <strong className="font-medium text-stone-900">Rehearsal Dinner-Only:</strong> Includes up to 25 guests (additional fees may apply for larger groups), select interior touring, and full outdoor grounds access.
+              </p>
+              <p>
+                <strong className="font-medium text-stone-900">Ceremony-Only (Mon–Thurs):</strong> Off-peak ceremonies are typically held indoors due to cooler temperatures. Includes a one-time day-of ceremony management fee of $500–$1,500.
+              </p>
+              <p>
+                <strong className="font-medium text-stone-900">**Multi-Day Event Reservations:</strong> Includes up to 20 overnight guests and up to 100 guests for a one-day outdoor event. Totals exclude a $4,950 administration and event fee (waived for rehearsal-dinner-only), cleaning and linen expenses (varies), dining, alcohol, and third-party tent/rental services. Inquire for weddings of 100 to 300 guests.
+              </p>
             </div>
 
-            <div className="rounded-3xl border border-[#d2c4a3]/60 bg-gradient-to-br from-[#f8f3ea] to-white p-6 text-sm leading-relaxed text-stone-700">
-              <h3 className="text-lg font-semibold text-stone-900">
-                Optional Planning &amp; Coordination
+            <div className="space-y-4 border-l border-stone-200 pl-0 md:pl-10 text-sm leading-7 text-stone-600">
+              <h3 className="text-lg font-normal text-stone-900">
+                Optional Planning &amp; Private Tours
               </h3>
-              <p className="mt-3">
-                <strong>Month-of Event Management &amp; Day-of Coordinator ($1,500–$2,500):</strong> Includes one dedicated lead planner who guides planning logistics, ensures contract clarity, leads personal walkthroughs, and oversees full event-day setup and cleanup.
+              <p>
+                <strong className="font-medium text-stone-900">Month-of &amp; Day-of Coordinator ($1,500–$2,500):</strong> One dedicated lead planner guiding planning logistics, contract clarity, personal walkthroughs, and full event-day setup and cleanup.
               </p>
-              <p className="mt-3">
-                <strong>Private Estate Tours ($150):</strong> Walk the Upper Meadow, ceremony sites, and residence in person. The non-refundable $150 tour fee is credited 100% toward your wedding booking.
+              <p>
+                <strong className="font-medium text-stone-900">Private Estate Tours ($150):</strong> Walk the Upper Meadow, ceremony sites, and residence in person. The non-refundable $150 tour fee is credited 100% toward your wedding booking.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Bespoke Dining */}
-      <section className="lux-section bg-gradient-to-br from-[var(--color-linen)] via-[var(--color-eggshell)] to-[var(--color-cream)]">
-        <div className="lux-container max-w-5xl">
-          <div className="rounded-3xl border border-[#d2c4a3]/60 bg-white/90 p-8 shadow-[0_24px_60px_-38px_rgba(58,45,20,0.22)] md:p-12">
-            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-[#8f7845]">
+      {/* Bespoke Dining — Editorial Feature */}
+      <section className="bg-[#f8f5f0] py-20 md:py-28">
+        <div className="lux-container max-w-4xl">
+          <div className="border-y border-stone-300/80 py-12 md:py-16">
+            <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
               Bespoke Wedding Dining
             </p>
-            <h2 className="mt-2 text-3xl font-semibold text-stone-900 sm:text-4xl">
+            <h2 className="mt-3 text-3xl font-normal tracking-tight text-stone-900 sm:text-4xl">
               No preset menus. No food &amp; beverage minimums.
             </h2>
-            <p className="mt-4 text-base leading-relaxed text-stone-700">
+            <p className="mt-5 text-base leading-8 text-stone-600">
               Unlike traditional Vermont resorts that lock couples into rigid banquet tiers and steep food-and-beverage minimums, Eden works with you to craft a personal culinary experience. Every couple is scheduled for a private consultation with our in-house chef to design passed hors d&apos;oeuvres, plated dinners, family-style feasts, or buffet presentations—thoughtfully tailored for all dietary preferences and guest counts up to 300.
             </p>
-            <div className="mt-6 inline-flex flex-wrap items-center gap-3 rounded-2xl border border-[#c2a060]/40 bg-[#fdfbf7] px-5 py-3">
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#8f7845]">
-                In-House Chef Dining Estimate
-              </span>
-              <span className="text-lg font-semibold text-stone-900">$110–$120 per person</span>
-              <span className="text-xs text-stone-600">(quoted before tax; varies by market availability)</span>
-            </div>
+            <p className="mt-6 font-serif text-xl text-stone-900">
+              In-House Chef Dining Estimate: <span className="text-[#8f7845]">$110–$120 per person</span>{" "}
+              <span className="font-sans text-xs text-stone-500">(before tax; varies by market availability)</span>
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Accommodations, Spa, Team & Chapel */}
-      <section className="lux-section bg-white">
-        <div className="lux-container space-y-12">
-          <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
-            <div className="space-y-4">
-              <p className="text-xs font-semibold uppercase tracking-[0.35em] text-[#8f7845]">
-                Bridal Accommodations &amp; Pre-Ceremony Spa
+      {/* Accommodations, Team, Chapel & Stories */}
+      <section className="bg-white py-20 md:py-28">
+        <div className="lux-container space-y-20">
+          <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
+            <div className="space-y-4 lg:col-span-5">
+              <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
+                Bridal Accommodations &amp; Spa
               </p>
-              <h2 className="text-3xl font-semibold text-stone-900 sm:text-4xl">
+              <h2 className="text-3xl font-normal tracking-tight text-stone-900 sm:text-4xl">
                 A private luxury home for your wedding party
               </h2>
-              <p className="text-base leading-relaxed text-stone-700">
+              <p className="text-sm leading-7 text-stone-600 sm:text-base">
                 Keep your closest family and wedding party together under one roof in 11,400 square feet across 8 bedrooms and 8 bathrooms. Relax before &ldquo;I Do&rdquo; in the private spa—complete with cedar sauna, steam shower, and three hot tubs—while groomsmen enjoy the game room&apos;s pool and foosball tables, or head out to the heated pool and clay tennis court.
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="overflow-hidden rounded-2xl border border-stone-200 shadow-md">
-                <ResponsivePhoto
-                  basePath="/gallery/Eden-Site%20Photos/102"
-                  alt="Bridal primary bedroom suite at Eden: The Lemelson Estate"
-                  sizes="(min-width: 1024px) 25vw, 50vw"
-                  width={2560}
-                  height={1707}
-                  className="aspect-[4/3] w-full object-cover"
-                />
-              </div>
-              <div className="overflow-hidden rounded-2xl border border-stone-200 shadow-md">
-                <ResponsivePhoto
-                  basePath="/gallery/enhanced/70"
-                  alt="Private cedar sauna in the bridal spa retreat at Eden"
-                  sizes="(min-width: 1024px) 25vw, 50vw"
-                  width={2400}
-                  height={1600}
-                  className="aspect-[4/3] w-full object-cover"
-                />
-              </div>
+            <div className="grid grid-cols-2 gap-4 lg:col-span-7">
+              <ResponsivePhoto
+                basePath="/gallery/Eden-Site%20Photos/102"
+                alt="Bridal primary bedroom suite at Eden: The Lemelson Estate"
+                sizes="(min-width: 1024px) 30vw, 50vw"
+                width={2560}
+                height={1707}
+                className="aspect-[4/3] w-full object-cover"
+              />
+              <ResponsivePhoto
+                basePath="/gallery/enhanced/70"
+                alt="Private cedar sauna in the bridal spa retreat at Eden"
+                sizes="(min-width: 1024px) 30vw, 50vw"
+                width={2400}
+                height={1600}
+                className="aspect-[4/3] w-full object-cover"
+              />
             </div>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2">
-            <div className="rounded-3xl border border-stone-200 bg-[#fdfbf7] p-7">
-              <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#8f7845]">
+          <div className="grid gap-12 border-t border-stone-200 pt-14 md:grid-cols-2">
+            <div className="space-y-3">
+              <p className="text-[0.68rem] font-medium uppercase tracking-[0.28em] text-[#8f7845]">
                 Dedicated Estate Concierge &amp; Events
               </p>
-              <h3 className="mt-2 text-2xl font-semibold text-stone-900">
-                Meet Tiffany M.
-              </h3>
-              <p className="mt-3 text-sm leading-relaxed text-stone-700 sm:text-base">
+              <h3 className="text-2xl font-normal text-stone-900">Meet Tiffany M.</h3>
+              <p className="text-sm leading-7 text-stone-600 sm:text-base">
                 With over 15 years of experience serving high-net-worth families and four years with The Lemelson Group, Tiffany brings meticulous estate management, distinctive concierge care, and calm coordination to every moment of your wedding weekend—from your first tour through farewell brunch.
               </p>
             </div>
 
-            <div className="rounded-3xl border border-stone-200 bg-[#fdfbf7] p-7">
-              <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#8f7845]">
+            <div className="space-y-3">
+              <p className="text-[0.68rem] font-medium uppercase tracking-[0.28em] text-[#8f7845]">
                 Adjacent on the Estate Grounds
               </p>
-              <h3 className="mt-2 text-2xl font-semibold text-stone-900">
-                St. Katherine Orthodox Chapel
-              </h3>
-              <p className="mt-3 text-sm leading-relaxed text-stone-700 sm:text-base">
+              <h3 className="text-2xl font-normal text-stone-900">St. Katherine Orthodox Chapel</h3>
+              <p className="text-sm leading-7 text-stone-600 sm:text-base">
                 St. Katherine Orthodox Chapel, dedicated to St. Katherine of Alexandria, is a consecrated Greek Orthodox chapel adjacent to Eden and part of The Lemelson Estate. Divine Liturgy is celebrated on Sundays at 10:00 a.m. EST from early September through June. The chapel is closed outside the liturgical schedule, and reverence and proper attire are required when visiting.
               </p>
             </div>
           </div>
 
-          {/* Wedding Reviews & Video Tours */}
-          <div className="grid gap-6 md:grid-cols-2">
-            <blockquote className="rounded-3xl border border-[#d2c4a3]/60 bg-white p-7 shadow-sm">
-              <p className="text-sm italic leading-relaxed text-stone-700 sm:text-base">
-                &ldquo;We had our ceremony in the great room with the fireplace roaring—a fiery love story. The main bedroom was a wonderful bridal suite... The steam shower and sauna were a wonderful way to relax in the chill of a late February snowstorm. Would suggest Eden for your wedding, small or big.&rdquo;
-              </p>
-              <footer className="mt-4 text-xs font-semibold uppercase tracking-[0.18em] text-[#8f7845]">
-                — Seanna C. · Winter Great Room Wedding
-              </footer>
-            </blockquote>
+          {/* Editorial Quotes & Video Links */}
+          <div className="space-y-10 border-t border-stone-200 pt-14">
+            <div className="grid gap-10 md:grid-cols-2">
+              <blockquote className="space-y-4 border-l border-[#c2a060] pl-6">
+                <p className="font-serif text-lg italic leading-relaxed text-stone-800">
+                  &ldquo;We had our ceremony in the great room with the fireplace roaring—a fiery love story. The main bedroom was a wonderful bridal suite... The steam shower and sauna were a wonderful way to relax in the chill of a late February snowstorm. Would suggest Eden for your wedding, small or big.&rdquo;
+                </p>
+                <footer className="text-[0.68rem] font-medium uppercase tracking-[0.22em] text-stone-500">
+                  Seanna C. · Winter Great Room Wedding
+                </footer>
+              </blockquote>
 
-            <blockquote className="rounded-3xl border border-[#d2c4a3]/60 bg-white p-7 shadow-sm">
-              <p className="text-sm italic leading-relaxed text-stone-700 sm:text-base">
-                &ldquo;My daughter and her wedding party recently stayed at Eden – The Lemelson Estate, in Stowe, Vermont. The property boasts a secluded setting with beautiful views and yet is close to all Stowe has to offer. The estate is immaculate and luxurious, with every amenity one would expect.&rdquo;
-              </p>
-              <footer className="mt-4 text-xs font-semibold uppercase tracking-[0.18em] text-[#8f7845]">
-                — John A. · Wedding Party Stay, September 2024
-              </footer>
-            </blockquote>
-          </div>
+              <blockquote className="space-y-4 border-l border-[#c2a060] pl-6">
+                <p className="font-serif text-lg italic leading-relaxed text-stone-800">
+                  &ldquo;My daughter and her wedding party recently stayed at Eden – The Lemelson Estate, in Stowe, Vermont. The property boasts a secluded setting with beautiful views and yet is close to all Stowe has to offer. The estate is immaculate and luxurious, with every amenity one would expect.&rdquo;
+                </p>
+                <footer className="text-[0.68rem] font-medium uppercase tracking-[0.22em] text-stone-500">
+                  John A. · Wedding Party Stay, September 2024
+                </footer>
+              </blockquote>
+            </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-4 text-sm">
-            <Link
-              href="/weddings/real-weddings/"
-              className="inline-flex items-center rounded-full bg-[#111111] px-6 py-2.5 font-semibold !text-white transition hover:bg-stone-800"
-            >
-              Read Real Wedding Stories at Eden →
-            </Link>
-            <a
-              href="https://youtu.be/P8oBq86qhW0"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center rounded-full border border-stone-300 px-5 py-2.5 font-medium text-stone-800 transition hover:border-stone-900"
-            >
-              Watch Aerial &amp; Bingham Falls Tour (YouTube)
-            </a>
-            <a
-              href="https://youtu.be/xm_uA64KCkE"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center rounded-full border border-stone-300 px-5 py-2.5 font-medium text-stone-800 transition hover:border-stone-900"
-            >
-              Watch Interior Estate Tour (YouTube)
-            </a>
+            <div className="flex flex-wrap items-center gap-x-8 gap-y-3 pt-2 text-xs font-semibold uppercase tracking-[0.2em]">
+              <Link
+                href="/weddings/real-weddings/"
+                className="border-b border-stone-900 pb-1 text-stone-900 transition hover:border-[#8f7845] hover:text-[#8f7845]"
+              >
+                Read Real Wedding Stories
+              </Link>
+              <a
+                href="https://youtu.be/P8oBq86qhW0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-b border-stone-300 pb-1 text-stone-600 transition hover:border-stone-900 hover:text-stone-900"
+              >
+                Aerial &amp; Bingham Falls Tour (YouTube)
+              </a>
+              <a
+                href="https://youtu.be/xm_uA64KCkE"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-b border-stone-300 pb-1 text-stone-600 transition hover:border-stone-900 hover:text-stone-900"
+              >
+                Interior Estate Tour (YouTube)
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -505,29 +477,32 @@ export default function WeddingsPage() {
         items={weddingFaqs}
       />
 
-      {/* Bottom CTA */}
-      <section className="lux-section border-t border-stone-200/70 bg-[#fdfbf7]">
-        <div className="lux-container max-w-4xl text-center">
-          <h2 className="text-3xl font-semibold text-stone-900 sm:text-4xl">
+      {/* Closing CTA */}
+      <section className="border-t border-stone-200 bg-[#f8f5f0] py-20 md:py-24">
+        <div className="lux-container max-w-3xl text-center">
+          <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
+            Inquiries &amp; Private Tours
+          </p>
+          <h2 className="mt-3 text-3xl font-normal tracking-tight text-stone-900 sm:text-4xl">
             Let&apos;s Plan Your Eden Wedding
           </h2>
-          <p className="mx-auto mt-3 max-w-2xl text-base text-stone-700">
+          <p className="mx-auto mt-4 max-w-xl text-sm leading-7 text-stone-600 sm:text-base">
             Inquire to check 2026–2027 date availability, schedule a private estate tour, or coordinate a custom multi-day wedding buyout with Tiffany and our concierge team.
           </p>
-          <div className="mt-7 flex flex-wrap items-center justify-center gap-4">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
             <Link
               href="/contact/"
-              className="inline-flex items-center rounded-full bg-[#111111] px-8 py-3.5 text-[0.95rem] font-semibold !text-white transition duration-200 hover:bg-stone-800"
+              className="inline-flex items-center bg-stone-950 px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] !text-white transition hover:bg-stone-800"
             >
-              Inquire About Wedding Dates
+              Inquire About Dates
             </Link>
             <a
               href="/Eden-Wedding-Brochure-2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center rounded-full border border-stone-900 px-8 py-3.5 text-[0.95rem] font-semibold text-stone-900 transition duration-200 hover:bg-stone-50"
+              className="border-b border-stone-900 pb-1 text-xs font-semibold uppercase tracking-[0.2em] text-stone-900 transition hover:border-[#8f7845] hover:text-[#8f7845]"
             >
-              Download Brochure (PDF)
+              Download 2026 Brochure (PDF)
             </a>
           </div>
         </div>

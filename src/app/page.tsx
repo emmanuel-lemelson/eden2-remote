@@ -292,8 +292,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="lux-section !pt-4 !pb-10 bg-white animate-fade-up fade-delay-1">
-        <div className="lux-container space-y-8">
+      <section className="lux-section !pt-4 !pb-12 bg-white animate-fade-up fade-delay-1">
+        <div className="lux-container space-y-12">
           <SectionHeading
             eyebrow="Experience Eden"
             title="Tailored for Stays, Weddings & Retreats"
@@ -301,63 +301,60 @@ export default function Home() {
             align="center"
           />
 
-          <div className="grid gap-6 md:grid-cols-3">
-            {experienceCards.map((card) => (
+          <div className="grid gap-10 border-y border-stone-200 py-12 md:grid-cols-3 md:gap-8">
+            {experienceCards.map((card, idx) => (
               <div
                 key={card.href}
-                className="flex flex-col justify-between rounded-3xl border border-[#d2c4a3]/50 bg-[#fdfbf7] p-7 shadow-[0_20px_48px_-34px_rgba(58,45,20,0.22)] transition hover:border-[#c2a060]"
+                className="flex flex-col justify-between space-y-6 md:border-r md:border-stone-200 md:pr-8 last:md:border-r-0 last:md:pr-0"
               >
-                <div>
-                  <p className="text-[0.65rem] font-bold uppercase tracking-[0.25em] text-[#8f7845]">
-                    {card.eyebrow}
+                <div className="space-y-3">
+                  <p className="text-[0.68rem] font-medium uppercase tracking-[0.28em] text-[#8f7845]">
+                    0{idx + 1} · {card.eyebrow}
                   </p>
-                  <h3 className="mt-2 text-2xl font-semibold text-stone-900">
+                  <h3 className="text-2xl font-normal text-stone-900">
                     {card.title}
                   </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-stone-700">
+                  <p className="text-sm leading-7 text-stone-600">
                     {card.description}
                   </p>
                 </div>
-                <div className="mt-6">
+                <div>
                   <Link
                     href={card.href}
-                    className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.22em] text-stone-900 transition hover:text-[#8f7845]"
+                    className="inline-block border-b border-stone-900 pb-1 text-xs font-semibold uppercase tracking-[0.2em] text-stone-900 transition hover:border-[#8f7845] hover:text-[#8f7845]"
                   >
-                    <span>{card.cta}</span>
-                    <span aria-hidden="true">→</span>
+                    {card.cta}
                   </Link>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
-            <span className="text-xs font-semibold uppercase tracking-[0.22em] text-stone-500">
-              Seasonal &amp; Group Guides:
-            </span>
+          <div className="flex flex-wrap items-center justify-center gap-x-7 gap-y-3 text-xs font-medium uppercase tracking-[0.2em] text-stone-600">
+            <span className="text-stone-400">Seasonal &amp; Group Guides</span>
             <Link
               href="/guides/stowe-ski-house/"
-              className="rounded-full border border-[#d2c4a3]/70 bg-[#fdfbf7] px-4 py-1.5 text-xs font-semibold text-stone-800 transition hover:border-[#8f7845] hover:text-[#8f7845]"
+              className="border-b border-transparent pb-0.5 transition hover:border-[#8f7845] hover:text-[#8f7845]"
             >
-              Stowe Ski House &amp; Winter
+              Stowe Ski House
             </Link>
             <Link
               href="/guides/stowe-fall-foliage/"
-              className="rounded-full border border-[#d2c4a3]/70 bg-[#fdfbf7] px-4 py-1.5 text-xs font-semibold text-stone-800 transition hover:border-[#8f7845] hover:text-[#8f7845]"
+              className="border-b border-transparent pb-0.5 transition hover:border-[#8f7845] hover:text-[#8f7845]"
             >
               October Fall Foliage
             </Link>
             <Link
               href="/guides/stowe-family-reunions/"
-              className="rounded-full border border-[#d2c4a3]/70 bg-[#fdfbf7] px-4 py-1.5 text-xs font-semibold text-stone-800 transition hover:border-[#8f7845] hover:text-[#8f7845]"
+              className="border-b border-transparent pb-0.5 transition hover:border-[#8f7845] hover:text-[#8f7845]"
             >
-              Family Reunions (Sleeps 20)
+              Family Reunions
             </Link>
             <Link
               href="/weddings/real-weddings/"
-              className="rounded-full border border-[#d2c4a3]/70 bg-[#fdfbf7] px-4 py-1.5 text-xs font-semibold text-stone-800 transition hover:border-[#8f7845] hover:text-[#8f7845]"
+              className="border-b border-transparent pb-0.5 transition hover:border-[#8f7845] hover:text-[#8f7845]"
             >
-              Real Weddings at Eden
+              Real Weddings
             </Link>
           </div>
         </div>

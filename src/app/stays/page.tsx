@@ -41,12 +41,12 @@ export const metadata: Metadata = {
 };
 
 const quickSpecs = [
-  { label: "Accommodations", value: "8 Bedrooms · 8 Bathrooms" },
-  { label: "Overnight Capacity", value: "Sleeps up to 20 Guests" },
-  { label: "Estate Scale", value: "11,400 sq ft · 28 Acres" },
-  { label: "Ski & Resort Access", value: "5 Min to Stowe Mtn Resort" },
-  { label: "Pet Policy", value: "Pet-Friendly Stays Welcome" },
-  { label: "Direct Booking", value: "Zero Airbnb / Vrbo Fees" },
+  { label: "Bedrooms & Baths", value: "8 Bed · 8 Bath" },
+  { label: "Capacity", value: "Up to 20 Guests" },
+  { label: "Scale", value: "11,400 sq ft · 28 Acres" },
+  { label: "Stowe Mountain", value: "5 Min Drive" },
+  { label: "Pets", value: "Pet-Friendly" },
+  { label: "Direct Rate", value: "Zero Platform Fees" },
 ];
 
 const amenityPillars = [
@@ -163,49 +163,48 @@ const staysFaqs: FaqItem[] = [
 
 export default function StaysPage() {
   return (
-    <div className="bg-white">
-      {/* Hero */}
-      <section className="bg-white pt-8 pb-12 md:pt-12 md:pb-16">
-        <div className="lux-container space-y-8">
+    <div className="bg-white text-stone-900">
+      {/* Editorial Hero */}
+      <section className="pt-8 pb-16 md:pt-12 md:pb-24">
+        <div className="lux-container space-y-10">
           <Breadcrumbs
             items={[
               { name: "Home", href: "/" },
               { name: "Stays", href: "/stays/" },
             ]}
           />
-          <div className="mx-auto max-w-4xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.38em] text-[#8f7845]">
-              Edson Hill Road Area · Stowe, Vermont
-            </p>
-            <h1 className="mt-3 text-3xl font-semibold leading-tight text-stone-900 text-balance sm:text-4xl md:text-5xl">
-              Luxury 8-Bedroom Vacation Rental in Stowe, Vermont
-            </h1>
-            <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-stone-700 md:text-lg">
-              Set on 28 secluded acres five minutes from Stowe Mountain Resort, Eden is an 11,400 sq ft private mountain estate sleeping up to 20 guests—with heated pool, three hot tubs, cedar sauna, private gym, clay tennis court, and pet-friendly hospitality.
-            </p>
 
-            <div className="mt-7 flex flex-col items-center gap-3">
-              <div className="flex flex-wrap items-center justify-center gap-4">
+          <div className="grid gap-8 lg:grid-cols-12 lg:items-end">
+            <div className="lg:col-span-7">
+              <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
+                Edson Hill Road Area · Stowe, Vermont
+              </p>
+              <h1 className="mt-4 text-4xl font-normal leading-[1.12] tracking-tight text-stone-900 sm:text-5xl">
+                Luxury 8-Bedroom Vacation Rental in Stowe, Vermont
+              </h1>
+            </div>
+            <div className="space-y-5 lg:col-span-5">
+              <p className="text-base leading-7 text-stone-600">
+                Set on 28 secluded acres five minutes from Stowe Mountain Resort, Eden is an 11,400 sq ft private mountain estate sleeping up to 20 guests—with heated pool, three hot tubs, cedar sauna, private gym, clay tennis court, and pet-friendly hospitality.
+              </p>
+              <div className="flex flex-wrap items-center gap-6">
                 <Link
                   href="/contact/"
-                  className="inline-flex items-center rounded-full bg-[#111111] px-8 py-3.5 text-[0.95rem] font-semibold !text-white transition duration-200 hover:bg-stone-800 active:scale-[0.98]"
+                  className="inline-flex items-center bg-stone-950 px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] !text-white transition hover:bg-stone-800"
                 >
-                  Book Direct &amp; Check Dates
+                  Book Direct
                 </Link>
                 <Link
                   href="/gallery/"
-                  className="inline-flex items-center rounded-full border border-stone-900 px-8 py-3.5 text-[0.95rem] font-semibold text-stone-900 transition duration-200 hover:bg-stone-50"
+                  className="border-b border-stone-900 pb-1 text-xs font-semibold uppercase tracking-[0.2em] text-stone-900 transition hover:border-[#8f7845] hover:text-[#8f7845]"
                 >
-                  Explore Full Gallery
+                  View Gallery
                 </Link>
               </div>
-              <p className="text-xs font-medium tracking-[0.03em] text-stone-600 sm:text-[0.8125rem]">
-                Zero third-party Airbnb or Vrbo fees • Best rate guaranteed • Pet-friendly • 62 five-star reviews
-              </p>
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-3xl border border-stone-200 shadow-xl">
+          <div className="overflow-hidden bg-stone-100">
             <div className="aspect-[16/9] w-full">
               <ResponsivePhoto
                 basePath="/gallery/enhanced/2"
@@ -219,16 +218,14 @@ export default function StaysPage() {
             </div>
           </div>
 
-          <dl className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+          {/* Hairline Architectural Spec Bar */}
+          <dl className="grid grid-cols-2 gap-y-6 border-y border-stone-200 py-7 sm:grid-cols-3 lg:grid-cols-6">
             {quickSpecs.map((spec) => (
-              <div
-                key={spec.label}
-                className="rounded-2xl border border-[#d2c4a3]/50 bg-[#fdfbf7] p-4 text-center"
-              >
-                <dt className="text-[0.65rem] font-bold uppercase tracking-[0.18em] text-stone-500">
+              <div key={spec.label} className="pr-4">
+                <dt className="text-[0.65rem] font-medium uppercase tracking-[0.22em] text-stone-500">
                   {spec.label}
                 </dt>
-                <dd className="mt-1.5 text-sm font-semibold text-stone-900">
+                <dd className="mt-1.5 font-serif text-base text-stone-900 sm:text-lg">
                   {spec.value}
                 </dd>
               </div>
@@ -237,132 +234,120 @@ export default function StaysPage() {
         </div>
       </section>
 
-      {/* Private Resort Amenities */}
-      <section className="lux-section bg-gradient-to-br from-[var(--color-linen)] via-[var(--color-eggshell)] to-[var(--color-cream)]">
-        <div className="lux-container space-y-10">
-          <div className="max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-[#8f7845]">
-              Private Resort Amenities
-            </p>
-            <h2 className="mt-2 text-3xl font-semibold text-stone-900 sm:text-4xl">
-              Five-star resort amenities, reserved exclusively for your group
-            </h2>
-            <p className="mt-3 text-base leading-relaxed text-stone-700">
+      {/* Private Resort Amenities — Editorial Grid */}
+      <section className="bg-[#f8f5f0] py-20 md:py-28">
+        <div className="lux-container space-y-16">
+          <div className="grid gap-6 lg:grid-cols-12 lg:items-end">
+            <div className="lg:col-span-7">
+              <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
+                Private Resort Amenities
+              </p>
+              <h2 className="mt-3 text-3xl font-normal tracking-tight text-stone-900 sm:text-4xl">
+                Five-star resort amenities, reserved exclusively for your group
+              </h2>
+            </div>
+            <p className="text-sm leading-7 text-stone-600 sm:text-base lg:col-span-5">
               Whether you are planning a Stowe ski chalet week, a peak October foliage escape, or a multi-generational Vermont family reunion, every amenity on the 28-acre grounds is yours alone.
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {amenityPillars.map((pillar) => (
-              <div
-                key={pillar.title}
-                className="rounded-3xl border border-[#d2c4a3]/50 bg-white/85 p-6 shadow-[0_20px_45px_-30px_rgba(58,45,20,0.2)] sm:p-7"
-              >
-                <h3 className="text-xl font-semibold text-stone-900">{pillar.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-stone-700">{pillar.description}</p>
+          <div className="grid gap-x-10 gap-y-12 border-t border-stone-300/70 pt-12 md:grid-cols-2 lg:grid-cols-3">
+            {amenityPillars.map((pillar, idx) => (
+              <div key={pillar.title} className="space-y-3">
+                <span className="text-[0.68rem] font-medium tracking-[0.22em] text-[#8f7845]">
+                  0{idx + 1}
+                </span>
+                <h3 className="text-xl font-normal text-stone-900">{pillar.title}</h3>
+                <p className="text-sm leading-7 text-stone-600">{pillar.description}</p>
               </div>
             ))}
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            <div className="overflow-hidden rounded-2xl border border-white/80 shadow-md">
-              <ResponsivePhoto
-                basePath="/gallery/Eden-Site%20Photos/113"
-                alt="Heated seasonal outdoor swimming pool and stone patio at Eden Estate in Stowe, VT"
-                sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-                width={2560}
-                height={1920}
-                className="aspect-[4/3] w-full object-cover"
-              />
-            </div>
-            <div className="overflow-hidden rounded-2xl border border-white/80 shadow-md">
-              <ResponsivePhoto
-                basePath="/gallery/enhanced/90"
-                alt="Year-round outdoor hot tub overlooking the spring-fed pond and Worcester Mountains"
-                sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-                width={2400}
-                height={1600}
-                className="aspect-[4/3] w-full object-cover"
-              />
-            </div>
-            <div className="overflow-hidden rounded-2xl border border-white/80 shadow-md">
-              <ResponsivePhoto
-                basePath="/gallery/enhanced/70"
-                alt="Private indoor dry cedar sauna inside the lower-level spa wing at Eden"
-                sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-                width={2400}
-                height={1600}
-                className="aspect-[4/3] w-full object-cover"
-              />
-            </div>
-            <div className="overflow-hidden rounded-2xl border border-white/80 shadow-md">
-              <ResponsivePhoto
-                basePath="/gallery/Eden-Site%20Photos/98"
-                alt="Great Room with soaring timber trusses, stone fireplace, Chesterfield sofas, and grand piano"
-                sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-                width={2560}
-                height={1704}
-                className="aspect-[4/3] w-full object-cover"
-              />
-            </div>
+            <ResponsivePhoto
+              basePath="/gallery/Eden-Site%20Photos/113"
+              alt="Heated seasonal outdoor swimming pool and stone patio at Eden Estate in Stowe, VT"
+              sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+              width={2560}
+              height={1920}
+              className="aspect-[4/3] w-full object-cover"
+            />
+            <ResponsivePhoto
+              basePath="/gallery/enhanced/90"
+              alt="Year-round outdoor hot tub overlooking the spring-fed pond and Worcester Mountains"
+              sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+              width={2400}
+              height={1600}
+              className="aspect-[4/3] w-full object-cover"
+            />
+            <ResponsivePhoto
+              basePath="/gallery/enhanced/70"
+              alt="Private indoor dry cedar sauna inside the lower-level spa wing at Eden"
+              sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+              width={2400}
+              height={1600}
+              className="aspect-[4/3] w-full object-cover"
+            />
+            <ResponsivePhoto
+              basePath="/gallery/Eden-Site%20Photos/98"
+              alt="Great Room with soaring timber trusses, stone fireplace, Chesterfield sofas, and grand piano"
+              sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+              width={2560}
+              height={1704}
+              className="aspect-[4/3] w-full object-cover"
+            />
           </div>
         </div>
       </section>
 
-      {/* Accommodations & Floor Breakdown */}
-      <section className="lux-section bg-white">
-        <div className="lux-container space-y-10">
-          <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.35em] text-[#8f7845]">
+      {/* Accommodations & Three-Level Layout */}
+      <section className="bg-white py-20 md:py-28">
+        <div className="lux-container space-y-16">
+          <div className="grid gap-10 lg:grid-cols-12 lg:items-center">
+            <div className="space-y-4 lg:col-span-5">
+              <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
                 11,400 Sq Ft Across Three Levels
               </p>
-              <h2 className="mt-2 text-3xl font-semibold text-stone-900 sm:text-4xl">
+              <h2 className="text-3xl font-normal tracking-tight text-stone-900 sm:text-4xl">
                 Eight bedrooms &amp; eight bathrooms designed for up to 20 guests
               </h2>
-              <p className="mt-3 text-base leading-relaxed text-stone-700">
+              <p className="text-sm leading-7 text-stone-600 sm:text-base">
                 Unlike cramped ski condos, Eden spreads generously across three expansive levels—including two primary suites and a private, self-contained upper-level apartment suite—so large groups gather effortlessly and still enjoy quiet personal space.
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="overflow-hidden rounded-2xl border border-stone-200 shadow-md">
-                <ResponsivePhoto
-                  basePath="/gallery/Eden-Site%20Photos/102"
-                  alt="Primary king bedroom suite with vaulted ceilings at Eden Estate in Stowe"
-                  sizes="(min-width: 1024px) 25vw, 50vw"
-                  width={2560}
-                  height={1707}
-                  className="aspect-[4/3] w-full object-cover"
-                />
-              </div>
-              <div className="overflow-hidden rounded-2xl border border-stone-200 shadow-md">
-                <ResponsivePhoto
-                  basePath="/gallery/Eden-Site%20Photos/103"
-                  alt="Primary marble bathroom en-suite with soaking tub under mountain-view arched window"
-                  sizes="(min-width: 1024px) 25vw, 50vw"
-                  width={2560}
-                  height={1707}
-                  className="aspect-[4/3] w-full object-cover"
-                />
-              </div>
+            <div className="grid grid-cols-2 gap-4 lg:col-span-7">
+              <ResponsivePhoto
+                basePath="/gallery/Eden-Site%20Photos/102"
+                alt="Primary king bedroom suite with vaulted ceilings at Eden Estate in Stowe"
+                sizes="(min-width: 1024px) 30vw, 50vw"
+                width={2560}
+                height={1707}
+                className="aspect-[4/3] w-full object-cover"
+              />
+              <ResponsivePhoto
+                basePath="/gallery/Eden-Site%20Photos/103"
+                alt="Primary marble bathroom en-suite with soaking tub under mountain-view arched window"
+                sizes="(min-width: 1024px) 30vw, 50vw"
+                width={2560}
+                height={1707}
+                className="aspect-[4/3] w-full object-cover"
+              />
             </div>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-10 border-t border-stone-200 pt-12 md:grid-cols-3">
             {levelBreakdown.map((lvl) => (
-              <div
-                key={lvl.level}
-                className="rounded-3xl border border-stone-200 bg-[#fdfbf7] p-6 sm:p-7"
-              >
-                <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#8f7845]">
-                  {lvl.level}
-                </p>
-                <h3 className="mt-1 text-xl font-semibold text-stone-900">{lvl.subtitle}</h3>
-                <ul className="mt-4 space-y-2.5 text-sm leading-relaxed text-stone-700">
+              <div key={lvl.level} className="space-y-4">
+                <div>
+                  <p className="text-[0.68rem] font-medium uppercase tracking-[0.26em] text-[#8f7845]">
+                    {lvl.level}
+                  </p>
+                  <h3 className="mt-1 text-xl font-normal text-stone-900">{lvl.subtitle}</h3>
+                </div>
+                <ul className="space-y-3 text-sm leading-6 text-stone-600">
                   {lvl.rooms.map((room) => (
-                    <li key={room} className="flex gap-2.5">
-                      <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[#c2a060]" />
-                      <span>{room}</span>
+                    <li key={room} className="border-l border-[#d2c4a3] pl-3.5">
+                      {room}
                     </li>
                   ))}
                 </ul>
@@ -373,67 +358,56 @@ export default function StaysPage() {
       </section>
 
       {/* Four-Season Location */}
-      <section className="lux-section bg-gradient-to-br from-[var(--color-linen)] via-[var(--color-eggshell)] to-[var(--color-cream)]">
-        <div className="lux-container grid gap-10 lg:grid-cols-5 lg:items-center">
-          <div className="space-y-4 lg:col-span-2">
-            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-[#8f7845]">
-              Four-Season Stowe Setting
-            </p>
-            <h2 className="text-3xl font-semibold text-stone-900 sm:text-4xl">
-              Minutes from Stowe Mountain Resort, surrounded by trails
-            </h2>
-            <p className="text-sm leading-relaxed text-stone-700 sm:text-base">
-              Tucked in the sought-after Edson Hill Road area of Stowe, Eden pairs complete mountain privacy with effortless access to winter skiing on Mount Mansfield, peak October fall foliage, and summer swimming holes.
-            </p>
-            <div className="overflow-hidden rounded-2xl border border-white/80 shadow-md">
-              <ResponsivePhoto
-                basePath="/gallery/enhanced/86"
-                alt="Eden Estate surrounded by vibrant orange and red Vermont autumn foliage in Stowe"
-                sizes="(min-width: 1024px) 40vw, 100vw"
-                width={1024}
-                height={1024}
-                className="aspect-[16/10] w-full object-cover"
-              />
+      <section className="bg-[#f8f5f0] py-20 md:py-28">
+        <div className="lux-container grid gap-12 lg:grid-cols-12 lg:items-start">
+          <div className="space-y-6 lg:col-span-5">
+            <div>
+              <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
+                Four-Season Stowe Setting
+              </p>
+              <h2 className="mt-3 text-3xl font-normal tracking-tight text-stone-900 sm:text-4xl">
+                Minutes from Stowe Mountain Resort, surrounded by trails
+              </h2>
+              <p className="mt-4 text-sm leading-7 text-stone-600 sm:text-base">
+                Tucked in the sought-after Edson Hill Road area of Stowe, Eden pairs complete mountain privacy with effortless access to winter skiing on Mount Mansfield, peak October fall foliage, and summer swimming holes.
+              </p>
             </div>
-            <div className="flex flex-wrap gap-2 pt-1">
-              <Link
-                href="/guides/stowe-ski-house/"
-                className="rounded-full border border-[#c2a060]/60 bg-white px-4 py-1.5 text-xs font-semibold text-stone-800 transition hover:border-[#8f7845] hover:text-[#8f7845]"
-              >
-                Winter &amp; Ski Guide →
+            <ResponsivePhoto
+              basePath="/gallery/enhanced/86"
+              alt="Eden Estate surrounded by vibrant orange and red Vermont autumn foliage in Stowe"
+              sizes="(min-width: 1024px) 40vw, 100vw"
+              width={1024}
+              height={1024}
+              className="aspect-[16/10] w-full object-cover"
+            />
+            <div className="flex flex-wrap gap-x-6 gap-y-2 pt-2 text-xs font-semibold uppercase tracking-[0.18em] text-stone-800">
+              <Link href="/guides/stowe-ski-house/" className="border-b border-stone-400 pb-0.5 hover:border-[#8f7845] hover:text-[#8f7845]">
+                Winter &amp; Ski Guide
               </Link>
-              <Link
-                href="/guides/stowe-fall-foliage/"
-                className="rounded-full border border-[#c2a060]/60 bg-white px-4 py-1.5 text-xs font-semibold text-stone-800 transition hover:border-[#8f7845] hover:text-[#8f7845]"
-              >
-                Fall Foliage Guide →
+              <Link href="/guides/stowe-fall-foliage/" className="border-b border-stone-400 pb-0.5 hover:border-[#8f7845] hover:text-[#8f7845]">
+                Fall Foliage Guide
               </Link>
-              <Link
-                href="/guides/stowe-family-reunions/"
-                className="rounded-full border border-[#c2a060]/60 bg-white px-4 py-1.5 text-xs font-semibold text-stone-800 transition hover:border-[#8f7845] hover:text-[#8f7845]"
-              >
-                Family Reunion Guide →
+              <Link href="/guides/stowe-family-reunions/" className="border-b border-stone-400 pb-0.5 hover:border-[#8f7845] hover:text-[#8f7845]">
+                Family Reunion Guide
               </Link>
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-3xl border border-[#d2c4a3]/50 bg-white/90 shadow-sm lg:col-span-3">
-            <div className="divide-y divide-stone-200/80">
-              {nearbyDistances.map((item) => (
-                <div
-                  key={item.place}
-                  className="flex flex-col justify-between gap-1 px-6 py-4 sm:flex-row sm:items-center sm:gap-4"
-                >
-                  <div>
-                    <p className="font-semibold text-stone-900">{item.place}</p>
-                    <p className="text-xs text-stone-600 sm:text-sm">{item.detail}</p>
-                  </div>
-                  <span className="inline-flex w-fit flex-shrink-0 rounded-full bg-[#f8f3ea] px-3.5 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-[#8f7845]">
-                    {item.distance}
-                  </span>
+          <div className="divide-y divide-stone-300/70 border-y border-stone-300/70 lg:col-span-7">
+            {nearbyDistances.map((item) => (
+              <div
+                key={item.place}
+                className="flex flex-col justify-between gap-1 py-5 sm:flex-row sm:items-baseline sm:gap-6"
+              >
+                <div>
+                  <p className="font-serif text-lg text-stone-900">{item.place}</p>
+                  <p className="mt-0.5 text-sm text-stone-600">{item.detail}</p>
                 </div>
-              ))}
-            </div>
+                <span className="flex-shrink-0 text-xs font-medium uppercase tracking-[0.2em] text-[#8f7845]">
+                  {item.distance}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -444,33 +418,36 @@ export default function StaysPage() {
         items={staysFaqs}
       />
 
-      {/* Bottom CTA */}
-      <section className="lux-section border-t border-stone-200/70 bg-[#fdfbf7]">
-        <div className="lux-container max-w-4xl text-center">
-          <h2 className="text-3xl font-semibold text-stone-900 sm:text-4xl">
+      {/* Quiet Editorial Closing CTA */}
+      <section className="border-t border-stone-200 bg-[#f8f5f0] py-20 md:py-24">
+        <div className="lux-container max-w-3xl text-center">
+          <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
+            Direct Reservations
+          </p>
+          <h2 className="mt-3 text-3xl font-normal tracking-tight text-stone-900 sm:text-4xl">
             Reserve Your Stowe Mountain Stay Direct
           </h2>
-          <p className="mx-auto mt-3 max-w-2xl text-base text-stone-700">
+          <p className="mx-auto mt-4 max-w-xl text-sm leading-7 text-stone-600 sm:text-base">
             Skip third-party booking fees and plan your stay directly with our Stowe estate team. Looking for a{" "}
-            <Link href="/weddings/" className="font-semibold text-[#8f7845] underline underline-offset-4">
+            <Link href="/weddings/" className="border-b border-[#8f7845] text-stone-900 hover:text-[#8f7845]">
               private estate wedding
             </Link>{" "}
             or{" "}
-            <Link href="/retreats/" className="font-semibold text-[#8f7845] underline underline-offset-4">
+            <Link href="/retreats/" className="border-b border-[#8f7845] text-stone-900 hover:text-[#8f7845]">
               corporate executive retreat
             </Link>
-            ? Explore our dedicated event packages.
+            ? Explore our dedicated event pages.
           </p>
-          <div className="mt-7 flex flex-wrap items-center justify-center gap-4">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
             <Link
               href="/contact/"
-              className="inline-flex items-center rounded-full bg-[#111111] px-8 py-3.5 text-[0.95rem] font-semibold !text-white transition duration-200 hover:bg-stone-800"
+              className="inline-flex items-center bg-stone-950 px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] !text-white transition hover:bg-stone-800"
             >
-              Check Availability &amp; Rates
+              Check Availability
             </Link>
             <Link
               href="/reviews/"
-              className="inline-flex items-center rounded-full border border-stone-900 px-8 py-3.5 text-[0.95rem] font-semibold text-stone-900 transition duration-200 hover:bg-stone-50"
+              className="border-b border-stone-900 pb-1 text-xs font-semibold uppercase tracking-[0.2em] text-stone-900 transition hover:border-[#8f7845] hover:text-[#8f7845]"
             >
               Read 62 Five-Star Reviews
             </Link>

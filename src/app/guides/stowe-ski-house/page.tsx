@@ -111,9 +111,9 @@ const skiFaqs: FaqItem[] = [
 
 export default function StoweSkiHousePage() {
   return (
-    <div className="bg-white">
-      <section className="bg-white pt-8 pb-12 md:pt-12 md:pb-16">
-        <div className="lux-container space-y-8">
+    <div className="bg-white text-stone-900">
+      <section className="pt-8 pb-16 md:pt-12 md:pb-24">
+        <div className="lux-container space-y-10">
           <Breadcrumbs
             items={[
               { name: "Home", href: "/" },
@@ -122,36 +122,37 @@ export default function StoweSkiHousePage() {
             ]}
           />
 
-          <div className="mx-auto max-w-4xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.38em] text-[#8f7845]">
-              Winter &amp; Ski Lodging · Edson Hill Road Area, Stowe VT
-            </p>
-            <h1 className="mt-3 text-3xl font-semibold leading-tight text-stone-900 text-balance sm:text-4xl md:text-5xl">
-              Luxury Stowe Ski House Rental — 5 Minutes from Mount Mansfield
-            </h1>
-            <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-stone-700 md:text-lg">
-              Skip cramped slopeside condos. Gather up to 20 guests across 8 bedrooms and 11,400 sq ft of radiant-heated mountain luxury—complete with three hot tubs, private cedar sauna, steam shower, stocked fireplaces, and adjoining cross-country ski trails.
-            </p>
-            <div className="mt-7 flex flex-wrap items-center justify-center gap-4">
-              <Link
-                href="/contact/"
-                className="inline-flex items-center rounded-full bg-[#111111] px-8 py-3.5 text-[0.95rem] font-semibold !text-white transition duration-200 hover:bg-stone-800"
-              >
-                Check Winter &amp; Ski Dates
-              </Link>
-              <Link
-                href="/stays/"
-                className="inline-flex items-center rounded-full border border-stone-900 px-8 py-3.5 text-[0.95rem] font-semibold text-stone-900 transition duration-200 hover:bg-stone-50"
-              >
-                View Full 8BR Estate Specs
-              </Link>
+          <div className="grid gap-8 lg:grid-cols-12 lg:items-end">
+            <div className="lg:col-span-7">
+              <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
+                Winter &amp; Ski Lodging · Edson Hill Road Area, Stowe VT
+              </p>
+              <h1 className="mt-4 text-4xl font-normal leading-[1.12] tracking-tight text-stone-900 sm:text-5xl">
+                Luxury Stowe Ski House Rental — 5 Minutes from Mount Mansfield
+              </h1>
             </div>
-            <p className="mt-3 text-xs text-stone-600">
-              Book direct with zero Airbnb or Vrbo fees • Pet-friendly stays • Peak ski &amp; holiday weeks available
-            </p>
+            <div className="space-y-5 lg:col-span-5">
+              <p className="text-base leading-7 text-stone-600">
+                Skip cramped slopeside condos. Gather up to 20 guests across 8 bedrooms and 11,400 sq ft of radiant-heated mountain luxury—complete with three hot tubs, private cedar sauna, steam shower, stocked fireplaces, and adjoining cross-country ski trails.
+              </p>
+              <div className="flex flex-wrap items-center gap-6">
+                <Link
+                  href="/contact/"
+                  className="inline-flex items-center bg-stone-950 px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] !text-white transition hover:bg-stone-800"
+                >
+                  Check Winter Dates
+                </Link>
+                <Link
+                  href="/stays/"
+                  className="border-b border-stone-900 pb-1 text-xs font-semibold uppercase tracking-[0.2em] text-stone-900 transition hover:border-[#8f7845] hover:text-[#8f7845]"
+                >
+                  Full 8BR Specs
+                </Link>
+              </div>
+            </div>
           </div>
 
-          <div className="overflow-hidden rounded-3xl border border-stone-200 shadow-xl">
+          <div className="overflow-hidden bg-stone-100">
             <div className="aspect-[16/9] w-full">
               <ResponsivePhoto
                 basePath="/gallery/enhanced/68"
@@ -167,28 +168,30 @@ export default function StoweSkiHousePage() {
         </div>
       </section>
 
-      <section className="lux-section bg-gradient-to-br from-[var(--color-linen)] via-[var(--color-eggshell)] to-[var(--color-cream)]">
-        <div className="lux-container space-y-10">
-          <div className="max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-[#8f7845]">
-              Built for Vermont Ski Weeks
-            </p>
-            <h2 className="mt-2 text-3xl font-semibold text-stone-900 sm:text-4xl">
-              The ultimate Stowe après-ski sanctuary
-            </h2>
-            <p className="mt-3 text-base leading-relaxed text-stone-700">
+      <section className="bg-[#f8f5f0] py-20 md:py-28">
+        <div className="lux-container space-y-16">
+          <div className="grid gap-6 lg:grid-cols-12 lg:items-end">
+            <div className="lg:col-span-7">
+              <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
+                Built for Vermont Ski Weeks
+              </p>
+              <h2 className="mt-3 text-3xl font-normal tracking-tight text-stone-900 sm:text-4xl">
+                The ultimate Stowe après-ski sanctuary
+              </h2>
+            </div>
+            <p className="text-sm leading-7 text-stone-600 sm:text-base lg:col-span-5">
               From first-chair powder mornings on Mount Mansfield to fireside evenings in the Great Room, every detail at Eden is built for effortless winter gatherings.
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2">
-            {winterHighlights.map((item) => (
-              <div
-                key={item.title}
-                className="rounded-3xl border border-[#d2c4a3]/50 bg-white/90 p-6 shadow-sm sm:p-7"
-              >
-                <h3 className="text-xl font-semibold text-stone-900">{item.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-stone-700 sm:text-base">
+          <div className="grid gap-x-12 gap-y-10 border-t border-stone-300/70 pt-12 md:grid-cols-2">
+            {winterHighlights.map((item, idx) => (
+              <div key={item.title} className="space-y-3">
+                <span className="text-[0.68rem] font-medium tracking-[0.22em] text-[#8f7845]">
+                  0{idx + 1}
+                </span>
+                <h3 className="text-xl font-normal text-stone-900">{item.title}</h3>
+                <p className="text-sm leading-7 text-stone-600 sm:text-base">
                   {item.detail}
                 </p>
               </div>
@@ -196,70 +199,62 @@ export default function StoweSkiHousePage() {
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            <div className="overflow-hidden rounded-2xl border border-white/80 shadow-md">
-              <ResponsivePhoto
-                basePath="/gallery/enhanced/78"
-                alt="Illuminated winter night exterior of Eden Estate in Stowe, Vermont"
-                sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-                width={2400}
-                height={1600}
-                className="aspect-[4/3] w-full object-cover"
-              />
-            </div>
-            <div className="overflow-hidden rounded-2xl border border-white/80 shadow-md">
-              <ResponsivePhoto
-                basePath="/gallery/Eden-Site%20Photos/100"
-                alt="Roaring stone fireplace inside the Great Room at Eden Estate"
-                sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-                width={2560}
-                height={1707}
-                className="aspect-[4/3] w-full object-cover"
-              />
-            </div>
-            <div className="overflow-hidden rounded-2xl border border-white/80 shadow-md">
-              <ResponsivePhoto
-                basePath="/gallery/enhanced/90"
-                alt="Steaming outdoor hot tub overlooking the pond and winter mountains in Stowe"
-                sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-                width={2400}
-                height={1600}
-                className="aspect-[4/3] w-full object-cover"
-              />
-            </div>
-            <div className="overflow-hidden rounded-2xl border border-white/80 shadow-md">
-              <ResponsivePhoto
-                basePath="/gallery/enhanced/70"
-                alt="Private cedar sauna inside the lower-level spa wing at Eden"
-                sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-                width={2400}
-                height={1600}
-                className="aspect-[4/3] w-full object-cover"
-              />
-            </div>
+            <ResponsivePhoto
+              basePath="/gallery/enhanced/78"
+              alt="Illuminated winter night exterior of Eden Estate in Stowe, Vermont"
+              sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+              width={2400}
+              height={1600}
+              className="aspect-[4/3] w-full object-cover"
+            />
+            <ResponsivePhoto
+              basePath="/gallery/Eden-Site%20Photos/100"
+              alt="Roaring stone fireplace inside the Great Room at Eden Estate"
+              sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+              width={2560}
+              height={1707}
+              className="aspect-[4/3] w-full object-cover"
+            />
+            <ResponsivePhoto
+              basePath="/gallery/enhanced/90"
+              alt="Steaming outdoor hot tub overlooking the pond and winter mountains in Stowe"
+              sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+              width={2400}
+              height={1600}
+              className="aspect-[4/3] w-full object-cover"
+            />
+            <ResponsivePhoto
+              basePath="/gallery/enhanced/70"
+              alt="Private cedar sauna inside the lower-level spa wing at Eden"
+              sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+              width={2400}
+              height={1600}
+              className="aspect-[4/3] w-full object-cover"
+            />
           </div>
         </div>
       </section>
 
-      <section className="lux-section bg-white">
-        <div className="lux-container space-y-8">
-          <div className="max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-[#8f7845]">
+      <section className="bg-white py-20 md:py-28">
+        <div className="lux-container space-y-12">
+          <div>
+            <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
               Verified Winter Reviews
             </p>
-            <h2 className="mt-2 text-3xl font-semibold text-stone-900 sm:text-4xl">
+            <h2 className="mt-3 text-3xl font-normal tracking-tight text-stone-900 sm:text-4xl">
               What winter ski &amp; holiday guests say
             </h2>
           </div>
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-10 border-t border-stone-200 pt-10 md:grid-cols-3">
             {winterQuotes.map((q) => (
               <blockquote
                 key={q.author}
-                className="flex flex-col justify-between rounded-3xl border border-[#d2c4a3]/60 bg-[#fdfbf7] p-6"
+                className="flex flex-col justify-between space-y-4 border-l border-[#c2a060] pl-5"
               >
-                <p className="text-sm italic leading-relaxed text-stone-700">
+                <p className="font-serif text-base italic leading-relaxed text-stone-800">
                   &ldquo;{q.quote}&rdquo;
                 </p>
-                <footer className="mt-4 text-xs font-semibold uppercase tracking-[0.15em] text-[#8f7845]">
+                <footer className="text-[0.68rem] font-medium uppercase tracking-[0.2em] text-stone-500">
                   {q.author}
                 </footer>
               </blockquote>
@@ -274,26 +269,29 @@ export default function StoweSkiHousePage() {
         items={skiFaqs}
       />
 
-      <section className="lux-section border-t border-stone-200/70 bg-[#fdfbf7]">
-        <div className="lux-container max-w-4xl text-center">
-          <h2 className="text-3xl font-semibold text-stone-900 sm:text-4xl">
+      <section className="border-t border-stone-200 bg-[#f8f5f0] py-20 md:py-24">
+        <div className="lux-container max-w-3xl text-center">
+          <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
+            Winter Reservations
+          </p>
+          <h2 className="mt-3 text-3xl font-normal tracking-tight text-stone-900 sm:text-4xl">
             Reserve Your Winter Week at Eden Direct
           </h2>
-          <p className="mx-auto mt-3 max-w-2xl text-base text-stone-700">
+          <p className="mx-auto mt-4 max-w-xl text-sm leading-7 text-stone-600 sm:text-base">
             Peak Stowe winter holidays (Christmas, New Year&apos;s, MLK, and Presidents&apos; Week) book 6–12 months ahead. Inquire directly to lock in zero platform fees.
           </p>
-          <div className="mt-7 flex flex-wrap items-center justify-center gap-4">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
             <Link
               href="/contact/"
-              className="inline-flex items-center rounded-full bg-[#111111] px-8 py-3.5 text-[0.95rem] font-semibold !text-white transition hover:bg-stone-800"
+              className="inline-flex items-center bg-stone-950 px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] !text-white transition hover:bg-stone-800"
             >
               Request Winter Dates
             </Link>
             <Link
               href="/guides/stowe-family-reunions/"
-              className="inline-flex items-center rounded-full border border-stone-900 px-8 py-3.5 text-[0.95rem] font-semibold text-stone-900 transition hover:bg-stone-50"
+              className="border-b border-stone-900 pb-1 text-xs font-semibold uppercase tracking-[0.2em] text-stone-900 transition hover:border-[#8f7845] hover:text-[#8f7845]"
             >
-              Estate vs. 8 Resort Suites →
+              Estate vs. 8 Resort Suites
             </Link>
           </div>
         </div>

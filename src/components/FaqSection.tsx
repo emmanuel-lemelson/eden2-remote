@@ -12,10 +12,10 @@ interface FaqSectionProps {
 }
 
 /**
- * Renders a visible FAQ accordion paired with matching FAQPage JSON-LD schema.
+ * Renders an editorial hairline FAQ accordion paired with matching FAQPage JSON-LD schema.
  */
 export function FaqSection({
-  eyebrow = "Frequently Asked Questions",
+  eyebrow = "Questions & Answers",
   title,
   description,
   items,
@@ -35,50 +35,41 @@ export function FaqSection({
   };
 
   return (
-    <section className={`lux-section bg-white ${className}`}>
+    <section className={`py-20 md:py-28 bg-white ${className}`}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <div className="lux-container max-w-4xl">
-        <div className="mb-8 text-center md:mb-10">
+        <div className="mb-12 border-b border-stone-200 pb-8 md:mb-14">
           {eyebrow ? (
-            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-[#8f7845]">
+            <p className="text-[0.7rem] font-medium uppercase tracking-[0.32em] text-[#8f7845]">
               {eyebrow}
             </p>
           ) : null}
-          <h2 className="mt-2 text-3xl font-semibold text-stone-900 sm:text-4xl">
+          <h2 className="mt-3 text-3xl font-normal tracking-tight text-stone-900 sm:text-4xl">
             {title}
           </h2>
           {description ? (
-            <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-stone-600 sm:text-base">
+            <p className="mt-3 max-w-2xl text-sm leading-relaxed text-stone-600 sm:text-base">
               {description}
             </p>
           ) : null}
         </div>
 
-        <div className="divide-y divide-stone-200/80 overflow-hidden rounded-3xl border border-[#d2c4a3]/50 bg-[#fdfbf7] shadow-[0_20px_50px_-34px_rgba(58,45,20,0.2)]">
+        <div className="divide-y divide-stone-200/90 border-b border-stone-200/90">
           {items.map((item) => (
-            <details key={item.question} className="group px-6 py-5 sm:px-8 sm:py-6">
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-left text-base font-semibold text-stone-900 sm:text-lg [&::-webkit-details-marker]:hidden">
-                <span>{item.question}</span>
+            <details key={item.question} className="group py-6">
+              <summary className="flex cursor-pointer list-none items-baseline justify-between gap-6 text-left text-base font-medium text-stone-900 transition-colors hover:text-[#8f7845] sm:text-lg [&::-webkit-details-marker]:hidden">
+                <span className="font-serif">{item.question}</span>
                 <span
                   aria-hidden="true"
-                  className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full border border-[#c2a060]/40 bg-white text-[#8f7845] transition-transform duration-200 group-open:rotate-45"
+                  className="flex-shrink-0 text-xl font-light text-stone-400 transition-transform duration-200 group-open:rotate-45 group-open:text-[#8f7845]"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.75"
-                    className="h-4 w-4"
-                  >
-                    <path strokeLinecap="round" d="M10 4v12M4 10h12" />
-                  </svg>
+                  +
                 </span>
               </summary>
-              <p className="mt-3 pr-8 text-sm leading-relaxed text-stone-700 sm:text-base">
+              <p className="mt-4 max-w-3xl text-sm leading-7 text-stone-600 sm:text-[0.95rem]">
                 {item.answer}
               </p>
             </details>

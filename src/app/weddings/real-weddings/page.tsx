@@ -65,9 +65,9 @@ const realWeddingFaqs: FaqItem[] = [
 
 export default function RealWeddingsPage() {
   return (
-    <div className="bg-white">
-      <section className="bg-white pt-8 pb-12 md:pt-12 md:pb-16">
-        <div className="lux-container space-y-8">
+    <div className="bg-white text-stone-900">
+      <section className="pt-8 pb-16 md:pt-12 md:pb-24">
+        <div className="lux-container space-y-10">
           <Breadcrumbs
             items={[
               { name: "Home", href: "/" },
@@ -76,33 +76,37 @@ export default function RealWeddingsPage() {
             ]}
           />
 
-          <div className="mx-auto max-w-4xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.38em] text-[#8f7845]">
-              Verified Celebrations · Stowe, Vermont
-            </p>
-            <h1 className="mt-3 text-3xl font-semibold leading-tight text-stone-900 text-balance sm:text-4xl md:text-5xl">
-              Real Weddings &amp; Celebrations at Eden in Stowe, Vermont
-            </h1>
-            <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-stone-700 md:text-lg">
-              From fireside February snowstorm ceremonies in the Great Room to intimate 14-guest mountain elopements and full autumn wedding-party buyouts, see how real couples experience a private estate weekend at Eden.
-            </p>
-            <div className="mt-7 flex flex-wrap items-center justify-center gap-4">
-              <Link
-                href="/weddings/#pricing"
-                className="inline-flex items-center rounded-full bg-[#111111] px-8 py-3.5 text-[0.95rem] font-semibold !text-white transition hover:bg-stone-800"
-              >
-                View 2026 Wedding Pricing
-              </Link>
-              <Link
-                href="/contact/"
-                className="inline-flex items-center rounded-full border border-stone-900 px-8 py-3.5 text-[0.95rem] font-semibold text-stone-900 transition hover:bg-stone-50"
-              >
-                Schedule a Private Estate Tour
-              </Link>
+          <div className="grid gap-8 lg:grid-cols-12 lg:items-end">
+            <div className="lg:col-span-7">
+              <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
+                Verified Celebrations · Stowe, Vermont
+              </p>
+              <h1 className="mt-4 text-4xl font-normal leading-[1.12] tracking-tight text-stone-900 sm:text-5xl">
+                Real Weddings &amp; Celebrations at Eden in Stowe, Vermont
+              </h1>
+            </div>
+            <div className="space-y-5 lg:col-span-5">
+              <p className="text-base leading-7 text-stone-600">
+                From fireside February snowstorm ceremonies in the Great Room to intimate 14-guest mountain elopements and full autumn wedding-party buyouts, see how real couples experience a private estate weekend at Eden.
+              </p>
+              <div className="flex flex-wrap items-center gap-6">
+                <Link
+                  href="/weddings/#pricing"
+                  className="inline-flex items-center bg-stone-950 px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] !text-white transition hover:bg-stone-800"
+                >
+                  2026 Wedding Pricing
+                </Link>
+                <Link
+                  href="/contact/"
+                  className="border-b border-stone-900 pb-1 text-xs font-semibold uppercase tracking-[0.2em] text-stone-900 transition hover:border-[#8f7845] hover:text-[#8f7845]"
+                >
+                  Schedule a Tour
+                </Link>
+              </div>
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-3xl border border-stone-200 shadow-xl">
+          <div className="overflow-hidden bg-stone-100">
             <div className="aspect-[16/9] w-full">
               <ResponsivePhoto
                 basePath="/gallery/Eden-Site%20Photos/100"
@@ -119,110 +123,104 @@ export default function RealWeddingsPage() {
       </section>
 
       {/* Story 1 */}
-      <section className="lux-section bg-gradient-to-br from-[var(--color-linen)] via-[var(--color-eggshell)] to-[var(--color-cream)]">
-        <div className="lux-container space-y-8">
-          <div className="grid gap-8 lg:grid-cols-5 lg:items-center">
-            <div className="space-y-4 lg:col-span-3">
-              <p className="text-xs font-semibold uppercase tracking-[0.35em] text-[#8f7845]">
-                Winter Great Room Wedding · February
-              </p>
-              <h2 className="text-3xl font-semibold text-stone-900 sm:text-4xl">
-                Seanna C. — A Fireside Snowstorm Celebration Under One Roof
-              </h2>
-              <p className="text-base leading-relaxed text-stone-700">
-                Planned in roughly six weeks with responsive coordination from Eden&apos;s staff, Seanna and her immediate family turned a late-February Vermont snowstorm into an unforgettable winter wedding weekend—without a single guest needing rideshares or hotel shuttles.
-              </p>
-              <ul className="space-y-2 text-sm leading-relaxed text-stone-700 sm:text-base">
-                <li>• <strong>Getting Ready:</strong> Bridal party prepped in the primary bedroom suite while groomsmen played pool and foosball in the lower-level game room.</li>
-                <li>• <strong>Ceremony &amp; Warmth:</strong> Exchanged vows inside the Great Room before a roaring stocked stone fireplace with heated radiant floors beneath.</li>
-                <li>• <strong>Custom Culinary &amp; Spa:</strong> Private chef family-style dinner tailored to dietary needs, custom signature cocktails from a private bartender, plus steam shower, cedar sauna, and hot tub relaxation.</li>
-              </ul>
-              <blockquote className="rounded-2xl border-l-4 border-[#c2a060] bg-white/90 p-5 text-sm italic leading-relaxed text-stone-700">
-                &ldquo;We had our ceremony in the great room with the fireplace roaring—a fiery love story. The steam shower and sauna were a wonderful way to relax in the chill of a late February snow storm... All the bedrooms were utilized for our families to stay in—no need for hiring Uber or transportation. Would suggest Eden for your wedding, small or big.&rdquo;
-                <footer className="mt-2 not-italic text-xs font-semibold uppercase tracking-[0.16em] text-[#8f7845]">
-                  — Seanna C. · Verified Review (The Knot &amp; Airbnb)
-                </footer>
-              </blockquote>
-            </div>
+      <section className="bg-[#f8f5f0] py-20 md:py-28">
+        <div className="lux-container grid gap-12 lg:grid-cols-12 lg:items-center">
+          <div className="space-y-6 lg:col-span-6">
+            <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
+              Winter Great Room Wedding · February
+            </p>
+            <h2 className="text-3xl font-normal tracking-tight text-stone-900 sm:text-4xl">
+              Seanna C. — A Fireside Snowstorm Celebration Under One Roof
+            </h2>
+            <p className="text-sm leading-7 text-stone-600 sm:text-base">
+              Planned in roughly six weeks with responsive coordination from Eden&apos;s staff, Seanna and her immediate family turned a late-February Vermont snowstorm into an unforgettable winter wedding weekend—without a single guest needing rideshares or hotel shuttles.
+            </p>
+            <ul className="divide-y divide-stone-300/70 border-y border-stone-300/70 text-sm leading-7 text-stone-700">
+              <li className="py-3">
+                <strong className="font-medium text-stone-900">Getting Ready:</strong> Bridal party prepped in the primary bedroom suite while groomsmen played pool and foosball downstairs.
+              </li>
+              <li className="py-3">
+                <strong className="font-medium text-stone-900">Ceremony &amp; Warmth:</strong> Exchanged vows inside the Great Room before a roaring stocked stone fireplace with heated radiant floors beneath.
+              </li>
+              <li className="py-3">
+                <strong className="font-medium text-stone-900">Custom Culinary &amp; Spa:</strong> Private chef family-style dinner tailored to dietary needs, custom signature cocktails from a private bartender, plus steam shower, cedar sauna, and hot tub relaxation.
+              </li>
+            </ul>
+            <blockquote className="border-l border-[#c2a060] pl-5 font-serif text-base italic leading-relaxed text-stone-800">
+              &ldquo;We had our ceremony in the great room with the fireplace roaring—a fiery love story. The steam shower and sauna were a wonderful way to relax in the chill of a late February snow storm... All the bedrooms were utilized for our families to stay in—no need for hiring Uber or transportation. Would suggest Eden for your wedding, small or big.&rdquo;
+              <footer className="mt-3 font-sans text-[0.68rem] font-medium not-italic uppercase tracking-[0.2em] text-stone-500">
+                Seanna C. · Verified Review (The Knot &amp; Airbnb)
+              </footer>
+            </blockquote>
+          </div>
 
-            <div className="grid gap-4 lg:col-span-2">
-              <div className="overflow-hidden rounded-2xl border border-white/80 shadow-md">
-                <ResponsivePhoto
-                  basePath="/gallery/enhanced/68"
-                  alt="Snowy winter estate setting at Eden in Stowe, Vermont"
-                  sizes="(min-width: 1024px) 40vw, 100vw"
-                  width={2400}
-                  height={1600}
-                  className="aspect-[16/10] w-full object-cover"
-                />
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="overflow-hidden rounded-2xl border border-white/80 shadow-md">
-                  <ResponsivePhoto
-                    basePath="/gallery/Eden-Site%20Photos/98"
-                    alt="Great Room panoramic interior for intimate winter wedding ceremonies"
-                    sizes="(min-width: 1024px) 20vw, 50vw"
-                    width={2560}
-                    height={1704}
-                    className="aspect-[4/3] w-full object-cover"
-                  />
-                </div>
-                <div className="overflow-hidden rounded-2xl border border-white/80 shadow-md">
-                  <ResponsivePhoto
-                    basePath="/gallery/enhanced/70"
-                    alt="Private cedar sauna for wedding weekend relaxation"
-                    sizes="(min-width: 1024px) 20vw, 50vw"
-                    width={2400}
-                    height={1600}
-                    className="aspect-[4/3] w-full object-cover"
-                  />
-                </div>
-              </div>
+          <div className="grid gap-4 lg:col-span-6">
+            <ResponsivePhoto
+              basePath="/gallery/enhanced/68"
+              alt="Snowy winter estate setting at Eden in Stowe, Vermont"
+              sizes="(min-width: 1024px) 48vw, 100vw"
+              width={2400}
+              height={1600}
+              className="aspect-[16/10] w-full object-cover"
+            />
+            <div className="grid grid-cols-2 gap-4">
+              <ResponsivePhoto
+                basePath="/gallery/Eden-Site%20Photos/98"
+                alt="Great Room panoramic interior for intimate winter wedding ceremonies"
+                sizes="(min-width: 1024px) 24vw, 50vw"
+                width={2560}
+                height={1704}
+                className="aspect-[4/3] w-full object-cover"
+              />
+              <ResponsivePhoto
+                basePath="/gallery/enhanced/70"
+                alt="Private cedar sauna for wedding weekend relaxation"
+                sizes="(min-width: 1024px) 24vw, 50vw"
+                width={2400}
+                height={1600}
+                className="aspect-[4/3] w-full object-cover"
+              />
             </div>
           </div>
         </div>
       </section>
 
       {/* Story 2 */}
-      <section className="lux-section bg-white">
-        <div className="lux-container grid gap-8 lg:grid-cols-5 lg:items-center">
-          <div className="grid grid-cols-2 gap-4 lg:col-span-2">
-            <div className="overflow-hidden rounded-2xl border border-stone-200 shadow-md">
-              <ResponsivePhoto
-                basePath="/gallery/enhanced/78"
-                alt="Illuminated winter twilight facade at Eden: The Lemelson Estate"
-                sizes="(min-width: 1024px) 20vw, 50vw"
-                width={2400}
-                height={1600}
-                className="aspect-[4/3] w-full object-cover"
-              />
-            </div>
-            <div className="overflow-hidden rounded-2xl border border-stone-200 shadow-md">
-              <ResponsivePhoto
-                basePath="/gallery/Eden-Site%20Photos/102"
-                alt="Vaulted primary king suite for wedding couples at Eden"
-                sizes="(min-width: 1024px) 20vw, 50vw"
-                width={2560}
-                height={1707}
-                className="aspect-[4/3] w-full object-cover"
-              />
-            </div>
+      <section className="bg-white py-20 md:py-28">
+        <div className="lux-container grid gap-12 lg:grid-cols-12 lg:items-center">
+          <div className="grid grid-cols-2 gap-4 lg:col-span-6">
+            <ResponsivePhoto
+              basePath="/gallery/enhanced/78"
+              alt="Illuminated winter twilight facade at Eden: The Lemelson Estate"
+              sizes="(min-width: 1024px) 24vw, 50vw"
+              width={2400}
+              height={1600}
+              className="aspect-[4/5] w-full object-cover"
+            />
+            <ResponsivePhoto
+              basePath="/gallery/Eden-Site%20Photos/102"
+              alt="Vaulted primary king suite for wedding couples at Eden"
+              sizes="(min-width: 1024px) 24vw, 50vw"
+              width={2560}
+              height={1707}
+              className="aspect-[4/5] w-full object-cover"
+            />
           </div>
 
-          <div className="space-y-4 lg:col-span-3">
-            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-[#8f7845]">
+          <div className="space-y-6 lg:col-span-6">
+            <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
               Intimate Mountain Elopement · February 2026
             </p>
-            <h2 className="text-3xl font-semibold text-stone-900 sm:text-4xl">
+            <h2 className="text-3xl font-normal tracking-tight text-stone-900 sm:text-4xl">
               Kayli — 14 Family Members, Two Dogs &amp; A Secluded Winter Elopement
             </h2>
-            <p className="text-base leading-relaxed text-stone-700">
+            <p className="text-sm leading-7 text-stone-600 sm:text-base">
               For couples dreaming of an intimate Stowe elopement without leaving family—or dogs—behind, Kayli&apos;s celebration brought 14 closest relatives and two dogs together for a relaxed weekend surrounded by 28 private acres.
             </p>
-            <blockquote className="rounded-2xl border-l-4 border-[#c2a060] bg-[#fdfbf7] p-5 text-sm italic leading-relaxed text-stone-700">
+            <blockquote className="border-l border-[#c2a060] pl-5 font-serif text-base italic leading-relaxed text-stone-800">
               &ldquo;We had our elopement at Eden this weekend with 14 of our closest family members and our two dogs. From the moment we drove up the driveway to check in we were in awe of how beautiful the property was. Everything was absolutely perfect! We are so grateful that we were able to have our small intimate wedding here.&rdquo;
-              <footer className="mt-2 not-italic text-xs font-semibold uppercase tracking-[0.16em] text-[#8f7845]">
-                — Kayli · Verified Review, February 2026 (Airbnb)
+              <footer className="mt-3 font-sans text-[0.68rem] font-medium not-italic uppercase tracking-[0.2em] text-stone-500">
+                Kayli · Verified Review, February 2026 (Airbnb)
               </footer>
             </blockquote>
           </div>
@@ -230,68 +228,60 @@ export default function RealWeddingsPage() {
       </section>
 
       {/* Story 3 */}
-      <section className="lux-section bg-gradient-to-br from-[var(--color-linen)] via-[var(--color-eggshell)] to-[var(--color-cream)]">
-        <div className="lux-container space-y-8">
-          <div className="grid gap-8 lg:grid-cols-5 lg:items-center">
-            <div className="space-y-4 lg:col-span-3">
-              <p className="text-xs font-semibold uppercase tracking-[0.35em] text-[#8f7845]">
-                Wedding Party Lodging &amp; Photography · Autumn &amp; Spring
-              </p>
-              <h2 className="text-3xl font-semibold text-stone-900 sm:text-4xl">
-                John A. &amp; Jeff A. — Wedding Party Estate Buyouts &amp; Portrait Grounds
-              </h2>
-              <p className="text-base leading-relaxed text-stone-700">
-                Families hosting weddings in Stowe repeatedly choose Eden for wedding-party accommodations and portrait photography—taking advantage of the grand curving staircase, opulent living spaces, spring-fed pond, and secluded mountain lawns.
-              </p>
-              <div className="grid gap-4 md:grid-cols-2">
-                <blockquote className="rounded-2xl border border-[#d2c4a3]/60 bg-white/90 p-5 text-sm italic leading-relaxed text-stone-700">
-                  &ldquo;My daughter and her wedding party recently stayed at Eden – The Lemelson Estate, in Stowe, Vermont. The property boasts a secluded setting with beautiful views and yet is close to all Stowe has to offer.&rdquo;
-                  <footer className="mt-3 not-italic text-xs font-semibold uppercase tracking-[0.15em] text-[#8f7845]">
-                    — John A. · The Knot (Sep 2024)
-                  </footer>
-                </blockquote>
-                <blockquote className="rounded-2xl border border-[#d2c4a3]/60 bg-white/90 p-5 text-sm italic leading-relaxed text-stone-700">
-                  &ldquo;The venue itself was spacious and beautiful, with a stunning grand staircase, opulent rooms and gorgeous grounds providing the ideal backdrop for wedding photos.&rdquo;
-                  <footer className="mt-3 not-italic text-xs font-semibold uppercase tracking-[0.15em] text-[#8f7845]">
-                    — Jeff A. · Zola (Apr 2025)
-                  </footer>
-                </blockquote>
-              </div>
+      <section className="bg-[#f8f5f0] py-20 md:py-28">
+        <div className="lux-container grid gap-12 lg:grid-cols-12 lg:items-center">
+          <div className="space-y-6 lg:col-span-6">
+            <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
+              Wedding Party Lodging &amp; Photography · Autumn &amp; Spring
+            </p>
+            <h2 className="text-3xl font-normal tracking-tight text-stone-900 sm:text-4xl">
+              John A. &amp; Jeff A. — Wedding Party Estate Buyouts &amp; Portrait Grounds
+            </h2>
+            <p className="text-sm leading-7 text-stone-600 sm:text-base">
+              Families hosting weddings in Stowe repeatedly choose Eden for wedding-party accommodations and portrait photography—taking advantage of the grand curving staircase, opulent living spaces, spring-fed pond, and secluded mountain lawns.
+            </p>
+            <div className="space-y-6 pt-2">
+              <blockquote className="border-l border-[#c2a060] pl-5 font-serif text-base italic leading-relaxed text-stone-800">
+                &ldquo;My daughter and her wedding party recently stayed at Eden – The Lemelson Estate, in Stowe, Vermont. The property boasts a secluded setting with beautiful views and yet is close to all Stowe has to offer.&rdquo;
+                <footer className="mt-2 font-sans text-[0.68rem] font-medium not-italic uppercase tracking-[0.2em] text-stone-500">
+                  John A. · The Knot (Sep 2024)
+                </footer>
+              </blockquote>
+              <blockquote className="border-l border-[#c2a060] pl-5 font-serif text-base italic leading-relaxed text-stone-800">
+                &ldquo;The venue itself was spacious and beautiful, with a stunning grand staircase, opulent rooms and gorgeous grounds providing the ideal backdrop for wedding photos.&rdquo;
+                <footer className="mt-2 font-sans text-[0.68rem] font-medium not-italic uppercase tracking-[0.2em] text-stone-500">
+                  Jeff A. · Zola (Apr 2025)
+                </footer>
+              </blockquote>
             </div>
+          </div>
 
-            <div className="grid gap-4 lg:col-span-2">
-              <div className="overflow-hidden rounded-2xl border border-white/80 shadow-md">
-                <ResponsivePhoto
-                  basePath="/gallery/enhanced/2"
-                  alt="Sunset aerial view of Eden Estate's grounds and pond for wedding portraits"
-                  sizes="(min-width: 1024px) 40vw, 100vw"
-                  width={2400}
-                  height={1600}
-                  className="aspect-[16/10] w-full object-cover"
-                />
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="overflow-hidden rounded-2xl border border-white/80 shadow-md">
-                  <ResponsivePhoto
-                    basePath="/gallery/enhanced/86"
-                    alt="Autumn foliage wedding backdrop at Eden in Stowe, Vermont"
-                    sizes="(min-width: 1024px) 20vw, 50vw"
-                    width={1024}
-                    height={1024}
-                    className="aspect-[4/3] w-full object-cover"
-                  />
-                </div>
-                <div className="overflow-hidden rounded-2xl border border-white/80 shadow-md">
-                  <ResponsivePhoto
-                    basePath="/gallery/Eden-Site%20Photos/108"
-                    alt="Spring-fed pond portrait location at Eden Estate"
-                    sizes="(min-width: 1024px) 20vw, 50vw"
-                    width={2560}
-                    height={1920}
-                    className="aspect-[4/3] w-full object-cover"
-                  />
-                </div>
-              </div>
+          <div className="grid gap-4 lg:col-span-6">
+            <ResponsivePhoto
+              basePath="/gallery/enhanced/2"
+              alt="Sunset aerial view of Eden Estate's grounds and pond for wedding portraits"
+              sizes="(min-width: 1024px) 48vw, 100vw"
+              width={2400}
+              height={1600}
+              className="aspect-[16/10] w-full object-cover"
+            />
+            <div className="grid grid-cols-2 gap-4">
+              <ResponsivePhoto
+                basePath="/gallery/enhanced/86"
+                alt="Autumn foliage wedding backdrop at Eden in Stowe, Vermont"
+                sizes="(min-width: 1024px) 24vw, 50vw"
+                width={1024}
+                height={1024}
+                className="aspect-[4/3] w-full object-cover"
+              />
+              <ResponsivePhoto
+                basePath="/gallery/Eden-Site%20Photos/108"
+                alt="Spring-fed pond portrait location at Eden Estate"
+                sizes="(min-width: 1024px) 24vw, 50vw"
+                width={2560}
+                height={1920}
+                className="aspect-[4/3] w-full object-cover"
+              />
             </div>
           </div>
         </div>
@@ -303,24 +293,27 @@ export default function RealWeddingsPage() {
         items={realWeddingFaqs}
       />
 
-      <section className="lux-section border-t border-stone-200/70 bg-[#fdfbf7]">
-        <div className="lux-container max-w-4xl text-center">
-          <h2 className="text-3xl font-semibold text-stone-900 sm:text-4xl">
+      <section className="border-t border-stone-200 bg-[#f8f5f0] py-20 md:py-24">
+        <div className="lux-container max-w-3xl text-center">
+          <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
+            Start Planning
+          </p>
+          <h2 className="mt-3 text-3xl font-normal tracking-tight text-stone-900 sm:text-4xl">
             Start Planning Your Stowe Estate Wedding
           </h2>
-          <p className="mx-auto mt-3 max-w-2xl text-base text-stone-700">
+          <p className="mx-auto mt-4 max-w-xl text-sm leading-7 text-stone-600 sm:text-base">
             Explore transparent 2026 packages, download the full wedding brochure, or request a private estate tour with Tiffany M.
           </p>
-          <div className="mt-7 flex flex-wrap items-center justify-center gap-4">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
             <Link
               href="/weddings/#pricing"
-              className="inline-flex items-center rounded-full bg-[#111111] px-8 py-3.5 text-[0.95rem] font-semibold !text-white transition hover:bg-stone-800"
+              className="inline-flex items-center bg-stone-950 px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] !text-white transition hover:bg-stone-800"
             >
-              See 2026 Wedding Pricing
+              See 2026 Pricing
             </Link>
             <Link
               href="/contact/"
-              className="inline-flex items-center rounded-full border border-stone-900 px-8 py-3.5 text-[0.95rem] font-semibold text-stone-900 transition hover:bg-stone-50"
+              className="border-b border-stone-900 pb-1 text-xs font-semibold uppercase tracking-[0.2em] text-stone-900 transition hover:border-[#8f7845] hover:text-[#8f7845]"
             >
               Inquire About Dates
             </Link>

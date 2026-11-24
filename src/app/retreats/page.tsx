@@ -108,47 +108,48 @@ const retreatFaqs: FaqItem[] = [
 
 export default function RetreatsPage() {
   return (
-    <div className="bg-white">
-      {/* Hero */}
-      <section className="bg-white pt-8 pb-12 md:pt-12 md:pb-16">
-        <div className="lux-container space-y-8">
+    <div className="bg-white text-stone-900">
+      {/* Editorial Hero */}
+      <section className="pt-8 pb-16 md:pt-12 md:pb-24">
+        <div className="lux-container space-y-10">
           <Breadcrumbs
             items={[
               { name: "Home", href: "/" },
               { name: "Corporate Retreats", href: "/retreats/" },
             ]}
           />
-          <div className="mx-auto max-w-4xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.38em] text-[#8f7845]">
-              Edson Hill Road Area · Stowe, Vermont
-            </p>
-            <h1 className="mt-3 text-3xl font-semibold leading-tight text-stone-900 text-balance sm:text-4xl md:text-5xl">
-              Private Corporate &amp; Executive Retreats in Stowe, Vermont
-            </h1>
-            <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-stone-700 md:text-lg">
-              Step away from crowded hotel ballrooms. Host your leadership offsite, board summit, or client celebration on 28 secluded Vermont acres with total discretion, high-speed fiber internet, private chef dining, and resort-grade wellness amenities.
-            </p>
 
-            <div className="mt-7 flex flex-wrap items-center justify-center gap-4">
-              <Link
-                href="/contact/"
-                className="inline-flex items-center rounded-full bg-[#111111] px-8 py-3.5 text-[0.95rem] font-semibold !text-white transition duration-200 hover:bg-stone-800 active:scale-[0.98]"
-              >
-                Plan an Executive Retreat
-              </Link>
-              <Link
-                href="/news/the-lemelson-estate-opens-doors-to-exclusive-corporate-events/"
-                className="inline-flex items-center rounded-full border border-stone-900 px-8 py-3.5 text-[0.95rem] font-semibold text-stone-900 transition duration-200 hover:bg-stone-50"
-              >
-                Read Corporate Announcement
-              </Link>
+          <div className="grid gap-8 lg:grid-cols-12 lg:items-end">
+            <div className="lg:col-span-7">
+              <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
+                Edson Hill Road Area · Stowe, Vermont
+              </p>
+              <h1 className="mt-4 text-4xl font-normal leading-[1.12] tracking-tight text-stone-900 sm:text-5xl">
+                Private Corporate &amp; Executive Retreats in Stowe, Vermont
+              </h1>
             </div>
-            <p className="mt-3 text-xs text-stone-600">
-              Sleeps up to 20 executives overnight (8BR/8BA) • 250+ tented event capacity • Year-round availability
-            </p>
+            <div className="space-y-5 lg:col-span-5">
+              <p className="text-base leading-7 text-stone-600">
+                Step away from crowded hotel ballrooms. Host your leadership offsite, board summit, or client celebration on 28 secluded Vermont acres with total discretion, high-speed fiber internet, private chef dining, and resort-grade wellness amenities.
+              </p>
+              <div className="flex flex-wrap items-center gap-6">
+                <Link
+                  href="/contact/"
+                  className="inline-flex items-center bg-stone-950 px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] !text-white transition hover:bg-stone-800"
+                >
+                  Plan an Offsite
+                </Link>
+                <Link
+                  href="/news/the-lemelson-estate-opens-doors-to-exclusive-corporate-events/"
+                  className="border-b border-stone-900 pb-1 text-xs font-semibold uppercase tracking-[0.2em] text-stone-900 transition hover:border-[#8f7845] hover:text-[#8f7845]"
+                >
+                  Corporate Announcement
+                </Link>
+              </div>
+            </div>
           </div>
 
-          <div className="overflow-hidden rounded-3xl border border-stone-200 shadow-xl">
+          <div className="overflow-hidden bg-stone-100">
             <div className="aspect-[16/9] w-full">
               <ResponsivePhoto
                 basePath="/gallery/enhanced/87"
@@ -164,92 +165,84 @@ export default function RetreatsPage() {
         </div>
       </section>
 
-      {/* Executive Features Grid */}
-      <section className="lux-section bg-gradient-to-br from-[var(--color-linen)] via-[var(--color-eggshell)] to-[var(--color-cream)]">
-        <div className="lux-container space-y-10">
-          <div className="max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-[#8f7845]">
-              Built for Leadership Teams
-            </p>
-            <h2 className="mt-2 text-3xl font-semibold text-stone-900 sm:text-4xl">
-              Complete privacy, executive connectivity, and Vermont hospitality
-            </h2>
-            <p className="mt-3 text-base leading-relaxed text-stone-700">
+      {/* Executive Capabilities — Editorial Grid */}
+      <section className="bg-[#f8f5f0] py-20 md:py-28">
+        <div className="lux-container space-y-14">
+          <div className="grid gap-6 lg:grid-cols-12 lg:items-end">
+            <div className="lg:col-span-7">
+              <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
+                Built for Leadership Teams
+              </p>
+              <h2 className="mt-3 text-3xl font-normal tracking-tight text-stone-900 sm:text-4xl">
+                Complete privacy, executive connectivity, and Vermont hospitality
+              </h2>
+            </div>
+            <p className="text-sm leading-7 text-stone-600 sm:text-base lg:col-span-5">
               Every retreat is structured around your agenda—balancing productive strategy sessions inside quiet mountain workspaces with restorative outdoor and culinary experiences.
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {executiveFeatures.map((feat) => (
-              <div
-                key={feat.title}
-                className="rounded-3xl border border-[#d2c4a3]/50 bg-white/90 p-6 shadow-[0_20px_45px_-30px_rgba(58,45,20,0.2)] sm:p-7"
-              >
-                <h3 className="text-xl font-semibold text-stone-900">{feat.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-stone-700">{feat.description}</p>
+          <div className="grid gap-x-10 gap-y-12 border-t border-stone-300/70 pt-12 md:grid-cols-2 lg:grid-cols-3">
+            {executiveFeatures.map((feat, idx) => (
+              <div key={feat.title} className="space-y-3">
+                <span className="text-[0.68rem] font-medium tracking-[0.22em] text-[#8f7845]">
+                  0{idx + 1}
+                </span>
+                <h3 className="text-xl font-normal text-stone-900">{feat.title}</h3>
+                <p className="text-sm leading-7 text-stone-600">{feat.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Workspaces & Team Building Gallery */}
-      <section className="lux-section bg-white">
-        <div className="lux-container space-y-10">
-          <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
-            <div className="space-y-4">
-              <p className="text-xs font-semibold uppercase tracking-[0.35em] text-[#8f7845]">
-                Meeting &amp; Strategy Spaces
-              </p>
-              <h2 className="text-3xl font-semibold text-stone-900 sm:text-4xl">
-                Spaces that spark clear strategic thinking
-              </h2>
-              <p className="text-base leading-relaxed text-stone-700">
-                Gather around the polished hardwood conference and dining table for morning keynotes, break out into sunlit lounges and the Great Room by the fire, and close the day over farm-to-table dining or a fireside wine tasting.
-              </p>
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="overflow-hidden rounded-2xl border border-stone-200 shadow-md">
-                <ResponsivePhoto
-                  basePath="/gallery/enhanced/28"
-                  alt="Formal dining and executive meeting table at Eden Estate in Stowe, VT"
-                  sizes="(min-width: 1024px) 25vw, 50vw"
-                  width={2400}
-                  height={1600}
-                  className="aspect-[4/3] w-full object-cover"
-                />
-              </div>
-              <div className="overflow-hidden rounded-2xl border border-stone-200 shadow-md">
-                <ResponsivePhoto
-                  basePath="/gallery/enhanced/13"
-                  alt="Polished dark wood boardroom and formal dining table at Eden"
-                  sizes="(min-width: 1024px) 25vw, 50vw"
-                  width={2400}
-                  height={1600}
-                  className="aspect-[4/3] w-full object-cover"
-                />
-              </div>
-              <div className="overflow-hidden rounded-2xl border border-stone-200 shadow-md">
-                <ResponsivePhoto
-                  basePath="/gallery/Eden-Site%20Photos/98"
-                  alt="Great Room fireside gathering space for leadership teams at Eden"
-                  sizes="(min-width: 1024px) 25vw, 50vw"
-                  width={2560}
-                  height={1704}
-                  className="aspect-[4/3] w-full object-cover"
-                />
-              </div>
-              <div className="overflow-hidden rounded-2xl border border-stone-200 shadow-md">
-                <ResponsivePhoto
-                  basePath="/gallery/enhanced/96"
-                  alt="Private on-site fitness center at Eden: The Lemelson Estate"
-                  sizes="(min-width: 1024px) 25vw, 50vw"
-                  width={2400}
-                  height={1600}
-                  className="aspect-[4/3] w-full object-cover"
-                />
-              </div>
-            </div>
+      {/* Workspaces & Gathering Spaces */}
+      <section className="bg-white py-20 md:py-28">
+        <div className="lux-container grid gap-10 lg:grid-cols-12 lg:items-center">
+          <div className="space-y-4 lg:col-span-5">
+            <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
+              Meeting &amp; Strategy Spaces
+            </p>
+            <h2 className="text-3xl font-normal tracking-tight text-stone-900 sm:text-4xl">
+              Spaces that spark clear strategic thinking
+            </h2>
+            <p className="text-sm leading-7 text-stone-600 sm:text-base">
+              Gather around the polished hardwood conference and dining table for morning keynotes, break out into sunlit lounges and the Great Room by the fire, and close the day over farm-to-table dining or a fireside wine tasting.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-4 lg:col-span-7">
+            <ResponsivePhoto
+              basePath="/gallery/enhanced/28"
+              alt="Formal dining and executive meeting table at Eden Estate in Stowe, VT"
+              sizes="(min-width: 1024px) 30vw, 50vw"
+              width={2400}
+              height={1600}
+              className="aspect-[4/3] w-full object-cover"
+            />
+            <ResponsivePhoto
+              basePath="/gallery/enhanced/13"
+              alt="Polished dark wood boardroom and formal dining table at Eden"
+              sizes="(min-width: 1024px) 30vw, 50vw"
+              width={2400}
+              height={1600}
+              className="aspect-[4/3] w-full object-cover"
+            />
+            <ResponsivePhoto
+              basePath="/gallery/Eden-Site%20Photos/98"
+              alt="Great Room fireside gathering space for leadership teams at Eden"
+              sizes="(min-width: 1024px) 30vw, 50vw"
+              width={2560}
+              height={1704}
+              className="aspect-[4/3] w-full object-cover"
+            />
+            <ResponsivePhoto
+              basePath="/gallery/enhanced/96"
+              alt="Private on-site fitness center at Eden: The Lemelson Estate"
+              sizes="(min-width: 1024px) 30vw, 50vw"
+              width={2400}
+              height={1600}
+              className="aspect-[4/3] w-full object-cover"
+            />
           </div>
         </div>
       </section>
@@ -260,25 +253,28 @@ export default function RetreatsPage() {
         items={retreatFaqs}
       />
 
-      {/* Bottom CTA */}
-      <section className="lux-section border-t border-stone-200/70 bg-[#fdfbf7]">
-        <div className="lux-container max-w-4xl text-center">
-          <h2 className="text-3xl font-semibold text-stone-900 sm:text-4xl">
+      {/* Closing CTA */}
+      <section className="border-t border-stone-200 bg-[#f8f5f0] py-20 md:py-24">
+        <div className="lux-container max-w-3xl text-center">
+          <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
+            Private Buyout Inquiries
+          </p>
+          <h2 className="mt-3 text-3xl font-normal tracking-tight text-stone-900 sm:text-4xl">
             Inquire About Your Stowe Executive Offsite
           </h2>
-          <p className="mx-auto mt-3 max-w-2xl text-base text-stone-700">
+          <p className="mx-auto mt-4 max-w-xl text-sm leading-7 text-stone-600 sm:text-base">
             Share your preferred dates, team headcount, and retreat goals—our concierge team will prepare a custom private buyout proposal with direct-booking rates.
           </p>
-          <div className="mt-7 flex flex-wrap items-center justify-center gap-4">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
             <Link
               href="/contact/"
-              className="inline-flex items-center rounded-full bg-[#111111] px-8 py-3.5 text-[0.95rem] font-semibold !text-white transition duration-200 hover:bg-stone-800"
+              className="inline-flex items-center bg-stone-950 px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] !text-white transition hover:bg-stone-800"
             >
-              Request Retreat Availability
+              Request Availability
             </Link>
             <Link
               href="/stays/"
-              className="inline-flex items-center rounded-full border border-stone-900 px-8 py-3.5 text-[0.95rem] font-semibold text-stone-900 transition duration-200 hover:bg-stone-50"
+              className="border-b border-stone-900 pb-1 text-xs font-semibold uppercase tracking-[0.2em] text-stone-900 transition hover:border-[#8f7845] hover:text-[#8f7845]"
             >
               View Full Estate Specs
             </Link>
