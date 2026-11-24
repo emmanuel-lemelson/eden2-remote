@@ -170,8 +170,8 @@ export function InquiryForm({ endpoint = "https://formspree.io/f/mlgvzjrj" }: In
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
           {/* Full Name */}
           <div className="space-y-1.5">
-            <label htmlFor="name" className="flex h-5 items-center text-[0.68rem] font-extrabold uppercase tracking-wider text-stone-900">
-              Full Name <span className="text-red-500 text-lg font-extrabold ml-1 align-middle">*</span>
+            <label htmlFor="name" className="flex h-5 items-center text-[0.68rem] font-semibold uppercase tracking-wider text-stone-900">
+              Full Name <span className="text-red-500 text-lg font-semibold ml-1 align-middle">*</span>
             </label>
             <input
               type="text"
@@ -188,8 +188,8 @@ export function InquiryForm({ endpoint = "https://formspree.io/f/mlgvzjrj" }: In
  
           {/* Email Address */}
           <div className="space-y-1.5">
-            <label htmlFor="email" className="flex h-5 items-center text-[0.68rem] font-extrabold uppercase tracking-wider text-stone-900">
-              Email Address <span className="text-red-500 text-lg font-extrabold ml-1 align-middle">*</span>
+            <label htmlFor="email" className="flex h-5 items-center text-[0.68rem] font-semibold uppercase tracking-wider text-stone-900">
+              Email Address <span className="text-red-500 text-lg font-semibold ml-1 align-middle">*</span>
             </label>
             <input
               type="email"
@@ -209,7 +209,7 @@ export function InquiryForm({ endpoint = "https://formspree.io/f/mlgvzjrj" }: In
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
           {/* Phone (Optional) */}
           <div className="space-y-1.5">
-            <label htmlFor="phone" className="flex h-5 items-center text-[0.68rem] font-extrabold uppercase tracking-wider text-stone-900">
+            <label htmlFor="phone" className="flex h-5 items-center text-[0.68rem] font-semibold uppercase tracking-wider text-stone-900">
               Phone Number
             </label>
             <input
@@ -226,8 +226,8 @@ export function InquiryForm({ endpoint = "https://formspree.io/f/mlgvzjrj" }: In
  
           {/* Purpose of Stay */}
           <div className="space-y-1.5">
-            <label htmlFor="eventType" className="flex h-5 items-center text-[0.68rem] font-extrabold uppercase tracking-wider text-stone-900">
-              Purpose of Stay <span className="text-red-500 text-lg font-extrabold ml-1 align-middle">*</span>
+            <label htmlFor="eventType" className="flex h-5 items-center text-[0.68rem] font-semibold uppercase tracking-wider text-stone-900">
+              Purpose of Stay <span className="text-red-500 text-lg font-semibold ml-1 align-middle">*</span>
             </label>
             <div className="relative">
               <select
@@ -254,7 +254,7 @@ export function InquiryForm({ endpoint = "https://formspree.io/f/mlgvzjrj" }: In
  
           {/* Guest Count Input Box */}
           <div className="space-y-1.5">
-            <label htmlFor="guests" className="flex h-5 items-center text-[0.68rem] font-extrabold uppercase tracking-wider text-stone-900">
+            <label htmlFor="guests" className="flex h-5 items-center text-[0.68rem] font-semibold uppercase tracking-wider text-stone-900">
               Total Guests
             </label>
             <input
@@ -271,7 +271,7 @@ export function InquiryForm({ endpoint = "https://formspree.io/f/mlgvzjrj" }: In
  
         {/* Row 3: Check-in / Out Dates Block with Airbnb Flexible Selector */}
         <div className="space-y-1.5">
-          <label className="flex h-5 items-center text-[0.68rem] font-extrabold uppercase tracking-wider text-stone-900">
+          <label className="flex h-5 items-center text-[0.68rem] font-semibold uppercase tracking-wider text-stone-900">
             Requested Stay
           </label>
           <div className="rounded-xl border border-stone-200/60 bg-white/60 p-3 sm:p-4">
@@ -281,7 +281,7 @@ export function InquiryForm({ endpoint = "https://formspree.io/f/mlgvzjrj" }: In
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   {/* Check-In */}
                   <div className="space-y-1.5">
-                    <label htmlFor="checkIn" className="flex h-5 items-center text-[0.68rem] font-extrabold uppercase tracking-wider text-stone-900">
+                    <label htmlFor="checkIn" className="flex h-5 items-center text-[0.68rem] font-semibold uppercase tracking-wider text-stone-900">
                       Check-In Date
                     </label>
                     <input
@@ -296,7 +296,7 @@ export function InquiryForm({ endpoint = "https://formspree.io/f/mlgvzjrj" }: In
  
                   {/* Check-Out */}
                   <div className="space-y-1.5">
-                    <label htmlFor="checkOut" className="flex h-5 items-center text-[0.68rem] font-extrabold uppercase tracking-wider text-stone-900">
+                    <label htmlFor="checkOut" className="flex h-5 items-center text-[0.68rem] font-semibold uppercase tracking-wider text-stone-900">
                       Check-Out Date
                     </label>
                     <input
@@ -331,7 +331,7 @@ export function InquiryForm({ endpoint = "https://formspree.io/f/mlgvzjrj" }: In
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   {/* Stay Length */}
                   <div className="space-y-1.5">
-                    <label htmlFor="customDuration" className="flex h-5 items-center text-[0.68rem] font-extrabold uppercase tracking-wider text-stone-900">
+                    <label htmlFor="customDuration" className="flex h-5 items-center text-[0.68rem] font-semibold uppercase tracking-wider text-stone-900">
                       Length of Stay
                     </label>
                     <input
@@ -347,7 +347,7 @@ export function InquiryForm({ endpoint = "https://formspree.io/f/mlgvzjrj" }: In
  
                   {/* Target Month/Season */}
                   <div className="space-y-1.5">
-                    <label htmlFor="flexibleMonth" className="flex h-5 items-center text-[0.68rem] font-extrabold uppercase tracking-wider text-stone-900">
+                    <label htmlFor="flexibleMonth" className="flex h-5 items-center text-[0.68rem] font-semibold uppercase tracking-wider text-stone-900">
                       Target Timeframe
                     </label>
                     <div className="relative">
@@ -395,8 +395,8 @@ export function InquiryForm({ endpoint = "https://formspree.io/f/mlgvzjrj" }: In
 
         {/* Row 4: Planning Details / Notes */}
         <div className="space-y-1.5">
-          <label htmlFor="requirements" className="flex h-5 items-center text-[0.68rem] font-extrabold uppercase tracking-wider text-stone-900">
-            How can we help? <span className="text-red-500 text-lg font-extrabold ml-1 align-middle">*</span>
+          <label htmlFor="requirements" className="flex h-5 items-center text-[0.68rem] font-semibold uppercase tracking-wider text-stone-900">
+            How can we help? <span className="text-red-500 text-lg font-semibold ml-1 align-middle">*</span>
           </label>
           <textarea
             id="requirements"

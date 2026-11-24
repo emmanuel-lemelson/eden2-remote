@@ -9,9 +9,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/",
     "/stays/",
     "/weddings/",
-    "/weddings/real-weddings/",
     "/retreats/",
-    "/guides/stowe-ski-house/",
+    "/guides/ski-season/",
     "/guides/stowe-fall-foliage/",
     "/guides/stowe-family-reunions/",
     "/gallery/",
@@ -22,10 +21,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
   const highPriorityRoutes = new Set(["/stays/", "/weddings/", "/retreats/"]);
   const guideRoutes = new Set([
-    "/guides/stowe-ski-house/",
+    "/guides/ski-season/",
     "/guides/stowe-fall-foliage/",
     "/guides/stowe-family-reunions/",
-    "/weddings/real-weddings/",
   ]);
   return routes.map((path) => ({
     url: new URL(path, base).toString(),

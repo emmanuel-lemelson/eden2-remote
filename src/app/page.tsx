@@ -1,44 +1,49 @@
 import Image from "next/image";
 import Link from "next/link";
 import { SectionHeading } from "@/components/SectionHeading";
-import { TestimonialCarousel, PerfectReviewsBadge } from "@/components/TestimonialCarousel";
+import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 import { AutoPlayVideo } from "@/components/AutoPlayVideo";
 import { WhereToFindUs } from "@/components/WhereToFindUs";
 import { FaqSection, type FaqItem } from "@/components/FaqSection";
+import { ResponsivePhoto } from "@/components/ResponsivePhoto";
 
 const quickFacts = [
-  { label: "Bedrooms & Baths", value: "8 Bed · 8 Bath" },
-  { label: "Overnight / Events", value: "Sleeps 20 · Up to 300 Tented" },
-  { label: "Interior & Grounds", value: "11,400 sq ft · 28 Private Acres" },
-  { label: "Wellness & Recreation", value: "Heated Pool, 3 Spas, Sauna, Tennis, Gym" },
-  { label: "Location", value: "Edson Hill Road Area · 5 Min to Skiing" },
-  { label: "Stays", value: "Pet-Friendly · Direct Booking" },
+  { value: "8 Bed · 8 Bath", detail: "11,400 sq ft private residence" },
+  { value: "Sleeps 20", detail: "Up to 300 for tented events" },
+  { value: "28 Acres", detail: "Edson Hill Road area, Stowe" },
+  { value: "Pool & 3 Spas", detail: "Heated pool, sauna, tennis & gym" },
+  { value: "5 Min to Skiing", detail: "Stowe Mountain Resort & trails" },
+  { value: "Pet-Friendly", detail: "Pets welcome on stays" },
 ];
 
 const experienceCards = [
   {
-    eyebrow: "Vacation & Ski Stays",
-    title: "Luxury Stowe Vacation & Ski Stays",
-    description:
-      "8 bedrooms, sleeps 20, pet-friendly stays just 5 minutes from Stowe Mountain Resort—with 3 hot tubs, sauna, heated pool, playroom, and zero third-party platform fees.",
+    title: "Luxury Stays",
+    description: "Private Stowe mountain getaways.",
     href: "/stays/",
-    cta: "Explore Luxury Stays",
+    cta: "Explore Stays",
+    photo: "/gallery/enhanced/87",
+    alt: "Twilight view of Eden: The Lemelson Estate pool, stone terrace, and glowing residence",
+    imgClass: "h-full w-full object-cover object-center transition duration-700 ease-out group-hover:scale-[1.03]",
   },
   {
-    eyebrow: "Private Estate Weddings",
-    title: "Private Estate Weddings",
-    description:
-      "28 private acres with Worcester Mountain views, lodging for 20 overnight guests, Upper Meadow tented receptions up to 300, no food & beverage minimums, and transparent 2026 pricing.",
+    title: "Weddings",
+    description: "Tented receptions up to 300.",
     href: "/weddings/",
-    cta: "View 2026 Wedding Pricing",
+    cta: "View Pricing",
+    photo: "/gallery/Eden-Site%20Photos/83",
+    alt: "Bride and groom embracing outside Eden: The Lemelson Estate in Stowe",
+    maxWidth: 800 as const,
+    imgClass: "h-full w-full object-cover object-[50%_58%] transition duration-700 ease-out group-hover:scale-[1.03]",
   },
   {
-    eyebrow: "Executive Offsites",
-    title: "Corporate & Executive Retreats",
-    description:
-      "Total privacy for leadership summits and board retreats—featuring high-speed fiber-optic Wi-Fi, breakout spaces, private chef farm-to-table dining, and curated Stowe itineraries.",
+    title: "Executive Retreats",
+    description: "Discreet leadership offsites.",
     href: "/retreats/",
-    cta: "Explore Corporate Retreats",
+    cta: "Explore Retreats",
+    photo: "/gallery/Eden-Site%20Photos/99",
+    alt: "Sunlit Great Room with leather Chesterfield sofas, dining area, and arched mountain windows at Eden Estate",
+    imgClass: "h-full w-full object-cover object-center transition duration-700 ease-out group-hover:scale-[1.03]",
   },
 ];
 
@@ -61,12 +66,12 @@ const homeFaqs: FaqItem[] = [
   {
     question: "Is Eden a pet-friendly vacation rental?",
     answer:
-      "Yes. Eden welcomes pets on vacation stays so the entire family can enjoy Stowe together. Let our estate team know about your pets when submitting your inquiry.",
+      "Yes. Eden welcomes pets on stays so the entire family can enjoy Stowe together. Let our estate team know about your pets when submitting your inquiry.",
   },
   {
     question: "What wellness and family amenities are included?",
     answer:
-      "Guests have exclusive access to a year-round 10-person outdoor hot tub, indoor 2-person spa, mountain-view garden spa, private cedar sauna, steam shower, seasonal heated pool (May–Sept), private gym, clay tennis court, game room, children's playroom, and twin spring-fed trout ponds.",
+      "Guests have exclusive access to two large outdoor hot tubs, an indoor spa, private cedar sauna, steam shower, heated outdoor pool, private gym, clay tennis court, game room, children's playroom, and twin spring-fed trout ponds.",
   },
 ];
 
@@ -80,14 +85,6 @@ const galleryPreview = [
     alt: "Breathtaking high-altitude sunset aerial view of the entire luxury estate, showing the main residence, swimming pool, and spring-fed pond.",
   },
   {
-    src: "/gallery/Eden-Site%20Photos/98@1200w.webp",
-    srcSet:
-      "/gallery/Eden-Site%20Photos/98@400w.webp 400w, /gallery/Eden-Site%20Photos/98@800w.webp 800w, /gallery/Eden-Site%20Photos/98@1200w.webp 1200w",
-    avifSrcSet:
-      "/gallery/Eden-Site%20Photos/98@400w.avif 400w, /gallery/Eden-Site%20Photos/98@800w.avif 800w, /gallery/Eden-Site%20Photos/98@1200w.avif 1200w",
-    alt: "Wide-angle interior view of the magnificent Great Room featuring soaring timber trusses, a massive stone fireplace, two Chesterfield leather sofas, and a grand piano.",
-  },
-  {
     src: "/gallery/Eden-Site%20Photos/103@1200w.webp",
     srcSet:
       "/gallery/Eden-Site%20Photos/103@400w.webp 400w, /gallery/Eden-Site%20Photos/103@800w.webp 800w, /gallery/Eden-Site%20Photos/103@1200w.webp 1200w",
@@ -96,49 +93,59 @@ const galleryPreview = [
     alt: "Luxury master bathroom en-suite showing a soaking tub set in a dark marble deck under a dramatic arched window framing a mountain sunset.",
   },
   {
-    src: "/gallery/enhanced/87@1200w.webp",
+    src: "/gallery/Eden-Site%20Photos/71@800w.webp",
     srcSet:
-      "/gallery/enhanced/87@400w.webp 400w, /gallery/enhanced/87@800w.webp 800w, /gallery/enhanced/87@1200w.webp 1200w",
+      "/gallery/Eden-Site%20Photos/71@400w.webp 400w, /gallery/Eden-Site%20Photos/71@800w.webp 800w",
     avifSrcSet:
-      "/gallery/enhanced/87@400w.avif 400w, /gallery/enhanced/87@800w.avif 800w, /gallery/enhanced/87@1200w.avif 1200w",
-    alt: "Rear exterior twilight view of the estate, showcasing the glowing warm windows overlooking the stone-paved patio and private swimming pool.",
+      "/gallery/Eden-Site%20Photos/71@400w.avif 400w, /gallery/Eden-Site%20Photos/71@800w.avif 800w",
+    alt: "Spacious recreation and fitness room featuring a foosball table, air hockey, and exercise equipment.",
   },
 ];
 
 const testimonials = [
   {
+    title: "Worth Every Penny",
     quote:
       "Absolutely loved this place, worth every single penny. Secluded, beautiful, fun, and spacious. The service was the best I’ve EVER experienced, with nonstop communication and instant responses. I truly felt like a guest, not a client.",
     name: "Joshua",
-    detail: "Stayed Jul 2025, Group Trip",
+    month: "Jul",
+    year: "2025",
     platform: "Airbnb",
   },
   {
+    title: "Stowe Spectacular",
     quote:
       "This magnificent estate is impeccably clean and well cared for. The host left wine, snacks, and flowers on the kitchen counter, and even put little boxes of chocolate on every bed! The sauna, hot tub, and game room are outstanding.",
     name: "Margot M.",
-    detail: "Stayed Feb 2025, VRBO Guest",
+    month: "Feb",
+    year: "2025",
     platform: "Vrbo",
   },
   {
+    title: "Exceptionally Beautiful Home and Property",
     quote:
       "Perfect house for a large family or group. Extremely clean and in perfect order. The pool, hot tub, and clay tennis court were fantastic with beautiful views of the mountains, gardens, and the most awesome sunsets! I highly recommend this house.",
     name: "Susan C. W.",
-    detail: "Stayed Jul 2023, VRBO Guest",
+    month: "Jul",
+    year: "2023",
     platform: "Vrbo",
   },
   {
+    title: "A Christmas to Remember",
     quote:
       "This incredible property is a unique combination of the luxury, amenities and benefits of a 5-star resort with the intimacy and privacy that comes with renting a vacation home. The experience was flawless and exceeded our expectations—no detail was overlooked.",
     name: "Nazzic K.",
-    detail: "Christmas Getaway, Dec 2021",
+    month: "Dec",
+    year: "2021",
     platform: "Vrbo",
   },
   {
+    title: "Luxury Winter Wedding",
     quote:
       "We had our wedding ceremony in the great room and enjoyed the weekend with our family. It was absolutely beautiful throughout the house and had so many perks and special amenities—we definitely felt like we were staying in a very luxurious place.",
     name: "Seanna",
-    detail: "Winter Wedding, Feb 2023",
+    month: "Feb",
+    year: "2023",
     platform: "Airbnb",
   },
 ];
@@ -177,8 +184,8 @@ export default function Home() {
               className="h-48 w-auto -mt-10 -mb-6 md:h-72 md:-mt-12 md:-mb-8"
               priority
             />
-            <h1 className="text-3xl font-semibold leading-tight text-balance sm:text-[2.35rem] md:text-5xl">The Lemelson Estate Welcomes You</h1>
-            <p className="text-xs uppercase tracking-[0.35em] text-stone-600 sm:text-sm md:text-base">Luxury Vacation Rental, Private Wedding &amp; Retreat Estate in Stowe, Vermont</p>
+            <h1 className="text-4xl font-semibold leading-tight text-balance md:text-5xl">The Lemelson Estate Welcomes You</h1>
+            <p className="text-xs uppercase tracking-[0.35em] text-stone-700 sm:text-sm md:text-base">Bespoke Luxury in Stowe, Vermont</p>
           </div>
 
           <div className="w-full">
@@ -224,143 +231,124 @@ export default function Home() {
             </Link>
             <p
               id="hero-direct-booking-note"
-              className="flex flex-wrap items-center justify-center gap-x-2.5 gap-y-1 text-xs font-medium tracking-[0.03em] text-stone-600 sm:text-[0.8125rem]"
+              className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1.5 text-xs font-medium tracking-[0.03em] text-stone-700 sm:text-[0.8125rem]"
             >
-              <span className="inline-flex items-center gap-1.5 text-stone-800">
-                <svg
-                  aria-hidden="true"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.75"
-                  className="h-3.5 w-3.5 text-[#8f7845]"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 10.5l3.5 3.5 7.5-8" />
-                </svg>
-                Book directly with the estate
-              </span>
-              <span aria-hidden="true" className="text-[#c2a060]">•</span>
-              <span>Zero third-party platform fees</span>
-              <span aria-hidden="true" className="text-[#c2a060]">•</span>
-              <span>Best rate guaranteed</span>
+              {["Book directly", "No 3rd party platform fees", "Best rate guaranteed"].map((item) => (
+                <span key={item} className="inline-flex items-center gap-1.5">
+                  <svg
+                    aria-hidden="true"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.75"
+                    className="h-3.5 w-3.5 text-[#8f7845]"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 10.5l3.5 3.5 7.5-8" />
+                  </svg>
+                  {item}
+                </span>
+              ))}
             </p>
           </div>
         </div>
       </section>
 
       <section className="bg-gradient-to-br from-[var(--color-linen)] via-[var(--color-eggshell)] to-[var(--color-cream)]">
-        <div className="lux-container py-10 md:py-14">
+        <div className="lux-container py-8 md:py-10">
           <WhereToFindUs title="As Seen On" />
         </div>
       </section>
 
-      <section className="lux-section bg-white animate-fade-up fade-delay-1">
-        <div className="lux-container !px-4 sm:!px-6">
-          <div className="relative grid gap-6 overflow-hidden rounded-[2.75rem] border border-[color:rgba(217,209,195,0.4)] bg-gradient-to-br from-[var(--color-linen)] via-[var(--color-eggshell)] to-[color:rgba(210,196,163,0.15)] px-3 py-7 shadow-[0_32px_64px_-40px_rgba(58,45,20,0.18)] sm:px-10 sm:py-10 md:grid-cols-3 md:p-14">
-            <div
-              className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/20 via-transparent to-[color:rgba(210,196,163,0.15)]"
-              aria-hidden
-            />
-
-            <div className="relative md:col-span-1">
-              <h2 className="text-3xl font-semibold text-[var(--color-charcoal)] sm:text-[2.5rem]">
-                Estate at a glance
-              </h2>
-              <p className="mt-3 text-sm leading-relaxed text-stone-700 sm:mt-4 sm:text-base">
-                Escape to one of Stowe’s most exclusive estates. With 11,400 square
-                feet of living space, Eden offers room for up to 20 guests to gather in
-                comfort and style.
-              </p>
-            </div>
-
-            <dl className="relative grid grid-cols-2 gap-3 sm:gap-4 md:col-span-2 md:grid-cols-2">
-              {quickFacts.map((fact) => (
-                <div
-                  key={fact.label}
-                  className="relative overflow-hidden rounded-2xl border border-[var(--color-gold)]/25 bg-white/45 p-5 shadow-[0_12px_30px_-15px_rgba(58,45,20,0.02)] backdrop-blur-md sm:p-6"
-                >
-                  <dt className="relative text-[0.62rem] font-bold uppercase tracking-[0.2em] text-stone-500 sm:text-xs">
-                    {fact.label}
-                  </dt>
-                  <dd className="relative mt-1 text-base font-semibold text-stone-900 sm:mt-2 sm:text-lg md:text-xl">
-                    {fact.value}
-                  </dd>
-                </div>
-              ))}
-            </dl>
+      <section className="py-10 md:py-14 bg-white animate-fade-up fade-delay-1">
+        <div className="lux-container space-y-8 md:space-y-10">
+          <div className="space-y-2">
+            <h2 className="text-3xl font-semibold tracking-tight text-stone-900 md:text-4xl">
+              Estate at a glance.
+            </h2>
+            <p className="text-base text-stone-700">
+              One of Stowe’s most exclusive private mountain estates.
+            </p>
           </div>
+
+          <dl className="grid grid-cols-2 gap-3.5 sm:gap-4 md:grid-cols-3">
+            {quickFacts.map((fact) => (
+              <div
+                key={fact.value}
+                className="rounded-2xl bg-[#faf6ef] p-5 sm:p-6"
+              >
+                <dt className="text-xl font-semibold tracking-tight text-stone-900 sm:text-2xl">
+                  {fact.value}
+                </dt>
+                <dd className="mt-1.5 text-sm leading-relaxed text-stone-700">
+                  {fact.detail}
+                </dd>
+              </div>
+            ))}
+          </dl>
         </div>
       </section>
 
-      <section className="lux-section !pt-4 !pb-12 bg-white animate-fade-up fade-delay-1">
-        <div className="lux-container space-y-12">
+      <section className="py-10 md:py-14 bg-[#f8f3ea]/70 animate-fade-up fade-delay-1">
+        <div className="lux-container space-y-8">
           <SectionHeading
-            eyebrow="Experience Eden"
-            title="Tailored for Stays, Weddings & Retreats"
-            description="Discover how guests reserve Eden directly for mountain getaways, full-weekend estate weddings, and executive offsites in Stowe, Vermont."
-            align="center"
+            title="Luxury stays, weddings, executive retreats"
           />
 
-          <div className="grid gap-10 border-y border-stone-200 py-12 md:grid-cols-3 md:gap-8">
-            {experienceCards.map((card, idx) => (
-              <div
+          <div className="grid gap-4 md:grid-cols-3 md:gap-5">
+            {experienceCards.map((card) => (
+              <Link
                 key={card.href}
-                className="flex flex-col justify-between space-y-6 md:border-r md:border-stone-200 md:pr-8 last:md:border-r-0 last:md:pr-0"
+                href={card.href}
+                className="group flex flex-col overflow-hidden rounded-3xl bg-white shadow-[0_16px_40px_-28px_rgba(58,45,20,0.18)] transition duration-300 hover:shadow-[0_24px_48px_-28px_rgba(58,45,20,0.28)]"
               >
-                <div className="space-y-3">
-                  <p className="text-[0.68rem] font-medium uppercase tracking-[0.28em] text-[#8f7845]">
-                    0{idx + 1} · {card.eyebrow}
-                  </p>
-                  <h3 className="text-2xl font-normal text-stone-900">
-                    {card.title}
-                  </h3>
-                  <p className="text-sm leading-7 text-stone-600">
-                    {card.description}
-                  </p>
+                <div className="relative aspect-[4/3] w-full overflow-hidden">
+                  <ResponsivePhoto
+                    basePath={card.photo}
+                    alt={card.alt}
+                    sizes="(min-width: 768px) 33vw, 100vw"
+                    maxWidth={card.maxWidth ?? 1200}
+                    className={card.imgClass}
+                  />
                 </div>
-                <div>
-                  <Link
-                    href={card.href}
-                    className="inline-block border-b border-stone-900 pb-1 text-xs font-semibold uppercase tracking-[0.2em] text-stone-900 transition hover:border-[#8f7845] hover:text-[#8f7845]"
-                  >
-                    {card.cta}
-                  </Link>
+                <div className="flex flex-1 flex-col justify-between p-6">
+                  <div>
+                    <h3 className="text-xl font-semibold tracking-tight text-stone-900 sm:text-2xl">
+                      {card.title}
+                    </h3>
+                    <p className="mt-1.5 text-sm leading-relaxed text-stone-700">
+                      {card.description}
+                    </p>
+                  </div>
+                  <div className="pt-5">
+                    <span className="inline-flex items-center rounded-full bg-[#111111] px-5 py-2 text-xs font-semibold text-white transition duration-200 group-hover:bg-stone-800">
+                      {card.cta}
+                    </span>
+                  </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-x-7 gap-y-3 text-xs font-medium uppercase tracking-[0.2em] text-stone-600">
-            <span className="text-stone-400">Seasonal &amp; Group Guides</span>
-            <Link
-              href="/guides/stowe-ski-house/"
-              className="border-b border-transparent pb-0.5 transition hover:border-[#8f7845] hover:text-[#8f7845]"
-            >
-              Stowe Ski House
-            </Link>
-            <Link
-              href="/guides/stowe-fall-foliage/"
-              className="border-b border-transparent pb-0.5 transition hover:border-[#8f7845] hover:text-[#8f7845]"
-            >
-              October Fall Foliage
-            </Link>
-            <Link
-              href="/guides/stowe-family-reunions/"
-              className="border-b border-transparent pb-0.5 transition hover:border-[#8f7845] hover:text-[#8f7845]"
-            >
-              Family Reunions
-            </Link>
-            <Link
-              href="/weddings/real-weddings/"
-              className="border-b border-transparent pb-0.5 transition hover:border-[#8f7845] hover:text-[#8f7845]"
-            >
-              Real Weddings
-            </Link>
+          <div className="flex flex-wrap items-center justify-start gap-2.5 pt-1">
+            <span className="mr-1 text-sm font-medium text-stone-700">Guides:</span>
+            {[
+              { label: "Ski Season", href: "/guides/ski-season/" },
+              { label: "Fall Foliage", href: "/guides/stowe-fall-foliage/" },
+              { label: "Family Reunions", href: "/guides/stowe-family-reunions/" },
+            ].map((guide) => (
+              <Link
+                key={guide.href}
+                href={guide.href}
+                className="inline-flex items-center gap-1 rounded-full bg-white/90 px-4 py-1.5 text-sm font-medium text-stone-900 shadow-sm transition hover:bg-white"
+              >
+                {guide.label} <span aria-hidden="true">›</span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="lux-section !pb-8 md:!pb-12 bg-white/80 animate-fade-up fade-delay-2">
+      <section className="py-10 md:py-14 bg-white animate-fade-up fade-delay-2">
         <div className="lux-container space-y-8">
           <SectionHeading
             eyebrow="Gallery"
@@ -368,7 +356,7 @@ export default function Home() {
             description="Your Private Vermont Resort"
           />
 
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 sm:gap-5">
+          <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 sm:gap-5">
             {galleryPreview.map((item) => {
               return (
                 <div
@@ -414,13 +402,20 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="lux-section !pt-4 md:!pt-6 bg-white/80 animate-fade-up">
-        <div className="lux-container flex flex-col items-center gap-8">
-          <div className="flex flex-col items-center gap-4 text-center max-w-3xl">
-            <h2 className="text-4xl font-semibold text-stone-900 md:text-5xl">What Our Guests Say</h2>
-            <div className="mt-2 flex justify-center">
-              <PerfectReviewsBadge reviewCount={62} countLabel="REVIEWS" />
-            </div>
+      <section className="py-10 md:py-14 bg-gradient-to-br from-[var(--color-linen)] via-[var(--color-eggshell)] to-[var(--color-cream)] animate-fade-up">
+        <div className="lux-container flex flex-col items-center gap-6">
+          <div className="flex flex-col items-center gap-3 text-center max-w-3xl">
+            <h2 className="text-3xl font-semibold text-stone-900 md:text-4xl">What Our Guests Say</h2>
+            <p className="flex items-center gap-2 text-base font-medium text-stone-700">
+              <span className="flex items-center gap-0.5 text-[#8f7845]" aria-hidden="true">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <svg key={i} viewBox="0 0 24 24" className="h-4 w-4 fill-current">
+                    <path d="M12 2.25l2.35 6.36 6.9.22-5.38 4.26 1.89 6.66-5.76-3.67-5.76 3.67 1.89-6.66-5.38-4.26 6.9-.22L12 2.25z" />
+                  </svg>
+                ))}
+              </span>
+              <span>5.0 across 62 verified reviews</span>
+            </p>
           </div>
           
           <div className="w-full">
@@ -442,14 +437,15 @@ export default function Home() {
         title="Questions About Eden in Stowe"
         description="Key facts for guests planning a Stowe vacation rental stay, private estate wedding, or executive retreat."
         items={homeFaqs}
+        className="!py-10 md:!py-14"
       />
 
-      <section className="lux-section bg-white animate-fade-up fade-delay-2">
-        <div className="lux-container overflow-hidden rounded-3xl border border-white/60 bg-white/80 p-10 text-center md:p-16">
-          <h2 className="text-4xl font-semibold text-stone-900 md:text-5xl">
+      <section className="py-10 md:py-14 bg-gradient-to-br from-[var(--color-linen)] via-[var(--color-eggshell)] to-[var(--color-cream)] animate-fade-up fade-delay-2">
+        <div className="lux-container overflow-hidden rounded-3xl border border-white/70 bg-white/90 p-8 text-center shadow-[0_24px_48px_-32px_rgba(58,45,20,0.18)] md:p-12">
+          <h2 className="text-3xl font-semibold text-stone-900 md:text-4xl">
             Reserve Eden for your next gathering.
           </h2>
-          <p className="mt-4 text-base text-stone-700 md:text-lg">
+          <p className="mt-4 text-base text-stone-700">
             Share your vision with us, and we&apos;ll work with you to craft an unforgettable experience that exceeds your expectations.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">

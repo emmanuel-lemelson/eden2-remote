@@ -25,8 +25,8 @@ function StarRating({ rating }: { rating: { scale: number; value: number; label?
   const percent = (normalized / 5) * 100;
 
   return (
-    <div className="flex flex-col items-end">
-      <div className="relative flex">
+    <div className="flex items-center gap-2">
+      <div className="relative flex shrink-0">
         <div className="flex text-[#d9d1c3]">
           {Array.from({ length: 5 }).map((_, index) => (
             <StarIcon key={`star-base-${index}`} className="h-4 w-4" />
@@ -40,50 +40,62 @@ function StarRating({ rating }: { rating: { scale: number; value: number; label?
           </div>
         </div>
       </div>
-      <span className="mt-1 text-[0.7rem] font-semibold text-stone-600">
-        {rating.value}/{rating.scale}
-        {rating.label ? ` · ${rating.label}` : ""}
-      </span>
     </div>
   );
 }
 
-function ReviewCard({ r }: { r: NormalizedReview }) {
+/** Lets the final card fill the row so the grid never ends on an empty slot. */
+function lastCardSpan(count: number) {
+  const classes: string[] = [];
+  if (count % 2 === 1) classes.push("sm:col-span-2");
+  if (count % 3 === 0) classes.push("xl:col-span-1");
+  else if (count % 3 === 1) classes.push("xl:col-span-3");
+  else classes.push("xl:col-span-2");
+  return classes.join(" ");
+}
+
+function ReviewCard({ r, className = "" }: { r: NormalizedReview; className?: string }) {
   const [expanded, setExpanded] = useState(false);
   const long = (r.review?.length ?? 0) > 200;
   const displayText = expanded || !long ? r.review : r.review.slice(0, 200) + "…";
 
   return (
-    <article className="flex h-full flex-col rounded-2xl border border-white/70 bg-gradient-to-b from-white/95 to-white/85 p-4 text-sm text-stone-800 shadow-[0_20px_45px_-20px_rgba(30,30,40,0.35)]">
-      <div className="flex items-start justify-between gap-3">
-        <div>
-          <h3 className="text-base font-semibold text-stone-900">{r.title}</h3>
-          <p className="mt-0.5 text-[0.75rem] uppercase tracking-[0.18em] text-stone-500">
-            {r.reviewer}{r.dateText ? ` · ${r.dateText}` : ""}
-          </p>
+    <article className={`flex h-full flex-col rounded-2xl ${className} border border-white/70 bg-gradient-to-b from-white/95 to-white/85 p-5 text-sm text-stone-800 shadow-[0_20px_45px_-20px_rgba(30,30,40,0.35)]`}>
+      <div className="flex items-center justify-between gap-3">
+        <div>{r.rating ? <StarRating rating={r.rating} /> : null}</div>
+        <div className="shrink-0">
+          <PlatformBadge platform={r.platform} />
         </div>
-        {r.rating ? <StarRating rating={r.rating} /> : null}
       </div>
 
-      <p className="mt-3 whitespace-pre-line leading-6 text-[0.95rem] text-stone-700">
-        <span className="text-[1.05rem] font-medium text-stone-600">“</span>
+      {r.title ? (
+        <h3 className="mt-2.5 ![font-family:var(--font-body)] text-[0.95rem] font-semibold leading-snug tracking-normal text-stone-900 text-balance">
+          {r.title}
+        </h3>
+      ) : null}
+
+      <p className="mt-2 whitespace-pre-line leading-6 text-[0.925rem] text-stone-700 text-pretty">
+        <span className="text-[1.02rem] font-medium text-stone-600">“</span>
         {displayText}
-        {long && (
-          <button
-            type="button"
-            onClick={() => setExpanded((s) => !s)}
-            className="ml-1.5 inline-flex items-center font-bold text-[#c2a060] hover:text-[#a08145] transition-colors focus:outline-none focus:underline cursor-pointer"
-            aria-expanded={expanded}
-          >
-            {expanded ? "Read Less" : "Read More"}
-          </button>
-        )}
-        <span className="text-[1.05rem] font-medium text-stone-600">”</span>
+        <span className="text-[1.02rem] font-medium text-stone-600">”</span>
       </p>
+      {long && (
+        <button
+          type="button"
+          onClick={() => setExpanded((s) => !s)}
+          className="mt-1.5 inline-flex min-h-9 w-fit cursor-pointer items-center gap-1 text-sm font-semibold text-stone-900 underline decoration-stone-400 underline-offset-4 transition-colors hover:text-[#8f7845] hover:decoration-[#8f7845] focus:outline-none focus-visible:text-[#8f7845]"
+          aria-expanded={expanded}
+        >
+          {expanded ? "Read less" : "Read more"}
+        </button>
+      )}
 
-      <div className="mt-auto flex items-center justify-start gap-4 pt-4">
-        <PlatformBadge platform={r.platform} />
-      </div>
+      <footer className="mt-auto border-t border-stone-200/70 pt-3.5">
+        <p className="truncate text-xs text-stone-600">
+          <span className="font-semibold text-stone-900">{r.reviewer}</span>
+          {r.dateText ? ` · ${r.dateText}` : ""}
+        </p>
+      </footer>
     </article>
   );
 }
@@ -126,8 +138,8 @@ export default function ReviewsClient({ normalized }: { normalized: NormalizedPa
 
       {/* Reviews grid */}
       <section className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-        {items.map((r) => (
-          <ReviewCard key={r.id} r={r} />
+        {items.map((r, i) => (
+          <ReviewCard key={r.id} r={r} className={i === items.length - 1 ? lastCardSpan(items.length) : ""} />
         ))}
       </section>
     </div>

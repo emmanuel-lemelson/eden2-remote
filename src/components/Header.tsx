@@ -3,27 +3,64 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const navItems = [
-  { name: "Stays", href: "/stays" },
-  { name: "Weddings", href: "/weddings" },
-  { name: "Retreats", href: "/retreats" },
+  { name: "Home", href: "/" },
   { name: "Gallery", href: "/gallery" },
   { name: "Reviews", href: "/reviews" },
-  { name: "News", href: "/news" },
   { name: "Reserve Now", href: "/contact" },
 ];
 
-const mobileNavItems = [
+const experienceLinks = [
+  {
+    title: "Luxury Stays",
+    subtitle: "Private Stowe mountain getaways",
+    href: "/stays/",
+  },
+  {
+    title: "Weddings",
+    subtitle: "Tented receptions up to 300",
+    href: "/weddings/",
+  },
+  {
+    title: "Executive Retreats",
+    subtitle: "Discreet leadership offsites",
+    href: "/retreats/",
+  },
+];
+
+const experienceGuides = [
+  { name: "Ski Season", href: "/guides/ski-season/" },
+  { name: "Fall Foliage", href: "/guides/stowe-fall-foliage/" },
+  { name: "Family Reunions", href: "/guides/stowe-family-reunions/" },
+];
+
+const mobileNavLinks = [
   { name: "Home", href: "/" },
-  ...navItems,
+  { name: "Luxury Stays", href: "/stays/" },
+  { name: "Weddings", href: "/weddings/" },
+  { name: "Executive Retreats", href: "/retreats/" },
+  { name: "Ski Season", href: "/guides/ski-season/" },
+  { name: "Fall Foliage", href: "/guides/stowe-fall-foliage/" },
+  { name: "Family Reunions", href: "/guides/stowe-family-reunions/" },
+  { name: "Gallery", href: "/gallery/" },
+  { name: "Reviews", href: "/reviews/" },
+  { name: "Reserve Now", href: "/contact/" },
 ];
 
 export function Header() {
   const pathname = usePathname();
   const normalizedPath = pathname?.replace(/\/$/, "") || "/";
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isExperiencesOpen, setIsExperiencesOpen] = useState(false);
+  const headerRef = useRef<HTMLElement>(null);
+
+  const isExperiencesActive =
+    normalizedPath.startsWith("/stays") ||
+    normalizedPath.startsWith("/weddings") ||
+    normalizedPath.startsWith("/retreats") ||
+    normalizedPath.startsWith("/guides");
 
   useEffect(() => {
     if (isMenuOpen) {
@@ -37,10 +74,33 @@ export function Header() {
 
   useEffect(() => {
     setIsMenuOpen(false);
+    setIsExperiencesOpen(false);
   }, [pathname]);
 
+  useEffect(() => {
+    if (!isExperiencesOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setIsExperiencesOpen(false);
+    };
+    const handleClickOutside = (e: MouseEvent) => {
+      if (headerRef.current && !headerRef.current.contains(e.target as Node)) {
+        setIsExperiencesOpen(false);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isExperiencesOpen]);
+
   return (
-    <header className="sticky top-0 z-50 border-b border-[#d2c4a3]/60 bg-gradient-to-b from-[#fdfbf7] via-[#f8f3ea] to-[#f2e8da]">
+    <header
+      ref={headerRef}
+      onMouseLeave={() => setIsExperiencesOpen(false)}
+      className="sticky top-0 z-50 border-b border-[#d2c4a3]/60 bg-gradient-to-b from-[#fdfbf7] via-[#f8f3ea] to-[#f2e8da]"
+    >
       <div className="lux-container flex h-16 items-center md:h-20">
         
         {/* Mobile: Left Hamburger Menu Button (hidden on desktop) */}
@@ -84,14 +144,66 @@ export function Header() {
         </div>
 
         {/* Right / Main Desktop Navigation */}
-        <nav className="hidden flex-none items-center gap-4 md:gap-5 lg:gap-7 xl:gap-9 text-[0.7rem] lg:text-[0.76rem] font-semibold uppercase tracking-[0.16em] lg:tracking-[0.24em] text-stone-600 md:flex">
-          {navItems.map((item) => {
+        <nav className="hidden flex-none items-center gap-5 lg:gap-8 xl:gap-10 text-[0.7rem] lg:text-[0.76rem] font-semibold uppercase tracking-[0.16em] lg:tracking-[0.24em] text-stone-600 md:flex">
+          <Link
+            href="/"
+            onMouseEnter={() => setIsExperiencesOpen(false)}
+            className={`group relative inline-flex items-center whitespace-nowrap pb-1 transition-colors duration-200 ${
+              normalizedPath === "/" ? "text-stone-900" : "hover:text-stone-900"
+            }`}
+          >
+            Home
+            <span
+              className={`pointer-events-none absolute inset-x-0 -bottom-[6px] h-[2px] origin-center rounded-full bg-gradient-to-r from-[#c2a060] to-[#8f7845] transition duration-300 ${
+                normalizedPath === "/"
+                  ? "opacity-100"
+                  : "scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-100"
+              }`}
+            />
+          </Link>
+
+          <button
+            type="button"
+            aria-expanded={isExperiencesOpen}
+            aria-controls="experiences-dropdown"
+            onMouseEnter={() => setIsExperiencesOpen(true)}
+            onClick={() => setIsExperiencesOpen((prev) => !prev)}
+            className={`group relative inline-flex cursor-pointer items-center gap-1.5 whitespace-nowrap pb-1 uppercase transition-colors duration-200 ${
+              isExperiencesActive || isExperiencesOpen
+                ? "text-stone-900"
+                : "hover:text-stone-900"
+            }`}
+          >
+            Experiences
+            <svg
+              viewBox="0 0 16 16"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.75"
+              aria-hidden="true"
+              className={`h-3 w-3 transition-transform duration-200 ${
+                isExperiencesOpen ? "rotate-180" : ""
+              }`}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M4 6l4 4 4-4" />
+            </svg>
+            <span
+              className={`pointer-events-none absolute inset-x-0 -bottom-[6px] h-[2px] origin-center rounded-full bg-gradient-to-r from-[#c2a060] to-[#8f7845] transition duration-300 ${
+                isExperiencesActive || isExperiencesOpen
+                  ? "opacity-100"
+                  : "scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-100"
+              }`}
+            />
+          </button>
+
+          {navItems.slice(1).map((item) => {
             const isActive = normalizedPath === item.href;
             return (
               <Link
                 key={item.name}
                 href={item.href}
-                className={`group relative inline-flex items-center pb-1 transition-colors duration-200 ${
+                onMouseEnter={() => setIsExperiencesOpen(false)}
+                className={`group relative inline-flex items-center whitespace-nowrap pb-1 transition-colors duration-200 ${
                   isActive ? "text-stone-900" : "hover:text-stone-900"
                 }`}
               >
@@ -113,6 +225,59 @@ export function Header() {
           {/* Empty spacer for visual layout symmetry */}
         </div>
       </div>
+
+      {/* Desktop Experiences Dropdown */}
+      {isExperiencesOpen ? (
+        <div
+          id="experiences-dropdown"
+          className="hidden border-t border-[#d2c4a3]/40 bg-[#fdfbf7]/98 shadow-[0_24px_48px_-24px_rgba(58,45,20,0.22)] backdrop-blur-md md:block"
+        >
+          <div className="lux-container py-7">
+            <div className="grid grid-cols-12 gap-8">
+              <div className="col-span-5 space-y-3">
+                <p className="text-xs font-semibold text-stone-600">Experiences</p>
+                <ul className="space-y-2.5">
+                  {experienceLinks.map((item) => (
+                    <li key={item.href}>
+                      <Link
+                        href={item.href}
+                        onClick={() => setIsExperiencesOpen(false)}
+                        className="group block rounded-xl px-3 py-2 -mx-3 transition hover:bg-[#f2e8da]/60"
+                      >
+                        <span className="block text-base font-semibold text-stone-900 transition group-hover:text-[#8f7845]">
+                          {item.title}
+                        </span>
+                        <span className="block text-xs text-stone-600">
+                          {item.subtitle}
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="col-span-4 space-y-3">
+                <p className="text-xs font-semibold text-stone-600">
+                  Seasonal &amp; Group Guides
+                </p>
+                <ul className="space-y-2">
+                  {experienceGuides.map((guide) => (
+                    <li key={guide.href}>
+                      <Link
+                        href={guide.href}
+                        onClick={() => setIsExperiencesOpen(false)}
+                        className="inline-flex items-center gap-1.5 py-1 text-sm font-medium text-stone-800 transition hover:text-[#8f7845]"
+                      >
+                        {guide.name} <span aria-hidden="true">›</span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      ) : null}
 
       {/* Mobile Slider Menu (Full height side drawer, slides in from left covering 50% of the screen) */}
       <div 
@@ -153,9 +318,10 @@ export function Header() {
             </button>
           </div>
           
-          <div className="mt-8 space-y-4">
-            {mobileNavItems.map((item) => {
-              const isActive = normalizedPath === item.href;
+          <div className="mt-8 space-y-3 overflow-y-auto pb-8">
+            {mobileNavLinks.map((item) => {
+              const normalizedItemHref = item.href.replace(/\/$/, "") || "/";
+              const isActive = normalizedPath === normalizedItemHref;
               return (
                 <Link
                   key={`mobile-${item.name}`}

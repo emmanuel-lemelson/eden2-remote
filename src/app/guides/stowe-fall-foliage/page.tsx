@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FaqSection, type FaqItem } from "@/components/FaqSection";
 import { ResponsivePhoto } from "@/components/ResponsivePhoto";
+import { RevealBlock, ScalingHeroTitle } from "@/components/WeddingMotion";
 
 export const dynamic = "force-static";
 
@@ -11,7 +12,7 @@ const PRODUCTION_URL = "https://lemelsonestate.com";
 export const metadata: Metadata = {
   title: "Best Place to Stay in Stowe, VT for Fall Foliage & October Trips — Eden",
   description:
-    "Experience peak Vermont autumn foliage from 28 private acres in Stowe. Eden sleeps 20 across 8 bedrooms—minutes from Smugglers' Notch, Bingham Falls, Wiessner Woods & Stowe Mountain Resort.",
+    "Experience peak Vermont autumn foliage from 28 private acres in Stowe. Eden sleeps 20 across 8 bedrooms, minutes from Smugglers' Notch, Bingham Falls, Wiessner Woods & Stowe Mountain Resort.",
   alternates: {
     canonical: `${PRODUCTION_URL}/guides/stowe-fall-foliage/`,
   },
@@ -40,229 +41,215 @@ export const metadata: Metadata = {
   },
 };
 
-const foliageStops = [
-  {
-    name: "Wiessner Woods & Catamount Trail",
-    time: "5 min walk",
-    description:
-      "Step straight from the estate into mature maple, beech, birch, and hemlock forests glowing with autumn color—zero parking hassles.",
-  },
-  {
-    name: "Topnotch Stable Horseback Rides",
-    time: "2 min drive",
-    description:
-      "Guided autumn trail rides through wooded Stowe bridle paths—available for both adults and children.",
-  },
-  {
-    name: "Bingham Falls (40-ft Waterfall)",
-    time: "5 min drive",
-    description:
-      "A 72-acre forest corridor of northern hardwoods leading to deep gorges and a 40-foot cascading waterfall framed in autumn color.",
-  },
-  {
-    name: "Mount Mansfield Gondola SkyRide & Auto Toll Road",
-    time: "5 min drive",
-    description:
-      "Ride above the Worcester and Green Mountain canopy for sweeping Vermont October vistas across Lake Champlain and the Adirondacks.",
-  },
-  {
-    name: "Smugglers' Notch State Park",
-    time: "6 min drive",
-    description:
-      "Drive the winding 3.5-mile Route 108 scenic pass lined with cliffs and fiery sugar maples, or hike to Sterling Pond.",
-  },
-  {
-    name: "Stowe Recreation Path",
-    time: "Minutes away",
-    description:
-      "Cycle or stroll the famous 5.3-mile paved greenway crisscrossing the West Branch of the Little River from Stowe Village to Mountain Road.",
-  },
+const stops = [
+  { name: "Wiessner Woods & Catamount Trail", time: "5 min walk" },
+  { name: "Topnotch Horseback Trail Rides", time: "2 min drive" },
+  { name: "Bingham Falls (40-ft Waterfall)", time: "5 min drive" },
+  { name: "Mt. Mansfield Gondola SkyRide", time: "5 min drive" },
+  { name: "Smugglers' Notch Scenic Pass", time: "6 min drive" },
+  { name: "Stowe Recreation Path (5.3 Miles)", time: "Minutes away" },
 ];
 
 const foliageFaqs: FaqItem[] = [
   {
-    question: "When is peak fall foliage in Stowe, Vermont?",
+    question: "When do Stowe's fall colors usually peak, and how early should we plan an October stay?",
     answer:
-      "Peak Stowe fall foliage typically spans late September through mid-October, with the most vibrant reds and oranges around the first two weeks of October. Because October is one of Stowe's highest-demand windows, private 8-bedroom estates often book 6 to 12 months in advance.",
+      "Foliage around Stowe generally peaks from late September through mid-October, with the deepest reds and golds often appearing during the first two weeks of October. Peak October dates are limited, so we recommend reaching out early.",
   },
   {
-    question: "Why stay at a private 28-acre estate instead of a hotel during October in Stowe?",
+    question: "What trails and foliage drives are closest to Eden?",
     answer:
-      "During peak foliage weekends, downtown Stowe hotels and Route 108 experience heavy traffic and busy lobbies. At Eden, you enjoy 28 private wooded acres, Worcester Mountain views from your own garden spa, and a 5-minute walk to Wiessner Woods trails without getting in a car.",
+      "From the Edson Hill Road area, your group can walk five minutes straight into Wiessner Woods and the Catamount Trail without needing to drive into town first, or take short drives: five minutes to Bingham Falls and the Mount Mansfield Gondola SkyRide, and six minutes to Smugglers' Notch.",
   },
   {
-    question: "What autumn amenities are available on-site at Eden?",
+    question: "Is the outdoor pool still open in October, or what amenities do guests enjoy in crisp fall weather?",
     answer:
-      "Guests enjoy the 3-Seasons Sunroom with its stone fireplace, wood-burning Great Room hearth, 3 private hot tubs (including the pondside 10-person hot tub and mountain-view garden spa), cedar sauna, clay tennis court, twin spring-fed trout ponds, and optional farm-to-table private chef dinners.",
+      "The heated outdoor pool closes after September (it operates May through September). In October, groups spend mornings beside the lit stone fireplace in the three-seasons sunroom and evenings in the outdoor hot tub, dry cedar sauna, steam shower, indoor spa, and garden spa.",
   },
   {
-    question: "Is Eden pet-friendly for autumn leaf-peeping trips?",
+    question: "Can we bring our dogs and arrange autumn dinners or airport transfers for a fall trip?",
     answer:
-      "Yes. Eden welcomes pets on vacation stays, and neighboring Wiessner Woods permits leashed dog walking along its forested autumn trails.",
+      "Yes. Pets are welcome on stays, and neighboring Wiessner Woods permits leashed dogs. Our concierge can also coordinate pre-arrival grocery stocking, private chef dinners, and transfers from Burlington International Airport (BTV), about 45 minutes away, with zero third-party platform fees when booking directly.",
   },
   {
-    question: "Can we host an October wedding or family gathering at the estate?",
+    question: "Can Eden host an October foliage wedding as well as family trips?",
     answer:
-      "Yes. Eden hosts both intimate 20-person indoor gatherings and outdoor tented foliage weddings up to 300 guests, with off-peak wedding rates beginning Mid-October.",
+      "Yes. Couples book Eden for intimate indoor weddings of 20 guests or fewer or tented Upper Meadow receptions up to 300 guests, with custom Vermont menus available by arrangement and no food and beverage minimums.",
   },
 ];
 
 export default function StoweFallFoliagePage() {
   return (
-    <div className="bg-white text-stone-900">
-      <section className="pt-8 pb-16 md:pt-12 md:pb-24">
-        <div className="lux-container space-y-10">
-          <Breadcrumbs
-            items={[
-              { name: "Home", href: "/" },
-              { name: "Stays", href: "/stays/" },
-              { name: "Stowe Fall Foliage", href: "/guides/stowe-fall-foliage/" },
-            ]}
+    <div className="bg-white text-[#1f1b17]">
+      <Breadcrumbs
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Stays", href: "/stays/" },
+          { name: "Stowe Fall Foliage", href: "/guides/stowe-fall-foliage/" },
+        ]}
+      />
+
+      {/* Hero: Widescreen autumn entrance framed by golden-orange trees */}
+      <section className="bg-white">
+        <div className="relative h-[42svh] min-h-[260px] max-h-[500px] w-full overflow-hidden md:h-[48svh]">
+          <ResponsivePhoto
+            basePath="/gallery/Eden-Site%20Photos/1"
+            alt="Front entrance of Eden: The Lemelson Estate framed by vibrant golden autumn trees in Stowe, Vermont"
+            sizes="100vw"
+            width={2560}
+            height={1704}
+            priority={true}
+            className="h-full w-full object-cover object-center"
           />
+        </div>
 
-          <div className="grid gap-8 lg:grid-cols-12 lg:items-end">
-            <div className="lg:col-span-7">
-              <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
-                Autumn &amp; October Stays · Edson Hill Road Area, Stowe VT
-              </p>
-              <h1 className="mt-4 text-4xl font-normal leading-[1.12] tracking-tight text-stone-900 sm:text-5xl">
-                Where to Stay in Stowe, Vermont for Peak Fall Foliage
-              </h1>
-            </div>
-            <div className="space-y-5 lg:col-span-5">
-              <p className="text-base leading-7 text-stone-600">
-                Trade crowded leaf-peeping hotels for 28 private acres surrounded by Vermont sugar maples and Worcester Mountain views. Sleeps 20 across 8 bedrooms—minutes from Smugglers&apos; Notch, Bingham Falls, and Wiessner Woods.
-              </p>
-              <div className="flex flex-wrap items-center gap-6">
-                <Link
-                  href="/contact/"
-                  className="inline-flex items-center bg-stone-950 px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] !text-white transition hover:bg-stone-800"
-                >
-                  Check Fall Dates
-                </Link>
-                <Link
-                  href="/stays/"
-                  className="border-b border-stone-900 pb-1 text-xs font-semibold uppercase tracking-[0.2em] text-stone-900 transition hover:border-[#8f7845] hover:text-[#8f7845]"
-                >
-                  All Estate Amenities
-                </Link>
-              </div>
-            </div>
-          </div>
+        <div className="lux-container py-7 md:py-9">
+          <ScalingHeroTitle className="text-[clamp(2.5rem,7.8vw,6.25rem)] font-semibold leading-[0.94] tracking-[-0.03em] text-[#1f1b17]">
+            Autumn at Eden
+          </ScalingHeroTitle>
 
-          <div className="overflow-hidden bg-stone-100">
-            <div className="aspect-[16/9] w-full">
-              <ResponsivePhoto
-                basePath="/gallery/enhanced/86"
-                alt="Eden: The Lemelson Estate surrounded by vibrant orange and red October fall foliage in Stowe, Vermont"
-                sizes="(min-width: 1280px) 1072px, 100vw"
-                width={1024}
-                height={1024}
-                priority={true}
-                className="h-full w-full object-cover"
-              />
-            </div>
+          <p className="mt-5 max-w-[54ch] text-[16px] leading-[1.6] text-[#1f1b17] md:text-[18px]">
+            Surrounded by autumn woods across 28 private acres, Eden gives families and friends room for up to 20 guests minutes from Smugglers&apos; Notch, Bingham Falls, and Wiessner Woods.
+          </p>
+
+          <div className="mt-6 flex flex-wrap items-center gap-5">
+            <Link
+              href="/contact/"
+              className="inline-flex w-fit shrink-0 items-center whitespace-nowrap rounded-full bg-[#111111] px-7 py-3.5 text-[15px] font-medium !text-white transition duration-200 hover:bg-stone-800 active:scale-[0.98]"
+            >
+              Check October dates
+            </Link>
+            <Link
+              href="/stays/"
+              className="whitespace-nowrap text-[15px] font-medium text-[#1f1b17] underline underline-offset-4 transition hover:text-[#6f5a2e]"
+            >
+              Explore all amenities →
+            </Link>
           </div>
         </div>
       </section>
 
-      <section className="bg-[#f8f5f0] py-20 md:py-28">
-        <div className="lux-container space-y-16">
-          <div className="grid gap-6 lg:grid-cols-12 lg:items-end">
-            <div className="lg:col-span-7">
-              <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
-                Stowe Foliage Itinerary From Eden
-              </p>
-              <h2 className="mt-3 text-3xl font-normal tracking-tight text-stone-900 sm:text-4xl">
-                Vermont&apos;s best autumn scenery within six minutes of the driveway
+      {/* Autumn stops + crisp autumn & fireside asymmetric 3-photo spread (no summer pool repetition) */}
+      <section className="bg-[#f8f3ea] py-16 md:py-24 lg:py-28">
+        <div className="lux-container space-y-12">
+          <div className="grid gap-8 lg:grid-cols-12 lg:items-center lg:gap-12">
+            <RevealBlock className="space-y-4 lg:col-span-5">
+              <h2 className="text-3xl font-semibold leading-[1.12] text-[#1f1b17] md:text-4xl">
+                Stowe&apos;s best autumn scenery
               </h2>
-            </div>
-            <p className="text-sm leading-7 text-stone-600 sm:text-base lg:col-span-5">
-              Start crisp mornings with coffee by the 3-Seasons Sunroom stone fireplace, explore Stowe&apos;s iconic foliage passes before midday crowds arrive, and return to soak in the pondside hot tub under golden foliage.
-            </p>
+              <p className="max-w-[46ch] text-[16px] leading-[1.6] text-[#44403c] md:text-[17px]">
+                Start crisp October mornings beside the three-seasons sunroom fireplace, walk wooded trails steps from the driveway, and unwind in the outdoor hot tub and cedar sauna.
+              </p>
+            </RevealBlock>
+
+            <RevealBlock delayMs={50} className="lg:col-span-7">
+              <dl className="grid gap-2.5 sm:grid-cols-2">
+                {stops.map((s) => (
+                  <div
+                    key={s.name}
+                    className="flex items-center justify-between gap-3 rounded-xl bg-white px-4 py-3 text-[15px]"
+                  >
+                    <dt className="font-medium text-[#1f1b17]">{s.name}</dt>
+                    <dd className="whitespace-nowrap font-medium text-[#6f5a2e]">{s.time}</dd>
+                  </div>
+                ))}
+              </dl>
+            </RevealBlock>
           </div>
 
-          <div className="grid gap-x-10 gap-y-12 border-t border-stone-300/70 pt-12 md:grid-cols-2 lg:grid-cols-3">
-            {foliageStops.map((stop) => (
-              <div key={stop.name} className="space-y-2.5">
-                <p className="text-[0.68rem] font-medium uppercase tracking-[0.24em] text-[#8f7845]">
-                  {stop.time}
-                </p>
-                <h3 className="text-xl font-normal text-stone-900">{stop.name}</h3>
-                <p className="text-sm leading-7 text-stone-600">{stop.description}</p>
+          <RevealBlock delayMs={60}>
+            <div className="grid gap-4 md:grid-cols-12 md:items-stretch">
+              <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl md:col-span-7 md:aspect-auto">
+                <ResponsivePhoto
+                  basePath="/gallery/enhanced/86"
+                  alt="Eden Estate surrounded by peak orange and crimson October foliage in Stowe"
+                  sizes="(min-width: 768px) 58vw, 100vw"
+                  width={1024}
+                  height={1024}
+                  className="h-full w-full object-cover md:absolute md:inset-0"
+                />
               </div>
-            ))}
-          </div>
 
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            <ResponsivePhoto
-              basePath="/gallery/enhanced/2"
-              alt="Sunset aerial view over Eden Estate's 28 acres and mountain backdrop"
-              sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-              width={2400}
-              height={1600}
-              className="aspect-[4/3] w-full object-cover"
-            />
-            <ResponsivePhoto
-              basePath="/gallery/Eden-Site%20Photos/108"
-              alt="Spring-fed pond reflecting sky and mountain trees on the Eden grounds"
-              sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-              width={2560}
-              height={1920}
-              className="aspect-[4/3] w-full object-cover"
-            />
-            <ResponsivePhoto
-              basePath="/gallery/enhanced/31"
-              alt="Sunroom with wicker seating and lit stone fireplace for crisp Stowe autumn mornings"
-              sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-              width={2400}
-              height={1600}
-              className="aspect-[4/3] w-full object-cover"
-            />
-            <ResponsivePhoto
-              basePath="/gallery/enhanced/90"
-              alt="Outdoor hot tub beside the spring-fed pond at Eden Estate"
-              sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-              width={2400}
-              height={1600}
-              className="aspect-[4/3] w-full object-cover"
-            />
-          </div>
+              <div className="grid grid-cols-2 gap-4 md:col-span-5 md:grid-cols-1">
+                <div className="overflow-hidden rounded-2xl">
+                  <div className="aspect-[4/3] w-full md:aspect-[16/10]">
+                    <ResponsivePhoto
+                      basePath="/gallery/enhanced/88"
+                      alt="Outdoor hot tub overlooking the spring-fed pond and autumn trees at Eden"
+                      sizes="(min-width: 768px) 40vw, 50vw"
+                      width={2400}
+                      height={1600}
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                </div>
+                <div className="overflow-hidden rounded-2xl">
+                  <div className="aspect-[4/3] w-full md:aspect-[16/10]">
+                    <ResponsivePhoto
+                      basePath="/gallery/enhanced/31"
+                      alt="Sunlit three-seasons porch with wicker seating and lit stone fireplace"
+                      sizes="(min-width: 768px) 40vw, 50vw"
+                      width={2400}
+                      height={1600}
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </RevealBlock>
         </div>
       </section>
 
       <FaqSection
-        title="Stowe Fall Foliage Rental FAQs"
-        description="Planning tips for October foliage trips, leaf-peeping weekends, and autumn estate buyouts."
+        title="Fall foliage questions"
+        details={[
+          "Peak Vermont foliage late September through October",
+          "Five-minute walk to Wiessner Woods trails",
+          "Sleeps 20 with pets welcome",
+        ]}
         items={foliageFaqs}
+        photo={{
+          basePath: "/gallery/Eden-Site%20Photos/108",
+          alt: "Spring-fed pond reflecting trees and mountains on the Eden grounds",
+        }}
       />
 
-      <section className="border-t border-stone-200 bg-[#f8f5f0] py-20 md:py-24">
-        <div className="lux-container max-w-3xl text-center">
-          <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
-            Autumn Reservations
-          </p>
-          <h2 className="mt-3 text-3xl font-normal tracking-tight text-stone-900 sm:text-4xl">
-            Plan Your Stowe Autumn Escape
+      {/* Dark Split CTA */}
+      <section className="grid bg-[#1f1b17] md:grid-cols-2">
+        <div className="relative aspect-[16/10] w-full overflow-hidden md:aspect-auto md:min-h-[360px] lg:min-h-[460px]">
+          <ResponsivePhoto
+            basePath="/gallery/enhanced/87"
+            alt="Warm evening view of Eden: The Lemelson Estate rear terrace and glowing windows"
+            sizes="(min-width: 768px) 50vw, 100vw"
+            width={2400}
+            height={1600}
+            className="h-full w-full object-cover md:absolute md:inset-0"
+          />
+        </div>
+
+        <RevealBlock className="flex flex-col items-start justify-center gap-6 bg-[#1f1b17] px-6 py-12 text-[#f8f3ea] sm:px-10 md:px-10 md:py-12 lg:py-20 lg:pl-16 lg:pr-[max(4rem,calc((100vw-72rem)/2+2.5rem))] xl:pl-20">
+          <h2 className="text-3xl font-semibold leading-[1.1] text-white sm:text-4xl">
+            Plan your autumn escape
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-sm leading-7 text-stone-600 sm:text-base">
-            Book directly with Eden to secure peak October dates with zero Airbnb or Vrbo fees, optional private harvest dinners, and space for up to 20 guests.
+          <p className="max-w-[42ch] text-[16px] leading-[1.6] text-[#e8dac0] md:text-[17px]">
+            Reserve directly for peak foliage dates in Stowe with zero Airbnb or Vrbo platform fees.
           </p>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
+          <div className="flex flex-wrap items-center gap-5 pt-1">
             <Link
               href="/contact/"
-              className="inline-flex items-center bg-stone-950 px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] !text-white transition hover:bg-stone-800"
+              className="inline-flex shrink-0 items-center whitespace-nowrap rounded-full bg-[#f8f3ea] px-8 py-3.5 text-[15px] font-semibold !text-[#1f1b17] transition duration-200 hover:bg-white active:scale-[0.98]"
             >
-              Inquire About Fall Dates
+              Inquire about fall dates
             </Link>
             <Link
-              href="/guides/stowe-ski-house/"
-              className="border-b border-stone-900 pb-1 text-xs font-semibold uppercase tracking-[0.2em] text-stone-900 transition hover:border-[#8f7845] hover:text-[#8f7845]"
+              href="/weddings/"
+              className="whitespace-nowrap text-[15px] font-medium text-[#f8f3ea] underline underline-offset-4 transition hover:text-white"
             >
-              Winter Ski Stays
+              Autumn weddings →
             </Link>
           </div>
-        </div>
+        </RevealBlock>
       </section>
     </div>
   );

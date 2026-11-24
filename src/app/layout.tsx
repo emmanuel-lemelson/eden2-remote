@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Manrope } from "next/font/google";
+import { Playfair_Display, Inter } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import "./globals.css";
@@ -10,7 +10,7 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
-const manrope = Manrope({
+const inter = Inter({
   variable: "--font-body",
   subsets: ["latin"],
   display: "swap",
@@ -76,7 +76,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth" data-scroll-behavior="smooth" suppressHydrationWarning={true}>
       <body
-        className={`${playfair.variable} ${manrope.variable} bg-stone-100 text-stone-900 antialiased`}
+        className={`${playfair.variable} ${inter.variable} bg-stone-100 text-stone-900 antialiased`}
         suppressHydrationWarning={true}
       >
         <div className="flex min-h-screen flex-col">
@@ -163,10 +163,9 @@ export default function RootLayout({
                 reviewCount: 62,
               },
               amenityFeature: [
-                { '@type': 'LocationFeatureSpecification', name: 'Heated outdoor swimming pool (May-Sept)', value: true },
-                { '@type': 'LocationFeatureSpecification', name: 'Year-round 10-person outdoor hot tub', value: true },
-                { '@type': 'LocationFeatureSpecification', name: 'Indoor 2-person spa', value: true },
-                { '@type': 'LocationFeatureSpecification', name: 'Mountain-view garden spa', value: true },
+                { '@type': 'LocationFeatureSpecification', name: 'Heated outdoor swimming pool', value: true },
+                { '@type': 'LocationFeatureSpecification', name: 'Two large outdoor hot tubs', value: true },
+                { '@type': 'LocationFeatureSpecification', name: 'Indoor spa', value: true },
                 { '@type': 'LocationFeatureSpecification', name: 'Private cedar sauna', value: true },
                 { '@type': 'LocationFeatureSpecification', name: 'Steam shower', value: true },
                 { '@type': 'LocationFeatureSpecification', name: 'Clay tennis court', value: true },

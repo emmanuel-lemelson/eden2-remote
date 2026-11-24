@@ -17,7 +17,7 @@ export function SectionHeading({
 
   return (
     <div className={`max-w-3xl ${align === "center" ? "mx-auto text-center" : ""}`}>
-      <HeadingTag className="mt-2 text-4xl font-semibold text-stone-900 md:text-5xl">
+      <HeadingTag className="mt-2 text-3xl font-semibold text-stone-900 md:text-4xl">
         {title}
       </HeadingTag>
       {description ? (

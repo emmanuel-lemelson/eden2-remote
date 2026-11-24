@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FaqSection, type FaqItem } from "@/components/FaqSection";
 import { ResponsivePhoto } from "@/components/ResponsivePhoto";
+import { RevealBlock, ScalingHeroTitle } from "@/components/WeddingMotion";
 
 export const dynamic = "force-static";
 
@@ -11,14 +12,14 @@ const PRODUCTION_URL = "https://lemelsonestate.com";
 export const metadata: Metadata = {
   title: "Stowe Family Reunion & Large Group Rental (Sleeps 20) — Eden Estate",
   description:
-    "Gather up to 20 guests across 8 bedrooms and 28 private acres in Stowe, VT. See why a private buyout at Eden beats booking 8 suites at a Stowe resort—with kids' playroom, pool, tennis & pet-friendly stays.",
+    "Gather up to 20 guests across 8 bedrooms and 28 private acres in Stowe, VT. Enjoy one private estate with a children's playroom, heated pool, 3 hot tubs, clay tennis court & zero platform fees.",
   alternates: {
     canonical: `${PRODUCTION_URL}/guides/stowe-family-reunions/`,
   },
   openGraph: {
     title: "Stowe Family Reunion & Large Group Rental (Sleeps 20) — Eden Estate",
     description:
-      "Compare a private 8-bedroom estate buyout in Stowe vs. booking 8 hotel suites. Sleeps 20, heated pool, 3 hot tubs, clay tennis court, playroom & zero platform fees.",
+      "Private 8-bedroom estate stay in Stowe sleeping up to 20 across 11,400 sq ft, with heated pool, 3 hot tubs, clay tennis court, kids' playroom & zero platform fees.",
     url: `${PRODUCTION_URL}/guides/stowe-family-reunions/`,
     type: "website",
     images: [
@@ -35,298 +36,239 @@ export const metadata: Metadata = {
     site: "@LemelsonEstate",
     title: "Stowe Family Reunion & Large Group Rental (Sleeps 20) — Eden Estate",
     description:
-      "Gather 20 family members under one roof in Stowe, VT—with kids' playroom, private apartment suite, pool, 3 spas, tennis court & zero platform fees.",
+      "Gather up to 20 family members under one roof in Stowe, VT with children's playroom, private apartment suite, pool, hot tubs, tennis court & zero platform fees.",
     images: [`${PRODUCTION_URL}/opengraph-image.png`],
   },
 };
 
-const comparisonRows = [
+const familyReasons = [
   {
-    category: "Privacy & Shared Living",
-    eden: "100% exclusive 11,400 sq ft residence & 28 private acres—everyone together in one Great Room",
-    resort: "Scattered hotel rooms along public corridors; crowded lobbies and shared hallways",
-  },
-  {
-    category: "Pool, Hot Tubs & Sauna",
-    eden: "Private heated pool (May–Sept), 3 private spas (10-person hot tub, indoor spa, garden spa), cedar sauna & steam shower",
-    resort: "Shared resort pool hours with outside guests and limited spa slots",
-  },
-  {
-    category: "Group Meals & Kitchens",
-    eden: "Sub-Zero & Thermador chef's kitchen, formal dining table, outdoor BBQ & optional private in-house chef",
-    resort: "Expensive restaurant checks and split tables for 16–20 people at every meal",
-  },
-  {
-    category: "Multi-Gen & Kid Setup",
-    eden: "Dedicated children's playroom, cribs/Pack 'n Play/baby gates, plus a quiet self-contained 2nd-floor apartment suite",
-    resort: "Standard hotel bedrooms with no playroom; extra charges for cribs and adjoining suites",
-  },
-  {
-    category: "Outdoor Recreation",
-    eden: "Private clay tennis court, twin trout-stocked ponds, 5-min walk to Wiessner Woods trails",
-    resort: "Pay-per-hour court rentals and crowded public recreation facilities",
-  },
-  {
-    category: "Pets",
-    eden: "Pet-friendly estate so family dogs join the reunion",
-    resort: "Strict per-room pet limits, breed caps, or steep nightly pet fees",
-  },
-  {
-    category: "Booking Fees",
-    eden: "Direct booking on lemelsonestate.com with zero Airbnb/Vrbo service fees",
-    resort: "Per-room nightly resort fees, parking charges, and banquet markups",
-  },
-];
-
-const generationZones = [
-  {
-    title: "Toddlers & Young Kids",
+    title: "Privacy & shared space",
     detail:
-      "Indoor children's playroom stocked with books and toys for ages 0–10+, standard crib, Pack 'n Play, baby bath, baby safety gates, fireplace guards, kids' bikes, and seasonal pool toys.",
+      "11,400 square feet across 28 secluded acres so the whole family stays together under one roof.",
   },
   {
-    title: "Teens & Cousins",
+    title: "Pool & wellness spaces",
     detail:
-      "Lower-level recreation wing with pool table, foosball, game console, 86-inch smart TV, Sonos sound, board games, clay tennis court, and trout-stocked ponds.",
+      "Heated outdoor pool, outdoor hot tub, indoor spa, garden spa, cedar sauna, and steam shower.",
   },
   {
-    title: "Grandparents & Quiet Seekers",
+    title: "Cooking & gathering together",
     detail:
-      "Both a first-floor 2nd Primary Suite (minimal stairs) and a private self-contained second-floor Apartment Suite with its own kitchen, living room, primary bedroom, and twin room.",
+      "Gourmet chef's kitchen, formal dining room, outdoor gas grill, and optional private-chef service for family dinners.",
   },
   {
-    title: "Parents & Milestone Hosts",
+    title: "Kids & grandparents",
     detail:
-      "Relax in three private spa zones, the cedar sauna, or the private fitness center while our concierge arranges pre-arrival groceries, private chef dinners, and Stowe excursions.",
+      "Indoor children's playroom and family gear paired with a quiet second-floor apartment suite and a first-floor primary suite.",
+  },
+  {
+    title: "Recreation on the grounds",
+    detail:
+      "Private clay tennis court, spring-fed trout ponds, lower-level game room, and a five-minute walk to Wiessner Woods trails.",
+  },
+  {
+    title: "Direct stays & pets",
+    detail:
+      "Pet-friendly stays for family vacations with zero third-party platform fees when reserving directly.",
   },
 ];
 
 const reunionFaqs: FaqItem[] = [
   {
-    question: "How many people can stay at Eden for a Stowe family reunion?",
+    question: "We have grandparents who prefer avoiding stairs. Can they sleep and gather on the main level?",
     answer:
-      "Eden comfortably sleeps up to 20 overnight guests across 8 bedrooms and 8 full bathrooms within 11,400 square feet, with sprawling common areas designed so everyone can dine and gather together.",
+      "Yes. The first floor features a second primary suite and three additional guest bedrooms alongside the Great Room, formal dining room, chef's kitchen, and three-seasons sunroom, so older family members can sleep and spend the day comfortably without using stairs.",
   },
   {
-    question: "Is there a quiet space for grandparents or families with babies?",
+    question: "How do parents with babies or toddlers handle early bedtimes and nap schedules?",
     answer:
-      "Yes. In addition to first-floor guest bedrooms and a main-level primary suite, the second floor includes a private, self-contained apartment suite with its own kitchen, living area, primary bedroom, and twin bedroom—plus a nursery near the main primary suite.",
+      "The second floor includes a private, self-contained apartment suite with its own kitchen, living room, primary bedroom, and twin bedroom, as well as a dedicated nursery beside the main primary suite. That separation lets young families rest quietly away from evening conversation downstairs.",
   },
   {
-    question: "What baby and children's gear is already at the house?",
+    question: "What keeps kids and teens busy at the estate, and when is the pool open?",
     answer:
-      "Eden stocks a dedicated children's playroom, books and toys for ages 0–10+, a standard crib, Pack 'n Play travel crib, baby bath, baby safety gates, fireplace guards, board games, and kids' bikes so families can pack light.",
+      "The heated outdoor swimming pool is open from May through September. Families also enjoy the indoor children's playroom, family gear, lower-level game room with pool and foosball tables, private clay tennis court, spring-fed trout ponds, hot tubs, and easy five-minute walks into Wiessner Woods.",
   },
   {
-    question: "Can we bring dogs to our family reunion?",
+    question: "How do meals work for a group of 15 to 20 without someone cooking the whole trip?",
     answer:
-      "Yes. Eden is pet-friendly for vacation stays, with 28 private acres and neighboring dog-friendly trails at Wiessner Woods just a 5-minute walk away.",
+      "The main gourmet kitchen, formal dining room, and outdoor gas grill make shared family dinners easy, and our concierge can arrange pre-arrival grocery stocking or optional private chef dinners when you want a night off.",
   },
   {
-    question: "Can our concierge arrange a private chef or reunion activities?",
+    question: "Can we bring the family dog, and do we save on fees by booking directly?",
     answer:
-      "Yes. Our complimentary concierge coordinates multi-course private chef dinners, barbecue cookouts, pre-stocked groceries, horseback rides at Topnotch (2 min away), and Stowe Mountain Resort outings.",
+      "Yes. Dogs are welcome on family vacation stays across the 28 private acres, and reserving directly on lemelsonestate.com avoids third-party Airbnb or Vrbo guest service fees.",
   },
 ];
 
 export default function StoweFamilyReunionsPage() {
   return (
-    <div className="bg-white text-stone-900">
-      <section className="pt-8 pb-16 md:pt-12 md:pb-24">
-        <div className="lux-container space-y-10">
-          <Breadcrumbs
-            items={[
-              { name: "Home", href: "/" },
-              { name: "Stays", href: "/stays/" },
-              { name: "Family Reunions", href: "/guides/stowe-family-reunions/" },
-            ]}
+    <div className="bg-white text-[#1f1b17]">
+      <Breadcrumbs
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Stays", href: "/stays/" },
+          { name: "Family Reunions", href: "/guides/stowe-family-reunions/" },
+        ]}
+      />
+
+      {/* Hero: Pool & patio for multi-gen gatherings */}
+      <section className="bg-white">
+        <div className="relative h-[42svh] min-h-[260px] max-h-[500px] w-full overflow-hidden md:h-[48svh]">
+          <ResponsivePhoto
+            basePath="/gallery/enhanced/88"
+            alt="Poolside stone patio with wicker lounge seating at Eden: The Lemelson Estate in Stowe, VT"
+            sizes="100vw"
+            width={2000}
+            height={1333}
+            priority={true}
+            className="h-full w-full object-cover object-center"
           />
+        </div>
 
-          <div className="grid gap-8 lg:grid-cols-12 lg:items-end">
-            <div className="lg:col-span-7">
-              <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
-                Multi-Gen &amp; Large Group Stays · Stowe, Vermont
-              </p>
-              <h1 className="mt-4 text-4xl font-normal leading-[1.12] tracking-tight text-stone-900 sm:text-5xl">
-                Stowe Family Reunion &amp; Large-Group Luxury Estate (Sleeps 20)
-              </h1>
-            </div>
-            <div className="space-y-5 lg:col-span-5">
-              <p className="text-base leading-7 text-stone-600">
-                Bring three generations together under one roof on 28 secluded acres in Stowe. Enjoy 8 bedrooms, 8 bathrooms, a kids&apos; playroom, private apartment suite, heated pool, 3 hot tubs, clay tennis court, and pet-friendly stays.
-              </p>
-              <div className="flex flex-wrap items-center gap-6">
-                <Link
-                  href="/contact/"
-                  className="inline-flex items-center bg-stone-950 px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] !text-white transition hover:bg-stone-800"
-                >
-                  Plan Your Reunion
-                </Link>
-                <Link
-                  href="/stays/"
-                  className="border-b border-stone-900 pb-1 text-xs font-semibold uppercase tracking-[0.2em] text-stone-900 transition hover:border-[#8f7845] hover:text-[#8f7845]"
-                >
-                  Floor-by-Floor Layout
-                </Link>
-              </div>
-            </div>
-          </div>
+        <div className="lux-container py-7 md:py-9">
+          <ScalingHeroTitle className="text-[clamp(2.5rem,7.8vw,6.25rem)] font-semibold leading-[0.94] tracking-[-0.03em] text-[#1f1b17]">
+            Gather at Eden
+          </ScalingHeroTitle>
 
-          <div className="overflow-hidden bg-stone-100">
-            <div className="aspect-[16/9] w-full">
-              <ResponsivePhoto
-                basePath="/gallery/Eden-Site%20Photos/113"
-                alt="Resort-style backyard stone patio, heated pool, and circular spa at Eden Estate in Stowe, VT"
-                sizes="(min-width: 1280px) 1072px, 100vw"
-                width={2560}
-                height={1920}
-                priority={true}
-                className="h-full w-full object-cover"
-              />
-            </div>
+          <p className="mt-5 max-w-[54ch] text-[16px] leading-[1.6] text-[#1f1b17] md:text-[18px]">
+            Bring three generations together under one roof across eight bedrooms and 28 acres, with a children&apos;s playroom, private apartment suite, heated pool, clay tennis court, and pets welcome.
+          </p>
+
+          <div className="mt-6 flex flex-wrap items-center gap-5">
+            <Link
+              href="/contact/"
+              className="inline-flex w-fit shrink-0 items-center whitespace-nowrap rounded-full bg-[#111111] px-7 py-3.5 text-[15px] font-medium !text-white transition duration-200 hover:bg-stone-800 active:scale-[0.98]"
+            >
+              Plan your reunion
+            </Link>
+            <Link
+              href="/stays/"
+              className="whitespace-nowrap text-[15px] font-medium text-[#1f1b17] underline underline-offset-4 transition hover:text-[#6f5a2e]"
+            >
+              Floor-by-floor layout →
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Architectural Comparison Table */}
-      <section className="bg-[#f8f5f0] py-20 md:py-28">
-        <div className="lux-container max-w-5xl space-y-12">
-          <div className="grid gap-6 md:grid-cols-12 md:items-end">
-            <div className="md:col-span-7">
-              <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
-                Side-by-Side Comparison
-              </p>
-              <h2 className="mt-3 text-3xl font-normal tracking-tight text-stone-900 sm:text-4xl">
-                Private Estate Buyout at Eden vs. Booking 8 Suites at a Stowe Resort
-              </h2>
-            </div>
-            <p className="text-sm leading-7 text-stone-600 md:col-span-5">
-              Why multi-family vacations, milestone birthdays, and reunions get dramatically more space, privacy, and value with one private estate buyout.
-            </p>
-          </div>
-
-          <div className="overflow-x-auto border-y border-stone-900/15 bg-white">
-            <table className="w-full min-w-[640px] text-left">
-              <thead>
-                <tr className="border-b border-stone-200 text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-stone-500">
-                  <th className="py-4 pl-6 pr-4">Feature</th>
-                  <th className="px-6 py-4 text-[#8f7845]">Eden: The Lemelson Estate</th>
-                  <th className="py-4 pl-6 pr-6">8 Separate Stowe Resort Suites</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-stone-200 text-sm">
-                {comparisonRows.map((row) => (
-                  <tr key={row.category} className="align-top">
-                    <td className="py-5 pl-6 pr-4 font-serif text-base text-stone-900 whitespace-nowrap">
-                      {row.category}
-                    </td>
-                    <td className="bg-[#fdfbf7] px-6 py-5 leading-6 text-stone-800">
-                      {row.eden}
-                    </td>
-                    <td className="py-5 pl-6 pr-6 leading-6 text-stone-500">
-                      {row.resort}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      {/* Multi-Gen Zones */}
-      <section className="bg-white py-20 md:py-28">
-        <div className="lux-container space-y-14">
-          <div className="max-w-2xl">
-            <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
-              Every Age Covered
-            </p>
-            <h2 className="mt-3 text-3xl font-normal tracking-tight text-stone-900 sm:text-4xl">
-              Designed for every generation, from toddlers to grandparents
+      {/* Calm editorial overview + family spaces photo spread (Great Room + Kids bunk room + Game room) */}
+      <section className="bg-[#f8f3ea] py-16 md:py-24 lg:py-28">
+        <div className="lux-container space-y-12">
+          <RevealBlock className="space-y-4">
+            <h2 className="text-3xl font-semibold leading-[1.12] text-[#1f1b17] md:text-4xl">
+              Why families choose Eden
             </h2>
-          </div>
+            <p className="max-w-[54ch] text-[16px] leading-[1.6] text-[#44403c] md:text-[17px]">
+              Keep grandparents, parents, and children comfortable across 11,400 square feet of shared living areas, quiet bedroom wings, and 28 private acres.
+            </p>
+          </RevealBlock>
 
-          <div className="grid gap-x-10 gap-y-10 border-t border-stone-200 pt-12 md:grid-cols-2 lg:grid-cols-4">
-            {generationZones.map((zone, idx) => (
-              <div key={zone.title} className="space-y-3">
-                <span className="text-[0.68rem] font-medium tracking-[0.22em] text-[#8f7845]">
-                  0{idx + 1}
-                </span>
-                <h3 className="text-xl font-normal text-stone-900">{zone.title}</h3>
-                <p className="text-sm leading-7 text-stone-600">{zone.detail}</p>
+          <RevealBlock delayMs={40}>
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {familyReasons.map((item) => (
+                <div key={item.title} className="rounded-2xl bg-white p-6">
+                  <h3 className="text-lg font-semibold text-[#1f1b17]">{item.title}</h3>
+                  <p className="mt-2.5 text-[16px] leading-[1.6] text-[#44403c]">{item.detail}</p>
+                </div>
+              ))}
+            </div>
+          </RevealBlock>
+
+          <RevealBlock delayMs={60}>
+            <div className="grid gap-4 md:grid-cols-12 md:items-stretch">
+              <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl md:col-span-7 md:aspect-auto">
+                <ResponsivePhoto
+                  basePath="/gallery/Eden-Site%20Photos/98"
+                  alt="Great Room gathering space with leather sofas and grand piano"
+                  sizes="(min-width: 768px) 58vw, 100vw"
+                  width={2560}
+                  height={1704}
+                  className="h-full w-full object-cover md:absolute md:inset-0"
+                />
               </div>
-            ))}
-          </div>
 
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            <ResponsivePhoto
-              basePath="/gallery/Eden-Site%20Photos/98"
-              alt="Great Room gathering space with leather sofas and grand piano"
-              sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-              width={2560}
-              height={1704}
-              className="aspect-[4/3] w-full object-cover"
-            />
-            <ResponsivePhoto
-              basePath="/gallery/enhanced/28"
-              alt="Formal dining table prepared for large family reunion dinners"
-              sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-              width={2400}
-              height={1600}
-              className="aspect-[4/3] w-full object-cover"
-            />
-            <ResponsivePhoto
-              basePath="/gallery/Eden-Site%20Photos/93"
-              alt="Spacious lower-level family recreation and game room"
-              sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-              width={2560}
-              height={1707}
-              className="aspect-[4/3] w-full object-cover"
-            />
-            <ResponsivePhoto
-              basePath="/gallery/Eden-Site%20Photos/111"
-              alt="Outdoor patio seating beside the private clay tennis court"
-              sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-              width={2560}
-              height={1920}
-              className="aspect-[4/3] w-full object-cover"
-            />
-          </div>
+              <div className="grid grid-cols-2 gap-4 md:col-span-5 md:grid-cols-1">
+                <div className="overflow-hidden rounded-2xl">
+                  <div className="aspect-[4/3] w-full md:aspect-[16/10]">
+                    <ResponsivePhoto
+                      basePath="/gallery/Eden-Site%20Photos/41"
+                      alt="Children's and family bedroom featuring white bunk beds and twin bed at Eden"
+                      sizes="(min-width: 768px) 40vw, 50vw"
+                      width={2400}
+                      height={1600}
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                </div>
+                <div className="overflow-hidden rounded-2xl">
+                  <div className="aspect-[4/3] w-full md:aspect-[16/10]">
+                    <ResponsivePhoto
+                      basePath="/gallery/Eden-Site%20Photos/93"
+                      alt="Spacious lower-level family recreation and game room"
+                      sizes="(min-width: 768px) 40vw, 50vw"
+                      width={2560}
+                      height={1707}
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </RevealBlock>
         </div>
       </section>
 
       <FaqSection
-        title="Stowe Family Reunion FAQs"
-        description="Common questions from reunion planners organizing multi-family stays in Stowe."
+        title="Family reunion questions"
+        details={[
+          "8 bedrooms & 8 baths across three levels",
+          "Children's playroom, family gear & quiet 2nd-floor suite",
+          "Pets welcome for up to 20 overnight guests",
+        ]}
         items={reunionFaqs}
+        photo={{
+          basePath: "/gallery/Eden-Site%20Photos/42",
+          alt: "Spacious double-queen family guest bedroom inside Eden Estate in Stowe",
+        }}
       />
 
-      <section className="border-t border-stone-200 bg-[#f8f5f0] py-20 md:py-24">
-        <div className="lux-container max-w-3xl text-center">
-          <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
-            Family Gatherings
-          </p>
-          <h2 className="mt-3 text-3xl font-normal tracking-tight text-stone-900 sm:text-4xl">
-            Bring the Whole Family to Eden
+      {/* Dark Split CTA */}
+      <section className="grid bg-[#1f1b17] md:grid-cols-2">
+        <div className="relative aspect-[16/10] w-full overflow-hidden md:aspect-auto md:min-h-[360px] lg:min-h-[460px]">
+          <ResponsivePhoto
+            basePath="/gallery/Eden-Site%20Photos/111"
+            alt="Outdoor patio lounge beside the private clay tennis court at Eden Estate"
+            sizes="(min-width: 768px) 50vw, 100vw"
+            width={2560}
+            height={1920}
+            className="h-full w-full object-cover md:absolute md:inset-0"
+          />
+        </div>
+
+        <RevealBlock className="flex flex-col items-start justify-center gap-6 bg-[#1f1b17] px-6 py-12 text-[#f8f3ea] sm:px-10 md:px-10 md:py-12 lg:py-20 lg:pl-16 lg:pr-[max(4rem,calc((100vw-72rem)/2+2.5rem))] xl:pl-20">
+          <h2 className="text-3xl font-semibold leading-[1.1] text-white sm:text-4xl">
+            Bring the whole family
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-sm leading-7 text-stone-600 sm:text-base">
-            Book direct to save third-party platform fees and let our concierge tailor your family reunion itinerary.
+          <p className="max-w-[42ch] text-[16px] leading-[1.6] text-[#e8dac0] md:text-[17px]">
+            Reserve directly without platform fees, with Stowe concierge assistance for chef dinners, groceries, and activities.
           </p>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
+          <div className="flex flex-wrap items-center gap-5 pt-1">
             <Link
               href="/contact/"
-              className="inline-flex items-center bg-stone-950 px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] !text-white transition hover:bg-stone-800"
+              className="inline-flex shrink-0 items-center whitespace-nowrap rounded-full bg-[#f8f3ea] px-8 py-3.5 text-[15px] font-semibold !text-[#1f1b17] transition duration-200 hover:bg-white active:scale-[0.98]"
             >
-              Request Reunion Dates
+              Request reunion dates
             </Link>
             <Link
-              href="/reviews/"
-              className="border-b border-stone-900 pb-1 text-xs font-semibold uppercase tracking-[0.2em] text-stone-900 transition hover:border-[#8f7845] hover:text-[#8f7845]"
+              href="/stays/"
+              className="whitespace-nowrap text-[15px] font-medium text-[#f8f3ea] underline underline-offset-4 transition hover:text-white"
             >
-              Read 62 Five-Star Reviews
+              Explore 8 bedrooms →
             </Link>
           </div>
-        </div>
+        </RevealBlock>
       </section>
     </div>
   );

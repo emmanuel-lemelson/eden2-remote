@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FaqSection, type FaqItem } from "@/components/FaqSection";
 import { ResponsivePhoto } from "@/components/ResponsivePhoto";
+import { RevealBlock, ScalingHeroTitle } from "@/components/WeddingMotion";
 
 export const dynamic = "force-static";
 
@@ -11,14 +12,14 @@ const PRODUCTION_URL = "https://lemelsonestate.com";
 export const metadata: Metadata = {
   title: "Corporate & Executive Retreat Venue in Stowe, Vermont — Eden",
   description:
-    "Host a private corporate retreat or executive offsite in Stowe, VT on 28 secluded acres. Sleeps 20 leaders, fiber-optic internet, breakout rooms, farm-to-table chef dining & custom mountain itineraries.",
+    "Host a private corporate retreat or executive offsite in Stowe, VT on 28 secluded acres. Sleeps 20 guests, fiber-optic internet, breakout rooms, private chef dining & custom mountain itineraries.",
   alternates: {
     canonical: `${PRODUCTION_URL}/retreats/`,
   },
   openGraph: {
     title: "Corporate & Executive Retreat Venue in Stowe, Vermont — Eden",
     description:
-      "Host a private corporate retreat or executive offsite in Stowe, VT on 28 secluded acres. Sleeps 20 leaders, fiber-optic internet, breakout rooms, farm-to-table chef dining & custom mountain itineraries.",
+      "Host a private corporate retreat or executive offsite in Stowe, VT on 28 secluded acres. Sleeps 20 guests, fiber-optic internet, breakout rooms, private chef dining & custom mountain itineraries.",
     url: `${PRODUCTION_URL}/retreats/`,
     type: "website",
     images: [
@@ -35,251 +36,218 @@ export const metadata: Metadata = {
     site: "@LemelsonEstate",
     title: "Corporate & Executive Retreat Venue in Stowe, Vermont — Eden",
     description:
-      "Full 28-acre private estate buyout for executive offsites, board meetings & client retreats in Stowe, VT. Fiber internet, chef dining, sleeps 20.",
+      "Full 28-acre private estate stays for executive offsites, board meetings & client retreats in Stowe, VT. Fiber internet, custom dining, sleeps 20.",
     images: [`${PRODUCTION_URL}/opengraph-image.png`],
   },
 };
 
-const executiveFeatures = [
-  {
-    title: "100% Private Estate Buyout",
-    description:
-      "Unlike shared conference wings at Stowe resorts, your leadership team holds exclusive control over all 28 acres and 11,400 sq ft—ensuring complete discretion for board reviews, M&A planning, and confidential strategy sessions.",
-  },
-  {
-    title: "Fiber-Optic Connectivity & Workspaces",
-    description:
-      "Equipped with high-speed fiber-optic Wi-Fi throughout the residence, wired Ethernet, and a dedicated private office with monitor, ergonomic chair, laptop stand, and printer for seamless hybrid presentations.",
-  },
-  {
-    title: "Flexible Boardroom & Breakout Spaces",
-    description:
-      "Host full-team sessions at the formal dining/conference table or inside the Great Room, then split into smaller working groups across the 3-Seasons Sunroom, Music Room, upper loft lounge, and outdoor stone patio.",
-  },
-  {
-    title: "Chef-Prepared Farm-to-Table Dining",
-    description:
-      "Skip restaurant logistics. Our culinary team crafts seasonal Vermont farm-to-table breakfasts, working lunches, and multi-course dinners with curated wine pairings right in the estate kitchen.",
-  },
-  {
-    title: "Restorative Wellness & Team Bonding",
-    description:
-      "After strategy sessions, recharge in the year-round 10-person hot tub, private cedar sauna, steam shower, fitness center, clay tennis court, or game room—or step directly onto Wiessner Woods trails.",
-  },
-  {
-    title: "Turnkey Stowe Concierge Itineraries",
-    description:
-      "Our concierge team coordinates private transfers from Burlington International Airport (BTV), Stowe Mountain Resort ski passes, mountain golf, guided hikes, and Vermont craft brewery tours.",
-  },
-];
-
 const retreatFaqs: FaqItem[] = [
   {
-    question: "How many executives can stay overnight or attend a corporate event at Eden?",
+    question: "If we bring 12 to 18 people, what does the bedroom and bathroom setup look like?",
     answer:
-      "Eden accommodates up to 20 overnight guests across 8 bedrooms and 8 full bathrooms within 11,400 sq ft, making it ideal for C-suite offsites, founder retreats, and board summits. For seasonal company galas, client receptions, or holiday parties, outdoor tented capacity extends to 250+ guests.",
+      "The 11,400-square-foot residence has 8 bedrooms and 8 full bathrooms sleeping up to 20 overnight guests, so groups of more than 8 pair some bedrooms (including double-queen and twin layouts) while keeping en-suite convenience. The second floor also includes a self-contained apartment suite with its own kitchen, living room, primary bedroom, and twin bedroom.",
   },
   {
-    question: "What internet, AV, and meeting room setups are available?",
+    question: "Where can our team hold working sessions, and how reliable is the Wi-Fi for video calls?",
     answer:
-      "The estate features high-speed fiber-optic Wi-Fi throughout, wired Ethernet, an 86-inch smart TV, Sonos surround audio, and a dedicated executive office with a monitor, ergonomic chair, laptop stand, and printer. Teams gather around the long formal dining/conference table, in the Great Room, or across multiple private breakout lounges.",
+      "High-speed fiber-optic Wi-Fi covers the residence. Full-group discussions gather around the formal dining room table or in the Great Room, paired with an 86-inch smart TV, Sonos audio, a private second-floor executive study, and breakout lounges in the three-seasons sunroom or lower-level game room.",
   },
   {
-    question: "Can we arrange private chef catering and dietary accommodations for our team?",
+    question: "How do meals work during an offsite if nobody wants to go out every night?",
     answer:
-      "Yes. Our concierge team arranges private in-house chef service featuring Vermont farm-to-table ingredients and curated wine pairings—covering energizing breakfasts, working lunches, and celebratory evening dinners with full dietary accommodations.",
+      "Our concierge team can coordinate pre-arrival grocery and coffee stocking as well as optional private chef dinners with custom menus and wine pairings. Groups also have full use of the main gourmet kitchen and outdoor grill.",
   },
   {
-    question: "Why choose a private estate buyout in Stowe over a hotel conference center?",
+    question: "How far is Eden from Burlington airport, and how do teams coordinate arrivals?",
     answer:
-      "A full buyout of Eden guarantees total privacy with no outside hotel guests, competitors, or passersby. Your team gets uninterrupted focus by day and relaxed, house-party camaraderie around the stone fireplace, hot tubs, and sauna at night.",
+      "Eden sits in the Edson Hill Road area of Stowe, roughly 45 minutes from Burlington International Airport (BTV). Concierge assistance is available for private airport transfers and smooth arrival coordination for staggered team arrivals.",
   },
   {
-    question: "How far is Eden from Burlington International Airport (BTV) and Stowe Mountain Resort?",
+    question: "What can teams do between meetings, and how many daytime event guests can attend?",
     answer:
-      "Located in the Edson Hill Road area of Stowe, Vermont, Eden is approximately 5 minutes from Stowe Mountain Resort and downtown Stowe Village, and roughly 45 minutes from Burlington International Airport (BTV) and private FBO aviation terminals.",
-  },
-  {
-    question: "When are corporate and executive retreats available?",
-    answer:
-      "Corporate retreats, board summits, and leadership offsites are available year-round—from winter ski retreats and spring/summer offsites to peak autumn foliage gatherings. Peak-season dates book early, so we recommend inquiring in advance.",
+      "Between sessions, guests step out to Wiessner Woods (five-minute walk), drive five minutes to Stowe Mountain Resort, play on the clay tennis court, or unwind in the fitness room, cedar sauna, steam shower, and hot tubs. Larger seasonal receptions for 250+ tented guests can also be arranged on the grounds.",
   },
 ];
 
 export default function RetreatsPage() {
   return (
-    <div className="bg-white text-stone-900">
-      {/* Editorial Hero */}
-      <section className="pt-8 pb-16 md:pt-12 md:pb-24">
-        <div className="lux-container space-y-10">
-          <Breadcrumbs
-            items={[
-              { name: "Home", href: "/" },
-              { name: "Corporate Retreats", href: "/retreats/" },
-            ]}
-          />
+    <div className="bg-white text-[#1f1b17]">
+      <Breadcrumbs
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Corporate Retreats", href: "/retreats/" },
+        ]}
+      />
 
-          <div className="grid gap-8 lg:grid-cols-12 lg:items-end">
-            <div className="lg:col-span-7">
-              <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
-                Edson Hill Road Area · Stowe, Vermont
-              </p>
-              <h1 className="mt-4 text-4xl font-normal leading-[1.12] tracking-tight text-stone-900 sm:text-5xl">
-                Private Corporate &amp; Executive Retreats in Stowe, Vermont
-              </h1>
-            </div>
-            <div className="space-y-5 lg:col-span-5">
-              <p className="text-base leading-7 text-stone-600">
-                Step away from crowded hotel ballrooms. Host your leadership offsite, board summit, or client celebration on 28 secluded Vermont acres with total discretion, high-speed fiber internet, private chef dining, and resort-grade wellness amenities.
-              </p>
-              <div className="flex flex-wrap items-center gap-6">
-                <Link
-                  href="/contact/"
-                  className="inline-flex items-center bg-stone-950 px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] !text-white transition hover:bg-stone-800"
-                >
-                  Plan an Offsite
-                </Link>
-                <Link
-                  href="/news/the-lemelson-estate-opens-doors-to-exclusive-corporate-events/"
-                  className="border-b border-stone-900 pb-1 text-xs font-semibold uppercase tracking-[0.2em] text-stone-900 transition hover:border-[#8f7845] hover:text-[#8f7845]"
-                >
-                  Corporate Announcement
-                </Link>
+      {/* Split stage: fixed sticky estate view on desktop paired with calm reading column */}
+      <section className="bg-white">
+        <div className="grid lg:grid-cols-12">
+          <div className="relative aspect-[16/10] w-full overflow-hidden lg:col-span-6 lg:aspect-auto lg:sticky lg:top-20 lg:h-[calc(100svh-5rem)]">
+            <ResponsivePhoto
+              basePath="/gallery/enhanced/87"
+              alt="Twilight exterior view of Eden: The Lemelson Estate corporate retreat venue in Stowe, Vermont"
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              width={2400}
+              height={1600}
+              priority={true}
+              className="h-full w-full object-cover lg:absolute lg:inset-0"
+            />
+          </div>
+
+          <div className="lg:col-span-6">
+            <div className="lux-container space-y-10 py-10 md:space-y-12 md:py-14 lg:mx-0 lg:max-w-none lg:space-y-14 lg:py-16 lg:!pl-12 lg:!pr-[max(2.5rem,calc((100vw-72rem)/2+2.5rem))] xl:!pl-16">
+              {/* Hero title + subtext + button stacked directly below */}
+              <div>
+                <ScalingHeroTitle className="text-[clamp(2.5rem,6.4vw,5rem)] lg:text-[clamp(3rem,4.4vw,4.5rem)] font-semibold text-balance leading-[0.94] tracking-[-0.03em] text-[#1f1b17]">
+                  Retreats at Eden
+                </ScalingHeroTitle>
+
+                <p className="mt-5 max-w-[48ch] text-[16px] leading-[1.6] text-[#1f1b17] md:text-[18px]">
+                  Located on 28 private acres with open mountain views, Eden opens its doors for leadership offsites, board meetings, and private corporate gatherings in Stowe.
+                </p>
+
+                <div className="mt-6 flex flex-wrap items-center gap-5">
+                  <Link
+                    href="/contact/"
+                    className="inline-flex w-fit shrink-0 items-center whitespace-nowrap rounded-full bg-[#111111] px-7 py-3.5 text-[15px] font-medium !text-white transition duration-200 hover:bg-stone-800 active:scale-[0.98]"
+                  >
+                    Plan a corporate retreat
+                  </Link>
+                  <Link
+                    href="/stays/"
+                    className="whitespace-nowrap text-[15px] font-medium text-[#1f1b17] underline underline-offset-4 transition hover:text-[#6f5a2e]"
+                  >
+                    View estate specs →
+                  </Link>
+                </div>
               </div>
+
+              {/* Section 1 */}
+              <RevealBlock className="space-y-4 rounded-2xl bg-[#f8f3ea] p-6 sm:p-8">
+                <h2 className="text-2xl font-semibold leading-[1.15] text-[#1f1b17] sm:text-3xl">
+                  Exclusive use of the estate
+                </h2>
+                <p className="text-[16px] leading-[1.6] text-[#44403c]">
+                  Corporate groups have the entire 11,400-square-foot estate and 28 acres reserved solely for your group. Up to 20 overnight guests stay comfortably across eight bedrooms and eight baths, giving teams space to focus, meet privately, and unwind together.
+                </p>
+              </RevealBlock>
+
+              {/* Section 2 + Exact matching executive study photograph */}
+              <RevealBlock delayMs={40} className="space-y-6">
+                <div className="space-y-3">
+                  <h2 className="text-2xl font-semibold leading-[1.15] text-[#1f1b17] sm:text-3xl">
+                    Meeting spaces &amp; connectivity
+                  </h2>
+                  <p className="text-[16px] leading-[1.6] text-[#44403c]">
+                    High-speed fiber-optic Wi-Fi covers the residence alongside dedicated private meeting spaces, breakout rooms, formal dining, a second-floor workspace, and quiet gathering areas in the Great Room and three-seasons sunroom.
+                  </p>
+                </div>
+                <div className="overflow-hidden rounded-2xl">
+                  <div className="aspect-[16/10] w-full">
+                    <ResponsivePhoto
+                      basePath="/gallery/enhanced/57"
+                      alt="Private wood-paneled executive office and study inside Eden: The Lemelson Estate"
+                      sizes="(min-width: 1024px) 42vw, 100vw"
+                      width={2400}
+                      height={1600}
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                </div>
+              </RevealBlock>
+
+              {/* Section 3 + Formal dining + Great Room breakout photos */}
+              <RevealBlock delayMs={50} className="space-y-6">
+                <div className="space-y-3">
+                  <h2 className="text-2xl font-semibold leading-[1.15] text-[#1f1b17] sm:text-3xl">
+                    Chef dining &amp; team itineraries
+                  </h2>
+                  <p className="text-[16px] leading-[1.6] text-[#44403c]">
+                    Private chef services and curated wine pairings can be arranged featuring local Vermont ingredients, alongside afternoon skiing at Stowe Mountain Resort, hiking in Wiessner Woods, clay tennis, brewery visits, and recovery in the cedar sauna and hot tubs.
+                  </p>
+                </div>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="overflow-hidden rounded-2xl">
+                    <div className="aspect-[4/3] w-full">
+                      <ResponsivePhoto
+                        basePath="/gallery/enhanced/28"
+                        alt="Formal dining and meeting table set for an executive dinner at Eden"
+                        sizes="(min-width: 1024px) 22vw, 50vw"
+                        width={2400}
+                        height={1600}
+                        className="h-full w-full object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div className="overflow-hidden rounded-2xl">
+                    <div className="aspect-[4/3] w-full">
+                      <ResponsivePhoto
+                        basePath="/gallery/Eden-Site%20Photos/98"
+                        alt="Great Room fireside gathering space for leadership teams"
+                        sizes="(min-width: 1024px) 22vw, 50vw"
+                        width={2560}
+                        height={1704}
+                        className="h-full w-full object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </RevealBlock>
             </div>
-          </div>
-
-          <div className="overflow-hidden bg-stone-100">
-            <div className="aspect-[16/9] w-full">
-              <ResponsivePhoto
-                basePath="/gallery/enhanced/87"
-                alt="Twilight exterior view of Eden: The Lemelson Estate corporate retreat venue in Stowe, Vermont"
-                sizes="(min-width: 1280px) 1072px, 100vw"
-                width={2400}
-                height={1600}
-                priority={true}
-                className="h-full w-full object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Executive Capabilities — Editorial Grid */}
-      <section className="bg-[#f8f5f0] py-20 md:py-28">
-        <div className="lux-container space-y-14">
-          <div className="grid gap-6 lg:grid-cols-12 lg:items-end">
-            <div className="lg:col-span-7">
-              <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
-                Built for Leadership Teams
-              </p>
-              <h2 className="mt-3 text-3xl font-normal tracking-tight text-stone-900 sm:text-4xl">
-                Complete privacy, executive connectivity, and Vermont hospitality
-              </h2>
-            </div>
-            <p className="text-sm leading-7 text-stone-600 sm:text-base lg:col-span-5">
-              Every retreat is structured around your agenda—balancing productive strategy sessions inside quiet mountain workspaces with restorative outdoor and culinary experiences.
-            </p>
-          </div>
-
-          <div className="grid gap-x-10 gap-y-12 border-t border-stone-300/70 pt-12 md:grid-cols-2 lg:grid-cols-3">
-            {executiveFeatures.map((feat, idx) => (
-              <div key={feat.title} className="space-y-3">
-                <span className="text-[0.68rem] font-medium tracking-[0.22em] text-[#8f7845]">
-                  0{idx + 1}
-                </span>
-                <h3 className="text-xl font-normal text-stone-900">{feat.title}</h3>
-                <p className="text-sm leading-7 text-stone-600">{feat.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Workspaces & Gathering Spaces */}
-      <section className="bg-white py-20 md:py-28">
-        <div className="lux-container grid gap-10 lg:grid-cols-12 lg:items-center">
-          <div className="space-y-4 lg:col-span-5">
-            <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
-              Meeting &amp; Strategy Spaces
-            </p>
-            <h2 className="text-3xl font-normal tracking-tight text-stone-900 sm:text-4xl">
-              Spaces that spark clear strategic thinking
-            </h2>
-            <p className="text-sm leading-7 text-stone-600 sm:text-base">
-              Gather around the polished hardwood conference and dining table for morning keynotes, break out into sunlit lounges and the Great Room by the fire, and close the day over farm-to-table dining or a fireside wine tasting.
-            </p>
-          </div>
-          <div className="grid grid-cols-2 gap-4 lg:col-span-7">
-            <ResponsivePhoto
-              basePath="/gallery/enhanced/28"
-              alt="Formal dining and executive meeting table at Eden Estate in Stowe, VT"
-              sizes="(min-width: 1024px) 30vw, 50vw"
-              width={2400}
-              height={1600}
-              className="aspect-[4/3] w-full object-cover"
-            />
-            <ResponsivePhoto
-              basePath="/gallery/enhanced/13"
-              alt="Polished dark wood boardroom and formal dining table at Eden"
-              sizes="(min-width: 1024px) 30vw, 50vw"
-              width={2400}
-              height={1600}
-              className="aspect-[4/3] w-full object-cover"
-            />
-            <ResponsivePhoto
-              basePath="/gallery/Eden-Site%20Photos/98"
-              alt="Great Room fireside gathering space for leadership teams at Eden"
-              sizes="(min-width: 1024px) 30vw, 50vw"
-              width={2560}
-              height={1704}
-              className="aspect-[4/3] w-full object-cover"
-            />
-            <ResponsivePhoto
-              basePath="/gallery/enhanced/96"
-              alt="Private on-site fitness center at Eden: The Lemelson Estate"
-              sizes="(min-width: 1024px) 30vw, 50vw"
-              width={2400}
-              height={1600}
-              className="aspect-[4/3] w-full object-cover"
-            />
           </div>
         </div>
       </section>
 
       <FaqSection
-        title="Corporate & Executive Retreat FAQs"
-        description="Key logistical details for executive assistants, chief-of-staff planners, and leadership teams."
+        className="!bg-[#f8f3ea]"
+        title="Executive retreat questions"
+        details={[
+          "Edson Hill Road area, Stowe, Vermont",
+          "45 minutes from Burlington International Airport (BTV)",
+          "Private corporate and leadership stays across all seasons",
+        ]}
         items={retreatFaqs}
+        photo={{
+          basePath: "/gallery/enhanced/96",
+          alt: "Private on-site fitness room at Eden: The Lemelson Estate",
+        }}
       />
 
-      {/* Closing CTA */}
-      <section className="border-t border-stone-200 bg-[#f8f5f0] py-20 md:py-24">
-        <div className="lux-container max-w-3xl text-center">
-          <p className="text-[0.7rem] font-medium uppercase tracking-[0.34em] text-[#8f7845]">
-            Private Buyout Inquiries
-          </p>
-          <h2 className="mt-3 text-3xl font-normal tracking-tight text-stone-900 sm:text-4xl">
-            Inquire About Your Stowe Executive Offsite
+      {/* Dark Split CTA */}
+      <section className="grid bg-[#1f1b17] md:grid-cols-2">
+        <div className="relative aspect-[16/10] w-full overflow-hidden md:aspect-auto md:min-h-[360px] lg:min-h-[460px]">
+          <ResponsivePhoto
+            basePath="/gallery/enhanced/3"
+            alt="Aerial dusk view of Eden: The Lemelson Estate mountain retreat in Stowe, Vermont"
+            sizes="(min-width: 768px) 50vw, 100vw"
+            width={2400}
+            height={1600}
+            className="h-full w-full object-cover md:absolute md:inset-0"
+          />
+        </div>
+
+        <RevealBlock className="flex flex-col items-start justify-center gap-6 bg-[#1f1b17] px-6 py-12 text-[#f8f3ea] sm:px-10 md:px-10 md:py-12 lg:py-20 lg:pl-16 lg:pr-[max(4rem,calc((100vw-72rem)/2+2.5rem))] xl:pl-20">
+          <h2 className="text-3xl font-semibold leading-[1.1] text-white sm:text-4xl">
+            Inquire about your retreat
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-sm leading-7 text-stone-600 sm:text-base">
-            Share your preferred dates, team headcount, and retreat goals—our concierge team will prepare a custom private buyout proposal with direct-booking rates.
+          <p className="max-w-[42ch] text-[16px] leading-[1.6] text-[#e8dac0] md:text-[17px]">
+            Share your dates and team size with our hospitality team for availability, custom dining arrangements, and Stowe itinerary planning.
           </p>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
+          <div className="flex flex-wrap items-center gap-5 pt-1">
             <Link
               href="/contact/"
-              className="inline-flex items-center bg-stone-950 px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] !text-white transition hover:bg-stone-800"
+              className="inline-flex shrink-0 items-center whitespace-nowrap rounded-full bg-[#f8f3ea] px-8 py-3.5 text-[15px] font-semibold !text-[#1f1b17] transition duration-200 hover:bg-white active:scale-[0.98]"
             >
-              Request Availability
+              Request availability
             </Link>
             <Link
               href="/stays/"
-              className="border-b border-stone-900 pb-1 text-xs font-semibold uppercase tracking-[0.2em] text-stone-900 transition hover:border-[#8f7845] hover:text-[#8f7845]"
+              className="whitespace-nowrap text-[15px] font-medium text-[#f8f3ea] underline underline-offset-4 transition hover:text-white"
             >
-              View Full Estate Specs
+              Explore 8 bedrooms →
             </Link>
           </div>
-        </div>
+        </RevealBlock>
       </section>
     </div>
   );

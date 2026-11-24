@@ -51,12 +51,12 @@ const platforms: Platform[] = [
   {
     name: "The Knot",
     href: "https://www.theknot.com/marketplace/edenthe-lemelson-estate-stowe-vt-2087322",
-    logo: "/idzSo3ACCf_logos.jpeg",
+    logo: "/the-knot-wordmark.svg",
     alt: "The Knot",
     bgColor: "bg-[#FF44CB]",
-    logoWidth: 40,
-    logoHeight: 40,
-    logoClassName: "h-6 w-6 rounded-md object-cover sm:h-7 sm:w-7",
+    logoWidth: 124,
+    logoHeight: 29,
+    logoClassName: "h-4 w-auto sm:h-5",
   },
   {
     name: "Zola",
@@ -97,12 +97,12 @@ export function WhereToFindUs({
    }: WhereToFindUsProps) {
   return (
     <div className={`flex flex-col items-center gap-6 text-center text-stone-900 md:gap-8 ${className}`}>
-      <h2 className="![font-family:var(--font-body)] text-sm font-semibold uppercase !tracking-[0.35em] text-stone-800 text-balance sm:text-base md:text-lg">
+      <h2 className="text-xl font-semibold text-stone-900 text-balance sm:text-2xl">
         {title}
       </h2>
       <ul
         role="list"
-        className={`grid w-full max-w-4xl list-none grid-cols-3 justify-items-center gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 sm:gap-5 ${containerClassName}`}
+        className={`grid w-full max-w-4xl list-none grid-cols-3 justify-items-center gap-3 sm:gap-5 lg:grid-cols-6 ${containerClassName}`}
       >
         {platforms.map((platform) => (
           <li key={platform.name} className="flex w-full justify-center">

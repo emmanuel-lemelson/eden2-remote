@@ -74,8 +74,8 @@ export default function CorporateEventsArticle() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <div className="lux-container pt-8 pb-20 md:pb-28">
-        <div className="max-w-5xl px-4 sm:px-6 lg:px-8">
-        <div className="mb-6 px-4 md:px-20 lg:px-28 text-left">
+        <div className="max-w-5xl">
+        <div className="mb-6 md:mx-12 lg:mx-20 text-left">
           <Breadcrumbs
             items={[
               { name: "Home", href: "/" },
@@ -106,8 +106,8 @@ export default function CorporateEventsArticle() {
           </Link>
         </div>
 
-        <header className="mb-12 px-4 md:px-20 lg:px-28 text-left">
-          <h1 className="text-4xl font-semibold leading-tight text-stone-900 md:text-5xl">
+        <header className="mb-12 md:mx-12 lg:mx-20 text-left">
+          <h1 className="text-[2.1rem] font-semibold leading-tight text-stone-900 text-balance sm:text-4xl md:text-5xl">
             The Lemelson Estate Opens Doors to Exclusive Corporate Events
           </h1>
           <time
@@ -124,7 +124,7 @@ export default function CorporateEventsArticle() {
         </header>
 
         {/* One continuous article flow with inline floated figures on desktop */}
-        <section className="mt-12 press-article prose prose-stone prose-lg max-w-none leading-relaxed px-4 md:px-20 lg:px-28 text-left">
+        <section className="mt-12 press-article prose prose-stone prose-lg max-w-none leading-relaxed md:mx-12 lg:mx-20 text-left">
           <figure className="press-figure-right w-full flex flex-col">
             <div className="overflow-hidden rounded-2xl border border-stone-200/60 shadow-[0_20px_60px_-20px_rgba(58,45,20,0.3)] flex-1">
               <div className="relative aspect-[4/3] w-full h-full">
@@ -147,7 +147,7 @@ export default function CorporateEventsArticle() {
           <div className="text-stone-700 press-text-flow">
             <span>STOWE, Vt., November 6, 2025 — </span>
             <strong className="text-stone-900">Eden – The Lemelson Estate</strong>{" "}
-            (<a href="https://lemelsonestate.com/" target="_blank" rel="noopener noreferrer" className="!text-blue-600 hover:!underline cursor-pointer">https://lemelsonestate.com/</a>),
+            (<a href="https://lemelsonestate.com/" className="!text-stone-900 underline decoration-stone-300 underline-offset-4 transition hover:decoration-stone-900">lemelsonestate.com</a>),
             known for its ultra‑luxury weddings and private stays, is pleased to announce the expansion of its offerings to include corporate events, executive retreats, and seasonal celebrations. The secluded{" "}
             <strong className="text-stone-900">28‑acre property</strong>, just five minutes from Stowe Mountain Resort and the charming village of Stowe, now welcomes companies seeking a distinctive and private venue for strategy sessions, client entertainment, and high‑end festivities.{" "}
 
@@ -189,7 +189,7 @@ export default function CorporateEventsArticle() {
                 Golfing at Stowe Mountain Resort
               </figcaption>
             </figure>
-            <blockquote className="press-quote">
+            <blockquote className="press-quote overflow-hidden">
               <p className="press-quote-text">&ldquo;Corporate guests come to Eden for inspiration, connection, and absolute discretion. We set the stage for teams to reset and collaborate, ensuring every detail—from chef‑prepared dining to custom activity itineraries—is handled through personalized, white‑glove service.&rdquo;</p>
               <footer className="press-quote-attribution">— Eden – The Lemelson Estate Concierge Team</footer>
             </blockquote>
@@ -210,46 +210,37 @@ export default function CorporateEventsArticle() {
                 Chef Emma&apos;s seared scallops with summer succotash
               </figcaption>
             </figure>
-            <span>Events include chef‑led farm‑to‑table menus featuring Vermont&apos;s finest local ingredients and wine pairings, tailored to match the season—from summer soirées to winter gatherings by roaring fireplaces. The concierge team curates custom itineraries with activities such as skiing, hiking, golf, and local brewery tours. <strong className="text-stone-900">Booking &amp; Availability:</strong> Corporate retreats and holiday events are available year‑round, with limited peak‑season availability.</span>
+            <span>Events include chef‑led farm‑to‑table menus featuring Vermont&apos;s finest local ingredients and wine pairings, tailored to match the season, from summer soirées to winter gatherings by roaring fireplaces. The concierge team curates custom itineraries with activities such as skiing, hiking, golf, and local brewery tours.</span>
+            <span className="!block mt-5"><strong className="text-stone-900">Booking &amp; Availability:</strong> Corporate retreats and holiday events are available year‑round, with limited peak‑season availability.</span>
           </div>
         </section>
 
-        <div className="mt-16 px-4 md:px-20 lg:px-28 border-t border-stone-200/60 pt-12 text-left">
-          <div className="flex flex-wrap items-center gap-4">
+        <div className="mt-16 md:mx-12 lg:mx-20 border-t border-stone-200/60 pt-12 text-left">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
             <Link
-              href="/contact"
-              className="group inline-flex items-center gap-2 md:gap-3 rounded-full border-2 border-[var(--color-gold)] bg-white px-6 py-3.5 md:px-8 md:py-4 text-base md:text-sm font-semibold uppercase tracking-[0.2em] md:tracking-[0.35em] text-stone-900 shadow-[0_4px_12px_-4px_rgba(194,160,96,0.4)] transition-all hover:border-[var(--color-gold)] hover:bg-[var(--color-gold)]/5 hover:shadow-[0_8px_20px_-6px_rgba(194,160,96,0.5)]"
+              href="/contact/"
+              className="inline-flex shrink-0 items-center whitespace-nowrap rounded-full bg-[#111111] px-7 py-3.5 text-[15px] font-medium !text-white transition duration-200 hover:bg-stone-800 active:scale-[0.98]"
               prefetch={true}
             >
-              <span>Inquire About Corporate Events</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                className="h-5 w-5 md:h-4 md:w-4 transition-transform group-hover:translate-x-1 flex-shrink-0"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
+              Inquire about corporate events
             </Link>
             <Link
               href="/retreats/"
-              className="inline-flex items-center gap-2 rounded-full border border-stone-300 bg-transparent px-6 py-3.5 md:px-7 md:py-4 text-sm font-semibold uppercase tracking-[0.18em] text-stone-800 transition hover:border-stone-900 hover:bg-stone-50"
+              className="inline-flex min-h-11 items-center whitespace-nowrap text-[15px] font-medium text-[#1f1b17] underline underline-offset-4 transition hover:text-[#6f5a2e]"
               prefetch={true}
             >
-              Explore Corporate Retreats at Eden
+              Explore corporate retreats →
             </Link>
           </div>
         </div>
 
         {/* Media & Booking Inquiries and About Section */}
-        <section className="mt-16 px-4 md:px-20 lg:px-28 border-t border-stone-200/60 pt-12 text-left">
+        <section className="mt-16 md:mx-12 lg:mx-20 border-t border-stone-200/60 pt-12 text-left">
           <div className="grid gap-12 md:grid-cols-2">
             {/* Media & Booking Inquiries */}
             <div>
               <h2 className="text-lg font-semibold text-stone-900 mb-4">
-                Media &amp; Booking Inquiries:
+                Media &amp; booking inquiries
               </h2>
               <div className="space-y-2 text-stone-700">
                 <p className="leading-relaxed">
@@ -259,7 +250,7 @@ export default function CorporateEventsArticle() {
                 <p>
                   <a
                     href="mailto:admin@lemelsoncapital.com"
-                    className="font-bold text-blue-600 hover:text-blue-800 hover:underline transition-colors"
+                    className="font-medium text-stone-900 underline decoration-stone-300 underline-offset-4 transition hover:decoration-stone-900"
                   >
                     admin@lemelsoncapital.com
                   </a>
@@ -267,13 +258,13 @@ export default function CorporateEventsArticle() {
               </div>
             </div>
 
-            {/* About Eden—The Lemelson Estate */}
+            {/* About Eden: The Lemelson Estate */}
             <div>
               <h2 className="text-lg font-semibold text-stone-900 mb-4">
-                About Eden—The Lemelson Estate:
+                About Eden: The Lemelson Estate
               </h2>
               <p className="text-stone-700 leading-relaxed">
-                Eden—The Lemelson Estate is a premier luxury property in Stowe, Vermont, offering curated stays, weddings, and corporate gatherings. Located on 28 private acres with panoramic mountain views, the estate combines modern elegance with Vermont&apos;s natural charm.
+                Eden: The Lemelson Estate is a premier luxury property in Stowe, Vermont, offering curated stays, weddings, and corporate gatherings. Located on 28 private acres with panoramic mountain views, the estate combines modern elegance with Vermont&apos;s natural charm.
               </p>
             </div>
           </div>

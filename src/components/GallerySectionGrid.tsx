@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useLayoutEffect, useRef, useCallback } from "react";
+import { useEffect, useMemo, useRef, useSyncExternalStore } from "react";
 import type { ReactNode } from "react";
 import { GalleryImage } from "@/components/GalleryImage";
 import type { GallerySection } from "@/types/gallery";
@@ -59,118 +59,154 @@ type Props = {
   sections: GallerySection[];
 };
 
-const DEFAULT_AUTO_ROW_HEIGHT = 8;
+/** Gap between tiles expressed as a fraction of one column's width (≈16–20px). */
+const GAP_RATIO = 0.05;
+const LG_QUERY = "(min-width: 1024px)";
 
-/**
- * Container-level masonry controller.
- *
- * Replaces the previous per-item approach (one ResizeObserver + one rAF per
- * tile, mutating layout after paint) which caused visible reflow/"glitch" as
- * tiles snapped to size. Here a single ResizeObserver watches the grid, and on
- * each change we do ONE batched read phase (collect every tile width) followed
- * by ONE batched write phase (apply every span) to avoid layout thrashing.
- * The first pass runs in useLayoutEffect so spans are set before the browser
- * paints — no flash of mis-sized tiles. Each tile also reserves its space via
- * aspect-ratio on the <img>, so there is zero layout shift before JS runs.
- */
-function MasonryGrid({ children }: { children: ReactNode }) {
-  const gridRef = useRef<HTMLDivElement | null>(null);
-  const rafRef = useRef<number>(0);
-
-  const applyLayout = useCallback(() => {
-    const grid = gridRef.current;
-    if (!grid) return;
-
-    const computed = window.getComputedStyle(grid);
-    const gap =
-      Number.parseFloat(computed.getPropertyValue("row-gap")) ||
-      Number.parseFloat(computed.getPropertyValue("gap")) ||
-      0;
-    const autoRowHeight =
-      Number.parseFloat(computed.getPropertyValue("grid-auto-rows")) ||
-      DEFAULT_AUTO_ROW_HEIGHT;
-    if (autoRowHeight <= 0) return;
-
-    const items = Array.from(grid.children) as HTMLElement[];
-
-    // READ phase: gather every measurement first (no writes interleaved).
-    const measurements = items.map((item) => {
-      const aspectRatio = Number.parseFloat(item.dataset.aspectRatio ?? "");
-      const width = item.getBoundingClientRect().width;
-      return { item, aspectRatio, width };
-    });
-
-    // WRITE phase: apply all spans/heights together.
-    for (const { item, aspectRatio, width } of measurements) {
-      if (!Number.isFinite(aspectRatio) || aspectRatio <= 0 || width === 0) {
-        item.style.removeProperty("grid-row-end");
-        item.style.removeProperty("height");
-        continue;
-      }
-      const targetHeight = width * aspectRatio;
-      const rowSpan = Math.max(
-        1,
-        Math.ceil((targetHeight + gap) / (autoRowHeight + gap)),
-      );
-      item.style.gridRowEnd = `span ${rowSpan}`;
-      item.style.height = `${targetHeight}px`;
-    }
-  }, []);
-
-  const scheduledLayout = useCallback(() => {
-    if (rafRef.current) cancelAnimationFrame(rafRef.current);
-    rafRef.current = requestAnimationFrame(applyLayout);
-  }, [applyLayout]);
-
-  // Run before paint so tiles are never shown at the wrong size.
-  useLayoutEffect(() => {
-    applyLayout();
-  }, [applyLayout]);
-
-  useEffect(() => {
-    const grid = gridRef.current;
-    if (!grid) return;
-
-    if (typeof ResizeObserver === "function") {
-      const observer = new ResizeObserver(scheduledLayout);
-      observer.observe(grid);
-      return () => {
-        if (rafRef.current) cancelAnimationFrame(rafRef.current);
-        observer.disconnect();
-      };
-    }
-
-    window.addEventListener("resize", scheduledLayout);
-    return () => {
-      if (rafRef.current) cancelAnimationFrame(rafRef.current);
-      window.removeEventListener("resize", scheduledLayout);
-    };
-  }, [scheduledLayout]);
-
-  return (
-    <div ref={gridRef} className="masonry-grid">
-      {children}
-    </div>
+/** 2 columns below lg (phone + tablet), 3 from lg. Server/hydration render uses 3. */
+function useColumnCount(): number {
+  return useSyncExternalStore(
+    (onChange) => {
+      const mql = window.matchMedia(LG_QUERY);
+      mql.addEventListener("change", onChange);
+      return () => mql.removeEventListener("change", onChange);
+    },
+    () => (window.matchMedia(LG_QUERY).matches ? 3 : 2),
+    () => 3,
   );
 }
 
-function MasonryItem({
-  className,
-  children,
-  aspectRatio,
-}: {
-  className?: string;
-  children: ReactNode;
-  aspectRatio: number;
-}) {
-  const classes = ["masonry-item"];
-  if (className && className.trim().length > 0) {
-    classes.push(className);
+type ColumnLayout = { items: number[]; scale: number }[];
+
+/** Height of a column in column-width units, before any scaling. */
+function columnHeight(ratios: number[], items: number[]) {
+  return items.reduce((sum, i) => sum + ratios[i], 0) + GAP_RATIO * Math.max(0, items.length - 1);
+}
+
+/** How much each column's tiles must scale so every column ends on the same line. */
+function scoreColumns(ratios: number[], cols: number[][]) {
+  const heights = cols.map((c) => columnHeight(ratios, c));
+  const target = heights.reduce((a, b) => a + b, 0) / cols.length;
+  const scales = cols.map((c) => {
+    const content = c.reduce((sum, i) => sum + ratios[i], 0);
+    return content > 0 ? (target - GAP_RATIO * Math.max(0, c.length - 1)) / content : Infinity;
+  });
+  return { worst: Math.max(...scales.map((x) => Math.abs(x - 1))), scales };
+}
+
+/**
+ * Splits photos into `count` columns whose heights match as closely as possible,
+ * so each section ends on one clean line instead of ragged masonry holes.
+ * Greedy shortest-column fill, then move/swap refinement. Within a column the
+ * curated order is kept. Deterministic, so server and client agree.
+ */
+function balanceColumns(ratios: number[], count: number): ColumnLayout {
+  let cols: number[][] = Array.from({ length: count }, () => []);
+  const heights = new Array(count).fill(0);
+  ratios.forEach((r, i) => {
+    const k = heights.indexOf(Math.min(...heights));
+    cols[k].push(i);
+    heights[k] += r + GAP_RATIO;
+  });
+
+  let best = scoreColumns(ratios, cols).worst;
+  for (let pass = 0; pass < 50; pass++) {
+    let improved = false;
+    for (let a = 0; a < count && !improved; a++) {
+      for (let b = 0; b < count && !improved; b++) {
+        if (a === b) continue;
+        for (const i of cols[a]) {
+          if (cols[a].length > 1) {
+            const moved = cols.map((c) => [...c]);
+            moved[a] = moved[a].filter((x) => x !== i);
+            moved[b].push(i);
+            const score = scoreColumns(ratios, moved).worst;
+            if (score < best - 1e-9) {
+              cols = moved;
+              best = score;
+              improved = true;
+              break;
+            }
+          }
+          for (const j of cols[b]) {
+            const swapped = cols.map((c) => [...c]);
+            swapped[a] = swapped[a].map((x) => (x === i ? j : x));
+            swapped[b] = swapped[b].map((x) => (x === j ? i : x));
+            const score = scoreColumns(ratios, swapped).worst;
+            if (score < best - 1e-9) {
+              cols = swapped;
+              best = score;
+              improved = true;
+              break;
+            }
+          }
+          if (improved) break;
+        }
+      }
+    }
+    if (!improved) break;
   }
 
+  const sorted = cols.map((c) => [...c].sort((x, y) => x - y));
+  const { scales } = scoreColumns(ratios, sorted);
+  return sorted.map((items, k) => ({ items, scale: scales[k] }));
+}
+
+/**
+ * Balanced editorial masonry: photos are split into equal-height columns and
+ * each tile gets a reserved aspect-ratio (no layout shift). Tiles in a column
+ * share any leftover pixels via flex-grow, so all columns end flush.
+ */
+function BalancedMasonry({
+  section,
+  sectionStartIndex,
+}: {
+  section: GallerySection;
+  sectionStartIndex: number;
+}) {
+  const columnCount = useColumnCount();
+  const ratios = useMemo(
+    () => section.images.map((img) => img.height / img.width),
+    [section.images],
+  );
+  const layout = useMemo(() => balanceColumns(ratios, columnCount), [ratios, columnCount]);
+
   return (
-    <div className={classes.join(" ")} data-aspect-ratio={aspectRatio}>
-      {children}
+    <div className="flex items-stretch gap-2 sm:gap-4 md:gap-5">
+      {layout.map((column, colIdx) => (
+        <div key={colIdx} className="flex min-w-0 flex-1 flex-col gap-2 sm:gap-4 md:gap-5">
+          {column.items.map((i) => {
+            const image = section.images[i];
+            const absoluteIndex = sectionStartIndex + i;
+            const altText =
+              image.alt && image.alt !== "Eden Estate gallery image"
+                ? image.alt
+                : `${section.title} at Eden Estate`;
+            const tileRatio = ratios[i] * column.scale;
+
+            return (
+              <div
+                key={`${section.title}-${image.src}`}
+                className="group relative overflow-hidden rounded-xl bg-[rgba(248,243,234,0.85)] sm:rounded-2xl"
+                style={{ aspectRatio: `1 / ${tileRatio}`, flexGrow: tileRatio }}
+              >
+                <GalleryImage
+                  src={image.src}
+                  srcSet={image.srcset}
+                  avifSrcSet={image.avifSrcset}
+                  alt={altText}
+                  width={image.width}
+                  height={image.height}
+                  sizes="(min-width: 1024px) 360px, 50vw"
+                  index={absoluteIndex}
+                  className="pointer-events-none absolute inset-0 !h-full"
+                />
+                <div className="pointer-events-none absolute inset-0 z-10 bg-black/0 transition-colors duration-300 group-hover:bg-black/5" />
+              </div>
+            );
+          })}
+        </div>
+      ))}
     </div>
   );
 }
@@ -530,42 +566,8 @@ export function GallerySectionGrid({ sections }: Props) {
       );
     }
 
-    // 5+ Photos: Dynamic JS-Based Masonry Grid per section
-    return (
-      <MasonryGrid>
-        {images.map((image, idx) => {
-          const absoluteIndex = sectionStartIndex + idx;
-          const altText =
-            image.alt && image.alt !== "Eden Estate gallery image"
-              ? image.alt
-              : `${section.title} at Eden Estate`;
-
-          return (
-            <MasonryItem
-              key={`${section.title}-${image.src}`}
-              aspectRatio={image.height / image.width}
-              className="group relative overflow-hidden rounded-3xl border border-white/60 bg-[rgba(248,243,234,0.85)] shadow-sm"
-            >
-              <div className="overflow-hidden">
-                <GalleryImage
-                  src={image.src}
-                  srcSet={image.srcset}
-                  avifSrcSet={image.avifSrcset}
-                  alt={altText}
-                  width={image.width}
-                  height={image.height}
-                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-                  index={absoluteIndex}
-                  className="pointer-events-none h-full"
-                />
-              </div>
-              <div className="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/5 z-10 pointer-events-none" />
-              <span className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-t from-black/20 via-transparent to-black/10 opacity-30" />
-            </MasonryItem>
-          );
-        })}
-      </MasonryGrid>
-    );
+    // 5+ Photos: balanced equal-height columns
+    return <BalancedMasonry section={section} sectionStartIndex={sectionStartIndex} />;
   }
 
   let runningImageIndex = 0;

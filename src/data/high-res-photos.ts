@@ -1,0 +1,38 @@
+/**
+ * Gallery photos that also ship 1600w and 2000w variants (see scripts/generate-gallery-data.js).
+ * ResponsivePhoto adds those sources automatically so full-bleed images stay sharp on wide and retina screens.
+ */
+export const HIGH_RES_PHOTOS = new Set<string>([
+  "/gallery/enhanced/13",
+  "/gallery/enhanced/17",
+  "/gallery/enhanced/25",
+  "/gallery/enhanced/28",
+  "/gallery/enhanced/2",
+  "/gallery/enhanced/31",
+  "/gallery/enhanced/3",
+  "/gallery/enhanced/43",
+  "/gallery/enhanced/4",
+  "/gallery/enhanced/54",
+  "/gallery/enhanced/57",
+  "/gallery/enhanced/68",
+  "/gallery/enhanced/78",
+  "/gallery/enhanced/87",
+  "/gallery/enhanced/88",
+  "/gallery/enhanced/90",
+  "/gallery/enhanced/92",
+  "/gallery/enhanced/96",
+  "/gallery/Eden-Site Photos/100",
+  "/gallery/Eden-Site Photos/101",
+  "/gallery/Eden-Site Photos/102",
+  "/gallery/Eden-Site Photos/103",
+  "/gallery/Eden-Site Photos/105",
+  "/gallery/Eden-Site Photos/106",
+  "/gallery/Eden-Site Photos/107",
+  "/gallery/Eden-Site Photos/108",
+  "/gallery/Eden-Site Photos/109",
+  "/gallery/Eden-Site Photos/110",
+  "/gallery/Eden-Site Photos/111",
+  "/gallery/Eden-Site Photos/113",
+  "/gallery/Eden-Site Photos/98",
+  "/gallery/Eden-Site Photos/99",
+]);

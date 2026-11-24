@@ -39,7 +39,7 @@ export default function ContactPage() {
             ]}
             className="mb-4"
           />
-          <h1 className="text-3xl font-medium text-stone-900 md:text-4xl tracking-tight">
+          <h1 className="text-4xl font-semibold text-stone-900 md:text-5xl tracking-tight">
             Plan Your Stay
           </h1>
           <p className="mt-3 text-sm text-stone-600 max-w-xl leading-relaxed text-pretty">

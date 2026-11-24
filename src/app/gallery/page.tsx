@@ -59,12 +59,13 @@ export default function GalleryPage() {
         <GallerySectionGrid sections={gallerySections} />
       </section>
 
-      <section className="lux-section pt-0">
-        <div className="lux-container overflow-hidden rounded-3xl border border-white/60 bg-white/80 p-6 text-center md:p-10">
-          <h2 className="text-4xl font-semibold text-stone-900">
+      <section className="lux-section !pt-4 md:!pt-8">
+        <div className="lux-container">
+          <div className="overflow-hidden rounded-3xl border border-stone-200/70 bg-white/80 px-6 py-10 text-center md:px-12 md:py-14">
+          <h2 className="text-3xl font-semibold text-stone-900 text-balance md:text-4xl">
             Tailored for Every Guest
           </h2>
-          <p className="mt-4 text-base text-stone-700">
+          <p className="mx-auto mt-4 max-w-2xl text-base text-stone-700 text-pretty">
             From kids’ activities to spa treatments and chef-prepared dinners, there’s something for everyone at Eden.
           </p>
           <Link
@@ -75,6 +76,7 @@ export default function GalleryPage() {
             Connect with the Team
           </Link>
         </div>
+          </div>
       </section>
     </div>
   );
