@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev --turbopack -p 3000",
     "build": "npm run generate-data && next build && npm run prune-output",
     "prune-output": "node scripts/prune-output.js",
     "generate-data": "node scripts/generate-gallery-data.js",

@@ -1,9 +1,10 @@
 import type { NextConfig } from "next";
+import { PHASE_DEVELOPMENT_SERVER } from "next/constants";
 import path from "path";
 
-const nextConfig: NextConfig = {
+const nextConfig = (phase: string): NextConfig => ({
   outputFileTracingRoot: path.join(__dirname),
-  distDir: process.env.NODE_ENV === "production" ? ".next-prod" : ".next",
+  distDir: phase === PHASE_DEVELOPMENT_SERVER ? ".next-dev" : ".next-prod",
   output: "export",
   trailingSlash: true,
   /**
@@ -26,6 +27,6 @@ const nextConfig: NextConfig = {
   // NOTE: HTTP caching headers are NOT configured here. Next.js ignores
   // `headers()` under `output: "export"`. Real cache headers for the static
   // site live in `public/_headers` (consumed by Cloudflare Pages).
-};
+});
 
 export default nextConfig;

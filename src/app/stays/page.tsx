@@ -74,12 +74,12 @@ const amenities = [
   {
     title: "Extended & remote stays",
     detail:
-      "High-speed fiber-optic Wi-Fi and a dedicated second-floor workspace, with direct arrival coordination and availability for extended stays.",
+      "High-speed fiber-optic Wi-Fi and dedicated workspaces throughout.",
   },
   {
-    title: "Pet-friendly hospitality",
+    title: "Concierge & pets",
     detail:
-      "Bring the family dog along for stays on 28 secluded acres steps from Wiessner Woods. Our concierge team also arranges pre-arrival groceries, in-home massages, private yoga, lift passes, and Burlington (BTV) airport transfers.",
+      "Bring the family dog along for stays on 28 secluded acres steps from Wiessner Woods. Available upon request, our concierge can coordinate pre-arrival groceries, in-home massages, private yoga, lift passes, and Burlington (BTV) airport transfers.",
   },
 ];
 
@@ -163,7 +163,7 @@ export default function StaysPage() {
             </ScalingHeroTitle>
 
             <p className="mx-auto mt-3 max-w-[54ch] text-balance text-[15px] leading-[1.5] text-[#44403c] md:mt-4 md:text-[20px]">
-              Escape to one of Stowe&apos;s most exclusive estates. Set on 28 private acres five minutes from Stowe Mountain Resort, Eden offers 11,400 square feet, eight bedrooms, and room for up to 20 guests. Pets are welcome, and booking direct means no third-party platform fees.
+              Five minutes from Stowe Mountain Resort on 28 private acres: 11,400 sq ft, 8 bedrooms, 20 guests, pet-friendly. Book direct for zero platform fees.
             </p>
 
             <div className="mt-5 flex flex-wrap items-center justify-center gap-x-4 gap-y-2.5 md:mt-6 md:gap-5">
@@ -184,7 +184,7 @@ export default function StaysPage() {
         </div>
 
         <div className="lux-container mt-5 md:mt-8">
-          <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl md:aspect-auto md:h-[46svh] md:min-h-[300px] md:max-h-[500px] md:rounded-3xl">
+          <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl md:aspect-auto md:h-[50svh] md:min-h-[340px] md:max-h-[540px] md:rounded-3xl">
             <ResponsivePhoto
               basePath="/gallery/enhanced/2"
               alt="Aerial sunset view of Eden: The Lemelson Estate luxury vacation rental in Stowe, Vermont"
@@ -206,7 +206,7 @@ export default function StaysPage() {
               Estate at a glance
             </h2>
             <p className="max-w-[54ch] text-[15px] leading-[1.6] text-[#44403c] md:text-[17px]">
-              Eden pairs the warmth of a private Vermont mountain home with resort amenities reserved solely for your group, backed by 62 five-star reviews across Airbnb and Vrbo.
+              Eden pairs the warmth of a private Vermont mountain home with resort amenities reserved solely for your group, backed by 62 five-star reviews across Airbnb, Vrbo, and more.
             </p>
           </RevealBlock>
 

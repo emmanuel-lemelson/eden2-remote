@@ -56,28 +56,38 @@ const weekendChapters = [
     verb: "Private Chef",
     caption:
       "Enjoy restaurant-level dining in the comfort of the estate with a private chef experience.",
-    photo: "/images/private-chef.jpg",
-    alt: "Private chef plating a fine-dining course with tweezers on a marble counter",
+    photo: "/images/private-chef-table.jpg",
+    alt: "Candlelit wedding reception table with gold candlesticks, fresh florals, and folded linen napkins at Eden: The Lemelson Estate",
     isStaticImage: true,
-    imageClassName: "object-[50%_42%]",
+    imageClassName: "object-center",
   },
   {
-    verb: "Unwind",
-    caption: "Pool, hot tubs, sauna, steam shower, tennis court, gym, and Wiessner Woods trails.",
-    photo: "/gallery/Eden-Site%20Photos/91",
-    alt: "Guest relaxing in steaming outdoor hot tub at golden hour overlooking snowy Vermont trees",
-    isStaticImage: false,
-    imageClassName: "",
+    verb: "Event Coordination",
+    caption:
+      "Month-of event management and day-of coordination—guiding planning, contract clarity, logistics, setup, and cleanup.",
+    photo: "/images/wedding-john-a.jpg",
+    alt: "Bride, groom, and wedding party walking across the grounds at Eden: The Lemelson Estate",
+    isStaticImage: true,
+    imageClassName: "object-center",
   },
 ];
 
 const coupleStories = [
   {
     quote:
+      "The estate is immaculate and luxurious, with every amenity (and more) that one would expect in such a fine setting... Eden is an ideal spot for weddings, family reunions, or just an amazing place to stay and soak up the beauty of Vermont in pampered luxury!",
+    credit: "John A. · September 2024",
+    photo: "/images/wedding-bride-pond.jpg",
+    alt: "Bride walking down stone steps in an ivory long-sleeve gown overlooking the reflective pond at Eden: The Lemelson Estate",
+    isStaticImage: true,
+  },
+  {
+    quote:
       "We had our ceremony in the great room with the fireplace roaring. All the bedrooms were utilized for our families, with no need for transportation.",
     credit: "Seanna C. · Winter Great Room wedding",
     photo: "/gallery/Eden-Site%20Photos/83",
     alt: "Bride and groom embracing outside Eden in Stowe snow during a winter wedding",
+    isStaticImage: false,
   },
   {
     quote:
@@ -85,6 +95,7 @@ const coupleStories = [
     credit: "Kayli · Intimate 14-guest elopement",
     photo: "/gallery/Eden-Site%20Photos/82",
     alt: "Winter bride outdoors in white gown and fur wrap against snowy Stowe trees",
+    isStaticImage: false,
   },
 ];
 
@@ -103,11 +114,6 @@ const weddingFaqs: FaqItem[] = [
     question: "Do you require preset menus or food and beverage minimums?",
     answer:
       "No. Every couple meets with our in-house chef to design a custom menu (passed hors d'oeuvres, plated, family-style, or buffet) with zero minimums.",
-  },
-  {
-    question: "Is St. Katherine Chapel open to wedding guests?",
-    answer:
-      "Dedicated to St. Katherine of Alexandria, the chapel celebrates Sunday Divine Liturgy at 10 a.m. EST (early September through June) and is closed outside liturgical hours. Reverence and proper attire are required.",
   },
   {
     question: "What stay lengths are offered, and how do tours work?",
@@ -179,14 +185,14 @@ export default function WeddingsPage() {
         </div>
 
         <div className="lux-container mt-5 md:mt-8">
-          <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl md:aspect-auto md:h-[46svh] md:min-h-[300px] md:max-h-[500px] md:rounded-3xl">
+          <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl md:rounded-3xl">
             <img
-              src="/images/weddings-pond-banner.jpg"
-              alt="Bride and groom walking hand-in-hand beside the spring-fed pond with Eden: The Lemelson Estate in the background"
+              src="/images/wedding-couple-editorial.jpg"
+              alt="Bride and groom embracing at golden hour on the grounds of Eden: The Lemelson Estate with a glowing white sailcloth wedding tent and Vermont's Green Mountains behind them"
               width={1376}
               height={768}
               fetchPriority="high"
-              className="h-full w-full object-cover object-[50%_40%]"
+              className="h-full w-full object-cover object-center"
             />
           </div>
         </div>
@@ -207,35 +213,61 @@ export default function WeddingsPage() {
         </div>
       </section>
 
-      {/* Editorial Review Split (Slide 15 photo + John A. quote) */}
-      <section className="bg-white py-10 md:py-24">
-        <div className="lux-container">
-          <div className="grid gap-5 md:gap-8 lg:grid-cols-12 lg:items-center lg:gap-12">
-            <RevealBlock className="overflow-hidden rounded-2xl md:rounded-3xl lg:col-span-7">
-              <div className="aspect-[3/2] w-full">
-                <img
-                  src="/images/wedding-john-a.jpg"
-                  alt="Bride, groom, and wedding party walking across the grounds at Eden: The Lemelson Estate"
-                  width={1024}
-                  height={683}
-                  className="h-full w-full object-cover object-center"
-                />
-              </div>
-            </RevealBlock>
+      {/* 3. Couples' Stories: All three wedding reviews in one row */}
+      <section className="bg-white py-12 md:py-28">
+        <div className="lux-container space-y-7 md:space-y-12">
+          <RevealBlock className="space-y-3">
+            <h2 className="text-2xl font-semibold leading-[1.1] text-[#1f1b17] md:text-4xl">
+              Celebrations at Eden
+            </h2>
+            <p className="text-[16px] leading-[1.6] text-[#44403c] md:text-[17px]">
+              5.0-star rating across 62 verified reviews on Airbnb, Vrbo, The Knot, and Zola.
+            </p>
+          </RevealBlock>
 
-            <RevealBlock delayMs={50} className="space-y-2.5 border-l-2 border-[#c2a060]/70 pl-4 md:space-y-4 md:border-l-0 md:pl-0 lg:col-span-5">
-              <blockquote className="text-[16px] leading-[1.65] text-[#1f1b17] text-pretty md:text-[19px] lg:text-[21px] lg:leading-[1.55]">
-                &ldquo;The estate is immaculate and luxurious, with every amenity (and more) that one would expect in such a fine setting... Eden is an ideal spot for weddings, family reunions, or just an amazing place to stay and soak up the beauty of Vermont in pampered luxury!&rdquo;
-              </blockquote>
-              <p className="text-[13px] font-medium text-[#6f5a2e] md:text-[15px]">
-                John A. · September 2024
-              </p>
-            </RevealBlock>
+          <div className="grid gap-8 md:grid-cols-3">
+            {coupleStories.map((story, idx) => (
+              <RevealBlock
+                key={story.credit}
+                delayMs={idx * 45}
+                className="space-y-4"
+              >
+                <div className="overflow-hidden rounded-2xl">
+                  <div className="aspect-[4/5] w-full">
+                    {story.isStaticImage ? (
+                      <img
+                        src={story.photo}
+                        alt={story.alt}
+                        width={896}
+                        height={1120}
+                        className="block h-full w-full object-cover object-center"
+                      />
+                    ) : (
+                      <ResponsivePhoto
+                        basePath={story.photo}
+                        alt={story.alt}
+                        sizes="(min-width: 768px) 32vw, 100vw"
+                        width={800}
+                        height={1000}
+                        maxWidth={800}
+                        className="block h-full w-full object-cover object-[50%_18%]"
+                      />
+                    )}
+                  </div>
+                </div>
+                <blockquote className="text-[16px] leading-[1.6] text-[#1f1b17] text-pretty">
+                  &ldquo;{story.quote}&rdquo;
+                </blockquote>
+                <p className="text-[14px] font-medium text-[#6f5a2e]">
+                  {story.credit}
+                </p>
+              </RevealBlock>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* 3. The Wedding Weekend: Obsidian chapter */}
+      {/* 4. The Wedding Weekend: Obsidian chapter */}
       <section className="bg-[#161412] py-12 text-[#f8f3ea] md:py-28">
         <div className="lux-container space-y-7 md:space-y-12">
           <RevealBlock className="space-y-3">
@@ -281,47 +313,7 @@ export default function WeddingsPage() {
         </div>
       </section>
 
-      {/* 5. Couples' Stories: Clean borderless portrait columns */}
-      <section className="bg-white py-12 md:py-28">
-        <div className="lux-container space-y-7 md:space-y-12">
-          <RevealBlock className="space-y-3">
-            <h2 className="text-2xl font-semibold leading-[1.1] text-[#1f1b17] md:text-4xl">
-              Celebrations at Eden
-            </h2>
-            <p className="text-[16px] leading-[1.6] text-[#44403c] md:text-[17px]">
-              5.0-star rating across 62 verified reviews on Airbnb, Vrbo, The Knot, and Zola.
-            </p>
-          </RevealBlock>
-
-          <div className="grid gap-8 md:grid-cols-2">
-            {coupleStories.map((story, idx) => (
-              <RevealBlock key={story.credit} delayMs={idx * 45} className="space-y-4">
-                <div className="overflow-hidden rounded-2xl">
-                  <div className="aspect-[4/5] w-full">
-                    <ResponsivePhoto
-                      basePath={story.photo}
-                      alt={story.alt}
-                      sizes="(min-width: 768px) 48vw, 100vw"
-                      width={800}
-                      height={1000}
-                      maxWidth={800}
-                      className="h-full w-full object-cover object-[50%_18%]"
-                    />
-                  </div>
-                </div>
-                <blockquote className="text-[16px] leading-[1.6] text-[#1f1b17] text-pretty">
-                  &ldquo;{story.quote}&rdquo;
-                </blockquote>
-                <p className="text-[14px] font-medium text-[#6f5a2e]">
-                  {story.credit}
-                </p>
-              </RevealBlock>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 6. Common Questions: Clean single-column layout */}
+      {/* 5. Common Questions: Clean single-column layout */}
       <FaqSection
         className="!bg-[#f8f3ea]"
         title="Common questions"
@@ -346,7 +338,7 @@ export default function WeddingsPage() {
             Request the private brochure
           </h2>
           <p className="max-w-[44ch] text-[16px] leading-[1.6] text-[#e8dac0] md:text-[17px]">
-            Get our 2026 brochure (packages, three-level floor plans, and tent layouts) from Tiffany M., and schedule a private tour of the grounds and select interior areas.
+            Get our 2026 brochure (packages, three-level floor plans, and tent layouts), and schedule a private tour of the grounds and select interior areas.
           </p>
           <div className="flex flex-wrap items-center gap-5 pt-1">
             <Link

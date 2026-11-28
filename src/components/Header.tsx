@@ -15,17 +15,14 @@ const navItems = [
 const experienceLinks = [
   {
     title: "Luxury Stays",
-    subtitle: "Private Stowe mountain getaways",
     href: "/stays/",
   },
   {
     title: "Weddings",
-    subtitle: "Tented receptions up to 300",
     href: "/weddings/",
   },
   {
     title: "Executive Retreats",
-    subtitle: "Discreet leadership offsites",
     href: "/retreats/",
   },
 ];
@@ -246,10 +243,10 @@ export function Header() {
                   : "pointer-events-none -translate-y-1 opacity-0"
               }`}
             >
-              <div className="w-[420px] max-w-[calc(100vw-2rem)] rounded-2xl bg-[#fdfbf7]/95 p-4 normal-case tracking-normal ring-1 ring-[#1f1b17]/[0.08] shadow-[0_4px_12px_-2px_rgba(31,27,23,0.06),0_20px_44px_-12px_rgba(31,27,23,0.16)] backdrop-blur-xl">
-                <div className="grid grid-cols-[1.45fr_1fr] gap-5">
+              <div className="w-[380px] max-w-[calc(100vw-2rem)] rounded-2xl bg-[#fdfbf7]/95 p-4 normal-case tracking-normal ring-1 ring-[#1f1b17]/[0.08] shadow-[0_4px_12px_-2px_rgba(31,27,23,0.06),0_20px_44px_-12px_rgba(31,27,23,0.16)] backdrop-blur-xl">
+                <div className="grid grid-cols-2 gap-5">
                   <div>
-                    <p className="mb-2 text-[11px] font-medium text-[#8c8275]">
+                    <p className="mb-2 text-[13px] font-semibold text-[#575049]">
                       Experiences
                     </p>
                     <ul className="space-y-0.5">
@@ -265,24 +262,13 @@ export function Header() {
                                 isHoverPreviewRef.current = false;
                                 setIsExperiencesOpen(false);
                               }}
-                              className={`group -mx-2 flex flex-col rounded-lg px-2.5 py-2 transition-colors duration-150 ${
+                              className={`group -mx-2 flex items-center rounded-lg px-2.5 py-1.5 text-[14px] tracking-[-0.01em] transition-colors duration-150 ${
                                 isItemActive
-                                  ? "bg-[#1f1b17]/[0.05]"
-                                  : "hover:bg-[#1f1b17]/[0.04]"
+                                  ? "bg-[#1f1b17]/[0.06] font-semibold text-[#1f1b17]"
+                                  : "font-medium text-[#44403c] hover:bg-[#1f1b17]/[0.04] hover:text-[#1f1b17]"
                               }`}
                             >
-                              <span className="flex items-center gap-2 text-[14px] font-medium leading-snug tracking-[-0.01em] text-[#1f1b17]">
-                                <span>{item.title}</span>
-                                {isItemActive ? (
-                                  <span
-                                    aria-hidden="true"
-                                    className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#8f7845]"
-                                  />
-                                ) : null}
-                              </span>
-                              <span className="mt-0.5 text-[12px] font-normal leading-snug text-[#78716c]">
-                                {item.subtitle}
-                              </span>
+                              <span>{item.title}</span>
                             </Link>
                           </li>
                         );
@@ -291,7 +277,7 @@ export function Header() {
                   </div>
 
                   <div className="border-l border-[#1f1b17]/[0.07] pl-5">
-                    <p className="mb-2 text-[11px] font-medium text-[#8c8275]">
+                    <p className="mb-2 text-[13px] font-semibold text-[#575049]">
                       Seasonal guides
                     </p>
                     <ul className="space-y-0.5">
@@ -307,19 +293,13 @@ export function Header() {
                                 isHoverPreviewRef.current = false;
                                 setIsExperiencesOpen(false);
                               }}
-                              className={`group -mx-2 flex items-center gap-2 rounded-lg px-2.5 py-1.5 text-[13.5px] font-medium tracking-[-0.01em] transition-colors duration-150 ${
+                              className={`group -mx-2 flex items-center rounded-lg px-2.5 py-1.5 text-[14px] tracking-[-0.01em] transition-colors duration-150 ${
                                 isGuideActive
-                                  ? "bg-[#1f1b17]/[0.05] text-[#1f1b17]"
-                                  : "text-[#44403c] hover:bg-[#1f1b17]/[0.04] hover:text-[#1f1b17]"
+                                  ? "bg-[#1f1b17]/[0.06] font-semibold text-[#1f1b17]"
+                                  : "font-medium text-[#44403c] hover:bg-[#1f1b17]/[0.04] hover:text-[#1f1b17]"
                               }`}
                             >
                               <span>{guide.name}</span>
-                              {isGuideActive ? (
-                                <span
-                                  aria-hidden="true"
-                                  className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#8f7845]"
-                                />
-                              ) : null}
                             </Link>
                           </li>
                         );
