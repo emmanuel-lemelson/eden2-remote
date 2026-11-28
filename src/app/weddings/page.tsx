@@ -5,22 +5,21 @@ import { FaqSection, type FaqItem } from "@/components/FaqSection";
 import { ResponsivePhoto } from "@/components/ResponsivePhoto";
 import { WeddingBentoShowcase } from "@/components/WeddingBentoShowcase";
 import { RevealBlock, ScalingHeroTitle } from "@/components/WeddingMotion";
+import { PRODUCTION_URL, getEventVenueSchema } from "@/lib/seo-schema";
 
 export const dynamic = "force-static";
 
-const PRODUCTION_URL = "https://lemelsonestate.com";
-
 export const metadata: Metadata = {
-  title: "Stowe, Vermont Private Estate Wedding Venue | Eden: The Lemelson Estate",
+  title: "Stowe, VT Luxury Mansion & Private Estate Wedding Venue | Eden",
   description:
-    "Reserve an exclusive 28-acre mountain estate in Stowe, Vermont for your wedding weekend. Sleeps 20 overnight across 8 bedrooms, hosts tented receptions up to 300, with custom menus and no food & beverage minimums.",
+    "Eden: The Lemelson Estate is a luxury mansion & private estate wedding venue in Stowe, Vermont on 28 private acres. Book a Friday–Sunday wedding weekend sleeping 20 overnight across 8 bedrooms with tented meadow receptions up to 300 guests and custom in-house chef menus with zero food & beverage minimums.",
   alternates: {
     canonical: `${PRODUCTION_URL}/weddings/`,
   },
   openGraph: {
-    title: "Stowe, Vermont Private Estate Wedding Venue | Eden: The Lemelson Estate",
+    title: "Stowe, VT Luxury Mansion & Private Estate Wedding Venue | Eden",
     description:
-      "Exclusive 28-acre private estate wedding venue in Stowe, Vermont. Sleeps 20 overnight, hosts tented receptions up to 300, custom Vermont dining, and private mountain grounds.",
+      "Luxury mansion & private estate wedding venue in Stowe, Vermont on 28 private acres. Host Friday–Sunday wedding weekends sleeping 20 overnight across 8 bedrooms with tented meadow receptions up to 300 guests and custom in-house chef menus with zero food & beverage minimums.",
     url: `${PRODUCTION_URL}/weddings/`,
     type: "website",
     images: [
@@ -28,16 +27,16 @@ export const metadata: Metadata = {
         url: `${PRODUCTION_URL}/opengraph-image.png`,
         width: 1200,
         height: 630,
-        alt: "Eden: The Lemelson Estate private wedding venue in Stowe, Vermont",
+        alt: "Eden: The Lemelson Estate luxury mansion and private wedding venue in Stowe, Vermont",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     site: "@LemelsonEstate",
-    title: "Stowe, Vermont Private Estate Wedding Venue | Eden: The Lemelson Estate",
+    title: "Stowe, VT Luxury Mansion & Private Estate Wedding Venue | Eden",
     description:
-      "Exclusive 28-acre private estate wedding venue in Stowe, VT. Sleeps 20 overnight, up to 300 tented, custom menus & zero F&B minimums.",
+      "Luxury mansion & private estate wedding venue in Stowe, VT on 28 private acres. Friday–Sunday wedding weekends sleeping 20 overnight across 8 bedrooms, tented meadow receptions up to 300 guests & custom in-house chef menus with zero food & beverage minimums.",
     images: [`${PRODUCTION_URL}/opengraph-image.png`],
   },
 };
@@ -158,7 +157,7 @@ export default function WeddingsPage() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchemas) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([getEventVenueSchema(), ...videoSchemas]) }}
       />
 
       {/* 1. Hero: Centered Apple-style headline, punchy subtitle, CTA, and wide centered hero image */}

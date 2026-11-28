@@ -4,6 +4,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FaqSection, type FaqItem } from "@/components/FaqSection";
 import { ResponsivePhoto } from "@/components/ResponsivePhoto";
 import { RevealBlock, ScalingHeroTitle } from "@/components/WeddingMotion";
+import { getEventVenueSchema } from "@/lib/seo-schema";
 
 export const dynamic = "force-static";
 
@@ -106,6 +107,10 @@ const retreatFaqs: FaqItem[] = [
 export default function RetreatsPage() {
   return (
     <div className="bg-white text-[#1f1b17]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(getEventVenueSchema()) }}
+      />
       <Breadcrumbs
         items={[
           { name: "Home", href: "/" },

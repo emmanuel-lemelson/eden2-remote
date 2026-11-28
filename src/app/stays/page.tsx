@@ -4,6 +4,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FaqSection, type FaqItem } from "@/components/FaqSection";
 import { ResponsivePhoto } from "@/components/ResponsivePhoto";
 import { RevealBlock, ScalingHeroTitle } from "@/components/WeddingMotion";
+import { getVacationRentalSchema } from "@/lib/seo-schema";
 
 export const dynamic = "force-static";
 
@@ -147,6 +148,10 @@ const staysFaqs: FaqItem[] = [
 export default function StaysPage() {
   return (
     <div className="bg-white text-[#1f1b17]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(getVacationRentalSchema()) }}
+      />
       <Breadcrumbs
         items={[
           { name: "Home", href: "/" },

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { SectionHeading } from "@/components/SectionHeading";
@@ -6,6 +7,13 @@ import { AutoPlayVideo } from "@/components/AutoPlayVideo";
 import { WhereToFindUs } from "@/components/WhereToFindUs";
 import { FaqSection, type FaqItem } from "@/components/FaqSection";
 import { ResponsivePhoto } from "@/components/ResponsivePhoto";
+import { PRODUCTION_URL, getVacationRentalSchema } from "@/lib/seo-schema";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: `${PRODUCTION_URL}/`,
+  },
+};
 
 const quickFacts = [
   { value: "8 Bed · 8 Bath", detail: "11,400 sq ft private residence" },
@@ -169,6 +177,10 @@ export default function Home() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(getVacationRentalSchema()) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }}
