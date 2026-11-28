@@ -15,9 +15,14 @@ export function getVacationRentalSchema() {
     url: CANONICAL_HOME,
     image: [
       `${PRODUCTION_URL}/gallery/enhanced/2@1200w.webp`,
+      `${PRODUCTION_URL}/gallery/enhanced/87@1200w.webp`,
+      `${PRODUCTION_URL}/gallery/Eden-Site%20Photos/99@1200w.webp`,
+      `${PRODUCTION_URL}/gallery/Eden-Site%20Photos/102@1200w.webp`,
+      `${PRODUCTION_URL}/gallery/Eden-Site%20Photos/103@1200w.webp`,
+      `${PRODUCTION_URL}/gallery/enhanced/90@1200w.webp`,
+      `${PRODUCTION_URL}/gallery/enhanced/70@1200w.webp`,
       `${PRODUCTION_URL}/gallery/Eden-Site%20Photos/98@1200w.webp`,
       `${PRODUCTION_URL}/gallery/Eden-Site%20Photos/113@1200w.webp`,
-      `${PRODUCTION_URL}/gallery/enhanced/90@1200w.webp`,
     ],
     description:
       "11,400 sq ft, 8-bedroom, 8-bathroom pet-friendly luxury vacation rental estate on 28 private acres in the Edson Hill Road area of Stowe, Vermont, 5 minutes from Stowe Mountain Resort, sleeping up to 20 guests.",
@@ -28,10 +33,12 @@ export function getVacationRentalSchema() {
       postalCode: "05672",
       addressCountry: "US",
     },
+    latitude: 44.49261,
+    longitude: -72.71261,
     geo: {
       "@type": "GeoCoordinates",
-      latitude: 44.4926,
-      longitude: -72.7126,
+      latitude: 44.49261,
+      longitude: -72.71261,
     },
     petsAllowed: true,
     numberOfRooms: 8,
@@ -183,15 +190,8 @@ export function getEventVenueSchema() {
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: 44.4926,
-      longitude: -72.7126,
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5.0",
-      bestRating: "5",
-      worstRating: "1",
-      reviewCount: 62,
+      latitude: 44.49261,
+      longitude: -72.71261,
     },
     sameAs: [
       "https://www.theknot.com/marketplace/edenthe-lemelson-estate-stowe-vt-2087322",
