@@ -154,66 +154,70 @@ export default function StaysPage() {
         ]}
       />
 
-      {/* Hero: Full-bleed estate photography with button stacked directly beneath subtext */}
-      <section className="bg-white">
-        <div className="relative h-[42svh] min-h-[260px] max-h-[500px] w-full overflow-hidden md:h-[48svh]">
-          <ResponsivePhoto
-            basePath="/gallery/enhanced/2"
-            alt="Aerial sunset view of Eden: The Lemelson Estate luxury vacation rental in Stowe, Vermont"
-            sizes="100vw"
-            width={2400}
-            height={1600}
-            priority={true}
-            className="h-full w-full object-cover object-[50%_68%]"
-          />
+      {/* Hero: Centered editorial headline, subtitle, CTA, and wide centered hero image */}
+      <section className="bg-white pb-8 pt-5 md:pb-16 md:pt-12">
+        <div className="lux-container">
+          <div className="mx-auto max-w-3xl text-center">
+            <ScalingHeroTitle className="text-[clamp(2rem,6.5vw,5.25rem)] font-semibold leading-[1.02] tracking-[-0.03em] text-[#1f1b17] md:leading-[0.96]">
+              Stays at Eden
+            </ScalingHeroTitle>
+
+            <p className="mx-auto mt-3 max-w-[54ch] text-balance text-[15px] leading-[1.5] text-[#44403c] md:mt-4 md:text-[20px]">
+              Escape to one of Stowe&apos;s most exclusive estates. Set on 28 private acres five minutes from Stowe Mountain Resort, Eden offers 11,400 square feet, eight bedrooms, and room for up to 20 guests. Pets are welcome, and booking direct means no third-party platform fees.
+            </p>
+
+            <div className="mt-5 flex flex-wrap items-center justify-center gap-x-4 gap-y-2.5 md:mt-6 md:gap-5">
+              <Link
+                href="/contact/"
+                className="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full bg-[#111111] px-5 py-2.5 text-[14px] font-medium !text-white transition duration-200 hover:bg-stone-800 active:scale-[0.98] md:min-h-11 md:px-7 md:py-3 md:text-[15px]"
+              >
+                Book direct
+              </Link>
+              <Link
+                href="/gallery/"
+                className="whitespace-nowrap text-[14px] font-medium text-[#1f1b17] underline underline-offset-4 transition hover:text-[#6f5a2e] md:text-[15px]"
+              >
+                View gallery →
+              </Link>
+            </div>
+          </div>
         </div>
 
-        <div className="lux-container py-7 md:py-9">
-          <ScalingHeroTitle className="text-[clamp(2.5rem,7.8vw,6.25rem)] font-semibold leading-[0.94] tracking-[-0.03em] text-[#1f1b17]">
-            Stays at Eden
-          </ScalingHeroTitle>
-
-          <p className="mt-5 max-w-[54ch] text-[16px] leading-[1.6] text-[#1f1b17] md:text-[18px]">
-            Escape to one of Stowe&apos;s most exclusive estates. Set on 28 private acres five minutes from Stowe Mountain Resort, Eden offers 11,400 square feet, eight bedrooms, and room for up to 20 guests. Pets are welcome, and booking direct means no third-party platform fees.
-          </p>
-
-          <div className="mt-6 flex flex-wrap items-center gap-5">
-            <Link
-              href="/contact/"
-              className="inline-flex w-fit shrink-0 items-center whitespace-nowrap rounded-full bg-[#111111] px-7 py-3.5 text-[15px] font-medium !text-white transition duration-200 hover:bg-stone-800 active:scale-[0.98]"
-            >
-              Book direct
-            </Link>
-            <Link
-              href="/gallery/"
-              className="whitespace-nowrap text-[15px] font-medium text-[#1f1b17] underline underline-offset-4 transition hover:text-[#6f5a2e]"
-            >
-              View gallery →
-            </Link>
+        <div className="lux-container mt-5 md:mt-8">
+          <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl md:aspect-auto md:h-[46svh] md:min-h-[300px] md:max-h-[500px] md:rounded-3xl">
+            <ResponsivePhoto
+              basePath="/gallery/enhanced/2"
+              alt="Aerial sunset view of Eden: The Lemelson Estate luxury vacation rental in Stowe, Vermont"
+              sizes="(min-width: 1280px) 1152px, 100vw"
+              width={2400}
+              height={1600}
+              priority={true}
+              className="h-full w-full object-cover object-[50%_68%]"
+            />
           </div>
         </div>
       </section>
 
       {/* Section 1: Estate at a glance + uneven gallery wall + plain amenities */}
-      <section className="bg-[#f8f3ea] py-16 md:py-24 lg:py-28">
-        <div className="lux-container space-y-12 md:space-y-16">
+      <section className="bg-[#f8f3ea] py-12 md:py-24 lg:py-28">
+        <div className="lux-container space-y-8 md:space-y-16">
           <RevealBlock className="space-y-4">
-            <h2 className="text-3xl font-semibold leading-[1.12] text-[#1f1b17] md:text-4xl">
+            <h2 className="text-2xl font-semibold leading-[1.12] text-[#1f1b17] md:text-4xl">
               Estate at a glance
             </h2>
-            <p className="max-w-[54ch] text-[16px] leading-[1.6] text-[#44403c] md:text-[17px]">
+            <p className="max-w-[54ch] text-[15px] leading-[1.6] text-[#44403c] md:text-[17px]">
               Eden pairs the warmth of a private Vermont mountain home with resort amenities reserved solely for your group, backed by 62 five-star reviews across Airbnb and Vrbo.
             </p>
           </RevealBlock>
 
           <RevealBlock delayMs={40}>
-            <dl className="grid grid-cols-2 gap-4 sm:grid-cols-3">
+            <dl className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4">
               {quickSpecs.map((spec) => (
-                <div key={spec.label} className="rounded-xl bg-white p-4">
-                  <dt className="text-sm font-medium text-[#6f5a2e]">
+                <div key={spec.label} className="rounded-xl bg-white p-3.5 sm:p-4">
+                  <dt className="text-xs font-medium text-[#6f5a2e] sm:text-sm">
                     {spec.label}
                   </dt>
-                  <dd className="mt-1 text-[16px] font-semibold text-[#1f1b17] text-balance">
+                  <dd className="mt-0.5 text-[14.5px] font-semibold text-[#1f1b17] text-balance sm:mt-1 sm:text-[16px]">
                     {spec.value}
                   </dd>
                 </div>
@@ -265,11 +269,11 @@ export default function StaysPage() {
           </RevealBlock>
 
           <RevealBlock delayMs={60}>
-            <div className="grid gap-x-8 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-x-6 gap-y-5 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-8 lg:grid-cols-3">
               {amenities.map((item) => (
                 <div key={item.title}>
-                  <h3 className="text-xl font-semibold text-[#1f1b17]">{item.title}</h3>
-                  <p className="mt-2 text-[16px] leading-[1.6] text-[#44403c]">{item.detail}</p>
+                  <h3 className="text-lg font-semibold text-[#1f1b17] sm:text-xl">{item.title}</h3>
+                  <p className="mt-1.5 text-[15px] leading-[1.6] text-[#44403c] sm:mt-2 sm:text-[16px]">{item.detail}</p>
                 </div>
               ))}
             </div>
@@ -278,11 +282,11 @@ export default function StaysPage() {
       </section>
 
       {/* Section 2: Three levels paired row-by-row with equal-height level photography */}
-      <section className="bg-white py-16 md:py-24 lg:py-28">
-        <div className="lux-container space-y-16">
+      <section className="bg-white py-12 md:py-24 lg:py-28">
+        <div className="lux-container space-y-10 md:space-y-16">
           <div className="space-y-6">
             <RevealBlock>
-              <h2 className="text-3xl font-semibold leading-[1.12] text-[#1f1b17] md:text-4xl">
+              <h2 className="text-2xl font-semibold leading-[1.12] text-[#1f1b17] md:text-4xl">
                 Three levels for twenty guests
               </h2>
             </RevealBlock>

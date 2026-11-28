@@ -1,0 +1,1520 @@
+{
+ "url": "http://localhost:3099/guides/stowe-family-reunions/",
+ "at": "2026-11-24T12:00:21.131Z",
+ "allow": [
+  "gradient"
+ ],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.8,
+    0.81,
+    0.74,
+    0.83,
+    0.87
+   ],
+   "motion": {
+    "elements": 5,
+    "css": 1,
+    "transitions": 0,
+    "scripted": 4,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 3725,
+     "screens": 4.1,
+     "words": 355,
+     "img": 12,
+     "video": 0,
+     "canvas": 0,
+     "svg": 10,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 7,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "113@1200w.avif",
+      "98@1200w.avif",
+      "41@800w.avif",
+      "93@800w.avif",
+      "42@800w.avif",
+      "111@800w.avif",
+      "The%20Lemelson%20Estate%20(1).png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Gather at Eden",
+     "words": 3,
+     "chars": 14,
+     "lines": 1,
+     "size": 100,
+     "vw": 6.9,
+     "font": "Playfair Display",
+     "weight": 600,
+     "tracking": 0.02,
+     "leading": 0.94,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.74,
+     "top": 549,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Gather at Eden",
+     "words": 3,
+     "lines": 1,
+     "size": 100,
+     "font": "Playfair Display"
+    },
+    "headings": [
+     {
+      "text": "Gather at Eden",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 100,
+      "vw": 6.9,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.74,
+      "top": 549,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Why families choose Eden",
+      "words": 4,
+      "chars": 24,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.74,
+      "top": 973,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Family reunion questions",
+      "words": 3,
+      "chars": 24,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 2402,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Bring the whole family",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.27,
+      "top": 3190,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 4,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Manrope",
+       "share": 0.94,
+       "mono": false
+      },
+      {
+       "family": "Playfair Display",
+       "share": 0.06,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      10,
+      11,
+      12,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      36,
+      48,
+      100
+     ],
+     "sizeCount": 12,
+     "notLoaded": [],
+     "body": {
+      "font": "Manrope",
+      "size": 16,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 10.3
+     },
+     "measureChars": 68,
+     "max": {
+      "size": 100,
+      "vw": 6.9,
+      "font": "Playfair Display",
+      "text": "Gather at Eden"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 1,
+     "microLabelShare": 0.011,
+     "microSamples": [
+      "Edson Hill Road Area · Stowe, Vermont"
+     ],
+     "upperShare": 0.05,
+     "centerShare": 0,
+     "smallText": 6
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 81,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#f8f3ea",
+       "top": 861,
+       "hsl": {
+        "h": 39,
+        "s": 0.5,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#1f1b17",
+       "top": 3072,
+       "hsl": {
+        "h": 30,
+        "s": 0.15,
+        "l": 0.11
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#44403c",
+       "share": 0.64
+      },
+      {
+       "color": "#1f1b17",
+       "share": 0.24
+      },
+      {
+       "color": "#e8dac0",
+       "share": 0.03
+      },
+      {
+       "color": "#79716b",
+       "share": 0.03
+      },
+      {
+       "color": "#57534d",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#111111",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 0.07
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 1,
+     "radius": "pill",
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Plan your reunion"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 1,
+     "scrims": 0,
+     "gradientSamples": [
+      "header.sticky.top-0 → linear-gradient(in oklab, rgb(253, 251, 247) 0px, rgb(248, 243, 234) 50%, rgb(242, 232, 218) 100%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "header.sticky.top-0 1440px",
+      "footer.border-t.border-white/30 1440px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 6,
+     "boxRadius": 16,
+     "squareMedia": 2,
+     "roundedMedia": 4,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 6,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 1171
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.48
+     }
+    ],
+    "nav": {
+     "links": 8,
+     "fixed": true,
+     "height": 81,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "playfair display",
+     "manrope",
+     "manrope fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 3725,
+    "margins": {
+     "left": 184,
+     "right": 184
+    },
+    "sections": [
+     {
+      "sel": "main.flex-1.space-y-0",
+      "tag": "main",
+      "top": 81,
+      "height": 3451,
+      "words": 539,
+      "media": 10,
+      "middle": 0,
+      "heading": {
+       "text": "Gather at Eden",
+       "size": 100,
+       "tag": "h1"
+      },
+      "left": 0,
+      "right": 184,
+      "textLeft": 184,
+      "textRight": 208,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": true
+     },
+     {
+      "sel": "footer.border-t.border-white/30",
+      "tag": "footer",
+      "top": 3532,
+      "height": 193,
+      "words": 30,
+      "media": 1,
+      "middle": 126,
+      "heading": null,
+      "left": 184,
+      "right": 184,
+      "textLeft": 420,
+      "textRight": 184,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Gather at Eden",
+      "size": 100,
+      "top": 549,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 184,
+      "n": 10
+     },
+     {
+      "x": 208,
+      "n": 4
+     },
+     {
+      "x": 572,
+      "n": 4
+     },
+     {
+      "x": 936,
+      "n": 4
+     },
+     {
+      "x": 800,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 24,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.15,
+    "voidBox": {
+     "x": 900,
+     "y": 540,
+     "w": 540,
+     "h": 360
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.75,
+    0.71,
+    0.73,
+    0.92,
+    0.93
+   ],
+   "motion": {
+    "elements": 5,
+    "css": 1,
+    "transitions": 0,
+    "scripted": 4,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 4224,
+     "screens": 4.1,
+     "words": 355,
+     "img": 12,
+     "video": 0,
+     "canvas": 0,
+     "svg": 10,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 7,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "113@800w.avif",
+      "98@800w.avif",
+      "41@400w.avif",
+      "93@400w.avif",
+      "42@800w.avif",
+      "111@400w.avif",
+      "The%20Lemelson%20Estate%20(1).png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Gather at Eden",
+     "words": 3,
+     "chars": 14,
+     "lines": 1,
+     "size": 59.9,
+     "vw": 7.8,
+     "font": "Playfair Display",
+     "weight": 600,
+     "tracking": 0.02,
+     "leading": 0.94,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.9,
+     "top": 609,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Gather at Eden",
+     "words": 3,
+     "lines": 1,
+     "size": 59.9,
+     "font": "Playfair Display"
+    },
+    "headings": [
+     {
+      "text": "Gather at Eden",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 59.9,
+      "vw": 7.8,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 609,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Why families choose Eden",
+      "words": 4,
+      "chars": 24,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 979,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Family reunion questions",
+      "words": 3,
+      "chars": 24,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2371,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Bring the whole family",
+      "words": 4,
+      "chars": 22,
+      "lines": 2,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.4,
+      "top": 3470,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 4,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Manrope",
+       "share": 0.94,
+       "mono": false
+      },
+      {
+       "family": "Playfair Display",
+       "share": 0.06,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      10,
+      11,
+      12,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      36,
+      60
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "Manrope",
+      "size": 16,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 10.3
+     },
+     "measureChars": 68,
+     "max": {
+      "size": 59.9,
+      "vw": 7.8,
+      "font": "Playfair Display",
+      "text": "Gather at Eden"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 1,
+     "microLabelShare": 0.011,
+     "microSamples": [
+      "Edson Hill Road Area · Stowe, Vermont"
+     ],
+     "upperShare": 0.05,
+     "centerShare": 0.03,
+     "smallText": 6
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 81,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#f8f3ea",
+       "top": 883,
+       "hsl": {
+        "h": 39,
+        "s": 0.5,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#1f1b17",
+       "top": 3422,
+       "hsl": {
+        "h": 30,
+        "s": 0.15,
+        "l": 0.11
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#44403c",
+       "share": 0.64
+      },
+      {
+       "color": "#1f1b17",
+       "share": 0.24
+      },
+      {
+       "color": "#e8dac0",
+       "share": 0.03
+      },
+      {
+       "color": "#79716b",
+       "share": 0.03
+      },
+      {
+       "color": "#57534d",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#111111",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 0.07
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 1,
+     "radius": "pill",
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Plan your reunion"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 1,
+     "scrims": 0,
+     "gradientSamples": [
+      "header.sticky.top-0 → linear-gradient(in oklab, rgb(253, 251, 247) 0px, rgb(248, 243, 234) 50%, rgb(242, 232, 218) 100%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "header.sticky.top-0 768px",
+      "footer.border-t.border-white/30 768px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 6,
+     "boxRadius": 16,
+     "squareMedia": 2,
+     "roundedMedia": 4,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 6,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 1164
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.48
+     }
+    ],
+    "nav": {
+     "links": 8,
+     "fixed": true,
+     "height": 81,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "playfair display",
+     "manrope",
+     "manrope fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 4224,
+    "margins": {
+     "left": 40,
+     "right": 40
+    },
+    "sections": [
+     {
+      "sel": "main.flex-1.space-y-0",
+      "tag": "main",
+      "top": 81,
+      "height": 3746,
+      "words": 539,
+      "media": 10,
+      "middle": 0,
+      "heading": {
+       "text": "Gather at Eden",
+       "size": 60,
+       "tag": "h1"
+      },
+      "left": 0,
+      "right": 40,
+      "textLeft": 40,
+      "textRight": 41,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.border-t.border-white/30",
+      "tag": "footer",
+      "top": 3827,
+      "height": 397,
+      "words": 30,
+      "media": 1,
+      "middle": 20,
+      "heading": null,
+      "left": 82,
+      "right": 82,
+      "textLeft": 82,
+      "textRight": 82,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Gather at Eden",
+      "size": 60,
+      "top": 609,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 40,
+      "n": 10
+     },
+     {
+      "x": 418,
+      "n": 8
+     },
+     {
+      "x": 64,
+      "n": 6
+     }
+    ],
+    "leftBlocks": 24,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.73,
+    0.67,
+    0.74,
+    0.72,
+    0.91,
+    0.99
+   ],
+   "motion": {
+    "elements": 5,
+    "css": 1,
+    "transitions": 0,
+    "scripted": 4,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 4743,
+     "screens": 5.6,
+     "words": 359,
+     "img": 12,
+     "video": 0,
+     "canvas": 0,
+     "svg": 10,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 7,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "113@400w.avif",
+      "98@400w.avif",
+      "41@400w.avif",
+      "93@400w.avif",
+      "42@400w.avif",
+      "111@400w.avif",
+      "The%20Lemelson%20Estate%20(1).png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Gather at Eden",
+     "words": 3,
+     "chars": 14,
+     "lines": 1,
+     "size": 40,
+     "vw": 10.3,
+     "font": "Playfair Display",
+     "weight": 600,
+     "tracking": 0.02,
+     "leading": 0.94,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.88,
+     "top": 447,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Gather at Eden",
+     "words": 3,
+     "lines": 1,
+     "size": 40,
+     "font": "Playfair Display"
+    },
+    "headings": [
+     {
+      "text": "Gather at Eden",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 447,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Why families choose Eden",
+      "words": 4,
+      "chars": 24,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 845,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Family reunion questions",
+      "words": 3,
+      "chars": 24,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 2758,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Bring the whole family",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.82,
+      "top": 3994,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 4,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Manrope",
+       "share": 0.94,
+       "mono": false
+      },
+      {
+       "family": "Playfair Display",
+       "share": 0.06,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      10,
+      11,
+      12,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      30,
+      40
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "Manrope",
+      "size": 16,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 17.1
+     },
+     "measureChars": 43,
+     "max": {
+      "size": 40,
+      "vw": 10.3,
+      "font": "Playfair Display",
+      "text": "Gather at Eden"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 1,
+     "microLabelShare": 0.011,
+     "microSamples": [
+      "Edson Hill Road Area · Stowe, Vermont"
+     ],
+     "upperShare": 0.06,
+     "centerShare": 0.03,
+     "smallText": 6
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 65,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#f8f3ea",
+       "top": 781,
+       "hsl": {
+        "h": 39,
+        "s": 0.5,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#1f1b17",
+       "top": 3702,
+       "hsl": {
+        "h": 30,
+        "s": 0.15,
+        "l": 0.11
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#44403c",
+       "share": 0.64
+      },
+      {
+       "color": "#1f1b17",
+       "share": 0.25
+      },
+      {
+       "color": "#e8dac0",
+       "share": 0.03
+      },
+      {
+       "color": "#79716b",
+       "share": 0.03
+      },
+      {
+       "color": "#57534d",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#1f1b17"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 10,
+     "inHero": 9,
+     "radius": 12,
+     "height": 46,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 8,
+     "heroLabels": [
+      "HOME",
+      "STAYS",
+      "WEDDINGS",
+      "RETREATS",
+      "GALLERY"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 9,
+     "shadowSamples": [],
+     "gradients": 2,
+     "scrims": 0,
+     "gradientSamples": [
+      "header.sticky.top-0 → linear-gradient(in oklab, rgb(253, 251, 247) 0px, rgb(248, 243, 234) 50%, rgb(242, 232, 218) 100%)",
+      "nav.absolute.inset-y-0 → linear-gradient(oklab(0.98851 0.000540048 0.00567573 / 0.98) 0px, oklab(0.965558 0.00173056 0.0129725 / 0.98) "
+     ],
+     "gradientText": 0,
+     "hairlines": 3,
+     "hairlineSamples": [
+      "header.sticky.top-0 390px",
+      "nav.absolute.inset-y-0 280px",
+      "footer.border-t.border-white/30 390px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 6,
+     "boxRadius": 16,
+     "squareMedia": 2,
+     "roundedMedia": 2,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 6,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 1076
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.42
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 65,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "playfair display",
+     "manrope",
+     "manrope fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 4743,
+    "margins": {
+     "left": 24,
+     "right": 24
+    },
+    "sections": [
+     {
+      "sel": "main.flex-1.space-y-0",
+      "tag": "main",
+      "top": 65,
+      "height": 4235,
+      "words": 539,
+      "media": 12,
+      "middle": 0,
+      "heading": {
+       "text": "Gather at Eden",
+       "size": 40,
+       "tag": "h1"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 25,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.border-t.border-white/30",
+      "tag": "footer",
+      "top": 4300,
+      "height": 443,
+      "words": 30,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 33,
+      "right": 33,
+      "textLeft": 33,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Gather at Eden",
+      "size": 40,
+      "top": 447,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 24,
+      "n": 12
+     },
+     {
+      "x": 48,
+      "n": 12
+     }
+    ],
+    "leftBlocks": 24,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "micro-label",
+   "width": 1440,
+   "message": "1 tiny uppercase letter-spaced label(s): \"Edson Hill Road Area · Stowe, Vermont\"",
+   "fix": "Prefer sentence case at body size.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "2 thin rule(s)/divider line(s): header.sticky.top-0 1440px | footer.border-t.border-white/30 1440px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "palette-cream",
+   "width": 1440,
+   "message": "Yellow-cream background (section #f8f3ea).",
+   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "12 different font sizes (10, 11, 12, 14, 15, 16, 17, 18, 20, 36, 48, 100).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "FAIL",
+   "id": "small-text",
+   "width": 1440,
+   "message": "6 text blocks under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Only 5 element(s) moved while the page loaded and scrolled.",
+   "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
+  },
+  {
+   "level": "WARN",
+   "id": "name-only-title",
+   "width": 390,
+   "message": "The h1 is a bare name (\"Gather at Eden\") and nothing else on the first screen says what this is.",
+   "fix": "Keep the name if it leads, and give the line under it (18px or more) the plain words: what it is, for whom, where or when. In the study of 97 Sites of the Day, first screens that named nothing lost usability and content points."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/Users/emmanuel/Developer/eden2/.taste-skill/v7-reunions/desktop-fold.jpg",
+   "pages": [
+    "/Users/emmanuel/Developer/eden2/.taste-skill/v7-reunions/desktop-page-01.jpg",
+    "/Users/emmanuel/Developer/eden2/.taste-skill/v7-reunions/desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/Users/emmanuel/Developer/eden2/.taste-skill/v7-reunions/tablet-fold.jpg",
+   "pages": [
+    "/Users/emmanuel/Developer/eden2/.taste-skill/v7-reunions/tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/Users/emmanuel/Developer/eden2/.taste-skill/v7-reunions/mobile-fold.jpg",
+   "pages": [
+    "/Users/emmanuel/Developer/eden2/.taste-skill/v7-reunions/mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

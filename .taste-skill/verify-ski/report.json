@@ -1,0 +1,1528 @@
+{
+ "url": "http://localhost:3099/guides/stowe-ski-house/",
+ "at": "2026-11-24T10:24:30.040Z",
+ "allow": [
+  "gradient"
+ ],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 4,
+   "filled": [
+    0.78,
+    0.82,
+    0.6,
+    0.84
+   ],
+   "motion": {
+    "elements": 5,
+    "css": 1,
+    "transitions": 0,
+    "scripted": 4,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 3170,
+     "screens": 3.5,
+     "words": 269,
+     "img": 13,
+     "video": 0,
+     "canvas": 0,
+     "svg": 10,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 8,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "68@1200w.avif",
+      "78@400w.avif",
+      "100@400w.avif",
+      "90@400w.avif",
+      "70@400w.avif",
+      "78@800w.avif",
+      "100@800w.avif",
+      "The%20Lemelson%20Estate%20(1).png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Skiing at Eden",
+     "words": 3,
+     "chars": 14,
+     "lines": 1,
+     "size": 100,
+     "vw": 6.9,
+     "font": "Playfair Display",
+     "weight": 600,
+     "tracking": 0.02,
+     "leading": 0.94,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.74,
+     "top": 625,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Skiing at Eden",
+     "words": 3,
+     "lines": 1,
+     "size": 100,
+     "font": "Playfair Display"
+    },
+    "headings": [
+     {
+      "text": "Skiing at Eden",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 100,
+      "vw": 6.9,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.74,
+      "top": 625,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Five minutes to Mount Mansfield",
+      "words": 5,
+      "chars": 31,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.74,
+      "top": 985,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Winter & ski stay questions",
+      "words": 5,
+      "chars": 27,
+      "lines": 2,
+      "size": 48,
+      "vw": 3.3,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 1862,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Reserve your winter week",
+      "words": 4,
+      "chars": 24,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.3,
+      "top": 2638,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 4,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Manrope",
+       "share": 0.91,
+       "mono": false
+      },
+      {
+       "family": "Playfair Display",
+       "share": 0.09,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      10,
+      11,
+      12,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      36,
+      48,
+      100
+     ],
+     "sizeCount": 12,
+     "notLoaded": [],
+     "body": {
+      "font": "Manrope",
+      "size": 16,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 10.3
+     },
+     "measureChars": 68,
+     "max": {
+      "size": 100,
+      "vw": 6.9,
+      "font": "Playfair Display",
+      "text": "Skiing at Eden"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 1,
+     "microLabelShare": 0.016,
+     "microSamples": [
+      "Edson Hill Road Area · Stowe, Vermont"
+     ],
+     "upperShare": 0.08,
+     "centerShare": 0,
+     "smallText": 6
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 81,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#f8f3ea",
+       "top": 873,
+       "hsl": {
+        "h": 39,
+        "s": 0.5,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#1f1b17",
+       "top": 2497,
+       "hsl": {
+        "h": 30,
+        "s": 0.15,
+        "l": 0.11
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#44403c",
+       "share": 0.57
+      },
+      {
+       "color": "#1f1b17",
+       "share": 0.26
+      },
+      {
+       "color": "#79716b",
+       "share": 0.05
+      },
+      {
+       "color": "#57534d",
+       "share": 0.05
+      },
+      {
+       "color": "#e8dac0",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#111111",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 0.07
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 1,
+     "radius": "pill",
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Check winter dates"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 1,
+     "scrims": 0,
+     "gradientSamples": [
+      "header.sticky.top-0 → linear-gradient(in oklab, rgb(253, 251, 247) 0px, rgb(248, 243, 234) 50%, rgb(242, 232, 218) 100%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "header.sticky.top-0 1440px",
+      "footer.border-t.border-white/30 1440px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 4,
+     "boxRadius": 16,
+     "squareMedia": 2,
+     "roundedMedia": 5,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 1156
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.56
+     }
+    ],
+    "nav": {
+     "links": 8,
+     "fixed": true,
+     "height": 81,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "playfair display",
+     "manrope",
+     "manrope fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 3170,
+    "margins": {
+     "left": 184,
+     "right": 184
+    },
+    "sections": [
+     {
+      "sel": "main.flex-1.space-y-0",
+      "tag": "main",
+      "top": 81,
+      "height": 2896,
+      "words": 349,
+      "media": 13,
+      "middle": 0,
+      "heading": {
+       "text": "Skiing at Eden",
+       "size": 100,
+       "tag": "h1"
+      },
+      "left": 0,
+      "right": 184,
+      "textLeft": 184,
+      "textRight": 184,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.border-t.border-white/30",
+      "tag": "footer",
+      "top": 2977,
+      "height": 193,
+      "words": 30,
+      "media": 1,
+      "middle": 126,
+      "heading": null,
+      "left": 184,
+      "right": 184,
+      "textLeft": 420,
+      "textRight": 184,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Skiing at Eden",
+      "size": 100,
+      "top": 625,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 184,
+      "n": 9
+     },
+     {
+      "x": 208,
+      "n": 2
+     },
+     {
+      "x": 481,
+      "n": 2
+     },
+     {
+      "x": 754,
+      "n": 2
+     },
+     {
+      "x": 800,
+      "n": 2
+     },
+     {
+      "x": 1027,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 19,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.07,
+    "voidBox": {
+     "x": 0,
+     "y": 840,
+     "w": 1440,
+     "h": 60
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 4,
+   "filled": [
+    0.86,
+    0.85,
+    0.69,
+    0.93
+   ],
+   "motion": {
+    "elements": 5,
+    "css": 1,
+    "transitions": 0,
+    "scripted": 4,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 3750,
+     "screens": 3.7,
+     "words": 269,
+     "img": 13,
+     "video": 0,
+     "canvas": 0,
+     "svg": 10,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 8,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "68@800w.avif",
+      "78@400w.avif",
+      "100@400w.avif",
+      "90@400w.avif",
+      "70@400w.avif",
+      "78@400w.avif",
+      "100@400w.avif",
+      "The%20Lemelson%20Estate%20(1).png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Skiing at Eden",
+     "words": 3,
+     "chars": 14,
+     "lines": 1,
+     "size": 59.9,
+     "vw": 7.8,
+     "font": "Playfair Display",
+     "weight": 600,
+     "tracking": 0.02,
+     "leading": 0.94,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.9,
+     "top": 694,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Skiing at Eden",
+     "words": 3,
+     "lines": 1,
+     "size": 59.9,
+     "font": "Playfair Display"
+    },
+    "headings": [
+     {
+      "text": "Skiing at Eden",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 59.9,
+      "vw": 7.8,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 694,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Five minutes to Mount Mansfield",
+      "words": 5,
+      "chars": 31,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1059,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Winter & ski stay questions",
+      "words": 5,
+      "chars": 27,
+      "lines": 2,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.5,
+      "top": 2347,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Reserve your winter week",
+      "words": 4,
+      "chars": 24,
+      "lines": 2,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.35,
+      "top": 2988,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 4,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Manrope",
+       "share": 0.91,
+       "mono": false
+      },
+      {
+       "family": "Playfair Display",
+       "share": 0.09,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      10,
+      11,
+      12,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      36,
+      60
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "Manrope",
+      "size": 16,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 10.3
+     },
+     "measureChars": 48,
+     "max": {
+      "size": 59.9,
+      "vw": 7.8,
+      "font": "Playfair Display",
+      "text": "Skiing at Eden"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 1,
+     "microLabelShare": 0.016,
+     "microSamples": [
+      "Edson Hill Road Area · Stowe, Vermont"
+     ],
+     "upperShare": 0.08,
+     "centerShare": 0.04,
+     "smallText": 6
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 81,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#f8f3ea",
+       "top": 963,
+       "hsl": {
+        "h": 39,
+        "s": 0.5,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#1f1b17",
+       "top": 2932,
+       "hsl": {
+        "h": 30,
+        "s": 0.15,
+        "l": 0.11
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#44403c",
+       "share": 0.57
+      },
+      {
+       "color": "#1f1b17",
+       "share": 0.26
+      },
+      {
+       "color": "#79716b",
+       "share": 0.05
+      },
+      {
+       "color": "#57534d",
+       "share": 0.05
+      },
+      {
+       "color": "#e8dac0",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#111111",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 0.07
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 1,
+     "radius": "pill",
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Check winter dates"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 1,
+     "scrims": 0,
+     "gradientSamples": [
+      "header.sticky.top-0 → linear-gradient(in oklab, rgb(253, 251, 247) 0px, rgb(248, 243, 234) 50%, rgb(242, 232, 218) 100%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "header.sticky.top-0 768px",
+      "footer.border-t.border-white/30 768px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 4,
+     "boxRadius": 16,
+     "squareMedia": 2,
+     "roundedMedia": 5,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 1216
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.56
+     }
+    ],
+    "nav": {
+     "links": 8,
+     "fixed": true,
+     "height": 81,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "playfair display",
+     "manrope",
+     "manrope fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 3750,
+    "margins": {
+     "left": 40,
+     "right": 40
+    },
+    "sections": [
+     {
+      "sel": "main.flex-1.space-y-0",
+      "tag": "main",
+      "top": 81,
+      "height": 3272,
+      "words": 349,
+      "media": 13,
+      "middle": 0,
+      "heading": {
+       "text": "Skiing at Eden",
+       "size": 60,
+       "tag": "h1"
+      },
+      "left": 0,
+      "right": 40,
+      "textLeft": 40,
+      "textRight": 40,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.border-t.border-white/30",
+      "tag": "footer",
+      "top": 3353,
+      "height": 397,
+      "words": 30,
+      "media": 1,
+      "middle": 20,
+      "heading": null,
+      "left": 82,
+      "right": 82,
+      "textLeft": 82,
+      "textRight": 82,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Skiing at Eden",
+      "size": 60,
+      "top": 694,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 40,
+      "n": 9
+     },
+     {
+      "x": 64,
+      "n": 4
+     },
+     {
+      "x": 418,
+      "n": 4
+     },
+     {
+      "x": 440,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 19,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.76,
+    0.73,
+    1,
+    0.83,
+    0.84,
+    0.99
+   ],
+   "motion": {
+    "elements": 5,
+    "css": 1,
+    "transitions": 0,
+    "scripted": 4,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 4850,
+     "screens": 5.7,
+     "words": 273,
+     "img": 13,
+     "video": 0,
+     "canvas": 0,
+     "svg": 10,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 8,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "68@400w.avif",
+      "78@400w.avif",
+      "100@400w.avif",
+      "90@400w.avif",
+      "70@400w.avif",
+      "78@400w.avif",
+      "100@400w.avif",
+      "The%20Lemelson%20Estate%20(1).png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Skiing at Eden",
+     "words": 3,
+     "chars": 14,
+     "lines": 1,
+     "size": 40,
+     "vw": 10.3,
+     "font": "Playfair Display",
+     "weight": 600,
+     "tracking": 0.02,
+     "leading": 0.94,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.88,
+     "top": 485,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Skiing at Eden",
+     "words": 3,
+     "lines": 1,
+     "size": 40,
+     "font": "Playfair Display"
+    },
+    "headings": [
+     {
+      "text": "Skiing at Eden",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 0.94,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 485,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Five minutes to Mount Mansfield",
+      "words": 5,
+      "chars": 31,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 857,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Winter & ski stay questions",
+      "words": 5,
+      "chars": 27,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 3024,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Reserve your winter week",
+      "words": 4,
+      "chars": 24,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 4094,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 4,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Manrope",
+       "share": 0.91,
+       "mono": false
+      },
+      {
+       "family": "Playfair Display",
+       "share": 0.09,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      10,
+      11,
+      12,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      30,
+      40
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "Manrope",
+      "size": 16,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 17.1
+     },
+     "measureChars": 43,
+     "max": {
+      "size": 40,
+      "vw": 10.3,
+      "font": "Playfair Display",
+      "text": "Skiing at Eden"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 1,
+     "microLabelShare": 0.016,
+     "microSamples": [
+      "Edson Hill Road Area · Stowe, Vermont"
+     ],
+     "upperShare": 0.09,
+     "centerShare": 0.04,
+     "smallText": 6
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 65,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#f8f3ea",
+       "top": 793,
+       "hsl": {
+        "h": 39,
+        "s": 0.5,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#1f1b17",
+       "top": 3802,
+       "hsl": {
+        "h": 30,
+        "s": 0.15,
+        "l": 0.11
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#44403c",
+       "share": 0.56
+      },
+      {
+       "color": "#1f1b17",
+       "share": 0.28
+      },
+      {
+       "color": "#79716b",
+       "share": 0.05
+      },
+      {
+       "color": "#e8dac0",
+       "share": 0.04
+      },
+      {
+       "color": "#57534d",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#1f1b17"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 10,
+     "inHero": 9,
+     "radius": 12,
+     "height": 46,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 8,
+     "heroLabels": [
+      "HOME",
+      "STAYS",
+      "WEDDINGS",
+      "RETREATS",
+      "GALLERY"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 9,
+     "shadowSamples": [],
+     "gradients": 2,
+     "scrims": 0,
+     "gradientSamples": [
+      "header.sticky.top-0 → linear-gradient(in oklab, rgb(253, 251, 247) 0px, rgb(248, 243, 234) 50%, rgb(242, 232, 218) 100%)",
+      "nav.absolute.inset-y-0 → linear-gradient(oklab(0.98851 0.000540048 0.00567573 / 0.98) 0px, oklab(0.965558 0.00173056 0.0129725 / 0.98) "
+     ],
+     "gradientText": 0,
+     "hairlines": 3,
+     "hairlineSamples": [
+      "header.sticky.top-0 390px",
+      "nav.absolute.inset-y-0 280px",
+      "footer.border-t.border-white/30 390px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 4,
+     "boxRadius": 16,
+     "squareMedia": 2,
+     "roundedMedia": 5,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 1063
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.46
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 65,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "playfair display",
+     "manrope",
+     "manrope fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 4850,
+    "margins": {
+     "left": 24,
+     "right": 24
+    },
+    "sections": [
+     {
+      "sel": "main.flex-1.space-y-0",
+      "tag": "main",
+      "top": 65,
+      "height": 4342,
+      "words": 349,
+      "media": 14,
+      "middle": 0,
+      "heading": {
+       "text": "Skiing at Eden",
+       "size": 40,
+       "tag": "h1"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 25,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.border-t.border-white/30",
+      "tag": "footer",
+      "top": 4407,
+      "height": 443,
+      "words": 30,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 33,
+      "right": 33,
+      "textLeft": 33,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Skiing at Eden",
+      "size": 40,
+      "top": 485,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 24,
+      "n": 11
+     },
+     {
+      "x": 48,
+      "n": 8
+     }
+    ],
+    "leftBlocks": 19,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "micro-label",
+   "width": 1440,
+   "message": "1 tiny uppercase letter-spaced label(s): \"Edson Hill Road Area · Stowe, Vermont\"",
+   "fix": "Prefer sentence case at body size.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "2 thin rule(s)/divider line(s): header.sticky.top-0 1440px | footer.border-t.border-white/30 1440px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "palette-cream",
+   "width": 1440,
+   "message": "Yellow-cream background (section #f8f3ea).",
+   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "12 different font sizes (10, 11, 12, 14, 15, 16, 17, 18, 20, 36, 48, 100).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "FAIL",
+   "id": "small-text",
+   "width": 1440,
+   "message": "6 text blocks under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Only 5 element(s) moved while the page loaded and scrolled.",
+   "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
+  },
+  {
+   "level": "WARN",
+   "id": "name-only-title",
+   "width": 390,
+   "message": "The h1 is a bare name (\"Skiing at Eden\") and nothing else on the first screen says what this is.",
+   "fix": "Keep the name if it leads, and give the line under it (18px or more) the plain words: what it is, for whom, where or when. In the study of 97 Sites of the Day, first screens that named nothing lost usability and content points."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/Users/emmanuel/Developer/eden2/.taste-skill/verify-ski/desktop-fold.jpg",
+   "pages": [
+    "/Users/emmanuel/Developer/eden2/.taste-skill/verify-ski/desktop-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/Users/emmanuel/Developer/eden2/.taste-skill/verify-ski/tablet-fold.jpg",
+   "pages": [
+    "/Users/emmanuel/Developer/eden2/.taste-skill/verify-ski/tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/Users/emmanuel/Developer/eden2/.taste-skill/verify-ski/mobile-fold.jpg",
+   "pages": [
+    "/Users/emmanuel/Developer/eden2/.taste-skill/verify-ski/mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

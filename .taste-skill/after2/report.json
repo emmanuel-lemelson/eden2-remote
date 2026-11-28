@@ -1,0 +1,1938 @@
+{
+ "url": "http://localhost:3099/weddings/",
+ "at": "2026-11-24T10:07:02.657Z",
+ "allow": [
+  "gradient"
+ ],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 9,
+   "filled": [
+    0.88,
+    0.93,
+    0.43,
+    0.35,
+    0.38,
+    0.8,
+    0.76,
+    0.46,
+    1
+   ],
+   "motion": {
+    "elements": 20,
+    "css": 1,
+    "transitions": 0,
+    "scripted": 19,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 8428,
+     "screens": 9.4,
+     "words": 498,
+     "img": 19,
+     "video": 0,
+     "canvas": 0,
+     "svg": 10,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 11,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "2@1200w.avif",
+      "87@800w.avif",
+      "3@1200w.avif",
+      "1@1200w.avif",
+      "98@1200w.avif",
+      "31@1200w.avif",
+      "28@1200w.avif",
+      "70@800w.avif"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Weddings at Eden",
+     "words": 3,
+     "chars": 16,
+     "lines": 1,
+     "size": 112,
+     "vw": 7.8,
+     "font": "Playfair Display",
+     "weight": 600,
+     "tracking": 0.02,
+     "leading": 0.9,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.74,
+     "top": 625,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Weddings at Eden",
+     "words": 3,
+     "lines": 1,
+     "size": 112,
+     "font": "Playfair Display"
+    },
+    "headings": [
+     {
+      "text": "Weddings at Eden",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 112,
+      "vw": 7.8,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.74,
+      "top": 625,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "A private world",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.06,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 1163,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Spaces across the estate",
+      "words": 4,
+      "chars": 24,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.74,
+      "top": 1874,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The Upper Meadow",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.28,
+      "top": 2153,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Arrive",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 136,
+      "vw": 9.4,
+      "font": "ui-serif",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.74,
+      "top": 2912,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Celebrate",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 136,
+      "vw": 9.4,
+      "font": "ui-serif",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.74,
+      "top": 3614,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Linger",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 136,
+      "vw": 9.4,
+      "font": "ui-serif",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.74,
+      "top": 4316,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "No preset menus",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.74,
+      "top": 4918,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Common questions",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 6120,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Request our private brochure",
+      "words": 4,
+      "chars": 28,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.35,
+      "top": 7642,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 10,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 3,
+     "centered": 3,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Manrope",
+       "share": 0.95,
+       "mono": false
+      },
+      {
+       "family": "Playfair Display",
+       "share": 0.04,
+       "mono": false
+      },
+      {
+       "family": "ui-serif",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      10,
+      11,
+      12,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      30,
+      36,
+      48,
+      112,
+      136
+     ],
+     "sizeCount": 14,
+     "notLoaded": [],
+     "body": {
+      "font": "Manrope",
+      "size": 16,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 17.1
+     },
+     "measureChars": 64,
+     "max": {
+      "size": 136,
+      "vw": 9.4,
+      "font": "ui-serif",
+      "text": "Arrive"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 1,
+     "microLabelShare": 0.009,
+     "microSamples": [
+      "Edson Hill Road Area · Stowe, Vermont"
+     ],
+     "upperShare": 0.04,
+     "centerShare": 0.02,
+     "smallText": 6
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 81,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#f8f3ea",
+       "top": 850,
+       "hsl": {
+        "h": 39,
+        "s": 0.5,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#1f1b17",
+       "top": 7274,
+       "hsl": {
+        "h": 30,
+        "s": 0.15,
+        "l": 0.11
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#1f1b17",
+       "share": 0.33
+      },
+      {
+       "color": "#44403c",
+       "share": 0.31
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.12
+      },
+      {
+       "color": "#e8dac0",
+       "share": 0.12
+      },
+      {
+       "color": "#57534e",
+       "share": 0.05
+      }
+     ],
+     "button": {
+      "bg": "#111111",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 0.07
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 1,
+     "radius": "pill",
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Inquire about buyouts"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 1,
+     "scrims": 0,
+     "gradientSamples": [
+      "header.sticky.top-0 → linear-gradient(in oklab, rgb(253, 251, 247) 0px, rgb(248, 243, 234) 50%, rgb(242, 232, 218) 100%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "header.sticky.top-0 1440px",
+      "footer.border-t.border-white/30 1440px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 8,
+     "boxRadius": 12,
+     "squareMedia": 5,
+     "roundedMedia": 5,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 5581
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.56
+     }
+    ],
+    "nav": {
+     "links": 8,
+     "fixed": true,
+     "height": 81,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "playfair display",
+     "manrope",
+     "manrope fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 8428,
+    "margins": {
+     "left": 184,
+     "right": 184
+    },
+    "sections": [
+     {
+      "sel": "main.flex-1.space-y-0",
+      "tag": "main",
+      "top": 81,
+      "height": 8154,
+      "words": 681,
+      "media": 17,
+      "middle": 0,
+      "heading": {
+       "text": "Arrive",
+       "size": 136,
+       "tag": "p"
+      },
+      "left": 0,
+      "right": 137,
+      "textLeft": 184,
+      "textRight": 137,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.border-t.border-white/30",
+      "tag": "footer",
+      "top": 8235,
+      "height": 193,
+      "words": 30,
+      "media": 1,
+      "middle": 126,
+      "heading": null,
+      "left": 184,
+      "right": 184,
+      "textLeft": 420,
+      "textRight": 184,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Weddings at Eden",
+      "size": 112,
+      "top": 625,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 184,
+      "n": 17
+     },
+     {
+      "x": 948,
+      "n": 4
+     },
+     {
+      "x": 204,
+      "n": 3
+     },
+     {
+      "x": 800,
+      "n": 2
+     },
+     {
+      "x": 592,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 27,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.07,
+    "voidBox": {
+     "x": 0,
+     "y": 840,
+     "w": 1440,
+     "h": 60
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 11,
+   "filled": [
+    0.87,
+    1,
+    0.46,
+    0.43,
+    0.21,
+    0.31,
+    0.95,
+    0.59,
+    0.83,
+    0.79,
+    1
+   ],
+   "motion": {
+    "elements": 20,
+    "css": 1,
+    "transitions": 0,
+    "scripted": 19,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 11185,
+     "screens": 10.9,
+     "words": 498,
+     "img": 19,
+     "video": 0,
+     "canvas": 0,
+     "svg": 10,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 10,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "2@800w.avif",
+      "87@800w.avif",
+      "3@800w.avif",
+      "1@800w.avif",
+      "98@800w.avif",
+      "31@800w.avif",
+      "28@800w.avif",
+      "70@800w.avif"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Weddings at Eden",
+     "words": 3,
+     "chars": 16,
+     "lines": 1,
+     "size": 67.6,
+     "vw": 8.8,
+     "font": "Playfair Display",
+     "weight": 600,
+     "tracking": 0.02,
+     "leading": 0.9,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.9,
+     "top": 694,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Weddings at Eden",
+     "words": 3,
+     "lines": 1,
+     "size": 67.6,
+     "font": "Playfair Display"
+    },
+    "headings": [
+     {
+      "text": "Weddings at Eden",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 67.6,
+      "vw": 8.8,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 694,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "A private world",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 48,
+      "vw": 6.3,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.06,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1027,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Spaces across the estate",
+      "words": 4,
+      "chars": 24,
+      "lines": 1,
+      "size": 48,
+      "vw": 6.3,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2460,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The Upper Meadow",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2758,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Arrive",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 84.5,
+      "vw": 11,
+      "font": "ui-serif",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 4016,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Celebrate",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 84.5,
+      "vw": 11,
+      "font": "ui-serif",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 4814,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Linger",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 84.5,
+      "vw": 11,
+      "font": "ui-serif",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5613,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "No preset menus",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 48,
+      "vw": 6.3,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 6238,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Common questions",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 48,
+      "vw": 6.3,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 7702,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Request our private brochure",
+      "words": 4,
+      "chars": 28,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.65,
+      "top": 10687,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 10,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 3,
+     "centered": 3,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Manrope",
+       "share": 0.95,
+       "mono": false
+      },
+      {
+       "family": "Playfair Display",
+       "share": 0.04,
+       "mono": false
+      },
+      {
+       "family": "ui-serif",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      10,
+      11,
+      12,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      30,
+      36,
+      48,
+      68,
+      85
+     ],
+     "sizeCount": 14,
+     "notLoaded": [],
+     "body": {
+      "font": "Manrope",
+      "size": 16,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 17.1
+     },
+     "measureChars": 68,
+     "max": {
+      "size": 84.5,
+      "vw": 11,
+      "font": "ui-serif",
+      "text": "Arrive"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 1,
+     "microLabelShare": 0.009,
+     "microSamples": [
+      "Edson Hill Road Area · Stowe, Vermont"
+     ],
+     "upperShare": 0.04,
+     "centerShare": 0.02,
+     "smallText": 6
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 81,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#f8f3ea",
+       "top": 899,
+       "hsl": {
+        "h": 39,
+        "s": 0.5,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#1f1b17",
+       "top": 9582,
+       "hsl": {
+        "h": 30,
+        "s": 0.15,
+        "l": 0.11
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#1f1b17",
+       "share": 0.33
+      },
+      {
+       "color": "#44403c",
+       "share": 0.31
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.12
+      },
+      {
+       "color": "#e8dac0",
+       "share": 0.12
+      },
+      {
+       "color": "#57534e",
+       "share": 0.05
+      }
+     ],
+     "button": {
+      "bg": "#111111",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 0.07
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 1,
+     "radius": "pill",
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Inquire about buyouts"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 1,
+     "scrims": 0,
+     "gradientSamples": [
+      "header.sticky.top-0 → linear-gradient(in oklab, rgb(253, 251, 247) 0px, rgb(248, 243, 234) 50%, rgb(242, 232, 218) 100%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 2,
+     "hairlineSamples": [
+      "header.sticky.top-0 768px",
+      "footer.border-t.border-white/30 768px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 8,
+     "boxRadius": 12,
+     "squareMedia": 5,
+     "roundedMedia": 5,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.56
+     }
+    ],
+    "nav": {
+     "links": 8,
+     "fixed": true,
+     "height": 81,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "playfair display",
+     "manrope",
+     "manrope fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 11185,
+    "margins": {
+     "left": 40,
+     "right": 40
+    },
+    "sections": [
+     {
+      "sel": "main.flex-1.space-y-0",
+      "tag": "main",
+      "top": 81,
+      "height": 10911,
+      "words": 681,
+      "media": 17,
+      "middle": 0,
+      "heading": {
+       "text": "Arrive",
+       "size": 84,
+       "tag": "p"
+      },
+      "left": 40,
+      "right": 40,
+      "textLeft": 40,
+      "textRight": 57,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.border-t.border-white/30",
+      "tag": "footer",
+      "top": 10992,
+      "height": 193,
+      "words": 30,
+      "media": 0,
+      "middle": 43,
+      "heading": null,
+      "left": 40,
+      "right": 40,
+      "textLeft": 182,
+      "textRight": 40,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Weddings at Eden",
+      "size": 68,
+      "top": 694,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 40,
+      "n": 17
+     },
+     {
+      "x": 60,
+      "n": 7
+     },
+     {
+      "x": 80,
+      "n": 2
+     },
+     {
+      "x": 432,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 27,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 11,
+   "filled": [
+    0.76,
+    1,
+    0.55,
+    0.48,
+    0.36,
+    0.66,
+    0.86,
+    0.72,
+    0.84,
+    0.83,
+    0.99
+   ],
+   "motion": {
+    "elements": 20,
+    "css": 1,
+    "transitions": 0,
+    "scripted": 19,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 9333,
+     "screens": 11.1,
+     "words": 502,
+     "img": 19,
+     "video": 0,
+     "canvas": 0,
+     "svg": 10,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 11,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "2@400w.avif",
+      "87@400w.avif",
+      "3@400w.avif",
+      "1@400w.avif",
+      "98@400w.avif",
+      "31@400w.avif",
+      "28@400w.avif",
+      "70@400w.avif"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Weddings at Eden",
+     "words": 3,
+     "chars": 16,
+     "lines": 2,
+     "size": 44,
+     "vw": 11.3,
+     "font": "Playfair Display",
+     "weight": 600,
+     "tracking": 0.02,
+     "leading": 0.9,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.88,
+     "top": 502,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Weddings at Eden",
+     "words": 3,
+     "lines": 2,
+     "size": 44,
+     "font": "Playfair Display"
+    },
+    "headings": [
+     {
+      "text": "Weddings at Eden",
+      "words": 3,
+      "chars": 16,
+      "lines": 2,
+      "size": 44,
+      "vw": 11.3,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 502,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "A private world",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.06,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 880,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Spaces across the estate",
+      "words": 4,
+      "chars": 24,
+      "lines": 2,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 1831,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The Upper Meadow",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 2238,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Arrive",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 60,
+      "vw": 15.4,
+      "font": "ui-serif",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 3205,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Celebrate",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 60,
+      "vw": 15.4,
+      "font": "ui-serif",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 3778,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Linger",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 60,
+      "vw": 15.4,
+      "font": "ui-serif",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 4352,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "No preset menus",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 4831,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Common questions",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 6414,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Request our private brochure",
+      "words": 4,
+      "chars": 28,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 8519,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 10,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 3,
+     "centered": 3,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Manrope",
+       "share": 0.95,
+       "mono": false
+      },
+      {
+       "family": "Playfair Display",
+       "share": 0.04,
+       "mono": false
+      },
+      {
+       "family": "ui-serif",
+       "share": 0,
+       "mono": false
+      }
+     ],
+     "familyCount": 3,
+     "sizes": [
+      10,
+      11,
+      12,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      30,
+      36,
+      44,
+      60
+     ],
+     "sizeCount": 13,
+     "notLoaded": [],
+     "body": {
+      "font": "Manrope",
+      "size": 16,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 1
+     },
+     "measureChars": 43,
+     "max": {
+      "size": 60,
+      "vw": 15.4,
+      "font": "ui-serif",
+      "text": "Arrive"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 1,
+     "microLabelShare": 0.009,
+     "microSamples": [
+      "Edson Hill Road Area · Stowe, Vermont"
+     ],
+     "upperShare": 0.05,
+     "centerShare": 0.04,
+     "smallText": 6
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 65,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#f8f3ea",
+       "top": 784,
+       "hsl": {
+        "h": 39,
+        "s": 0.5,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#1f1b17",
+       "top": 5479,
+       "hsl": {
+        "h": 30,
+        "s": 0.15,
+        "l": 0.11
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#1f1b17",
+       "share": 0.34
+      },
+      {
+       "color": "#44403c",
+       "share": 0.31
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.12
+      },
+      {
+       "color": "#e8dac0",
+       "share": 0.12
+      },
+      {
+       "color": "#57534e",
+       "share": 0.05
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#1f1b17"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 12,
+     "inHero": 9,
+     "radius": 12,
+     "height": 46,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 8,
+     "heroLabels": [
+      "HOME",
+      "STAYS",
+      "WEDDINGS",
+      "RETREATS",
+      "GALLERY"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 9,
+     "shadowSamples": [],
+     "gradients": 2,
+     "scrims": 0,
+     "gradientSamples": [
+      "header.sticky.top-0 → linear-gradient(in oklab, rgb(253, 251, 247) 0px, rgb(248, 243, 234) 50%, rgb(242, 232, 218) 100%)",
+      "nav.absolute.inset-y-0 → linear-gradient(oklab(0.98851 0.000540048 0.00567573 / 0.98) 0px, oklab(0.965558 0.00173056 0.0129725 / 0.98) "
+     ],
+     "gradientText": 0,
+     "hairlines": 3,
+     "hairlineSamples": [
+      "header.sticky.top-0 390px",
+      "nav.absolute.inset-y-0 280px",
+      "footer.border-t.border-white/30 390px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 9,
+     "boxRadius": 12,
+     "squareMedia": 5,
+     "roundedMedia": 5,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 5939
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.48
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 65,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "playfair display",
+     "manrope",
+     "manrope fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 9333,
+    "margins": {
+     "left": 24,
+     "right": 24
+    },
+    "sections": [
+     {
+      "sel": "main.flex-1.space-y-0",
+      "tag": "main",
+      "top": 65,
+      "height": 8841,
+      "words": 681,
+      "media": 17,
+      "middle": 0,
+      "heading": {
+       "text": "Arrive",
+       "size": 60,
+       "tag": "p"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 24,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.border-t.border-white/30",
+      "tag": "footer",
+      "top": 8906,
+      "height": 427,
+      "words": 30,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 33,
+      "right": 33,
+      "textLeft": 33,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Weddings at Eden",
+      "size": 44,
+      "top": 502,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 24,
+      "n": 19
+     },
+     {
+      "x": 44,
+      "n": 8
+     }
+    ],
+    "leftBlocks": 27,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "micro-label",
+   "width": 1440,
+   "message": "1 tiny uppercase letter-spaced label(s): \"Edson Hill Road Area · Stowe, Vermont\"",
+   "fix": "Prefer sentence case at body size.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "2 thin rule(s)/divider line(s): header.sticky.top-0 1440px | footer.border-t.border-white/30 1440px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "palette-cream",
+   "width": 1440,
+   "message": "Yellow-cream background (section #f8f3ea).",
+   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "14 different font sizes (10, 11, 12, 14, 15, 16, 17, 18, 20, 30, 36, 48, 112, 136).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "FAIL",
+   "id": "small-text",
+   "width": 1440,
+   "message": "6 text blocks under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "grey-body",
+   "width": 390,
+   "message": "The running text is a soft grey on its ground (1:1).",
+   "fix": "Set body copy in the full ink (7:1 or more). Keep the muted ink for secondary notes; pages read thin and unfinished when everything is grey."
+  },
+  {
+   "level": "WARN",
+   "id": "name-only-title",
+   "width": 390,
+   "message": "The h1 is a bare name (\"Weddings at Eden\") and nothing else on the first screen says what this is.",
+   "fix": "Keep the name if it leads, and give the line under it (18px or more) the plain words: what it is, for whom, where or when. In the study of 97 Sites of the Day, first screens that named nothing lost usability and content points."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/Users/emmanuel/Developer/eden2/.taste-skill/after2/desktop-fold.jpg",
+   "pages": [
+    "/Users/emmanuel/Developer/eden2/.taste-skill/after2/desktop-page-01.jpg",
+    "/Users/emmanuel/Developer/eden2/.taste-skill/after2/desktop-page-02.jpg",
+    "/Users/emmanuel/Developer/eden2/.taste-skill/after2/desktop-page-03.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/Users/emmanuel/Developer/eden2/.taste-skill/after2/tablet-fold.jpg",
+   "pages": [
+    "/Users/emmanuel/Developer/eden2/.taste-skill/after2/tablet-page-01.jpg",
+    "/Users/emmanuel/Developer/eden2/.taste-skill/after2/tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/Users/emmanuel/Developer/eden2/.taste-skill/after2/mobile-fold.jpg",
+   "pages": [
+    "/Users/emmanuel/Developer/eden2/.taste-skill/after2/mobile-page-01.jpg",
+    "/Users/emmanuel/Developer/eden2/.taste-skill/after2/mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

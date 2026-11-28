@@ -36,31 +36,21 @@ const experienceGuides = [
   { name: "Family Reunions", href: "/guides/stowe-family-reunions/" },
 ];
 
-const mobileNavLinks = [
-  { name: "Home", href: "/" },
-  { name: "Luxury Stays", href: "/stays/" },
-  { name: "Weddings", href: "/weddings/" },
-  { name: "Executive Retreats", href: "/retreats/" },
-  { name: "Ski Season", href: "/guides/ski-season/" },
-  { name: "Fall Foliage", href: "/guides/stowe-fall-foliage/" },
-  { name: "Family Reunions", href: "/guides/stowe-family-reunions/" },
-  { name: "Gallery", href: "/gallery/" },
-  { name: "Reviews", href: "/reviews/" },
-  { name: "Reserve Now", href: "/contact/" },
-];
-
 export function Header() {
   const pathname = usePathname();
   const normalizedPath = pathname?.replace(/\/$/, "") || "/";
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isExperiencesOpen, setIsExperiencesOpen] = useState(false);
-  const headerRef = useRef<HTMLElement>(null);
-
   const isExperiencesActive =
     normalizedPath.startsWith("/stays") ||
     normalizedPath.startsWith("/weddings") ||
     normalizedPath.startsWith("/retreats") ||
     normalizedPath.startsWith("/guides");
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isExperiencesOpen, setIsExperiencesOpen] = useState(false);
+  const [isMobileExperiencesOpen, setIsMobileExperiencesOpen] = useState(isExperiencesActive);
+  const experiencesRef = useRef<HTMLDivElement>(null);
+  const triggerRef = useRef<HTMLButtonElement>(null);
+  const isHoverPreviewRef = useRef(false);
 
   useEffect(() => {
     if (isMenuOpen) {
@@ -75,15 +65,22 @@ export function Header() {
   useEffect(() => {
     setIsMenuOpen(false);
     setIsExperiencesOpen(false);
-  }, [pathname]);
+    isHoverPreviewRef.current = false;
+    setIsMobileExperiencesOpen(isExperiencesActive);
+  }, [pathname, isExperiencesActive]);
 
   useEffect(() => {
     if (!isExperiencesOpen) return;
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setIsExperiencesOpen(false);
+      if (e.key === "Escape") {
+        isHoverPreviewRef.current = false;
+        setIsExperiencesOpen(false);
+        triggerRef.current?.focus();
+      }
     };
     const handleClickOutside = (e: MouseEvent) => {
-      if (headerRef.current && !headerRef.current.contains(e.target as Node)) {
+      if (experiencesRef.current && !experiencesRef.current.contains(e.target as Node)) {
+        isHoverPreviewRef.current = false;
         setIsExperiencesOpen(false);
       }
     };
@@ -97,8 +94,6 @@ export function Header() {
 
   return (
     <header
-      ref={headerRef}
-      onMouseLeave={() => setIsExperiencesOpen(false)}
       className="sticky top-0 z-50 border-b border-[#d2c4a3]/60 bg-gradient-to-b from-[#fdfbf7] via-[#f8f3ea] to-[#f2e8da]"
     >
       <div className="lux-container flex h-16 items-center md:h-20">
@@ -144,12 +139,19 @@ export function Header() {
         </div>
 
         {/* Right / Main Desktop Navigation */}
-        <nav className="hidden flex-none items-center gap-5 lg:gap-8 xl:gap-10 text-[0.7rem] lg:text-[0.76rem] font-semibold uppercase tracking-[0.16em] lg:tracking-[0.24em] text-stone-600 md:flex">
+        <nav
+          aria-label="Primary"
+          className="hidden flex-none items-center gap-6 lg:gap-8 xl:gap-9 text-[0.9375rem] font-medium tracking-tight text-stone-900 md:flex"
+        >
           <Link
             href="/"
-            onMouseEnter={() => setIsExperiencesOpen(false)}
+            aria-current={normalizedPath === "/" ? "page" : undefined}
+            onMouseEnter={() => {
+              isHoverPreviewRef.current = false;
+              setIsExperiencesOpen(false);
+            }}
             className={`group relative inline-flex items-center whitespace-nowrap pb-1 transition-colors duration-200 ${
-              normalizedPath === "/" ? "text-stone-900" : "hover:text-stone-900"
+              normalizedPath === "/" ? "text-[#8f7845]" : "hover:text-[#8f7845]"
             }`}
           >
             Home
@@ -162,39 +164,172 @@ export function Header() {
             />
           </Link>
 
-          <button
-            type="button"
-            aria-expanded={isExperiencesOpen}
-            aria-controls="experiences-dropdown"
-            onMouseEnter={() => setIsExperiencesOpen(true)}
-            onClick={() => setIsExperiencesOpen((prev) => !prev)}
-            className={`group relative inline-flex cursor-pointer items-center gap-1.5 whitespace-nowrap pb-1 uppercase transition-colors duration-200 ${
-              isExperiencesActive || isExperiencesOpen
-                ? "text-stone-900"
-                : "hover:text-stone-900"
-            }`}
+          <div
+            ref={experiencesRef}
+            className="relative flex items-center"
+            onPointerEnter={(e) => {
+              if (
+                typeof window !== "undefined" &&
+                window.matchMedia("(hover: hover)").matches &&
+                e.pointerType !== "touch" &&
+                !isExperiencesOpen
+              ) {
+                isHoverPreviewRef.current = true;
+                setIsExperiencesOpen(true);
+              }
+            }}
+            onPointerLeave={() => {
+              if (isHoverPreviewRef.current) {
+                isHoverPreviewRef.current = false;
+                setIsExperiencesOpen(false);
+              }
+            }}
+            onBlur={(e) => {
+              if (
+                e.relatedTarget &&
+                experiencesRef.current &&
+                !experiencesRef.current.contains(e.relatedTarget as Node)
+              ) {
+                isHoverPreviewRef.current = false;
+                setIsExperiencesOpen(false);
+              }
+            }}
           >
-            Experiences
-            <svg
-              viewBox="0 0 16 16"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.75"
-              aria-hidden="true"
-              className={`h-3 w-3 transition-transform duration-200 ${
-                isExperiencesOpen ? "rotate-180" : ""
+            <button
+              ref={triggerRef}
+              type="button"
+              aria-expanded={isExperiencesOpen}
+              aria-controls="experiences-dropdown"
+              onClick={() => {
+                if (isExperiencesOpen && isHoverPreviewRef.current) {
+                  isHoverPreviewRef.current = false;
+                  return;
+                }
+                isHoverPreviewRef.current = false;
+                setIsExperiencesOpen((prev) => !prev);
+              }}
+              className={`group relative inline-flex cursor-pointer items-center gap-1.5 whitespace-nowrap pb-1 transition-colors duration-200 ${
+                isExperiencesActive || isExperiencesOpen
+                  ? "text-[#8f7845]"
+                  : "hover:text-[#8f7845]"
               }`}
             >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M4 6l4 4 4-4" />
-            </svg>
-            <span
-              className={`pointer-events-none absolute inset-x-0 -bottom-[6px] h-[2px] origin-center rounded-full bg-gradient-to-r from-[#c2a060] to-[#8f7845] transition duration-300 ${
-                isExperiencesActive || isExperiencesOpen
-                  ? "opacity-100"
-                  : "scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-100"
+              Experiences
+              <svg
+                viewBox="0 0 16 16"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.75"
+                aria-hidden="true"
+                className={`h-3 w-3 transition-transform duration-200 ${
+                  isExperiencesOpen ? "rotate-180" : ""
+                }`}
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6l4 4 4-4" />
+              </svg>
+              <span
+                className={`pointer-events-none absolute inset-x-0 -bottom-[6px] h-[2px] origin-center rounded-full bg-gradient-to-r from-[#c2a060] to-[#8f7845] transition duration-300 ${
+                  isExperiencesActive || isExperiencesOpen
+                    ? "opacity-100"
+                    : "scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-100"
+                }`}
+              />
+            </button>
+
+            {/* Compact Floating Experiences Popover */}
+            <div
+              id="experiences-dropdown"
+              hidden={!isExperiencesOpen}
+              className={`absolute left-1/2 top-full z-50 -translate-x-1/2 pt-3 transition duration-150 ease-out motion-reduce:transition-none ${
+                isExperiencesOpen
+                  ? "pointer-events-auto translate-y-0 opacity-100"
+                  : "pointer-events-none -translate-y-1 opacity-0"
               }`}
-            />
-          </button>
+            >
+              <div className="w-[420px] max-w-[calc(100vw-2rem)] rounded-2xl bg-[#fdfbf7]/95 p-4 normal-case tracking-normal ring-1 ring-[#1f1b17]/[0.08] shadow-[0_4px_12px_-2px_rgba(31,27,23,0.06),0_20px_44px_-12px_rgba(31,27,23,0.16)] backdrop-blur-xl">
+                <div className="grid grid-cols-[1.45fr_1fr] gap-5">
+                  <div>
+                    <p className="mb-2 text-[11px] font-medium text-[#8c8275]">
+                      Experiences
+                    </p>
+                    <ul className="space-y-0.5">
+                      {experienceLinks.map((item) => {
+                        const normalizedHref = item.href.replace(/\/$/, "") || "/";
+                        const isItemActive = normalizedPath === normalizedHref;
+                        return (
+                          <li key={item.href}>
+                            <Link
+                              href={item.href}
+                              aria-current={isItemActive ? "page" : undefined}
+                              onClick={() => {
+                                isHoverPreviewRef.current = false;
+                                setIsExperiencesOpen(false);
+                              }}
+                              className={`group -mx-2 flex flex-col rounded-lg px-2.5 py-2 transition-colors duration-150 ${
+                                isItemActive
+                                  ? "bg-[#1f1b17]/[0.05]"
+                                  : "hover:bg-[#1f1b17]/[0.04]"
+                              }`}
+                            >
+                              <span className="flex items-center gap-2 text-[14px] font-medium leading-snug tracking-[-0.01em] text-[#1f1b17]">
+                                <span>{item.title}</span>
+                                {isItemActive ? (
+                                  <span
+                                    aria-hidden="true"
+                                    className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#8f7845]"
+                                  />
+                                ) : null}
+                              </span>
+                              <span className="mt-0.5 text-[12px] font-normal leading-snug text-[#78716c]">
+                                {item.subtitle}
+                              </span>
+                            </Link>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+
+                  <div className="border-l border-[#1f1b17]/[0.07] pl-5">
+                    <p className="mb-2 text-[11px] font-medium text-[#8c8275]">
+                      Seasonal guides
+                    </p>
+                    <ul className="space-y-0.5">
+                      {experienceGuides.map((guide) => {
+                        const normalizedHref = guide.href.replace(/\/$/, "") || "/";
+                        const isGuideActive = normalizedPath === normalizedHref;
+                        return (
+                          <li key={guide.href}>
+                            <Link
+                              href={guide.href}
+                              aria-current={isGuideActive ? "page" : undefined}
+                              onClick={() => {
+                                isHoverPreviewRef.current = false;
+                                setIsExperiencesOpen(false);
+                              }}
+                              className={`group -mx-2 flex items-center gap-2 rounded-lg px-2.5 py-1.5 text-[13.5px] font-medium tracking-[-0.01em] transition-colors duration-150 ${
+                                isGuideActive
+                                  ? "bg-[#1f1b17]/[0.05] text-[#1f1b17]"
+                                  : "text-[#44403c] hover:bg-[#1f1b17]/[0.04] hover:text-[#1f1b17]"
+                              }`}
+                            >
+                              <span>{guide.name}</span>
+                              {isGuideActive ? (
+                                <span
+                                  aria-hidden="true"
+                                  className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#8f7845]"
+                                />
+                              ) : null}
+                            </Link>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           {navItems.slice(1).map((item) => {
             const isActive = normalizedPath === item.href;
@@ -202,9 +337,13 @@ export function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                onMouseEnter={() => setIsExperiencesOpen(false)}
+                aria-current={isActive ? "page" : undefined}
+                onMouseEnter={() => {
+                  isHoverPreviewRef.current = false;
+                  setIsExperiencesOpen(false);
+                }}
                 className={`group relative inline-flex items-center whitespace-nowrap pb-1 transition-colors duration-200 ${
-                  isActive ? "text-stone-900" : "hover:text-stone-900"
+                  isActive ? "text-[#8f7845]" : "hover:text-[#8f7845]"
                 }`}
               >
                 {item.name}
@@ -226,59 +365,6 @@ export function Header() {
         </div>
       </div>
 
-      {/* Desktop Experiences Dropdown */}
-      {isExperiencesOpen ? (
-        <div
-          id="experiences-dropdown"
-          className="hidden border-t border-[#d2c4a3]/40 bg-[#fdfbf7]/98 shadow-[0_24px_48px_-24px_rgba(58,45,20,0.22)] backdrop-blur-md md:block"
-        >
-          <div className="lux-container py-7">
-            <div className="grid grid-cols-12 gap-8">
-              <div className="col-span-5 space-y-3">
-                <p className="text-xs font-semibold text-stone-600">Experiences</p>
-                <ul className="space-y-2.5">
-                  {experienceLinks.map((item) => (
-                    <li key={item.href}>
-                      <Link
-                        href={item.href}
-                        onClick={() => setIsExperiencesOpen(false)}
-                        className="group block rounded-xl px-3 py-2 -mx-3 transition hover:bg-[#f2e8da]/60"
-                      >
-                        <span className="block text-base font-semibold text-stone-900 transition group-hover:text-[#8f7845]">
-                          {item.title}
-                        </span>
-                        <span className="block text-xs text-stone-600">
-                          {item.subtitle}
-                        </span>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="col-span-4 space-y-3">
-                <p className="text-xs font-semibold text-stone-600">
-                  Seasonal &amp; Group Guides
-                </p>
-                <ul className="space-y-2">
-                  {experienceGuides.map((guide) => (
-                    <li key={guide.href}>
-                      <Link
-                        href={guide.href}
-                        onClick={() => setIsExperiencesOpen(false)}
-                        className="inline-flex items-center gap-1.5 py-1 text-sm font-medium text-stone-800 transition hover:text-[#8f7845]"
-                      >
-                        {guide.name} <span aria-hidden="true">›</span>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      ) : null}
-
       {/* Mobile Slider Menu (Full height side drawer, slides in from left covering 50% of the screen) */}
       <div 
         className={`fixed inset-0 z-50 md:hidden transition-opacity duration-300 ${
@@ -297,52 +383,114 @@ export function Header() {
             isMenuOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
-          <div className="flex items-center justify-between border-b border-stone-200/60 pb-4">
-            <span className="text-xs font-bold uppercase tracking-[0.25em] text-stone-900">Menu</span>
+          <div className="flex items-center justify-end">
             <button
               type="button"
               aria-label="Close menu"
               onClick={() => setIsMenuOpen(false)}
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-stone-200 bg-white text-stone-600 shadow-sm transition duration-200 hover:text-stone-900 hover:border-stone-400"
+              className="-mr-2 flex h-10 w-10 cursor-pointer items-center justify-center text-stone-800 transition duration-200 hover:text-stone-950 active:scale-95"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="1.5"
-                className="h-4 w-4"
+                strokeWidth="1.75"
+                className="h-5 w-5"
               >
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 6l12 12M6 18L18 6" />
               </svg>
             </button>
           </div>
           
-          <div className="mt-8 space-y-3 overflow-y-auto pb-8">
-            {mobileNavLinks.map((item) => {
-              const normalizedItemHref = item.href.replace(/\/$/, "") || "/";
-              const isActive = normalizedPath === normalizedItemHref;
+          <div className="mt-2 flex flex-col gap-1 overflow-y-auto pb-8">
+            <Link
+              href="/"
+              className="py-2 text-2xl font-semibold tracking-tight leading-snug"
+            >
+              <span
+                className={`transition-colors duration-200 ${
+                  normalizedPath === "/"
+                    ? "text-[#8f7845]"
+                    : "text-stone-900 hover:text-[#8f7845]"
+                }`}
+              >
+                Home
+              </span>
+            </Link>
+
+            <div>
+              <button
+                type="button"
+                aria-expanded={isMobileExperiencesOpen}
+                onClick={() => setIsMobileExperiencesOpen((prev) => !prev)}
+                className="inline-flex cursor-pointer items-center gap-2 py-2 text-left text-2xl font-semibold tracking-tight leading-snug"
+              >
+                <span
+                  className={`transition-colors duration-200 ${
+                    isExperiencesActive ? "text-[#8f7845]" : "text-stone-900"
+                  }`}
+                >
+                  Experiences
+                </span>
+                <svg
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.75"
+                  aria-hidden="true"
+                  className={`h-4 w-4 text-stone-600 transition-transform duration-200 ${
+                    isMobileExperiencesOpen ? "rotate-180" : ""
+                  }`}
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 6l4 4 4-4" />
+                </svg>
+              </button>
+
+              {isMobileExperiencesOpen ? (
+                <div className="mb-2 mt-1 flex flex-col gap-0.5 border-l-2 border-[#d2c4a3]/70 pl-4">
+                  {[...experienceLinks.map((e) => ({ name: e.title, href: e.href })), ...experienceGuides].map((sub) => {
+                    const normalizedSubHref = sub.href.replace(/\/$/, "") || "/";
+                    const isSubActive = normalizedPath === normalizedSubHref;
+                    return (
+                      <Link
+                        key={`mobile-sub-${sub.href}`}
+                        href={sub.href}
+                        className="py-1.5 text-lg font-medium tracking-tight"
+                      >
+                        <span
+                          className={`transition-colors duration-200 ${
+                            isSubActive
+                              ? "text-[#8f7845]"
+                              : "text-stone-700 hover:text-[#8f7845]"
+                          }`}
+                        >
+                          {sub.name}
+                        </span>
+                      </Link>
+                    );
+                  })}
+                </div>
+              ) : null}
+            </div>
+
+            {navItems.slice(1).map((item) => {
+              const isActive = normalizedPath === item.href;
               return (
                 <Link
                   key={`mobile-${item.name}`}
                   href={item.href}
-                  className={`flex items-center justify-between rounded-xl border px-4 py-3.5 text-xs font-bold uppercase tracking-[0.25em] transition duration-200 shadow-sm ${
-                    isActive
-                      ? "border-[#c2a060]/60 bg-white text-[#8f7845] shadow-md"
-                      : "border-stone-200/80 bg-white text-stone-900 hover:border-[#c2a060]/40 hover:bg-stone-50 hover:text-black hover:shadow-md"
-                  }`}
+                  className="py-2 text-2xl font-semibold tracking-tight leading-snug"
                 >
-                  {item.name}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    className="h-3.5 w-3.5"
+                  <span
+                    className={`transition-colors duration-200 ${
+                      isActive
+                        ? "text-[#8f7845]"
+                        : "text-stone-900 hover:text-[#8f7845]"
+                    }`}
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M13 6l6 6-6 6" />
-                  </svg>
+                    {item.name}
+                  </span>
                 </Link>
               );
             })}

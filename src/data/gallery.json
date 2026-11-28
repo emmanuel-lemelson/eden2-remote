@@ -105,13 +105,13 @@
         "height": 1920
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/58@800w.webp",
+        "src": "/gallery/Eden-Site%20Photos/58@1200w.webp",
         "alt": "A stunning spring-fed pond reflecting a clear blue sky and fluffy white clouds. In the foreground, vibrant pink and purple wildflowers bloom along the grassy bank. In the background, a luxury house with grey roofs sits nestled among dense green summer trees and rolling green lawns. [Season: Summer] [Lighting: Bright, direct summer daylight] [Content: Spring-fed pond, reflection, wildflowers, estate exterior, lawn]",
-        "srcset": "/gallery/Eden-Site%20Photos/58@400w.webp 400w, /gallery/Eden-Site%20Photos/58@800w.webp 800w",
-        "avifSrcset": "/gallery/Eden-Site%20Photos/58@400w.avif 400w, /gallery/Eden-Site%20Photos/58@800w.avif 800w",
+        "srcset": "/gallery/Eden-Site%20Photos/58@400w.webp 400w, /gallery/Eden-Site%20Photos/58@800w.webp 800w, /gallery/Eden-Site%20Photos/58@1200w.webp 1200w, /gallery/Eden-Site%20Photos/58@1600w.webp 1600w",
+        "avifSrcset": "/gallery/Eden-Site%20Photos/58@400w.avif 400w, /gallery/Eden-Site%20Photos/58@800w.avif 800w, /gallery/Eden-Site%20Photos/58@1200w.avif 1200w, /gallery/Eden-Site%20Photos/58@1600w.avif 1600w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 480
+        "width": 1264,
+        "height": 848
       },
       {
         "src": "/gallery/Eden-Site%20Photos/108@1200w.webp",
@@ -123,13 +123,13 @@
         "height": 1920
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/59@800w.webp",
+        "src": "/gallery/Eden-Site%20Photos/59@1200w.webp",
         "alt": "Intimate garden perspective of a low dry stone retaining wall with purple and blue wildflowers and evergreen shrubs in front of the estate's sunroom bay window alcove. A large green lawn is in the foreground. [Season: Summer] [Lighting: Bright daylight] [Content: Stone garden wall, wildflowers, sunroom exterior, green lawn]",
-        "srcset": "/gallery/Eden-Site%20Photos/59@400w.webp 400w, /gallery/Eden-Site%20Photos/59@800w.webp 800w",
-        "avifSrcset": "/gallery/Eden-Site%20Photos/59@400w.avif 400w, /gallery/Eden-Site%20Photos/59@800w.avif 800w",
+        "srcset": "/gallery/Eden-Site%20Photos/59@400w.webp 400w, /gallery/Eden-Site%20Photos/59@800w.webp 800w, /gallery/Eden-Site%20Photos/59@1200w.webp 1200w",
+        "avifSrcset": "/gallery/Eden-Site%20Photos/59@400w.avif 400w, /gallery/Eden-Site%20Photos/59@800w.avif 800w, /gallery/Eden-Site%20Photos/59@1200w.avif 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
+        "width": 896,
+        "height": 1200
       },
       {
         "src": "/gallery/Eden-Site%20Photos/110@1200w.webp",
@@ -150,13 +150,13 @@
         "height": 3413
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/77@800w.webp",
+        "src": "/gallery/Eden-Site%20Photos/77@1200w.webp",
         "alt": "Close-up of another vintage, rustic white iron or stone urn planter overflowing with soft pink roses. A green lawn and another planter are blurred in the background. [Season: Summer] [Lighting: Warm, sunny daylight] [Content: Rose planter, white urn, pink roses, garden details]",
-        "srcset": "/gallery/Eden-Site%20Photos/77@400w.webp 400w, /gallery/Eden-Site%20Photos/77@800w.webp 800w",
-        "avifSrcset": "/gallery/Eden-Site%20Photos/77@400w.avif 400w, /gallery/Eden-Site%20Photos/77@800w.avif 800w",
+        "srcset": "/gallery/Eden-Site%20Photos/77@400w.webp 400w, /gallery/Eden-Site%20Photos/77@800w.webp 800w, /gallery/Eden-Site%20Photos/77@1200w.webp 1200w",
+        "avifSrcset": "/gallery/Eden-Site%20Photos/77@400w.avif 400w, /gallery/Eden-Site%20Photos/77@800w.avif 800w, /gallery/Eden-Site%20Photos/77@1200w.avif 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
+        "width": 896,
+        "height": 1200
       },
       {
         "src": "/gallery/enhanced/78@1200w.webp",
@@ -283,13 +283,13 @@
         "height": 1024
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/9@800w.webp",
+        "src": "/gallery/Eden-Site%20Photos/9@1200w.webp",
         "alt": "Close-up detail shot of an elegant wood-carved stag sculpture with gold-painted antlers, resting on a highly polished round wooden table featuring a geometric starburst inlay. The background shows a soft, warm out-of-focus view of the Great Room's stone fireplace, wood paneling, and glowing wall sconces. [Season: Autumn/Winter] [Lighting: Warm, focused indoor lighting] [Content: Sculpture close-up, wood table detail, fireplace background, decor]",
-        "srcset": "/gallery/Eden-Site%20Photos/9@400w.webp 400w, /gallery/Eden-Site%20Photos/9@800w.webp 800w",
-        "avifSrcset": "/gallery/Eden-Site%20Photos/9@400w.avif 400w, /gallery/Eden-Site%20Photos/9@800w.avif 800w",
+        "srcset": "/gallery/Eden-Site%20Photos/9@400w.webp 400w, /gallery/Eden-Site%20Photos/9@800w.webp 800w, /gallery/Eden-Site%20Photos/9@1200w.webp 1200w",
+        "avifSrcset": "/gallery/Eden-Site%20Photos/9@400w.avif 400w, /gallery/Eden-Site%20Photos/9@800w.avif 800w, /gallery/Eden-Site%20Photos/9@1200w.avif 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
+        "width": 896,
+        "height": 1200
       },
       {
         "src": "/gallery/enhanced/31@1200w.webp",
@@ -301,13 +301,13 @@
         "height": 1600
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/30@800w.webp",
+        "src": "/gallery/Eden-Site%20Photos/30@1200w.webp",
         "alt": "Spacious sunroom featuring custom wicker furniture (a sofa, armchairs, and a round coffee table), stone-tiled floor, a ceiling fan, and a line of tall windows looking out at green lawns and trees. [Season: Summer] [Lighting: Bright, direct daylight] [Content: Sunroom, wicker furniture, stone tile floor, garden view exterior]",
-        "srcset": "/gallery/Eden-Site%20Photos/30@400w.webp 400w, /gallery/Eden-Site%20Photos/30@800w.webp 800w",
-        "avifSrcset": "/gallery/Eden-Site%20Photos/30@400w.avif 400w, /gallery/Eden-Site%20Photos/30@800w.avif 800w",
+        "srcset": "/gallery/Eden-Site%20Photos/30@400w.webp 400w, /gallery/Eden-Site%20Photos/30@800w.webp 800w, /gallery/Eden-Site%20Photos/30@1200w.webp 1200w, /gallery/Eden-Site%20Photos/30@1600w.webp 1600w",
+        "avifSrcset": "/gallery/Eden-Site%20Photos/30@400w.avif 400w, /gallery/Eden-Site%20Photos/30@800w.avif 800w, /gallery/Eden-Site%20Photos/30@1200w.avif 1200w, /gallery/Eden-Site%20Photos/30@1600w.avif 1600w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 480
+        "width": 1264,
+        "height": 848
       },
       {
         "src": "/gallery/Eden-Site%20Photos/107@1200w.webp",
@@ -363,31 +363,31 @@
     ],
     "images": [
       {
-        "src": "/gallery/Eden-Site%20Photos/22@800w.webp",
+        "src": "/gallery/Eden-Site%20Photos/22@1200w.webp",
         "alt": "Wide-angle view of the gourmet main kitchen showcasing high vaulted ceilings, light beige walls, a circular iron chandelier, custom white cabinets, dark granite countertops, and a central island with high-backed bar chairs. Outside the window behind the sink, green trees are visible. [Season: Summer/Spring] [Lighting: Bright, natural daylight] [Content: Gourmet kitchen, central island, cabinetry, high ceilings, kitchen interior]",
-        "srcset": "/gallery/Eden-Site%20Photos/22@400w.webp 400w, /gallery/Eden-Site%20Photos/22@800w.webp 800w",
-        "avifSrcset": "/gallery/Eden-Site%20Photos/22@400w.avif 400w, /gallery/Eden-Site%20Photos/22@800w.avif 800w",
+        "srcset": "/gallery/Eden-Site%20Photos/22@400w.webp 400w, /gallery/Eden-Site%20Photos/22@800w.webp 800w, /gallery/Eden-Site%20Photos/22@1200w.webp 1200w, /gallery/Eden-Site%20Photos/22@1600w.webp 1600w",
+        "avifSrcset": "/gallery/Eden-Site%20Photos/22@400w.avif 400w, /gallery/Eden-Site%20Photos/22@800w.avif 800w, /gallery/Eden-Site%20Photos/22@1200w.avif 1200w, /gallery/Eden-Site%20Photos/22@1600w.avif 1600w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 480
+        "width": 1264,
+        "height": 848
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/24@800w.webp",
+        "src": "/gallery/Eden-Site%20Photos/24@1200w.webp",
         "alt": "Wide-angle perspective of the gourmet main kitchen. Shows custom white-painted cabinets, a large central island with a dark granite countertop and breakfast bar seating, double built-in ovens, a massive range hood, and a crystal chandelier hanging from the high tray ceiling. [Season: Summer/Spring] [Lighting: Bright, polished daytime light] [Content: Gourmet kitchen, white cabinets, island seating, granite countertops, kitchen interior]",
-        "srcset": "/gallery/Eden-Site%20Photos/24@400w.webp 400w, /gallery/Eden-Site%20Photos/24@800w.webp 800w",
-        "avifSrcset": "/gallery/Eden-Site%20Photos/24@400w.avif 400w, /gallery/Eden-Site%20Photos/24@800w.avif 800w",
+        "srcset": "/gallery/Eden-Site%20Photos/24@400w.webp 400w, /gallery/Eden-Site%20Photos/24@800w.webp 800w, /gallery/Eden-Site%20Photos/24@1200w.webp 1200w, /gallery/Eden-Site%20Photos/24@1600w.webp 1600w",
+        "avifSrcset": "/gallery/Eden-Site%20Photos/24@400w.avif 400w, /gallery/Eden-Site%20Photos/24@800w.avif 800w, /gallery/Eden-Site%20Photos/24@1200w.avif 1200w, /gallery/Eden-Site%20Photos/24@1600w.avif 1600w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 480
+        "width": 1264,
+        "height": 848
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/23@800w.webp",
+        "src": "/gallery/Eden-Site%20Photos/23@1200w.webp",
         "alt": "Close-up view of a kitchen double-basin undermount sink with a gooseneck faucet, set in dark granite countertops directly under a large three-pane window that looks out at a lush green backyard lawn and a calm pond. [Season: Summer/Spring] [Lighting: Bright daylight pouring in] [Content: Kitchen sink, granite counter, window view, backyard pond]",
-        "srcset": "/gallery/Eden-Site%20Photos/23@400w.webp 400w, /gallery/Eden-Site%20Photos/23@800w.webp 800w",
-        "avifSrcset": "/gallery/Eden-Site%20Photos/23@400w.avif 400w, /gallery/Eden-Site%20Photos/23@800w.avif 800w",
+        "srcset": "/gallery/Eden-Site%20Photos/23@400w.webp 400w, /gallery/Eden-Site%20Photos/23@800w.webp 800w, /gallery/Eden-Site%20Photos/23@1200w.webp 1200w",
+        "avifSrcset": "/gallery/Eden-Site%20Photos/23@400w.avif 400w, /gallery/Eden-Site%20Photos/23@800w.avif 800w, /gallery/Eden-Site%20Photos/23@1200w.avif 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 1080
+        "width": 848,
+        "height": 1264
       },
       {
         "src": "/gallery/enhanced/25@1200w.webp",
@@ -545,13 +545,13 @@
         "height": 800
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/35@800w.webp",
+        "src": "/gallery/Eden-Site%20Photos/35@1200w.webp",
         "alt": "Close-up detail of a guest bed showing premium light-patterned pillows and a small box of 'MOUNT MANSFIELD CHOCOLATES' wrapped in a bow sitting on the duvet. [Season: Winter/Autumn] [Lighting: Warm, soft-focus macro lighting] [Content: Bed detail, pillows, welcome gift chocolates]",
-        "srcset": "/gallery/Eden-Site%20Photos/35@400w.webp 400w, /gallery/Eden-Site%20Photos/35@800w.webp 800w",
-        "avifSrcset": "/gallery/Eden-Site%20Photos/35@400w.avif 400w, /gallery/Eden-Site%20Photos/35@800w.avif 800w",
+        "srcset": "/gallery/Eden-Site%20Photos/35@400w.webp 400w, /gallery/Eden-Site%20Photos/35@800w.webp 800w, /gallery/Eden-Site%20Photos/35@1200w.webp 1200w",
+        "avifSrcset": "/gallery/Eden-Site%20Photos/35@400w.avif 400w, /gallery/Eden-Site%20Photos/35@800w.avif 800w, /gallery/Eden-Site%20Photos/35@1200w.avif 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
+        "width": 896,
+        "height": 1200
       }
     ]
   },
@@ -621,13 +621,13 @@
         "height": 1024
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/48@800w.webp",
+        "src": "/gallery/Eden-Site%20Photos/48@1200w.webp",
         "alt": "Full bathroom ensuite featuring a white soaking tub set in a grey marble deck under two double-hung windows with white frames looking out onto green summer trees. The walls are painted a soft green, and two framed prints hang on the wall. [Season: Summer] [Lighting: Soft, bright daylight] [Content: Soaking tub, green bathroom, double windows, garden view]",
-        "srcset": "/gallery/Eden-Site%20Photos/48@400w.webp 400w, /gallery/Eden-Site%20Photos/48@800w.webp 800w",
-        "avifSrcset": "/gallery/Eden-Site%20Photos/48@400w.avif 400w, /gallery/Eden-Site%20Photos/48@800w.avif 800w",
+        "srcset": "/gallery/Eden-Site%20Photos/48@400w.webp 400w, /gallery/Eden-Site%20Photos/48@800w.webp 800w, /gallery/Eden-Site%20Photos/48@1200w.webp 1200w, /gallery/Eden-Site%20Photos/48@1600w.webp 1600w",
+        "avifSrcset": "/gallery/Eden-Site%20Photos/48@400w.avif 400w, /gallery/Eden-Site%20Photos/48@800w.avif 800w, /gallery/Eden-Site%20Photos/48@1200w.avif 1200w, /gallery/Eden-Site%20Photos/48@1600w.avif 1600w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 480
+        "width": 1264,
+        "height": 848
       },
       {
         "src": "/gallery/Eden-Site%20Photos/50@1200w.webp",
@@ -648,13 +648,13 @@
         "height": 1024
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/47@800w.webp",
+        "src": "/gallery/Eden-Site%20Photos/47@1200w.webp",
         "alt": "Pristine guest bathroom with a long white double-sink vanity, white custom cabinets on both sides, a marble countertop, large mirrors, a vaulted ceiling, and pale green walls. [Season: Indoor] [Lighting: Bright, clean vanity lighting] [Content: Guest bathroom, double vanity, white cabinets, vaulted ceiling]",
-        "srcset": "/gallery/Eden-Site%20Photos/47@400w.webp 400w, /gallery/Eden-Site%20Photos/47@800w.webp 800w",
-        "avifSrcset": "/gallery/Eden-Site%20Photos/47@400w.avif 400w, /gallery/Eden-Site%20Photos/47@800w.avif 800w",
+        "srcset": "/gallery/Eden-Site%20Photos/47@400w.webp 400w, /gallery/Eden-Site%20Photos/47@800w.webp 800w, /gallery/Eden-Site%20Photos/47@1200w.webp 1200w, /gallery/Eden-Site%20Photos/47@1600w.webp 1600w",
+        "avifSrcset": "/gallery/Eden-Site%20Photos/47@400w.avif 400w, /gallery/Eden-Site%20Photos/47@800w.avif 800w, /gallery/Eden-Site%20Photos/47@1200w.avif 1200w, /gallery/Eden-Site%20Photos/47@1600w.avif 1600w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 480
+        "width": 1264,
+        "height": 848
       },
       {
         "src": "/gallery/Eden-Site%20Photos/49@1200w.webp",
@@ -740,13 +740,13 @@
         "height": 800
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/71@800w.webp",
+        "src": "/gallery/Eden-Site%20Photos/71@1200w.webp",
         "alt": "A spacious recreation and fitness room. Features a wooden foosball table in the foreground, polished hardwood floors, a wooden dresser with a decorative model sailboat on top, and fitness equipment (treadmills/elliptical) visible in the background near a window. [Season: Indoor] [Lighting: Bright, recessed ceiling lights] [Content: Recreation room, foosball table, fitness gear, wood floors]",
-        "srcset": "/gallery/Eden-Site%20Photos/71@400w.webp 400w, /gallery/Eden-Site%20Photos/71@800w.webp 800w",
-        "avifSrcset": "/gallery/Eden-Site%20Photos/71@400w.avif 400w, /gallery/Eden-Site%20Photos/71@800w.avif 800w",
+        "srcset": "/gallery/Eden-Site%20Photos/71@400w.webp 400w, /gallery/Eden-Site%20Photos/71@800w.webp 800w, /gallery/Eden-Site%20Photos/71@1200w.webp 1200w, /gallery/Eden-Site%20Photos/71@1600w.webp 1600w",
+        "avifSrcset": "/gallery/Eden-Site%20Photos/71@400w.avif 400w, /gallery/Eden-Site%20Photos/71@800w.avif 800w, /gallery/Eden-Site%20Photos/71@1200w.avif 1200w, /gallery/Eden-Site%20Photos/71@1600w.avif 1600w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 480
+        "width": 1264,
+        "height": 848
       },
       {
         "src": "/gallery/enhanced/96@1200w.webp",
@@ -767,13 +767,13 @@
         "height": 2400
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/91@800w.webp",
+        "src": "/gallery/Eden-Site%20Photos/91@1200w.webp",
         "alt": "Close-up detail from behind a person soaking in an outdoor hot tub/spa, looking out over the water. Steam rises from the bubbling water under a warm golden winter sun. [Season: Winter] [Lighting: Warm, glowing back-lit winter sunlight] [Content: Soaking in hot tub, rising steam, winter sun, relaxation]",
-        "srcset": "/gallery/Eden-Site%20Photos/91@400w.webp 400w, /gallery/Eden-Site%20Photos/91@800w.webp 800w",
-        "avifSrcset": "/gallery/Eden-Site%20Photos/91@400w.avif 400w, /gallery/Eden-Site%20Photos/91@800w.avif 800w",
+        "srcset": "/gallery/Eden-Site%20Photos/91@400w.webp 400w, /gallery/Eden-Site%20Photos/91@800w.webp 800w, /gallery/Eden-Site%20Photos/91@1200w.webp 1200w, /gallery/Eden-Site%20Photos/91@1600w.webp 1600w",
+        "avifSrcset": "/gallery/Eden-Site%20Photos/91@400w.avif 400w, /gallery/Eden-Site%20Photos/91@800w.avif 800w, /gallery/Eden-Site%20Photos/91@1200w.avif 1200w, /gallery/Eden-Site%20Photos/91@1600w.avif 1600w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 480
+        "width": 1264,
+        "height": 848
       },
       {
         "src": "/gallery/enhanced/92@1200w.webp",
@@ -794,13 +794,13 @@
         "height": 1024
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/95@800w.webp",
+        "src": "/gallery/Eden-Site%20Photos/95@1200w.webp",
         "alt": "A beautiful winter horse-drawn sleigh ride scene. A single horse pulls a traditional red sleigh with two guests and a driver dressed in winter clothes, moving across a wide snow-covered field under a clear blue sky. In the background are snow-covered hills. [Season: Winter] [Lighting: Bright, direct winter daylight] [Content: Horse-drawn sleigh, red sleigh, snow field, winter activity]",
-        "srcset": "/gallery/Eden-Site%20Photos/95@400w.webp 400w, /gallery/Eden-Site%20Photos/95@800w.webp 800w",
-        "avifSrcset": "/gallery/Eden-Site%20Photos/95@400w.avif 400w, /gallery/Eden-Site%20Photos/95@800w.avif 800w",
+        "srcset": "/gallery/Eden-Site%20Photos/95@400w.webp 400w, /gallery/Eden-Site%20Photos/95@800w.webp 800w, /gallery/Eden-Site%20Photos/95@1200w.webp 1200w, /gallery/Eden-Site%20Photos/95@1600w.webp 1600w",
+        "avifSrcset": "/gallery/Eden-Site%20Photos/95@400w.avif 400w, /gallery/Eden-Site%20Photos/95@800w.avif 800w, /gallery/Eden-Site%20Photos/95@1200w.avif 1200w, /gallery/Eden-Site%20Photos/95@1600w.avif 1600w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 480
+        "width": 1264,
+        "height": 848
       },
       {
         "src": "/gallery/Eden-Site%20Photos/94@1200w.webp",
@@ -839,40 +839,40 @@
         "height": 1024
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/83@800w.webp",
+        "src": "/gallery/Eden-Site%20Photos/83@1200w.webp",
         "alt": "A bride and groom embracing and looking at each other in a snowy outdoor courtyard, with the estate house's stone facade visible in the background. The ground is blanketed in thick snow. [Season: Winter] [Lighting: Soft, diffused winter daylight] [Content: Wedding couple, snow courtyard, winter wedding, outdoor portrait]",
-        "srcset": "/gallery/Eden-Site%20Photos/83@400w.webp 400w, /gallery/Eden-Site%20Photos/83@800w.webp 800w",
-        "avifSrcset": "/gallery/Eden-Site%20Photos/83@400w.avif 400w, /gallery/Eden-Site%20Photos/83@800w.avif 800w",
+        "srcset": "/gallery/Eden-Site%20Photos/83@400w.webp 400w, /gallery/Eden-Site%20Photos/83@800w.webp 800w, /gallery/Eden-Site%20Photos/83@1200w.webp 1200w",
+        "avifSrcset": "/gallery/Eden-Site%20Photos/83@400w.avif 400w, /gallery/Eden-Site%20Photos/83@800w.avif 800w, /gallery/Eden-Site%20Photos/83@1200w.avif 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 1080
+        "width": 896,
+        "height": 1200
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/82@800w.webp",
+        "src": "/gallery/Eden-Site%20Photos/82@1200w.webp",
         "alt": "Bride in a white wedding gown and white fur wrap standing in a snowy landscape. The background is softly blurred snow. [Season: Winter] [Lighting: Soft, diffused winter daylight] [Content: Winter bride, wedding dress, fur wrap, outdoor winter portrait]",
-        "srcset": "/gallery/Eden-Site%20Photos/82@400w.webp 400w, /gallery/Eden-Site%20Photos/82@800w.webp 800w",
-        "avifSrcset": "/gallery/Eden-Site%20Photos/82@400w.avif 400w, /gallery/Eden-Site%20Photos/82@800w.avif 800w",
+        "srcset": "/gallery/Eden-Site%20Photos/82@400w.webp 400w, /gallery/Eden-Site%20Photos/82@800w.webp 800w, /gallery/Eden-Site%20Photos/82@1200w.webp 1200w",
+        "avifSrcset": "/gallery/Eden-Site%20Photos/82@400w.avif 400w, /gallery/Eden-Site%20Photos/82@800w.avif 800w, /gallery/Eden-Site%20Photos/82@1200w.avif 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
+        "width": 896,
+        "height": 1200
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/14@800w.webp",
+        "src": "/gallery/Eden-Site%20Photos/14@1200w.webp",
         "alt": "Indoor portrait-style shot of a bride in a white lace wedding gown holding a floral bouquet, standing on a staircase next to a groom in a dark tuxedo. A large window and white wooden railings are visible in the background, creating a romantic and elegant setting. [Season: Summer/Spring] [Lighting: Soft, diffused natural daylight] [Content: Wedding couple, staircase, formal attire, indoor portrait]",
-        "srcset": "/gallery/Eden-Site%20Photos/14@400w.webp 400w, /gallery/Eden-Site%20Photos/14@800w.webp 800w",
-        "avifSrcset": "/gallery/Eden-Site%20Photos/14@400w.avif 400w, /gallery/Eden-Site%20Photos/14@800w.avif 800w",
+        "srcset": "/gallery/Eden-Site%20Photos/14@400w.webp 400w, /gallery/Eden-Site%20Photos/14@800w.webp 800w, /gallery/Eden-Site%20Photos/14@1200w.webp 1200w",
+        "avifSrcset": "/gallery/Eden-Site%20Photos/14@400w.avif 400w, /gallery/Eden-Site%20Photos/14@800w.avif 800w, /gallery/Eden-Site%20Photos/14@1200w.avif 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 1080
+        "width": 896,
+        "height": 1200
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/21@800w.webp",
+        "src": "/gallery/Eden-Site%20Photos/21@1200w.webp",
         "alt": "Indoor shot of a bride in a white wedding dress and a white fur shoulder wrap, standing next to a wooden console table. The background features light beige walls with elegant trim. [Season: Indoor] [Lighting: Soft, warm indoor lighting] [Content: Bride portrait, formal dress, hallway interior]",
-        "srcset": "/gallery/Eden-Site%20Photos/21@400w.webp 400w, /gallery/Eden-Site%20Photos/21@800w.webp 800w",
-        "avifSrcset": "/gallery/Eden-Site%20Photos/21@400w.avif 400w, /gallery/Eden-Site%20Photos/21@800w.avif 800w",
+        "srcset": "/gallery/Eden-Site%20Photos/21@400w.webp 400w, /gallery/Eden-Site%20Photos/21@800w.webp 800w, /gallery/Eden-Site%20Photos/21@1200w.webp 1200w",
+        "avifSrcset": "/gallery/Eden-Site%20Photos/21@400w.avif 400w, /gallery/Eden-Site%20Photos/21@800w.avif 800w, /gallery/Eden-Site%20Photos/21@1200w.avif 1200w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 960
+        "width": 896,
+        "height": 1200
       },
       {
         "src": "/gallery/enhanced/84@1200w.webp",
@@ -884,13 +884,13 @@
         "height": 1024
       },
       {
-        "src": "/gallery/Eden-Site%20Photos/63@800w.webp",
+        "src": "/gallery/Eden-Site%20Photos/63@1200w.webp",
         "alt": "Serene night-time winter landscape showing snow-laden pine trees under a magnificent starry night sky filled with millions of glittering stars. [Season: Winter] [Lighting: Starry night, dark blue tones] [Content: Starry night sky, snow forest, winter night, pine trees]",
-        "srcset": "/gallery/Eden-Site%20Photos/63@400w.webp 400w, /gallery/Eden-Site%20Photos/63@800w.webp 800w",
-        "avifSrcset": "/gallery/Eden-Site%20Photos/63@400w.avif 400w, /gallery/Eden-Site%20Photos/63@800w.avif 800w",
+        "srcset": "/gallery/Eden-Site%20Photos/63@400w.webp 400w, /gallery/Eden-Site%20Photos/63@800w.webp 800w, /gallery/Eden-Site%20Photos/63@1200w.webp 1200w, /gallery/Eden-Site%20Photos/63@1600w.webp 1600w",
+        "avifSrcset": "/gallery/Eden-Site%20Photos/63@400w.avif 400w, /gallery/Eden-Site%20Photos/63@800w.avif 800w, /gallery/Eden-Site%20Photos/63@1200w.avif 1200w, /gallery/Eden-Site%20Photos/63@1600w.avif 1600w",
         "sizes": "(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw",
-        "width": 720,
-        "height": 479
+        "width": 1264,
+        "height": 848
       },
       {
         "src": "/gallery/Eden-Site%20Photos/81@1200w.webp",

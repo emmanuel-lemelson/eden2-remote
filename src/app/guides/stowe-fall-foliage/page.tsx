@@ -89,55 +89,59 @@ export default function StoweFallFoliagePage() {
         ]}
       />
 
-      {/* Hero: Widescreen autumn entrance framed by golden-orange trees */}
-      <section className="bg-white">
-        <div className="relative h-[42svh] min-h-[260px] max-h-[500px] w-full overflow-hidden md:h-[48svh]">
-          <ResponsivePhoto
-            basePath="/gallery/Eden-Site%20Photos/1"
-            alt="Front entrance of Eden: The Lemelson Estate framed by vibrant golden autumn trees in Stowe, Vermont"
-            sizes="100vw"
-            width={2560}
-            height={1704}
-            priority={true}
-            className="h-full w-full object-cover object-center"
-          />
+      {/* Hero: Centered editorial headline, subtitle, CTA, and wide centered autumn hero */}
+      <section className="bg-white pb-8 pt-5 md:pb-16 md:pt-12">
+        <div className="lux-container">
+          <div className="mx-auto max-w-3xl text-center">
+            <ScalingHeroTitle className="text-[clamp(2rem,6.5vw,5.25rem)] font-semibold leading-[1.02] tracking-[-0.03em] text-[#1f1b17] md:leading-[0.96]">
+              Autumn at Eden
+            </ScalingHeroTitle>
+
+            <p className="mx-auto mt-3 max-w-[54ch] text-balance text-[15px] leading-[1.5] text-[#44403c] md:mt-4 md:text-[20px]">
+              Surrounded by autumn woods across 28 private acres, Eden gives families and friends room for up to 20 guests minutes from Smugglers&apos; Notch, Bingham Falls, and Wiessner Woods.
+            </p>
+
+            <div className="mt-5 flex flex-wrap items-center justify-center gap-x-4 gap-y-2.5 md:mt-6 md:gap-5">
+              <Link
+                href="/contact/"
+                className="inline-flex min-h-10 shrink-0 items-center whitespace-nowrap rounded-full bg-[#111111] px-5 py-2.5 text-[14px] font-medium !text-white transition duration-200 hover:bg-stone-800 active:scale-[0.98] md:min-h-11 md:px-7 md:py-3 md:text-[15px]"
+              >
+                Check October dates
+              </Link>
+              <Link
+                href="/stays/"
+                className="whitespace-nowrap text-[14px] font-medium text-[#1f1b17] underline underline-offset-4 transition hover:text-[#6f5a2e] md:text-[15px]"
+              >
+                Explore all amenities →
+              </Link>
+            </div>
+          </div>
         </div>
 
-        <div className="lux-container py-7 md:py-9">
-          <ScalingHeroTitle className="text-[clamp(2.5rem,7.8vw,6.25rem)] font-semibold leading-[0.94] tracking-[-0.03em] text-[#1f1b17]">
-            Autumn at Eden
-          </ScalingHeroTitle>
-
-          <p className="mt-5 max-w-[54ch] text-[16px] leading-[1.6] text-[#1f1b17] md:text-[18px]">
-            Surrounded by autumn woods across 28 private acres, Eden gives families and friends room for up to 20 guests minutes from Smugglers&apos; Notch, Bingham Falls, and Wiessner Woods.
-          </p>
-
-          <div className="mt-6 flex flex-wrap items-center gap-5">
-            <Link
-              href="/contact/"
-              className="inline-flex w-fit shrink-0 items-center whitespace-nowrap rounded-full bg-[#111111] px-7 py-3.5 text-[15px] font-medium !text-white transition duration-200 hover:bg-stone-800 active:scale-[0.98]"
-            >
-              Check October dates
-            </Link>
-            <Link
-              href="/stays/"
-              className="whitespace-nowrap text-[15px] font-medium text-[#1f1b17] underline underline-offset-4 transition hover:text-[#6f5a2e]"
-            >
-              Explore all amenities →
-            </Link>
+        <div className="lux-container mt-5 md:mt-8">
+          <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl md:aspect-auto md:h-[46svh] md:min-h-[300px] md:max-h-[500px] md:rounded-3xl">
+            <ResponsivePhoto
+              basePath="/gallery/enhanced/86"
+              alt="Eden Estate surrounded by peak orange and crimson October foliage in Stowe"
+              sizes="(min-width: 1280px) 1152px, 100vw"
+              width={1024}
+              height={1024}
+              priority={true}
+              className="h-full w-full object-cover object-[50%_62%]"
+            />
           </div>
         </div>
       </section>
 
       {/* Autumn stops + crisp autumn & fireside asymmetric 3-photo spread (no summer pool repetition) */}
-      <section className="bg-[#f8f3ea] py-16 md:py-24 lg:py-28">
-        <div className="lux-container space-y-12">
+      <section className="bg-[#f8f3ea] py-12 md:py-24 lg:py-28">
+        <div className="lux-container space-y-8 md:space-y-12">
           <div className="grid gap-8 lg:grid-cols-12 lg:items-center lg:gap-12">
             <RevealBlock className="space-y-4 lg:col-span-5">
-              <h2 className="text-3xl font-semibold leading-[1.12] text-[#1f1b17] md:text-4xl">
+              <h2 className="text-2xl font-semibold leading-[1.12] text-[#1f1b17] md:text-4xl">
                 Stowe&apos;s best autumn scenery
               </h2>
-              <p className="max-w-[46ch] text-[16px] leading-[1.6] text-[#44403c] md:text-[17px]">
+              <p className="max-w-[46ch] text-[15px] leading-[1.6] text-[#44403c] md:text-[17px]">
                 Start crisp October mornings beside the three-seasons sunroom fireplace, walk wooded trails steps from the driveway, and unwind in the outdoor hot tub and cedar sauna.
               </p>
             </RevealBlock>
@@ -147,7 +151,7 @@ export default function StoweFallFoliagePage() {
                 {stops.map((s) => (
                   <div
                     key={s.name}
-                    className="flex items-center justify-between gap-3 rounded-xl bg-white px-4 py-3 text-[15px]"
+                    className="flex items-center justify-between gap-3 rounded-xl bg-white px-3.5 py-2.5 text-[14px] sm:px-4 sm:py-3 sm:text-[15px]"
                   >
                     <dt className="font-medium text-[#1f1b17]">{s.name}</dt>
                     <dd className="whitespace-nowrap font-medium text-[#6f5a2e]">{s.time}</dd>
@@ -161,11 +165,11 @@ export default function StoweFallFoliagePage() {
             <div className="grid gap-4 md:grid-cols-12 md:items-stretch">
               <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl md:col-span-7 md:aspect-auto">
                 <ResponsivePhoto
-                  basePath="/gallery/enhanced/86"
-                  alt="Eden Estate surrounded by peak orange and crimson October foliage in Stowe"
+                  basePath="/gallery/Eden-Site%20Photos/1"
+                  alt="Front entrance of Eden: The Lemelson Estate framed by vibrant golden autumn trees in Stowe, Vermont"
                   sizes="(min-width: 768px) 58vw, 100vw"
-                  width={1024}
-                  height={1024}
+                  width={2560}
+                  height={1704}
                   className="h-full w-full object-cover md:absolute md:inset-0"
                 />
               </div>

@@ -1,0 +1,2101 @@
+{
+ "url": "http://localhost:3099/weddings/",
+ "at": "2026-11-24T09:58:38.893Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.51,
+    0.98,
+    0.53,
+    0.34,
+    0.4,
+    0.4
+   ],
+   "motion": {
+    "elements": 1,
+    "css": 1,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 4546,
+     "screens": 5.1,
+     "words": 533,
+     "img": 13,
+     "video": 0,
+     "canvas": 0,
+     "svg": 10,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 5,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "2@1200w.avif",
+      "2@1200w.avif",
+      "28@400w.avif",
+      "70@400w.avif",
+      "The%20Lemelson%20Estate%20(1).png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Private Mountain Estate Weddings in Stowe, Vermont",
+     "words": 7,
+     "chars": 50,
+     "lines": 2,
+     "size": 48,
+     "vw": 3.3,
+     "font": "Playfair Display",
+     "weight": 600,
+     "tracking": 0.02,
+     "leading": 1.25,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.47,
+     "top": 506,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Private Mountain Estate Weddings in Stowe, Vermont",
+     "words": 7,
+     "lines": 2,
+     "size": 48,
+     "font": "Playfair Display"
+    },
+    "headings": [
+     {
+      "text": "Private Mountain Estate Weddings in Stowe, Vermont",
+      "words": 7,
+      "chars": 50,
+      "lines": 2,
+      "size": 48,
+      "vw": 3.3,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 506,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Your own private world, reserved exclusively for the weekend.",
+      "words": 9,
+      "chars": 61,
+      "lines": 3,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.38,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.3,
+      "top": 764,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Spaces Across the Estate",
+      "words": 4,
+      "chars": 24,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.47,
+      "top": 1064,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The Upper Meadow",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.29,
+      "top": 1383,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Beyond the Ceremony: A Three-Day Journey",
+      "words": 6,
+      "chars": 40,
+      "lines": 2,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.47,
+      "top": 1948,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "No preset menus. No food & beverage minimums.",
+      "words": 8,
+      "chars": 45,
+      "lines": 2,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.34,
+      "top": 2552,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Stowe Estate Wedding FAQs",
+      "words": 4,
+      "chars": 25,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.74,
+      "top": 3409,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Request Our Private Wedding Brochure",
+      "words": 5,
+      "chars": 36,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.74,
+      "top": 4059,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 8,
+     "maxLines": 3,
+     "over2Lines": 1,
+     "statements": 0,
+     "centered": 4,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Manrope",
+       "share": 0.91,
+       "mono": false
+      },
+      {
+       "family": "Playfair Display",
+       "share": 0.09,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      10,
+      11,
+      12,
+      14,
+      15,
+      16,
+      18,
+      20,
+      24,
+      30,
+      36,
+      48
+     ],
+     "sizeCount": 12,
+     "notLoaded": [],
+     "body": {
+      "font": "Manrope",
+      "size": 16,
+      "leading": 1.63,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.6
+     },
+     "measureChars": 134,
+     "max": {
+      "size": 48,
+      "vw": 3.3,
+      "font": "Playfair Display",
+      "text": "Private Mountain Estate Weddings in Stow"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 7,
+     "microLabelShare": 0.034,
+     "microSamples": [
+      "Edson Hill Road Area · Stowe, Vermont · ",
+      "Up to 300 Guests · Outdoors",
+      "Friday",
+      "Saturday",
+      "Sunday",
+      "Bespoke Culinary Program"
+     ],
+     "upperShare": 0.09,
+     "centerShare": 0.17,
+     "smallText": 16
+    },
+    "eyebrows": [
+     {
+      "text": "Up to 300 Guests · Outdoors",
+      "above": "The Upper Meadow",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 10.9,
+      "top": 1350
+     },
+     {
+      "text": "Bespoke Culinary Program",
+      "above": "No preset menus. No food & beverage mini",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 2520
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 81,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#57534d",
+       "share": 0.7
+      },
+      {
+       "color": "#1c1917",
+       "share": 0.17
+      },
+      {
+       "color": "#79716b",
+       "share": 0.07
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.04
+      },
+      {
+       "color": "#8f7845",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#111111",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 0.07
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": [
+      {
+       "text": "Friday",
+       "ratio": 4.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#8f7845",
+       "bg": "#fdfbf7"
+      },
+      {
+       "text": "Saturday",
+       "ratio": 4.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#8f7845",
+       "bg": "#fdfbf7"
+      },
+      {
+       "text": "Sunday",
+       "ratio": 4.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#8f7845",
+       "bg": "#fdfbf7"
+      },
+      {
+       "text": "Bespoke Culinary Program",
+       "ratio": 4.3,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#8f7845",
+       "bg": "#ffffff"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 7,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 1,
+     "heroLabels": [
+      "Inquire About Private Buyouts",
+      "Real Weddings at Eden"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 4,
+     "shadowOverlay": 0,
+     "shadowSamples": [
+      "div.relative.overflow-hidden → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "div.overflow-hidden.rounded-3xl → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "div.overflow-hidden.rounded-3xl → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "div.overflow-hidden.rounded-3xl → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0"
+     ],
+     "gradients": 3,
+     "scrims": 0,
+     "gradientSamples": [
+      "header.sticky.top-0 → linear-gradient(in oklab, rgb(253, 251, 247) 0px, rgb(248, 243, 234) 50%, rgb(242, 232, 218) 100%)",
+      "div.pointer-events-none.absolute → linear-gradient(to top, oklab(0 0 0 / 0.65) 0px, oklab(0 0 0 / 0.2) 50%, rgba(0, 0, 0, 0) 100%)",
+      "section.lux-section.bg-gradient-to-br → linear-gradient(to right bottom in oklab, rgb(244, 240, 234) 0px, rgb(253, 251, 247) 50%, rgb(242, 232, 218) 1"
+     ],
+     "gradientText": 0,
+     "hairlines": 8,
+     "hairlineSamples": [
+      "header.sticky.top-0 1440px",
+      "div.flex.flex-wrap 1072px",
+      "div.divide-y.divide-stone-200/80 1072px",
+      "details.group.py-5 1072px",
+      "details.group.py-5 1072px"
+     ],
+     "outlinedBoxes": 9,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 9,
+     "boxRadius": 24,
+     "squareMedia": 0,
+     "roundedMedia": 4,
+     "mediaRadius": 24,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 2128
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.47
+     }
+    ],
+    "nav": {
+     "links": 8,
+     "fixed": true,
+     "height": 81,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "playfair display",
+     "manrope"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 4546,
+    "margins": {
+     "left": 184,
+     "right": 184
+    },
+    "sections": [
+     {
+      "sel": "main.flex-1.space-y-0",
+      "tag": "main",
+      "top": 81,
+      "height": 4272,
+      "words": 734,
+      "media": 8,
+      "middle": 0,
+      "heading": {
+       "text": "Private Mountain Estate Weddings in Stowe, Vermont",
+       "size": 48,
+       "tag": "h1"
+      },
+      "left": 184,
+      "right": 185,
+      "textLeft": 184,
+      "textRight": 197,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.border-t.border-white/30",
+      "tag": "footer",
+      "top": 4353,
+      "height": 193,
+      "words": 30,
+      "media": 1,
+      "middle": 126,
+      "heading": null,
+      "left": 184,
+      "right": 184,
+      "textLeft": 420,
+      "textRight": 184,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Private Mountain Estate Weddings in Stowe, Vermont",
+      "size": 48,
+      "top": 506,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 184,
+      "n": 8
+     },
+     {
+      "x": 213,
+      "n": 4
+     },
+     {
+      "x": 761,
+      "n": 4
+     },
+     {
+      "x": 578,
+      "n": 2
+     },
+     {
+      "x": 944,
+      "n": 2
+     },
+     {
+      "x": 241,
+      "n": 1
+     },
+     {
+      "x": 644,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 22,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.11,
+    "voidBox": {
+     "x": 0,
+     "y": 120,
+     "w": 180,
+     "h": 780
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.44,
+    0.96,
+    0.68,
+    0.59,
+    0.47,
+    0.6
+   ],
+   "motion": {
+    "elements": 1,
+    "css": 1,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 5388,
+     "screens": 5.3,
+     "words": 533,
+     "img": 13,
+     "video": 0,
+     "canvas": 0,
+     "svg": 10,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "2@800w.avif",
+      "2@800w.avif",
+      "28@400w.avif",
+      "70@400w.avif"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Private Mountain Estate Weddings in Stowe, Vermont",
+     "words": 7,
+     "chars": 50,
+     "lines": 3,
+     "size": 48,
+     "vw": 6.3,
+     "font": "Playfair Display",
+     "weight": 600,
+     "tracking": 0.02,
+     "leading": 1.25,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.75,
+     "top": 242,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Private Mountain Estate Weddings in Stowe, Vermont",
+     "words": 7,
+     "lines": 3,
+     "size": 48,
+     "font": "Playfair Display"
+    },
+    "headings": [
+     {
+      "text": "Private Mountain Estate Weddings in Stowe, Vermont",
+      "words": 7,
+      "chars": 50,
+      "lines": 3,
+      "size": 48,
+      "vw": 6.3,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 242,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Your own private world, reserved exclusively for the weekend.",
+      "words": 9,
+      "chars": 61,
+      "lines": 2,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.38,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 527,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Spaces Across the Estate",
+      "words": 4,
+      "chars": 24,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 974,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The Upper Meadow",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1265,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Beyond the Ceremony: A Three-Day Journey",
+      "words": 6,
+      "chars": 40,
+      "lines": 2,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 2217,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "No preset menus. No food & beverage minimums.",
+      "words": 8,
+      "chars": 45,
+      "lines": 2,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3364,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Stowe Estate Wedding FAQs",
+      "words": 4,
+      "chars": 25,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 4251,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Request Our Private Wedding Brochure",
+      "words": 5,
+      "chars": 36,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.11,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 4901,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 8,
+     "maxLines": 3,
+     "over2Lines": 1,
+     "statements": 0,
+     "centered": 4,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Manrope",
+       "share": 0.91,
+       "mono": false
+      },
+      {
+       "family": "Playfair Display",
+       "share": 0.09,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      10,
+      11,
+      12,
+      14,
+      15,
+      16,
+      18,
+      20,
+      24,
+      30,
+      36,
+      48
+     ],
+     "sizeCount": 12,
+     "notLoaded": [],
+     "body": {
+      "font": "Manrope",
+      "size": 16,
+      "leading": 1.63,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.6
+     },
+     "measureChars": 86,
+     "max": {
+      "size": 48,
+      "vw": 6.3,
+      "font": "Playfair Display",
+      "text": "Private Mountain Estate Weddings in Stow"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 7,
+     "microLabelShare": 0.034,
+     "microSamples": [
+      "Edson Hill Road Area · Stowe, Vermont · ",
+      "Up to 300 Guests · Outdoors",
+      "Friday",
+      "Saturday",
+      "Sunday",
+      "Bespoke Culinary Program"
+     ],
+     "upperShare": 0.09,
+     "centerShare": 0.17,
+     "smallText": 16
+    },
+    "eyebrows": [
+     {
+      "text": "Up to 300 Guests · Outdoors",
+      "above": "The Upper Meadow",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 10.9,
+      "top": 1231
+     },
+     {
+      "text": "Bespoke Culinary Program",
+      "above": "No preset menus. No food & beverage mini",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 3332
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 81,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#57534d",
+       "share": 0.7
+      },
+      {
+       "color": "#1c1917",
+       "share": 0.17
+      },
+      {
+       "color": "#79716b",
+       "share": 0.07
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.04
+      },
+      {
+       "color": "#8f7845",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#111111",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 0.07
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": [
+      {
+       "text": "Friday",
+       "ratio": 4.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#8f7845",
+       "bg": "#fdfbf7"
+      },
+      {
+       "text": "Saturday",
+       "ratio": 4.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#8f7845",
+       "bg": "#fdfbf7"
+      },
+      {
+       "text": "Sunday",
+       "ratio": 4.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#8f7845",
+       "bg": "#fdfbf7"
+      },
+      {
+       "text": "Bespoke Culinary Program",
+       "ratio": 4.3,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#8f7845",
+       "bg": "#ffffff"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 7,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 52,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 1,
+     "heroLabels": [
+      "Inquire About Private Buyouts",
+      "Real Weddings at Eden"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 4,
+     "shadowOverlay": 0,
+     "shadowSamples": [
+      "div.relative.overflow-hidden → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "div.overflow-hidden.rounded-3xl → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "div.overflow-hidden.rounded-3xl → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "div.overflow-hidden.rounded-3xl → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0"
+     ],
+     "gradients": 3,
+     "scrims": 0,
+     "gradientSamples": [
+      "header.sticky.top-0 → linear-gradient(in oklab, rgb(253, 251, 247) 0px, rgb(248, 243, 234) 50%, rgb(242, 232, 218) 100%)",
+      "div.pointer-events-none.absolute → linear-gradient(to top, oklab(0 0 0 / 0.65) 0px, oklab(0 0 0 / 0.2) 50%, rgba(0, 0, 0, 0) 100%)",
+      "section.lux-section.bg-gradient-to-br → linear-gradient(to right bottom in oklab, rgb(244, 240, 234) 0px, rgb(253, 251, 247) 50%, rgb(242, 232, 218) 1"
+     ],
+     "gradientText": 0,
+     "hairlines": 8,
+     "hairlineSamples": [
+      "header.sticky.top-0 768px",
+      "div.flex.flex-wrap 688px",
+      "div.divide-y.divide-stone-200/80 688px",
+      "details.group.py-5 688px",
+      "details.group.py-5 688px"
+     ],
+     "outlinedBoxes": 9,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 9,
+     "boxRadius": 24,
+     "squareMedia": 0,
+     "roundedMedia": 4,
+     "mediaRadius": 24,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 2397
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.32
+     }
+    ],
+    "nav": {
+     "links": 8,
+     "fixed": true,
+     "height": 81,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "playfair display",
+     "manrope"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 5388,
+    "margins": {
+     "left": 40,
+     "right": 40
+    },
+    "sections": [
+     {
+      "sel": "main.flex-1.space-y-0",
+      "tag": "main",
+      "top": 81,
+      "height": 5114,
+      "words": 734,
+      "media": 8,
+      "middle": 0,
+      "heading": {
+       "text": "Private Mountain Estate Weddings in Stowe, Vermont",
+       "size": 48,
+       "tag": "h1"
+      },
+      "left": 40,
+      "right": 41,
+      "textLeft": 40,
+      "textRight": 41,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.border-t.border-white/30",
+      "tag": "footer",
+      "top": 5195,
+      "height": 193,
+      "words": 30,
+      "media": 0,
+      "middle": 43,
+      "heading": null,
+      "left": 40,
+      "right": 40,
+      "textLeft": 182,
+      "textRight": 40,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Private Mountain Estate Weddings in Stowe, Vermont",
+      "size": 48,
+      "top": 242,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 40,
+      "n": 11
+     },
+     {
+      "x": 69,
+      "n": 4
+     },
+     {
+      "x": 306,
+      "n": 2
+     },
+     {
+      "x": 425,
+      "n": 2
+     },
+     {
+      "x": 544,
+      "n": 2
+     },
+     {
+      "x": 97,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 22,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 8,
+   "filled": [
+    0.46,
+    0.91,
+    0.7,
+    0.71,
+    0.79,
+    0.34,
+    0.65,
+    0.76
+   ],
+   "motion": {
+    "elements": 1,
+    "css": 1,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 6251,
+     "screens": 7.4,
+     "words": 537,
+     "img": 13,
+     "video": 0,
+     "canvas": 0,
+     "svg": 10,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 5,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "2@400w.avif",
+      "2@400w.avif",
+      "28@400w.avif",
+      "70@400w.avif",
+      "The%20Lemelson%20Estate%20(1).png"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Private Mountain Estate Weddings in Stowe, Vermont",
+     "words": 7,
+     "chars": 50,
+     "lines": 3,
+     "size": 30,
+     "vw": 7.7,
+     "font": "Playfair Display",
+     "weight": 600,
+     "tracking": 0.02,
+     "leading": 1.25,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.75,
+     "top": 166,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Private Mountain Estate Weddings in Stowe, Vermont",
+     "words": 7,
+     "lines": 3,
+     "size": 30,
+     "font": "Playfair Display"
+    },
+    "headings": [
+     {
+      "text": "Private Mountain Estate Weddings in Stowe, Vermont",
+      "words": 7,
+      "chars": 50,
+      "lines": 3,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 166,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Your own private world, reserved exclusively for the weekend.",
+      "words": 9,
+      "chars": 61,
+      "lines": 3,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.38,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 352,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Spaces Across the Estate",
+      "words": 4,
+      "chars": 24,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 913,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The Upper Meadow",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 1296,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Beyond the Ceremony: A Three-Day Journey",
+      "words": 6,
+      "chars": 40,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 2063,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Arrivals & Welcome Evening",
+      "words": 4,
+      "chars": 26,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.73,
+      "top": 2336,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Spa Mornings & Celebration",
+      "words": 4,
+      "chars": 26,
+      "lines": 2,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.73,
+      "top": 2609,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Farewell Brunch",
+      "words": 2,
+      "chars": 15,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.73,
+      "top": 2905,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "No preset menus. No food & beverage minimums.",
+      "words": 8,
+      "chars": 45,
+      "lines": 3,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 3424,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Stowe Estate Wedding FAQs",
+      "words": 4,
+      "chars": 25,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 4700,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Request Our Private Wedding Brochure",
+      "words": 5,
+      "chars": 36,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": 0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 5414,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 11,
+     "maxLines": 3,
+     "over2Lines": 3,
+     "statements": 0,
+     "centered": 4,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Manrope",
+       "share": 0.91,
+       "mono": false
+      },
+      {
+       "family": "Playfair Display",
+       "share": 0.09,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      10,
+      11,
+      12,
+      14,
+      15,
+      16,
+      20,
+      24,
+      30
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Manrope",
+      "size": 14,
+      "leading": 1.63,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": null
+     },
+     "measureChars": 49,
+     "max": {
+      "size": 30,
+      "vw": 7.7,
+      "font": "Playfair Display",
+      "text": "Private Mountain Estate Weddings in Stow"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 7,
+     "microLabelShare": 0.034,
+     "microSamples": [
+      "Edson Hill Road Area · Stowe, Vermont · ",
+      "Up to 300 Guests · Outdoors",
+      "Friday",
+      "Saturday",
+      "Sunday",
+      "Bespoke Culinary Program"
+     ],
+     "upperShare": 0.09,
+     "centerShare": 0.19,
+     "smallText": 16
+    },
+    "eyebrows": [
+     {
+      "text": "Up to 300 Guests · Outdoors",
+      "above": "The Upper Meadow",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 10.9,
+      "top": 1262
+     },
+     {
+      "text": "Friday",
+      "above": "Arrivals & Welcome Evening",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 2312
+     },
+     {
+      "text": "Saturday",
+      "above": "Spa Mornings & Celebration",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 2585
+     },
+     {
+      "text": "Sunday",
+      "above": "Farewell Brunch",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 2881
+     },
+     {
+      "text": "Bespoke Culinary Program",
+      "above": "No preset menus. No food & beverage mini",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 3392
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 65,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#57534d",
+       "share": 0.69
+      },
+      {
+       "color": "#1c1917",
+       "share": 0.17
+      },
+      {
+       "color": "#79716b",
+       "share": 0.07
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.04
+      },
+      {
+       "color": "#8f7845",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#1f1b17"
+     },
+     "lowContrast": [
+      {
+       "text": "Friday",
+       "ratio": 4.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#8f7845",
+       "bg": "#fdfbf7"
+      },
+      {
+       "text": "Saturday",
+       "ratio": 4.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#8f7845",
+       "bg": "#fdfbf7"
+      },
+      {
+       "text": "Sunday",
+       "ratio": 4.1,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#8f7845",
+       "bg": "#fdfbf7"
+      },
+      {
+       "text": "Bespoke Culinary Program",
+       "ratio": 4.3,
+       "need": 4.5,
+       "size": 12,
+       "fg": "#8f7845",
+       "bg": "#ffffff"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 15,
+     "inHero": 10,
+     "radius": 12,
+     "height": 46,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 9,
+     "heroLabels": [
+      "HOME",
+      "STAYS",
+      "WEDDINGS",
+      "RETREATS",
+      "GALLERY"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 4,
+     "shadowOverlay": 9,
+     "shadowSamples": [
+      "div.relative.overflow-hidden → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "div.overflow-hidden.rounded-3xl → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "div.overflow-hidden.rounded-3xl → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+      "div.overflow-hidden.rounded-3xl → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0"
+     ],
+     "gradients": 4,
+     "scrims": 0,
+     "gradientSamples": [
+      "header.sticky.top-0 → linear-gradient(in oklab, rgb(253, 251, 247) 0px, rgb(248, 243, 234) 50%, rgb(242, 232, 218) 100%)",
+      "nav.absolute.inset-y-0 → linear-gradient(oklab(0.98851 0.000540048 0.00567573 / 0.98) 0px, oklab(0.965558 0.00173056 0.0129725 / 0.98) ",
+      "div.pointer-events-none.absolute → linear-gradient(to top, oklab(0 0 0 / 0.65) 0px, oklab(0 0 0 / 0.2) 50%, rgba(0, 0, 0, 0) 100%)",
+      "section.lux-section.bg-gradient-to-br → linear-gradient(to right bottom in oklab, rgb(244, 240, 234) 0px, rgb(253, 251, 247) 50%, rgb(242, 232, 218) 1"
+     ],
+     "gradientText": 0,
+     "hairlines": 9,
+     "hairlineSamples": [
+      "header.sticky.top-0 390px",
+      "nav.absolute.inset-y-0 280px",
+      "div.flex.flex-wrap 342px",
+      "div.divide-y.divide-stone-200/80 342px",
+      "details.group.py-5 342px"
+     ],
+     "outlinedBoxes": 9,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 9,
+     "boxRadius": 24,
+     "squareMedia": 0,
+     "roundedMedia": 2,
+     "mediaRadius": 24,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 2283
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.22
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 65,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "playfair display",
+     "manrope"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 6251,
+    "margins": {
+     "left": 24,
+     "right": 25
+    },
+    "sections": [
+     {
+      "sel": "main.flex-1.space-y-0",
+      "tag": "main",
+      "top": 65,
+      "height": 5759,
+      "words": 734,
+      "media": 8,
+      "middle": 0,
+      "heading": {
+       "text": "Private Mountain Estate Weddings in Stowe, Vermont",
+       "size": 30,
+       "tag": "h1"
+      },
+      "left": 24,
+      "right": 25,
+      "textLeft": 24,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.border-t.border-white/30",
+      "tag": "footer",
+      "top": 5824,
+      "height": 427,
+      "words": 30,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 33,
+      "right": 33,
+      "textLeft": 33,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Private Mountain Estate Weddings in Stowe, Vermont",
+      "size": 30,
+      "top": 166,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 24,
+      "n": 11
+     },
+     {
+      "x": 49,
+      "n": 11
+     }
+    ],
+    "leftBlocks": 22,
+    "bodySize": 14,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 1440,
+   "message": "1 headline(s) wrap past two lines at 1440px: \"Your own private world, reserved exclusively for\" → 3 lines (9 words, 30px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 36px or less."
+  },
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 1440,
+   "message": "2 eyebrow/kicker label(s) above headings: \"Up to 300 Guests · Outdoors\" above \"The Upper Meadow\"; \"Bespoke Culinary Program\" above \"No preset menus. No food & beverage mini\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "micro-label",
+   "width": 1440,
+   "message": "7 tiny uppercase letter-spaced labels (e.g. \"Edson Hill Road Area · Stowe, Vermont · \", \"Up to 300 Guests · Outdoors\", \"Friday\", \"Saturday\").",
+   "fix": "Use sentence-case text at a readable size, or delete the label.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "gradient",
+   "width": 1440,
+   "message": "3 gradient fill(s): header.sticky.top-0 → linear-gradient(in oklab, rgb(253, 251, 247) 0px, rgb(248, 243, 234) 50%, rgb(242, 232, 218) 100%) | div.pointer-events-none.absolute → linear-gradient(to top, oklab(0 0 0 / 0.65) 0px, oklab(0 0 0 / 0.2) 50%, rgba(0, 0, 0, 0) 100%) | section.lux-section.bg-gradient-to-br → linear-gradient(to right bottom in oklab, rgb(244, 240, 234) 0px, rgb(253, 251, 247) 50%, rgb(242, 232, 218) 1",
+   "fix": "Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "shadow",
+   "width": 1440,
+   "message": "4 box-shadow(s) on elements at rest: div.relative.overflow-hidden → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0 | div.overflow-hidden.rounded-3xl → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0 | div.overflow-hidden.rounded-3xl → rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0",
+   "fix": "Remove. Separate surfaces with a tone step or space. Shadows are for things that really float (menus, dialogs, sticky bars).",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "8 thin rule(s)/divider line(s): header.sticky.top-0 1440px | div.flex.flex-wrap 1072px | div.divide-y.divide-stone-200/80 1072px | details.group.py-5 1072px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "outlined-box",
+   "width": 1440,
+   "message": "9 boxes drawn with a 1px outline.",
+   "fix": "Define a surface by its fill (one tone step from the page) or leave the content unboxed.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "contrast",
+   "width": 1440,
+   "message": "Low-contrast text: \"Friday\" 4.1:1 needs 4.5:1; \"Saturday\" 4.1:1 needs 4.5:1; \"Sunday\" 4.1:1 needs 4.5:1; \"Bespoke Culinary Program\" 4.3:1 needs 4.5:1",
+   "fix": "Darken or lighten the text colour.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "12 different font sizes (10, 11, 12, 14, 15, 16, 18, 20, 24, 30, 36, 48).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "measure",
+   "width": 1440,
+   "message": "Longest paragraph runs about 134 characters per line.",
+   "fix": "Cap paragraphs at 45–75 characters (max-width: 60ch)."
+  },
+  {
+   "level": "FAIL",
+   "id": "small-text",
+   "width": 1440,
+   "message": "16 text blocks under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Only 1 element(s) moved while the page loaded and scrolled.",
+   "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 768,
+   "message": "1 headline(s) wrap past two lines at 768px: \"Private Mountain Estate Weddings in Stowe, Vermo\" → 3 lines (7 words, 48px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 32px or less."
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 390,
+   "message": "3 headline(s) wrap past two lines at 390px: \"Private Mountain Estate Weddings in Stowe, Vermo\" → 3 lines (7 words, 30px); \"Your own private world, reserved exclusively for\" → 3 lines (9 words, 24px); \"No preset menus. No food & beverage minimums.\" → 3 lines (8 words, 30px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 24px or less."
+  },
+  {
+   "level": "FAIL",
+   "id": "body-size",
+   "width": 390,
+   "message": "Body text is 14px (the size most of the running text is set in).",
+   "fix": "Body copy 16–20px. Map small sizes from blueprints onto your body step."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/Users/emmanuel/Developer/eden2/.taste-skill/before/desktop-fold.jpg",
+   "pages": [
+    "/Users/emmanuel/Developer/eden2/.taste-skill/before/desktop-page-01.jpg",
+    "/Users/emmanuel/Developer/eden2/.taste-skill/before/desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/Users/emmanuel/Developer/eden2/.taste-skill/before/tablet-fold.jpg",
+   "pages": [
+    "/Users/emmanuel/Developer/eden2/.taste-skill/before/tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/Users/emmanuel/Developer/eden2/.taste-skill/before/mobile-fold.jpg",
+   "pages": [
+    "/Users/emmanuel/Developer/eden2/.taste-skill/before/mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

@@ -1,0 +1,2073 @@
+{
+ "url": "http://localhost:3000/weddings-preview/",
+ "at": "2026-11-27T23:33:29.178Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.6,
+    0.97,
+    1,
+    0.82,
+    0.6,
+    1,
+    0.96
+   ],
+   "motion": {
+    "elements": 16,
+    "css": 1,
+    "transitions": 0,
+    "scripted": 15,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 5726,
+     "screens": 6.4,
+     "words": 429,
+     "img": 15,
+     "video": 0,
+     "canvas": 0,
+     "svg": 8,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 14,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "weddings-pond-banner.jpg",
+      "3@1200w.avif",
+      "100@800w.avif",
+      "36@800w.avif",
+      "84@1200w.avif",
+      "1@800w.avif",
+      "2@800w.avif",
+      "31@800w.avif"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Weddings at Eden",
+     "words": 3,
+     "chars": 16,
+     "lines": 1,
+     "size": 84,
+     "vw": 5.8,
+     "font": "Playfair Display",
+     "weight": 600,
+     "tracking": -0.015,
+     "leading": 0.96,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.53,
+     "top": 129,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Weddings at Eden",
+     "words": 3,
+     "lines": 1,
+     "size": 84,
+     "font": "Playfair Display"
+    },
+    "headings": [
+     {
+      "text": "Weddings at Eden",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 84,
+      "vw": 5.8,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 0.96,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.53,
+      "top": 129,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "The #1 luxury venue in Vermont",
+      "words": 6,
+      "chars": 30,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.74,
+      "top": 980,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Meadow Receptions",
+      "words": 2,
+      "chars": 17,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 1357,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Fireside Ceremonies",
+      "words": 2,
+      "chars": 19,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.26,
+      "top": 1357,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Stay & Unwind",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.26,
+      "top": 1753,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "St. Katherine Chapel",
+      "words": 3,
+      "chars": 20,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.39,
+      "top": 1753,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Friday to Sunday, unhurried.",
+      "words": 4,
+      "chars": 28,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.74,
+      "top": 2067,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Private culinary consultation",
+      "words": 3,
+      "chars": 29,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.29,
+      "top": 2930,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Dedicated estate concierge",
+      "words": 3,
+      "chars": 26,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.29,
+      "top": 3084,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Celebrations at Eden",
+      "words": 3,
+      "chars": 20,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.74,
+      "top": 3561,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Common questions",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.53,
+      "top": 4488,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Request the private brochure",
+      "words": 4,
+      "chars": 28,
+      "lines": 2,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.32,
+      "top": 5010,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 12,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 1,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.92,
+       "mono": false
+      },
+      {
+       "family": "Playfair Display",
+       "share": 0.08,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      12,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      24,
+      30,
+      36,
+      84
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 16,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 13.3
+     },
+     "measureChars": 71,
+     "max": {
+      "size": 84,
+      "vw": 5.8,
+      "font": "Playfair Display",
+      "text": "Weddings at Eden"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.05,
+     "smallText": 1
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 81,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#f8f3ea",
+       "top": 868,
+       "hsl": {
+        "h": 39,
+        "s": 0.5,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#161412",
+       "top": 1955,
+       "hsl": {
+        "h": 30,
+        "s": 0.1,
+        "l": 0.08
+       }
+      },
+      {
+       "color": "#fdfbf7",
+       "top": 5383,
+       "hsl": {
+        "h": 40,
+        "s": 0.6,
+        "l": 0.98
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#44403b",
+       "share": 0.31
+      },
+      {
+       "color": "#1f1b17",
+       "share": 0.16
+      },
+      {
+       "color": "#44403c",
+       "share": 0.14
+      },
+      {
+       "color": "#e8dac0",
+       "share": 0.11
+      },
+      {
+       "color": "#f8f3ea",
+       "share": 0.09
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#1f1b17"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 1,
+     "radius": "pill",
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Inquire for dates"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 5,
+     "scrims": 0,
+     "gradientSamples": [
+      "header.sticky.top-0 → linear-gradient(in oklab, rgb(253, 251, 247) 0%, rgb(248, 243, 234) 50%, rgb(242, 232, 218) 100%)",
+      "div.pointer-events-none.absolute → linear-gradient(to top, oklab(0 0 0 / 0.95) 0%, oklab(0 0 0 / 0.6) 50%, rgba(0, 0, 0, 0) 100%)",
+      "div.pointer-events-none.absolute → linear-gradient(to top, oklab(0 0 0 / 0.95) 0%, oklab(0 0 0 / 0.6) 50%, rgba(0, 0, 0, 0) 100%)",
+      "div.pointer-events-none.absolute → linear-gradient(to top, oklab(0 0 0 / 0.95) 0%, oklab(0 0 0 / 0.6) 50%, rgba(0, 0, 0, 0) 100%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 3,
+     "hairlineSamples": [
+      "header.sticky.top-0 1440px",
+      "footer.border-t.border-[#d2c4a3]/50 1440px",
+      "div.mt-7.flex 1072px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 1,
+     "roundedMedia": 12,
+     "mediaRadius": 24,
+     "textShadow": 8,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.34
+     }
+    ],
+    "nav": {
+     "links": 5,
+     "fixed": true,
+     "height": 81,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "playfair display",
+     "inter",
+     "inter fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 5726,
+    "margins": {
+     "left": 184,
+     "right": 184
+    },
+    "sections": [
+     {
+      "sel": "main.flex-1.space-y-0",
+      "tag": "main",
+      "top": 81,
+      "height": 5302,
+      "words": 570,
+      "media": 20,
+      "middle": 0,
+      "heading": {
+       "text": "Weddings at Eden",
+       "size": 84,
+       "tag": "h1"
+      },
+      "left": 0,
+      "right": 184,
+      "textLeft": 184,
+      "textRight": 187,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.border-t.border-[#d2c4a3]/50",
+      "tag": "footer",
+      "top": 5383,
+      "height": 344,
+      "words": 26,
+      "media": 1,
+      "middle": 265,
+      "heading": null,
+      "left": 184,
+      "right": 259,
+      "textLeft": 184,
+      "textRight": 259,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Weddings at Eden",
+      "size": 84,
+      "top": 129,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 184,
+      "n": 7
+     },
+     {
+      "x": 336,
+      "n": 6
+     },
+     {
+      "x": 837,
+      "n": 5
+     },
+     {
+      "x": 552,
+      "n": 3
+     },
+     {
+      "x": 920,
+      "n": 3
+     },
+     {
+      "x": 212,
+      "n": 2
+     },
+     {
+      "x": 800,
+      "n": 2
+     },
+     {
+      "x": 665,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 29,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.11,
+    "voidBox": {
+     "x": 0,
+     "y": 120,
+     "w": 180,
+     "h": 780
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.73,
+    0.99,
+    1,
+    0.69,
+    0.78,
+    0.99
+   ],
+   "motion": {
+    "elements": 16,
+    "css": 1,
+    "transitions": 0,
+    "scripted": 15,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 5906,
+     "screens": 5.8,
+     "words": 429,
+     "img": 15,
+     "video": 0,
+     "canvas": 0,
+     "svg": 8,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 14,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "weddings-pond-banner.jpg",
+      "3@800w.avif",
+      "100@400w.avif",
+      "36@400w.avif",
+      "84@800w.avif",
+      "1@400w.avif",
+      "2@400w.avif",
+      "31@400w.avif"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Weddings at Eden",
+     "words": 3,
+     "chars": 16,
+     "lines": 1,
+     "size": 49.9,
+     "vw": 6.5,
+     "font": "Playfair Display",
+     "weight": 600,
+     "tracking": -0.015,
+     "leading": 0.96,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.9,
+     "top": 129,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Weddings at Eden",
+     "words": 3,
+     "lines": 1,
+     "size": 49.9,
+     "font": "Playfair Display"
+    },
+    "headings": [
+     {
+      "text": "Weddings at Eden",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 49.9,
+      "vw": 6.5,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 0.96,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 129,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "The #1 luxury venue in Vermont",
+      "words": 6,
+      "chars": 30,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1004,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Friday to Sunday, unhurried.",
+      "words": 4,
+      "chars": 28,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1972,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Private culinary consultation",
+      "words": 3,
+      "chars": 29,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3349,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Dedicated estate concierge",
+      "words": 3,
+      "chars": 26,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3476,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Celebrations at Eden",
+      "words": 3,
+      "chars": 20,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3880,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Common questions",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 4705,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Request the private brochure",
+      "words": 4,
+      "chars": 28,
+      "lines": 2,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.38,
+      "top": 5152,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 8,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 1,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.92,
+       "mono": false
+      },
+      {
+       "family": "Playfair Display",
+       "share": 0.08,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      11,
+      12,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      24,
+      30,
+      36,
+      50
+     ],
+     "sizeCount": 12,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 16,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 13.3
+     },
+     "measureChars": 71,
+     "max": {
+      "size": 49.9,
+      "vw": 6.5,
+      "font": "Playfair Display",
+      "text": "Weddings at Eden"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.05,
+     "smallText": 1
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 81,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#f8f3ea",
+       "top": 892,
+       "hsl": {
+        "h": 39,
+        "s": 0.5,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#161412",
+       "top": 1860,
+       "hsl": {
+        "h": 30,
+        "s": 0.1,
+        "l": 0.08
+       }
+      },
+      {
+       "color": "#fdfbf7",
+       "top": 5563,
+       "hsl": {
+        "h": 40,
+        "s": 0.6,
+        "l": 0.98
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#44403b",
+       "share": 0.31
+      },
+      {
+       "color": "#1f1b17",
+       "share": 0.16
+      },
+      {
+       "color": "#44403c",
+       "share": 0.14
+      },
+      {
+       "color": "#e8dac0",
+       "share": 0.11
+      },
+      {
+       "color": "#f8f3ea",
+       "share": 0.09
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#1f1b17"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 1,
+     "radius": "pill",
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Inquire for dates"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 5,
+     "scrims": 0,
+     "gradientSamples": [
+      "header.sticky.top-0 → linear-gradient(in oklab, rgb(253, 251, 247) 0%, rgb(248, 243, 234) 50%, rgb(242, 232, 218) 100%)",
+      "div.pointer-events-none.absolute → linear-gradient(to top, oklab(0 0 0 / 0.95) 0%, oklab(0 0 0 / 0.6) 50%, rgba(0, 0, 0, 0) 100%)",
+      "div.pointer-events-none.absolute → linear-gradient(to top, oklab(0 0 0 / 0.95) 0%, oklab(0 0 0 / 0.6) 50%, rgba(0, 0, 0, 0) 100%)",
+      "div.pointer-events-none.absolute → linear-gradient(to top, oklab(0 0 0 / 0.95) 0%, oklab(0 0 0 / 0.6) 50%, rgba(0, 0, 0, 0) 100%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 3,
+     "hairlineSamples": [
+      "header.sticky.top-0 768px",
+      "footer.border-t.border-[#d2c4a3]/50 768px",
+      "div.mt-7.flex 688px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 1,
+     "roundedMedia": 12,
+     "mediaRadius": 24,
+     "textShadow": 8,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.41
+     }
+    ],
+    "nav": {
+     "links": 5,
+     "fixed": true,
+     "height": 81,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "playfair display",
+     "inter",
+     "inter fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 5906,
+    "margins": {
+     "left": 40,
+     "right": 40
+    },
+    "sections": [
+     {
+      "sel": "main.flex-1.space-y-0",
+      "tag": "main",
+      "top": 81,
+      "height": 5482,
+      "words": 570,
+      "media": 20,
+      "middle": 0,
+      "heading": {
+       "text": "Weddings at Eden",
+       "size": 50,
+       "tag": "h1"
+      },
+      "left": 0,
+      "right": 40,
+      "textLeft": 40,
+      "textRight": 50,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.border-t.border-[#d2c4a3]/50",
+      "tag": "footer",
+      "top": 5563,
+      "height": 344,
+      "words": 26,
+      "media": 1,
+      "middle": 105,
+      "heading": null,
+      "left": 40,
+      "right": 40,
+      "textLeft": 40,
+      "textRight": 40,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Weddings at Eden",
+      "size": 50,
+      "top": 129,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 40,
+      "n": 17
+     },
+     {
+      "x": 280,
+      "n": 3
+     },
+     {
+      "x": 520,
+      "n": 3
+     },
+     {
+      "x": 68,
+      "n": 2
+     },
+     {
+      "x": 432,
+      "n": 2
+     },
+     {
+      "x": 361,
+      "n": 1
+     },
+     {
+      "x": 479,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 29,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 11,
+   "filled": [
+    0.71,
+    0.97,
+    0.99,
+    0.99,
+    0.99,
+    0.8,
+    0.89,
+    0.82,
+    0.9,
+    0.91,
+    0.9
+   ],
+   "motion": {
+    "elements": 16,
+    "css": 1,
+    "transitions": 0,
+    "scripted": 15,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 8603,
+     "screens": 10.2,
+     "words": 443,
+     "img": 15,
+     "video": 0,
+     "canvas": 0,
+     "svg": 8,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 13,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "weddings-pond-banner.jpg",
+      "3@400w.avif",
+      "100@400w.avif",
+      "36@400w.avif",
+      "84@400w.avif",
+      "1@400w.avif",
+      "2@400w.avif",
+      "31@400w.avif"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Weddings at Eden",
+     "words": 3,
+     "chars": 16,
+     "lines": 2,
+     "size": 44,
+     "vw": 11.3,
+     "font": "Playfair Display",
+     "weight": 600,
+     "tracking": -0.015,
+     "leading": 0.96,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.88,
+     "top": 97,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Weddings at Eden",
+     "words": 3,
+     "lines": 2,
+     "size": 44,
+     "font": "Playfair Display"
+    },
+    "headings": [
+     {
+      "text": "Home",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Inter",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.38,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.59,
+      "top": 72,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Weddings at Eden",
+      "words": 3,
+      "chars": 16,
+      "lines": 2,
+      "size": 44,
+      "vw": 11.3,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 0.96,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 97,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Experiences",
+      "words": 1,
+      "chars": 11,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Inter",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.38,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 125,
+      "tag": "button",
+      "kind": "heading"
+     },
+     {
+      "text": "Gallery",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Inter",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.38,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.59,
+      "top": 440,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Reviews",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Inter",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.38,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.59,
+      "top": 493,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Reserve Now",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Inter",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.38,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.59,
+      "top": 546,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "The #1 luxury venue in Vermont",
+      "words": 6,
+      "chars": 30,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 861,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Friday to Sunday, unhurried.",
+      "words": 4,
+      "chars": 28,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 2201,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Arrive",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 2580,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Celebrate",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 2983,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Unwind",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 3387,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Private culinary consultation",
+      "words": 3,
+      "chars": 29,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 4223,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Dedicated estate concierge",
+      "words": 3,
+      "chars": 26,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 4395,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Celebrations at Eden",
+      "words": 3,
+      "chars": 20,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 4835,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Common questions",
+      "words": 2,
+      "chars": 16,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 6906,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Request the private brochure",
+      "words": 4,
+      "chars": 28,
+      "lines": 2,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Playfair Display",
+      "weight": 600,
+      "tracking": -0.015,
+      "leading": 1.1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 7635,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 16,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 1,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter",
+       "share": 0.92,
+       "mono": false
+      },
+      {
+       "family": "Playfair Display",
+       "share": 0.08,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      24,
+      30,
+      44
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter",
+      "size": 16,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 13.3
+     },
+     "measureChars": 43,
+     "max": {
+      "size": 44,
+      "vw": 11.3,
+      "font": "Playfair Display",
+      "text": "Weddings at Eden"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.04,
+     "smallText": 1
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 65,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#f8f3ea",
+       "top": 781,
+       "hsl": {
+        "h": 39,
+        "s": 0.5,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#161412",
+       "top": 2121,
+       "hsl": {
+        "h": 30,
+        "s": 0.1,
+        "l": 0.08
+       }
+      },
+      {
+       "color": "#fdfbf7",
+       "top": 8000,
+       "hsl": {
+        "h": 40,
+        "s": 0.6,
+        "l": 0.98
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#44403b",
+       "share": 0.33
+      },
+      {
+       "color": "#1f1b17",
+       "share": 0.16
+      },
+      {
+       "color": "#44403c",
+       "share": 0.13
+      },
+      {
+       "color": "#e8dac0",
+       "share": 0.11
+      },
+      {
+       "color": "#1c1917",
+       "share": 0.09
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#1f1b17"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 1,
+     "radius": "pill",
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Inquire for dates"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 1,
+     "shadowSamples": [],
+     "gradients": 6,
+     "scrims": 0,
+     "gradientSamples": [
+      "header.sticky.top-0 → linear-gradient(in oklab, rgb(253, 251, 247) 0%, rgb(248, 243, 234) 50%, rgb(242, 232, 218) 100%)",
+      "nav.absolute.inset-y-0 → linear-gradient(lab(98.6899 0.170529 2.16782 / 0.98) 0%, lab(96.0487 0.58791 4.97609 / 0.98) 50%, lab(92.5109 ",
+      "div.pointer-events-none.absolute → linear-gradient(to top, oklab(0 0 0 / 0.95) 0%, oklab(0 0 0 / 0.6) 50%, rgba(0, 0, 0, 0) 100%)",
+      "div.pointer-events-none.absolute → linear-gradient(to top, oklab(0 0 0 / 0.95) 0%, oklab(0 0 0 / 0.6) 50%, rgba(0, 0, 0, 0) 100%)"
+     ],
+     "gradientText": 0,
+     "hairlines": 4,
+     "hairlineSamples": [
+      "header.sticky.top-0 390px",
+      "nav.absolute.inset-y-0 280px",
+      "footer.border-t.border-[#d2c4a3]/50 390px",
+      "div.mt-7.flex 342px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 1,
+     "roundedMedia": 12,
+     "mediaRadius": 16,
+     "textShadow": 8,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.35
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 65,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "playfair display",
+     "inter",
+     "inter fallback"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 8603,
+    "margins": {
+     "left": 24,
+     "right": 24
+    },
+    "sections": [
+     {
+      "sel": "main.flex-1.space-y-0",
+      "tag": "main",
+      "top": 65,
+      "height": 7935,
+      "words": 570,
+      "media": 25,
+      "middle": 0,
+      "heading": {
+       "text": "Weddings at Eden",
+       "size": 44,
+       "tag": "h1"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 24,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer.border-t.border-[#d2c4a3]/50",
+      "tag": "footer",
+      "top": 8000,
+      "height": 604,
+      "words": 26,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 24,
+      "right": 44,
+      "textLeft": 24,
+      "textRight": 44,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Weddings at Eden",
+      "size": 44,
+      "top": 97,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 24,
+      "n": 25
+     },
+     {
+      "x": 40,
+      "n": 4
+     }
+    ],
+    "leftBlocks": 29,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "gradient",
+   "width": 1440,
+   "message": "5 gradient fill(s): header.sticky.top-0 → linear-gradient(in oklab, rgb(253, 251, 247) 0%, rgb(248, 243, 234) 50%, rgb(242, 232, 218) 100%) | div.pointer-events-none.absolute → linear-gradient(to top, oklab(0 0 0 / 0.95) 0%, oklab(0 0 0 / 0.6) 50%, rgba(0, 0, 0, 0) 100%) | div.pointer-events-none.absolute → linear-gradient(to top, oklab(0 0 0 / 0.95) 0%, oklab(0 0 0 / 0.6) 50%, rgba(0, 0, 0, 0) 100%)",
+   "fix": "Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "text-shadow",
+   "width": 1440,
+   "message": "8 text-shadow(s).",
+   "fix": "Remove; fix legibility with a scrim or a different crop.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "3 thin rule(s)/divider line(s): header.sticky.top-0 1440px | footer.border-t.border-[#d2c4a3]/50 1440px | div.mt-7.flex 1072px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "palette-cream",
+   "width": 1440,
+   "message": "Yellow-cream background (section #f8f3ea, section #fdfbf7, text #f8f3ea).",
+   "fix": "Use the drawn palette. If you want warmth, take a low-chroma stone or bone, not a yellow cream.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "11 different font sizes (12, 14, 15, 16, 17, 18, 20, 24, 30, 36, 84).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "small-text",
+   "width": 1440,
+   "message": "1 text block(s) under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "name-only-title",
+   "width": 390,
+   "message": "The h1 is a bare name (\"Weddings at Eden\") and nothing else on the first screen says what this is.",
+   "fix": "Keep the name if it leads, and give the line under it (18px or more) the plain words: what it is, for whom, where or when. In the study of 97 Sites of the Day, first screens that named nothing lost usability and content points."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/Users/emmanuel/Developer/eden2/.taste-skill/weddings-preview-mobile/desktop-fold.jpg",
+   "pages": [
+    "/Users/emmanuel/Developer/eden2/.taste-skill/weddings-preview-mobile/desktop-page-01.jpg",
+    "/Users/emmanuel/Developer/eden2/.taste-skill/weddings-preview-mobile/desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/Users/emmanuel/Developer/eden2/.taste-skill/weddings-preview-mobile/tablet-fold.jpg",
+   "pages": [
+    "/Users/emmanuel/Developer/eden2/.taste-skill/weddings-preview-mobile/tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/Users/emmanuel/Developer/eden2/.taste-skill/weddings-preview-mobile/mobile-fold.jpg",
+   "pages": [
+    "/Users/emmanuel/Developer/eden2/.taste-skill/weddings-preview-mobile/mobile-page-01.jpg",
+    "/Users/emmanuel/Developer/eden2/.taste-skill/weddings-preview-mobile/mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

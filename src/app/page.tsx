@@ -93,11 +93,11 @@ const galleryPreview = [
     alt: "Luxury master bathroom en-suite showing a soaking tub set in a dark marble deck under a dramatic arched window framing a mountain sunset.",
   },
   {
-    src: "/gallery/Eden-Site%20Photos/71@800w.webp",
+    src: "/gallery/Eden-Site%20Photos/71@1200w.webp",
     srcSet:
-      "/gallery/Eden-Site%20Photos/71@400w.webp 400w, /gallery/Eden-Site%20Photos/71@800w.webp 800w",
+      "/gallery/Eden-Site%20Photos/71@400w.webp 400w, /gallery/Eden-Site%20Photos/71@800w.webp 800w, /gallery/Eden-Site%20Photos/71@1200w.webp 1200w",
     avifSrcSet:
-      "/gallery/Eden-Site%20Photos/71@400w.avif 400w, /gallery/Eden-Site%20Photos/71@800w.avif 800w",
+      "/gallery/Eden-Site%20Photos/71@400w.avif 400w, /gallery/Eden-Site%20Photos/71@800w.avif 800w, /gallery/Eden-Site%20Photos/71@1200w.avif 1200w",
     alt: "Spacious recreation and fitness room featuring a foosball table, air hockey, and exercise equipment.",
   },
 ];

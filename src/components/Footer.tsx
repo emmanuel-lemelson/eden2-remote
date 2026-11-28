@@ -3,13 +3,13 @@ import Link from "next/link";
 
 const footerColumns = [
   {
-    heading: "Experience",
+    heading: "Experiences",
     label: "Experience navigation",
     links: [
-      { name: "Stays", href: "/stays/" },
+      { name: "Luxury Stays", href: "/stays/" },
       { name: "Weddings", href: "/weddings/" },
-      { name: "Retreats", href: "/retreats/" },
-      { name: "Reserve Direct", href: "/contact/" },
+      { name: "Executive Retreats", href: "/retreats/" },
+      { name: "Reserve Now", href: "/contact/" },
     ],
   },
   {
@@ -118,7 +118,7 @@ export function Footer() {
                     <li key={link.href}>
                       <Link
                         href={link.href}
-                        className="transition hover:text-stone-950"
+                        className="transition hover:text-[#8f7845]"
                       >
                         {link.name}
                       </Link>
@@ -140,7 +140,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={social.name}
-                className="flex h-8 w-8 items-center justify-center rounded-full border border-[#d2c4a3]/60 bg-white/80 text-stone-600 transition hover:border-[#8f7845] hover:text-stone-950"
+                className="flex h-8 w-8 items-center justify-center rounded-full border border-[#d2c4a3]/60 bg-white/80 text-stone-600 transition hover:border-[#8f7845] hover:text-[#8f7845]"
               >
                 {social.icon}
               </a>
